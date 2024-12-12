@@ -149,7 +149,7 @@ function blockStatement(card: ability_card, kv: key_value_statement) {
     return (
         <div className={`flex`}>
             <div className={`w-[2pt]`}></div>
-            <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><b>{kv.key}:</b> {kv.value}</p>
+            <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><b>{kv.key}:</b> {kv.value}</p>
         </div>
     )
 }
@@ -195,6 +195,25 @@ function targetBlock(card: ability_card) {
                     <div
                         className={`text-[5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>or
                         Object
+                    </div>
+                </div>
+            </div>
+        )
+    } else if (card.target === 'Self and All Creatures') {
+        return (
+            <div className={`relative  ${actionBg40ColorStyle[card.type]} w-[28pt] h-[28pt]`}>
+                <div
+                    className={`absolute top-0 left-0 text-[6pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>Target
+                </div>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[2pt]`}>
+                    <div
+                        className={`text-[11pt] font-body font-bold text-cardback leading-[8pt] small-caps text-center`}>Self
+                    </div>
+                    <div
+                        className={`text-[5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>and All
+                    </div>
+                    <div
+                        className={`text-[5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>Creatures
                     </div>
                 </div>
             </div>

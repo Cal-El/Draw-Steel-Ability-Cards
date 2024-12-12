@@ -29,8 +29,8 @@ function App() {
                             hasPotency: true,
                             potencyValue: 'A1',
                             potencyEffect: 'Weakened (save ends)',
-                            hasGeneralEffect: true,
-                            generalEffect: 'Prone',
+                            hasGeneralEffect: false,
+                            generalEffect: '',
                         },
                         t2: {
                             hasDamage: true,
@@ -39,8 +39,8 @@ function App() {
                             hasPotency: true,
                             potencyValue: 'A2',
                             potencyEffect: 'Weakened (save ends)',
-                            hasGeneralEffect: true,
-                            generalEffect: 'Prone',
+                            hasGeneralEffect: false,
+                            generalEffect: '',
                         },
                         t3: {
                             hasDamage: true,
@@ -49,8 +49,8 @@ function App() {
                             hasPotency: true,
                             potencyValue: 'A3',
                             potencyEffect: 'Weakened (save ends)',
-                            hasGeneralEffect: true,
-                            generalEffect: 'Prone',
+                            hasGeneralEffect: false,
+                            generalEffect: '',
                         },
                     },
                 ],
@@ -89,6 +89,31 @@ function App() {
                     {
                         distanceHeader: 'Distance',
                         distanceValue: 'Self',
+                    },
+                ],
+            }} />
+            <AbilityCard card={{
+                type: 'Maneuver',
+                source: 'Null',
+                title: 'Null Field',
+                keywords: [
+                    'Psionic',
+                ],
+                flavour: 'Magic is a form of chaos. My body is beyond such things.',
+                statements: [
+                    {
+                        key: "Effect",
+                        value: "Until you are dying, attacks with the Magic or Psionic keyword take a bane if they target a target within the aura or are made by an enemy within the aura. \n\n" +
+                            "Resistance rolls against abilities with the Magic or Psionic keyword have an edge if they target a target within the aura or are used by an enemy within the aura. These effects increase to a double bane or a double edge, respectively, if the creature using the ability is grabbed by you.",
+                    },
+                ],
+                hasCost: false,
+                cost: null,
+                target: 'Self and All Creatures',
+                distance: [
+                    {
+                        distanceHeader: 'Aura',
+                        distanceValue: '1',
                     },
                 ],
             }} />
