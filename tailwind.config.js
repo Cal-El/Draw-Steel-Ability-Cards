@@ -21,9 +21,10 @@ export default {
       'triggered-action-card': '#7d3939',
       'cardback': '#f6f1e8',
       'keyword-backing': '#b87f47',
-      'silver': '#ecebff',
+      'zinc-500': '#71717A',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
+      'regal-blue': '#243c5a',
     },
   },
   plugins: [

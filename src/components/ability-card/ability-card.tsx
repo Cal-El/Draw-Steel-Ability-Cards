@@ -3,152 +3,81 @@ import {
     actionBg100ColorStyle, actionBg20ColorStyle, actionBg30ColorStyle, actionBg40ColorStyle,
     actionBg50ColorStyle,
     actionTextColorStyle, cardbackColorStyle, distance_block, key_value_statement,
-    power_roll_statement, spacer_statement
+    power_roll_statement, power_roll_tier, spacer_statement
 } from "./ability-card-types.ts";
+import {useState} from "react";
 
 
 function powerRollStatement(card: ability_card, powerRoll: power_roll_statement) {
     return (
-        <div className={`flex flex-col h-[73.8 pt] justify-center gap-y-[2pt]`}>
+        <div className={`flex-auto flex flex-col h-[73.8pt] justify-center gap-y-[2pt]`}>
             <div className={`flex`}>
                 <div className={`w-[2pt]`}></div>
                 <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><b>Power Roll + {powerRoll.characteristic}:</b></p>
             </div>
-            <div className={`flex flex-col w-full h-[64.8 pt]`}>
-                <div className={`flex w-full`}>
-                    <div className={`${actionBg100ColorStyle[card.type]} w-[5.4pt] h-[21.6pt] flex justify-center`}>
-                        <div className={`[writing-mode:vertical-lr] rotate-180 text-[4pt] font-body font-bold text-cardback leading-none small-caps text-center`}>11 or less</div>
-                    </div>
-                    {powerRoll.t1.hasDamage ?
-                        <div className={`relative  ${actionBg50ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
-                            <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{powerRoll.t1.damageType}</div>
-                            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
-                                <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRoll.t1.damageValue}</div>
-                            </div>
-                        </div>: <></>
-                    }
-                    {powerRoll.t1.hasGeneralEffect ?
-                        <div className={`${actionBg20ColorStyle[card.type]} flex-grow flex h-[21.6pt]`}>
-                            <div className={`h-[21.6pt] w-[3pt]`}>
-                            </div>
-                            <div className={`h-[21.6pt] flex-grow flex flex-col justify-center`}>
-                                <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRoll.t1.generalEffect}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                    {powerRoll.t1.hasPotency ?
-                        <div className={`relative  ${actionBg40ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
-                            <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>Potency</div>
-                            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
-                                <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRoll.t1.potencyValue}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                    {powerRoll.t1.hasPotency ?
-                        <div className={`${actionBg20ColorStyle[card.type]} flex-grow flex h-[21.6pt]`}>
-                            <div className={`h-[21.6pt] w-[3pt]`}>
-                            </div>
-                            <div className={`h-[21.6pt] flex-grow flex flex-col justify-center`}>
-                                <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRoll.t1.potencyEffect}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                </div>
-                <div className={`flex w-full`}>
-                    <div className={`${actionBg100ColorStyle[card.type]} w-[5.4pt] h-[21.6pt] flex justify-center`}>
-                        <div className={`[writing-mode:vertical-lr] rotate-180 text-[4pt] font-body font-bold text-cardback leading-none small-caps text-center`}>12-16</div>
-                    </div>
-                    {powerRoll.t2.hasDamage ?
-                        <div className={`relative  ${actionBg40ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
-                            <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{powerRoll.t2.damageType}</div>
-                            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
-                                <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRoll.t2.damageValue}</div>
-                            </div>
-                        </div>: <></>
-                    }
-                    {powerRoll.t2.hasGeneralEffect ?
-                        <div className={`${actionBg30ColorStyle[card.type]} flex-grow flex h-[21.6pt]`}>
-                            <div className={`h-[21.6pt] w-[3pt]`}>
-                            </div>
-                            <div className={`h-[21.6pt] flex-grow flex flex-col justify-center`}>
-                                <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRoll.t2.generalEffect}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                    {powerRoll.t2.hasPotency ?
-                        <div className={`relative  ${actionBg50ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
-                            <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>Potency</div>
-                            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
-                                <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRoll.t2.potencyValue}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                    {powerRoll.t2.hasPotency ?
-                        <div className={`${actionBg30ColorStyle[card.type]} flex-grow flex h-[21.6pt]`}>
-                            <div className={`h-[21.6pt] w-[3pt]`}>
-                            </div>
-                            <div className={`h-[21.6pt] flex-grow flex flex-col justify-center`}>
-                                <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRoll.t2.potencyEffect}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                </div>
-                <div className={`flex w-full`}>
-                    <div className={`${actionBg100ColorStyle[card.type]} w-[5.4pt] h-[21.6pt] flex justify-center`}>
-                        <div className={`[writing-mode:vertical-lr] rotate-180 text-[4pt] font-body font-bold text-cardback leading-none small-caps text-center`}>17+</div>
-                    </div>
-                    {powerRoll.t3.hasDamage ?
-                        <div className={`relative  ${actionBg50ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
-                            <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{powerRoll.t3.damageType}</div>
-                            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
-                                <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRoll.t3.damageValue}</div>
-                            </div>
-                        </div>: <></>
-                    }
-                    {powerRoll.t3.hasGeneralEffect ?
-                        <div className={`${actionBg20ColorStyle[card.type]} flex-grow flex h-[21.6pt]`}>
-                            <div className={`h-[21.6pt] w-[3pt]`}>
-                            </div>
-                            <div className={`h-[21.6pt] flex-grow flex flex-col justify-center`}>
-                                <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRoll.t3.generalEffect}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                    {powerRoll.t3.hasPotency ?
-                        <div className={`relative  ${actionBg40ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
-                            <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>Potency</div>
-                            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
-                                <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRoll.t3.potencyValue}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                    {powerRoll.t3.hasPotency ?
-                        <div className={`${actionBg20ColorStyle[card.type]} flex-grow flex h-[21.6pt]`}>
-                            <div className={`h-[21.6pt] w-[3pt]`}>
-                            </div>
-                            <div className={`h-[21.6pt] flex-grow flex flex-col justify-center`}>
-                                <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRoll.t3.potencyEffect}</div>
-                            </div>
-                        </div> : <></>
-                    }
-                </div>
+            <div className={`flex flex-col w-full h-[64.8pt]`}>
+                {powerRollLine(card, powerRoll.t1, 1)}
+                {powerRollLine(card, powerRoll.t2, 2)}
+                {powerRollLine(card, powerRoll.t3, 3)}
             </div>
         </div>
     )
 }
 
+function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNum: number) {
+    return <div className={`flex w-full`}>
+        <div className={`${actionBg100ColorStyle[card.type]} w-[5.4pt] h-[21.6pt] flex justify-center`}>
+            <div className={`[writing-mode:vertical-lr] rotate-180 text-[4pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{rowNum === 1 ? '11 or less' : rowNum === 2 ? '12-16' : '17+'}</div>
+        </div>
+        {powerRollTier.hasDamage ?
+            <div className={`relative  ${rowNum % 2 === 1 ? actionBg50ColorStyle[card.type] : actionBg40ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
+                <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{powerRollTier.damageType}</div>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
+                    <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRollTier.damageValue}</div>
+                </div>
+            </div>: <></>
+        }
+        {powerRollTier.hasGeneralEffect ?
+            <div className={`${rowNum % 2 === 1 ? actionBg20ColorStyle[card.type] : actionBg30ColorStyle[card.type]} flex-1 flex h-[21.6pt]`}>
+                <div className={`h-[21.6pt] w-[3pt]`}>
+                </div>
+                <div className={`h-[21.6pt] flex-1 flex flex-col justify-center`}>
+                    <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRollTier.generalEffect}</div>
+                </div>
+            </div> : <></>
+        }
+        {powerRollTier.hasPotency ?
+            <div className={`relative  ${rowNum % 2 === 1 ? actionBg40ColorStyle[card.type] : actionBg50ColorStyle[card.type]} w-[21.6pt] h-[21.6pt]`}>
+                <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>Potency</div>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
+                    <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRollTier.potencyValue}</div>
+                </div>
+            </div> : <></>
+        }
+        {powerRollTier.hasPotency ?
+            <div className={`${rowNum % 2 === 1 ? actionBg20ColorStyle[card.type] : actionBg30ColorStyle[card.type]} flex-1 flex h-[21.6pt]`}>
+                <div className={`h-[21.6pt] w-[3pt]`}>
+                </div>
+                <div className={`h-[21.6pt] flex-1 flex flex-col justify-center`}>
+                    <div className={`text-[6pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRollTier.potencyEffect}</div>
+                </div>
+            </div> : <></>
+        }
+    </div>
+}
+
 function blockStatement(card: ability_card, kv: key_value_statement) {
     if (kv.key === "Trigger") {
         return (
-            <div className={`flex ${actionBg20ColorStyle[card.type]} py-[3pt]`}>
-                <div className={`w-[2pt]`}></div>
+            <div className={`flex-auto flex ${actionBg20ColorStyle[card.type]} py-[3pt]`}>
+                <div className={`w-[2pt] flex-none`}></div>
                 <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><b>Trigger:</b> {kv.value}</p>
             </div>
         )
     }
     return (
-        <div className={`flex`}>
-            <div className={`w-[2pt]`}></div>
+        <div className={`flex-auto flex`}>
+            <div className={`w-[2pt] flex-none`}></div>
             <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><b>{kv.key}:</b> {kv.value}</p>
         </div>
     )
@@ -255,10 +184,9 @@ function distanceBlock(card: ability_card, block: distance_block) {
     )
 }
 
-export default function AbilityCard({card}: {card: ability_card}) {
+function cardContainer(card: ability_card, zoomIn: boolean) {
     return (
-      <>
-        <div className={`cardContainer flex h-[180pt] w-[252pt] rounded-[9pt] border border-[2pt] ${cardbackColorStyle[card.type]}`}>
+        <div className={`cardContainer flex h-[180pt] w-[252pt] rounded-[9pt] border border-[2pt] ${cardbackColorStyle[card.type]} ${zoomIn ? 'scale-[2]' : 'scale-[1]'}`}>
             <div className={`w-[221pt]`}>
                 <div className={`flex`}>
                     <div className={`w-[2pt]`}></div>
@@ -302,6 +230,101 @@ export default function AbilityCard({card}: {card: ability_card}) {
                 </div>
             </div>
         </div>
-      </>
+    );
+}
+
+function tryParseCardInputJson(s: string, setCardState: React.Dispatch<React.SetStateAction<ability_card>>, setInputBoxValue: React.Dispatch<React.SetStateAction<string>>) {
+    setInputBoxValue(s);
+    let abilityCard: ability_card
+    try {
+        abilityCard = JSON.parse(s);
+    } catch(e) {
+        return false;
+    }
+    const result = checkAbilityCard(abilityCard);
+    if (result !== '') {
+        console.log(result);
+        return false;
+    }
+    setCardState(abilityCard);
+    return true;
+}
+
+function checkAbilityCard(abilityCard: ability_card) : string {
+    if (abilityCard.type === undefined) {
+        return 'missing [type: string; Action|Maneuver|Triggered Action|Free Triggered Action|Free Maneuver|Passive|Free Strike Action]'
+    }
+    if (abilityCard.type !== 'Action' && abilityCard.type !== 'Maneuver' && abilityCard.type !== 'Triggered Action' && abilityCard.type !== 'Free Triggered Action' && abilityCard.type !== 'Free Maneuver' && abilityCard.type !== 'Passive' && abilityCard.type !== 'Free Strike Action') {
+        return 'invalid type entry [type: string; Action|Maneuver|Triggered Action|Free Triggered Action|Free Maneuver|Passive|Free Strike Action]'
+    }
+    if (abilityCard.source === undefined) {
+        return 'missing [source: string; such as "Core" or "Conduit Signature" or "Censor Heroic"]'
+    }
+    if (abilityCard.title === undefined) {
+        return 'missing [title: string; such as "Healing Grace"]'
+    }
+    if (abilityCard.flavour === undefined) {
+        return 'missing [flavour: string; such as "Healing Grace"]'
+    }
+    if (abilityCard.keywords === undefined) {
+        return 'missing [keywords: string[]; can be empty]'
+    }
+    if (abilityCard.statements === undefined) {
+        return 'missing [statements: body_statement[]; can be empty]'
+    }
+    if (abilityCard.hasCost === undefined) {
+        return 'missing [hasCost: boolean]'
+    }
+    if (abilityCard.target === undefined) {
+        return 'missing [target: string; such as "1 creature or object"]'
+    }
+    if (abilityCard.distance === undefined) {
+        return 'missing [distance: distance_block[]; can be empty]'
+    }
+    for (let i = 0; i < abilityCard.statements.length; i++) {
+        if ((abilityCard.statements[i] as power_roll_statement).characteristic !== undefined) {
+            if ((abilityCard.statements[i] as power_roll_statement).t1 === undefined) {
+                return `missing [power_roll_statement.t1: power_roll_tier] from entry [${i}]`
+            }
+            if ((abilityCard.statements[i] as power_roll_statement).t2 === undefined) {
+                return `missing [power_roll_statement.t2: power_roll_tier] from entry [${i}]`
+            }
+            if ((abilityCard.statements[i] as power_roll_statement).t3 === undefined) {
+                return `missing [power_roll_statement.t3: power_roll_tier] from entry [${i}]`
+            }
+        }
+    }
+    for (let i = 0; i < abilityCard.distance.length; i++) {
+        if (abilityCard.distance[i].distanceHeader === undefined) {
+            return `missing [distance.distanceHeader: string] from entry [${i}]`
+        }
+        if (abilityCard.distance[i].distanceValue === undefined) {
+            return `missing [distance.distanceValue: string] from entry [${i}]`
+        }
+    }
+    return ''
+}
+
+export default function AbilityCard({card}: {card: ability_card}) {
+    const [zoomIn, setZoomIn] = useState(false);
+    const [isValidInput, setIsValidInput] = useState(false);
+    const [cardState, setCardState] = useState(card);
+    const [inputBoxValue, setInputBoxValue] = useState(JSON.stringify(card, null, 2));
+
+    return (
+      <div className={`flex justify-center items-center`}>
+        <div role="button" onClick={() => {
+            setZoomIn(!zoomIn)
+        }} className={`flex-none flex justify-center items-center ${zoomIn ? 'h-[360pt] w-[504pt]' : 'h-[180pt] w-[252pt]'}`}>
+            {cardContainer(cardState, zoomIn)}
+        </div>
+        {zoomIn ? (<div className={`flex-none h-[504pt] w-[504pt]`}>
+            <textarea id="message" rows="32"
+                      value={inputBoxValue}
+                      onInput={e => setIsValidInput(tryParseCardInputJson(e.target.value, setCardState, setInputBoxValue))}
+                      className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
+                      placeholder="Write your thoughts here..."></textarea>
+        </div>) : (<></>)}
+      </div>
     );
 }
