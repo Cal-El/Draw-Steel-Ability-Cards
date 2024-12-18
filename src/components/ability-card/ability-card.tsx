@@ -8,8 +8,6 @@ import {
 } from "./ability-card-types.ts";
 import {useState} from "react";
 import { parse as yamlParse, stringify as yamlStringify } from "yaml";
-import Title from "./title.tsx";
-
 
 function powerRollStatement(card: ability_card, powerRoll: power_roll_statement) {
     return (
@@ -357,9 +355,9 @@ export default function AbilityCard({card, cardNum, selectedCard, setSelectedCar
                 </div>) : (<></>)}
             </div>
             {selectedCardState > 0 ? (<div className={`flex-none h-[504pt] w-[378pt]`}>
-            <textarea id="message" rows="30"
+            <textarea id="message" rows={30}
                       value={inputBoxValue}
-                      onInput={e => setIsValidInput(tryParseCardInputJson(e.target.value, setCardState, setInputBoxValue, setErrorMsg))}
+                      onInput={(e) => setIsValidInput(tryParseCardInputJson((e.target as HTMLTextAreaElement).value, setCardState, setInputBoxValue, setErrorMsg))}
                       className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
                       placeholder="Write your thoughts here...">
             </textarea>

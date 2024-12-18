@@ -1,4 +1,4 @@
-export const cardbackColorStyle = {
+export const cardbackColorStyle: Record<string,string> = {
     "Action": 'bg-cardback border-action-card',
     "Maneuver": 'bg-cardback border-maneuver-card',
     "Triggered Action": 'bg-cardback border-triggered-action-card',
@@ -9,7 +9,7 @@ export const cardbackColorStyle = {
     "Free Strike Action": 'bg-cardback border-free-strike-card',
 }
 
-export const actionBg100ColorStyle = {
+export const actionBg100ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card',
     "Maneuver": 'bg-maneuver-card',
     "Triggered Action": 'bg-triggered-action-card',
@@ -19,7 +19,7 @@ export const actionBg100ColorStyle = {
     "Passive": 'bg-passive-card',
     "Free Strike Action": 'bg-free-strike-card',
 }
-export const actionBg50ColorStyle = {
+export const actionBg50ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card/[0.5]',
     "Maneuver": 'bg-maneuver-card/[0.5]',
     "Triggered Action": 'bg-triggered-action-card/[0.5]',
@@ -29,7 +29,7 @@ export const actionBg50ColorStyle = {
     "Passive": 'bg-passive-card/[0.5]',
     "Free Strike Action": 'bg-free-strike-card/[0.5]',
 }
-export const actionBg40ColorStyle = {
+export const actionBg40ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card/[0.4]',
     "Maneuver": 'bg-maneuver-card/[0.4]',
     "Triggered Action": 'bg-triggered-action-card/[0.4]',
@@ -39,7 +39,7 @@ export const actionBg40ColorStyle = {
     "Passive": 'bg-passive-card/[0.4]',
     "Free Strike Action": 'bg-free-strike-card/[0.4]',
 }
-export const actionBg30ColorStyle = {
+export const actionBg30ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card/[0.3]',
     "Maneuver": 'bg-maneuver-card/[0.3]',
     "Triggered Action": 'bg-triggered-action-card/[0.3]',
@@ -49,7 +49,7 @@ export const actionBg30ColorStyle = {
     "Passive": 'bg-passive-card/[0.3]',
     "Free Strike Action": 'bg-free-strike-card/[0.3]',
 }
-export const actionBg20ColorStyle = {
+export const actionBg20ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card/[0.2]',
     "Maneuver": 'bg-maneuver-card/[0.2]',
     "Triggered Action": 'bg-triggered-action-card/[0.2]',
@@ -60,7 +60,7 @@ export const actionBg20ColorStyle = {
     "Free Strike Action": 'bg-free-strike-card/[0.2]',
 }
 
-export const actionTextColorStyle = {
+export const actionTextColorStyle: Record<string,string> = {
     "Action": 'text-action-card',
     "Maneuver": 'text-maneuver-card',
     "Triggered Action": 'text-triggered-action-card',
