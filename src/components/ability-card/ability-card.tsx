@@ -1,3 +1,4 @@
+import { AutoTextSize } from "auto-text-size";
 import {
     ability_card,
     actionBg100ColorStyle, actionBg20ColorStyle, actionBg30ColorStyle, actionBg40ColorStyle,
@@ -7,6 +8,7 @@ import {
 } from "./ability-card-types.ts";
 import {useState} from "react";
 import { parse as yamlParse, stringify as yamlStringify } from "yaml";
+import Title from "./title.tsx";
 
 
 function powerRollStatement(card: ability_card, powerRoll: power_roll_statement) {
@@ -209,8 +211,8 @@ function cardContainer(card: ability_card, selectionState: number) {
                     <div className={`w-[3pt]`}></div>
                     <div className={`w-[325.5pt]`}>
                         <div className={`h-[3pt]`}/>
-                        <h2 className={`text-[15pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-none indent-[2.4pt]`}>{card.source} {card.type}</h2>
-                        <h1 className={`text-[24pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-[19.5pt]`}>{card.title}</h1>
+                        <h2 className={`w-[285.5pt] text-[15pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-none indent-[2.4pt]`}><AutoTextSize maxFontSizePx={20}>{card.source} {card.type}</AutoTextSize></h2>
+                        <h1 className={`text-[24pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-[19.5pt]`}><AutoTextSize maxFontSizePx={32}>{card.title}</AutoTextSize></h1>
                         <div className={`flex w-[328.5pt] gap-x-[2.85pt]`}>
                             {card.keywords.map((k) => (
                                 <div className={`flex h-[15.75pt] w-[54.75pt] bg-keyword-backing justify-center items-center`}>
@@ -219,7 +221,7 @@ function cardContainer(card: ability_card, selectionState: number) {
                             ))}
                         </div>
                         <div className={`h-[30pt]`}>
-                            <p  className={`text-[13.5pt] font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}>{card.flavour}</p>
+                            <p className={`text-[13.5pt] h-full font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize mode="box" maxFontSizePx={27}>{card.flavour}</AutoTextSize></p>
                         </div>
                     </div>
                 </div>
