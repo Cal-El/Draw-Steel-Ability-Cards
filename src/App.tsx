@@ -1,124 +1,91 @@
 import { useState } from 'react'
 import './App.css'
 import AbilityCard from "./components/ability-card/ability-card.tsx";
+import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./components/ability-card/ability-card-types.ts";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const dummyCard = {
+      type: 'Action',
+      source: 'Custom Heroic',
+      title: 'My Cool Ability',
+      keywords: [
+          'Attack',
+          'Magic',
+          'Ranged',
+          'Weapon',
+      ],
+      flavour: 'Holy magic zap!',
+      statements: [
+          {
+              characteristic: 'Any Characteristic',
+              t1: {
+                  hasDamage: true,
+                  damageType: 'Damage',
+                  damageValue: '2',
+                  hasGeneralEffect: true,
+                  generalEffect: 'Damage',
+                  hasPotency: false,
+              },
+              t2: {
+                  hasDamage: true,
+                  damageType: 'Damage',
+                  damageValue: '5',
+                  hasGeneralEffect: true,
+                  generalEffect: 'Damage',
+                  hasPotency: false,
+              },
+              t3: {
+                  hasDamage: true,
+                  damageType: 'Damage',
+                  damageValue: '6',
+                  hasGeneralEffect: true,
+                  generalEffect: 'Damage',
+                  hasPotency: false,
+              },
+          },
+          {
+              key: 'Effect',
+              value: 'Some effect.'
+          },
+          {
+              key: 'Spend HR',
+              value: 'Do something cool for each HR spent.'
+          },
+      ],
+      hasCost: true,
+      cost: {
+          costName: 'HR',
+          costValue: 1,
+      },
+      target: '1 Creature or Object',
+      distance: [
+          {
+              distanceHeader: 'Melee',
+              distanceValue: '1',
+          },
+      ],
+  };
+
+  let cList : ability_card[] = []
+
+  const [selectedCard, setSelectedCard] = useState(-1)
+  const [cardsList, setCardsList] = useState(cList)
 
   return (
-    <>
-        <div className={"flex flex-wrap flex-row h-screen w-screen bg-zinc-500 items-center justify-center center"}>
-            <AbilityCard card={{
-                type: 'Action',
-                source: 'Null Signature',
-                title: 'Pressure Points',
-                keywords: [
-                    'Attack',
-                    'Melee',
-                    'Psionic',
-                    'Weapon',
-                ],
-                flavour: 'You strike at key nerve clusters.',
-                statements: [
-                    {
-                        characteristic: "Agility",
-                        t1: {
-                            hasDamage: true,
-                            damageType: 'Damage',
-                            damageValue: '4',
-                            hasGeneralEffect: false,
-                            generalEffect: '',
-                            hasPotency: true,
-                            potencyValue: 'A1',
-                            potencyEffect: 'Weakened (save ends)',
-                        },
-                        t2: {
-                            hasDamage: true,
-                            damageType: 'Damage',
-                            damageValue: '6',
-                            hasGeneralEffect: false,
-                            generalEffect: '',
-                            hasPotency: true,
-                            potencyValue: 'A2',
-                            potencyEffect: 'Weakened (save ends)',
-                        },
-                        t3: {
-                            hasDamage: true,
-                            damageType: 'Damage',
-                            damageValue: '7',
-                            hasGeneralEffect: false,
-                            generalEffect: '',
-                            hasPotency: true,
-                            potencyValue: 'A3',
-                            potencyEffect: 'Weakened (save ends)',
-                        },
-                    },
-                ],
-                hasCost: false,
-                cost: null,
-                target: '1 Creature or Object',
-                distance: [
-                    {
-                        distanceHeader: 'Melee',
-                        distanceValue: '1',
-                    },
-                ],
-            }} />
-            <AbilityCard card={{
-                type: 'Triggered Action',
-                source: 'Null',
-                title: 'Inertial Shield',
-                keywords: [
-                    'Psionic',
-                ],
-                flavour: 'You intuit where an incoming attack will strike, reducing its effects.',
-                statements: [
-                    {
-                        key: "Trigger",
-                        value: "You take damage.",
-                    },
-                    {
-                        key: "Effect",
-                        value: "You gain 🛡️ for the attack and reduce any potency of effects associated with the damage by 1.",
-                    },
-                ],
-                hasCost: false,
-                cost: null,
-                target: 'Self',
-                distance: [
-                    {
-                        distanceHeader: 'Distance',
-                        distanceValue: 'Self',
-                    },
-                ],
-            }} />
-            <AbilityCard card={{
-                type: 'Maneuver',
-                source: 'Null',
-                title: 'Null Field',
-                keywords: [
-                    'Psionic',
-                ],
-                flavour: 'Magic is a form of chaos. My body is beyond such things.',
-                statements: [
-                    {
-                        key: "Effect",
-                        value: "Until you are dying, attacks with the Magic or Psionic keyword take a bane if they target a target within the aura or are made by an enemy within the aura. \n\n" +
-                            "Resistance rolls against abilities with the Magic or Psionic keyword have an edge if they target a target within the aura or are used by an enemy within the aura. These effects increase to a double bane or a double edge, respectively, if the creature using the ability is grabbed by you.",
-                    },
-                ],
-                hasCost: false,
-                cost: null,
-                target: 'Self and All Creatures',
-                distance: [
-                    {
-                        distanceHeader: 'Aura',
-                        distanceValue: '1',
-                    },
-                ],
-            }} />
+    <div className={"flex flex-col h-screen"}>
+        <div className={`flex w-screen justify-end p-[10pt]`}>
+            <div role="button" onClick={() => {
+                setSelectedCard(cardsList.length + 1)
+                setCardsList([...cardsList, dummyCard])
+            }} className={`flex h-[60pt] w-[120pt] rounded-[13.5pt] border border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
+                <div className={`text-[16pt] text-center ${actionTextColorStyle[`Action`]}`}>New Card</div>
+            </div>
         </div>
-    </>
+        <div className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
+            {cardsList.map((value, index) => <AbilityCard card={value} cardNum={index + 1} selectedCard={selectedCard} setSelectedCard={setSelectedCard}  />)}
+        </div>
+        <div className={`text-center italic`}>Draw Steel Ability Cards is an independent product published under the DRAW STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions, LLC.</div>
+    </div>
   )
 }
 

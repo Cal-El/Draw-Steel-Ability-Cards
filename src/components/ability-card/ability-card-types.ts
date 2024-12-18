@@ -74,7 +74,7 @@ export const actionTextColorStyle = {
 export type ability_card = {
     type: string;
     source: string;
-    title: string
+    title: string;
     flavour: string;
     keywords: string[];
     statements: body_statement[];
@@ -107,13 +107,13 @@ export type body_statement = power_roll_statement | key_value_statement | spacer
 
 export type power_roll_tier = {
     hasDamage: boolean;
-    damageValue: string;
-    damageType: string;
+    damageValue: string | null;
+    damageType: string | null;
     hasGeneralEffect: boolean;
-    generalEffect: string;
+    generalEffect: string | null;
     hasPotency: boolean;
-    potencyValue: string;
-    potencyEffect: string;
+    potencyValue: string | null;
+    potencyEffect: string | null;
 }
 
 export type distance_block = {
