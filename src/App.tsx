@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-        <div className={"flex flex-row h-screen w-screen bg-zinc-500 items-center justify-center center"}>
+        <div className={"flex flex-wrap flex-row h-screen w-screen bg-zinc-500 items-center justify-center center"}>
             <AbilityCard card={{
                 type: 'Action',
                 source: 'Null Signature',
