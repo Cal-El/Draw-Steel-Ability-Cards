@@ -32,7 +32,7 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
         </div>
         {powerRollTier.hasDamage ?
             <div className={`relative  ${rowNum % 2 === 1 ? actionBg50ColorStyle[card.type] : actionBg40ColorStyle[card.type]} w-[32.4pt] h-[32.4pt]`}>
-                <div className={`absolute top-0 left-0 text-[6.75pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>{powerRollTier.damageType}</div>
+                <div className={`absolute top-0 left-0 text-[6.75pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Damage</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[18pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRollTier.damageValue}</div>
                 </div>
@@ -358,7 +358,7 @@ export default function AbilityCard({card, cardNum, selectedCard, setSelectedCar
             <textarea id="message" rows={30}
                       value={inputBoxValue}
                       onInput={(e) => setIsValidInput(tryParseCardInputJson((e.target as HTMLTextAreaElement).value, setCardState, setInputBoxValue, setErrorMsg))}
-                      className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
+                      className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg font-mono ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
                       placeholder="Write your thoughts here...">
             </textarea>
                 <p className={`text-triggered-action-card`}>{errorMsg}</p>

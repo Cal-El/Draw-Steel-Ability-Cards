@@ -4,7 +4,7 @@ import AbilityCard from "./components/ability-card/ability-card.tsx";
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./components/ability-card/ability-card-types.ts";
 
 function App() {
-  const dummyCard = {
+  const dummyCard: ability_card = {
       type: 'Action',
       source: 'Custom Heroic',
       title: 'My Cool Ability',
@@ -66,7 +66,7 @@ function App() {
       ],
   };
 
-  let cList : ability_card[] = []
+  const cList : ability_card[] = []
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)

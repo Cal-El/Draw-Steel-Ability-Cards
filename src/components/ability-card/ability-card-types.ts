@@ -107,13 +107,13 @@ export type body_statement = power_roll_statement | key_value_statement | spacer
 
 export type power_roll_tier = {
     hasDamage: boolean;
-    damageValue: string | null;
-    damageType: string | null;
+    damageValue?: string;
+    damageType?: string;
     hasGeneralEffect: boolean;
-    generalEffect: string | null;
+    generalEffect?: string;
     hasPotency: boolean;
-    potencyValue: string | null;
-    potencyEffect: string | null;
+    potencyValue?: string;
+    potencyEffect?: string;
 }
 
 export type distance_block = {
