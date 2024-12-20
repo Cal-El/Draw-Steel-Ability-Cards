@@ -1,3 +1,14 @@
+export enum abilityType {
+    action = 'Action',
+    maneuver = 'Maneuver',
+    triggeredAction = 'Triggered Action',
+    freeTriggeredAction = 'Free Triggered Action',
+    freeManeuver = 'Free Maneuver',
+    routine = 'Routine',
+    passive = 'Passive',
+    freeStrikeAction = 'Free Strike Action',
+}
+
 export const cardbackColorStyle: Record<string,string> = {
     "Action": 'bg-cardback border-action-card',
     "Maneuver": 'bg-cardback border-maneuver-card',
