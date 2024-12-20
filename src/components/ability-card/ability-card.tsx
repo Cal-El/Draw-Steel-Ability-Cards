@@ -120,7 +120,7 @@ function targetBlock(card: ability_card) {
                         className={`text-[24pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>1
                     </div>
                     <div
-                        className={`text-[7.5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>Creature
+                        className={`text-[7.5pt] font-body font-bold text-cardback leading-[5pt] small-caps text-center`}>Creature
                     </div>
                     <div
                         className={`text-[7.5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>or
@@ -211,10 +211,10 @@ function cardContainer(card: ability_card, selectionState: number) {
                         <div className={`h-[3pt]`}/>
                         <h2 className={`w-[285.5pt] text-[15pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-none indent-[2.4pt]`}><AutoTextSize maxFontSizePx={20}>{card.source} {card.type}</AutoTextSize></h2>
                         <h1 className={`text-[24pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-[19.5pt]`}><AutoTextSize maxFontSizePx={32}>{card.title}</AutoTextSize></h1>
-                        <div className={`flex w-[328.5pt] gap-x-[2.85pt]`}>
+                        <div className={`flex w-[325.5pt] gap-x-[2.85pt]`}>
                             {card.keywords.map((k) => (
-                                <div className={`flex h-[15.75pt] w-[54.75pt] pt-[2pt] bg-keyword-backing justify-center items-center`}>
-                                    <h3 className={`text-[13.5pt] font-display small-caps text-cardback text-center`}>{k}</h3>
+                                <div className={`flex h-[15.75pt] w-[54.75pt] pt-[2pt] pr-[2pt] pl-[2pt] bg-keyword-backing items-center`}>
+                                    <h3 className={`text-[13.5pt] w-full font-display small-caps text-cardback text-center flex justify-center`}><AutoTextSize maxFontSizePx={18}>{k}</AutoTextSize></h3>
                                 </div>
                             ))}
                         </div>
