@@ -115,7 +115,7 @@ function targetBlock(card: ability_card) {
                 <div
                     className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
                 </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full  pt-[5pt]`}>
                     <div
                         className={`text-[24pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>1
                     </div>
@@ -135,7 +135,7 @@ function targetBlock(card: ability_card) {
                 <div
                     className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
                 </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[2pt]`}>
                     <div
                         className={`text-[24pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>1
                     </div>
@@ -151,7 +151,7 @@ function targetBlock(card: ability_card) {
                 <div
                     className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
                 </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[3pt]`}>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[7pt]`}>
                     <div
                         className={`text-[16.5pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center`}>Self
                     </div>
@@ -203,7 +203,7 @@ function distanceBlock(card: ability_card, block: distance_block) {
 
 function cardContainer(card: ability_card, selectionState: number) {
     return (
-        <div className={`cardContainer flex h-[270pt] w-[378pt] rounded-[13.5pt] border border-[3pt] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[1.2]' : selectionState < 0 ? 'scale-[0.8]' : 'scale-[1]'}`}>
+        <div className={`cardContainer flex h-[270pt] w-[378pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[1.2]' : selectionState < 0 ? 'scale-[0.8]' : 'scale-[1]'}`}>
             <div className={`w-[331.5pt]`}>
                 <div className={`flex`}>
                     <div className={`w-[3pt]`}></div>
@@ -213,18 +213,19 @@ function cardContainer(card: ability_card, selectionState: number) {
                         <h1 className={`text-[24pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-[19.5pt]`}><AutoTextSize maxFontSizePx={32}>{card.title}</AutoTextSize></h1>
                         <div className={`flex w-[328.5pt] gap-x-[2.85pt]`}>
                             {card.keywords.map((k) => (
-                                <div className={`flex h-[15.75pt] w-[54.75pt] bg-keyword-backing justify-center items-center`}>
+                                <div className={`flex h-[15.75pt] w-[54.75pt] pt-[2pt] bg-keyword-backing justify-center items-center`}>
                                     <h3 className={`text-[13.5pt] font-display small-caps text-cardback text-center`}>{k}</h3>
                                 </div>
                             ))}
                         </div>
+                        <div className={`h-[1pt]`}></div>
                         <div className={`h-[30pt]`}>
-                            <p className={`text-[13.5pt] h-full font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize mode="box" maxFontSizePx={27}>{card.flavour}</AutoTextSize></p>
+                            <p className={`text-[13.5pt] h-full font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize mode="box" maxFontSizePx={26}>{card.flavour}</AutoTextSize></p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className={`flex flex-col h-[183pt] ${hasPowerRollStatement(card) ? 'justify-center' : ''} gap-y-[3pt]`}>
+                    <div className={`flex flex-col h-[182pt] ${hasPowerRollStatement(card) ? 'justify-center' : ''} gap-y-[3pt]`}>
                         {card.statements.map(s => {
                             if ((s as key_value_statement).key !== undefined) {
                                 return blockStatement(card, s as key_value_statement);

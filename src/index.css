@@ -14,4 +14,11 @@
         font-weight: bold;
         src: url('./fonts/constanb.ttf');
     }
+
+    @font-face {
+        font-family: 'Constantia';
+        font-weight: normal;
+        font-style: italic;
+        src: url('./fonts/constani.ttf');
+    }
 }
