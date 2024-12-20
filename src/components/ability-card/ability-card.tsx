@@ -72,14 +72,14 @@ function blockStatement(card: ability_card, kv: key_value_statement) {
         return (
             <div className={`flex-auto flex ${actionBg20ColorStyle[card.type]} py-[4.5pt]`}>
                 <div className={`w-[3pt] flex-none`}></div>
-                <p className={`text-[13.5pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><b>Trigger:</b> {kv.value}</p>
+                <p className={`text-[13.5pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize maxFontSizePx={27} mode="box"><b>Trigger:</b> {kv.value}</AutoTextSize></p>
             </div>
         )
     }
     return (
         <div className={`flex-auto flex`}>
             <div className={`w-[3pt] flex-none`}></div>
-            <p className={`text-[13.5pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><b>{kv.key}:</b> {kv.value}</p>
+            <p className={`text-[13.5pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><AutoTextSize maxFontSizePx={27} mode="box"><b>{kv.key}:</b> {kv.value}</AutoTextSize></p>
         </div>
     )
 }
@@ -164,6 +164,19 @@ function targetBlock(card: ability_card) {
                 </div>
             </div>
         )
+    } else if (card.target === 'Special') {
+        return (
+            <div className={`relative  ${actionBg40ColorStyle[card.type]} w-[42pt] h-[42pt]`}>
+                <div
+                    className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
+                </div>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[3pt]`}>
+                    <div
+                        className={`text-[10.5pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center`}>Special
+                    </div>
+                </div>
+            </div>
+        )
     } else {
         return (
             <div className={`relative  ${actionBg40ColorStyle[card.type]} w-[42pt] h-[42pt]`}>
@@ -190,6 +203,20 @@ function distanceBlock(card: ability_card, block: distance_block) {
                 </div>
             </div>
         )
+    } else if (block.distanceValue === 'Line of Effect') {
+        return (
+            <div className={`relative  ${actionBg50ColorStyle[card.type]} w-[42pt] h-[42pt]`}>
+                <div className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>{block.distanceHeader}</div>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
+                    <div
+                        className={`text-[9pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>Line of
+                    </div>
+                    <div
+                        className={`text-[12pt] font-body font-bold text-cardback leading-[8pt] small-caps text-center`}>Effect
+                    </div>
+                </div>
+            </div>
+        )
     }
     return (
         <div className={`relative  ${actionBg50ColorStyle[card.type]} w-[42pt] h-[42pt]`}>
@@ -206,11 +233,11 @@ function cardContainer(card: ability_card, selectionState: number) {
         <div className={`cardContainer flex h-[270pt] w-[378pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[1.2]' : selectionState < 0 ? 'scale-[0.8]' : 'scale-[1]'}`}>
             <div className={`w-[331.5pt]`}>
                 <div className={`flex`}>
-                    <div className={`w-[3pt]`}></div>
+                    <div className={`flex-none w-[3pt]`}></div>
                     <div className={`w-[325.5pt]`}>
                         <div className={`h-[3pt]`}/>
-                        <h2 className={`w-[285.5pt] text-[15pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-none indent-[2.4pt]`}><AutoTextSize maxFontSizePx={20}>{card.source} {card.type}</AutoTextSize></h2>
-                        <h1 className={`text-[24pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-[19.5pt]`}><AutoTextSize maxFontSizePx={32}>{card.title}</AutoTextSize></h1>
+                        <h2 className={`${card.hasCost ? 'w-[285.5pt]' : ''} text-[15pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-none indent-[2.4pt]`}><AutoTextSize maxFontSizePx={20}>{card.source} {card.type}</AutoTextSize></h2>
+                        <h1 className={`${card.hasCost ? 'w-[285.5pt]' : ''} text-[24pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-[19.5pt]`}><AutoTextSize maxFontSizePx={32}>{card.title}</AutoTextSize></h1>
                         <div className={`flex w-[325.5pt] gap-x-[2.85pt]`}>
                             {card.keywords.map((k) => (
                                 <div className={`flex h-[15.75pt] w-[54.75pt] pt-[2pt] pr-[2pt] pl-[2pt] bg-keyword-backing items-center`}>
@@ -225,7 +252,7 @@ function cardContainer(card: ability_card, selectionState: number) {
                     </div>
                 </div>
                 <div>
-                    <div className={`flex flex-col h-[182pt] ${hasPowerRollStatement(card) ? 'justify-center' : ''} gap-y-[3pt]`}>
+                    <div className={`flex flex-col h-[177pt] ${hasPowerRollStatement(card) ? 'justify-center' : ''} gap-y-[3pt]`}>
                         {card.statements.map(s => {
                             if ((s as key_value_statement).key !== undefined) {
                                 return blockStatement(card, s as key_value_statement);

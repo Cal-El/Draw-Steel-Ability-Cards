@@ -79,10 +79,10 @@ export type ability_card = {
     keywords: string[];
     statements: body_statement[];
     hasCost: boolean;
-    cost: {
+    cost?: {
         costName: string;
         costValue: number;
-    } | null;
+    };
     target: string;
     distance: distance_block[];
 }

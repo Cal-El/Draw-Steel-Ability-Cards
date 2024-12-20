@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['Constantia'],
-        'body': ['Constantia'],
+        'display': ['Consta'],
+        'body': ['Consta'],
       }
     },
     colors: {

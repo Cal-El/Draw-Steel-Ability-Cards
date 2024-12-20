@@ -4,21 +4,27 @@
 
 @layer base {
     @font-face {
-        font-family: 'Constantia';
+        font-family: 'Consta';
         font-weight: normal;
-        src: url('./fonts/Constantia.ttf');
+        src: url('./fonts/constan.ttf');
     }
 
     @font-face {
-        font-family: 'Constantia';
+        font-family: 'Consta';
         font-weight: bold;
         src: url('./fonts/constanb.ttf');
     }
 
     @font-face {
-        font-family: 'Constantia';
+        font-family: 'Consta';
         font-weight: normal;
         font-style: italic;
         src: url('./fonts/constani.ttf');
+    }
+    @font-face {
+        font-family: 'Consta';
+        font-weight: bold;
+        font-style: italic;
+        src: url('./fonts/constanz.ttf');
     }
 }
