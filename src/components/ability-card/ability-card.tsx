@@ -340,7 +340,7 @@ export default function AbilityCard({card, cardNum, selectedCard, setSelectedCar
     return (
         <div className={`flex flex-wrap justify-center items-center ${selectedCardState > 0 ? 'w-screen' : ''}`} key={cardNum}>
             <div className={`flex flex-col`}>
-                <div role="button" onClick={() => {
+                <div id="abilitycard" role="button" onClick={() => {
                     if (selectedCardState > 0) {
                         setSelectedCard(-1)
                     } else {

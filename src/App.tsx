@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import AbilityCard from "./components/ability-card/ability-card.tsx";
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./components/ability-card/ability-card-types.ts";
+import 'html-to-image'
+import { toPng } from 'html-to-image';
 
 function App() {
   const dummyCard: ability_card = {
@@ -71,6 +73,17 @@ function App() {
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
 
+  function saveImage(){
+    var card = document.getElementById("abilitycard")
+    if (!card) return
+    toPng(card).then(function (dataUrl) {
+        let alink = document.createElement("a");
+        alink.href = dataUrl;
+        alink.download = "card.png";
+        alink.click();
+    })
+  }
+
   return (
     <div className={"flex flex-col h-screen"}>
         <div className={`flex w-screen justify-end p-[10pt]`}>
@@ -80,6 +93,9 @@ function App() {
             }} className={`flex h-[60pt] w-[120pt] rounded-[13.5pt] border border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center ${actionTextColorStyle[`Action`]}`}>New Card</div>
             </div>
+            <button onClick={saveImage}>
+                Do the image thing
+            </button>
         </div>
         <div className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
             {cardsList.map((value, index) => <AbilityCard card={value} cardNum={index + 1} selectedCard={selectedCard} setSelectedCard={setSelectedCard}  />)}
