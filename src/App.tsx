@@ -56,7 +56,7 @@ function App() {
       hasCost: true,
       cost: {
           costName: 'HR',
-          costValue: 1,
+          costValue: '1',
       },
       target: '1 Creature or Object',
       distance: [
@@ -72,6 +72,19 @@ function App() {
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
 
+  function deleteCard(index: number) {
+      const tempCardList = [...cardsList]
+      tempCardList.splice(index, 1)
+      setCardsList(tempCardList);
+      setSelectedCard(-1)
+  }
+
+  function updateCard(index: number, card: ability_card) {
+      const tempCardList = [...cardsList]
+      tempCardList.splice(index, 1, card)
+      setCardsList(tempCardList);
+  }
+
   return (
     <div className={"flex flex-col h-screen"}>
         <div className={`flex w-screen h-[60pt] p-[10pt]`}>
@@ -82,7 +95,7 @@ function App() {
             </div>
             <div className={`flex basis-1/2 justify-end`}>
                 <div role="button" onClick={() => {
-                    setSelectedCard(cardsList.length + 1)
+                    setSelectedCard(-1)
                     setCardsList([...cardsList, dummyCard])
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>New Custom Card</div>
@@ -90,7 +103,7 @@ function App() {
             </div>
         </div>
         <div className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
-            {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index + 1} selectedCard={selectedCard} setSelectedCard={setSelectedCard}  />)}
+            {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
         </div>
         <div className={`flex h-[18pt] justify-center`}>
             <div className={`h-full`}>

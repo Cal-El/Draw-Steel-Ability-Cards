@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import {parse as yamlParse, stringify as yamlStringify} from "yaml";
 import {ability_card, power_roll_statement} from "../../../types/ability-card-types.ts";
+import {toPng} from "html-to-image";
+import {saveYamlExport} from "../../../utils/download-utils.ts";
 
-function tryParseCardInputJson(s: string, setCardState: React.Dispatch<React.SetStateAction<ability_card>>, setInputBoxValue: React.Dispatch<React.SetStateAction<string>>, setErrorMsg: React.Dispatch<React.SetStateAction<string>>) {
+function tryParseCardInputJson(s: string, cardNum: number, setInputBoxValue: React.Dispatch<React.SetStateAction<string>>, setErrorMsg: React.Dispatch<React.SetStateAction<string>>, updateCard: (index: number, card: ability_card) => void) {
     setInputBoxValue(s);
     let abilityCard: ability_card
     try {
@@ -21,7 +23,7 @@ function tryParseCardInputJson(s: string, setCardState: React.Dispatch<React.Set
         console.log(result);
         return false;
     }
-    setCardState(abilityCard);
+    updateCard(cardNum, abilityCard)
     return true;
 }
 
@@ -80,20 +82,25 @@ function checkAbilityCard(abilityCard: ability_card) : string {
     return ''
 }
 
-export function TextEditor({card, setCardState}: {card: ability_card, setCardState: React.Dispatch<React.SetStateAction<ability_card>>}) {
+export function TextEditor({card, cardNum, updateCard}: {card: ability_card, cardNum: number, updateCard: (index: number, card: ability_card) => void}) {
     const [isValidInput, setIsValidInput] = useState(false);
     const [inputBoxValue, setInputBoxValue] = useState(yamlStringify(card, null, 2));
     const [errorMsg, setErrorMsg] = useState('');
 
     return (
         <>
-            <textarea id="message" rows={30}
-                  value={inputBoxValue}
-                  onInput={(e) => setIsValidInput(tryParseCardInputJson((e.target as HTMLTextAreaElement).value, setCardState, setInputBoxValue, setErrorMsg))}
-                  className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg font-mono ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
-                  placeholder="Write your thoughts here...">
-            </textarea>
-            <p className={`text-triggered-action-card`}>{errorMsg}</p>
+            <div className={`flex-grow w-full`}>
+                <textarea id="message"
+                      value={inputBoxValue}
+                      onInput={(e) => setIsValidInput(tryParseCardInputJson((e.target as HTMLTextAreaElement).value, cardNum, setInputBoxValue, setErrorMsg, updateCard))}
+                      className={`block p-2.5 w-full h-full text-sm text-gray-900 bg-gray-50 rounded-lg font-mono ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
+                      placeholder="Write your thoughts here...">
+                </textarea>
+            </div>
+            <div className={'flex h-[40pt] bg-zinc-700 border-[3pt] border-zinc-600 justify-center items-center'}>
+                {errorMsg && <p className={`text-red-300`}>{errorMsg}</p>}
+                {!errorMsg && <div role={"button"} onClick={() => saveYamlExport(card, inputBoxValue)} className={`h-full w-full text-blue-300 flex justify-center items-center`}>Download</div>}
+            </div>
         </>
     );
 }

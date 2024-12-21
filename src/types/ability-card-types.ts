@@ -92,7 +92,7 @@ export type ability_card = {
     hasCost: boolean;
     cost?: {
         costName: string;
-        costValue: number;
+        costValue: string;
     };
     target: string;
     distance: distance_block[];
