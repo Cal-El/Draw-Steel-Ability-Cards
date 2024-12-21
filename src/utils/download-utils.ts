@@ -1,5 +1,5 @@
 import {ability_card} from "../types/ability-card-types.ts";
-import {toBlob, toPng} from "html-to-image";
+import {toPng} from "html-to-image";
 
 function filizeString(s: string) {
     return s.replaceAll(' ', '-').toLowerCase();

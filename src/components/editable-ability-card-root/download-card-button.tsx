@@ -1,5 +1,4 @@
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "../../types/ability-card-types.ts";
-import {toPng} from "html-to-image";
 import {saveImage} from "../../utils/download-utils.ts";
 
 export function DownloadCardButton({card, id}: {card: ability_card, id: string}) {

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {parse as yamlParse, stringify as yamlStringify} from "yaml";
 import {ability_card, power_roll_statement} from "../../../types/ability-card-types.ts";
-import {toPng} from "html-to-image";
 import {saveYamlExport} from "../../../utils/download-utils.ts";
 
 function tryParseCardInputJson(s: string, cardNum: number, setInputBoxValue: React.Dispatch<React.SetStateAction<string>>, setErrorMsg: React.Dispatch<React.SetStateAction<string>>, updateCard: (index: number, card: ability_card) => void) {
