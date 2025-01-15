@@ -7,7 +7,7 @@ import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 function App() {
   const dummyCard: ability_card = {
       type: 'Action',
-      source: 'Custom Heroic',
+      topMatter: 'Custom Heroic Action',
       title: 'My Cool Ability',
       keywords: [
           'Attack',
@@ -21,7 +21,6 @@ function App() {
               characteristic: 'Any Characteristic',
               t1: {
                   hasDamage: true,
-                  damageType: 'Damage',
                   damageValue: '2',
                   hasGeneralEffect: true,
                   generalEffect: 'Damage',
@@ -29,7 +28,6 @@ function App() {
               },
               t2: {
                   hasDamage: true,
-                  damageType: 'Damage',
                   damageValue: '5',
                   hasGeneralEffect: true,
                   generalEffect: 'Damage',
@@ -37,7 +35,6 @@ function App() {
               },
               t3: {
                   hasDamage: true,
-                  damageType: 'Damage',
                   damageValue: '6',
                   hasGeneralEffect: true,
                   generalEffect: 'Damage',

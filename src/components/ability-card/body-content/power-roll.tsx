@@ -12,7 +12,7 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
             <div className={`[writing-mode:vertical-lr] rotate-180 text-[6pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{rowNum === 1 ? '11 or less' : rowNum === 2 ? '12-16' : '17+'}</div>
         </div>
         {powerRollTier.hasDamage ?
-            <div className={`relative  ${rowNum % 2 === 1 ? actionBg50ColorStyle[card.type] : actionBg40ColorStyle[card.type]} w-[32.4pt] h-[32.4pt]`}>
+            <div className={`relative  ${rowNum % 2 === 1 ? actionBg50ColorStyle[card.type] : actionBg40ColorStyle[card.type]} ${powerRollTier.damageValue !== undefined && powerRollTier.damageValue?.length > 2 ? `w-[42.4pt]` : `w-[32.4pt]`} h-[32.4pt]`}>
                 <div className={`absolute top-0 left-0 text-[6.75pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Damage</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[18pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRollTier.damageValue}</div>
@@ -29,7 +29,7 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
             </div> : <></>
         }
         {powerRollTier.hasPotency ?
-            <div className={`relative  ${rowNum % 2 === 1 ? actionBg40ColorStyle[card.type] : actionBg50ColorStyle[card.type]} w-[32.4pt] h-[32.4pt]`}>
+            <div className={`relative  ${rowNum % 2 === 1 ? actionBg40ColorStyle[card.type] : actionBg50ColorStyle[card.type]} w-[42.4pt] h-[32.4pt]`}>
                 <div className={`absolute top-0 left-0 text-[6.75pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Potency</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[18pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRollTier.potencyValue}</div>

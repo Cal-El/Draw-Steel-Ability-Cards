@@ -33,8 +33,8 @@ function checkAbilityCard(abilityCard: ability_card) : string {
     if (abilityCard.type !== 'Action' && abilityCard.type !== 'Maneuver' && abilityCard.type !== 'Triggered Action' && abilityCard.type !== 'Free Triggered Action' && abilityCard.type !== 'Free Maneuver' && abilityCard.type !== 'Routine' && abilityCard.type !== 'Passive' && abilityCard.type !== 'Free Strike Action') {
         return 'invalid type entry [type: string; Action|Maneuver|Triggered Action|Free Triggered Action|Free Maneuver|Routine|Passive|Free Strike Action]'
     }
-    if (abilityCard.source === undefined || abilityCard.source === null) {
-        return 'missing [source: string; such as "Core" or "Conduit Signature" or "Censor Heroic"]'
+    if (abilityCard.topMatter === undefined || abilityCard.topMatter === null) {
+        return 'missing [topMatter: string; such as "Core Ability" or "Conduit Signature Action" or "Censor Heroic Maneuver"]'
     }
     if (abilityCard.title === undefined || abilityCard.title === null) {
         return 'missing [title: string; such as "Healing Grace"]'

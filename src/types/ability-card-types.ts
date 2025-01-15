@@ -9,6 +9,17 @@ export enum abilityType {
     freeStrikeAction = 'Free Strike Action',
 }
 
+export const abilityTypeValues : abilityType[] = [
+    abilityType.action,
+    abilityType.maneuver,
+    abilityType.triggeredAction,
+    abilityType.freeTriggeredAction,
+    abilityType.freeManeuver,
+    abilityType.routine,
+    abilityType.passive,
+    abilityType.freeStrikeAction,
+]
+
 export const cardbackColorStyle: Record<string,string> = {
     "Action": 'bg-cardback border-action-card',
     "Maneuver": 'bg-cardback border-maneuver-card',
@@ -84,7 +95,7 @@ export const actionTextColorStyle: Record<string,string> = {
 
 export type ability_card = {
     type: string;
-    source: string;
+    topMatter: string;
     title: string;
     flavour: string;
     keywords: string[];
@@ -119,7 +130,6 @@ export type body_statement = power_roll_statement | key_value_statement | spacer
 export type power_roll_tier = {
     hasDamage: boolean;
     damageValue?: string;
-    damageType?: string;
     hasGeneralEffect: boolean;
     generalEffect?: string;
     hasPotency: boolean;
@@ -131,3 +141,11 @@ export type distance_block = {
     distanceHeader: string;
     distanceValue: string;
 }
+
+export const supportedAbilityTargets : string[] = [
+    '1 Creature or Object',
+    '1 Creature',
+    'Self and All Creatures',
+    'Special',
+    'Self',
+]
