@@ -16,7 +16,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <select
                     value={card.type}
                     onInput={(e) => {
-                        updateCard(cardNum, {...card, type: (e.target as HTMLTextAreaElement).value})
+                        updateCard(cardNum, {...card, type: (e.target as HTMLSelectElement).value})
                     }}
                     className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}>
                     {abilityTypeValues.map(t => (<option>{t}</option>))}
@@ -27,7 +27,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <input type='text'
                           value={card.topMatter}
                           onInput={(e) => {
-                              updateCard(cardNum, {...card, topMatter: (e.target as HTMLTextAreaElement).value})
+                              updateCard(cardNum, {...card, topMatter: (e.target as HTMLInputElement).value})
                           }}
                           className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
                           placeholder="Write your thoughts here...">
@@ -37,7 +37,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <div className={'font-body w-[80pt] text-right'}>Title:</div>
                 <input type='text'
                           value={card.title}
-                          onInput={(e) => updateCard(cardNum, {...card, title: (e.target as HTMLTextAreaElement).value})}
+                          onInput={(e) => updateCard(cardNum, {...card, title: (e.target as HTMLInputElement).value})}
                           className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
                           placeholder="Write your thoughts here...">
                 </input>
@@ -55,7 +55,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <div className={'font-body w-[80pt] text-right'}>Keywords:</div>
                 <input type='text'
                           value={card.keywords.join(', ')}
-                          onInput={(e) => updateCard(cardNum, {...card, keywords: (e.target as HTMLTextAreaElement).value.split(', ').map(s => s.trim())})}
+                          onInput={(e) => updateCard(cardNum, {...card, keywords: (e.target as HTMLInputElement).value.split(', ').map(s => s.trim())})}
                           className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
                           placeholder="Attack, Melee, Weapon">
                 </input>
@@ -74,7 +74,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                     <input type='text'
                               value={card.cost?.costValue}
                               onInput={(e) => {
-                                  updateCard(cardNum, {...card, cost: {costName: card.cost?.costName||'', costValue: (e.target as HTMLTextAreaElement).value}})
+                                  updateCard(cardNum, {...card, cost: {costName: card.cost?.costName||'', costValue: (e.target as HTMLInputElement).value}})
                               }}
                               className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
                               placeholder="11">
@@ -82,7 +82,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                     <div className={'font-body w-[80pt] text-right'}>Cost Name:</div>
                     <input type='text'
                               value={card.cost?.costName}
-                              onInput={(e) => updateCard(cardNum, {...card, cost: {costName: (e.target as HTMLTextAreaElement).value, costValue: card.cost?.costValue||''}})}
+                              onInput={(e) => updateCard(cardNum, {...card, cost: {costName: (e.target as HTMLInputElement).value, costValue: card.cost?.costValue||''}})}
                               className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
                               placeholder="Drama">
                     </input>
@@ -92,7 +92,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <div className={'font-body w-[80pt] text-right'}>Target:</div>
                 <select value={card.target}
                           onInput={(e) => {
-                              updateCard(cardNum, {...card, target: (e.target as HTMLTextAreaElement).value})
+                              updateCard(cardNum, {...card, target: (e.target as HTMLSelectElement).value})
                           }}
                           className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}>
                     {supportedAbilityTargets.map(t => (<option>{t}</option>))}
@@ -107,7 +107,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                         <select value={d.distanceHeader}
                                 onInput={(e) => {
                                     var distances = card.distance
-                                    distances[i].distanceHeader = (e.target as HTMLTextAreaElement).value
+                                    distances[i].distanceHeader = (e.target as HTMLSelectElement).value
                                     updateCard(cardNum, {...card, distance: distances})
                                 }}
                                 className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}>
@@ -124,7 +124,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                value={d.distanceValue}
                                onInput={(e) => {
                                    var distances = card.distance
-                                   distances[i].distanceValue = (e.target as HTMLTextAreaElement).value
+                                   distances[i].distanceValue = (e.target as HTMLInputElement).value
                                    updateCard(cardNum, {...card, distance: distances})
                                }}
                                className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}>
@@ -199,7 +199,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                            value={(b as power_roll_statement).characteristic}
                                            onInput={(e) => {
                                                const bs = [...card.statements];
-                                               (bs[i] as power_roll_statement).characteristic = (e.target as HTMLTextAreaElement).value;
+                                               (bs[i] as power_roll_statement).characteristic = (e.target as HTMLInputElement).value;
                                                updateCard(cardNum, {...card, statements: bs})
                                            }}
                                            className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
@@ -230,7 +230,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                                 value={(card.statements[i] as power_roll_statement).t1.damageValue}
                                                 onInput={(e) => {
                                                     const bs = [...card.statements];
-                                                    (bs[i] as power_roll_statement).t1.damageValue = (e.target as HTMLTextAreaElement).value;
+                                                    (bs[i] as power_roll_statement).t1.damageValue = (e.target as HTMLInputElement).value;
                                                     updateCard(cardNum, {...card, statements: bs})
                                                 }}
                                                 placeholder='2+m'
@@ -285,7 +285,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                                 value={(card.statements[i] as power_roll_statement).t1.potencyValue}
                                                 onInput={(e) => {
                                                     const bs = [...card.statements];
-                                                    (bs[i] as power_roll_statement).t1.potencyValue = (e.target as HTMLTextAreaElement).value;
+                                                    (bs[i] as power_roll_statement).t1.potencyValue = (e.target as HTMLInputElement).value;
                                                     updateCard(cardNum, {...card, statements: bs})
                                                 }}
                                                 placeholder='m<1'
@@ -334,7 +334,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                                 value={(card.statements[i] as power_roll_statement).t2.damageValue}
                                                 onInput={(e) => {
                                                     const bs = [...card.statements];
-                                                    (bs[i] as power_roll_statement).t2.damageValue = (e.target as HTMLTextAreaElement).value;
+                                                    (bs[i] as power_roll_statement).t2.damageValue = (e.target as HTMLInputElement).value;
                                                     updateCard(cardNum, {...card, statements: bs})
                                                 }}
                                                 placeholder='2+m'
@@ -389,7 +389,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                                 value={(card.statements[i] as power_roll_statement).t2.potencyValue}
                                                 onInput={(e) => {
                                                     const bs = [...card.statements];
-                                                    (bs[i] as power_roll_statement).t2.potencyValue = (e.target as HTMLTextAreaElement).value;
+                                                    (bs[i] as power_roll_statement).t2.potencyValue = (e.target as HTMLInputElement).value;
                                                     updateCard(cardNum, {...card, statements: bs})
                                                 }}
                                                 placeholder='m<1'
@@ -438,7 +438,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                                 value={(card.statements[i] as power_roll_statement).t3.damageValue}
                                                 onInput={(e) => {
                                                     const bs = [...card.statements];
-                                                    (bs[i] as power_roll_statement).t3.damageValue = (e.target as HTMLTextAreaElement).value;
+                                                    (bs[i] as power_roll_statement).t3.damageValue = (e.target as HTMLInputElement).value;
                                                     updateCard(cardNum, {...card, statements: bs})
                                                 }}
                                                 placeholder='2+m'
@@ -493,7 +493,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                                 value={(card.statements[i] as power_roll_statement).t3.potencyValue}
                                                 onInput={(e) => {
                                                     const bs = [...card.statements];
-                                                    (bs[i] as power_roll_statement).t3.potencyValue = (e.target as HTMLTextAreaElement).value;
+                                                    (bs[i] as power_roll_statement).t3.potencyValue = (e.target as HTMLInputElement).value;
                                                     updateCard(cardNum, {...card, statements: bs})
                                                 }}
                                                 placeholder='m<1'
@@ -567,7 +567,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                            value={(b as key_value_statement).key}
                                            onInput={(e) => {
                                                const bs = [...card.statements];
-                                               (bs[i] as key_value_statement).key = (e.target as HTMLTextAreaElement).value;
+                                               (bs[i] as key_value_statement).key = (e.target as HTMLInputElement).value;
                                                updateCard(cardNum, {...card, statements: bs})
                                            }}
                                            className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
@@ -641,7 +641,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <select
                     value={selectedStatement}
                     onInput={(e) => {
-                        setSelectedStatement((e.target as HTMLTextAreaElement).value);
+                        setSelectedStatement((e.target as HTMLSelectElement).value);
                     }}
                     className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}>
                     <option>Power Roll</option>
