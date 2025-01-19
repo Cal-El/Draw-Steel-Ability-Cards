@@ -1,86 +1,55 @@
-import {ability_card, actionTextColorStyle} from "../../../types/ability-card-types.ts";
+import {ability_card} from "../../../types/ability-card-types.ts";
+import TargetBasic from "./target-block/target-basic.tsx";
+import TargetCreaturesOrObjects from "./target-block/target-creatures-or-objects.tsx";
+import TargetCreatures from "./target-block/target-creatures.tsx";
+import TargetSelfAndCreatures from "./target-block/target-self-and-creatures.tsx";
 
 export function TargetBlock({card, bgColorStyle}: {card: ability_card, bgColorStyle: Record<string, string>}) {
     if (card.target === '1 Creature or Object') {
-        return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[42pt] h-[42pt]`}>
-                <div
-                    className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
-                </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full  pt-[5pt]`}>
-                    <div
-                        className={`text-[24pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>1
-                    </div>
-                    <div
-                        className={`text-[7.5pt] font-body font-bold text-cardback leading-[5pt] small-caps text-center`}>Creature
-                    </div>
-                    <div
-                        className={`text-[7.5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>or
-                        Object
-                    </div>
-                </div>
-            </div>
-        )
+        return <TargetCreaturesOrObjects card={card} bgColorStyle={bgColorStyle} numCreatures="1"/>
+    } else if (card.target === '2 Creatures or Objects') {
+        return <TargetCreaturesOrObjects card={card} bgColorStyle={bgColorStyle} numCreatures="2"/>
+    } else if (card.target === '3 Creatures or Objects') {
+        return <TargetCreaturesOrObjects card={card} bgColorStyle={bgColorStyle} numCreatures="3"/>
     } else if (card.target === '1 Creature') {
-        return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[42pt] h-[42pt]`}>
-                <div
-                    className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
-                </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[2pt]`}>
-                    <div
-                        className={`text-[24pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>1
-                    </div>
-                    <div
-                        className={`text-[7.5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>Creature
-                    </div>
-                </div>
-            </div>
-        )
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"1"} type="Creatures"/>
+    } else if (card.target === '2 Creatures') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"2"} type="Creatures"/>
+    } else if (card.target === '3 Creatures') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"3"} type="Creatures"/>
+    } else if (card.target === 'All Creatures') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"All"} type="Creatures"/>
+    } else if (card.target === '1 Ally') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"1"} type="Allies"/>
+    } else if (card.target === '2 Allies') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"2"} type="Allies"/>
+    } else if (card.target === '3 Allies') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"3"} type="Allies"/>
+    } else if (card.target === 'All Allies') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures={"All"} type="Allies"/>
+    } else if (card.target === '1 Enemy') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="1" type="Enemies"/>
+    } else if (card.target === '2 Enemies') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="2" type="Enemies"/>
+    } else if (card.target === '3 Enemies') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="3" type="Enemies"/>
+    } else if (card.target === 'All Enemies') {
+        return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="All" type="Enemies"/>
+    } else if (card.target === 'Self and 1 Ally') {
+        return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="1" creatureType="Allies" andOr="and"/>
+    } else if (card.target === 'Self or 1 Ally') {
+        return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="1" creatureType="Allies" andOr="or"/>
+    } else if (card.target === 'Self or 1 Creature') {
+        return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="1" creatureType="Creatures" andOr="or"/>
+    } else if (card.target === 'Self and 2 Allies') {
+        return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="2" creatureType="Allies" andOr="and"/>
+    } else if (card.target === 'Self and All Allies') {
+        return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="All" creatureType="Allies" andOr="and"/>
     } else if (card.target === 'Self and All Creatures') {
-        return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[42pt] h-[42pt]`}>
-                <div
-                    className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
-                </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[7pt]`}>
-                    <div
-                        className={`text-[16.5pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center`}>Self
-                    </div>
-                    <div
-                        className={`text-[7.5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>and All
-                    </div>
-                    <div
-                        className={`text-[7.5pt] font-body font-bold text-cardback leading-none small-caps text-center`}>Creatures
-                    </div>
-                </div>
-            </div>
-        )
+        return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="All" creatureType="Creatures" andOr="and"/>
     } else if (card.target === 'Special') {
-        return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[42pt] h-[42pt]`}>
-                <div
-                    className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
-                </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[3pt]`}>
-                    <div
-                        className={`text-[10.5pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center`}>Special
-                    </div>
-                </div>
-            </div>
-        )
+        return <TargetBasic card={card} bgColorStyle={bgColorStyle} text="Special" fontSize={10.5} leading={12}/>
     } else {
-        return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[42pt] h-[42pt]`}>
-                <div
-                    className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>Target
-                </div>
-                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
-                    <div
-                        className={`text-[16.5pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>{card.target}
-                    </div>
-                </div>
-            </div>
-        )
+        return <TargetBasic card={card} bgColorStyle={bgColorStyle} text={card.target} fontSize={16.5} leading={18}/>
     }
 }
