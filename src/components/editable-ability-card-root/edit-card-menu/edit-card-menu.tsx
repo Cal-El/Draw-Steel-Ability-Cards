@@ -19,6 +19,9 @@ export function EditCardMenu({card, cardNum, updateCard}: {card: ability_card, c
                 }} className={`basis-1/2 flex h-full rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[useTextEdit?'Maneuver':`Free Strike Action`]} items-center`}>
                     <div className={`w-full text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[useTextEdit?'Maneuver':`Free Strike Action`]}`}>Text Editor</div>
                 </div>
+                <a href="https://commonmark.org/help/" target="_blank" className={`basis-1/6 flex h-full rounded-[13.5pt] border-[3pt] bg-cardback border-routine-card items-center`}>
+                    <div className={`w-full text-[10pt] px-2 text-center font-bold font-body small-caps leading-none text-routine-card`}>MD Guide</div>
+                </a>
             </div>
             {useTextEdit && <TextEditor card={card} cardNum={cardNum} updateCard={updateCard} />}
             {!useTextEdit && <UIEditor card={card} cardNum={cardNum} updateCard={updateCard} />}
