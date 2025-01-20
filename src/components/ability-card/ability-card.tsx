@@ -28,7 +28,7 @@ export default function AbilityCard({id, card, cardNum, selectedCard, setSelecte
             } else {
                 setSelectedCard(cardNum)
             }
-        }} className={`flex-none flex justify-center items-center ${selectedCardState > 0 ? 'h-[405pt] w-[567pt]' : selectedCardState < 0 ? 'h-[216pt] w-[302.4pt]' : 'h-[270pt] w-[378pt]'}`}>
+        }} className={`flex-none flex justify-center items-center ${selectedCardState > 0 ? 'h-[405pt] w-[567pt]' : selectedCardState < 0 ? 'h-[216pt] w-[302.4pt] hover:brightness-90' : 'h-[270pt] w-[378pt] hover:brightness-90'}`}>
             {cardContainer(card, selectedCardState)}
         </div>
     );
