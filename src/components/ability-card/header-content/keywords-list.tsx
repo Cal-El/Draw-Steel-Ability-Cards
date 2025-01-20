@@ -2,6 +2,7 @@ import {ability_card} from "../../../types/ability-card-types.ts";
 import {AutoTextSize} from "auto-text-size";
 
 export function KeywordsList({card}: {card: ability_card}) {
+    if (!card.keywords.length) return <></>
     return (
         <div className={`flex w-full gap-x-[2.85pt]`}>
             {card.keywords.map((k) => (

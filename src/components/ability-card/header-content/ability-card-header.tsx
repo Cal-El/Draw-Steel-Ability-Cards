@@ -12,9 +12,11 @@ export function AbilityCardHeader({card}: { card: ability_card }) {
                 <h1 className={`${card.hasCost ? 'w-[285.5pt]' : ''} text-[24pt] font-display font-bold small-caps ${actionTextColorStyle[card.type]} leading-[19.5pt]`}><AutoTextSize maxFontSizePx={32}>{card.title}</AutoTextSize></h1>
                 <KeywordsList card={card}/>
                 <div className={`h-[1pt]`}></div>
-                <div className={`h-[30pt]`}>
-                    <p className={`text-[13.5pt] h-full font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize mode="box" maxFontSizePx={26}>{card.flavour}</AutoTextSize></p>
-                </div>
+                {card.flavour &&
+                    <div className={`h-[30pt]`}>
+                        <p className={`text-[13.5pt] h-full font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize mode="box" maxFontSizePx={26}>{card.flavour}</AutoTextSize></p>
+                    </div>
+                }
             </div>
         </div>
     );

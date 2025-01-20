@@ -55,7 +55,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <div className={'font-body w-[80pt] text-right'}>Keywords:</div>
                 <input type='text'
                           value={card.keywords.join(', ')}
-                          onInput={(e) => updateCard(cardNum, {...card, keywords: (e.target as HTMLInputElement).value.split(', ').map(s => s.trim())})}
+                          onInput={(e) => updateCard(cardNum, {...card, keywords: (e.target as HTMLInputElement).value.split(', ').map(s => s.trim()).filter(x => x)})}
                           className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
                           placeholder="Attack, Melee, Weapon">
                 </input>

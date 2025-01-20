@@ -5,7 +5,7 @@ import {UIEditor} from "./ui-editor.tsx";
 import { Tooltip } from "react-tooltip";
 
 export function EditCardMenu({card, cardNum, updateCard}: {card: ability_card, cardNum: number, updateCard: (index: number, card: ability_card) => void}) {
-    const [useTextEdit, setUseTextEdit] = useState(true);
+    const [useTextEdit, setUseTextEdit] = useState(false);
 
     return (
         <div className={`flex-none flex flex-col gap-[5pt] h-[504pt] w-[378pt] p-[10pt]`}>
