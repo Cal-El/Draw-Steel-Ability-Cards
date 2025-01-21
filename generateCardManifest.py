@@ -16,8 +16,9 @@ manifestFile = open(join("src", "types", "generated", "card-manifest.ts"), 'w')
 manifestFile.write("export const cardManifest  = [\n")
 
 for group in groups:
+    groupName = group[3:].title()
     manifestFile.write("    {\n")
-    manifestFile.write("        label: \"" + group.title() + "\",\n")
+    manifestFile.write("        label: \"" + groupName + "\",\n")
     manifestFile.write("        options: [\n",)
 
     files = [f for f in listdir(join(basePath, group)) if isfile(join(basePath, group, f))]

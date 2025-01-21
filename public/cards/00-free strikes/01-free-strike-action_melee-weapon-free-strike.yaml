@@ -1,0 +1,34 @@
+type: Free Strike Action
+topMatter: Free Strike Action
+title: Melee Weapon Free Strike
+keywords:
+  - Charge
+  - Melee
+  - Strike
+  - Weapon
+flavour: ""
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 2 + M or A damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + M or A damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 7 + M or A damage
+      hasPotency: false
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
