@@ -3,6 +3,9 @@ import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
+import Select from "react-select";
+import {cardManifest} from "./types/generated/card-manifest.ts";
+import {parse as yamlParse} from "yaml";
 
 function App() {
   const dummyCard: ability_card = {
@@ -10,12 +13,12 @@ function App() {
       topMatter: 'Custom Heroic Action',
       title: 'My Cool Ability',
       keywords: [
-          'Attack',
           'Magic',
           'Ranged',
+          'Strike',
           'Weapon',
       ],
-      flavour: 'Holy magic zap!',
+      flavour: 'Such flavour!',
       statements: [
           {
               characteristic: 'Any Characteristic',
@@ -68,6 +71,24 @@ function App() {
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
+  const [newCardChoice, setNewCardChoice] = useState<{value: string; label: string;} | null>(null)
+  const [cardChoiceText, setCardChoiceText] = useState<string | null>(null)
+  const [cardChoiceLoading, setCardChoiceLoading] = useState(true)
+
+  const baseUrl = `${window.location.protocol}//${window.location.host}`;
+
+  function chooseCard(manifestEntry: {value: string; label: string;} | null) {
+      setCardChoiceLoading(true);
+      setNewCardChoice(manifestEntry);
+      if (manifestEntry) {
+          fetch(baseUrl + manifestEntry?.value)
+              .then(r => r.text())
+              .then(text => {
+                  setCardChoiceText(text)
+                  setCardChoiceLoading(false);
+              });
+      }
+  }
 
   function deleteCard(index: number) {
       const tempCardList = [...cardsList]
@@ -90,13 +111,28 @@ function App() {
                     <img src={dsAbilityCardsTitle} className={`h-full`}/>
                 </div>
             </div>
-            <div className={`flex basis-1/2 justify-end`}>
-                <div role="button" onClick={() => {
+            <div className={`flex basis-1/2 justify-end items-center gap-[5pt]`}>
+                <Select
+                    value={newCardChoice}
+                    onChange={chooseCard}
+                    options={cardManifest}
+                    className={`flex-auto`}
+                />
+                <button onClick={() => {
+                    if (cardChoiceText) {
+                        const parsedCard = yamlParse(cardChoiceText) as ability_card;
+                        setSelectedCard(-1);
+                        setCardsList([...cardsList, parsedCard]);
+                    }
+                }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Maneuver`]} justify-center items-center`}>
+                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add Card</div>
+                </button>
+                <button onClick={() => {
                     setSelectedCard(-1)
                     setCardsList([...cardsList, dummyCard])
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
-                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>New Custom Card</div>
-                </div>
+                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Custom Card</div>
+                </button>
             </div>
         </div>
         <div className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>

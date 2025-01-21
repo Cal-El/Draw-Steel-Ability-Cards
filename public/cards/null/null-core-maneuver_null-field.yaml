@@ -1,0 +1,36 @@
+type: Maneuver
+topMatter: Null Core Maneuver
+title: Null Field
+keywords:
+  - Psionic
+flavour: You extend your discipline of mind and body onto the world around you.
+statements:
+  - key: Effect
+    value: >-
+      Each target reduces their potencies by 1.
+
+
+      Once as a free maneuver on your turn, you can spend 1 discipline and give
+      your Null Field has one of the following additional effects until the
+      start of your next turn: 
+
+      • **Gravitic Disruption:** When a target takes damage, you can slide them
+      2. 
+
+      • **Inertial Anchor:** Each target who starts their turn in the area
+      cannot shift. 
+
+      • **Synaptic Break:** When a target is subjected to a potency, the potency
+      is increased by 1. 
+
+
+      This ability stays active even after encounters end. It ends if you are
+      dying or if you willingly end it (no action required). 
+hasCost: false
+cost:
+  costName: HR
+  costValue: "1"
+target: All Enemies
+distance:
+  - distanceHeader: Aura
+    distanceValue: "1"
