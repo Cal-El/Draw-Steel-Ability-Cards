@@ -1,0 +1,35 @@
+type: Action
+topMatter: Censor Signature Action
+title: Back, Blasphemer!
+keywords:
+  - Area
+  - Magic
+  - Weapon
+flavour: You channel power through your weapon to repel foes.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Holy damage; push 1
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "4"
+      hasGeneralEffect: true
+      generalEffect: Holy damage; push 2
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "6"
+      hasGeneralEffect: true
+      generalEffect: Holy damage; push 3
+      hasPotency: false
+hasCost: false
+target: All Enemies
+distance:
+  - distanceHeader: Cube
+    distanceValue: "2"
+  - distanceHeader: Within
+    distanceValue: "1"

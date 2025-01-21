@@ -1,0 +1,42 @@
+type: Action
+topMatter: Censor Heroic Action
+title: Arrest
+keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+flavour: '"I got you, you son of a bitch."'
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 6+m
+      hasGeneralEffect: true
+      generalEffect: Holy damage; grabbed
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 9+m
+      hasGeneralEffect: true
+      generalEffect: Holy damage; grabbed
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 13+m
+      hasGeneralEffect: true
+      generalEffect: Holy damage; grabbed
+      hasPotency: false
+  - key: Effect
+    value: If the target makes a strike against a creature while grabbed by you, you
+      can then spend 3 wrath to deal holy damage to them equal to your Presence
+      score and change the target of the strike to another target within the
+      strike’s distance.
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Wrath
+  costValue: "5"

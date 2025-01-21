@@ -1,0 +1,36 @@
+type: Action
+topMatter: Censor Signature Action
+title: Your Allies Cannot Save You!
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: '"See how they abandon you!"'
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 3+m
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 5+m
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 8+m
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+  - key: Effect
+    value: Each enemy adjacent to the target is pushed away from the target up to a
+      number of squares equal to your Presence score.
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

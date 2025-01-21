@@ -1,0 +1,26 @@
+type: Action
+topMatter: Domain Feature Action
+title: Grave Speech
+keywords:
+  - Magic
+flavour: You commune with the lingering soul of the recently dead.
+statements:
+  - key: Target
+    value: One dead creature
+  - key: Effect
+    value: >-
+      You can speak to the target corpse (including just the head) of a creature
+      who has died within the last 24 hours and who can speak a language you
+      know. The target regards you as they would have in life, and you might
+      need to make tests to influence them and convince them to speak with you.
+      The trauma of dying can make a creature’s memory of that event hazy, but
+      the target otherwise knows all they knew in life. 
+
+
+      After 1 minute, the effect ends. You can’t use this ability on the same
+      creature twice.
+hasCost: false
+target: Special
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

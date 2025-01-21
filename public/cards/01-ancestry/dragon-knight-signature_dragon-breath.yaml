@@ -33,5 +33,5 @@ target: All Enemies
 distance:
   - distanceHeader: Cube
     distanceValue: "3"
-  - distanceHeader: Ranged
+  - distanceHeader: Within
     distanceValue: "1"

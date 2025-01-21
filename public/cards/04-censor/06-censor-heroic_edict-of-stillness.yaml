@@ -1,0 +1,23 @@
+type: Maneuver
+topMatter: Censor Heroic Maneuver
+title: Edict of Stillness
+keywords:
+  - Area
+  - Magic
+flavour: Flee not from just punishment.
+statements:
+  - key: Effect
+    value: >-
+      Until the end of the encounter or you are dying, whenever a target is
+      force moved or moves willingly out of the aura, they take holy damage
+      equal to twice your Presence score. 
+
+      A target judged by you who moves willingly takes an extra 2d6 holy damage.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Aura
+    distanceValue: "2"
+cost:
+  costName: Wrath
+  costValue: "7"

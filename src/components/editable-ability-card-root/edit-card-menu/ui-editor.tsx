@@ -118,6 +118,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                             <option>Cube</option>
                             <option>Aura</option>
                             <option>Line</option>
+                            <option>Within</option>
                         </select>
                         <div className={'font-body w-[80pt] text-right'}>Value:</div>
                         <input type='text'

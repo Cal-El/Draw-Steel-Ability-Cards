@@ -1,0 +1,21 @@
+type: Triggered Action
+topMatter: Censor Core Triggered Action
+title: My Life for Yours
+keywords:
+  - Magic
+  - Ranged
+flavour: "The first principle of the oath: defend the righteous."
+statements:
+  - key: Trigger
+    value: The target starts their turn or takes damage.
+  - key: Effect
+    value: "You spend a Recovery and the target regains Stamina equal to your
+      Recovery value. "
+  - key: Spend 1 Wrath
+    value: You can end one effect on the target that is ended by a saving throw or
+      that ends at the end of their turn, or a prone target can stand up.
+hasCost: false
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

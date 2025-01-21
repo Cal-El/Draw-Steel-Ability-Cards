@@ -1,0 +1,25 @@
+type: Maneuver
+topMatter: Exorcist Censor Heroic Maneuver
+title: Revelator
+keywords:
+  - Area
+  - Magic
+flavour: You channel holy energy to harm unbelievers and reveal those hidden
+  from your judgment.
+statements:
+  - key: Effect
+    value: >-
+      Each target takes twice your Presence in holy damage. Any hidden enemies
+      are automatically revealed and can’t become hidden again until the start
+      of your next turn.
+
+
+      You can use Judgment on one of the targets as a free triggered action.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "3"
+cost:
+  costName: Wrath
+  costValue: "5"

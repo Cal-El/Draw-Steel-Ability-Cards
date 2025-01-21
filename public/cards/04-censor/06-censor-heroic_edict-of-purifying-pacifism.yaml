@@ -1,0 +1,22 @@
+type: Maneuver
+topMatter: Censor Heroic Maneuver
+title: Edict of Purifying Pacifism
+keywords:
+  - Area
+  - Magic
+flavour: Shed not the blood of innocents!
+statements:
+  - key: Effect
+    value: >-
+      Until the end of the encounter or you are dying, whenever a target makes a
+      strike, they take holy damage equal to twice your Presence score. 
+
+      A target judged by you takes an extra 2d6 holy damage.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Aura
+    distanceValue: "2"
+cost:
+  costName: Wrath
+  costValue: "7"

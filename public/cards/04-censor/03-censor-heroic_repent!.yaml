@@ -1,0 +1,42 @@
+type: Action
+topMatter: Censor Heroic Action
+title: Repent!
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+flavour: You conjure memories of their sins.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: true
+      damageValue: 5+p
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: true
+      potencyValue: i<0
+      potencyEffect: Dazed (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 8+p
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: true
+      potencyEffect: Dazed (save ends)
+      potencyValue: i<1
+    t3:
+      hasDamage: true
+      damageValue: 11+p
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: true
+      potencyEffect: Dazed (save ends)
+      potencyValue: i<2
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Wrath
+  costValue: "3"

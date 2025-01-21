@@ -1,0 +1,35 @@
+type: Action
+topMatter: Time Raider Signature Action
+title: Concussive Slam
+keywords:
+  - Psionic
+  - Ranged
+  - Strike
+flavour: You slam an invisible force down upon the target.
+statements:
+  - characteristic: Reason, Intuition, or Presence
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 2 + R, I, or P damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + R, I, or P damage; push 1
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 7 + R, I, or P damage; push 2
+      hasPotency: true
+      potencyValue: m<2
+      potencyEffect: Prone
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

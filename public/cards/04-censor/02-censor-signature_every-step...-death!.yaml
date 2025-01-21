@@ -1,0 +1,36 @@
+type: Action
+topMatter: Censor Signature Action
+title: Every Step... Death!
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+flavour: You show your foe a glimpse of their fate after death.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: true
+      damageValue: 5+p
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 7+p
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 10+p
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+  - key: Effect
+    value: Each time the target willingly moves before the end of your next turn,
+      they take 1 psychic damage for each square they move.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

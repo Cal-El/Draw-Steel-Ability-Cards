@@ -1,0 +1,33 @@
+type: Action
+topMatter: Time Raider Signature Action
+title: Psionic Bolt
+keywords:
+  - Psionic
+  - Ranged
+  - Strike
+flavour: You shoot forth a beam of psychic purple force that grips your target.
+statements:
+  - characteristic: Reason, Intuition, or Presence
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 2 + R, I, or P psychic damage; slide 1
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + R, I, or P psychic damage; slide 2
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 7 + R, I, or P psychic damage; slide 3
+      hasPotency: false
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
