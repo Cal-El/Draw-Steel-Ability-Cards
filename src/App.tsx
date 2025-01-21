@@ -10,61 +10,14 @@ import {parse as yamlParse} from "yaml";
 function App() {
   const dummyCard: ability_card = {
       type: 'Action',
-      topMatter: 'Custom Heroic Action',
-      title: 'My Cool Ability',
-      keywords: [
-          'Magic',
-          'Ranged',
-          'Strike',
-          'Weapon',
-      ],
-      flavour: 'Such flavour!',
-      statements: [
-          {
-              characteristic: 'Any Characteristic',
-              t1: {
-                  hasDamage: true,
-                  damageValue: '2',
-                  hasGeneralEffect: true,
-                  generalEffect: 'Damage',
-                  hasPotency: false,
-              },
-              t2: {
-                  hasDamage: true,
-                  damageValue: '5',
-                  hasGeneralEffect: true,
-                  generalEffect: 'Damage',
-                  hasPotency: false,
-              },
-              t3: {
-                  hasDamage: true,
-                  damageValue: '6',
-                  hasGeneralEffect: true,
-                  generalEffect: 'Damage',
-                  hasPotency: false,
-              },
-          },
-          {
-              key: 'Effect',
-              value: 'Some effect.'
-          },
-          {
-              key: 'Spend HR',
-              value: 'Do something cool for each HR spent.'
-          },
-      ],
-      hasCost: true,
-      cost: {
-          costName: 'HR',
-          costValue: '1',
-      },
-      target: '1 Creature or Object',
-      distance: [
-          {
-              distanceHeader: 'Melee',
-              distanceValue: '1',
-          },
-      ],
+      topMatter: 'Custom Ability',
+      title: 'Blank Card',
+      keywords: [],
+      flavour: '',
+      statements: [],
+      hasCost: false,
+      target: 'Self',
+      distance: [],
   };
 
   const cList : ability_card[] = []
@@ -131,7 +84,7 @@ function App() {
                     setSelectedCard(-1)
                     setCardsList([...cardsList, dummyCard])
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
-                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Custom Card</div>
+                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
                 </button>
             </div>
         </div>
