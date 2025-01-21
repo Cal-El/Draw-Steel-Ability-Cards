@@ -6,6 +6,7 @@ import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import Select from "react-select";
 import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
+import { ActiveCardListKey, getCardList, saveCardList } from './components/data-saving/saving-service.ts';
 
 function App() {
   const dummyCard: ability_card = {
@@ -20,7 +21,7 @@ function App() {
       distance: [],
   };
 
-  const cList : ability_card[] = []
+  const cList : ability_card[] = getCardList(ActiveCardListKey)
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
@@ -46,14 +47,19 @@ function App() {
   function deleteCard(index: number) {
       const tempCardList = [...cardsList]
       tempCardList.splice(index, 1)
-      setCardsList(tempCardList);
+      updateCardList(tempCardList);
       setSelectedCard(-1)
   }
 
   function updateCard(index: number, card: ability_card) {
       const tempCardList = [...cardsList]
       tempCardList.splice(index, 1, card)
-      setCardsList(tempCardList);
+      updateCardList(tempCardList);
+  }
+
+  function updateCardList(newList: ability_card[]) {
+    setCardsList(newList)
+    saveCardList(ActiveCardListKey, newList)
   }
 
   return (
@@ -75,14 +81,14 @@ function App() {
                     if (cardChoiceText) {
                         const parsedCard = yamlParse(cardChoiceText) as ability_card;
                         setSelectedCard(-1);
-                        setCardsList([...cardsList, parsedCard]);
+                        updateCardList([...cardsList, parsedCard]);
                     }
                 }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Maneuver`]} justify-center items-center`}>
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add Card</div>
                 </button>
                 <button onClick={() => {
                     setSelectedCard(-1)
-                    setCardsList([...cardsList, dummyCard])
+                    updateCardList([...cardsList, dummyCard])
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
                 </button>
