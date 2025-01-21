@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "python generateCardManifest.py && vite",
+    "build": "python generateCardManifest.py && tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "gen-manifest": "python generateCardManifest.py"
   },
   "dependencies": {
     "auto-text-size": "^0.2.3",
