@@ -1,0 +1,19 @@
+type: Triggered Action
+topMatter: Conduit Triggered Action
+title: Word of Judgment
+keywords:
+  - Magic
+  - Ranged
+flavour: Your holy word saps an attacking enemy’s strength.
+statements:
+  - key: Trigger
+    value: The target takes damage from an ability that requires a power roll.
+  - key: Effect
+    value: The power roll gains a bane against the target.
+  - key: Spend 1 Piety
+    value: The power roll gains a double bane against the target.
+hasCost: false
+target: 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

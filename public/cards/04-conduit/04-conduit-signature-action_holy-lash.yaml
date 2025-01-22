@@ -1,0 +1,33 @@
+type: Action
+topMatter: Conduit Signature Action
+title: Holy Lash
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+flavour: A tendril of divine energy shoots forth to draw in your foe.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: 3+i
+      hasGeneralEffect: true
+      generalEffect: Holy damage; vertical pull 2
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 5+i
+      hasGeneralEffect: true
+      generalEffect: Holy damage; vertical pull 3
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 8+i
+      hasGeneralEffect: true
+      generalEffect: Holy damage; vertical pull 4
+      hasPotency: false
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

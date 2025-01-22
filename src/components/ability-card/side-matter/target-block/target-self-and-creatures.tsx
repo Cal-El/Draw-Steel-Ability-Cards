@@ -24,7 +24,7 @@ export default function TargetSelfAndCreatures({card, bgColorStyle, numCreatures
                     className={`text-[18pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center`}>{numCreatures}
                 </div>:
                 <div
-                    className={`text-[24pt] font-body font-bold text-cardback leading-[10pt] small-caps text-center`}>{numCreatures}
+                    className={`${numCreatures === '3' ? `text-[16pt]` : `text-[24pt]`} font-body font-bold text-cardback leading-[10pt] small-caps text-center`}>{numCreatures}
                 </div>
                 }
                 { creatureType === "Creatures" &&

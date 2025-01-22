@@ -1,0 +1,23 @@
+type: Maneuver
+topMatter: Conduit Core Maneuver
+title: Healing Grace
+keywords:
+  - Magic
+  - Ranged
+flavour: Your divine energy restores the righteous.
+statements:
+  - key: Effect
+    value: The target can spend a Recovery.
+  - key: Spend 1+ Piety
+    value: |-
+      For each piety spent, choose one of the following enhancements:
+      ` `• You can target one additional ally within distance. 
+      ` `• You can end one effect on a target that is ended by 
+      ` ` (EoT) or (save ends). 
+      ` `• A prone target can stand up. 
+      ` `• A target can spend 1 additional Recovery.
+hasCost: false
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

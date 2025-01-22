@@ -1,0 +1,35 @@
+type: Action
+topMatter: Conduit Signature Action
+title: Lightfall
+keywords:
+  - Area
+  - Magic
+flavour: A rain of holy light scours your enemies and repositions your allies.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "3"
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+  - key: Effect
+    value: You can teleport yourself and each ally in the area to unoccupied spaces
+      in the area.
+hasCost: false
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "2"

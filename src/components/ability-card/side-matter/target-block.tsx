@@ -43,6 +43,8 @@ export function TargetBlock({card, bgColorStyle}: {card: ability_card, bgColorSt
         return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="1" creatureType="Creatures" andOr="or"/>
     } else if (card.target === 'Self and 2 Allies') {
         return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="2" creatureType="Allies" andOr="and"/>
+    } else if (card.target === 'Self and 3 Allies') {
+        return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="3" creatureType="Allies" andOr="and"/>
     } else if (card.target === 'Self and All Allies') {
         return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="All" creatureType="Allies" andOr="and"/>
     } else if (card.target === 'Self and All Creatures') {

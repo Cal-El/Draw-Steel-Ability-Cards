@@ -22,7 +22,7 @@ export default function TargetCreatures({card, bgColorStyle, numCreatures, type}
                     className={`text-[18pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>{numCreatures}
                 </div>:
                 <div
-                    className={`text-[24pt] font-body font-bold text-cardback leading-[26pt] small-caps text-center`}>{numCreatures}
+                    className={`${numCreatures === '3' ? `text-[20pt] lining-nums` : `text-[24pt]`} font-body font-bold text-cardback leading-[18pt] small-caps text-center`}>{numCreatures}
                 </div>
                 }
                 { type === "Creatures" &&

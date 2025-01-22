@@ -1,0 +1,37 @@
+type: Action
+topMatter: Conduit Signature Action
+title: Warrior's Prayer
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+flavour: Your quickly uttered prayer lends aggressive divine energy to a friend
+  engaged in melee.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: 3+i
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 6+i
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 9+i
+      hasGeneralEffect: true
+      generalEffect: Holy damage
+      hasPotency: false
+  - key: Effect
+    value: You or one ally within distance gains temporary Stamina equal to your
+      Intuition score.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

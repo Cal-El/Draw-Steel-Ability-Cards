@@ -5,6 +5,7 @@ import {
     power_roll_statement,
     power_roll_tier
 } from "../../../types/ability-card-types.ts";
+import {AutoTextSize} from "auto-text-size";
 
 function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNum: number) {
     return <div className={`flex w-full`}>
@@ -21,10 +22,8 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
         }
         {powerRollTier.hasGeneralEffect ?
             <div className={`${rowNum % 2 === 1 ? actionBg20ColorStyle[card.type] : actionBg30ColorStyle[card.type]} flex-1 flex h-[32.4pt]`}>
-                <div className={`h-[32.4pt] w-[4.5pt]`}>
-                </div>
-                <div className={`h-[32.4pt] flex-1 flex flex-col justify-center`}>
-                    <div className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRollTier.generalEffect}</div>
+                <div className={`h-[32.4pt] flex-1 flex flex-col justify-center pl-[3.5pt] pr-[1pt]`}>
+                    <div className={`${powerRollTier.generalEffect?.length < 81 || !powerRollTier.hasPotency ? `text-[9pt]` : `text-[7.5pt]`} font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRollTier.generalEffect}</div>
                 </div>
             </div> : <></>
         }
@@ -38,10 +37,8 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
         }
         {powerRollTier.hasPotency ?
             <div className={`${rowNum % 2 === 1 ? actionBg20ColorStyle[card.type] : actionBg30ColorStyle[card.type]} flex-1 flex h-[32.4pt]`}>
-                <div className={`h-[32.4pt] w-[4.5pt]`}>
-                </div>
-                <div className={`h-[32.4pt] flex-1 flex flex-col justify-center`}>
-                    <div className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRollTier.potencyEffect}</div>
+                <div className={`h-[32.4pt] flex-1 flex flex-col justify-center pl-[3.5pt] pr-[1pt]`}>
+                    <div className={`${powerRollTier.potencyEffect?.length < 81 || !powerRollTier.hasGeneralEffect? `text-[9pt]` : `text-[7.5pt]`} font-body ${actionTextColorStyle[card.type]} leading-none text-left`}>{powerRollTier.potencyEffect}</div>
                 </div>
             </div> : <></>
         }

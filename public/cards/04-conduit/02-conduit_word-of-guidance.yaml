@@ -1,0 +1,19 @@
+type: Triggered Action
+topMatter: Conduit Triggered Action
+title: Word of Guidance
+keywords:
+  - Magic
+  - Ranged
+flavour: You invigorate an attacking ally with divine energy.
+statements:
+  - key: Trigger
+    value: The target makes an ability power roll for an ability that deals damage.
+  - key: Effect
+    value: The power roll gains an edge.
+  - key: Spend 1 Piety
+    value: The power roll gains a double edge.
+hasCost: false
+target: 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

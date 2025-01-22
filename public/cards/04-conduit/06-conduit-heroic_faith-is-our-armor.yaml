@@ -1,0 +1,35 @@
+type: Maneuver
+topMatter: Conduit Heroic Maneuver
+title: Faith is Our Armor
+keywords:
+  - Magic
+  - Ranged
+flavour: The heroes’ armor glows with golden light, granting divine protection.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: The target gains 5 temporary Stamina
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: The target gains 10 temporary Stamina
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: The target gains 15 temporary Stamina
+      hasPotency: false
+hasCost: true
+target: Self and 3 Allies
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Piety
+  costValue: "5"

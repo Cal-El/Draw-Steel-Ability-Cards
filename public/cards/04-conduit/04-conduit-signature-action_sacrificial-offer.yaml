@@ -1,0 +1,36 @@
+type: Action
+topMatter: Conduit Signature Action
+title: Sacrificial Offer
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+flavour: Divine magic tears at your foe and defends a nearby friend.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: 2+i
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 4+i
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 6+i
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+  - key: Effect
+    value: You or one ally within distance can impose a bane on one power roll made
+      against them before the end of their next turn.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

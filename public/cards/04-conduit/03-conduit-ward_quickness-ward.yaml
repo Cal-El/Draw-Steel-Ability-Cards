@@ -1,0 +1,15 @@
+type: Passive
+topMatter: Conduit Ward
+title: Quickness Ward
+keywords: []
+flavour: The gods imbue a divine swiftness within you.
+statements:
+  - spacePt: 5
+  - key: Trigger
+    value: Whenever an adjacent creature deals damage to you.
+  - key: Effect
+    value: You can shift up to a number of squares equal to your Intuition score
+      after the damage is dealt.
+hasCost: false
+target: Self
+distance: []

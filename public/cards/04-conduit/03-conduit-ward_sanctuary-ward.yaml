@@ -1,0 +1,15 @@
+type: Passive
+topMatter: Conduit Ward
+title: Sanctuary Ward
+keywords: []
+flavour: In response to a foe’s aggression, the gods protect you.
+statements:
+  - spacePt: 5
+  - key: Trigger
+    value: After another creature damages you.
+  - key: Effect
+    value: That creature can’t target you with a strike until you harm them or one
+      of their allies, or until the end of their next turn.
+hasCost: false
+target: Self
+distance: []

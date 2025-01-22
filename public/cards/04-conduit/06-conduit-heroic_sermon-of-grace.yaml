@@ -1,0 +1,25 @@
+type: Action
+topMatter: Conduit Heroic Action
+title: Sermon of Grace
+keywords:
+  - Area
+  - Magic
+flavour: You inspire your allies with tales of your saint’s great deeds.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: >-
+      Each target can spend a Recovery.
+
+
+      When you use this ability, each target can use a free triggered action to
+      end one effect that is ended by a saving throw or that ends at the end of
+      their turn, or to stand up if prone.
+hasCost: true
+target: All Allies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "4"
+cost:
+  costName: Piety
+  costValue: "5"

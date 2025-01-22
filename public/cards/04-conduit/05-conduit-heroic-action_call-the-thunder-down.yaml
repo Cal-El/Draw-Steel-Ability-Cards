@@ -1,0 +1,41 @@
+type: Action
+topMatter: Conduit Heroic Action
+title: Call the Thunder Down
+keywords:
+  - Area
+  - Magic
+  - Ranged
+flavour: You ask your saint for thunder and your prayer is answered.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Sonic damage; push 1
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "3"
+      hasGeneralEffect: true
+      generalEffect: Sonic damage; push 2
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Sonic damage; push 3
+      hasPotency: false
+  - key: Effect
+    value: You can push each willing ally in the area. This forced movement ignores
+      any ally’s stability.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Cube
+    distanceValue: "3"
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Piety
+  costValue: "3"
