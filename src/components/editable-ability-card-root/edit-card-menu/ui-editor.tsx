@@ -1,13 +1,15 @@
 import {
     ability_card,
     abilityTypeValues,
-    cardbackColorStyle, key_value_statement, power_roll_statement, spacer_statement,
+    cardbackColorStyle, key_value_statement, keywords, power_roll_statement, rawKeywords, spacer_statement,
     supportedAbilityTargets
 } from "../../../types/ability-card-types.ts";
 import {useState} from "react";
+import Select from "react-select";
 
 export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardNum: number, updateCard: (index: number, card: ability_card) => void}) {
     const [selectedStatement, setSelectedStatement] = useState("Power Roll");
+    const [keywordsInputVal, setKeywordsInputVal] = useState("");
 
     return (
         <div className={`flex flex-col gap-[5pt] h-[440pt] overflow-auto rounded-lg bg-zinc-400 p-[10pt]`}>
@@ -53,12 +55,32 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
             </div>
             <div className={`flex items-center gap-[5pt]`}>
                 <div className={'font-body w-[80pt] text-right'}>Keywords:</div>
-                <input type='text'
-                          value={card.keywords.join(', ')}
-                          onInput={(e) => updateCard(cardNum, {...card, keywords: (e.target as HTMLInputElement).value.split(', ').map(s => s.trim()).filter(x => x)})}
-                          className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
-                          placeholder="Attack, Melee, Weapon">
-                </input>
+                <Select
+                    inputValue={keywordsInputVal}
+                    value={card.keywords.map((s) => {return {label: s, value: s}})}
+                    onInputChange={(newValue) => {
+                        if (newValue.includes(", ")) {
+                            const values = newValue.split(", ");
+                            let ks : string[] = []
+                            let os : string[] = []
+                            for (const v of values) {
+                                if (rawKeywords.includes(v)) {
+                                    ks = [...ks, v];
+                                } else {
+                                    os = [...os, v];
+                                }
+                            }
+                            updateCard(cardNum, {...card, keywords: ks.sort()});
+                            setKeywordsInputVal(os.join(", "));
+                        } else {
+                            setKeywordsInputVal(newValue);
+                        }
+                    }}
+                    onChange={(newValue) => updateCard(cardNum, {...card, keywords: newValue.map((x) => {return x.value}).sort()})}
+                    options={keywords}
+                    isMulti
+                    className={`flex-auto`}
+                />
             </div>
             <div className={`flex items-center gap-[5pt]`}>
                 <div className={'font-body w-[80pt] text-right'}>Has HR Cost:</div>
