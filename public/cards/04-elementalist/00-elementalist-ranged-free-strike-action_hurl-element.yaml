@@ -1,0 +1,37 @@
+type: Free Strike Action
+topMatter: Elementalist Ranged Free Strike Action
+title: Hurl Element
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+flavour: You cast a ball of elemental energy at an unsuspecting foe.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 2+r
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 4+r
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 6+r
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Effect
+    value: "When you make this strike, choose the damage type from one of the
+      following options: acid, cold, corruption, fire, lightning, poison, or
+      sonic."
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
