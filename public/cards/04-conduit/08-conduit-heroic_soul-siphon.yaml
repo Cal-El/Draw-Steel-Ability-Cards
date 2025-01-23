@@ -1,0 +1,40 @@
+type: Action
+topMatter: Conduit Heroic Action
+title: Soul Siphon
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+flavour: A beam of energy connects a foe to a friend, draining life from one to
+  heal the other.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: 7+i
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 10+i
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 15+i
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+  - key: Effect
+    value: One ally within distance can spend any number of Recoveries (no action
+      required).
+hasCost: true
+target: 1 Enemy
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Piety
+  costValue: "7"

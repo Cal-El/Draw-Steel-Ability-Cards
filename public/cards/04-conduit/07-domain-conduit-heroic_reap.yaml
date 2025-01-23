@@ -1,0 +1,19 @@
+type: Maneuver
+topMatter: Death Domain Conduit Heroic Maneuver
+title: Reap
+keywords:
+  - Magic
+  - Ranged
+flavour: The gods reward those who smite their foes.
+statements:
+  - key: Effect
+    value: Until the start of your next turn, each time a target kills an enemy,
+      they regain Stamina equal to 5 + your Intuition score.
+hasCost: true
+target: All Allies
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Piety
+  costValue: "5"
