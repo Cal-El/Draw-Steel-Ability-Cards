@@ -1,0 +1,44 @@
+type: Action
+topMatter: Nature Domain Conduit Heroic Action
+title: Nature Judges Thee
+keywords:
+  - Area
+  - Magic
+  - Ranged
+flavour: Mystical thorned vines appear at your bidding and bind your foes.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: false
+      generalEffect: 2 + M or A damage
+      hasPotency: true
+      potencyValue: a<0
+      potencyEffect: Restrained (save ends)
+    t2:
+      hasDamage: true
+      damageValue: "3"
+      hasGeneralEffect: false
+      generalEffect: 5 + M or A damage
+      hasPotency: true
+      potencyValue: a<1
+      potencyEffect: Restrained (save ends)
+    t3:
+      hasDamage: true
+      damageValue: "7"
+      hasGeneralEffect: false
+      generalEffect: 7 + M or A damage
+      hasPotency: true
+      potencyValue: a<2
+      potencyEffect: Restrained (save ends)
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Cube
+    distanceValue: "3"
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Piety
+  costValue: "5"

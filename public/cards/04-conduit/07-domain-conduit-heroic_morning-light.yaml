@@ -1,0 +1,39 @@
+type: Action
+topMatter: Sun Domain Conduit Heroic Action
+title: Morning Light
+keywords:
+  - Area
+  - Magic
+flavour: Light shines at your command, burning your foes and blessing your allies.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: true
+      damageValue: "4"
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: false
+      potencyEffect: ""
+    t2:
+      hasDamage: true
+      damageValue: "6"
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "10"
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: false
+  - key: Effect
+    value: Each ally in the area deals fire damage equal to your Intuition score
+      with their next strike made before the end of their next turn.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "3"
+cost:
+  costName: Piety
+  costValue: "5"

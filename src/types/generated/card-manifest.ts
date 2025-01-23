@@ -249,11 +249,87 @@ export const cardManifest  = [
                 label: "Conduit Heroic Action | Sermon of Grace",
                 value: "/cards/04-conduit/06-conduit-heroic_sermon-of-grace.yaml",
             },
+            {
+                label: "Fate Domain Conduit Heroic Action | Blessing of Fate and Destiny",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_blessing-of-fate-and-destiny.yaml",
+            },
+            {
+                label: "War Domain Conduit Heroic Maneuver | Blessing of Insight",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_blessing-of-insight.yaml",
+            },
+            {
+                label: "Trickery Domain Conduit Heroic Maneuver | Divine Comedy",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_divine-comedy.yaml",
+            },
+            {
+                label: "Sun Domain Conduit Heroic Action | Morning Light",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_morning-light.yaml",
+            },
+            {
+                label: "Nature Domain Conduit Heroic Action | Nature Judges Thee",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_nature-judges-thee.yaml",
+            },
+            {
+                label: "Love Domain Conduit Heroic Maneuver | Our Hearts, Your Strength",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_our-hearts,-your-strength.yaml",
+            },
+            {
+                label: "Death Domain Conduit Heroic Maneuver | Reap",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_reap.yaml",
+            },
+            {
+                label: "Protection Domain Conduit Heroic Maneuver | Sacred Bond",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_sacred-bond.yaml",
+            },
+            {
+                label: "Storm Domain Conduit Heroic Action | Saint's Tempest",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_saint's-tempest.yaml",
+            },
+            {
+                label: "Creation Domain Conduit Heroic Maneuver | Statue of Power",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_statue-of-power.yaml",
+            },
+            {
+                label: "Knowledge Domain Conduit Heroic Action | The Gods Command, You Obey",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_the-gods-command,-you-obey.yaml",
+            },
+            {
+                label: "Life Domain Conduit Heroic Action | Wellspring of Grace",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_wellspring-of-grace.yaml",
+            },
+            {
+                label: "Conduit Heroic Action | Fear of the Gods",
+                value: "/cards/04-conduit/08-conduit-heroic_fear-of-the-gods.yaml",
+            },
+            {
+                label: "Conduit Heroic Maneuver | Saint's Raiment",
+                value: "/cards/04-conduit/08-conduit-heroic_saint's-raiment.yaml",
+            },
+            {
+                label: "Conduit Heroic Action | Soul Siphon",
+                value: "/cards/04-conduit/08-conduit-heroic_soul-siphon.yaml",
+            },
+            {
+                label: "Conduit Heroic Action | Words of Wrath and Grace",
+                value: "/cards/04-conduit/08-conduit-heroic_words-of-wrath-and-grace.yaml",
+            },
         ],
     },
     {
         label: "Elementalist",
         options: [
+            {
+                label: "Elementalist Ranged Free Strike Action | Hurl Element",
+                value: "/cards/04-elementalist/00-elementalist-ranged-free-strike-action_hurl-element.yaml",
+            },
+            {
+                label: "Elementalist Core Maneuver | Practical Magic",
+                value: "/cards/04-elementalist/01-elementalist-core-maneuver_practical-magic.yaml",
+            },
+            {
+                label: "Void Elementalist Maneuver | Shared Void Sense",
+                value: "/cards/04-elementalist/02-elementalist_shared-void-sense.yaml",
+            },
             {
                 label: "Elementalist Heroic Maneuver | Instantaneous Excavation",
                 value: "/cards/04-elementalist/04-elementalist-heroic_instantaneous-excavation.yaml",

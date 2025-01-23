@@ -1,0 +1,20 @@
+type: Maneuver
+topMatter: War Domain Conduit Heroic Maneuver
+title: Blessing of Insight
+keywords:
+  - Magic
+  - Ranged
+flavour: The gods grant insight revealing where best to strike your enemies.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: Until the end of the encounter or until you are dying, each target gains
+      a surge at the end of each of your turns.
+hasCost: true
+target: Self and All Allies
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Piety
+  costValue: "5"
