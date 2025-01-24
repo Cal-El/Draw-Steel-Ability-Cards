@@ -1,0 +1,43 @@
+type: Action
+topMatter: Fury Heroic Action
+title: Tide of Death
+keywords:
+  - Melee
+  - Weapon
+flavour: Teach them the folly of lining up for you.
+statements:
+  - key: Effect
+    value: You move up to your speed in a straight line, and you don’t treat enemy
+      squares as difficult terrain for this move. You can end this move in a
+      creature’s space and then move them to an adjacent unoccupied space. You
+      make one power roll that targets each enemy whose space you move through.
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "3"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: ""
+    value: The last target you damage takes extra damage equal to your Might score
+      for every free strike you triggered during your move.
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Rage
+  costValue: "3"

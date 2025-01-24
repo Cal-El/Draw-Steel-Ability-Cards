@@ -1,0 +1,47 @@
+type: Action
+topMatter: Stormwight Fury Heroic Action
+title: Apex Predator
+keywords:
+  - Animal
+  - Melee
+  - Strike
+  - Weapon
+flavour: I will hunt you down.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 4+m
+      hasGeneralEffect: false
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: i<0
+      potencyEffect: Slowed (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 6+m
+      hasGeneralEffect: false
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: i<1
+      potencyEffect: Slowed (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 10+m
+      hasGeneralEffect: false
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: i<2
+      potencyEffect: Slowed (save ends)
+  - key: Effect
+    value: The target can’t be hidden from you for 24 hours. For the rest of the
+      encounter, whenever the target moves, you can use a free triggered action
+      to move.
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Rage
+  costValue: "5"

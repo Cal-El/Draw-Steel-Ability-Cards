@@ -1,0 +1,20 @@
+type: Action
+topMatter: Green Elementalist Action
+title: Remember Growth and Sun and Rain
+keywords:
+  - Green
+  - Magic
+  - Melee
+flavour: You stir any wood’s memory and learn what it has seen.
+statements:
+  - key: Target
+    value: One mundane wooden object
+  - key: Effect
+    value: You see and hear any events that have occurred within 10 squares of the
+      object within the last 12 hours, perceiving those events from the object’s
+      location as if you were there.
+hasCost: false
+target: Special
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

@@ -1,0 +1,15 @@
+type: Passive
+topMatter: Elementalist Ward
+title: Ward of Surprising Reactivity
+keywords: []
+flavour: You use the magic of fire to create an invisible ward of explosive fire energy.
+statements:
+  - spacePt: 5
+  - key: Trigger
+    value: Whenever an adjacent creature deals damage to you.
+  - key: Effect
+    value: You can use a free triggered action to push that creature a number of
+      squares equal to twice your Reason score.
+hasCost: false
+target: Self
+distance: []

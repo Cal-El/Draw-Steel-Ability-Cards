@@ -1,0 +1,22 @@
+type: Free Maneuver
+topMatter: Fury Heroic Free Maneuver
+title: Make Peace With Your God!
+keywords:
+  - —
+flavour: Anger is an energy.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: >-
+      The next ability roll you make this turn automatically achieves a tier 3
+      result. 
+
+      You gain one surge.
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Rage
+  costValue: "5"

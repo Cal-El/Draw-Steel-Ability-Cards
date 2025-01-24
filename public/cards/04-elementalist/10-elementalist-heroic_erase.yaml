@@ -1,0 +1,46 @@
+type: Action
+topMatter: Elementalist Heroic Action
+title: Erase
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+  - Void
+flavour: With a flick of the wrist, you phase creatures out of existence.
+statements:
+  - key: Effect
+    value: The number of creatures you target with this ability is determined by
+      your power roll.
+  - characteristic: Reason
+    t1:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: One creature
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Two creatures
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Three creatures
+      hasPotency: false
+  - key: ""
+    value: Each target begins to fade from existence (save ends). While fading from
+      existence, a target initially takes a bane on power rolls. At the end of
+      their first turn, they have a double bane on power rolls. At the end of
+      their second turn, they fade from existence for 1 hour, reappearing in
+      their original space or the nearest available space.
+hasCost: true
+target: Special
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Essence
+  costValue: "7"

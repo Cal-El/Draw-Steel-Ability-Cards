@@ -1,0 +1,41 @@
+type: Action
+topMatter: Elementalist Heroic Action
+title: Maw of Earth
+keywords:
+  - Area
+  - Earth
+  - Magic
+  - Ranged
+flavour: You open up the ground, unleashing a shower of stone and debris.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "9"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "12"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Effect
+    value: The ground in or directly beneath the area drops, lowering 3 squares.
+hasCost: true
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Cube
+    distanceValue: "3"
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Essence
+  costValue: "7"

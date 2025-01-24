@@ -1,0 +1,40 @@
+type: Action
+topMatter: Fury Heroic Action
+title: To The Uttermost End
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: You spend your life force to ensure their death.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 7+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 11+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 16+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Spend 1+ Rage
+    value: If you are winded, this ability deals 1d6 bonus damage for each rage
+      spent. If you are dying, it deals 1d10 bonus damage for each rage spent.
+      In either case, you then lose 1d6 Stamina after making this strike.
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Rage
+  costValue: "5"

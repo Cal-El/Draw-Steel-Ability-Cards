@@ -1,0 +1,36 @@
+type: Action
+topMatter: Elementalist Signature Action
+title: The Green Within, the Green Without
+keywords:
+  - Green
+  - Magic
+  - Ranged
+  - Strike
+flavour: Whipping vines erupt from a foe’s body to grasp at another close by.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 2+r
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 5+r
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 7+r
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Effect
+    value: Slide 2 one creature within 10 squares of the target.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

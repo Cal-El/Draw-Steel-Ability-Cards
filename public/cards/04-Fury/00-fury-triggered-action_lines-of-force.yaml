@@ -1,0 +1,24 @@
+type: Triggered Action
+topMatter: Berserker Fury Triggered Action
+title: Lines of Force
+keywords:
+  - Magic
+  - Melee
+flavour: You redirect the energy of motion.
+statements:
+  - key: Trigger
+    value: The target would be force moved.
+  - key: Effect
+    value: You can select a new target of the same size or smaller within distance
+      to be force moved instead, and you can turn that forced movement into a
+      push instead. You become the source of the forced movement and decide
+      where the new target’s destination. Additionally, the forced movement
+      distance gains a bonus equal to your Might score.
+  - key: Spend 1 Rage
+    value: The forced movement distance instead gains a bonus equal to twice your
+      Might score.
+hasCost: false
+target: Self or 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

@@ -1,0 +1,45 @@
+type: Maneuver
+topMatter: Berserker Fury Heroic Maneuver
+title: Wrecking Ball
+keywords:
+  - Melee
+  - Weapon
+flavour: It is easier to destroy than to create. Much easier, in fact!
+statements:
+  - key: Effect
+    value: >-
+      You move up to your speed in a straight line. During this movement, you
+      can move through mundane structures, including walls, which are difficult
+      terrain for you. You automatically destroy each square of structure you
+      move through and leave behind a square of difficult terrain.
+
+
+      Additionally, you make one power roll that targets each enemy you come
+      adjacent to during the move.
+  - characteristic: Might
+    t1:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Push 1
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Push 2
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Push 3
+      hasPotency: false
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Rage
+  costValue: "5"

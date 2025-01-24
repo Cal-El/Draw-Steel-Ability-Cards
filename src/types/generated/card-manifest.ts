@@ -262,6 +262,10 @@ export const cardManifest  = [
                 value: "/cards/04-conduit/07-domain-conduit-heroic_divine-comedy.yaml",
             },
             {
+                label: "Knowledge Domain Conduit Heroic Action | The Gods Command, You Obey",
+                value: "/cards/04-conduit/07-domain-conduit-heroic_gods-command,-you-obey.yaml",
+            },
+            {
                 label: "Sun Domain Conduit Heroic Action | Morning Light",
                 value: "/cards/04-conduit/07-domain-conduit-heroic_morning-light.yaml",
             },
@@ -288,10 +292,6 @@ export const cardManifest  = [
             {
                 label: "Creation Domain Conduit Heroic Maneuver | Statue of Power",
                 value: "/cards/04-conduit/07-domain-conduit-heroic_statue-of-power.yaml",
-            },
-            {
-                label: "Knowledge Domain Conduit Heroic Action | The Gods Command, You Obey",
-                value: "/cards/04-conduit/07-domain-conduit-heroic_the-gods-command,-you-obey.yaml",
             },
             {
                 label: "Life Domain Conduit Heroic Action | Wellspring of Grace",
@@ -327,12 +327,241 @@ export const cardManifest  = [
                 value: "/cards/04-elementalist/01-elementalist-core-maneuver_practical-magic.yaml",
             },
             {
+                label: "Earth Elementalist Action | Motivate Earth",
+                value: "/cards/04-elementalist/02-elementalist_motivate-earth.yaml",
+            },
+            {
+                label: "Fire Elementalist Action | Return to Formlessness",
+                value: "/cards/04-elementalist/02-elementalist_return-to-formlessness.yaml",
+            },
+            {
                 label: "Void Elementalist Maneuver | Shared Void Sense",
                 value: "/cards/04-elementalist/02-elementalist_shared-void-sense.yaml",
             },
             {
+                label: "Void Elementalist Triggered Action | A Subtle Relocation",
+                value: "/cards/04-elementalist/03-elementalist-triggered-action_a-subtle-relocation.yaml",
+            },
+            {
+                label: "Fire Elementalist Triggered Action | Explosive Assistance",
+                value: "/cards/04-elementalist/03-elementalist-triggered-action_explosive-assistance.yaml",
+            },
+            {
+                label: "Earth Elementalist Triggered Action | Skin Like Castle Walls",
+                value: "/cards/04-elementalist/03-elementalist-triggered-action_skin-like-castle-walls.yaml",
+            },
+            {
+                label: "Green Elementalist Triggered Action | The Breath of Dawn Remembered",
+                value: "/cards/04-elementalist/03-elementalist-triggered-action_the-breath-of-dawn-remembered.yaml",
+            },
+            {
+                label: "Elementalist Ward | Ward of Delightful Consequences",
+                value: "/cards/04-elementalist/04-elementalist-ward_ward-of-delightful-consequences.yaml",
+            },
+            {
+                label: "Elementalist Ward | Ward of Excellent Protection",
+                value: "/cards/04-elementalist/04-elementalist-ward_ward-of-excellent-protection.yaml",
+            },
+            {
+                label: "Elementalist Ward | Ward of Nature's Affection",
+                value: "/cards/04-elementalist/04-elementalist-ward_ward-of-nature's-affection.yaml",
+            },
+            {
+                label: "Elementalist Ward | Ward of Surprising Reactivity",
+                value: "/cards/04-elementalist/04-elementalist-ward_ward-of-surprising-reactivity.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | A Meteoric Introduction",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_a-meteoric-introduction.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | Afflict a Bountiful Decay",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_afflict-a-bountiful-decay.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | Bifurcated Conflagration",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_bifurcated-conflagration.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | Grasp of Beyond",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_grasp-of-beyond.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | Ray of Agonizing Self Reflection",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_ray-of-agonizing-self-reflection.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | The Green Within, the Green Without",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_the-green-within,-the-green-without.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | Unquiet Ground",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_unquiet-ground.yaml",
+            },
+            {
+                label: "Elementalist Signature Action | Viscous Fire",
+                value: "/cards/04-elementalist/05-elementalist-signature-action_viscous-fire.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Behold the Mystery",
+                value: "/cards/04-elementalist/06-elementalist-heroic-action_behold-the-mystery.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Invigorating Growth",
+                value: "/cards/04-elementalist/06-elementalist-heroic-action_invigorating-growth.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Ripples in the Earth",
+                value: "/cards/04-elementalist/06-elementalist-heroic-action_ripples-in-the-earth.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | The Flesh, a Crucible",
+                value: "/cards/04-elementalist/06-elementalist-heroic-action_the-flesh,-a-crucible.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Conflagration",
+                value: "/cards/04-elementalist/07-elementalist-heroic_conflagration.yaml",
+            },
+            {
                 label: "Elementalist Heroic Maneuver | Instantaneous Excavation",
-                value: "/cards/04-elementalist/04-elementalist-heroic_instantaneous-excavation.yaml",
+                value: "/cards/04-elementalist/07-elementalist-heroic_instantaneous-excavation.yaml",
+            },
+            {
+                label: "Elementalist Heroic Maneuver | No More than a Breeze",
+                value: "/cards/04-elementalist/07-elementalist-heroic_no-more-than-a-breeze.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Test of Rain",
+                value: "/cards/04-elementalist/07-elementalist-heroic_test-of-rain.yaml",
+            },
+            {
+                label: "Elementalist Heroic Maneuver | O Flower Aid, O Earth Defend",
+                value: "/cards/04-elementalist/08-elementalist-heroic-action_o-flower-aid,-o-earth-defend.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Subvert the Green Within",
+                value: "/cards/04-elementalist/08-elementalist-heroic-action_subvert-the-green-within.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Translated Through Flame",
+                value: "/cards/04-elementalist/08-elementalist-heroic-action_translated-through-flame.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Volcano's Embrace",
+                value: "/cards/04-elementalist/08-elementalist-heroic-action_volcano's-embrace.yaml",
+            },
+            {
+                label: "Earth Elementalist Action | The Earth Accepts Me",
+                value: "/cards/04-elementalist/09-elementalist-action_earth-accepts-me.yaml",
+            },
+            {
+                label: "Green Elementalist Action | Remember Growth and Sun and Rain",
+                value: "/cards/04-elementalist/09-elementalist-action_remember-growth-and-sun-and-rain.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Erase",
+                value: "/cards/04-elementalist/10-elementalist-heroic_erase.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Maw of Earth",
+                value: "/cards/04-elementalist/10-elementalist-heroic_maw-of-earth.yaml",
+            },
+            {
+                label: "Elementalist Heroic Action | Swarm of Spirits",
+                value: "/cards/04-elementalist/10-elementalist-heroic_swarm-of-spirits.yaml",
+            },
+            {
+                label: "Elementalist Heroic Maneuver | Wall of Fire",
+                value: "/cards/04-elementalist/10-elementalist-heroic_wall-of-fire.yaml",
+            },
+        ],
+    },
+    {
+        label: "Fury",
+        options: [
+            {
+                label: "Stormwight Fury Triggered Action | Furious Change",
+                value: "/cards/04-Fury/00-fury-triggered-action_furious-change.yaml",
+            },
+            {
+                label: "Berserker Fury Triggered Action | Lines of Force",
+                value: "/cards/04-Fury/00-fury-triggered-action_lines-of-force.yaml",
+            },
+            {
+                label: "Reaver Fury Triggered Action | Unearthly Reflexes",
+                value: "/cards/04-Fury/00-fury-triggered-action_unearthly-reflexes.yaml",
+            },
+            {
+                label: "Fury Signature Action | Brutal Slam",
+                value: "/cards/04-Fury/01-fury-signature-action_brutal-slam.yaml",
+            },
+            {
+                label: "Fury Signature Action | Hit and Run",
+                value: "/cards/04-Fury/01-fury-signature-action_hit-and-run.yaml",
+            },
+            {
+                label: "Fury Signature Action | Impaled!",
+                value: "/cards/04-Fury/01-fury-signature-action_impaled!.yaml",
+            },
+            {
+                label: "Fury Signature Action | To the Death!",
+                value: "/cards/04-Fury/01-fury-signature-action_to-the-death!.yaml",
+            },
+            {
+                label: "Fury Heroic Action | Back!",
+                value: "/cards/04-Fury/02-fury-heroic-action_back!.yaml",
+            },
+            {
+                label: "Fury Heroic Action | Out of the Way!",
+                value: "/cards/04-Fury/02-fury-heroic-action_out-of-the-way!.yaml",
+            },
+            {
+                label: "Fury Heroic Action | Tide of Death",
+                value: "/cards/04-Fury/02-fury-heroic-action_tide-of-death.yaml",
+            },
+            {
+                label: "Fury Heroic Action | Your Entrails Are Your Extrails!",
+                value: "/cards/04-Fury/02-fury-heroic-action_your-entrails-are-your-extrails!.yaml",
+            },
+            {
+                label: "Fury Heroic Action | Blood for Blood",
+                value: "/cards/04-Fury/03-fury-heroic_blood-for-blood.yaml",
+            },
+            {
+                label: "Fury Heroic Free Maneuver | Make Peace With Your God!",
+                value: "/cards/04-Fury/03-fury-heroic_make-peace-with-your-god!.yaml",
+            },
+            {
+                label: "Fury Heroic Action | Thunder Roar",
+                value: "/cards/04-Fury/03-fury-heroic_thunder-roar.yaml",
+            },
+            {
+                label: "Fury Heroic Action | To The Uttermost End",
+                value: "/cards/04-Fury/03-fury-heroic_to-the-uttermost-end.yaml",
+            },
+            {
+                label: "Berserker Fury Heroic Maneuver | Special Delivery",
+                value: "/cards/04-Fury/04-berserker-fury_special-delivery.yaml",
+            },
+            {
+                label: "Berserker Fury Heroic Maneuver | Wrecking Ball",
+                value: "/cards/04-Fury/04-berserker-fury_wrecking-ball.yaml",
+            },
+            {
+                label: "Reaver Fury Heroic Action | Phalanx Breaker",
+                value: "/cards/04-Fury/04-reaver-fury_phalanx-breaker.yaml",
+            },
+            {
+                label: "Reaver Fury Heroic Action | RRRAAAGHH!",
+                value: "/cards/04-Fury/04-reaver-fury_rrraaaghh!.yaml",
+            },
+            {
+                label: "Stormwight Fury Heroic Action | Apex Predator",
+                value: "/cards/04-Fury/04-stormwight-fury_apex-predator.yaml",
+            },
+            {
+                label: "Stormwight Fury Heroic Action | Visceral Roar",
+                value: "/cards/04-Fury/04-stormwight-fury_visceral-roar.yaml",
             },
         ],
     },

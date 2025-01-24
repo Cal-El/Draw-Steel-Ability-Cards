@@ -1,0 +1,26 @@
+type: Maneuver
+topMatter: Elementalist Heroic Maneuver
+title: No More than a Breeze
+keywords:
+  - Magic
+  - Ranged
+  - Void
+flavour: The material substance of a creature shreds away at your command.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: Until the start of your next turn, the target can move through solid
+      matter, ignores difficult terrain, and their movement can’t provoke
+      opportunity attacks. If the target ends their turn inside solid matter,
+      they are shunted out into the space where they entered it and this effect
+      ends.
+  - key: Persistent 1
+    value: The effect lasts until the start of your next turn.
+hasCost: true
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Essence
+  costValue: "5"

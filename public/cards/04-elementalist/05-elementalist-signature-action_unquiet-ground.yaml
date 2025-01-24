@@ -1,0 +1,39 @@
+type: Action
+topMatter: Elementalist Signature Action
+title: Unquiet Ground
+keywords:
+  - Area
+  - Earth
+  - Magic
+  - Ranged
+flavour: A sudden storm of detritus assaults your foes and leaves them
+  struggling to move.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "7"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Effect
+    value: The ground beneath the area becomes difficult terrain for enemies.
+hasCost: false
+target: All Enemies
+distance:
+  - distanceHeader: Cube
+    distanceValue: "2"
+  - distanceHeader: Ranged
+    distanceValue: "10"

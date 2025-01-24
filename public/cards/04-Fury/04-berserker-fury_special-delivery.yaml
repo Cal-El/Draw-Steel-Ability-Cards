@@ -1,0 +1,22 @@
+type: Maneuver
+topMatter: Berserker Fury Heroic Maneuver
+title: Special Delivery
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: You ready?
+statements:
+  - key: Effect
+    value: You vertically push the target up to 4 squares. This forced movement
+      ignores the target’s stability, and the target takes no damage from the
+      move. At the end of this movement, the target can make a free strike that
+      deals additional damage equal to your Might score.
+hasCost: true
+target: 1 Ally
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Rage
+  costValue: "5"

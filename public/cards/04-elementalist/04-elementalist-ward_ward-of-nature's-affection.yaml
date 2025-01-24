@@ -1,0 +1,17 @@
+type: Passive
+topMatter: Elementalist Ward
+title: Ward of Nature's Affection
+keywords: []
+flavour: You store green energy within your body that allows you to produce
+  powerful vines when you’re in danger.
+statements:
+  - spacePt: 5
+  - key: Trigger
+    value: Whenever a creature within a number of squares equal to your Reason score
+      deals damage to you.
+  - key: Effect
+    value: You can use a free triggered action to slide that creature up to a number
+      of squares equal to your Reason score.
+hasCost: false
+target: Self
+distance: []

@@ -1,0 +1,38 @@
+type: Action
+topMatter: Elementalist Signature Action
+title: Afflict a Bountiful Decay
+keywords:
+  - Green
+  - Magic
+  - Ranged
+  - Rot
+  - Strike
+flavour: Your curse causes a foe’s flesh to rot off as spores that aid your allies.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 2+r
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 4+r
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 6+r
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: false
+  - key: Effect
+    value: You or one ally within distance can end one effect that is ended by a
+      saving throw or that ends at the end of that creature’s turn.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

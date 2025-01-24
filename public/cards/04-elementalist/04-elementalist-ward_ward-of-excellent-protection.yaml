@@ -1,0 +1,14 @@
+type: Passive
+topMatter: Elementalist Ward
+title: Ward of Excellent Protection
+keywords: []
+flavour: The protective shield you weave around yourself is made of all the
+  elements to channel their full protective power.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: You have immunity to acid, cold, corruption, fire, and lightning damage
+      equal to your Reason score.
+hasCost: false
+target: Self
+distance: []

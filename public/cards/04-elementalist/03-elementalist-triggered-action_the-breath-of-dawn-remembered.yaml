@@ -1,0 +1,20 @@
+type: Triggered Action
+topMatter: Green Elementalist Triggered Action
+title: The Breath of Dawn Remembered
+keywords:
+  - Green
+  - Magic
+  - Ranged
+flavour: The power you channel grants the ability to get back in the fight.
+statements:
+  - key: Trigger
+    value: The target starts their turn or takes damage.
+  - key: Effect
+    value: The target can spend a Recovery.
+  - key: Spend Essence
+    value: The target can spend an additional Recovery for each essence spent.
+hasCost: false
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

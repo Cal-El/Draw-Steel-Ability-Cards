@@ -1,0 +1,37 @@
+type: Action
+topMatter: Fury Signature Action
+title: Hit and Run
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: Keeping in constant motion helps you slip out of reach after a brutal assault.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 2+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 5+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 7+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: a<2
+      potencyEffect: Slowed (save ends)
+  - key: Effect
+    value: You can shift 1 square.
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

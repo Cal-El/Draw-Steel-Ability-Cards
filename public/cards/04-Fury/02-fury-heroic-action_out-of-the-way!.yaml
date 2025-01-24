@@ -1,0 +1,40 @@
+type: Action
+topMatter: Fury Heroic Action
+title: Out of the Way!
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: Your enemies will get out of your way—whether they want to or not.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 3+m
+      hasGeneralEffect: true
+      generalEffect: Damage; slide 2
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 6+m
+      hasGeneralEffect: true
+      generalEffect: Damage; slide 3
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 9+m
+      hasGeneralEffect: true
+      generalEffect: Damage; slide 5
+      hasPotency: false
+  - key: Effect
+    value: When you slide the target, you can move into any square they leave. If
+      you take damage from an opportunity attack by moving this way, the target
+      takes the same amount and type of damage.
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Rage
+  costValue: "3"

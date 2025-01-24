@@ -14,7 +14,7 @@ export function KeyValueStatement({card, kv}: {card: ability_card, kv: key_value
     return (
         <div className={`flex-auto flex`}>
             <div className={`w-[3pt] flex-none`}></div>
-            <p className={`text-[13.5pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><AutoTextSize maxFontSizePx={27} mode="box"><Markdown>{"**" + kv.key + "**: " + kv.value}</Markdown></AutoTextSize></p>
+            <p className={`text-[13.5pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><AutoTextSize maxFontSizePx={27} mode="box"><Markdown>{(kv.key.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></AutoTextSize></p>
         </div>
     )
 }

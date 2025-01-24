@@ -1,0 +1,21 @@
+type: Triggered Action
+topMatter: Fire Elementalist Triggered Action
+title: Explosive Assistance
+keywords:
+  - Fire
+  - Magic
+  - Ranged
+flavour: You add a little magic to an ally’s aggression at just the right time.
+statements:
+  - key: Trigger
+    value: The target force moves a creature or object.
+  - key: Effect
+    value: The forced movement distance gains a bonus equal to your Reason score.
+  - key: Spend 1 Essence
+    value: The forced movement distance gains a bonus equal to twice your Reason
+      score instead.
+hasCost: false
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

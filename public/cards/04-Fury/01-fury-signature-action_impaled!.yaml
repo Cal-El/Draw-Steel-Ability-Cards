@@ -1,0 +1,43 @@
+type: Action
+topMatter: Fury Signature Action
+title: Impaled!
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: You plunge your weapon into your enemy like a boar upon a spit.
+statements:
+  - key: Target
+    value: One creature of your size or smaller
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 2+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: m<0
+      potencyEffect: Grabbed
+    t2:
+      hasDamage: true
+      damageValue: 5+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: m<1
+      potencyEffect: Grabbed
+    t3:
+      hasDamage: true
+      damageValue: 7+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: m<2
+      potencyEffect: Grabbed
+  - spacePt: 5
+  - spacePt: 5
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

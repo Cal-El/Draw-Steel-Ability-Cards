@@ -1,0 +1,46 @@
+type: Action
+topMatter: Reaver Fury Heroic Action
+title: Phalanx Breaker
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: Organizing your forces like feckless creatures of Law. Pitiful.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: You shift up to your speed. You make one power roll that targets up to
+      three enemies you come adjacent to during the shift.
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: a<0
+      potencyEffect: Dazed (save ends)
+    t2:
+      hasDamage: true
+      damageValue: "4"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: a<1
+      potencyEffect: Dazed (save ends)
+    t3:
+      hasDamage: true
+      damageValue: "6"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: a<2
+      potencyEffect: Dazed (save ends)
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Rage
+  costValue: "5"

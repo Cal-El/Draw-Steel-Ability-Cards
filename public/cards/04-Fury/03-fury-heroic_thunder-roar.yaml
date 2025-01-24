@@ -1,0 +1,41 @@
+type: Action
+topMatter: Fury Heroic Action
+title: Thunder Roar
+keywords:
+  - Area
+  - Melee
+  - Weapon
+flavour: A howl erupts from you that hurls your enemies back.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: "6"
+      hasGeneralEffect: true
+      generalEffect: Damage; push 2
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "9"
+      hasGeneralEffect: true
+      generalEffect: Damage; push 4
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "13"
+      hasGeneralEffect: true
+      generalEffect: Damage; push 6
+      hasPotency: false
+  - key: Effect
+    value: The targets are pushed one at a time, starting with the target closest to
+      you.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Line
+    distanceValue: 5 x 1
+  - distanceHeader: Distance
+    distanceValue: "1"
+cost:
+  costName: Rage
+  costValue: "5"

@@ -1,0 +1,44 @@
+type: Action
+topMatter: Elementalist Heroic Action
+title: Volcano's Embrace
+keywords:
+  - Earth
+  - Fire
+  - Magic
+  - Ranged
+  - Strike
+flavour: Wrap them up in fire and melting stone.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 5+r
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: true
+      potencyValue: a<0
+      potencyEffect: Restrained (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 9+r
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: true
+      potencyValue: a<1
+      potencyEffect: Restrained (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 12+r
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: true
+      potencyValue: a<2
+      potencyEffect: Restrained (save ends)
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Essence
+  costValue: "5"

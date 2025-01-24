@@ -1,0 +1,18 @@
+type: Action
+topMatter: Fire Elementalist Action
+title: Return to Formlessness
+keywords:
+  - Fire
+  - Magic
+  - Melee
+flavour: With the merest touch, you cause an object to turn to slag or ash.
+statements:
+  - key: Target
+    value: One mundane object
+  - key: Effect
+    value: You heat the target and cause it to combust and melt, destroying it. If
+      the object is larger than 1 square, then only the square of the object
+      that you touch is destroyed.
+hasCost: false
+target: Special
+distance: []
