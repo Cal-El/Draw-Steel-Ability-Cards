@@ -27,9 +27,6 @@ statements:
       This ability stays active even after encounters end. It ends if you are
       dying or if you willingly end it (no action required). 
 hasCost: false
-cost:
-  costName: HR
-  costValue: "1"
 target: All Enemies
 distance:
   - distanceHeader: Aura

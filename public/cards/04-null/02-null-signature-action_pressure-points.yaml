@@ -1,0 +1,40 @@
+type: Action
+topMatter: Null Signature Action
+title: Pressure Points
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: You strike at key nerve clusters to leave your foe staggered.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 4+a
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: a<0
+      potencyEffect: Weakened (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 7+a
+      hasGeneralEffect: false
+      generalEffect: 5 + M or A damage
+      hasPotency: true
+      potencyValue: a<1
+      potencyEffect: Weakened (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 9+a
+      hasGeneralEffect: false
+      generalEffect: 7 + M or A damage
+      hasPotency: true
+      potencyValue: a<2
+      potencyEffect: Weakened (save ends)
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

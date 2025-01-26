@@ -1,0 +1,34 @@
+type: Action
+topMatter: Null Signature Action
+title: Kinetic Strike
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: Your opponent staggers. They cannot ignore you.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 4+a
+      hasGeneralEffect: true
+      generalEffect: Damage; taunted (EoT)
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 5+a
+      hasGeneralEffect: true
+      generalEffect: Damage; taunted (EoT);  slide 1
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 6+a
+      hasGeneralEffect: true
+      generalEffect: Damage; taunted (EoT); slide 2
+      hasPotency: false
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

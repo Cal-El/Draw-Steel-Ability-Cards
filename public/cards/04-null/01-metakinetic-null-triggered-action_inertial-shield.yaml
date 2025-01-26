@@ -1,0 +1,20 @@
+type: Triggered Action
+topMatter: Metakinetic Null Triggered Action
+title: Inertial Shield
+keywords: []
+flavour: You intuit where an incoming attack will strike, reducing its effects.
+statements:
+  - key: Trigger
+    value: You take damage.
+  - key: Effect
+    value: |-
+      You halve the damage.
+      You can also use the Knockback maneuver as a free triggered action.
+  - key: Spend 1 Discipline
+    value: "You decrease the potency of one effect associated with the damage for
+      you by 1. "
+hasCost: false
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self

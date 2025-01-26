@@ -1,0 +1,37 @@
+type: Action
+topMatter: Null Signature Action
+title: Faster than the Eye
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: You strike so quickly that your hands become a blur.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: "4"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "7"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Effect
+    value: You can deal damage equal to your Agility score to an adjacent creature
+      or object.
+hasCost: false
+target: 2 Creatures or Objects
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
