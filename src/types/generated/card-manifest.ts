@@ -481,87 +481,87 @@ export const cardManifest  = [
         options: [
             {
                 label: "Stormwight Fury Triggered Action | Furious Change",
-                value: "/cards/04-Fury/00-fury-triggered-action_furious-change.yaml",
+                value: "/cards/04-fury/00-fury-triggered-action_furious-change.yaml",
             },
             {
                 label: "Berserker Fury Triggered Action | Lines of Force",
-                value: "/cards/04-Fury/00-fury-triggered-action_lines-of-force.yaml",
+                value: "/cards/04-fury/00-fury-triggered-action_lines-of-force.yaml",
             },
             {
                 label: "Reaver Fury Triggered Action | Unearthly Reflexes",
-                value: "/cards/04-Fury/00-fury-triggered-action_unearthly-reflexes.yaml",
+                value: "/cards/04-fury/00-fury-triggered-action_unearthly-reflexes.yaml",
             },
             {
                 label: "Fury Signature Action | Brutal Slam",
-                value: "/cards/04-Fury/01-fury-signature-action_brutal-slam.yaml",
+                value: "/cards/04-fury/01-fury-signature-action_brutal-slam.yaml",
             },
             {
                 label: "Fury Signature Action | Hit and Run",
-                value: "/cards/04-Fury/01-fury-signature-action_hit-and-run.yaml",
+                value: "/cards/04-fury/01-fury-signature-action_hit-and-run.yaml",
             },
             {
                 label: "Fury Signature Action | Impaled!",
-                value: "/cards/04-Fury/01-fury-signature-action_impaled!.yaml",
+                value: "/cards/04-fury/01-fury-signature-action_impaled!.yaml",
             },
             {
                 label: "Fury Signature Action | To the Death!",
-                value: "/cards/04-Fury/01-fury-signature-action_to-the-death!.yaml",
+                value: "/cards/04-fury/01-fury-signature-action_to-the-death!.yaml",
             },
             {
                 label: "Fury Heroic Action | Back!",
-                value: "/cards/04-Fury/02-fury-heroic-action_back!.yaml",
+                value: "/cards/04-fury/02-fury-heroic-action_back!.yaml",
             },
             {
                 label: "Fury Heroic Action | Out of the Way!",
-                value: "/cards/04-Fury/02-fury-heroic-action_out-of-the-way!.yaml",
+                value: "/cards/04-fury/02-fury-heroic-action_out-of-the-way!.yaml",
             },
             {
                 label: "Fury Heroic Action | Tide of Death",
-                value: "/cards/04-Fury/02-fury-heroic-action_tide-of-death.yaml",
+                value: "/cards/04-fury/02-fury-heroic-action_tide-of-death.yaml",
             },
             {
                 label: "Fury Heroic Action | Your Entrails Are Your Extrails!",
-                value: "/cards/04-Fury/02-fury-heroic-action_your-entrails-are-your-extrails!.yaml",
+                value: "/cards/04-fury/02-fury-heroic-action_your-entrails-are-your-extrails!.yaml",
             },
             {
                 label: "Fury Heroic Action | Blood for Blood",
-                value: "/cards/04-Fury/03-fury-heroic_blood-for-blood.yaml",
+                value: "/cards/04-fury/03-fury-heroic_blood-for-blood.yaml",
             },
             {
                 label: "Fury Heroic Free Maneuver | Make Peace With Your God!",
-                value: "/cards/04-Fury/03-fury-heroic_make-peace-with-your-god!.yaml",
+                value: "/cards/04-fury/03-fury-heroic_make-peace-with-your-god!.yaml",
             },
             {
                 label: "Fury Heroic Action | Thunder Roar",
-                value: "/cards/04-Fury/03-fury-heroic_thunder-roar.yaml",
+                value: "/cards/04-fury/03-fury-heroic_thunder-roar.yaml",
             },
             {
                 label: "Fury Heroic Action | To The Uttermost End",
-                value: "/cards/04-Fury/03-fury-heroic_to-the-uttermost-end.yaml",
+                value: "/cards/04-fury/03-fury-heroic_to-the-uttermost-end.yaml",
             },
             {
                 label: "Berserker Fury Heroic Maneuver | Special Delivery",
-                value: "/cards/04-Fury/04-berserker-fury_special-delivery.yaml",
+                value: "/cards/04-fury/04-berserker-fury_special-delivery.yaml",
             },
             {
                 label: "Berserker Fury Heroic Maneuver | Wrecking Ball",
-                value: "/cards/04-Fury/04-berserker-fury_wrecking-ball.yaml",
+                value: "/cards/04-fury/04-berserker-fury_wrecking-ball.yaml",
             },
             {
                 label: "Reaver Fury Heroic Action | Phalanx Breaker",
-                value: "/cards/04-Fury/04-reaver-fury_phalanx-breaker.yaml",
+                value: "/cards/04-fury/04-reaver-fury_phalanx-breaker.yaml",
             },
             {
                 label: "Reaver Fury Heroic Action | RRRAAAGHH!",
-                value: "/cards/04-Fury/04-reaver-fury_rrraaaghh!.yaml",
+                value: "/cards/04-fury/04-reaver-fury_rrraaaghh!.yaml",
             },
             {
                 label: "Stormwight Fury Heroic Action | Apex Predator",
-                value: "/cards/04-Fury/04-stormwight-fury_apex-predator.yaml",
+                value: "/cards/04-fury/04-stormwight-fury_apex-predator.yaml",
             },
             {
                 label: "Stormwight Fury Heroic Action | Visceral Roar",
-                value: "/cards/04-Fury/04-stormwight-fury_visceral-roar.yaml",
+                value: "/cards/04-fury/04-stormwight-fury_visceral-roar.yaml",
             },
         ],
     },
@@ -573,8 +573,120 @@ export const cardManifest  = [
                 value: "/cards/04-null/00-null-core_null-field.yaml",
             },
             {
+                label: "Chronokinetic Null Triggered Action | Inertial Shield",
+                value: "/cards/04-null/01-chronokinetic-null-triggered-action_inertial-shield.yaml",
+            },
+            {
+                label: "Cryokinetic Null Triggered Action | Inertial Shield",
+                value: "/cards/04-null/01-cryokinetic-null-triggered-action_inertial-shield.yaml",
+            },
+            {
+                label: "Metakinetic Null Triggered Action | Inertial Shield",
+                value: "/cards/04-null/01-metakinetic-null-triggered-action_inertial-shield.yaml",
+            },
+            {
+                label: "Null Signature Action | Dance of Blows",
+                value: "/cards/04-null/02-null-signature-action_dance-of-blows.yaml",
+            },
+            {
+                label: "Null Signature Action | Faster than the Eye",
+                value: "/cards/04-null/02-null-signature-action_faster-than-the-eye.yaml",
+            },
+            {
+                label: "Null Signature Action | Inertial Step",
+                value: "/cards/04-null/02-null-signature-action_inertial-step.yaml",
+            },
+            {
+                label: "Null Signature Action | Joint Lock",
+                value: "/cards/04-null/02-null-signature-action_joint-lock.yaml",
+            },
+            {
+                label: "Null Signature Action | Kinetic Strike",
+                value: "/cards/04-null/02-null-signature-action_kinetic-strike.yaml",
+            },
+            {
+                label: "Null Signature Action | Magnetic Strike",
+                value: "/cards/04-null/02-null-signature-action_magnetic-strike.yaml",
+            },
+            {
+                label: "Null Signature Action | Phase Inversion Strike",
+                value: "/cards/04-null/02-null-signature-action_phase-inversion-strike (1).yaml",
+            },
+            {
+                label: "Null Signature Action | Pressure Points",
+                value: "/cards/04-null/02-null-signature-action_pressure-points.yaml",
+            },
+            {
+                label: "Null Heroic Action | Chronal Spike",
+                value: "/cards/04-null/03-null-heroic_chronal-spike.yaml",
+            },
+            {
+                label: "Null Heroic Maneuver | Psychic Pulse",
+                value: "/cards/04-null/03-null-heroic_psychic-pulse.yaml",
+            },
+            {
                 label: "Null Heroic Action | Relentless Nemesis",
                 value: "/cards/04-null/03-null-heroic_relentless-nemesis.yaml",
+            },
+            {
+                label: "Null Heroic Action | Stunning Blow",
+                value: "/cards/04-null/03-null-heroic_stunning-blow.yaml",
+            },
+            {
+                label: "Null Heroic Action | A Squad Unto Myself",
+                value: "/cards/04-null/04-null-heroic_a-squad-unto-myself.yaml",
+            },
+            {
+                label: "Null Heroic Action | Arcane Disruptor",
+                value: "/cards/04-null/04-null-heroic_arcane-disruptor.yaml",
+            },
+            {
+                label: "Null Heroic Maneuver | Impart Force",
+                value: "/cards/04-null/04-null-heroic_impart-force.yaml",
+            },
+            {
+                label: "Null Heroic Action | Phase Strike",
+                value: "/cards/04-null/04-null-heroic_phase-strike.yaml",
+            },
+            {
+                label: "Chronokinetic Null Heroic Maneuver | Blur",
+                value: "/cards/04-null/05-chronokinetic-null-heroic_blur.yaml",
+            },
+            {
+                label: "Chronokinetic Null Heroic Action | Force Redirected",
+                value: "/cards/04-null/05-chronokinetic-null-heroic_force-redirected.yaml",
+            },
+            {
+                label: "Cryokinetic Null Heroic Action | Entropic Field",
+                value: "/cards/04-null/05-cryokinetic-null-heroic_entropic-field.yaml",
+            },
+            {
+                label: "Cryokinetic Null Heroic Maneuver | Heat Sink",
+                value: "/cards/04-null/05-cryokinetic-null-heroic_heat-sink.yaml",
+            },
+            {
+                label: "Metakinetic Null Heroic Action | Gravitic Strike",
+                value: "/cards/04-null/05-metakinetic-null-heroic_gravitic-strike.yaml",
+            },
+            {
+                label: "Metakinetic Null Heroic Maneuver | Kinetic Shield",
+                value: "/cards/04-null/05-metakinetic-null-heroic_kinetic-shield.yaml",
+            },
+            {
+                label: "Null Heroic Maneuver | Absorption Field",
+                value: "/cards/04-null/06-null-heroic-maneuver_absorption-field.yaml",
+            },
+            {
+                label: "Null Heroic Maneuver | Molecular Rearrangement Field",
+                value: "/cards/04-null/06-null-heroic-maneuver_molecular-rearrangement-field.yaml",
+            },
+            {
+                label: "Null Heroic Maneuver | Stabilizing Field",
+                value: "/cards/04-null/06-null-heroic-maneuver_stabilizing-field.yaml",
+            },
+            {
+                label: "Null Heroic Maneuver | Synapse Field",
+                value: "/cards/04-null/06-null-heroic-maneuver_synapse-field.yaml",
             },
         ],
     },

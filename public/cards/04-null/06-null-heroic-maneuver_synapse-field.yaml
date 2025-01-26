@@ -1,0 +1,23 @@
+type: Maneuver
+topMatter: Null Heroic Maneuver
+title: Synapse Field
+keywords:
+  - Psionic
+flavour: Attacks made by allies in your null field disrupt your enemies’
+  thoughts, causing psychic pain.
+statements:
+  - key: Effect
+    value: >-
+      Until the end of the encounter, the area of your Null Field ability
+      increases by 1.
+
+      While the area is enlarged this way, enemies who take damage in the area
+      taken additional psychic damage equal to twice your Intuition score.
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Discipline
+  costValue: "7"

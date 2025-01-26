@@ -1,0 +1,40 @@
+type: Maneuver
+topMatter: Null Heroic Maneuver
+title: Impart Force
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: A single touch from you, and your enemy flies backward.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Push 3
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Push 5
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: Push 7
+      hasPotency: false
+  - key: Effect
+    value: You gain an edge on this ability. For each square you push the target,
+      they take 1 psychic damage.
+hasCost: true
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Discipline
+  costValue: "5"

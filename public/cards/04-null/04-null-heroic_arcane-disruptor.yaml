@@ -1,0 +1,47 @@
+type: Action
+topMatter: Null Heroic Action
+title: Arcane Disruptor
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: Your blow reorders a foe’s body, causing pain if they attempt to
+  channel sorcery.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 8+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: true
+      potencyValue: m<0
+      potencyEffect: Weakened (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 12+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: true
+      potencyEffect: Weakened (save ends)
+      potencyValue: m<1
+    t3:
+      hasDamage: true
+      damageValue: 16+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: true
+      potencyEffect: Weakened (save ends)
+      potencyValue: m<2
+  - key: Effect
+    value: While weakened this way, the target takes damage equal to your Intuition
+      score when they use a supernatural or ability that costs Malice.
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Discipline
+  costValue: "5"

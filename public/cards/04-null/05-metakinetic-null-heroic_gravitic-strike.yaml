@@ -1,0 +1,37 @@
+type: Action
+topMatter: Metakinetic Null Heroic Action
+title: Gravitic Strike
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: Your fist projects gravitic force that pulls a distant enemy closer.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 8+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; vertical pull 3
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 12+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; vertical pull 5
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 16+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; vertical pull 7
+      hasPotency: false
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "3"
+cost:
+  costName: Discipline
+  costValue: "5"

@@ -1,0 +1,35 @@
+type: Action
+topMatter: Null Signature Action
+title: Magnetic Strike
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: The force of your blow extends past the limits of your body, pulling
+  your enemy closer.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 5+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; vertical pull 1
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 8+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; vertical pull 2
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 11+a
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; vertical pull 1
+      hasPotency: false
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "2"

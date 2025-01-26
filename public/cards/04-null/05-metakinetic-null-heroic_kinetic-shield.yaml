@@ -1,0 +1,36 @@
+type: Maneuver
+topMatter: Metakinetic Null Heroic Maneuver
+title: Kinetic Shield
+keywords:
+  - Psionic
+flavour: You manifest a force barrier that absorbs incoming kinetic energy.
+statements:
+  - characteristic: Intuition
+    t1:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: You gain 10 temporary Stamina
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: You gain 15 temporary Stamina
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: You gain 20 temporary Stamina
+      hasPotency: false
+  - key: Effect
+    value: While you have this temporary Stamina, you can’t be made bleeding.
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Discipline
+  costValue: "5"

@@ -1,0 +1,43 @@
+type: Action
+topMatter: Null Heroic Action
+title: Stunning Blow
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: You focus your psionic technique into a debilitating concussive punch.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 4+a
+      hasGeneralEffect: false
+      generalEffect: 2 + M or A damage
+      hasPotency: true
+      potencyValue: i<0
+      potencyEffect: Dazed and slowed (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 5+a
+      hasGeneralEffect: false
+      generalEffect: 5 + M or A damage
+      hasPotency: true
+      potencyValue: i<1
+      potencyEffect: Dazed and slowed (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 7+a
+      hasGeneralEffect: false
+      generalEffect: 7 + M or A damage
+      hasPotency: true
+      potencyValue: i<2
+      potencyEffect: Dazed and slowed (save ends)
+hasCost: true
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Discipline
+  costValue: "3"
