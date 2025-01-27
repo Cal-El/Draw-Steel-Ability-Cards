@@ -1,0 +1,39 @@
+type: Action
+topMatter: Shadow Heroic Action
+title: Two Throats at Once
+keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+flavour: A bargain.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: "4"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "6"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "10"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+hasCost: true
+target: 2 Creatures or Objects
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Insight
+  costValue: "3"

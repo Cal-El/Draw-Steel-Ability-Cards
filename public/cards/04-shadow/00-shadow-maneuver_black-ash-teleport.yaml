@@ -1,0 +1,19 @@
+type: Maneuver
+topMatter: Black Ash Shadow Maneuver
+title: Black Ash Teleport
+keywords:
+  - Magic
+flavour: In a swirl of black ash, you step from one place to another.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: "You teleport up to 5 squares. If you have concealment or cover at your
+      destination, you can use the Hide maneuver even if you are observed. If
+      you hide using this maneuver, you gain a surge. "
+  - key: Spend 1+ Insight
+    value: You teleport 1 additional square for each insight spent.
+hasCost: false
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self

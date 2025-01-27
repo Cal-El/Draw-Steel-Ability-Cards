@@ -1,0 +1,45 @@
+type: Action
+topMatter: Shadow Heroic Action
+title: Staggering Blow
+keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+flavour: There's no recovering from this.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 7+a
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<0
+      potencyEffect: Slowed (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 11+a
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<1
+      potencyEffect: Prone and can’t stand (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 16+a
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<2
+      potencyEffect: Prone and can’t stand (save ends)
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Insight
+  costValue: "7"

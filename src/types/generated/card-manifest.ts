@@ -691,6 +691,131 @@ export const cardManifest  = [
         ],
     },
     {
+        label: "Shadow",
+        options: [
+            {
+                label: "Black Ash Shadow Maneuver | Black Ash Teleport",
+                value: "/cards/04-shadow/00-shadow-maneuver_black-ash-teleport.yaml",
+            },
+            {
+                label: "Caustic Alchemy Shadow Maneuver | Coat the Blade",
+                value: "/cards/04-shadow/00-shadow-maneuver_coat-the-blade.yaml",
+            },
+            {
+                label: "Harlequin Mask Shadow Maneuver | I'm No Threat",
+                value: "/cards/04-shadow/00-shadow-maneuver_i'm-no-threat.yaml",
+            },
+            {
+                label: "Harlequin Mask Shadow Triggered Action | Clever Trick",
+                value: "/cards/04-shadow/01-shadow-triggered-action_clever-trick.yaml",
+            },
+            {
+                label: "Caustic Alchemy Shadow Triggered Action | Defensive Roll",
+                value: "/cards/04-shadow/01-shadow-triggered-action_defensive-roll.yaml",
+            },
+            {
+                label: "Black Ash Shadow Triggered Action | In All This Confusion",
+                value: "/cards/04-shadow/01-shadow-triggered-action_in-all-this-confusion.yaml",
+            },
+            {
+                label: "Shadow Core Free Triggered Action | Hesitation is Weakness",
+                value: "/cards/04-shadow/02-shadow-core-free-triggered-action_hesitation-is-weakness.yaml",
+            },
+            {
+                label: "Shadow Signature Action | Gasping in Pain",
+                value: "/cards/04-shadow/03-shadow-signature-action_gasping-in-pain.yaml",
+            },
+            {
+                label: "Shadow Signature Action | I Work Better Alone",
+                value: "/cards/04-shadow/03-shadow-signature-action_i-work-better-alone.yaml",
+            },
+            {
+                label: "Shadow Signature Action | Teamwork Has Its Place",
+                value: "/cards/04-shadow/03-shadow-signature-action_teamwork-has-its-place.yaml",
+            },
+            {
+                label: "Shadow Signature Action | You Were Watching the Wrong One",
+                value: "/cards/04-shadow/03-shadow-signature-action_you-were-watching-the-wrong-one.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Disorienting Strike",
+                value: "/cards/04-shadow/04-shadow-heroic-action_disorienting-strike.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Eviscerate",
+                value: "/cards/04-shadow/04-shadow-heroic-action_eviscerate.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Get In Get Out",
+                value: "/cards/04-shadow/04-shadow-heroic-action_get-in-get-out.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Two Throats at Once",
+                value: "/cards/04-shadow/04-shadow-heroic-action_two-throats-at-once.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Coup de Grace",
+                value: "/cards/04-shadow/05-shadow-heroic-action_coup-de-grace.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | One Hundred Throats",
+                value: "/cards/04-shadow/05-shadow-heroic-action_one-hundred-throats.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Set-Up",
+                value: "/cards/04-shadow/05-shadow-heroic-action_set-up.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Shadowstrike",
+                value: "/cards/04-shadow/05-shadow-heroic-action_shadowstrike.yaml",
+            },
+            {
+                label: "Black Ash Shadow Heroic Action | In a Puff of Ash",
+                value: "/cards/04-shadow/06-black-ash-shadow-heroic_in-a-puff-of-ash.yaml",
+            },
+            {
+                label: "Black Ash Shadow Heroic Free Triggered Action | Too Slow",
+                value: "/cards/04-shadow/06-black-ash-shadow-heroic_too-slow.yaml",
+            },
+            {
+                label: "Caustic Alchemy Shadow Heroic Action | Sticky Bomb",
+                value: "/cards/04-shadow/06-caustic-alchemy-shadow-heroic_sticky-bomb.yaml",
+            },
+            {
+                label: "Caustic Alchemy Shadow Heroic Action | Stink Bomb",
+                value: "/cards/04-shadow/06-caustic-alchemy-shadow-heroic_stink-bomb.yaml",
+            },
+            {
+                label: "Harlequin Mask Shadow Heroic Maneuver | Machinations of Sound",
+                value: "/cards/04-shadow/06-harlequin-mask-shadow-heroic_machinations-of-sound.yaml",
+            },
+            {
+                label: "Harlequin Mask Shadow Heroic Free Triggered Action | So Gullible",
+                value: "/cards/04-shadow/06-harlequin-mask-shadow-heroic_so-gullible.yaml",
+            },
+            {
+                label: "Shadow Core Maneuver | Careful Observation",
+                value: "/cards/04-shadow/07-shadow-core-maneuver_careful-observation.yaml",
+            },
+            {
+                label: "Shadow Heroic Maneuver | Dancer",
+                value: "/cards/04-shadow/08-shadow-heroic_dancer.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Misdirecting Strike",
+                value: "/cards/04-shadow/08-shadow-heroic_misdirecting-strike.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Pinning Shot",
+                value: "/cards/04-shadow/08-shadow-heroic_pinning-shot.yaml",
+            },
+            {
+                label: "Shadow Heroic Action | Staggering Blow",
+                value: "/cards/04-shadow/08-shadow-heroic_staggering-blow.yaml",
+            },
+        ],
+    },
+    {
         label: "Misc",
         options: [
             {

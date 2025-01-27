@@ -12,7 +12,7 @@ statements:
       hasDamage: true
       damageValue: 3+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: p<0
       potencyEffect: Dazed and frightened (save ends)
@@ -20,7 +20,7 @@ statements:
       hasDamage: true
       damageValue: 5+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: p<1
       potencyEffect: Dazed and frightened (save ends)
@@ -28,7 +28,7 @@ statements:
       hasDamage: true
       damageValue: 8+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: p<2
       potencyEffect: Dazed and frightened (save ends)

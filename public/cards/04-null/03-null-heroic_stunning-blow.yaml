@@ -13,7 +13,7 @@ statements:
       hasDamage: true
       damageValue: 4+a
       hasGeneralEffect: false
-      generalEffect: 2 + M or A damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: i<0
       potencyEffect: Dazed and slowed (save ends)
@@ -21,7 +21,7 @@ statements:
       hasDamage: true
       damageValue: 5+a
       hasGeneralEffect: false
-      generalEffect: 5 + M or A damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: i<1
       potencyEffect: Dazed and slowed (save ends)
@@ -29,7 +29,7 @@ statements:
       hasDamage: true
       damageValue: 7+a
       hasGeneralEffect: false
-      generalEffect: 7 + M or A damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: i<2
       potencyEffect: Dazed and slowed (save ends)

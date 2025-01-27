@@ -12,7 +12,7 @@ statements:
       hasDamage: true
       damageValue: 4+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: m<0
       potencyEffect: Bleeding and weakened (save ends)
@@ -20,7 +20,7 @@ statements:
       hasDamage: true
       damageValue: 6+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: m<1
       potencyEffect: Bleeding and weakened (save ends)
@@ -28,7 +28,7 @@ statements:
       hasDamage: true
       damageValue: 10+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: m<2
       potencyEffect: |-

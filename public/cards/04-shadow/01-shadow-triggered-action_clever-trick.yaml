@@ -1,0 +1,20 @@
+type: Triggered Action
+topMatter: Harlequin Mask Shadow Triggered Action
+title: Clever Trick
+keywords:
+  - Magic
+flavour: You sow a moment of confusion in combat, to your enemy’s peril.
+statements:
+  - key: Trigger
+    value: An enemy targets you with a strike.
+  - key: Effect
+    value: "Choose an enemy within distance of the triggering strike, including the
+      enemy who targeted you. The strike targets that enemy instead. "
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Insight
+  costValue: "1"

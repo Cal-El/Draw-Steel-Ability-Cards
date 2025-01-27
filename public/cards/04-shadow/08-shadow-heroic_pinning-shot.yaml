@@ -1,16 +1,16 @@
 type: Action
-topMatter: Nature Domain Conduit Heroic Action
-title: Nature Judges Thee
+topMatter: Shadow Heroic Action
+title: Pinning Shot
 keywords:
-  - Area
-  - Magic
   - Ranged
-flavour: Mystical thorned vines appear at your bidding and bind your foes.
+  - Strike
+  - Weapon
+flavour: One missile—placed well and placed hard.
 statements:
-  - characteristic: Intuition
+  - characteristic: Might or Agility
     t1:
       hasDamage: true
-      damageValue: "2"
+      damageValue: 8+a
       hasGeneralEffect: false
       generalEffect: ""
       hasPotency: true
@@ -18,27 +18,25 @@ statements:
       potencyEffect: Restrained (save ends)
     t2:
       hasDamage: true
-      damageValue: "3"
+      damageValue: 12+a
       hasGeneralEffect: false
       generalEffect: ""
       hasPotency: true
-      potencyValue: a<1
       potencyEffect: Restrained (save ends)
+      potencyValue: a<1
     t3:
       hasDamage: true
-      damageValue: "7"
+      damageValue: 16+a
       hasGeneralEffect: false
       generalEffect: ""
       hasPotency: true
-      potencyValue: a<2
       potencyEffect: Restrained (save ends)
+      potencyValue: a<2
 hasCost: true
-target: All Enemies
+target: 1 Creature
 distance:
-  - distanceHeader: Cube
-    distanceValue: "3"
   - distanceHeader: Ranged
-    distanceValue: "10"
+    distanceValue: "5"
 cost:
-  costName: Piety
-  costValue: "5"
+  costName: Insight
+  costValue: "7"

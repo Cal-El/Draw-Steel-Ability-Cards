@@ -1,0 +1,46 @@
+type: Action
+topMatter: Black Ash Shadow Heroic Action
+title: In a Puff of Ash
+keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+flavour: You enchant a strike with your teleportation magic.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 6+a
+      hasGeneralEffect: true
+      generalEffect: |-
+        Damage; you can teleport the target 
+        1 square
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 10+a
+      hasGeneralEffect: true
+      generalEffect: |-
+        Damage; you can teleport the target 
+        3 square
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 14+a
+      hasGeneralEffect: true
+      generalEffect: |-
+        Damage; you can teleport the target 
+        5 square
+      hasPotency: false
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Insight
+  costValue: "5"

@@ -1,0 +1,38 @@
+type: Action
+topMatter: Shadow Heroic Action
+title: Disorienting Strike
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: Your attack leaves them reeling, allowing you to follow up.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 4+a
+      hasGeneralEffect: true
+      generalEffect: Damage; slide 2
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 6+a
+      hasGeneralEffect: true
+      generalEffect: Damage; slide 3
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 10+a
+      hasGeneralEffect: true
+      generalEffect: Damage; slide 5
+      hasPotency: false
+  - key: Effect
+    value: "You can shift into any square the target leaves when you slide them. "
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Insight
+  costValue: "3"

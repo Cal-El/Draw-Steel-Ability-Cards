@@ -1,0 +1,16 @@
+type: Maneuver
+topMatter: Shadow Core Maneuver
+title: Careful Observation
+keywords:
+  - —
+flavour: A moment of focus leaves a foe firmly in your sights.
+statements:
+  - key: Effect
+    value: "As long as you remain within distance of the target, maintain line of
+      effect to them, and strike no other creature first, you gain a surge and
+      an edge on the next strike you make against the assessed creature. "
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "20"

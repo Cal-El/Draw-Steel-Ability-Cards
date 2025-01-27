@@ -13,7 +13,7 @@ statements:
       hasDamage: true
       damageValue: 4+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: i<0
       potencyEffect: Slowed (save ends)
@@ -21,7 +21,7 @@ statements:
       hasDamage: true
       damageValue: 6+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: i<1
       potencyEffect: Slowed (save ends)
@@ -29,7 +29,7 @@ statements:
       hasDamage: true
       damageValue: 10+m
       hasGeneralEffect: false
-      generalEffect: Damage
+      generalEffect: ""
       hasPotency: true
       potencyValue: i<2
       potencyEffect: Slowed (save ends)

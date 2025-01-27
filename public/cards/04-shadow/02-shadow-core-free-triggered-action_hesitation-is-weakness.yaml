@@ -1,0 +1,20 @@
+type: Free Triggered Action
+topMatter: Shadow Core Free Triggered Action
+title: Hesitation is Weakness
+keywords:
+  - —
+flavour: Keep up the attack. Never give them a moment’s grace.
+statements:
+  - key: Trigger
+    value: Another hero ends their turn. That hero can’t have used this ability to
+      start their turn.
+  - key: Effect
+    value: "You take your turn after the triggering hero. "
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Insight
+  costValue: "1"
