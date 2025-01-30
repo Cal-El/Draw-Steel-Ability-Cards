@@ -1,0 +1,13 @@
+type: Passive
+topMatter: Talent Ward
+title: Vanishing Ward
+keywords: []
+flavour: Your ward allows you to slip away from danger.
+statements:
+  - key: Trigger
+    value: Whenever you take damage.
+  - key: Effect
+    value: "You become invisible until the end of your next turn. "
+hasCost: false
+target: Self
+distance: []

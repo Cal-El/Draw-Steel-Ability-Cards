@@ -1,0 +1,18 @@
+type: Maneuver
+topMatter: Tactician Heroic Maneuver
+title: Squad! Forward!
+keywords:
+  - Ranged
+flavour: On your command, you and your allies force back the enemy line.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: Each target can move their speed.
+hasCost: true
+target: Self and 2 Allies
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Focus
+  costValue: "3"

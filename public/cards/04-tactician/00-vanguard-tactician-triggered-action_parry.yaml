@@ -1,0 +1,20 @@
+type: Triggered Action
+topMatter: Vanguard Tactician Triggered Action
+title: Parry
+keywords:
+  - Melee
+  - Weapon
+flavour: Your quick reflexes cost an enemy the precision they seek.
+statements:
+  - key: Trigger
+    value: A creature deals damage to the target.
+  - key: Effect
+    value: The damage is halved. If any effect of the damage has a potency effect,
+      you decrease the potency by 1.
+  - key: Spend 1 Focus
+    value: The target can shift a number of squares equal to your Reason score.
+hasCost: false
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

@@ -1,0 +1,18 @@
+type: Maneuver
+topMatter: Tactician Heroic Maneuver
+title: Now!
+keywords:
+  - Ranged
+  - Weapon
+flavour: Your allies wait for your command—then unleash death!
+statements:
+  - key: Effect
+    value: Each target can make a free strike.
+hasCost: true
+target: 3 Allies
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Focus
+  costValue: "5"

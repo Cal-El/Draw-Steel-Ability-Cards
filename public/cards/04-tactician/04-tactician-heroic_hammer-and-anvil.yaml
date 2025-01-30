@@ -1,0 +1,45 @@
+type: Action
+topMatter: Tactician Heroic Action
+title: Hammer and Anvil
+keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+flavour: '"Let’s not argue about who’s the hammer and who’s the anvil!"'
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 5+m
+      hasGeneralEffect: true
+      generalEffect: Damage; one ally within 10 squares can make a signature strike
+        against the target as a free triggered action
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 9+m
+      hasGeneralEffect: true
+      generalEffect: Damage; one ally within 10 squares can make a signature strike
+        that gains an edge against the target as a free triggered action
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 12+m
+      hasGeneralEffect: true
+      generalEffect: "Damage; two allies within 10 squares can each make a signature
+        strike that gains an edge against the target as free triggered actions "
+      hasPotency: false
+  - key: Effect
+    value: If the target is reduced to 0 Stamina and a strike granted by this
+      ability hasn’t been made, the striker can pick a different target.
+hasCost: true
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Focus
+  costValue: "5"

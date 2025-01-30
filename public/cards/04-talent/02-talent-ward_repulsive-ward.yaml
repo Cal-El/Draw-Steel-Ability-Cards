@@ -1,0 +1,14 @@
+type: Passive
+topMatter: Talent Ward
+title: Repulsive Ward
+keywords: []
+flavour: You surround yourself with an invisible ward of telekinetic energy.
+statements:
+  - key: Trigger
+    value: Whenever an adjacent creature deals damage to you.
+  - key: Effect
+    value: You can use a free triggered action to push them up to a number of
+      squares equal to your Reason score.
+hasCost: false
+target: Self
+distance: []

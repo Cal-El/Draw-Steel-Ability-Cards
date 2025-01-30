@@ -1,0 +1,14 @@
+type: Passive
+topMatter: Talent Ward
+title: Entropy Ward
+keywords: []
+flavour: You ward slows time for your enemies.
+statements:
+  - key: Trigger
+    value: Whenever a creature deals damage to you.
+  - key: Effect
+    value: Their speed is reduced by an amount equal to your Reason score and they
+      can’t use triggered actions, all until the end of their next turn.
+hasCost: false
+target: Self
+distance: []

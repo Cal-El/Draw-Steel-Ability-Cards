@@ -816,6 +816,184 @@ export const cardManifest  = [
         ],
     },
     {
+        label: "Tactician",
+        options: [
+            {
+                label: "Insurgent Tactician Triggered Action | Advanced Tactics",
+                value: "/cards/04-tactician/00-insurgent-tactician-triggered-action_advanced-tactics.yaml",
+            },
+            {
+                label: "Mastermind Tactician Triggered Action | Overwatch",
+                value: "/cards/04-tactician/00-mastermind-tactician-triggered-action_overwatch.yaml",
+            },
+            {
+                label: "Vanguard Tactician Triggered Action | Parry",
+                value: "/cards/04-tactician/00-vanguard-tactician-triggered-action_parry.yaml",
+            },
+            {
+                label: "Tactician Core Manevuer | Mark",
+                value: "/cards/04-tactician/01-tactician-core-manevuer_mark.yaml",
+            },
+            {
+                label: "Tactician Core Action | \"Strike Now!\"",
+                value: "/cards/04-tactician/02-tactician-core-action__strike-now!_.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | Battle Cry",
+                value: "/cards/04-tactician/03-tactician-heroic_battle-cry.yaml",
+            },
+            {
+                label: "Tactician Heroic Action | Concussive Strike",
+                value: "/cards/04-tactician/03-tactician-heroic_concussive-strike.yaml",
+            },
+            {
+                label: "Tactician Heroic Action | Inspiring Strike",
+                value: "/cards/04-tactician/03-tactician-heroic_inspiring-strike.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | Squad! Forward!",
+                value: "/cards/04-tactician/03-tactician-heroic_squad!-forward!.yaml",
+            },
+            {
+                label: "Tactician Heroic Action | Hammer and Anvil",
+                value: "/cards/04-tactician/04-tactician-heroic_hammer-and-anvil.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | Now!",
+                value: "/cards/04-tactician/04-tactician-heroic_now!.yaml",
+            },
+            {
+                label: "Tactician Heroic Action | The Mind Game",
+                value: "/cards/04-tactician/04-tactician-heroic_the-mind-game.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | This Is What We Planned For",
+                value: "/cards/04-tactician/04-tactician-heroic_this-is-what-we-planned-for.yaml",
+            },
+            {
+                label: "Insurgent Tactician Heroic Manevuer | Fog of War",
+                value: "/cards/04-tactician/05-insurgent-tactician-heroic_fog-of-war.yaml",
+            },
+            {
+                label: "Insurgent Tactician Heroic Action | Try Me Instead",
+                value: "/cards/04-tactician/05-insurgent-tactician-heroic_try-me-instead.yaml",
+            },
+            {
+                label: "Mastermind Tactician Heroic Action | I've Got Your Back",
+                value: "/cards/04-tactician/05-mastermind-tactician-heroic_i've-got-your-back.yaml",
+            },
+            {
+                label: "Mastermind Tactician Heroic Maneuver | Their Tactics Are So Primitive",
+                value: "/cards/04-tactician/05-mastermind-tactician-heroic_their-tactics-are-so-primitive.yaml",
+            },
+            {
+                label: "Vanguard Tactician Heroic Triggered Action | No Dying on My Watch",
+                value: "/cards/04-tactician/05-vanguard-tactician-heroic_no-dying-on-my-watch.yaml",
+            },
+            {
+                label: "Vanguard Tactician Heroic Maneuver | Squad! On Me!",
+                value: "/cards/04-tactician/05-vanguard-tactician-heroic_squad!-on-me!.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | Double Envelopment",
+                value: "/cards/04-tactician/06-tactician-heroic-maneuver_double-envelopment.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | Frontal Assault",
+                value: "/cards/04-tactician/06-tactician-heroic-maneuver_frontal-assault.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | Rout",
+                value: "/cards/04-tactician/06-tactician-heroic-maneuver_rout.yaml",
+            },
+            {
+                label: "Tactician Heroic Maneuver | Stay Strong, and Focus!",
+                value: "/cards/04-tactician/06-tactician-heroic-maneuver_stay-strong,-and-focus!.yaml",
+            },
+        ],
+    },
+    {
+        label: "Talent",
+        options: [
+            {
+                label: "Talent Ranged Free Strike Action | Mind Spike",
+                value: "/cards/04-talent/00-talent-ranged-free-strike-action_mind-spike.yaml",
+            },
+            {
+                label: "Chronopathy Talent Maneuver | Accelerate",
+                value: "/cards/04-talent/01-talent_accelerate.yaml",
+            },
+            {
+                label: "Chronopathy Talent Triggered Action | Again",
+                value: "/cards/04-talent/01-talent_again.yaml",
+            },
+            {
+                label: "Telepathy Talent Triggered Action | Feedback Loop",
+                value: "/cards/04-talent/01-talent_feedback-loop.yaml",
+            },
+            {
+                label: "Telekinesis Talent Maneuver | Minor Telekinesis",
+                value: "/cards/04-talent/01-talent_minor-telekinesis.yaml",
+            },
+            {
+                label: "Telepathy Talent Maneuver | Remote Assistance",
+                value: "/cards/04-talent/01-talent_remote-assistance.yaml",
+            },
+            {
+                label: "Telekinesis Talent Triggered Action | Repel",
+                value: "/cards/04-talent/01-talent_repel.yaml",
+            },
+            {
+                label: "Talent Ward | Entropy Ward",
+                value: "/cards/04-talent/02-talent-ward_entropy-ward.yaml",
+            },
+            {
+                label: "Talent Ward | Repulsive Ward",
+                value: "/cards/04-talent/02-talent-ward_repulsive-ward.yaml",
+            },
+            {
+                label: "Talent Ward | Steel Ward",
+                value: "/cards/04-talent/02-talent-ward_steel-ward.yaml",
+            },
+            {
+                label: "Talent Ward | Vanishing Ward",
+                value: "/cards/04-talent/02-talent-ward_vanishing-ward.yaml",
+            },
+            {
+                label: "Talent Signature Action | Entropic Bolt",
+                value: "/cards/04-talent/03-talent-signature-action_entropic-bolt.yaml",
+            },
+            {
+                label: "Talent Signature Action | Hoarfrost",
+                value: "/cards/04-talent/03-talent-signature-action_hoarfrost.yaml",
+            },
+            {
+                label: "Talent Signature Action | Incinerate",
+                value: "/cards/04-talent/03-talent-signature-action_incinerate.yaml",
+            },
+            {
+                label: "Talent Signature Action | Kinetic Grip",
+                value: "/cards/04-talent/03-talent-signature-action_kinetic-grip.yaml",
+            },
+            {
+                label: "Talent Signature Action | Kinetic Pulse",
+                value: "/cards/04-talent/03-talent-signature-action_kinetic-pulse.yaml",
+            },
+            {
+                label: "Talent Signature Action | Materialize",
+                value: "/cards/04-talent/03-talent-signature-action_materialize.yaml",
+            },
+            {
+                label: "Talent Signature Action | Optic Blast",
+                value: "/cards/04-talent/03-talent-signature-action_optic-blast.yaml",
+            },
+            {
+                label: "Talent Signature Action | Spirit Sword",
+                value: "/cards/04-talent/03-talent-signature-action_spirit-sword.yaml",
+            },
+        ],
+    },
+    {
         label: "Misc",
         options: [
             {

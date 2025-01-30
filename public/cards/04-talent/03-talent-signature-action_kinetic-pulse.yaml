@@ -1,0 +1,36 @@
+type: Action
+topMatter: Talent Signature Action
+title: Kinetic Pulse
+keywords:
+  - Area
+  - Psionic
+  - Telepathy
+flavour: The force of your mind hurls enemies backward.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; push 1
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "7"
+      hasGeneralEffect: true
+      generalEffect: Psychic damage; push 2
+      hasPotency: false
+  - key: Strained
+    value: The size of the burst increases by 2, and you are bleeding until the
+      start of your next turn.
+hasCost: false
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "1"

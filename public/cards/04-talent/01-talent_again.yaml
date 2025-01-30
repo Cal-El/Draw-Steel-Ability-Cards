@@ -1,0 +1,19 @@
+type: Triggered Action
+topMatter: Chronopathy Talent Triggered Action
+title: Again
+keywords:
+  - Psionic
+  - Ranged
+flavour: You step back a split second to see if things play out a little differently.
+statements:
+  - key: Trigger
+    value: The target makes an ability power roll.
+  - key: Effect
+    value: You can use this ability after seeing the power roll for the triggering
+      roll. You force the target to reroll the power roll and use the new
+      result.
+hasCost: false
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

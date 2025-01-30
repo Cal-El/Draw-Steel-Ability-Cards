@@ -1,0 +1,19 @@
+type: Maneuver
+topMatter: Tactician Heroic Maneuver
+title: Double Envelopment
+keywords:
+  - —
+flavour: Historians will write about this day.
+statements:
+  - key: Effect
+    value: "Until the end of the encounter or you are dying, whenever you or any
+      ally deals damage to a target marked by you, they gain two surges, which
+      they can use immediately. "
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Focus
+  costValue: "7"

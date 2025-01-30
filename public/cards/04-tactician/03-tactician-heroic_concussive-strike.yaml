@@ -1,0 +1,45 @@
+type: Action
+topMatter: Tactician Heroic Action
+title: Concussive Strike
+keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+flavour: Your precise strike leaves your foe struggling to respond.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 3+m
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<0
+      potencyEffect: Dazed (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 5+m
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<1
+      potencyEffect: Dazed (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 8+m
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<2
+      potencyEffect: Dazed (save ends)
+hasCost: true
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Focus
+  costValue: "3"

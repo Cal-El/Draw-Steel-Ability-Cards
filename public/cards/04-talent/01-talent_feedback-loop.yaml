@@ -1,0 +1,18 @@
+type: Triggered Action
+topMatter: Telepathy Talent Triggered Action
+title: Feedback Loop
+keywords:
+  - Psionic
+  - Ranged
+flavour: Creating a brief psychic link between a foe and their target gives that
+  foe a taste of their own medicine.
+statements:
+  - key: Trigger
+    value: The target deals damage to an ally.
+  - key: Effect
+    value: The target takes psychic damage equal to half the triggering damage.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

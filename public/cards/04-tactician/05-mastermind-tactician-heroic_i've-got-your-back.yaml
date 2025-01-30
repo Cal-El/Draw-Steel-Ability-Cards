@@ -1,0 +1,47 @@
+type: Action
+topMatter: Mastermind Tactician Heroic Action
+title: I've Got Your Back
+keywords:
+  - Ranged
+  - Strike
+  - Weapon
+flavour: Your enemy will think twice about attacking your friend.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 2+r
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: r<0
+      potencyEffect: The target is frightened of an ally of your choice within range
+        (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 3+r
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyEffect: The target is frightened of an ally of your choice within range
+        (save ends)
+      potencyValue: r<1
+    t3:
+      hasDamage: true
+      damageValue: 5+r
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: r<2
+      potencyEffect: The target is frightened of an ally of your choice within range
+        (save ends)
+  - key: Effect
+    value: "One ally adjacent to the target can spend a Recovery. "
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Focus
+  costValue: "5"

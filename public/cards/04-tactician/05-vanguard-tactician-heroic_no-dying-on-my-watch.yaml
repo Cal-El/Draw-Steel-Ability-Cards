@@ -1,0 +1,50 @@
+type: Triggered Action
+topMatter: Vanguard Tactician Heroic Triggered Action
+title: No Dying on My Watch
+keywords:
+  - Ranged
+  - Strike
+  - Weapon
+flavour: You prioritize saving an ally over your own safety.
+statements:
+  - key: Trigger
+    value: The target deals damage to an ally.
+  - key: Effect
+    value: "You move up to your speed toward the target, ending your move in the
+      nearest square adjacent to them if you can. The triggering ally can spend
+      a Recovery, and gains 5 Temporary Stamina for each enemy you move past
+      while moving to the target. You then make a power roll against the target.
+      "
+  - characteristic: Might
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: r<0
+      potencyEffect: Frightened of the triggering ally (save ends)
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: r<1
+      potencyEffect: Frightened of the triggering ally (save ends)
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: r<2
+      potencyEffect: Frightened of the triggering ally (save ends)
+hasCost: true
+target: 1 Enemy
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "5"
+cost:
+  costName: Focus
+  costValue: "5"

@@ -1,0 +1,16 @@
+type: Action
+topMatter: Tactician Core Action
+title: '"Strike Now!"'
+keywords:
+  - Ranged
+flavour: Your foe left an opening. You point this out to an ally!
+statements:
+  - key: Effect
+    value: "The target can make a signature attack as a free triggered action. "
+  - key: Spend 5 Focus
+    value: You target two allies instead of one.
+hasCost: false
+target: 1 Ally
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

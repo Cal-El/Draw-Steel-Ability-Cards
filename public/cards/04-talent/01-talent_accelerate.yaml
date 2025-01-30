@@ -1,0 +1,18 @@
+type: Maneuver
+topMatter: Chronopathy Talent Maneuver
+title: Accelerate
+keywords:
+  - Psionic
+flavour: To your ally, it seems as though the world has slowed down.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: The target immediately shifts up to a number of squares equal to your
+      Reason score.
+  - key: Spend 2 Clarity
+    value: The target can also use a maneuver.
+hasCost: false
+target: Self or 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

@@ -1,0 +1,19 @@
+type: Triggered Action
+topMatter: Mastermind Tactician Triggered Action
+title: Overwatch
+keywords:
+  - Ranged
+flavour: "Under your direction, an ally waits for just the right moment to strike. "
+statements:
+  - key: Trigger
+    value: The target moves.
+  - key: Effect
+    value: "At any point during the target’s movement, one ally can make a free
+      strike against them. "
+  - key: Spend 1 Focus
+    value: If the target has **R < average**, they are also slowed (EoT).
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

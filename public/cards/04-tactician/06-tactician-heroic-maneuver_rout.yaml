@@ -1,0 +1,19 @@
+type: Maneuver
+topMatter: Tactician Heroic Maneuver
+title: Rout
+keywords:
+  - —
+flavour: The tide begins to turn.
+statements:
+  - key: Effect
+    value: "Until the end of the encounter or you are dying, whenever you or any
+      ally deals damage to a target marked by you, if that target has **R <
+      average**, they are frightened of the damage dealer (save ends). "
+hasCost: true
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self
+cost:
+  costName: Focus
+  costValue: "7"

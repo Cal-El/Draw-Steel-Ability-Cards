@@ -1,0 +1,43 @@
+type: Action
+topMatter: Talent Signature Action
+title: Hoarfrost
+keywords:
+  - Cryokinesis
+  - Psionic
+  - Ranged
+  - Strike
+flavour: A row of the terrain freezes over ahead of you, turning hard and slick.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 2+r
+      hasGeneralEffect: true
+      generalEffect: Cold damage
+      hasPotency: true
+      potencyEffect: Slowed (EoT)
+      potencyValue: m<0
+    t2:
+      hasDamage: true
+      damageValue: 4+r
+      hasGeneralEffect: true
+      generalEffect: Cold damage
+      hasPotency: true
+      potencyEffect: Slowed (EoT)
+      potencyValue: m<1
+    t3:
+      hasDamage: true
+      damageValue: 6+r
+      hasGeneralEffect: true
+      generalEffect: Cold damage
+      hasPotency: true
+      potencyValue: m<2
+      potencyEffect: Slowed (EoT)
+  - key: Strained
+    value: "A target slowed by this ability is restrained instead, and you are
+      slowed until the end of your next turn. "
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

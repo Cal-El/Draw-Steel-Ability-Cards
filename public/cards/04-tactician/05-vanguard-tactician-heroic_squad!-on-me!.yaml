@@ -1,0 +1,21 @@
+type: Maneuver
+topMatter: Vanguard Tactician Heroic Maneuver
+title: Squad! On Me!
+keywords:
+  - Area
+flavour: Together we are invincible!
+statements:
+  - key: Effect
+    value: >-
+      Until the start of your next turn, each target gains a bonus to their
+      Stability equal to your Might score. 
+
+      Additionally, each target gains two surges.
+hasCost: true
+target: Self and All Allies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "1"
+cost:
+  costName: Focus
+  costValue: "5"

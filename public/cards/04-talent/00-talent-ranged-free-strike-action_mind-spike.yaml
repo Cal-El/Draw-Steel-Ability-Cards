@@ -1,0 +1,37 @@
+type: Free Strike Action
+topMatter: Talent Ranged Free Strike Action
+title: Mind Spike
+keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telepathy
+flavour: A telepathic bolt instantly zaps a creature’s brain.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 2+r
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 4+r
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 6+r
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+  - key: Strained
+    value: The strike deals an extra 2 psychic damage to the target and to you. The
+      damage you take can’t be reduced in any way.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

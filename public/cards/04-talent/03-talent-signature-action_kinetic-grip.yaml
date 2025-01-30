@@ -1,0 +1,40 @@
+type: Action
+topMatter: Talent Signature Action
+title: Kinetic Grip
+keywords:
+  - Melee
+  - Psionic
+  - Telekinesis
+flavour: You lift and hurl your foe away from you.
+statements:
+  - key: Target
+    value: One size 1 creature or object
+  - spacePt: 5
+  - characteristic: Reason
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Push 3
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Push 5
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Push 7; prone
+      hasPotency: false
+  - key: Effect
+    value: You can slide the target up to 2 squares before making the power roll.
+  - key: Strained
+    value: You can’t use this ability’s effect, but you can vertical push the target.
+hasCost: false
+target: Special
+distance:
+  - distanceHeader: Melee
+    distanceValue: "3"

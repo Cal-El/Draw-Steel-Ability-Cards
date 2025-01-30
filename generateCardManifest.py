@@ -29,6 +29,10 @@ for group in groups:
         for line in fCon:
             if "title:" in line:
                 name = line[7:-1]
+                if name.startswith("'") and name.endswith("'"):
+                    print(name)
+                    name = name[1:-1].replace('"', '\\"')
+                    print(name)
             if "topMatter:" in line:
                 topMatter = line[11:-1]
         manifestFile.write("            {\n")
