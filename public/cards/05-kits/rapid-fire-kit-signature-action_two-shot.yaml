@@ -1,0 +1,33 @@
+type: Action
+topMatter: Rapid-Fire Kit Signature Action
+title: Two Shot
+keywords:
+  - Ranged
+  - Strike
+  - Weapon
+flavour: When you fire two arrows back to back, both hit their mark.
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: "4"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "6"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "8"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+hasCost: false
+target: 2 Creatures or Objects
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "12"

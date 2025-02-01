@@ -1,0 +1,37 @@
+type: Action
+topMatter: Spellsword Kit Signature Action
+title: Leaping Lightning
+keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+flavour: Lightning jumps from your weapon as you strike to harm a nearby foe.
+statements:
+  - characteristic: Might, Reason, Intuition, or Presence
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + M, R, I or P lightning damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 8 + M, R, I or P lightning damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 11 + M, R, I or P lightning damage
+      hasPotency: false
+  - key: Effect
+    value: A creature or object within 2 squares of your target takes lightning
+      damage equal to the characteristic you used for this ability’s power roll.
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

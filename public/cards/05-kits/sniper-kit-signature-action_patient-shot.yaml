@@ -1,0 +1,36 @@
+type: Action
+topMatter: Sniper Kit Signature Action
+title: Patient Shot
+keywords:
+  - Ranged
+  - Strike
+  - Weapon
+flavour: Breathe... aim... wait... then strike!
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 3 + M or A damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 6 + M or A damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 13 + M or A damage
+      hasPotency: false
+  - key: Effect
+    value: If you don’t take a move action this turn, this strike deals extra damage
+      equal to your Might or Agility score (your choice).
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "15"

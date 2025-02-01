@@ -1,0 +1,37 @@
+type: Action
+topMatter: Warrior Priest Kit Signature Action
+title: Weakening Brand
+keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+flavour: The impact of your weapon brands your target for destruction.
+statements:
+  - characteristic: Might, Reason, Intuition, or Presence
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 3 + M, R, I or P holy damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + M, R, I or P holy damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 8 + M, R, I or P holy damage
+      hasPotency: false
+  - key: Effect
+    value: The target has damage weakness equal to the characteristic score you used
+      on this ability’s power roll (EoT).
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

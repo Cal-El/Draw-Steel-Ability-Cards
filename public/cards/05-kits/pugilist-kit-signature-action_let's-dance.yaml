@@ -1,0 +1,35 @@
+type: Action
+topMatter: Pugilist Kit Signature Action
+title: Let's Dance
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: Keeping your enemies stumbling around the battlefield is second nature to you.
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 3 + M or A damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 6 + M or A damage; slide 1
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 8 + M or A damage; slide 2
+      hasPotency: false
+  - key: Effect
+    value: You can shift into any square your target leaves after you slide them.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

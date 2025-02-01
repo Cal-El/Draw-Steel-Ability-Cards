@@ -1,0 +1,40 @@
+type: Action
+topMatter: Retiarius Kit Signature Action
+title: Net and Stab
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: The well-thrown net that follows your main attack leaves your foes
+  right where you want them.
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 4 + M or A damage
+      hasPotency: true
+      potencyValue: a<0
+      potencyEffect: Slowed (EoT)
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 6 + M or A damage
+      hasPotency: true
+      potencyEffect: Slowed (EoT)
+      potencyValue: a<1
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 8 + M or A damage
+      hasPotency: true
+      potencyValue: a<2
+      potencyEffect: Restrained (EoT)
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "2"

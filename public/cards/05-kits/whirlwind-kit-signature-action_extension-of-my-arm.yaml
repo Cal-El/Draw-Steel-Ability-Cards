@@ -1,0 +1,33 @@
+type: Action
+topMatter: Whirlwind Kit Signature Action
+title: Extension of My Arm
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: When you draw your whip back after an attack, your enemy comes ever closer.
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 4 + M or A damage; vertical pull 1
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 7 + M or A damage; vertical pull 2
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 10 + M or A damage; vertical pull 3
+      hasPotency: false
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "3"

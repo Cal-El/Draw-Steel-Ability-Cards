@@ -1,0 +1,36 @@
+type: Action
+topMatter: Swashbuckler Kit Signature Action
+title: Fancy Footwork
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: All combat is a dance—and you’ll be the one leading.
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + M or A damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 7 + M or A damage; push 1
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 10 + M or A damage; push 2
+      hasPotency: false
+  - key: Effect
+    value: You can shift into any square your target leaves after you force move
+      them with this ability.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

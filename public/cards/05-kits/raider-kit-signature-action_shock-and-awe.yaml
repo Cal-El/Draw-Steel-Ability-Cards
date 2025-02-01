@@ -1,0 +1,39 @@
+type: Action
+topMatter: Raider Kit Signature Action
+title: Shock and Awe
+keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+flavour: You execute a brutal strike that leaves your foe reeling.
+statements:
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 3 + M or A damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 6 + M or A damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 8 + M or A damage
+      hasPotency: false
+  - key: Effect
+    value: The target has a bane on their next power roll made before the end of
+      their next turn.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+  - distanceHeader: Ranged
+    distanceValue: "10"

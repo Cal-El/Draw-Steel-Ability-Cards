@@ -1,0 +1,34 @@
+type: Action
+topMatter: Battlemind Kit Signature Action
+title: Unmooring
+keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+flavour: Your weapon unleashes psionic energy that reduces your target’s weight.
+statements:
+  - characteristic: Might, Reason, Intuition, or Presence
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + M, R, I, or P damage; stability reduced by 2 (EoT)
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 8 + M, R, I, or P damage; stability reduced by 3 (EoT)
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 11 + M, R, I, or P damage; stability reduced by 4 (EoT)
+      hasPotency: false
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

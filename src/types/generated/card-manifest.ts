@@ -1215,6 +1215,95 @@ export const cardManifest  = [
         ],
     },
     {
+        label: "Kits",
+        options: [
+            {
+                label: "Arcane Archer Kit Signature Action | Exploding Arrow",
+                value: "/cards/05-kits/arcane-archer-kit-signature-action_exploding-arrow.yaml",
+            },
+            {
+                label: "Battlemind Kit Signature Action | Unmooring",
+                value: "/cards/05-kits/battlemind-kit-signature-action_unmooring.yaml",
+            },
+            {
+                label: "Cloak and Dagger Signature Action | Fade",
+                value: "/cards/05-kits/cloak-and-dagger-signature-action_fade.yaml",
+            },
+            {
+                label: "Dual Wielder Signature Action | Double Strike",
+                value: "/cards/05-kits/dual-wielder-signature-action_double-strike.yaml",
+            },
+            {
+                label: "Guisarmier Kit Signature Action | Forward Thrust, Backward Smash",
+                value: "/cards/05-kits/guisarmier-kit-signature-action_forward-thrust,-backward-smash.yaml",
+            },
+            {
+                label: "Martial Artist Kit Signature Action | Battle Grace",
+                value: "/cards/05-kits/martial-artist-kit-signature-action_battle-grace.yaml",
+            },
+            {
+                label: "Mountain Kit Signature Action | Pain for Pain",
+                value: "/cards/05-kits/mountain-kit-signature-action_pain-for-pain.yaml",
+            },
+            {
+                label: "Panther Kit Signature Action | Devastating Rush",
+                value: "/cards/05-kits/panther-kit-signature-action_devastating-rush.yaml",
+            },
+            {
+                label: "Pugilist Kit Signature Action | Let's Dance",
+                value: "/cards/05-kits/pugilist-kit-signature-action_let's-dance.yaml",
+            },
+            {
+                label: "Raider Kit Signature Action | Shock and Awe",
+                value: "/cards/05-kits/raider-kit-signature-action_shock-and-awe.yaml",
+            },
+            {
+                label: "Ranger Kit Signature Action | Hamstring Shot",
+                value: "/cards/05-kits/ranger-kit-signature-action_hamstring-shot.yaml",
+            },
+            {
+                label: "Rapid-Fire Kit Signature Action | Two Shot",
+                value: "/cards/05-kits/rapid-fire-kit-signature-action_two-shot.yaml",
+            },
+            {
+                label: "Retiarius Kit Signature Action | Net and Stab",
+                value: "/cards/05-kits/retiarius-kit-signature-action_net-and-stab.yaml",
+            },
+            {
+                label: "Shining Armor Kit Signature Action | Protective Attack",
+                value: "/cards/05-kits/shining-armor-kit-signature-action_protective-attack.yaml",
+            },
+            {
+                label: "Sniper Kit Signature Action | Patient Shot",
+                value: "/cards/05-kits/sniper-kit-signature-action_patient-shot.yaml",
+            },
+            {
+                label: "Spellsword Kit Signature Action | Leaping Lightning",
+                value: "/cards/05-kits/spellsword-kit-signature-action_leaping-lightning.yaml",
+            },
+            {
+                label: "Stick and Robe Kit Signature Action | Where I Want You",
+                value: "/cards/05-kits/stick-and-robe-kit-signature-action_where-i-want-you.yaml",
+            },
+            {
+                label: "Swashbuckler Kit Signature Action | Fancy Footwork",
+                value: "/cards/05-kits/swashbuckler-kit-signature-action_fancy-footwork.yaml",
+            },
+            {
+                label: "Sword and Board Signature Action | Shield Bash",
+                value: "/cards/05-kits/sword-and-board-signature-action_shield-bash.yaml",
+            },
+            {
+                label: "Warrior Priest Kit Signature Action | Weakening Brand",
+                value: "/cards/05-kits/warrior-priest-kit-signature-action_weakening-brand.yaml",
+            },
+            {
+                label: "Whirlwind Kit Signature Action | Extension of My Arm",
+                value: "/cards/05-kits/whirlwind-kit-signature-action_extension-of-my-arm.yaml",
+            },
+        ],
+    },
+    {
         label: "Misc",
         options: [
             {

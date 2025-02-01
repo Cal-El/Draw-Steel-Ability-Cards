@@ -1,0 +1,37 @@
+type: Action
+topMatter: Arcane Archer Kit Signature Action
+title: Exploding Arrow
+keywords:
+  - Magic
+  - Ranged
+  - Strike
+  - Weapon
+flavour: Your ammunition explodes with magical energy.
+statements:
+  - characteristic: Agility, Reason, Intuition, or Presence
+    t1:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 5 + A, R, I, or P fire damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: "7 + A, R, I, or P fire damage "
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: 10 + A, R, I, or P fire damage
+      hasPotency: false
+  - key: Effect
+    value: A creature or object within 2 squares of your target takes fire damage
+      equal to the characteristic score you added to this ability’s power roll.
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "15"
