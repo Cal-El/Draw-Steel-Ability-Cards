@@ -1,0 +1,32 @@
+type: Maneuver
+topMatter: Virtuoso Troubadour Maneuver
+title: Power Chord
+keywords:
+  - Area
+  - Magic
+flavour: Your instrument rings true and your music blows everyone away.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Push 1
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Push 2
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Push 3
+      hasPotency: false
+hasCost: false
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "2"

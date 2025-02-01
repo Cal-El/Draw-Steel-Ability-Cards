@@ -1,0 +1,53 @@
+type: Maneuver
+topMatter: Chronopathy Talent Heroic Maneuver
+title: Slow
+keywords:
+  - Chronopathy
+  - Psionic
+  - Ranged
+flavour: Perhaps they wonder why everyone else is moving so quickly?
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: The target’s speed is halved (save ends), or...
+      hasPotency: true
+      potencyEffect: The target is slowed (save ends).
+      potencyValue: p<0
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: The target is slowed (save ends), or...
+      hasPotency: true
+      potencyValue: p<1
+      potencyEffect: The target’s speed is 0 (save ends)
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: The target is slowed (save ends), or...
+      hasPotency: true
+      potencyValue: p<2
+      potencyEffect: The target’s speed is 0 (save ends)
+  - key: Effect
+    value: A target can’t use triggered actions while their speed is reduced by this
+      ability.
+  - key: Strained
+    value: >-
+      The potency of this ability increases by 1 and you take 1d6 damage. At the
+      start of each round while any target is affected by this ability, you take
+      1d6 damage. 
+
+      You can immediately end the effects on all affected targets (no action
+      required).
+hasCost: true
+target: 3 Creatures or Objects
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Clarity
+  costValue: "5"

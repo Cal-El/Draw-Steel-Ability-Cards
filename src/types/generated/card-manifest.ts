@@ -991,6 +991,227 @@ export const cardManifest  = [
                 label: "Talent Signature Action | Spirit Sword",
                 value: "/cards/04-talent/03-talent-signature-action_spirit-sword.yaml",
             },
+            {
+                label: "Talent Heroic Action | Awe",
+                value: "/cards/04-talent/04-talent-heroic-action_awe.yaml",
+            },
+            {
+                label: "Talent Heroic Action | Nothing Exceeds My Grasp",
+                value: "/cards/04-talent/04-talent-heroic-action_nothing-exceeds-my-grasp.yaml",
+            },
+            {
+                label: "Talent Heroic Action | Precognition",
+                value: "/cards/04-talent/04-talent-heroic-action_precognition.yaml",
+            },
+            {
+                label: "Talent Heroic Action | Smolder",
+                value: "/cards/04-talent/04-talent-heroic-action_smolder.yaml",
+            },
+            {
+                label: "Talent Heroic Maneuver | Flashback",
+                value: "/cards/04-talent/05-talent-heroic-maneuver_flashback.yaml",
+            },
+            {
+                label: "Talent Heroic Maneuver | Inertia Soak",
+                value: "/cards/04-talent/05-talent-heroic-maneuver_inertia-soak.yaml",
+            },
+            {
+                label: "Talent Heroic Maneuver | Iron",
+                value: "/cards/04-talent/05-talent-heroic-maneuver_iron.yaml",
+            },
+            {
+                label: "Talent Heroic Maneuver | Perfect Clarity",
+                value: "/cards/04-talent/05-talent-heroic-maneuver_perfect-clarity.yaml",
+            },
+            {
+                label: "Chronopathy Talent Heroic Maneuver | Applied Chronometrics",
+                value: "/cards/04-talent/06-chronopathy-talent-heroic-maneuver_applied-chronometrics.yaml",
+            },
+            {
+                label: "Chronopathy Talent Heroic Maneuver | Slow",
+                value: "/cards/04-talent/06-chronopathy-talent-heroic-maneuver_slow.yaml",
+            },
+            {
+                label: "Telekinesis Talent Heroic Action | Gravitic Burst",
+                value: "/cards/04-talent/06-telekinesis-talent-heroic-action_gravitic-burst.yaml",
+            },
+            {
+                label: "Telekinesis Talent Heroic Action | Levity and Gravity",
+                value: "/cards/04-talent/06-telekinesis-talent-heroic-action_levity-and-gravity.yaml",
+            },
+            {
+                label: "Telepathy Talent Heroic Action | Overwhelm",
+                value: "/cards/04-talent/06-telepathy-talent-heroic-action_overwhelm.yaml",
+            },
+            {
+                label: "Telepathy Talent Heroic Action | Synaptic Override",
+                value: "/cards/04-talent/06-telepathy-talent-heroic-action_synaptic-override.yaml",
+            },
+            {
+                label: "Talent Heroic Action | Fling Through Time",
+                value: "/cards/04-talent/07-talent-heroic-action_fling-through-time.yaml",
+            },
+            {
+                label: "Talent Heroic Action | Force Orbs",
+                value: "/cards/04-talent/07-talent-heroic-action_force-orbs.yaml",
+            },
+            {
+                label: "Talent Heroic Action | Reflector Field",
+                value: "/cards/04-talent/07-talent-heroic-action_reflector-field.yaml",
+            },
+            {
+                label: "Talent Heroic Action | Soul Burn",
+                value: "/cards/04-talent/07-talent-heroic-action_soul-burn.yaml",
+            },
+        ],
+    },
+    {
+        label: "Troubadour",
+        options: [
+            {
+                label: "Troubadour Core Routine | Choreography",
+                value: "/cards/04-troubadour/00-troubadour-core-routine_choreography.yaml",
+            },
+            {
+                label: "Troubadour Core Routine | Revitalizing Limerick",
+                value: "/cards/04-troubadour/00-troubadour-core-routine_revitalizing-limerick.yaml",
+            },
+            {
+                label: "Duelist Troubadour Routine | Acrobatics",
+                value: "/cards/04-troubadour/01-troubadour_acrobatics.yaml",
+            },
+            {
+                label: "Skald Troubadour Routine | Blocking",
+                value: "/cards/04-troubadour/01-troubadour_blocking.yaml",
+            },
+            {
+                label: "Skald Troubadour Maneuver | Dramatic Monologue",
+                value: "/cards/04-troubadour/01-troubadour_dramatic-monologue.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Maneuver | Power Chord",
+                value: "/cards/04-troubadour/01-troubadour_power-chord.yaml",
+            },
+            {
+                label: "Duelist Troubadour Maneuver | Star Power",
+                value: "/cards/04-troubadour/01-troubadour_star-power.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Routine | \"Ballad of the Beast\"",
+                value: "/cards/04-troubadour/01-troubadour_v-ballad-of-the-beast.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Routine | \"Thunder Mother\"",
+                value: "/cards/04-troubadour/01-troubadour_v-thunder-mother.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Triggered Action | Harmonize",
+                value: "/cards/04-troubadour/02-troubadour-triggered-action_harmonize.yaml",
+            },
+            {
+                label: "Duelist Troubadour Triggered Action | Riposte",
+                value: "/cards/04-troubadour/02-troubadour-triggered-action_riposte.yaml",
+            },
+            {
+                label: "Skald Troubadour Triggered Action | Turnabout is Fair Play",
+                value: "/cards/04-troubadour/02-troubadour-triggered-action_turnabout-is-fair-play.yaml",
+            },
+            {
+                label: "Troubadour Signature Action | Artful Flourish",
+                value: "/cards/04-troubadour/03-troubadour-signature-action_artful-flourish.yaml",
+            },
+            {
+                label: "Troubadour Signature Action | Cutting Sarcasm",
+                value: "/cards/04-troubadour/03-troubadour-signature-action_cutting-sarcasm.yaml",
+            },
+            {
+                label: "Troubadour Signature Action | Instigator",
+                value: "/cards/04-troubadour/03-troubadour-signature-action_instigator.yaml",
+            },
+            {
+                label: "Troubadour Signature Action | Witty Banter",
+                value: "/cards/04-troubadour/03-troubadour-signature-action_witty-banter.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Harsh Critic",
+                value: "/cards/04-troubadour/04-troubadour-heroic-action_harsh-critic.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Hypnotic Overtones",
+                value: "/cards/04-troubadour/04-troubadour-heroic-action_hypnotic-overtones.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Quick Rewrite",
+                value: "/cards/04-troubadour/04-troubadour-heroic-action_quick-rewrite.yaml",
+            },
+            {
+                label: "Troubadour Heroic Maneuver | Upstage",
+                value: "/cards/04-troubadour/04-troubadour-heroic-maneuver_upstage.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Dramatic Reversal",
+                value: "/cards/04-troubadour/05-troubadour-heroic_dramatic-reversal.yaml",
+            },
+            {
+                label: "Troubadour Heroic Maneuver | Fake your Death",
+                value: "/cards/04-troubadour/05-troubadour-heroic_fake-your-death.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Flip the Script",
+                value: "/cards/04-troubadour/05-troubadour-heroic_flip-the-script.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Method Acting",
+                value: "/cards/04-troubadour/05-troubadour-heroic_method-acting.yaml",
+            },
+            {
+                label: "Duelist Troubadour Heroic Action | Classic Chandelier Stunt",
+                value: "/cards/04-troubadour/06-duelist-troubadour-heroic-action_classic-chandelier-stunt.yaml",
+            },
+            {
+                label: "Duelist Troubadour Heroic Action | En Garde!",
+                value: "/cards/04-troubadour/06-duelist-troubadour-heroic-action_en-garde!.yaml",
+            },
+            {
+                label: "Skald Troubadour Heroic Action | Guest Star",
+                value: "/cards/04-troubadour/06-skald-troubadour-heroic-action_guest-star.yaml",
+            },
+            {
+                label: "Skald Troubadour Heroic Action | Twist at the End",
+                value: "/cards/04-troubadour/06-skald-troubadour-heroic-action_twist-at-the-end.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Heroic Action | Encore",
+                value: "/cards/04-troubadour/06-virtuoso-troubadour-heroic_encore.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Heroic Maneuver | Tough Crowd",
+                value: "/cards/04-troubadour/06-virtuoso-troubadour-heroic_tough-crowd.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Routine | Fire Up the Night",
+                value: "/cards/04-troubadour/07-virtuoso-troubadour-routine_fire-up-the-night.yaml",
+            },
+            {
+                label: "Virtuoso Troubadour Routine | Neverending Hero",
+                value: "/cards/04-troubadour/07-virtuoso-troubadour-routine_neverending-hero.yaml",
+            },
+            {
+                label: "Troubadour Heroic Maneuver | Extensive Rewrites",
+                value: "/cards/04-troubadour/08-troubadour-heroic_extensive-rewrites.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Infernal Gavotte",
+                value: "/cards/04-troubadour/08-troubadour-heroic_infernal-gavotte.yaml",
+            },
+            {
+                label: "Troubadour Heroic Action | Virtuoso's Solo",
+                value: "/cards/04-troubadour/08-troubadour-heroic_virtuoso's-solo.yaml",
+            },
+            {
+                label: "Troubadour Heroic Maneuver | We Meet at Last. Let's Finish This",
+                value: "/cards/04-troubadour/08-troubadour-heroic_we-meet-at-last.-let's-finish-this.yaml",
+            },
         ],
     },
     {

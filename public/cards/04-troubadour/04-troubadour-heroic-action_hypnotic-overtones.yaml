@@ -1,0 +1,43 @@
+type: Action
+topMatter: Troubadour Heroic Action
+title: Hypnotic Overtones
+keywords:
+  - Area
+  - Magic
+flavour: You produce an entrancing note that twists the senses in a spectacular fashion.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Slide 1
+      hasPotency: true
+      potencyValue: i<0
+      potencyEffect: Dazed (save ends)
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Slide 1
+      hasPotency: true
+      potencyValue: i<1
+      potencyEffect: Dazed (save ends)
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Slide 2
+      hasPotency: true
+      potencyValue: i<2
+      potencyEffect: Dazed (save ends)
+  - key: Spend 2+ Drama
+    value: The size of the burst is increased by 1 for every 2 drama you spend.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "2"
+cost:
+  costName: Drama
+  costValue: "3"

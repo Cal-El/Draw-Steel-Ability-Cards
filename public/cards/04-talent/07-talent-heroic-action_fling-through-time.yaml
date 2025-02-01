@@ -1,0 +1,51 @@
+type: Action
+topMatter: Talent Heroic Action
+title: Fling Through Time
+keywords:
+  - Chronopathy
+  - Psionic
+  - Ranged
+  - Strike
+flavour: You hurl the target through the annals of time, forcing them to witness
+  every moment of their existence all at once.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: true
+      damageValue: 3+p
+      hasGeneralEffect: true
+      generalEffect: Corruption damage
+      hasPotency: true
+      potencyValue: p<0
+      potencyEffect: Weakened (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 5+p
+      hasGeneralEffect: true
+      generalEffect: Corruption damage; the target is flung through time
+      hasPotency: true
+      potencyValue: p<1
+      potencyEffect: Weakened (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 8+p
+      hasGeneralEffect: true
+      generalEffect: Corruption damage; the target is flung through time
+      hasPotency: true
+      potencyValue: p<2
+      potencyEffect: Weakened (save ends)
+  - key: Effect
+    value: A target who is flung through time is removed from the encounter until
+      the end of their next turn, reappearing in their original space or the
+      nearest available space.
+  - key: Strained
+    value: You take 2d6 damage and grow visibly older (the equivalent of 10 years
+      for a human). On a tier 3 result, you gain 2 clarity.
+hasCost: true
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Clarity
+  costValue: "7"

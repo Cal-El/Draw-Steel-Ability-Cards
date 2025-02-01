@@ -1,0 +1,18 @@
+type: Routine
+topMatter: Duelist Troubadour Routine
+title: Acrobatics
+keywords:
+  - Area
+  - Magic
+  - Routine
+flavour: Folks love a good tumble.
+statements:
+  - key: Effect
+    value: While this routine is active, any target who starts their turn in the
+      aura can automatically obtain a tier 3 result on one test made to jump,
+      tumble, or climb as part of their movement before the end of their turn.
+hasCost: false
+target: Self and All Allies
+distance:
+  - distanceHeader: Aura
+    distanceValue: "5"

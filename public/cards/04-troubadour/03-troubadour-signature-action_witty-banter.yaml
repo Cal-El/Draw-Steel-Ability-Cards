@@ -1,0 +1,41 @@
+type: Action
+topMatter: Troubadour Signature Action
+title: Witty Banter
+keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+flavour: A lyrical (and physical) jab insults an enemy and inspires an ally.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: true
+      damageValue: 4+p
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 5+p
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 7+p
+      hasGeneralEffect: true
+      generalEffect: Psychic damage
+      hasPotency: false
+  - key: Effect
+    value: One ally within 10 squares can end one effect on them that is ended by a
+      saving throw or that ends at the end of their turn.
+  - key: Spend 1 Drama
+    value: The chosen ally can also spend a Recovery.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+  - distanceHeader: Ranged
+    distanceValue: "5"

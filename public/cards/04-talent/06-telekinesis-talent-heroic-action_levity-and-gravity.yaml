@@ -1,0 +1,50 @@
+type: Action
+topMatter: Telekinesis Talent Heroic Action
+title: Levity and Gravity
+keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telekinesis
+flavour: You raise the target into the air, then smother them against the ground.
+statements:
+  - characteristic: Reason
+    t1:
+      hasDamage: true
+      damageValue: 6+r
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<0
+      potencyEffect: Prone
+    t2:
+      hasDamage: true
+      damageValue: 10+r
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<1
+      potencyEffect: Prone
+    t3:
+      hasDamage: true
+      damageValue: 14+r
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: m<2
+      potencyEffect: Prone and can't stand (save ends)
+  - key: Effect
+    value: A target made prone by this ability is lifted 2 squares into the air
+      before falling immediately to the ground, taking damage as usual.
+  - key: Strained
+    value: |-
+      You take half the damage the target takes, 
+      including any damage from falling.
+hasCost: true
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Clarity
+  costValue: "5"

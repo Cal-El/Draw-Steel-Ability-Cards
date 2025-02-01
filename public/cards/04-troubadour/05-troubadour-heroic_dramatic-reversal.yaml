@@ -1,0 +1,36 @@
+type: Action
+topMatter: Troubadour Heroic Action
+title: Dramatic Reversal
+keywords:
+  - Area
+  - Magic
+flavour: Give the audience a surprise.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: The target can shift 1 square and make a free strike.
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: The target can shift up to 2 squares and make a free strike with an edge.
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: The target can shift up to 3 squares and make a free strike with
+        and edge, then can spend a Recovery.
+      hasPotency: false
+hasCost: true
+target: Self and All Allies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "3"
+cost:
+  costName: Drama
+  costValue: "5"

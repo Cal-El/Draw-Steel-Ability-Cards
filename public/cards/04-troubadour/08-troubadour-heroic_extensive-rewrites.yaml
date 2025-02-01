@@ -1,0 +1,46 @@
+type: Maneuver
+topMatter: Troubadour Heroic Maneuver
+title: Extensive Rewrites
+keywords:
+  - Area
+  - Magic
+  - Ranged
+flavour: No, this isn’t right. That foe was over there!
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Slide 3
+      hasPotency: true
+      potencyValue: p<0
+      potencyEffect: This slide ignores the target’s stability.
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Slide 5
+      hasPotency: true
+      potencyEffect: This slide ignores the target’s stability.
+      potencyValue: p<1
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: Slide 7
+      hasPotency: true
+      potencyEffect: This slide ignores the target’s stability.
+      potencyValue: p<2
+  - key: Effect
+    value: Instead of sliding a target, you can swap their location with another
+      target as long as each can fit into the other’s space. You can’t slide
+      targets into other creatures or objects using this ability.
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "4"
+cost:
+  costName: Drama
+  costValue: "7"

@@ -1,0 +1,45 @@
+type: Action
+topMatter: Troubadour Heroic Action
+title: Method Acting
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: They’re so hurt by your performance, you sort of start to believe it yourself.
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: 6+a
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: p<0
+      potencyEffect: Weakened (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 10+a
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: p<1
+      potencyEffect: Weakened (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 14+a
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: p<2
+      potencyEffect: Weakened (save ends)
+  - key: Effect
+    value: You can become bleeding (save ends) to deal an additional 5 corruption
+      damage to the target.
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"
+cost:
+  costName: Drama
+  costValue: "5"

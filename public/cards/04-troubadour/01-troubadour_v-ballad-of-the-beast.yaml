@@ -1,0 +1,20 @@
+type: Routine
+topMatter: Virtuoso Troubadour Routine
+title: '"Ballad of the Beast"'
+keywords:
+  - Area
+  - Magic
+  - Routine
+flavour: |-
+  Teeth are bare! ♫ Eyes black! ♫ No escaping the 
+  beast! ♫
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: While this routine is active, each target who starts their turn in the
+      aura gains a surge.
+hasCost: false
+target: Self and All Allies
+distance:
+  - distanceHeader: Aura
+    distanceValue: "5"

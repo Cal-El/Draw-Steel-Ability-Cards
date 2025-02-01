@@ -1,0 +1,49 @@
+type: Action
+topMatter: Talent Heroic Action
+title: Soul Burn
+keywords:
+  - Animapathy
+  - Psionic
+  - Ranged
+  - Strike
+flavour: You blast their soul out of their body, leaving it to helplessly float
+  back to a weakened husk.
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: true
+      damageValue: 6+p
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: p<0
+      potencyEffect: Dazed (save ends)
+    t2:
+      hasDamage: true
+      damageValue: 10+p
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: p<1
+      potencyEffect: Dazed (save ends)
+    t3:
+      hasDamage: true
+      damageValue: 14+p
+      hasGeneralEffect: false
+      generalEffect: ""
+      hasPotency: true
+      potencyValue: p<2
+      potencyEffect: Dazed (save ends)
+  - key: Effect
+    value: The target takes a bane on Presence tests until the end of the encounter.
+  - key: Strained
+    value: "The potency of this ability increases by 1. You take 2d6 damage, and
+      gain 3 surges. "
+hasCost: true
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"
+cost:
+  costName: Clarity
+  costValue: "7"

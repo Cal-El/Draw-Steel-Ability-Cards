@@ -1,0 +1,27 @@
+type: Maneuver
+topMatter: Skald Troubadour Maneuver
+title: Dramatic Monologue
+keywords:
+  - Magic
+  - Ranged
+flavour: It doesn’t need to make sense. Just say it with emotionality.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: |-
+      Choose one of the following effects: 
+      ` `• You orate a rousing tale of victory. One ally within 
+      ` `distance gains an edge on the next power roll they
+      ` `make before the start of your next turn. 
+      ` `• You weave a tale of high stakes heroics. One ally
+      ` `within distance gains a surge. 
+      ` `• You insult a foe where they’re most vulnerable.
+      ` `That foe takes a bane on the next power roll they
+      ` `make before the end of their next turn.
+  - key: Spend 1 Drama
+    value: "You can choose two targets for any of these effects. "
+hasCost: false
+target: Special
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

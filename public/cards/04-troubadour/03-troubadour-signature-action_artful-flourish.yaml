@@ -1,0 +1,38 @@
+type: Action
+topMatter: Troubadour Signature Action
+title: Artful Flourish
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: And they said practicing fencing was a waste!
+statements:
+  - characteristic: Agility
+    t1:
+      hasDamage: true
+      damageValue: "2"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "7"
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Effect
+    value: You can shift up to 3 squares.
+  - key: Spend 2+ Drama
+    value: You can target one additional creature or object within distance for
+      every 2 drama you spend.
+hasCost: false
+target: 2 Creatures or Objects
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

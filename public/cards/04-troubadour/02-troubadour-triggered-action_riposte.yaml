@@ -1,0 +1,16 @@
+type: Triggered Action
+topMatter: Duelist Troubadour Triggered Action
+title: Riposte
+keywords:
+  - —
+flavour: "\"I’d have brought treats had I known I'd be fighting a dog.\""
+statements:
+  - key: Trigger
+    value: The target takes damage from a melee strike.
+  - key: Effect
+    value: The target makes a free strike against the triggering striker.
+hasCost: false
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

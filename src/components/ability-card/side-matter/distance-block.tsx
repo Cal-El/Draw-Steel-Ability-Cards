@@ -30,6 +30,15 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorStyle: 
                 </div>
             </div>
         )
+    } else if (block.distanceValue === 'Special') {
+        return (
+            <div className={`relative  ${bgColorStyle[card.type]} w-[42pt] h-[42pt]`}>
+                <div className={`absolute top-0 left-0 text-[9pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.6pt]`}>{block.distanceHeader}</div>
+                <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
+                    <div className={`text-[10.5pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center`}>Special</div>
+                </div>
+            </div>
+        )
     }
 
     return (

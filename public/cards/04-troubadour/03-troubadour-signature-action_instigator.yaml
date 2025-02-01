@@ -1,0 +1,36 @@
+type: Action
+topMatter: Troubadour Signature Action
+title: Instigator
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: I didn’t do it! What?
+statements:
+  - characteristic: Presence
+    t1:
+      hasDamage: true
+      damageValue: 3+p
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: 6+p
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: 9+p
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: false
+  - key: Effect
+    value: The target is taunted by you or a willing ally adjacent to you until the
+      end of the target’s next turn.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

@@ -1,0 +1,19 @@
+type: Triggered Action
+topMatter: Skald Troubadour Triggered Action
+title: Turnabout is Fair Play
+keywords:
+  - —
+flavour: All’s fair in love and whatever.
+statements:
+  - key: Trigger
+    value: The target makes an ability power roll with at least one edge or bane.
+  - key: Effect
+    value: One of the edges becomes a bane or vice versa.
+  - key: Spend 3 Drama
+    value: One of the edges becomes a double bane, or one of the attack’s banes
+      becomes a double edge.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

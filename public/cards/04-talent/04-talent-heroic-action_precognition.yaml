@@ -1,0 +1,26 @@
+type: Action
+topMatter: Talent Heroic Action
+title: Precognition
+keywords:
+  - Chronopathy
+  - Melee
+  - Psionic
+flavour: You give a target a glimpse into the future so that they’re ready for
+  what comes next.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: >-
+      Ability power rolls against the target have a bane until the start of your
+      next turn. 
+
+      Whenever the target takes damage while under this effect, they can use a
+      triggered action to make a free strike against the source of the damage.
+hasCost: true
+target: Self or 1 Ally
+distance:
+  - distanceHeader: Melee
+    distanceValue: "2"
+cost:
+  costName: Clarity
+  costValue: "3"
