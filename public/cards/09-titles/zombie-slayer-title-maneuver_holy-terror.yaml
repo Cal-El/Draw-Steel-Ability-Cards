@@ -1,0 +1,20 @@
+type: Maneuver
+topMatter: Zombie Slayer Title Maneuver
+title: Holy Terror
+keywords:
+  - Area
+  - Magic
+flavour: Return to your grave!
+statements:
+  - key: Effect
+    value: Each undead creature in the area takes holy damage equal to your Reason,
+      Intuition, or Presence score (your choice) and is **P < strong**
+      frightened (save ends).
+hasCost: true
+target: All Enemies
+distance:
+  - distanceHeader: Burst
+    distanceValue: "3"
+cost:
+  costName: HR
+  costValue: "3"

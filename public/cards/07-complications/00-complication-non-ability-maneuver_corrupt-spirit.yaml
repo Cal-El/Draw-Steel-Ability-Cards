@@ -1,0 +1,17 @@
+type: Maneuver
+topMatter: Complication Non-ability Maneuver
+title: Corrupt Spirit
+keywords:
+  - Magic
+flavour: ""
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: Until the end of your turn, when you use a heroic ability against a
+      single target, you can weaken the target’s life force, dealing extra
+      corruption damage equal to your highest characteristic score.
+hasCost: false
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self

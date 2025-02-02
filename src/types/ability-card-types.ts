@@ -147,6 +147,7 @@ export const supportedAbilityTargets : string[] = [
     'Special',
     '1 Creature',
     '1 Creature or Object',
+    '1 Willing Creature',
     '1 Enemy',
     '1 Ally',
     '1 Ally or Enemy',

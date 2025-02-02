@@ -1,0 +1,42 @@
+type: Action
+topMatter: Complication Action
+title: Contact Spirits
+keywords: []
+flavour: " "
+statements:
+  - characteristic: Intuition or Presence
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: |-
+        You take corruption damage equal to 5 + 
+        your level.
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: A spirit speaks to you. You learn how it died, and you can ask it
+        one question, which it can answer truthfully or untruthfully. It knows
+        anything it knew in life, and it is aware of the events that took place
+        in this location since its death. You can’t use this ability again until
+        you have earned 1 Victory.
+      hasPotency: false
+      potencyEffect: ""
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: As 12-16, but you can ask 3 questions.
+      hasPotency: false
+  - key: Effect
+    value: If any sapient creatures have died nearby within 24 hours, you gain a
+      double bane on the power roll if any of the creatures were hostile to you,
+      or a double edge if they were friendly to you. You can’t use this ability
+      again until have earned at least 1 Victory.
+hasCost: false
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self

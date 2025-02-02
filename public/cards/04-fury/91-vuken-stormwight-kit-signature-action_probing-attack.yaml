@@ -1,0 +1,39 @@
+type: Action
+topMatter: Vuken Stormwight Kit Signature Action
+title: Probing Attack
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: A savage assault forces your foes back.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 4+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: a<0
+      potencyEffect: Prone
+    t2:
+      hasDamage: true
+      damageValue: 7+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: a<1
+      potencyEffect: Prone
+    t3:
+      hasDamage: true
+      damageValue: 9+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: a<2
+      potencyEffect: Prone
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

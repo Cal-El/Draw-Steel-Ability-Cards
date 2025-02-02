@@ -4,6 +4,7 @@ import TargetCreaturesOrObjects from "./target-block/target-creatures-or-objects
 import TargetCreatures from "./target-block/target-creatures.tsx";
 import TargetSelfAndCreatures from "./target-block/target-self-and-creatures.tsx";
 import TargetAllyOrEnemy from "./target-block/target-ally-or-enemy.tsx";
+import TargetWillingCreatures from "./target-block/target-willing-creatures.tsx";
 
 export function TargetBlock({card, bgColorStyle}: {card: ability_card, bgColorStyle: Record<string, string>}) {
     if (card.target === '1 Creature or Object') {
@@ -38,6 +39,8 @@ export function TargetBlock({card, bgColorStyle}: {card: ability_card, bgColorSt
         return <TargetCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="All" type="Enemies"/>
     } else if (card.target === '1 Ally or Enemy') {
         return <TargetAllyOrEnemy card={card} bgColorStyle={bgColorStyle} numCreatures="1"/>
+    } else if (card.target === '1 Willing Creature') {
+        return <TargetWillingCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="1"/>
     } else if (card.target === 'Self and 1 Ally') {
         return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="1" creatureType="Allies" andOr="and"/>
     } else if (card.target === 'Self or 1 Ally') {

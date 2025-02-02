@@ -1,0 +1,25 @@
+type: Maneuver
+topMatter: Stormwight Kit Maneuver
+title: Aspect of the Wild
+keywords:
+  - Magic
+flavour: You assume the form of the animal who channels your rage.
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: >-
+      You can shapeshift into the animal defined by your stormwight kit, a
+      hybrid form, or back into your true form. 
+
+      While in animal form or hybrid form, you can speak normally and can speak
+      to animals who share your form. If you are in a negotiation with an
+      animal, you treat your Renown as 2 higher than usual while in animal form.
+  - key: Spend 1 Rage
+    value: As a free maneuver on your turn, you can shapeshift a second time, either
+      into another animal form, into your hybrid form, or back into your true
+      form.
+hasCost: false
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self

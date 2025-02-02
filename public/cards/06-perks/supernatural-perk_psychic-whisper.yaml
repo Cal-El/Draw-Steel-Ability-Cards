@@ -1,0 +1,17 @@
+type: Maneuver
+topMatter: Supernatural Perk Maneuver
+title: Psychic Whisper
+keywords:
+  - Psionic
+flavour: You send a one-way telepathic message to a friend.
+statements:
+  - key: Target
+    value: One ally who understands at least one language
+  - key: Effect
+    value: You send a telepathic message to the target that takes 10 seconds or less
+      to speak.
+hasCost: false
+target: Special
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

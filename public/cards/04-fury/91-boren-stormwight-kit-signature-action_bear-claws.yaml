@@ -1,0 +1,39 @@
+type: Action
+topMatter: Boren Stormwight Kit Signature Action
+title: Bear Claws
+keywords:
+  - Melee
+  - Strike
+  - Weapon
+flavour: Attacks with your sharp and deadly claws grab the weak.
+statements:
+  - characteristic: Might
+    t1:
+      hasDamage: true
+      damageValue: 2+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: m<0
+      potencyEffect: Grabbed
+    t2:
+      hasDamage: true
+      damageValue: 5+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: m<1
+      potencyEffect: Grabbed
+    t3:
+      hasDamage: true
+      damageValue: 11+m
+      hasGeneralEffect: true
+      generalEffect: Damage
+      hasPotency: true
+      potencyValue: m<2
+      potencyEffect: Grabbed
+hasCost: false
+target: 1 Creature or Object
+distance:
+  - distanceHeader: Melee
+    distanceValue: "1"

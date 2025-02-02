@@ -1,14 +1,22 @@
 export const cardManifest  = [
     {
-        label: "Free Strikes",
+        label: "Basics",
         options: [
             {
                 label: "Melee Free Strike Action | Melee Weapon Free Strike",
-                value: "/cards/00-free strikes/01-free-strike-action_melee-weapon-free-strike.yaml",
+                value: "/cards/00-basics/01-free-strike-action_melee-weapon-free-strike.yaml",
             },
             {
                 label: "Ranged Free Strike Action | Ranged Weapon Free Strike",
-                value: "/cards/00-free strikes/02-free-strike-action_ranged-weapon-free-strike.yaml",
+                value: "/cards/00-basics/02-free-strike-action_ranged-weapon-free-strike.yaml",
+            },
+            {
+                label: "Core Maneuver | Grab",
+                value: "/cards/00-basics/03-core-maneuver_grab.yaml",
+            },
+            {
+                label: "Core Manuever | Knockback",
+                value: "/cards/00-basics/03-core-manuever_knockback.yaml",
             },
         ],
     },
@@ -562,6 +570,42 @@ export const cardManifest  = [
             {
                 label: "Stormwight Fury Heroic Action | Visceral Roar",
                 value: "/cards/04-fury/04-stormwight-fury_visceral-roar.yaml",
+            },
+            {
+                label: "Fury Heroic Maneuver | A Demon Unleashed",
+                value: "/cards/04-fury/05-fury-heroic_a-demon-unleashed.yaml",
+            },
+            {
+                label: "Fury Heroic Maneuver | Face the Storm!",
+                value: "/cards/04-fury/05-fury-heroic_face-the-storm!.yaml",
+            },
+            {
+                label: "Fury Heroic Maneuver | Steelbreaker",
+                value: "/cards/04-fury/05-fury-heroic_steelbreaker.yaml",
+            },
+            {
+                label: "Fury Heroic Action | You Are Already Dead",
+                value: "/cards/04-fury/05-fury-heroic_you-are-already-dead.yaml",
+            },
+            {
+                label: "Stormwight Kit Maneuver | Aspect of the Wild",
+                value: "/cards/04-fury/90-stormwight-kit-maneuver_aspect-of-the-wild.yaml",
+            },
+            {
+                label: "Boren Stormwight Kit Signature Action | Bear Claws",
+                value: "/cards/04-fury/91-boren-stormwight-kit-signature-action_bear-claws.yaml",
+            },
+            {
+                label: "Corven Stormwight Kit Signature Action | Wing Buffet",
+                value: "/cards/04-fury/91-corven-stormwight-kit-signature-action_wing-buffet.yaml",
+            },
+            {
+                label: "Raden Stormwight Kit Signature Action | Driving Pounce",
+                value: "/cards/04-fury/91-raden-stormwight-kit-signature-action_driving-pounce.yaml",
+            },
+            {
+                label: "Vuken Stormwight Kit Signature Action | Probing Attack",
+                value: "/cards/04-fury/91-vuken-stormwight-kit-signature-action_probing-attack.yaml",
             },
         ],
     },
@@ -1300,6 +1344,90 @@ export const cardManifest  = [
             {
                 label: "Whirlwind Kit Signature Action | Extension of My Arm",
                 value: "/cards/05-kits/whirlwind-kit-signature-action_extension-of-my-arm.yaml",
+            },
+        ],
+    },
+    {
+        label: "Perks",
+        options: [
+            {
+                label: "Supernatural Perk Action | Arcane Trick",
+                value: "/cards/06-perks/supernatural-perk_arcane-trick.yaml",
+            },
+            {
+                label: "Supernatural Perk Maneuver | Invisible Force",
+                value: "/cards/06-perks/supernatural-perk_invisible-force.yaml",
+            },
+            {
+                label: "Supernatural Perk Maneuver | Psychic Whisper",
+                value: "/cards/06-perks/supernatural-perk_psychic-whisper.yaml",
+            },
+        ],
+    },
+    {
+        label: "Complications",
+        options: [
+            {
+                label: "Complication Non-ability Maneuver | Corrupt Spirit",
+                value: "/cards/07-complications/00-complication-non-ability-maneuver_corrupt-spirit.yaml",
+            },
+            {
+                label: "Complication Maneuver | Share Head",
+                value: "/cards/07-complications/01-complication-maneuver_share-head.yaml",
+            },
+            {
+                label: "Complication Action | Contact Spirits",
+                value: "/cards/07-complications/02-complication-action_contact-spirits.yaml",
+            },
+            {
+                label: "Complication Action | Stone Eyes",
+                value: "/cards/07-complications/03-complication-action_stone-eyes.yaml",
+            },
+            {
+                label: "Complication Action | Psychic Blast",
+                value: "/cards/07-complications/04-complication-action_psychic-blast.yaml",
+            },
+            {
+                label: "Complication Ranged Free Strike Maneuver | Telekinetic Grasp",
+                value: "/cards/07-complications/05-complication-ranged-free-strike-maneuver_telekinetic-grasp.yaml",
+            },
+            {
+                label: "Complication Action | Issue Order",
+                value: "/cards/07-complications/06-complication-action_issue-order.yaml",
+            },
+            {
+                label: "Complication Action | Rogue Wave",
+                value: "/cards/07-complications/07-complication-action_rogue-wave.yaml",
+            },
+        ],
+    },
+    {
+        label: "Treasures",
+        options: [
+            {
+                label: "Dragon Soul II Armor Enhancement Action | Dragon's Fire",
+                value: "/cards/08-treasures/01-dragon-soul-ii-armor-enhancement-action_dragon's-fire.yaml",
+            },
+            {
+                label: "Chargebreaker Weapon Enhancement Free Triggered Action | Stop Right There",
+                value: "/cards/08-treasures/04-chargebreaker-weapon-enhancement-free-triggered-action_stop-right-there.yaml",
+            },
+            {
+                label: "Nova Weapon Enhancement Action | Nova",
+                value: "/cards/08-treasures/05-nova-weapon-enhancement-action_nova.yaml",
+            },
+        ],
+    },
+    {
+        label: "Titles",
+        options: [
+            {
+                label: "Ratcatcher Title Maneuver | Come Out to Play",
+                value: "/cards/09-titles/ratcatcher-title-maneuver_come-out-to-play.yaml",
+            },
+            {
+                label: "Zombie Slayer Title Maneuver | Holy Terror",
+                value: "/cards/09-titles/zombie-slayer-title-maneuver_holy-terror.yaml",
             },
         ],
     },

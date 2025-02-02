@@ -1,0 +1,22 @@
+type: Maneuver
+topMatter: Ratcatcher Title Maneuver
+title: Come Out to Play
+keywords:
+  - Area
+  - Magic
+flavour: Come out to play-yay!
+statements:
+  - key: Target
+    value: All enemies hidden from you
+  - key: Effect
+    value: |-
+      Each target is **P < average** taunted (EoT).
+      You know the locations of creatures taunted in this way.
+hasCost: true
+target: Special
+distance:
+  - distanceHeader: Burst
+    distanceValue: "5"
+cost:
+  costName: HR
+  costValue: "1"

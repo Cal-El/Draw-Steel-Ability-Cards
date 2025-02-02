@@ -1,0 +1,35 @@
+type: Action
+topMatter: Dragon Soul II Armor Enhancement Action
+title: Dragon's Fire
+keywords:
+  - Area
+  - Magic
+  - Melee
+flavour: You open your maw and unleash hell.
+statements:
+  - characteristic: Highest Characteristic
+    t1:
+      hasDamage: true
+      damageValue: "5"
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: false
+    t2:
+      hasDamage: true
+      damageValue: "8"
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: false
+    t3:
+      hasDamage: true
+      damageValue: "11"
+      hasGeneralEffect: true
+      generalEffect: Fire damage
+      hasPotency: false
+hasCost: false
+target: All Enemies
+distance:
+  - distanceHeader: Line
+    distanceValue: 5 x 1
+  - distanceHeader: Within
+    distanceValue: "1"
