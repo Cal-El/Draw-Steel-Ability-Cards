@@ -77,13 +77,13 @@ function App() {
             </div>
         </button>
         }
-        <div className={`flex w-screen h-[60pt] p-[10pt]`}>
+        <nav className={`flex w-screen h-[60pt] p-[10pt]`}>
             <div className={`flex basis-1/2 justify-start gap-[10pt]`}>
                 <div>
                     <img src={dsAbilityCardsTitle} className={`h-full`}/>
                 </div>
-                <button onClick={() => setHowToModal(true)} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
-                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>How to use these Cards</div>
+                <button onClick={() => setHowToModal(true)} className={`flex p-2 h-full rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
+                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
                 </button>
             </div>
             <div className={`flex basis-1/2 justify-end items-center gap-[5pt]`}>
@@ -109,16 +109,16 @@ function App() {
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
                 </button>
             </div>
-        </div>
-        <div className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
+        </nav>
+        <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
             {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
-        </div>
-        <div className={`flex h-[18pt] justify-center`}>
+        </main>
+        <footer className={`flex h-[18pt] justify-center`}>
             <div className={`h-full`}>
                 <img src={`https://images.squarespace-cdn.com/content/v1/59b345e82994caee6bd4c397/9da38f21-7174-4e29-967b-22e55e37d98e/Powered+By+Draw+Steel.png`} className={`h-full`}/>
             </div>
             <div className={`text-center italic`}>Draw Steel Ability Cards is an independent product published under the DRAW STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions, LLC.</div>
-        </div>
+        </footer>
     </div>
   )
 }
