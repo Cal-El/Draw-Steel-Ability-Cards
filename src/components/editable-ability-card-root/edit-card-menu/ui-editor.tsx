@@ -92,20 +92,21 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
             </div>
             {card.hasCost &&
                 <div className={`flex items-center gap-[5pt]`}>
-                    <div className={'font-body w-[80pt] text-right'}>Cost Value:</div>
+                    <div className={'font-body w-[35pt] text-right'}></div>
+                    <div className={'font-body w-[40pt] text-right'}>Cost Value:</div>
                     <input type='text'
                               value={card.cost?.costValue}
                               onInput={(e) => {
                                   updateCard(cardNum, {...card, cost: {costName: card.cost?.costName||'', costValue: (e.target as HTMLInputElement).value}})
                               }}
-                              className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
+                              className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto w-[20pt]`}
                               placeholder="11">
                     </input>
-                    <div className={'font-body w-[80pt] text-right'}>Cost Name:</div>
+                    <div className={'font-body w-[40pt] text-right'}>Cost Name:</div>
                     <input type='text'
                               value={card.cost?.costName}
                               onInput={(e) => updateCard(cardNum, {...card, cost: {costName: (e.target as HTMLInputElement).value, costValue: card.cost?.costValue||''}})}
-                              className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto`}
+                              className={`block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg font-mono flex-auto w-[100pt]`}
                               placeholder="Drama">
                     </input>
                 </div>
