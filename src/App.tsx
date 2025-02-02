@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
-import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
 import Select from "react-select";
 import {cardManifest} from "./types/generated/card-manifest.ts";
