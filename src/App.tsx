@@ -77,21 +77,18 @@ function App() {
             </div>
         </button>
         }
-        <nav className={`flex w-screen h-[60pt] p-[10pt]`}>
-            <div className={`flex basis-1/2 justify-start gap-[10pt]`}>
-                <div>
-                    <img src={dsAbilityCardsTitle} className={`h-full`}/>
-                </div>
-                <button onClick={() => setHowToModal(true)} className={`flex p-2 h-full rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
+        <nav className={`flex h-[60pt] p-[10pt]`}>
+            <div className={`flex gap-[10pt]`}>
+                <img src={dsAbilityCardsTitle} className={`h-full`}/>
+                <button onClick={() => setHowToModal(true)} className={`p-2 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
                 </button>
             </div>
-            <div className={`flex basis-1/2 justify-end items-center gap-[5pt]`}>
+            <div className={`flex items-center gap-[5pt]`}>
                 <Select
                     value={newCardChoice}
                     onChange={chooseCard}
                     options={cardManifest}
-                    className={`flex-auto`}
                 />
                 <button onClick={() => {
                     if (cardChoiceText) {
