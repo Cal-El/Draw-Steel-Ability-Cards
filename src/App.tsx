@@ -3,6 +3,7 @@ import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
+import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
 import Select from "react-select";
 import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
@@ -28,6 +29,7 @@ function App() {
   const [newCardChoice, setNewCardChoice] = useState<{value: string; label: string;} | null>(null)
   const [cardChoiceText, setCardChoiceText] = useState<string | null>(null)
   const [cardChoiceLoading, setCardChoiceLoading] = useState(true)
+  const [howToModal, setHowToModal] = useState(false)
 
   const baseUrl = `${window.location.protocol}//${window.location.host}`;
 
@@ -64,11 +66,25 @@ function App() {
 
   return (
     <div className={"flex flex-col h-screen"}>
+        {howToModal &&
+        <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div className="flex h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 w-full">
+                <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-full max-w-7xl">
+                    <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <img src={dsAbilityCardsHowTo} className="w-full"/>
+                    </div>
+                </div>
+            </div>
+        </button>
+        }
         <div className={`flex w-screen h-[60pt] p-[10pt]`}>
-            <div className={`flex basis-1/2 justify-start`}>
+            <div className={`flex basis-1/2 justify-start gap-[10pt]`}>
                 <div>
                     <img src={dsAbilityCardsTitle} className={`h-full`}/>
                 </div>
+                <button onClick={() => setHowToModal(true)} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
+                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>How to use these Cards</div>
+                </button>
             </div>
             <div className={`flex basis-1/2 justify-end items-center gap-[5pt]`}>
                 <Select
