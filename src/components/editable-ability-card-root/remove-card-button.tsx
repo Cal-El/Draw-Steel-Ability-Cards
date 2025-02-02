@@ -5,10 +5,7 @@ export function RemoveCardButton({cardNum, deleteCard}: {cardNum: number, delete
     const [count, setCount] = useState(0);
     const btnName = [
         'Remove Card',
-        'Woah there, bud!',
-        'You sure?',
-        'Ok, last click',
-        'Goodbye',
+        'Are you sure?',
     ]
 
     return (
