@@ -77,35 +77,35 @@ function App() {
             </div>
         </button>
         }
-        <nav className={`flex h-[60pt] p-[10pt]`}>
-            <div className={`flex gap-[10pt]`}>
-                <img src={dsAbilityCardsTitle} className={`h-full`}/>
-                <button onClick={() => setHowToModal(true)} className={`p-2 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
-                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
-                </button>
+        <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center`}>
+            <div className="font-body font-bold small-caps text-xl">
+                <p>Draw Steel</p>
+                <p>Ability Cards</p>
             </div>
-            <div className={`flex items-center gap-[5pt]`}>
-                <Select
-                    value={newCardChoice}
-                    onChange={chooseCard}
-                    options={cardManifest}
-                />
-                <button onClick={() => {
-                    if (cardChoiceText) {
-                        const parsedCard = yamlParse(cardChoiceText) as ability_card;
-                        setSelectedCard(-1);
-                        updateCardList([...cardsList, parsedCard]);
-                    }
-                }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Maneuver`]} justify-center items-center`}>
-                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add Card</div>
-                </button>
-                <button onClick={() => {
-                    setSelectedCard(-1)
-                    updateCardList([...cardsList, dummyCard])
-                }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
-                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
-                </button>
-            </div>
+            <button onClick={() => setHowToModal(true)} className={`p-2 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]}`}>
+                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
+            </button>
+            <Select
+                value={newCardChoice}
+                onChange={chooseCard}
+                options={cardManifest}
+                className={`grow`}
+            />
+            <button onClick={() => {
+                if (cardChoiceText) {
+                    const parsedCard = yamlParse(cardChoiceText) as ability_card;
+                    setSelectedCard(-1);
+                    updateCardList([...cardsList, parsedCard]);
+                }
+            }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Maneuver`]} justify-center items-center`}>
+                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add Card</div>
+            </button>
+            <button onClick={() => {
+                setSelectedCard(-1)
+                updateCardList([...cardsList, dummyCard])
+            }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
+                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
+            </button>
         </nav>
         <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
             {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
