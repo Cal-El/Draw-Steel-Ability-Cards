@@ -3,6 +3,7 @@ import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
+import poweredByDrawSteel from '/PoweredByDrawSteel.webp';
 import Select from "react-select";
 import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
@@ -77,7 +78,7 @@ function App() {
         </button>
         }
         <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center`}>
-            <div className="font-body font-bold small-caps text-xl">
+            <div className="font-body font-bold small-caps text-xl leading-none select-none">
                 <p>Draw Steel</p>
                 <p>Ability Cards</p>
             </div>
@@ -109,11 +110,9 @@ function App() {
         <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
             {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
         </main>
-        <footer className={`flex h-[18pt] justify-center`}>
-            <div className={`h-full`}>
-                <img src={`https://images.squarespace-cdn.com/content/v1/59b345e82994caee6bd4c397/9da38f21-7174-4e29-967b-22e55e37d98e/Powered+By+Draw+Steel.png`} className={`h-full`}/>
-            </div>
-            <div className={`text-center italic`}>Draw Steel Ability Cards is an independent product published under the DRAW STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions, LLC.</div>
+        <footer className={`flex justify-between max-h-[18pt] items-center p-4`}>
+            <img className={`w-32`} src={poweredByDrawSteel}/>
+            <div className={`text-center text-xs`}>Draw Steel Ability Cards is an independent product published under the DRAW STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions, LLC.</div>
         </footer>
     </div>
   )
