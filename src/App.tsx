@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
+import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
 import poweredByDrawSteel from '/PoweredByDrawSteel.webp';
 import Select from "react-select";
@@ -79,7 +80,7 @@ function App() {
         }
         <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center`}>
             <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
-            <button onClick={() => setHowToModal(true)} className={`p-2 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]}`}>
+            <button onClick={() => setHowToModal(true)} className={`h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]}`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
             </button>
             <div className={`grow flex justify-end`}>
