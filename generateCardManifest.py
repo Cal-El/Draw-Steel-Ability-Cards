@@ -36,7 +36,7 @@ for group in groups:
             if "topMatter:" in line:
                 topMatter = line[11:-1]
         manifestFile.write("            {\n")
-        manifestFile.write("                label: \"" + topMatter + " | " + name + "\",\n")
+        manifestFile.write("                label: \"" + name + " (" + topMatter + ")\",\n")
         manifestFile.write("                value: \"/" + cards + "/" + group + "/"+ file + "\",\n")
         manifestFile.write("            },\n")
     manifestFile.write("        ],\n",)
