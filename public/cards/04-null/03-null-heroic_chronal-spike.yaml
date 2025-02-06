@@ -17,7 +17,7 @@ statements:
       hasPotency: false
     t2:
       hasDamage: true
-      damageValue: 1+a
+      damageValue: 10+a
       hasGeneralEffect: true
       generalEffect: Damage
       hasPotency: false
