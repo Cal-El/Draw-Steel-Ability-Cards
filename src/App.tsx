@@ -78,10 +78,7 @@ function App() {
         </button>
         }
         <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center`}>
-            <div className="font-body font-bold small-caps text-xl leading-none select-none">
-                <p>Draw Steel</p>
-                <p>Ability Cards</p>
-            </div>
+            <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
             <button onClick={() => setHowToModal(true)} className={`p-2 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]}`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
             </button>
