@@ -82,12 +82,14 @@ function App() {
             <button onClick={() => setHowToModal(true)} className={`p-2 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]}`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
             </button>
-            <Select
-                value={newCardChoice}
-                onChange={chooseCard}
-                options={cardManifest}
-                className={`grow`}
-            />
+            <div className={`grow flex justify-end`}>
+                <Select
+                    value={newCardChoice}
+                    onChange={chooseCard}
+                    options={cardManifest}
+                    className={`grow max-w-7xl`}
+                />
+            </div>
             <button onClick={() => {
                 if (cardChoiceText) {
                     const parsedCard = yamlParse(cardChoiceText) as ability_card;
@@ -107,7 +109,7 @@ function App() {
         <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 items-center justify-center center"}>
             {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
         </main>
-        <footer className={`flex justify-between max-h-[18pt] items-center p-4`}>
+        <footer className={`flex justify-center max-h-[18pt] items-center p-4 gap-5`}>
             <img className={`w-32`} src={poweredByDrawSteel}/>
             <div className={`text-center text-xs`}>Draw Steel Ability Cards is an independent product published under the DRAW STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions, LLC.</div>
         </footer>
