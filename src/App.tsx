@@ -112,7 +112,7 @@ function App() {
         <div className='flex flex-auto w-full'>
             <div className='flex flex-row w-full'>
                 <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300`}>
-                    <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)}/>
+                    <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList}/>
                 </div>
                 <main className={"flex-auto flex flex-wrap flex-row w-auto bg-zinc-500 items-center justify-center center"}>
                     {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
