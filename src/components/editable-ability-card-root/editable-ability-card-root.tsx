@@ -20,7 +20,7 @@ export default function EditableAbilityCardRoot({card, cardNum, selectedCard, se
     let selectedCardState = (selectedCard===cardNum ? 1 : selectedCard===-1 ? 0 : -1);
 
     return (
-        <div id={id} className={`flex flex-wrap justify-center items-center ${selectedCardState > 0 ? 'w-screen' : ''}`} key={cardNum}>
+        <div id={id} className={`flex flex-wrap justify-center items-center ${selectedCardState > 0 ? 'w-full' : ''}`} key={cardNum}>
             <div className={`flex flex-col`}>
                 <AbilityCard id={id} card={card} cardNum={cardNum} selectedCard={selectedCard} setSelectedCard={setSelectedCard}/>
                 {selectedCardState > 0 &&
