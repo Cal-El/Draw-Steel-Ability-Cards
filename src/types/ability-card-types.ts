@@ -93,6 +93,17 @@ export const actionTextColorStyle: Record<string,string> = {
     "Free Strike Action": 'text-free-strike-card',
 }
 
+export const typeAbbreviation: Record<string,string> = {
+    "Action": 'A',
+    "Maneuver": 'M',
+    "Triggered Action": 'T',
+    "Free Triggered Action": 'FT',
+    "Free Maneuver": 'FM',
+    "Routine": 'NA',
+    "Passive": 'P',
+    "Free Strike Action": 'FS-A',
+}
+
 export type ability_card = {
     type: string;
     topMatter: string;
