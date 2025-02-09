@@ -8,5 +8,5 @@ statements:
   - key: Effect
     value: "You gain a +1 bonus to saving throws. "
 hasCost: false
-target: Self
+target: None
 distance: []

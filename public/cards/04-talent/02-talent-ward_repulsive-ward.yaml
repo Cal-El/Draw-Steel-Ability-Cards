@@ -10,5 +10,5 @@ statements:
     value: You can use a free triggered action to push them up to a number of
       squares equal to your Reason score.
 hasCost: false
-target: Self
+target: None
 distance: []

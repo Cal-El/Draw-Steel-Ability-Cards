@@ -9,5 +9,5 @@ statements:
   - key: Effect
     value: "You become invisible until the end of your next turn. "
 hasCost: false
-target: Self
+target: None
 distance: []

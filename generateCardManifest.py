@@ -12,8 +12,11 @@ if not exists(join("src", "types", "generated")):
     makedirs(join("src", "types", "generated"))
 
 manifestFile = open(join("src", "types", "generated", "card-manifest.ts"), 'w')
+publicManifestFile = open(join("public", "card-manifest.json"), 'w')
 
 manifestFile.write("export const cardManifest  = [\n")
+publicManifestFile.write("[\n")
+publicManString = ""
 
 for group in groups:
     groupName = group[3:].title()
@@ -39,11 +42,16 @@ for group in groups:
         manifestFile.write("                label: \"" + name + " (" + topMatter + ")\",\n")
         manifestFile.write("                value: \"/" + cards + "/" + group + "/"+ file + "\",\n")
         manifestFile.write("            },\n")
+        publicManString = publicManString + "  \"/" + cards + "/" + group + "/"+ file + "\",\n"
     manifestFile.write("        ],\n",)
     manifestFile.write("    },\n")
 
 
 manifestFile.write("]\n")
 manifestFile.close()
+
+publicManifestFile.write(publicManString[:-2])
+publicManifestFile.write("\n]")
+publicManifestFile.close()
 
 print("Generated Card Manifest")

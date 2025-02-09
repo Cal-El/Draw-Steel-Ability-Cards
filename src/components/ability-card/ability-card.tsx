@@ -8,7 +8,7 @@ import React from "react";
 
 function cardContainer(card: ability_card, selectionState: number) {
     return (
-        <div className={`cardContainer flex h-[270pt] w-[378pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[1.5]' : selectionState < 0 ? 'scale-[0.8]' : 'scale-[1]'}`}>
+        <div className={`cardContainer flex h-[270pt] w-[378pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[2]' : selectionState < 0 ? 'scale-[0.8]' : 'scale-[1]'}`}>
             <div className={`w-[331.5pt]`}>
                 <AbilityCardHeader card={card}/>
                 <AbilityCardBody card={card}/>
@@ -28,7 +28,7 @@ export default function AbilityCard({id, card, cardNum, selectedCard, setSelecte
             } else {
                 setSelectedCard(cardNum)
             }
-        }} className={`flex-none flex justify-center items-center ${selectedCardState > 0 ? 'h-[405pt] w-[567pt]' : selectedCardState < 0 ? 'h-[216pt] w-[302.4pt] hover:brightness-90' : 'h-[270pt] w-[378pt] hover:brightness-90'}`}>
+        }} className={`flex-none flex justify-center items-center ${selectedCardState > 0 ? 'h-[540pt] w-[756pt]' : selectedCardState < 0 ? 'h-[216pt] w-[302.4pt] hover:brightness-90' : 'h-[270pt] w-[378pt] hover:brightness-90'}`}>
             {cardContainer(card, selectedCardState)}
         </div>
     );

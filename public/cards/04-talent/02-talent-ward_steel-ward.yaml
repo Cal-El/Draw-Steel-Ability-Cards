@@ -10,5 +10,5 @@ statements:
     value: The damage resolves and you then gain damage immunity equal to your
       Reason score until the end of your next turn.
 hasCost: false
-target: Self
+target: None
 distance: []
