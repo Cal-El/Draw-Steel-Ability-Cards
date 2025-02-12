@@ -1,0 +1,15 @@
+type: Maneuver
+topMatter: Core Maneuver
+title: Hide
+keywords: []
+flavour: ""
+statements:
+  - spacePt: 5
+  - key: Effect
+    value: You attempt to hide from other creatures who aren’t observing you while
+      you have cover or concealment.
+hasCost: false
+target: Self
+distance:
+  - distanceHeader: Distance
+    distanceValue: Self

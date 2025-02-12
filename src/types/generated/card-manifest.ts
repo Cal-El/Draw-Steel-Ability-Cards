@@ -11,12 +11,56 @@ export const cardManifest  = [
                 value: "/cards/00-basics/02-free-strike-action_ranged-weapon-free-strike.yaml",
             },
             {
+                label: "Aid Attack (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_aid-attack.yaml",
+            },
+            {
+                label: "Catch Breath (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_catch-breath.yaml",
+            },
+            {
+                label: "Escape Grab (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_escape-grab.yaml",
+            },
+            {
                 label: "Grab (Core Ability)",
                 value: "/cards/00-basics/03-core-maneuver_grab.yaml",
             },
             {
+                label: "Hide (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_hide.yaml",
+            },
+            {
                 label: "Knockback (Core Ability)",
-                value: "/cards/00-basics/03-core-manuever_knockback.yaml",
+                value: "/cards/00-basics/03-core-maneuver_knockback.yaml",
+            },
+            {
+                label: "Make or Assist a Test (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_make-or-assist-a-test.yaml",
+            },
+            {
+                label: "Search for Hidden Creatures (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_search-for-hidden-creatures.yaml",
+            },
+            {
+                label: "Stand Up (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_stand-up.yaml",
+            },
+            {
+                label: "Use Consumable (Core Maneuver)",
+                value: "/cards/00-basics/03-core-maneuver_use-consumable.yaml",
+            },
+            {
+                label: "Charge (Core Action)",
+                value: "/cards/00-basics/04-core-action_charge.yaml",
+            },
+            {
+                label: "Defend (Core Action)",
+                value: "/cards/00-basics/04-core-action_defend.yaml",
+            },
+            {
+                label: "Heal (Core Action)",
+                value: "/cards/00-basics/04-core-action_heal.yaml",
             },
         ],
     },
@@ -24,36 +68,76 @@ export const cardManifest  = [
         label: "Ancestry",
         options: [
             {
+                label: "Glowing Eyes (Devil Trait)",
+                value: "/cards/01-ancestry/000-devil-trait_glowing-eyes.yaml",
+            },
+            {
+                label: "Draconian Guard (Dragon Knight Trait)",
+                value: "/cards/01-ancestry/010-dragon-knight-trait_draconian-guard.yaml",
+            },
+            {
+                label: "Remember Your Oath (Dragon Knight Trait)",
+                value: "/cards/01-ancestry/010-dragon-knight-trait_remember-your-oath.yaml",
+            },
+            {
                 label: "Draconian Pride (Dragon Knight Signature Ability)",
-                value: "/cards/01-ancestry/dragon-knight-signature_draconian-pride.yaml",
+                value: "/cards/01-ancestry/011-dragon-knight-signature_draconian-pride.yaml",
             },
             {
                 label: "Dragon Breath (Dragon Knight Signature Ability)",
-                value: "/cards/01-ancestry/dragon-knight-signature_dragon-breath.yaml",
+                value: "/cards/01-ancestry/011-dragon-knight-signature_dragon-breath.yaml",
             },
             {
                 label: "The Wode Defends (Wode Elf Signature Ability)",
-                value: "/cards/01-ancestry/elf-wode-signature_the-wode-defends.yaml",
+                value: "/cards/01-ancestry/030-elf-wode-signature_the-wode-defends.yaml",
+            },
+            {
+                label: "Detect the Supernatural (Human Signature Trait)",
+                value: "/cards/01-ancestry/060-human-signature-trait_detect-the-supernatural.yaml",
+            },
+            {
+                label: "Determination (Human Trait)",
+                value: "/cards/01-ancestry/061-human-trait_determination.yaml",
+            },
+            {
+                label: "Resist the Unnatural (Human Trait)",
+                value: "/cards/01-ancestry/062-human-trait_resist-the-unnatural.yaml",
+            },
+            {
+                label: "Keeper of Order (Memonek Trait)",
+                value: "/cards/01-ancestry/070-memonek-trait_keeper-of-order.yaml",
             },
             {
                 label: "Shadowmeld (Polder Ability)",
-                value: "/cards/01-ancestry/polder_shadowmeld.yaml",
+                value: "/cards/01-ancestry/090-polder_shadowmeld.yaml",
+            },
+            {
+                label: "Vengeance Mark (Revenant Trait)",
+                value: "/cards/01-ancestry/100-revenant-trait_vengeance-mark.yaml",
             },
             {
                 label: "Detonate Sigil (Revenant Signature Ability)",
-                value: "/cards/01-ancestry/revenant-signature_detonate-sigil.yaml",
+                value: "/cards/01-ancestry/101-revenant-signature_detonate-sigil.yaml",
+            },
+            {
+                label: "Beyondsight (Time Raider Trait)",
+                value: "/cards/01-ancestry/110-time-raider-trait_beyondsight.yaml",
+            },
+            {
+                label: "Foresight (Time Raider Trait)",
+                value: "/cards/01-ancestry/111-time-raider-trait_foresight.yaml",
             },
             {
                 label: "Concussive Slam (Time Raider Signature Ability)",
-                value: "/cards/01-ancestry/time-raider-signature_concussive-slam.yaml",
-            },
-            {
-                label: "Minor Acceleration (Time Raider Signature Ability)",
-                value: "/cards/01-ancestry/time-raider-signature_minor-acceleration.yaml",
+                value: "/cards/01-ancestry/112-time-raider-signature_concussive-slam.yaml",
             },
             {
                 label: "Psionic Bolt (Time Raider Signature Ability)",
-                value: "/cards/01-ancestry/time-raider-signature_psionic-bolt.yaml",
+                value: "/cards/01-ancestry/113-time-raider-signature_psionic-bolt.yaml",
+            },
+            {
+                label: "Minor Acceleration (Time Raider Signature Ability)",
+                value: "/cards/01-ancestry/114-time-raider-signature_minor-acceleration.yaml",
             },
         ],
     },
@@ -1368,8 +1452,12 @@ export const cardManifest  = [
         label: "Complications",
         options: [
             {
-                label: "Corrupt Spirit (Complication Maneuver)",
-                value: "/cards/07-complications/00-complication-non-ability-maneuver_corrupt-spirit.yaml",
+                label: "Corrupt Spirit (Complication Benefit)",
+                value: "/cards/07-complications/00-complication-benefit_corrupt-spirit.yaml",
+            },
+            {
+                label: "Activate Power Pack (Complication Benefit)",
+                value: "/cards/07-complications/01-complication-benefit_activate-power-pack.yaml",
             },
             {
                 label: "Share Head (Complication Ability)",

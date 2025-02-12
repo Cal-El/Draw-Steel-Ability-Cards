@@ -26,9 +26,10 @@ for group in groups:
 
     files = [f for f in listdir(join(basePath, group)) if isfile(join(basePath, group, f))]
     for file in files:
-        fCon = open(join(basePath, group, file), 'r')
+        fCon = open(join(basePath, group, file), 'r', encoding='UTF8')
         topMatter = ""
         name = ""
+        print(file)
         for line in fCon:
             if "title:" in line:
                 name = line[7:-1]
