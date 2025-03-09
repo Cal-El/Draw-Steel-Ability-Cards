@@ -11,5 +11,5 @@ statements:
   - key: Effect
     value: You gain a surge.
 hasCost: false
-target: Self
+target: None
 distance: []

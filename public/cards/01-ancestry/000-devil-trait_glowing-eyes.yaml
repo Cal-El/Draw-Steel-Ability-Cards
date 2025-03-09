@@ -1,0 +1,15 @@
+type: Triggered Action
+topMatter: Devil Trait
+title: Glowing Eyes
+keywords: []
+flavour: You curse a creature for daring to do you harm.
+statements:
+  - key: Trigger
+    value: You take damage from a creature.
+  - key: Effect
+    value: The triggering creature takes 1d10 + your level psychic damage.
+hasCost: false
+target: 1 Creature
+distance:
+  - distanceHeader: Distance
+    distanceValue: Line of Effect

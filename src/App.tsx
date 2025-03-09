@@ -49,6 +49,25 @@ function App() {
       }
   }
 
+  async function allCards() {
+      let cccs: ability_card[] = []
+      await fetch(baseUrl + "/card-manifest.json")
+          .then(r => r.text())
+          .then(async text => {
+              const allCardz = JSON.parse(text);
+              for (const cadd of allCardz) {
+                  await fetch(baseUrl + cadd)
+                      .then(r => r.text())
+                      .then(textt => {
+                          const parsedCard = yamlParse(textt) as ability_card;
+                          cccs = [...cccs, parsedCard]
+                      });
+              }
+          });
+      setSelectedCard(-1);
+      updateCardList(cccs);
+  }
+
   function deleteCard(index: number) {
       const tempCardList = [...cardsList]
       tempCardList.splice(index, 1)
@@ -67,6 +86,8 @@ function App() {
     saveCardList(ActiveCardListKey, newList)
   }
 
+  const includeAllCardsButton = false;
+
   return (
     <div className={"flex flex-col h-screen"}>
         {howToModal &&
@@ -80,7 +101,7 @@ function App() {
             </div>
         </button>
         }
-        <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center`}>
+        <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center visible print:invisible print:h-0`}>
             <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
             <button onClick={() => setHowToModal(true)} className={`h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]}`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
@@ -102,6 +123,13 @@ function App() {
             }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Maneuver`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add Card</div>
             </button>
+            {includeAllCardsButton &&
+                <button onClick={() => {
+                    allCards()
+                }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Maneuver`]} justify-center items-center`}>
+                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add All Cards</div>
+                </button>
+            }
             <button onClick={() => {
                 setSelectedCard(-1)
                 updateCardList([...cardsList, dummyCard])
@@ -114,12 +142,12 @@ function App() {
                 <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300`}>
                     <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList}/>
                 </div>
-                <main className={"flex-auto flex flex-wrap flex-row w-auto bg-zinc-500 items-center justify-center center"}>
+                <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 print:bg-white items-center justify-center"}>
                     {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </main>
             </div>
         </div>
-        <footer className={`flex justify-center max-h-[18pt] items-center p-5 gap-5`}>
+        <footer className={`flex justify-center max-h-[18pt] items-center p-5 gap-5 visible print:invisible print:h-0`}>
             <button onClick={()=> window.open("https://ko-fi.com/calgrier", "_blank")} className={`flex bg-[#323842] p-1 pl-3 pr-3 rounded-lg justify-center items-center gap-2`}>
                 <img className={`h-4`} src="https://storage.ko-fi.com/cdn/cup-border.png"/>
                 <text className={`text-white font-bold font-body small-caps`}>Support Us on Ko-fi</text>

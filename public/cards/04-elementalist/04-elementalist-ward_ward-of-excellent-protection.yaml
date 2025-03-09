@@ -10,5 +10,5 @@ statements:
     value: You have immunity to acid, cold, corruption, fire, and lightning damage
       equal to your Reason score.
 hasCost: false
-target: Self
+target: None
 distance: []

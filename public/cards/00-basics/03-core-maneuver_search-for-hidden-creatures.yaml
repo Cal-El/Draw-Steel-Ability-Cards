@@ -1,0 +1,43 @@
+type: Maneuver
+topMatter: Core Maneuver
+title: Search for Hidden Creatures
+keywords: []
+flavour: ""
+statements:
+  - spacePt: 5
+  - key: ""
+    value: "You can search for creatures who are hidden from you as long as those
+      creatures are within 10 squares of you and you have line of effect to
+      them. To do so, you make an Intuition test as a maneuver and assess the
+      result:"
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: You find any hidden creatures with an Agility of 0 or lower and
+        who don’t have the Hide skill.
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: You find any hidden creatures who don’t have the Hide skill.
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: ""
+      hasGeneralEffect: true
+      generalEffect: You find all hidden creatures.
+      hasPotency: false
+  - key: ""
+    value: As part of this maneuver, you can point out any creatures you find to
+      allies within 10 squares of you, making those creatures no longer hidden
+      from those allies. If a creature is hidden from your allies but not from
+      you, you can use a maneuver without making a test to point them out to
+      your allies.
+hasCost: false
+target: All Creatures
+distance:
+  - distanceHeader: Ranged
+    distanceValue: "10"

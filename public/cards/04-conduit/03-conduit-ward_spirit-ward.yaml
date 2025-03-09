@@ -10,5 +10,5 @@ statements:
   - key: Effect
     value: They take corruption damage equal to your Intuition score.
 hasCost: false
-target: Self
+target: None
 distance: []

@@ -10,5 +10,5 @@ statements:
     value: Their speed is reduced by an amount equal to your Reason score and they
       can’t use triggered actions, all until the end of their next turn.
 hasCost: false
-target: Self
+target: None
 distance: []

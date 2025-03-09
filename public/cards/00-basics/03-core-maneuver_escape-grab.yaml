@@ -1,0 +1,39 @@
+type: Maneuver
+topMatter: Core Maneuver
+title: Escape Grab
+keywords: []
+flavour: ""
+statements:
+  - spacePt: 5
+  - spacePt: 5
+  - key: Effect
+    value: While you are grabbed by another creature, you can attempt to escape by
+      making a resistance roll. You take a bane on the roll if the creature’s
+      size is larger than yours.
+  - characteristic: Might or Agility
+    t1:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: |
+        You fail to escape the grab.
+      hasPotency: false
+    t2:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: >
+        You can escape the grab, but if you do, the creature grabbing you can
+        make a melee free strike against you before you are no longer grabbed.
+      hasPotency: false
+    t3:
+      hasDamage: false
+      damageValue: x
+      hasGeneralEffect: true
+      generalEffect: |
+        You are no longer grabbed.
+      hasPotency: false
+  - spacePt: 5
+hasCost: false
+target: None
+distance: []

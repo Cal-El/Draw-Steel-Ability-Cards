@@ -11,5 +11,5 @@ statements:
     value: You can shift up to a number of squares equal to your Intuition score
       after the damage is dealt.
 hasCost: false
-target: Self
+target: None
 distance: []

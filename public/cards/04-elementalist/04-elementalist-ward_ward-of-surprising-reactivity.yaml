@@ -11,5 +11,5 @@ statements:
     value: You can use a free triggered action to push that creature a number of
       squares equal to twice your Reason score.
 hasCost: false
-target: Self
+target: None
 distance: []
