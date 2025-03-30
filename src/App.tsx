@@ -143,14 +143,14 @@ function App() {
                     <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList}/>
                 </div>
                 <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 print:bg-white items-center justify-center"}>
-                    {cardsList.map((value, index) => <EditableAbilityCardRoot card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
+                    {cardsList.map((value, index) => <EditableAbilityCardRoot key={index} card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </main>
             </div>
         </div>
         <footer className={`flex justify-center max-h-[18pt] items-center p-5 gap-5 visible print:invisible print:h-0`}>
             <button onClick={()=> window.open("https://ko-fi.com/calgrier", "_blank")} className={`flex bg-[#323842] p-1 pl-3 pr-3 rounded-lg justify-center items-center gap-2`}>
                 <img className={`h-4`} src="https://storage.ko-fi.com/cdn/cup-border.png"/>
-                <text className={`text-white font-bold font-body small-caps`}>Support Us on Ko-fi</text>
+                <p className={`text-white font-bold font-body small-caps`}>Support Us on Ko-fi</p>
             </button>
             <img className={`w-32`} src={poweredByDrawSteel}/>
             <div className={`text-center text-xs`}>Draw Steel Ability Cards is an independent product published under the DRAW STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions, LLC.</div>

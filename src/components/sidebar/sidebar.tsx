@@ -68,7 +68,7 @@ export default function Sidebar({open, toggleOpen, displayedCards}: {open: boole
         </div>
         {cardListNames.map(list => {
           return <>
-            <p id="list">{list}</p>
+            <p key={list}>{list}</p>
           </>
         })}
       </div>

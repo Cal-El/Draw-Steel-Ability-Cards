@@ -18,7 +18,7 @@ export function AbilityCardHeader({card}: { card: ability_card }) {
                 <div className={`h-[0.75pt]`}></div>
                 {card.flavour &&
                     <div className={`h-[30pt]`}>
-                        <p className={`text-[13.5pt] h-full font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize mode="box" maxFontSizePx={26}>{card.flavour}</AutoTextSize></p>
+                        <div className={`text-[13.5pt] h-full font-body italic font-light ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize mode="box" maxFontSizePx={26}>{card.flavour}</AutoTextSize></div>
                     </div>
                 }
             </div>
