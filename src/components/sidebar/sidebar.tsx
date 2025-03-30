@@ -1,10 +1,13 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
 import { RiMenuFold4Line, RiMenuUnfold4Line } from "react-icons/ri";
-import { ActiveCardListKey, getCardListNames, saveCardList } from "../data-saving/saving-service";
+import { ActiveCardListKey, getCardList, getCardListNames, saveCardList } from "../data-saving/saving-service";
 import { HiPlus } from "react-icons/hi";
 import { ability_card } from "../../types/ability-card-types";
+import { FaSave } from "react-icons/fa";
+import { ImUpload } from "react-icons/im";
 
-export default function Sidebar({open, toggleOpen, displayedCards}: {open: boolean, toggleOpen: () => void, displayedCards: ability_card[]}){
+export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedCards}: 
+  {open: boolean, toggleOpen: () => void, displayedCards: ability_card[], setDisplayedCards: Dispatch<SetStateAction<ability_card[]>>}){
   const [cardListNames, setCardListNames] = useState<string[]>(getCardListNames() || [])
   const [savingCurrent, setSavingCurrent] = useState(false)
   const [cardListName, setCardListName] = useState("")
@@ -22,6 +25,11 @@ export default function Sidebar({open, toggleOpen, displayedCards}: {open: boole
       setCardListName("")
       setSavingCurrent(false)
     }
+  }
+
+  const updateDisplayedCards = (newCards: ability_card[]) => {
+    saveCardList(ActiveCardListKey, newCards)
+    setDisplayedCards(newCards)
   }
 
   return (
@@ -66,11 +74,18 @@ export default function Sidebar({open, toggleOpen, displayedCards}: {open: boole
             </>
           }
         </div>
-        {cardListNames.map(list => {
-          return <>
-            <p key={list}>{list}</p>
-          </>
-        })}
+        <div className="divide-y divide-zinc-400">
+          {cardListNames.map(list => {
+            return <>
+              <div className="flex flex-row justify-between items-center py-2" key={list}><p>{list}</p> 
+                <span className="flex flex-row space-x-3">
+                  <button onClick={() => saveCardList(list, displayedCards)}><FaSave /></button>
+                  <button onClick={() => updateDisplayedCards(getCardList(list))}><ImUpload /></button>
+                </span>
+              </div>
+            </>
+          })}
+        </div>
       </div>
     }
     </>
