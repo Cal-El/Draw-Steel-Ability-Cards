@@ -1,7 +1,8 @@
 type: Triggered Action
 topMatter: Cryokinetic Null Ability
 title: Inertial Shield
-keywords: []
+keywords:
+  - Psionic
 flavour: You intuit where an incoming attack will strike, reducing its effects.
 statements:
   - key: Trigger

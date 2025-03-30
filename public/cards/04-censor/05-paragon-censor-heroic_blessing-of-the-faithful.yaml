@@ -1,7 +1,9 @@
 type: Maneuver
 topMatter: Paragon Censor Heroic Ability
 title: Blessing of the Faithful
-keywords: []
+keywords:
+  - Area
+  - Magic
 flavour: The gods reward your faith.
 statements:
   - key: Effect
