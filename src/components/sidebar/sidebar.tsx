@@ -1,10 +1,11 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
-import { RiMenuFold4Line, RiMenuUnfold4Line } from "react-icons/ri";
-import { ActiveCardListKey, getCardList, getCardListNames, saveCardList } from "../data-saving/saving-service";
+import { RiDeleteBin6Fill, RiMenuFold4Line, RiMenuUnfold4Line } from "react-icons/ri";
+import { ActiveCardListKey, deleteCardList, getCardList, getCardListNames, saveCardList } from "../data-saving/saving-service";
 import { HiPlus } from "react-icons/hi";
 import { ability_card } from "../../types/ability-card-types";
 import { FaSave } from "react-icons/fa";
 import { ImUpload } from "react-icons/im";
+import ConfirmModal from "./confirm-modal";
 
 export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedCards}: 
   {open: boolean, toggleOpen: () => void, displayedCards: ability_card[], setDisplayedCards: Dispatch<SetStateAction<ability_card[]>>}){
@@ -12,6 +13,9 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   const [savingCurrent, setSavingCurrent] = useState(false)
   const [cardListName, setCardListName] = useState("")
   const [saveCurrentError, setSaveCurrentError] = useState("")
+  const [confirmModalText, setConfirmModalText] = useState("")
+  const [confirmModalFunc, setConfirmModalFunc] = useState<() => void>(() => () => {})
+  const [confirmModalIcon, setConfirmModalIcon] = useState("")
 
   const saveCurrentCardList = () => {
     if (!cardListName){
@@ -32,6 +36,42 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     setDisplayedCards(newCards)
   }
 
+  const openSaveModal = (cardListName: string, cards: ability_card[]) => {
+    const text = "Are you sure you want to overwrite " + cardListName + " with the current card list? This action cannot be reversed."
+    openModal(text, () => {
+      saveCardList(cardListName, cards)
+      closeModal()
+    }, "save")
+  }
+
+  const openLoadModal = (cardListName: string) => {
+    const text = "Are you sure you want to load " + cardListName + "? Any unsaved displayed cards will be lost. This action cannot be reversed."
+    openModal(text, () => {
+      updateDisplayedCards(getCardList(cardListName))
+      closeModal()
+    }, "load")
+  }
+
+  const openDeleteModal = (cardListName: string) => {
+    const text = "Are you sure you want to delete " + cardListName + "? This action cannot be reversed."
+    openModal(text, () => {
+      deleteCardList(cardListName)
+      setCardListNames(getCardListNames() || [])
+      closeModal()
+    }, "delete")
+  }
+
+  const openModal = (text: string, modalFunc: () => void, icon: string) => {
+    setConfirmModalText(text)
+    setConfirmModalFunc(() => modalFunc)
+    setConfirmModalIcon(icon)
+  }
+
+  const closeModal = () => {
+    setConfirmModalFunc(() => {})
+    setConfirmModalText("")
+  }
+
   return (
     <>
     <button className="text-3xl m-3 float-right hover:text-gray-700" onClick={toggleOpen}>
@@ -41,7 +81,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       }
     </button>
     {open &&
-      <div className="m-3 space-y-2">
+      <div className={`m-3 space-y-2`}>
         <h1 className="text-xl font-body font-semibold small-caps">Card Lists</h1>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
           <button onClick={() => setSavingCurrent(!savingCurrent)} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small">
@@ -79,14 +119,19 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
             return <>
               <div className="flex flex-row justify-between items-center py-2" key={list}><p>{list}</p> 
                 <span className="flex flex-row space-x-3">
-                  <button onClick={() => saveCardList(list, displayedCards)}><FaSave /></button>
-                  <button onClick={() => updateDisplayedCards(getCardList(list))}><ImUpload /></button>
+                  <button onClick={() => openDeleteModal(list)}><span className="flex flex-row items-center hover:text-gray-700">Delete <RiDeleteBin6Fill/></span></button>
+                  <button onClick={() => openSaveModal(list, displayedCards)}><span className="flex flex-row items-center hover:text-gray-700">Save&nbsp;<FaSave /></span></button>
+                  <button onClick={() => openLoadModal(list)}><span className="flex flex-row items-center hover:text-gray-700">Load&nbsp;<ImUpload /></span></button>
                 </span>
               </div>
             </>
           })}
         </div>
+        
       </div>
+    }
+    {confirmModalText !== "" && 
+      <ConfirmModal text={confirmModalText} onSubmit={confirmModalFunc} onCancel={closeModal} icon={confirmModalIcon}/>
     }
     </>
   )
