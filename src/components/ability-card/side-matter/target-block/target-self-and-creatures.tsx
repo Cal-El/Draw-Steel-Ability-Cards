@@ -15,7 +15,7 @@ export default function TargetSelfAndCreatures({card, bgColorStyle, numCreatures
     }
     return (
         <TargetBox card={card} bgColorStyle={bgColorStyle}>
-            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[7pt]`}>
+            <div className={`flex flex-col justify-center items-center w-full h-full pt-[7pt]`}>
                 <div
                     className={`text-[9pt] font-body font-bold text-cardback leading-none small-caps text-center`}>Self {andOr}
                 </div>

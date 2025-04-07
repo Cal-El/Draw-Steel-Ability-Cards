@@ -101,7 +101,7 @@ function App() {
             </div>
         </button>
         }
-        <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center visible print:invisible print:h-0`}>
+        <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center visible print:invisible print:h-0 print:p-0`}>
             <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
             <button onClick={() => setHowToModal(true)} className={`h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]}`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
@@ -137,7 +137,7 @@ function App() {
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
             </button>
         </nav>
-        <div className='flex flex-auto w-full'>
+        <div className='flex flex-auto w-full print:m-0 print:p-0'>
             <div className='flex flex-row w-full'>
                 <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300 print:hidden`}>
                     <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
