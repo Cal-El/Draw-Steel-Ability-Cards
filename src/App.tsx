@@ -139,10 +139,10 @@ function App() {
         </nav>
         <div className='flex flex-auto w-full'>
             <div className='flex flex-row w-full'>
-                <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300`}>
+                <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300 print:hidden`}>
                     <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
                 </div>
-                <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 print:bg-white items-center justify-center"}>
+                <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 print:bg-white items-center justify-center print:gap-[1pt] print:items-start print:justify-start"}>
                     {cardsList.map((value, index) => <EditableAbilityCardRoot key={index} card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </main>
             </div>
