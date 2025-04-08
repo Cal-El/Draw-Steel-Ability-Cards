@@ -4,7 +4,7 @@ import TargetBox from "./target-box";
 export default function TargetAllyOrEnemy({card, bgColorStyle, numCreatures}: {card: ability_card, bgColorStyle: Record<string, string>, numCreatures: string}){
     return (
         <TargetBox card={card} bgColorStyle={bgColorStyle}>
-            <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full pt-[5pt]`}>
+            <div className={`flex flex-col justify-center items-center w-full h-full pt-[5pt]`}>
                     <div
                         className={`text-[24pt] font-body font-bold text-cardback leading-[18pt] small-caps text-center ${numCreatures === "3"? 'lining-nums': ''}`}>{numCreatures}
                     </div>

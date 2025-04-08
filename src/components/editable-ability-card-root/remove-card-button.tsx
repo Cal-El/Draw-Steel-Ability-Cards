@@ -15,7 +15,7 @@ export function RemoveCardButton({cardNum, deleteCard}: {cardNum: number, delete
             } else {
                 setCount(count + 1)
             }
-        }} className={`flex h-[40pt] flex-1 rounded-[13.5pt] border border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
+        }} className={`flex h-[40pt] flex-1 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
             <div className={`text-[16pt] text-center ${actionTextColorStyle[`Triggered Action`]} font-bold select-none`}>{btnName[count]}</div>
         </div>
     );
