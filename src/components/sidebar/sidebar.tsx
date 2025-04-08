@@ -1,7 +1,7 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
 import { RiDeleteBin6Fill, RiMenuFold4Line, RiMenuUnfold4Line } from "react-icons/ri";
 import { ActiveCardListKey, deleteCardList, getCardList, getCardListNames, saveCardList } from "../data-saving/saving-service";
-import { HiPlus } from "react-icons/hi";
+import { HiPlus, HiTrash } from "react-icons/hi";
 import { ability_card } from "../../types/ability-card-types";
 import { FaSave } from "react-icons/fa";
 import { ImUpload } from "react-icons/im";
@@ -52,6 +52,14 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     }, "load")
   }
 
+  const openClearCurrentModal = () => {
+    const text = "Are you sure you want to clear the current card list? Any unsaved displayed cards will be lost. This action cannot be reversed."
+    openModal(text, () => {
+      updateDisplayedCards([])
+      closeModal()
+    }, "load")
+  }
+
   const openDeleteModal = (cardListName: string) => {
     const text = "Are you sure you want to delete " + cardListName + "? This action cannot be reversed."
     openModal(text, () => {
@@ -84,6 +92,11 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       <div className={`m-3 space-y-2`}>
         <h1 className="text-xl font-body font-semibold small-caps">Card Lists</h1>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
+          <button onClick={() => openClearCurrentModal()} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small">
+            <HiTrash/>&nbsp;Clear Current Card List
+          </button>
+        </div>
+        <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
           <button onClick={() => setSavingCurrent(!savingCurrent)} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small">
             <HiPlus/>&nbsp;Save Current Card List
           </button>
@@ -114,14 +127,15 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
             </>
           }
         </div>
-        <div className="divide-y divide-zinc-400">
+        <div className="bg-zinc-200 rounded-lg p-2 pl-4 pr-4 space-y-1 divide-y divide-zinc-400">
           {cardListNames.map(list => {
             return <>
-              <div className="flex flex-row justify-between items-center py-2" key={list}><p>{list}</p> 
+              <div className="flex flex-row justify-between items-center py-2" key={list}>
+                <p className={`line-clamp-1 overflow-hidden`}>{list}</p>
                 <span className="flex flex-row space-x-3">
-                  <button onClick={() => openDeleteModal(list)}><span className="flex flex-row items-center hover:text-gray-700">Delete <RiDeleteBin6Fill/></span></button>
-                  <button onClick={() => openSaveModal(list, displayedCards)}><span className="flex flex-row items-center hover:text-gray-700">Save&nbsp;<FaSave /></span></button>
-                  <button onClick={() => openLoadModal(list)}><span className="flex flex-row items-center hover:text-gray-700">Load&nbsp;<ImUpload /></span></button>
+                  <button onClick={() => openDeleteModal(list)}><span className="flex flex-row items-center hover:text-gray-700"><RiDeleteBin6Fill/><span className={`hidden 2xl:block`}>&nbsp;Delete</span></span></button>
+                  <button onClick={() => openSaveModal(list, displayedCards)}><span className="flex flex-row items-center hover:text-gray-700"><FaSave /><span className={`hidden 2xl:block`}>&nbsp;Save</span></span></button>
+                  <button onClick={() => openLoadModal(list)}><span className="flex flex-row items-center hover:text-gray-700"><ImUpload /><span className={`hidden 2xl:block`}>&nbsp;Load</span></span></button>
                 </span>
               </div>
             </>

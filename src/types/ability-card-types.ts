@@ -7,6 +7,7 @@ export enum abilityType {
     routine = 'Routine',
     passive = 'Passive',
     freeStrikeAction = 'Free Strike Action',
+    treasure = 'Treasure',
 }
 
 export const abilityTypeValues : abilityType[] = [
@@ -29,6 +30,7 @@ export const cardbackColorStyle: Record<string,string> = {
     "Routine": 'bg-cardback border-routine-card',
     "Passive": 'bg-cardback border-passive-card',
     "Free Strike Action": 'bg-cardback border-free-strike-card',
+    "Treasure": 'bg-cardback border-treasure-card'
 }
 
 export const actionBg100ColorStyle: Record<string,string> = {
@@ -40,6 +42,7 @@ export const actionBg100ColorStyle: Record<string,string> = {
     "Routine": 'bg-routine-card',
     "Passive": 'bg-passive-card',
     "Free Strike Action": 'bg-free-strike-card',
+    "Treasure": 'bg-treasure-card',
 }
 export const actionBg50ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card-50',
@@ -50,6 +53,7 @@ export const actionBg50ColorStyle: Record<string,string> = {
     "Routine": 'bg-routine-card-50',
     "Passive": 'bg-passive-card-50',
     "Free Strike Action": 'bg-free-strike-card-50',
+    "Treasure": 'bg-treasure-card/[0.5]',
 }
 export const actionBg40ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card-40',
@@ -60,6 +64,7 @@ export const actionBg40ColorStyle: Record<string,string> = {
     "Routine": 'bg-routine-card-40',
     "Passive": 'bg-passive-card-40',
     "Free Strike Action": 'bg-free-strike-card-40',
+    "Treasure": 'bg-treasure-card/[0.4]',
 }
 export const actionBg30ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card-30',
@@ -70,6 +75,7 @@ export const actionBg30ColorStyle: Record<string,string> = {
     "Routine": 'bg-routine-card-30',
     "Passive": 'bg-passive-card-30',
     "Free Strike Action": 'bg-free-strike-card-30',
+    "Treasure": 'bg-treasure-card/[0.3]',
 }
 export const actionBg20ColorStyle: Record<string,string> = {
     "Action": 'bg-action-card-20',
@@ -80,6 +86,7 @@ export const actionBg20ColorStyle: Record<string,string> = {
     "Routine": 'bg-routine-card-20',
     "Passive": 'bg-passive-card-20',
     "Free Strike Action": 'bg-free-strike-card-20',
+    "Treasure": 'bg-treasure-card/[0.2]',
 }
 
 export const actionTextColorStyle: Record<string,string> = {
@@ -91,6 +98,7 @@ export const actionTextColorStyle: Record<string,string> = {
     "Routine": 'text-routine-card',
     "Passive": 'text-passive-card',
     "Free Strike Action": 'text-free-strike-card',
+    "Treasure": 'text-treasure-card',
 }
 
 export const typeAbbreviation: Record<string,string> = {
@@ -102,6 +110,7 @@ export const typeAbbreviation: Record<string,string> = {
     "Routine": 'NA',
     "Passive": 'P',
     "Free Strike Action": 'FS-A',
+    "Treasure": "E",
 }
 
 export type ability_card = {
