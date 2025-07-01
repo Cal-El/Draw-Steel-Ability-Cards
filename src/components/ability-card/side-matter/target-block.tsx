@@ -60,6 +60,6 @@ export function TargetBlock({card, bgColorStyle}: {card: ability_card, bgColorSt
     } else if (card.target === 'None') {
         return <></>
     } else {
-        return <TargetBasic card={card} bgColorStyle={bgColorStyle} text={card.target} fontSize={16.5} leading={18}/>
+        return <TargetBasic card={card} bgColorStyle={bgColorStyle} text={card.target} fontSize={11} leading={12}/>
     }
 }

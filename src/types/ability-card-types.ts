@@ -102,14 +102,14 @@ export const actionTextColorStyle: Record<string,string> = {
 }
 
 export const typeAbbreviation: Record<string,string> = {
-    "Action": 'A',
+    "Action": 'MA',
     "Maneuver": 'M',
-    "Triggered Action": 'T',
-    "Free Triggered Action": 'FT',
+    "Triggered Action": 'TA',
+    "Free Triggered Action": 'FTA',
     "Free Maneuver": 'FM',
     "Routine": 'NA',
     "Passive": 'P',
-    "Free Strike Action": 'FS-A',
+    "Free Strike Action": 'FS-MA',
     "Treasure": "E",
 }
 

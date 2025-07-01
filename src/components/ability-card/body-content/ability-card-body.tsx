@@ -8,7 +8,7 @@ import {PowerRollStatement} from "./power-roll.tsx";
 import {KeyValueStatement} from "./key-value-statement.tsx";
 
 function spacerStatement() {
-    return (<div className={`h-[7.5pt]`}></div>)
+    return (<div className={`h-[5pt]`}></div>)
 }
 
 function hasPowerRollStatement(card: ability_card) {
@@ -21,7 +21,7 @@ function hasPowerRollStatement(card: ability_card) {
 }
 
 export function AbilityCardBody({card}: {card: ability_card}) {
-    return (<div className={`flex flex-col ${card.flavour && card.keywords.length>0 ? `h-[177pt]` : card.flavour ? `h-[192pt]` : card.keywords.length>0 ? `h-[207pt]` : `h-[222pt]`} ${hasPowerRollStatement(card) ? 'justify-center' : ''} gap-y-[3pt]`}>
+    return (<div className={`flex flex-col ${card.flavour && card.keywords.length>0 ? `h-[118pt]` : card.flavour ? `h-[128pt]` : card.keywords.length>0 ? `h-[138pt]` : `h-[148pt]`} ${hasPowerRollStatement(card) ? 'justify-center' : ''} gap-y-[2pt]`}>
         {card.statements.map(s => {
             if ((s as key_value_statement).key !== undefined) {
                 return KeyValueStatement({card, kv: s as key_value_statement});

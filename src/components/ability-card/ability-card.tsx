@@ -8,8 +8,8 @@ import React from "react";
 
 function cardContainer(card: ability_card, selectionState: number) {
     return (
-        <div className={`cardContainer flex h-[270pt] w-[378pt] rounded-[13.5pt] border-[3pt] print:scale-[0.6667] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[2]' : selectionState < 0 ? 'scale-[0.8]' : 'scale-[1]'}`}>
-            <div className={`w-[331.5pt]`}>
+        <div className={`cardContainer flex h-[180pt] w-[252pt] rounded-[9pt] border-[2pt] print:scale-[1] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[2]' : selectionState < 0 ? 'scale-[1]' : 'scale-[1.5]'}`}>
+            <div className={`w-[221pt]`}>
                 <AbilityCardHeader card={card}/>
                 <AbilityCardBody card={card}/>
             </div>
