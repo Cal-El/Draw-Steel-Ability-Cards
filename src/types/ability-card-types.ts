@@ -206,6 +206,7 @@ export const rawKeywords = [
     'Magic',
     'Melee',
     'Metamorphosis',
+    'Performance',
     'Persistent',
     'Psionic',
     'Pyrokinesis',
