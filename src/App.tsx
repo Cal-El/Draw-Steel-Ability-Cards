@@ -8,7 +8,7 @@ import poweredByDrawSteel from '/PoweredByDrawSteel.webp';
 import Select from "react-select";
 import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
-import { ActiveCardListKey, getCardList, saveCardList } from './components/data-saving/saving-service.ts';
+import { DisplayedCardListKey, getCardList, saveCardList } from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       distance: [],
   };
 
-  const cList : ability_card[] = getCardList(ActiveCardListKey)
+  const cList : ability_card[] = getCardList(DisplayedCardListKey)
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
@@ -83,7 +83,7 @@ function App() {
 
   function updateCardList(newList: ability_card[]) {
     setCardsList(newList)
-    saveCardList(ActiveCardListKey, newList)
+    saveCardList(DisplayedCardListKey, newList)
   }
 
   const includeAllCardsButton = false;

@@ -1,11 +1,11 @@
 import { ability_card } from "../../types/ability-card-types";
 
-export const ActiveCardListKey = "displayedcards"
+export const DisplayedCardListKey = "displayedcards"
 export const CardListKey = "cardlist"
 
 export function saveCardList(name: string, cards: ability_card[]){
   localStorage.setItem(getCardListStorageKey(name), JSON.stringify(cards))
-  if (name != ActiveCardListKey) {
+  if (name != DisplayedCardListKey) {
     const cardlistnames = getCardListNames()
     if (!cardlistnames.includes(name)){
       saveCardListNames(cardlistnames.concat(name))
@@ -15,7 +15,7 @@ export function saveCardList(name: string, cards: ability_card[]){
 
 export function deleteCardList(name: string){
   localStorage.removeItem(name);
-  if (name != ActiveCardListKey) {
+  if (name != DisplayedCardListKey) {
     const cardlistnames = getCardListNames()
     if (cardlistnames.includes(name)){
       saveCardListNames(cardlistnames.filter(x => x != name))
@@ -47,4 +47,20 @@ export function saveCardListNames(names: string[]){
 
 function getCardListStorageKey(name: string): string {
   return `${CardListKey}-${name}`;
+}
+
+export function changeActiveCardList(name: string): void {
+  localStorage.setItem("activecardlist", name)
+}
+
+export function getActiveCardList(): string {
+  const data = localStorage.getItem("activecardlist")
+  return data ?? ""
+}
+
+export function hasUnsavedChanges(): boolean {
+  const activeList = getActiveCardList()
+  const displayedCards = getCardList(DisplayedCardListKey)
+  const activecardlist = getCardList(activeList)
+  return (JSON.stringify(displayedCards) !== JSON.stringify(activecardlist))
 }
