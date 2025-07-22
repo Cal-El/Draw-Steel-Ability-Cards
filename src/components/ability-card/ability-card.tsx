@@ -28,7 +28,7 @@ export default function AbilityCard({id, card, cardNum, selectedCard, setSelecte
             } else {
                 setSelectedCard(cardNum)
             }
-        }} className={`flex-none flex justify-center items-center break-inside-avoid-page print:h-[180pt] print:w-[252pt] ${selectedCardState > 0 ? 'h-[540pt] w-[756pt]' : selectedCardState < 0 ? 'h-[216pt] w-[302.4pt] hover:brightness-90' : 'h-[270pt] w-[378pt] hover:brightness-90'}`}>
+        }} className={`flex-none flex justify-center items-center break-inside-avoid-page print:h-[180pt] print:w-[252pt] ${selectedCardState > 0 ? 'h-[360pt] w-[504pt]' : selectedCardState < 0 ? 'h-[180pt] w-[252pt] hover:brightness-90' : 'h-[270pt] w-[378pt] hover:brightness-90'}`}>
             {cardContainer(card, selectedCardState)}
         </div>
     );

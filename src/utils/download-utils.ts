@@ -15,7 +15,7 @@ export function saveYamlExport(cardData: ability_card, yamlData: string){
 export function saveImage(cardData: ability_card, cardId: string){
     var card = document.getElementById(cardId)
     if (!card) return
-    toPng(card).then(function (dataUrl) {
+    toPng(card, {canvasWidth: 1050, canvasHeight: 750}).then(function (dataUrl) {
         let alink = document.createElement("a");
         alink.href = dataUrl;
         alink.download = [cardData.topMatter, cardData.title].map(filizeString).join('_') + ".png";
