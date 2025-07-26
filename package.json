@@ -11,14 +11,19 @@
     "gen-manifest": "python generateCardManifest.py"
   },
   "dependencies": {
+    "@types/file-saver": "^2.0.7",
     "auto-text-size": "^0.2.3",
+    "file-saver": "^2.0.5",
     "html-to-image": "^1.11.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hotkeys-hook": "^5.1.0",
     "react-icons": "^5.4.0",
     "react-markdown": "^9.0.3",
     "react-select": "^5.9.0",
+    "react-toastify": "^11.0.5",
     "react-tooltip": "^5.28.0",
+    "use-file-picker": "^2.1.4",
     "yaml": "^2.6.1"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ export default function ConfirmModal({text, onSubmit, onCancel, icon}: {text: st
     <div tabIndex={-1} className="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center h-screen bg-slate-900/50">
       <div className="p-4 w-full max-w-md place-self-center">
         <div className="relative p-4 text-center rounded-lg shadow bg-zinc-100 flex flex-col items-center border-[3pt] border-zinc-600">
-            <button type="button" className="absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="deleteModal">
+            <button onClick={onCancel} type="button" className="absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="deleteModal">
                 <IoMdClose className="text-xl"/>
                 <span className="sr-only">Close modal</span>
             </button>
@@ -31,7 +31,7 @@ export default function ConfirmModal({text, onSubmit, onCancel, icon}: {text: st
                 </button>
             </div>
         </div>
-    </div>
+      </div>
     </div>
   )
 }
