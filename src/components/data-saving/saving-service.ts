@@ -59,8 +59,12 @@ export function getActiveCardList(): string {
 }
 
 export function hasUnsavedChanges(): boolean {
-  const activeList = getActiveCardList()
   const displayedCards = getCardList(DisplayedCardListKey)
+  return cardListHasUnsavedChanges(displayedCards)
+}
+
+export function cardListHasUnsavedChanges(cardList: ability_card[]): boolean {
+  const activeList = getActiveCardList()
   const activecardlist = getCardList(activeList)
-  return (JSON.stringify(displayedCards) !== JSON.stringify(activecardlist))
+  return (JSON.stringify(cardList) !== JSON.stringify(activecardlist))
 }

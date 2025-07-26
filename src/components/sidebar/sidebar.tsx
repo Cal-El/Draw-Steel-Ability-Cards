@@ -1,6 +1,16 @@
-import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
+import {ChangeEvent, Dispatch, SetStateAction, useEffect, useState} from "react";
 import { RiDeleteBin6Fill, RiMenuFold4Line, RiMenuUnfold4Line } from "react-icons/ri";
-import { DisplayedCardListKey, changeActiveCardList, deleteCardList, getActiveCardList, getCardList, getCardListNames, hasUnsavedChanges, saveCardList } from "../data-saving/saving-service";
+import {
+  DisplayedCardListKey,
+  changeActiveCardList,
+  deleteCardList,
+  getActiveCardList,
+  getCardList,
+  getCardListNames,
+  hasUnsavedChanges,
+  saveCardList,
+  cardListHasUnsavedChanges
+} from "../data-saving/saving-service";
 import { HiPlus, HiTrash } from "react-icons/hi";
 import { ability_card } from "../../types/ability-card-types";
 import { FaSave } from "react-icons/fa";
@@ -16,6 +26,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   {open: boolean, toggleOpen: () => void, displayedCards: ability_card[], setDisplayedCards: Dispatch<SetStateAction<ability_card[]>>}){
   const [cardListNames, setCardListNames] = useState<string[]>(getCardListNames() || [])
   const [activeCardList, setActiveCardList] = useState<string>(getActiveCardList())
+  const [isUnsavedChanges, setIsUnsavedChanges] = useState<boolean>(hasUnsavedChanges())
 
   const [creatingNewList, setCreatingNewList] = useState(false)
   const [newCardListName, setNewCardListName] = useState("")
@@ -26,14 +37,17 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   const [confirmModalFunc, setConfirmModalFunc] = useState<() => void>(() => () => {})
   const [confirmModalIcon, setConfirmModalIcon] = useState("")
 
+  useEffect(() => {
+    setIsUnsavedChanges(cardListHasUnsavedChanges(displayedCards))
+  }, [displayedCards])
+
   const { openFilePicker } = useFilePicker({
     accept: ".json",
     multiple: false,
     onFilesSuccessfullySelected: (({filesContent}: SelectedFiles<string>) => {
       filesContent.map((file) => {
-        const listName = file.name.replace(/\..+$/, '');
-        saveCardList(listName, JSON.parse(file.content ?? ''))
-        setCardListNames(cardListNames.concat(listName))
+        setDisplayedCards(JSON.parse(file.content ?? ''))
+        setActiveCardList("")
       })
     })
   })
@@ -49,6 +63,10 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       const cardListToSave = saveDisplayedCards ? displayedCards : []
       setSaveCurrentError("")
       saveCardList(newCardListName, cardListToSave)
+      if (saveDisplayedCards) {
+        setActiveCardList(newCardListName)
+        setIsUnsavedChanges(false)
+      }
       setCardListNames(cardListNames.concat(newCardListName))
       setNewCardListName("")
       setCreatingNewList(false)
@@ -57,8 +75,11 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   }
 
   const saveActiveCardList = () => {
-    saveCardList(activeCardList, displayedCards)
-    toast.success('Changes saved to ' + activeCardList)
+    if (activeCardList.length > 0) {
+      saveCardList(activeCardList, displayedCards)
+      setIsUnsavedChanges(false)
+      toast.success('Changes saved to ' + activeCardList)
+    }
   }
 
   const updateDisplayedCards = (newCards: ability_card[]) => {
@@ -67,7 +88,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   }
 
   const openLoadModal = (cardListName: string) => {
-    if(hasUnsavedChanges()){
+    if(isUnsavedChanges && !(activeCardList === "" && displayedCards.length === 0)){
       const text = "You have unsaved changes that will be overwritten by loading " + cardListName + ". Are you sure you want to proceed?"
       openModal(text, () => {
         updateDisplayedCards(getCardList(cardListName))
@@ -83,11 +104,16 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   }
 
   const openClearCurrentModal = () => {
-    const text = "Are you sure you want to clear the current card list? Any unsaved displayed cards will be lost. This action cannot be reversed."
-    openModal(text, () => {
-      updateDisplayedCards([])
-      closeModal()
-    }, "load")
+    if (displayedCards.length > 0) {
+      const text = "Are you sure you want to clear the current card list? Any unsaved displayed cards will be lost. This action cannot be reversed."
+      openModal(text, () => {
+        updateDisplayedCards([])
+        setActiveCardList("")
+        closeModal()
+      }, "load")
+    } else {
+      setActiveCardList("")
+    }
   }
 
   const openDeleteModal = (cardListName: string) => {
@@ -95,6 +121,9 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     openModal(text, () => {
       deleteCardList(cardListName)
       setCardListNames(getCardListNames() || [])
+      if (activeCardList === cardListName) {
+        setActiveCardList("")
+      }
       toast.success("Successfully deleted " + cardListName)
       closeModal()
     }, "delete")
@@ -118,6 +147,17 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     FileSaver.saveAs(blob, exportName + ".json")
   }
 
+  const importCardList = () => {
+    if (isUnsavedChanges && !(activeCardList === "" && displayedCards.length === 0)) {
+      openModal("You have unsaved changes that will be overwritten by importing cards. Are you sure you want to import?", () => {
+        openFilePicker()
+        closeModal()
+      },"save")
+    } else {
+      openFilePicker()
+    }
+  }
+
   return (
     <>
     <button className="text-3xl m-3 float-right hover:text-gray-700" onClick={toggleOpen}>
@@ -130,24 +170,19 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       <div className={`m-3 space-y-2`}>
         <h1 className="text-xl font-body font-semibold small-caps">Card Lists</h1>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
-          <button onClick={() => saveActiveCardList()} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small w-full">
-            <FaSave/>&nbsp;Save Changes
-          </button>
-        </div>
-        <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
-          <button onClick={() => openClearCurrentModal()} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small w-full">
-            <HiTrash/>&nbsp;Clear Displayed Cards
+          <button disabled={displayedCards.length === 0 && activeCardList.length === 0} onClick={() => openClearCurrentModal()} className={`flex flex-row font-body text-lg text-center items-center ${displayedCards.length === 0 && activeCardList.length === 0 ? 'text-gray-400' : 'hover:text-gray-700'} small w-full`}>
+            <HiTrash/>&nbsp;Clear All Displayed Cards
           </button>
         </div>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
           <button onClick={() => setCreatingNewList(!creatingNewList)} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small w-full">
-            <HiPlus/>&nbsp;New Card List
+            <HiPlus/>&nbsp;Save New Card List
           </button>
           {creatingNewList &&
             <>
               <div className={`flex items-center gap-3`}>
                   <div className={'font-body text-right'}>Card List Name:</div>
-                  <input type='text' className={`block p-2 text-sm border-zinc-300 border-2 text-gray-900 bg-white rounded-lg font-mono flex-auto`} 
+                  <input type='text' className={`block p-2 text-sm border-zinc-300 border-2 text-gray-900 bg-white rounded-lg font-mono flex-auto`}
                     value={newCardListName} onChange={(e: ChangeEvent<HTMLInputElement>) => setNewCardListName(e.target.value)}/>
               </div>
               <div className={`py-2`}>
@@ -181,21 +216,29 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
           {cardListNames.map(list => {
             return <>
               <div className={`flex flex-row justify-between items-center px-2 rounded-md cursor-pointer ${activeCardList === list ? 'bg-blue-200' : 'hover:bg-zinc-300'}`} key={list}>
-                <p className={`line-clamp-1 overflow-hidden flex-1 py-2`} onClick={() => openLoadModal(list)}>{list}</p>
+                <p className={`line-clamp-1 overflow-hidden flex-1 py-2`} onClick={() => openLoadModal(list)}>{list}{activeCardList === list && isUnsavedChanges && '*'}</p>
+                {activeCardList === list && <button disabled={!isUnsavedChanges} onClick={() => saveActiveCardList()} className={`flex flex-row font-body text-center items-center ${!isUnsavedChanges ? 'text-zinc-400' : 'hover:text-gray-700'} small`}>
+                  <FaSave/>&nbsp;
+                </button>}
                 <span className="flex flex-row space-x-3 py-2">
-                  <button onClick={() => openDeleteModal(list)}><span className="flex flex-row items-center hover:text-gray-700"><RiDeleteBin6Fill/><span className={`hidden 2xl:block`}>&nbsp;Delete</span></span></button>
+                  <button onClick={() => openDeleteModal(list)}><span className="flex flex-row items-center hover:text-gray-700"><RiDeleteBin6Fill/><span className={`hidden 2xl:block`}>&nbsp;</span></span></button>
                 </span>
               </div>
             </>
           })}
+          {activeCardList.length === 0 && displayedCards.length > 0 &&
+            <div className={`flex flex-row justify-between items-center rounded-md p-2`} key={'unsaved list'}>
+              <p className={`line-clamp-1 overflow-hidden flex-1 text-center bg-stone-300 border border-2 border-stone-400 border-dashed`}>Unsaved Current Workspace</p>
+            </div>
+          }
         </div>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
-          <button onClick={() => exportCardList()} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small w-full">
-            <TbFileExport/>&nbsp;Export Current Card List
+          <button disabled={activeCardList.length===0} onClick={() => exportCardList()} className={`flex flex-row font-body text-lg text-center items-center ${activeCardList.length===0 ? 'text-gray-400' : 'hover:text-gray-700'} small w-full`}>
+            <TbFileExport/>&nbsp;Export Selected Card List
           </button>
         </div>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
-          <button onClick={() => openFilePicker()} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small w-full">
+          <button onClick={importCardList} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small w-full">
             <TbFileImport/>&nbsp;Import Card List
           </button>
         </div>
