@@ -47,12 +47,17 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     onFilesSuccessfullySelected: (({filesContent}: SelectedFiles<string>) => {
       filesContent.map((file) => {
         setDisplayedCards(JSON.parse(file.content ?? ''))
-        setActiveCardList("")
+        updateActiveCardList("")
       })
     })
   })
 
   useHotkeys('ctrl+s', () => saveActiveCardList(), {preventDefault: true})
+
+  const updateActiveCardList = (cardListName: string) => {
+    setActiveCardList(cardListName)
+    changeActiveCardList(cardListName)
+  }
 
   const newCardList = () => {
     if (!newCardListName){
@@ -64,7 +69,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       setSaveCurrentError("")
       saveCardList(newCardListName, cardListToSave)
       if (saveDisplayedCards) {
-        setActiveCardList(newCardListName)
+        updateActiveCardList(newCardListName)
         setIsUnsavedChanges(false)
       }
       setCardListNames(cardListNames.concat(newCardListName))
@@ -92,14 +97,12 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       const text = "You have unsaved changes that will be overwritten by loading " + cardListName + ". Are you sure you want to proceed?"
       openModal(text, () => {
         updateDisplayedCards(getCardList(cardListName))
-        setActiveCardList(cardListName)
-        changeActiveCardList(cardListName)
+        updateActiveCardList(cardListName)
         closeModal()
       }, "load")
     } else {
       updateDisplayedCards(getCardList(cardListName))
-      setActiveCardList(cardListName)
-      changeActiveCardList(cardListName)
+      updateActiveCardList(cardListName)
     }
   }
 
@@ -108,11 +111,11 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       const text = "Are you sure you want to clear the current card list? Any unsaved displayed cards will be lost. This action cannot be reversed."
       openModal(text, () => {
         updateDisplayedCards([])
-        setActiveCardList("")
+        updateActiveCardList("")
         closeModal()
       }, "load")
     } else {
-      setActiveCardList("")
+      updateActiveCardList("")
     }
   }
 
@@ -122,7 +125,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       deleteCardList(cardListName)
       setCardListNames(getCardListNames() || [])
       if (activeCardList === cardListName) {
-        setActiveCardList("")
+        updateActiveCardList("")
       }
       toast.success("Successfully deleted " + cardListName)
       closeModal()
@@ -176,7 +179,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
         </div>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
           <button onClick={() => setCreatingNewList(!creatingNewList)} className="flex flex-row font-body text-lg text-center items-center hover:text-gray-700 small w-full">
-            <HiPlus/>&nbsp;Save New Card List
+            <HiPlus/>&nbsp;Create New Card List
           </button>
           {creatingNewList &&
             <>
