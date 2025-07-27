@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Draw steel unreleased rules
+pdf-parsing/Draw Steel RC for Patrons.pdf
+pdf-parsing/fulltext.txt
+pdf-parsing/cards
