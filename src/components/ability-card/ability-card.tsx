@@ -22,7 +22,7 @@ export default function AbilityCard({id, card, cardNum, selectedCard, setSelecte
     let selectedCardState = (selectedCard===cardNum ? 1 : selectedCard===-1 ? 0 : -1)
 
     return (
-        <div id={id + '_card'} role="button" onClick={() => {
+        <div id={`${id}_${card.title}_card`} role="button" onClick={() => {
             if (selectedCardState > 0) {
                 setSelectedCard(-1)
             } else {
