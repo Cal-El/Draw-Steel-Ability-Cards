@@ -13,7 +13,7 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
   const potencyEffectFontsize = card.powerRollFontSizeOverride ?
     card.powerRollFontSizeOverride :
     powerRollTier.potencyEffect && powerRollTier.potencyEffect?.length < 81 || !powerRollTier.hasGeneralEffect && powerRollTier.potencyEffect && powerRollTier.potencyEffect?.length < 161 ? `6pt` : `5pt`
-return <div className={`flex w-full`}>
+  return <div className={`flex w-full`}>
         <div className={`${actionBg100ColorStyle[card.type]} w-[5.4pt] h-[22pt] flex justify-center`}>
             <div className={`[writing-mode:vertical-lr] rotate-180 text-[4pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{rowNum === 1 ? '11 or less' : rowNum === 2 ? '12-16' : '17+'}</div>
         </div>
@@ -52,7 +52,7 @@ return <div className={`flex w-full`}>
 
 export function PowerRollStatement({card, powerRoll}: {card: ability_card, powerRoll: power_roll_statement}) {
     return (
-        <div className={`flex flex-col h-[76pt] justify-center gap-y-[2pt]`}>
+        <div className={`flex-none flex flex-col h-[76pt] justify-center gap-y-[2pt]`}>
             <div className={`flex h-[8pt]`}>
                 <div className={`w-[2pt]`}></div>
                 <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><b>Power Roll + {powerRoll.characteristic}:</b></p>

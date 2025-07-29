@@ -7,8 +7,8 @@ import {
 import {PowerRollStatement} from "./power-roll.tsx";
 import {KeyValueStatement} from "./key-value-statement.tsx";
 
-function spacerStatement() {
-    return (<div className={`h-[5pt]`}></div>)
+function spacerStatement(h: number) {
+    return (<div style={{height: h+'pt'}} className={`flex-none`}></div>)
 }
 
 function hasPowerRollStatement(card: ability_card) {
@@ -28,7 +28,7 @@ export function AbilityCardBody({card}: {card: ability_card}) {
             } else if ((s as power_roll_statement).characteristic !== undefined) {
                 return PowerRollStatement({card: card, powerRoll: s as power_roll_statement});
             } else if ((s as spacer_statement).spacePt !== undefined) {
-                return spacerStatement();
+                return spacerStatement((s as spacer_statement).spacePt);
             } else {
                 return (<></>)
             }

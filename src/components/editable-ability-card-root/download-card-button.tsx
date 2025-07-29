@@ -2,7 +2,7 @@ import {ability_card, actionTextColorStyle, cardbackColorStyle} from "../../type
 import {saveImage} from "../../utils/download-utils.ts";
 
 export function DownloadCardButton({card, id}: {card: ability_card, id: string}) {
-    const cardId = id + '_card';
+    const cardId = `${id}_${card.title}_card`;
 
     return (
         <div role='button' onClick={() => {

@@ -9,7 +9,7 @@ import {
 function distanceBlock(card: ability_card, block: distance_block, bgColorStyle: Record<string, string>) {
     if (block.distanceValue.length === 1 || block.distanceValue.length === 2) {
         return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[28pt] h-[28pt]`}>
+            <div className={`relative  ${bgColorStyle[card.type]} w-[27pt] h-[27pt]`}>
                 <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{block.distanceHeader}</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[16pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{block.distanceValue}</div>
@@ -18,7 +18,7 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorStyle: 
         )
     } else if (block.distanceValue === 'Line of Effect') {
         return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[28pt] h-[28pt]`}>
+            <div className={`relative  ${bgColorStyle[card.type]} w-[27pt] h-[27pt]`}>
                 <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{block.distanceHeader}</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div
@@ -32,7 +32,7 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorStyle: 
         )
     } else if (block.distanceValue === 'Special') {
         return (
-            <div className={`relative  ${bgColorStyle[card.type]} w-[28pt] h-[28pt]`}>
+            <div className={`relative  ${bgColorStyle[card.type]} w-[27pt] h-[27pt]`}>
                 <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{block.distanceHeader}</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[7pt] font-body font-bold text-cardback leading-[5.3333pt] small-caps text-center`}>Special</div>
@@ -42,7 +42,7 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorStyle: 
     }
 
     return (
-        <div className={`relative  ${bgColorStyle[card.type]} w-[28pt] h-[28pt]`}>
+        <div className={`relative  ${bgColorStyle[card.type]} w-[27pt] h-[27pt]`}>
             <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>{block.distanceHeader}</div>
             <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                 <div className={`text-[11pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{block.distanceValue}</div>

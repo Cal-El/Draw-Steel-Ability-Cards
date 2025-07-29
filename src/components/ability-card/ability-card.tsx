@@ -8,8 +8,8 @@ import React from "react";
 
 function cardContainer(card: ability_card, selectionState: number) {
     return (
-        <div className={`cardContainer flex h-[180pt] w-[252pt] rounded-[9pt] border-[2pt] print:scale-[1] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[2]' : selectionState < 0 ? 'scale-[1]' : 'scale-[1.5]'}`}>
-            <div className={`w-[221pt]`}>
+        <div className={`cardContainer flex h-[180pt] w-[252pt] rounded-[9pt] border-[1.5pt] print:scale-[1] ${cardbackColorStyle[card.type]} ${selectionState > 0 ? 'scale-[2]' : selectionState < 0 ? 'scale-[1]' : 'scale-[1.5]'}`}>
+            <div className={`w-[222pt]`}>
                 <AbilityCardHeader card={card}/>
                 <AbilityCardBody card={card}/>
             </div>
@@ -22,7 +22,7 @@ export default function AbilityCard({id, card, cardNum, selectedCard, setSelecte
     let selectedCardState = (selectedCard===cardNum ? 1 : selectedCard===-1 ? 0 : -1)
 
     return (
-        <div id={`${id}_${card.title}_card`} role="button" onClick={() => {
+        <div id={`${id}_${card.title}_card`} key={`${id}_${card.title}_card`} role="button" onClick={() => {
             if (selectedCardState > 0) {
                 setSelectedCard(-1)
             } else {
