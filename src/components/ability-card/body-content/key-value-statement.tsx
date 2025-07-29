@@ -3,18 +3,16 @@ import {ability_card, actionBg20ColorStyle, actionTextColorStyle, key_value_stat
 import {AutoTextSize} from "auto-text-size";
 
 export function KeyValueStatement({card, kv}: {card: ability_card, kv: key_value_statement}) {
-    if (kv.key === "Trigger") {
-        return (
-            <div className={`flex-auto flex ${actionBg20ColorStyle[card.type]} py-[3pt]`}>
-                <div className={`w-[2pt] flex-none`}></div>
-                <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><AutoTextSize maxFontSizePx={18} mode="box"><Markdown>{"**Trigger:** " + kv.value}</Markdown></AutoTextSize></p>
-            </div>
-        )
-    }
     return (
-        <div className={`flex-auto flex`}>
-            <div className={`w-[2pt] flex-none`}></div>
+        <div className={`flex-auto flex ${kv.key === "Trigger" && `${actionBg20ColorStyle[card.type]} py-[3pt]`}`}>
+          <div className={`w-[2pt] flex-none`}></div>
+          {!card.bodyFontSizeOverride ?
+            // Old Flow: Uses AutoTextSize
             <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><AutoTextSize maxFontSizePx={18} mode="box"><Markdown>{(kv.key.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></AutoTextSize></p>
+            :
+            // New Flow: Uses body fontsize override
+            <p style={{fontSize: card.bodyFontSizeOverride}} className={`font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><Markdown>{(kv.key.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></p>
+          }
         </div>
     )
 }

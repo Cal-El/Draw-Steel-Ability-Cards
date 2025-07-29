@@ -127,6 +127,11 @@ export type ability_card = {
     };
     target: string;
     distance: distance_block[];
+    topMatterFontSizeOverride?: string;
+    titleFontSizeOverride?: string;
+    flavourFontSizeOverride?: string;
+    bodyFontSizeOverride?: string;
+    powerRollFontSizeOverride?: string;
 }
 
 export type power_roll_statement = {

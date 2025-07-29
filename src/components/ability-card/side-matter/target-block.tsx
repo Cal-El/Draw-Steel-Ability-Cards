@@ -56,7 +56,7 @@ export function TargetBlock({card, bgColorStyle}: {card: ability_card, bgColorSt
     } else if (card.target === 'Self and All Creatures') {
         return <TargetSelfAndCreatures card={card} bgColorStyle={bgColorStyle} numCreatures="All" creatureType="Creatures" andOr="and"/>
     } else if (card.target === 'Special') {
-        return <TargetBasic card={card} bgColorStyle={bgColorStyle} text="Special" fontSize={10.5} leading={12}/>
+        return <TargetBasic card={card} bgColorStyle={bgColorStyle} text="Special" fontSize={7} leading={8}/>
     } else if (card.target === 'None') {
         return <></>
     } else {
