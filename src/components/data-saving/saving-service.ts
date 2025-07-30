@@ -1,10 +1,13 @@
-import { ability_card } from "../../types/ability-card-types";
+import {Card, CardList} from "../../types/card-list.ts";
+import {buildEmptyHeroData, HeroData} from "../../types/character-data.ts";
 
 export const DisplayedCardListKey = "displayedcards"
 export const CardListKey = "cardlist"
+export const HeroDataKey = "herodata"
 
-export function saveCardList(name: string, cards: ability_card[]){
-  localStorage.setItem(getCardListStorageKey(name), JSON.stringify(cards))
+export function saveCardList(name: string, cardList: CardList){
+  localStorage.setItem(getCardListStorageKey(name), JSON.stringify(cardList.abilityCards))
+  localStorage.setItem(getHeroDataStorageKey(name), JSON.stringify(cardList.heroData))
   if (name != DisplayedCardListKey) {
     const cardlistnames = getCardListNames()
     if (!cardlistnames.includes(name)){
@@ -14,7 +17,8 @@ export function saveCardList(name: string, cards: ability_card[]){
 }
 
 export function deleteCardList(name: string){
-  localStorage.removeItem(name);
+  localStorage.removeItem(getCardListStorageKey(name));
+  localStorage.removeItem(getHeroDataStorageKey(name));
   if (name != DisplayedCardListKey) {
     const cardlistnames = getCardListNames()
     if (cardlistnames.includes(name)){
@@ -23,19 +27,30 @@ export function deleteCardList(name: string){
   }
 }
 
-export function getCardList(name: string): ability_card[] {
-  const data = localStorage.getItem(getCardListStorageKey(name))
-  if(data) {
-    let parsed: ability_card[] = JSON.parse(data ?? '');
-    return parsed;
+export function getCardList(name: string): CardList {
+  const cardsData = localStorage.getItem(getCardListStorageKey(name))
+  let parsedCards: Card[] = [];
+  if(cardsData) {
+    parsedCards = JSON.parse(cardsData ?? '');
   }
-  return []
+  const charData = localStorage.getItem(getHeroDataStorageKey(name))
+  let heroData: HeroData = buildEmptyHeroData();
+  if (charData) {
+    const parsedData = JSON.parse(charData ?? '');
+    if (parsedData) {
+      heroData = HeroData.fromJSON(parsedData);
+    }
+  }
+  return {
+    abilityCards: parsedCards,
+    heroData: heroData,
+  } satisfies CardList;
 }
 
 export function getCardListNames(): string[]{
   const data = localStorage.getItem("cardlistnames")
   if(data) {
-    let parsed: string[] = JSON.parse(data ?? '');
+    const parsed: string[] = JSON.parse(data ?? '');
     return parsed;
   }
   return []
@@ -47,6 +62,10 @@ export function saveCardListNames(names: string[]){
 
 function getCardListStorageKey(name: string): string {
   return `${CardListKey}-${name}`;
+}
+
+function getHeroDataStorageKey(name: string): string {
+  return `${HeroDataKey}-${name}`;
 }
 
 export function changeActiveCardList(name: string): void {
@@ -63,8 +82,8 @@ export function hasUnsavedChanges(): boolean {
   return cardListHasUnsavedChanges(displayedCards)
 }
 
-export function cardListHasUnsavedChanges(cardList: ability_card[]): boolean {
+export function cardListHasUnsavedChanges(cardList: CardList): boolean {
   const activeList = getActiveCardList()
-  const activecardlist = getCardList(activeList)
-  return (JSON.stringify(cardList) !== JSON.stringify(activecardlist))
+  const activeCardList = getCardList(activeList)
+  return (JSON.stringify(cardList) !== JSON.stringify(activeCardList))
 }
