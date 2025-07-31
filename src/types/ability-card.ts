@@ -108,11 +108,11 @@ export type spacer = {
 }
 
 export enum characteristic {
-  MIGHT,
-  AGILITY,
-  REASON,
-  INTUITION,
-  PRESENCE
+  MIGHT = "Might",
+  AGILITY = "Agility",
+  REASON = "Reason",
+  INTUITION = "Intuition",
+  PRESENCE = "Presence"
 }
 
 export enum potency_strength {

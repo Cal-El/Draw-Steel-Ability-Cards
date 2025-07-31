@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
-import {characteristic, ability_card as new_ability_card, potency_strength} from "./types/ability-card.ts";
+import {ability_card as new_ability_card, characteristic, potency_strength} from "./types/ability-card.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
@@ -9,12 +9,12 @@ import poweredByDrawSteel from '/PoweredByDrawSteel.webp';
 import Select from "react-select";
 import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
-import { DisplayedCardListKey, getCardList, saveCardList } from './components/data-saving/saving-service.ts';
+import {DisplayedCardListKey, getCardList, saveCardList} from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
-import { DowngradeCard } from './utils/ability-card-downgrader.ts';
+import {DowngradeCard} from './utils/ability-card-downgrader.ts';
 
 function App() {
-  const dummyCard: new_ability_card = {
+  let dummyCard: new_ability_card = {
       version: 2,
       level: 1,
       type: "Main action",
@@ -84,8 +84,64 @@ function App() {
         costName: "Focus",
         costValue: "3"
       },
-      fontSizePtOverrides: {
+      fontSizePtOverrides: {}
+  };
+  dummyCard = {
+    version: 2,
+    level: 1,
+    type: "Main action",
+    header: {
+      topMatter: "Level 1 Signature Spellsword Kit Ability",
+        title: "Leaping Lightning",
+        flavour: "Lightning jumps from your weapon as you strike to harm a nearby foe.",
+        keywords: ["Magic", "Melee", "Strike", "Weapon"],
+        distance: {
+        display: "Melee 1",
+          values: [
+          {type: "Melee", baseValue: 1, includedKitValue: 0},
+        ]
+      },
+      target: "One creature or object"
+    },
+    body: [
+      {
+        isPowerRoll: true,
+        characteristicBonus: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+        t1: {
+          damage: {
+            baseValue: 5,
+            includedKitValue: 2,
+            characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+            otherBonus: ""
+          },
+          baseEffect: "lightning damage",
+        },
+        t2: {
+          damage: {
+            baseValue: 8,
+            includedKitValue: 2,
+            characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+            otherBonus: ""
+          },
+          baseEffect: "lightning damage",
+        },
+        t3: {
+          damage: {
+            baseValue: 11,
+            includedKitValue: 2,
+            characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+            otherBonus: ""
+          },
+          baseEffect: "lightning damage",
+        }
+      },
+      {
+        isEffect: true,
+        title: "Effect",
+        body: "A creature or object of your choice within 2 squares of the target takes lightning damage equal to the characteristic score used for this ability’s power roll.",
       }
+    ],
+    fontSizePtOverrides: {}
   };
 
   const cList : ability_card[] = getCardList(DisplayedCardListKey)
@@ -196,7 +252,20 @@ function App() {
             }
             <button onClick={() => {
                 setSelectedCard(-1)
-                updateCardList([...cardsList, DowngradeCard(dummyCard, undefined)])
+                updateCardList([...cardsList, DowngradeCard(dummyCard, {
+                  characteristics: new Map<characteristic, number>(),
+                  bonus: [
+                    {
+                      type: "Kit",
+                      keyword_matcher: new Set<string>(["Melee", "Weapon"]),
+                      rolled_damage_bonus: {
+                        t1: 0,
+                        t2: 0,
+                        t3: 4,
+                      }
+                    }
+                  ]
+                })])
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
             </button>
