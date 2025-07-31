@@ -17,7 +17,7 @@ import {
   power_roll_tier as new_tier,
   spacer
 } from "../types/ability-card.ts";
-import {character_data, distance_bonus} from "../types/character-data.ts";
+import {character_data, damage_bonus, distance_bonus} from "../types/character-data.ts";
 
 
 const fontSizeTranslate = function (size: number | undefined) {
@@ -38,6 +38,16 @@ function parseSpelledNumber(s: string) {
     case "ten": return 10;
     default: return 0;
   }
+}
+
+function commaSeparatedOrString(strings: string[]) {
+  if (strings.length === 2) {
+    return strings.join(" or ")
+  }
+
+  return strings.map((s, i, arr) => {
+      return (i + 1 >= arr.length ? "or " : "") + s;
+  }).join(", ")
 }
 
 function parseDistanceVal(matchedVal: string, filteredBonuses: distance_bonus[], d: distance_value) {
@@ -224,36 +234,109 @@ const translatePrCharacteristic = function (pr: power_roll, characteristics: Map
     if (characteristics.has(c)) {
       bestBonus = Math.max(bestBonus, characteristics.get(c) || 0)
     } else {
-      return charOptions.map(
-        (x, i, arr) => {
-          const reStr = i + 1 >= arr.length ? "or " : "";
+      return commaSeparatedOrString(charOptions.map(
+        (x) => {
           switch (x) {
             case characteristic.MIGHT:
-              return reStr + "Might";
+              return "Might";
             case characteristic.AGILITY:
-              return reStr + "Agility";
+              return "Agility";
             case characteristic.REASON:
-              return reStr + "Reason";
+              return "Reason";
             case characteristic.INTUITION:
-              return reStr + "Intuition";
+              return "Intuition";
             case characteristic.PRESENCE:
-              return reStr + "Presence";
+              return "Presence";
           }
         }
-      ).join(", ")
+      ))
     }
   }
   return ""
 }
 
 const translatePrTier = function (tier: new_tier, card: new_card, characterData: character_data) : old_tier {
+  const bonuses = characterData.bonus.filter(b => {
+    for (const keyword in b.keyword_matcher) {
+      if (!(keyword in card.header.keywords)) {
+        return false
+      }
+    }
+    return (b as damage_bonus).rolled_damage_bonus !== undefined
+  }).map(b => (b as damage_bonus))
+
+  const parseDamageVal = function () : number {
+    const baseVal = tier.damage?.baseValue || 0;
+
+    return baseVal;
+  }
+
+  const parseDamageBlock = function () : {
+    damageString: string;
+    effectPrefix: string;
+  } | undefined {
+    if (!tier.damage) {
+      return;
+    }
+
+    let damage = 0;
+    let altDamage : number | undefined = undefined;
+    if (("Melee" in card.header.keywords && "Ranged" in card.header.keywords) && bonuses.map(b => ("Melee" in b.keyword_matcher && "Ranged" !in b.keyword_matcher) || "Ranged" in b.keyword_matcher && "Melee" !in b.keyword_matcher)) {
+      // Card contains both melee and ranged keywords and there are bonuses that affect only melee and ranged abilities
+
+    } else {
+      damage = parseDamageVal()
+    }
+    let effectPrefix = tier.damage.otherBonus ? `+ ${tier.damage.otherBonus}` : "";
+
+    if (tier.damage?.characteristicBonusOptions.length === 0) {
+      // Super simple "2"
+      return {
+        damageString: `${damage}`,
+        effectPrefix: effectPrefix,
+      }
+    } else if (tier.damage?.characteristicBonusOptions.length === 1) {
+      // Super simple "2+M" style damage
+      if (characterData.characteristics.has(tier.damage.characteristicBonusOptions[0])) {
+        // Character data includes characteristic, so render as just "2"
+        const cValue = characterData.characteristics.get(tier.damage.characteristicBonusOptions[0]) || 0;
+        return {
+          damageString: `${damage + cValue}`,
+          effectPrefix: effectPrefix,
+        }
+      } else {
+        return {
+          damageString: `${damage}+${tier.damage.characteristicBonusOptions[0].toString()[0]}`,
+          effectPrefix: effectPrefix,
+        }
+      }
+    } else {
+      // Complex characteristic options; either make a total (i.e. "2") or the vague value (i.e. "x") and expect values in effect
+      for (const cOption of tier.damage.characteristicBonusOptions) {
+        if (!characterData.characteristics.has(cOption)) {
+          const cOptionsString = commaSeparatedOrString(tier.damage.characteristicBonusOptions.map(c => c.toString()[0]))
+          // missing a characteristic option, return complex
+          return {
+            damageString: `x`,
+            // | x | 2 + M or A + 2d6
+            effectPrefix: `${damage} + ${cOptionsString}${effectPrefix ? ' ' + effectPrefix : ''}`
+          }
+        }
+      }
+    }
+
+    return;
+  }
+
+  const dmg = parseDamageBlock()
+
   return {
     hasDamage: tier.damage !== undefined,
-    damageValue: "",
+    damageValue: dmg?.damageString,
     hasGeneralEffect: tier.baseEffect !== undefined,
-    generalEffect: "",
+    generalEffect: (dmg?.effectPrefix || "") + tier.baseEffect,
     hasPotency: tier.potency !== undefined,
-    potencyValue: "",
+    potencyValue: `${tier.potency?.characteristic.toString()[0]}<${tier.potency?.strength.valueOf()}`,
     potencyEffect: tier.potency?.effect,
   } satisfies old_tier;
 }
