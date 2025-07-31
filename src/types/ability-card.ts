@@ -40,17 +40,20 @@ export type header = {
 //
 export type distance = {
   display: string; // copy-paste of distance from book, modified for customisable values. e.g. "Melee [1] or Ranged [5]" or "4 Cube within [10]"
-  values: {
-    type: string; // key of the distance value from the character. e.g. "Melee" or "Ranged"
-    baseValue: number; // base value of the distance from the book, with kit value if a Kit Signature Ability
-    includedKitValue: number; // included kit value of the ability, if any
-  }[]
+  values: distance_value[]
+}
+
+export type distance_value = {
+  type: string; // key of the distance value from the character. e.g. "Melee" or "Ranged"
+  baseValue: number; // base value of the distance from the book, with kit value if a Kit Signature Ability
+  includedKitValue: number; // included kit value of the ability, if any
 }
 
 export type body = power_roll | effect | spacer;
 
 export type power_roll = {
-  characteristicBonus: string | characteristic[]
+  isPowerRoll: true;
+  characteristicBonus: string | characteristic[];
   t1: power_roll_tier;
   t2: power_roll_tier;
   t3: power_roll_tier;
@@ -94,11 +97,13 @@ export type potency = {
 }
 
 export type effect = {
+  isEffect: true;
   title: string;
   body: string;
 }
 
 export type spacer = {
+  isSpacer: true;
   sizePt: number;
 }
 
