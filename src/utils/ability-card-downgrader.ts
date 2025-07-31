@@ -92,13 +92,13 @@ function parseDistanceVal(matchedVal: string, filteredBonuses: distance_bonus[],
     let bonusTypes: Map<string, number> = new Map()
     filteredBonuses.filter(b => d.type === b.distance_type)
       .forEach(b => {
-        bonusTypes.set(b.type, Math.max(bonusTypes.get(b.type) || 0, b.value))
+        bonusTypes.set(b.type, Math.max((bonusTypes.get(b.type) || 0), b.value))
       })
     let totalBonuses = 0
-    for (const key in bonusTypes) {
+    for (const key of bonusTypes.keys()) {
       totalBonuses += bonusTypes.get(key) || 0
     }
-    return d.baseValue + totalBonuses - ("Kit" in bonusTypes ? d.includedKitValue : 0)
+    return d.baseValue + totalBonuses - (bonusTypes.has("Kit") ? d.includedKitValue : 0)
   } else {
     return parseInt(matchedVal)
   }
@@ -218,16 +218,16 @@ const translateDistance = function (card: new_card, characterData: character_dat
     const cardKeywordsMinusRanged = card.header.keywords.filter(k => k !== "Ranged");
     const bonusesWithoutRanged = bonuses.filter(b => {
       for (const k of b.keyword_matcher) {
-         if (!(k in cardKeywordsMinusRanged)) {
+        if (!cardKeywordsMinusRanged.includes(k)) {
            return false;
          }
       }
       return true;
     })
-    const cardKeywordsMinusMelee = card.header.keywords.filter(k => k !== "Ranged");
+    const cardKeywordsMinusMelee = card.header.keywords.filter(k => k !== "Melee");
     const bonusesWithoutMelee = bonuses.filter(b => {
       for (const k of b.keyword_matcher) {
-        if (!(k in cardKeywordsMinusMelee)) {
+        if (!cardKeywordsMinusMelee.includes(k)) {
           return false;
         }
       }
@@ -333,6 +333,9 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
       // Card contains both melee and ranged keywords and there are bonuses that affect only melee and ranged abilities
       damage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.keyword_matcher.has("Ranged")), tier.damage)
       altDamage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.keyword_matcher.has("Melee")), tier.damage)
+      if (damage === altDamage) {
+        altDamage = undefined
+      }
     } else {
       damage = parseBaseDamageVal(tierNum, bonuses, tier.damage)
     }
