@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
+import {characteristic, ability_card as new_ability_card, potency_strength} from "./types/ability-card.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
@@ -10,18 +11,81 @@ import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
 import { DisplayedCardListKey, getCardList, saveCardList } from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
+import { DowngradeCard } from './utils/ability-card-downgrader.ts';
 
 function App() {
-  const dummyCard: ability_card = {
-      type: 'Action',
-      topMatter: 'Custom Ability',
-      title: 'Blank Card',
-      keywords: [],
-      flavour: '',
-      statements: [],
-      hasCost: false,
-      target: 'Self',
-      distance: [],
+  const dummyCard: new_ability_card = {
+      version: 2,
+      level: 1,
+      type: "Main action",
+      header: {
+        topMatter: "Level 1 Heroic Tactician Ability",
+        title: "Concussive Strike",
+        flavour: "Your precise strike leaves your foe struggling to respond.",
+        keywords: ["Melee", "Ranged", "Strike", "Weapon"],
+        distance: {
+          display: "Melee [1] or Ranged [5]",
+          values: [
+            {type: "Melee", baseValue: 1, includedKitValue: 0},
+            {type: "Ranged", baseValue: 5, includedKitValue: 0}
+          ]
+        },
+        target: "One creature or object"
+      },
+      body: [
+        {
+          isPowerRoll: true,
+          characteristicBonus: [characteristic.MIGHT],
+          t1: {
+            damage: {
+              baseValue: 3,
+              includedKitValue: 0,
+              characteristicBonusOptions: [characteristic.MIGHT],
+              otherBonus: ""
+            },
+            baseEffect: "damage",
+            potency: {
+              characteristic: characteristic.MIGHT,
+              strength: potency_strength.WEAK,
+              effect: "dazed (save ends)"
+            }
+          },
+          t2: {
+            damage: {
+              baseValue: 5,
+              includedKitValue: 0,
+              characteristicBonusOptions: [characteristic.MIGHT],
+              otherBonus: ""
+            },
+            baseEffect: "damage",
+            potency: {
+              characteristic: characteristic.MIGHT,
+              strength: potency_strength.AVERAGE,
+              effect: "dazed (save ends)"
+            }
+          },
+          t3: {
+            damage: {
+              baseValue: 8,
+              includedKitValue: 0,
+              characteristicBonusOptions: [characteristic.MIGHT],
+              otherBonus: ""
+            },
+            baseEffect: "damage",
+            potency: {
+              characteristic: characteristic.MIGHT,
+              strength: potency_strength.STRONG,
+              effect: "dazed (save ends)"
+            }
+          }
+        }
+      ],
+      cost: {
+        costName: "Focus",
+        costValue: "3"
+      },
+      fontSizePtOverrides: {
+      }
   };
 
   const cList : ability_card[] = getCardList(DisplayedCardListKey)
@@ -132,7 +196,7 @@ function App() {
             }
             <button onClick={() => {
                 setSelectedCard(-1)
-                updateCardList([...cardsList, dummyCard])
+                updateCardList([...cardsList, DowngradeCard(dummyCard, undefined)])
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
             </button>

@@ -1,11 +1,12 @@
 import {
     ability_card,
     abilityTypeValues,
-    cardbackColorStyle, key_value_statement, keywords, power_roll_statement, rawKeywords, spacer_statement,
+    cardbackColorStyle, key_value_statement, power_roll_statement, spacer_statement,
     supportedAbilityTargets
 } from "../../../types/ability-card-types.ts";
 import {useState} from "react";
 import Select from "react-select";
+import { keywords, rawKeywords } from "../../../types/keywords.ts";
 
 export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardNum: number, updateCard: (index: number, card: ability_card) => void}) {
     const [selectedStatement, setSelectedStatement] = useState("Power Roll");
