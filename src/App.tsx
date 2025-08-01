@@ -9,9 +9,14 @@ import poweredByDrawSteel from '/PoweredByDrawSteel.webp';
 import Select from "react-select";
 import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
-import {DisplayedCardListKey, getCardList, saveCardList} from './components/data-saving/saving-service.ts';
+import {
+  DisplayedCardListKey,
+  getActiveCardList,
+  getCardList,
+  saveCardList
+} from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
-import {DowngradeCard} from './utils/ability-card-downgrader.ts';
+import {Card, CardList, nonNullHeroData} from "./types/card-list.ts";
 
 function App() {
   let dummyCard: new_ability_card = {
@@ -201,7 +206,8 @@ function App() {
     fontSizePtOverrides: {}
   };
 
-  const cList : ability_card[] = getCardList(DisplayedCardListKey)
+  const initCardListKey = getActiveCardList()
+  const cList : CardList = getCardList(initCardListKey.length === 0 ? initCardListKey : DisplayedCardListKey)
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
@@ -242,24 +248,24 @@ function App() {
               }
           });
       setSelectedCard(-1);
-      updateCardList(cccs);
+      updateCardList({abilityCards: cccs});
   }
 
   function deleteCard(index: number) {
-      const tempCardList = [...cardsList]
+      const tempCardList = [...cardsList.abilityCards]
       tempCardList.splice(index, 1)
-      updateCardList(tempCardList);
+      updateCardList({...cardsList, abilityCards: tempCardList});
       setSelectedCard(-1)
   }
 
-  function updateCard(index: number, card: ability_card) {
-      const tempCardList = [...cardsList]
+  function updateCard(index: number, card: Card) {
+      const tempCardList = [...cardsList.abilityCards]
       tempCardList.splice(index, 1, card)
-      updateCardList(tempCardList);
+      updateCardList({...cardsList, abilityCards: tempCardList});
   }
 
-  function updateCardList(newList: ability_card[]) {
-    setCardsList(newList)
+  function updateCardList(newList: CardList) {
+    setCardsList(newList);
     saveCardList(DisplayedCardListKey, newList)
   }
 
@@ -295,7 +301,7 @@ function App() {
                 if (cardChoiceText) {
                     const parsedCard = yamlParse(cardChoiceText) as ability_card;
                     setSelectedCard(-1);
-                    updateCardList([...cardsList, parsedCard]);
+                    updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, parsedCard]});
                 }
             }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Maneuver`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add Card</div>
@@ -309,41 +315,7 @@ function App() {
             }
             <button onClick={() => {
                 setSelectedCard(-1)
-                updateCardList([...cardsList, DowngradeCard(dummyCard, {
-                  characteristics: new Map<characteristic, number>([
-                    [characteristic.MIGHT, 1],
-                    [characteristic.AGILITY, 2],
-                    [characteristic.REASON, 0],
-                    [characteristic.INTUITION, 0],
-                    [characteristic.PRESENCE, 2],
-                  ]),
-                  bonus: [
-                    {
-                      type: "Kit",
-                      keyword_matcher: new Set<string>(["Melee", "Weapon"]),
-                      rolled_damage_bonus: {
-                        t1: 1,
-                        t2: 1,
-                        t3: 1,
-                      }
-                    },
-                    {
-                      type: "Kit",
-                      keyword_matcher: new Set<string>(["Ranged", "Weapon"]),
-                      rolled_damage_bonus: {
-                        t1: 1,
-                        t2: 1,
-                        t3: 1,
-                      }
-                    },
-                    {
-                      type: "Kit",
-                      keyword_matcher: new Set<string>(["Ranged", "Weapon"]),
-                      distance_type: "Ranged",
-                      value: 5,
-                    }
-                  ]
-                })])
+                updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, dummyCard]})
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
             </button>
@@ -354,7 +326,7 @@ function App() {
                     <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
                 </div>
                 <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 print:bg-white items-center justify-center print:gap-[1pt] print:items-start print:justify-start"}>
-                    {cardsList.map((value, index) => <EditableAbilityCardRoot key={index} card={value} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
+                    {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={nonNullHeroData(cardsList)} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </main>
             </div>
         </div>

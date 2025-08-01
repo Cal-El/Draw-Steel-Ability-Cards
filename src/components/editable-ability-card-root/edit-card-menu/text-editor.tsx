@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {parse as yamlParse, stringify as yamlStringify} from "yaml";
 import {ability_card, power_roll_statement} from "../../../types/ability-card-types.ts";
 import {saveYamlExport} from "../../../utils/download-utils.ts";
+import {Card} from "../../../types/card-list.ts";
 
 function tryParseCardInputJson(s: string, cardNum: number, setInputBoxValue: React.Dispatch<React.SetStateAction<string>>, setErrorMsg: React.Dispatch<React.SetStateAction<string>>, updateCard: (index: number, card: ability_card) => void) {
     setInputBoxValue(s);
@@ -81,7 +82,7 @@ function checkAbilityCard(abilityCard: ability_card) : string {
     return ''
 }
 
-export function TextEditor({card, cardNum, updateCard}: {card: ability_card, cardNum: number, updateCard: (index: number, card: ability_card) => void}) {
+export function TextEditor({card, cardNum, updateCard}: {card: Card, cardNum: number, updateCard: (index: number, card: ability_card) => void}) {
     const [isValidInput, setIsValidInput] = useState(false);
     const [inputBoxValue, setInputBoxValue] = useState(yamlStringify(card, null, 2));
     const [errorMsg, setErrorMsg] = useState('');

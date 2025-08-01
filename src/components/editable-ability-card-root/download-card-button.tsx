@@ -1,8 +1,9 @@
-import {ability_card, actionTextColorStyle, cardbackColorStyle} from "../../types/ability-card-types.ts";
+import { actionTextColorStyle, cardbackColorStyle} from "../../types/ability-card-types.ts";
 import {saveImage} from "../../utils/download-utils.ts";
+import {Card, getCardTitle} from "../../types/card-list.ts";
 
-export function DownloadCardButton({card, id}: {card: ability_card, id: string}) {
-    const cardId = `${id}_${card.title}_card`;
+export function DownloadCardButton({card, id}: {card: Card, id: string}) {
+    const cardId = `${id}_${getCardTitle(card)}_card`;
 
     return (
         <div role='button' onClick={() => {

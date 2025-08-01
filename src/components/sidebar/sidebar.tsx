@@ -12,7 +12,6 @@ import {
   cardListHasUnsavedChanges
 } from "../data-saving/saving-service";
 import { HiPlus, HiTrash } from "react-icons/hi";
-import { ability_card } from "../../types/ability-card-types";
 import { FaSave } from "react-icons/fa";
 import ConfirmModal from "./confirm-modal";
 import { TbFileExport, TbFileImport } from "react-icons/tb";
@@ -21,9 +20,10 @@ import { useFilePicker } from "use-file-picker";
 import { SelectedFiles } from "use-file-picker/types";
 import { useHotkeys } from "react-hotkeys-hook";
 import { toast, ToastContainer } from "react-toastify";
+import { CardList } from "../../types/card-list.ts";
 
 export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedCards}: 
-  {open: boolean, toggleOpen: () => void, displayedCards: ability_card[], setDisplayedCards: Dispatch<SetStateAction<ability_card[]>>}){
+  {open: boolean, toggleOpen: () => void, displayedCards: CardList, setDisplayedCards: Dispatch<SetStateAction<CardList>>}){
   const [cardListNames, setCardListNames] = useState<string[]>(getCardListNames() || [])
   const [activeCardList, setActiveCardList] = useState<string>(getActiveCardList())
   const [isUnsavedChanges, setIsUnsavedChanges] = useState<boolean>(hasUnsavedChanges())
@@ -65,7 +65,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     } else if (newCardListName === DisplayedCardListKey || cardListNames.includes(newCardListName)) {
       setSaveCurrentError("Card List Name is already in use. Please pick another")
     } else {
-      const cardListToSave = saveDisplayedCards ? displayedCards : []
+      const cardListToSave = saveDisplayedCards ? displayedCards : { abilityCards: [] }
       setSaveCurrentError("")
       saveCardList(newCardListName, cardListToSave)
       if (saveDisplayedCards) {
@@ -87,13 +87,13 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     }
   }
 
-  const updateDisplayedCards = (newCards: ability_card[]) => {
+  const updateDisplayedCards = (newCards: CardList) => {
     saveCardList(DisplayedCardListKey, newCards)
     setDisplayedCards(newCards)
   }
 
   const openLoadModal = (cardListName: string) => {
-    if(isUnsavedChanges && !(activeCardList === "" && displayedCards.length === 0)){
+    if(isUnsavedChanges && !(activeCardList === "" && displayedCards.abilityCards.length === 0)){
       const text = "You have unsaved changes that will be overwritten by loading " + cardListName + ". Are you sure you want to proceed?"
       openModal(text, () => {
         updateDisplayedCards(getCardList(cardListName))
@@ -107,10 +107,10 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   }
 
   const openClearCurrentModal = () => {
-    if (displayedCards.length > 0) {
+    if (displayedCards.abilityCards.length > 0) {
       const text = "Are you sure you want to clear the current card list? Any unsaved displayed cards will be lost. This action cannot be reversed."
       openModal(text, () => {
-        updateDisplayedCards([])
+        updateDisplayedCards({abilityCards: []})
         updateActiveCardList("")
         closeModal()
       }, "load")
@@ -151,7 +151,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
   }
 
   const importCardList = () => {
-    if (isUnsavedChanges && !(activeCardList === "" && displayedCards.length === 0)) {
+    if (isUnsavedChanges && !(activeCardList === "" && displayedCards.abilityCards.length === 0)) {
       openModal("You have unsaved changes that will be overwritten by importing cards. Are you sure you want to import?", () => {
         openFilePicker()
         closeModal()
@@ -173,7 +173,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       <div className={`m-3 space-y-2`}>
         <h1 className="text-xl font-body font-semibold small-caps">Card Lists</h1>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
-          <button disabled={displayedCards.length === 0 && activeCardList.length === 0} onClick={() => openClearCurrentModal()} className={`flex flex-row font-body text-lg text-center items-center ${displayedCards.length === 0 && activeCardList.length === 0 ? 'text-gray-400' : 'hover:text-gray-700'} small w-full`}>
+          <button disabled={displayedCards.abilityCards.length === 0 && activeCardList.length === 0} onClick={() => openClearCurrentModal()} className={`flex flex-row font-body text-lg text-center items-center ${displayedCards.abilityCards.length === 0 && activeCardList.length === 0 ? 'text-gray-400' : 'hover:text-gray-700'} small w-full`}>
             <HiTrash/>&nbsp;Clear All Displayed Cards
           </button>
         </div>
@@ -229,7 +229,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
               </div>
             </>
           })}
-          {activeCardList.length === 0 && displayedCards.length > 0 &&
+          {activeCardList.length === 0 && displayedCards.abilityCards.length > 0 &&
             <div className={`flex flex-row justify-between items-center rounded-md p-2`} key={'unsaved list'}>
               <p className={`line-clamp-1 overflow-hidden flex-1 text-center bg-stone-300 border border-2 border-stone-400 border-dashed`}>Unsaved Current Workspace</p>
             </div>

@@ -17,7 +17,11 @@ import {
   power_roll_tier as new_tier,
   spacer
 } from "../types/ability-card.ts";
-import {character_data, damage_bonus, distance_bonus} from "../types/character-data.ts";
+import {
+  HeroData,
+  buildEmptyHeroData,
+  CharacteristicSet, DistanceBonus, DamageBonus
+} from "../types/character-data.ts";
 
 
 const fontSizeTranslate = function (size: number | undefined) {
@@ -85,12 +89,12 @@ function commaSeparatedOrString(strings: string[]) {
   }).join(", ")
 }
 
-function parseDistanceVal(matchedVal: string, filteredBonuses: distance_bonus[], d: distance_value) {
+function parseDistanceVal(matchedVal: string, filteredBonuses: DistanceBonus[], d: distance_value) {
   if (matchedVal.startsWith('[') && matchedVal.endsWith(']')) {
     // Handle value with bonuses
     //
-    let bonusTypes: Map<string, number> = new Map()
-    filteredBonuses.filter(b => d.type === b.distance_type)
+    const bonusTypes: Map<string, number> = new Map()
+    filteredBonuses.filter(b => d.type === b.distanceType)
       .forEach(b => {
         bonusTypes.set(b.type, Math.max((bonusTypes.get(b.type) || 0), b.value))
       })
@@ -104,16 +108,12 @@ function parseDistanceVal(matchedVal: string, filteredBonuses: distance_bonus[],
   }
 }
 
-function parseBaseDamageVal(tierNum: number, filteredBonuses: damage_bonus[], d: damage) {
+function parseBaseDamageVal(tierNum: number, filteredBonuses: DamageBonus[], d: damage) {
   // Handle value with bonuses
   //
-  let bonusTypes: Map<string, number> = new Map()
+  const bonusTypes: Map<string, number> = new Map()
   filteredBonuses.forEach(b => {
-    const bb = (typeof b.rolled_damage_bonus === 'number') ? b.rolled_damage_bonus :
-      tierNum === 1 ? b.rolled_damage_bonus.t1 :
-        tierNum === 2 ? b.rolled_damage_bonus.t2 : b.rolled_damage_bonus.t3;
-
-    bonusTypes.set(b.type, Math.max((bonusTypes.get(b.type) || 0), bb))
+    bonusTypes.set(b.type, Math.max((bonusTypes.get(b.type) || 0), b.getBonusForTier(tierNum)))
   })
   let totalBonuses = 0
   for (const key of bonusTypes.keys()) {
@@ -123,16 +123,10 @@ function parseBaseDamageVal(tierNum: number, filteredBonuses: damage_bonus[], d:
 
 }
 
-const translateDistance = function (card: new_card, characterData: character_data) : distance_block[] {
+const translateDistance = function (card: new_card, heroData: HeroData) : distance_block[] {
   const d = card.header.distance;
-  const bonuses = characterData.bonus.filter(b => {
-    for (const keyword in b.keyword_matcher) {
-      if (!(card.header.keywords.includes(keyword))) {
-        return false
-      }
-    }
-    return (b as distance_bonus).distance_type !== undefined
-  }).map(b => (b as distance_bonus))
+  const bonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && (b instanceof DistanceBonus))
+    .map(b => (b as DistanceBonus))
 
   const burst = new RegExp(/(\[?\d+\]?) burst/)
   const burstMatch = burst.exec(d.display.toLowerCase())
@@ -216,23 +210,9 @@ const translateDistance = function (card: new_card, characterData: character_dat
   const meleeOrRangedMatch = meleeOrRanged.exec(d.display.toLowerCase())
   if (meleeOrRangedMatch) {
     const cardKeywordsMinusRanged = card.header.keywords.filter(k => k !== "Ranged");
-    const bonusesWithoutRanged = bonuses.filter(b => {
-      for (const k of b.keyword_matcher) {
-        if (!cardKeywordsMinusRanged.includes(k)) {
-           return false;
-         }
-      }
-      return true;
-    })
+    const bonusesWithoutRanged = bonuses.filter(b => b.matchesKeywords(cardKeywordsMinusRanged));
     const cardKeywordsMinusMelee = card.header.keywords.filter(k => k !== "Melee");
-    const bonusesWithoutMelee = bonuses.filter(b => {
-      for (const k of b.keyword_matcher) {
-        if (!cardKeywordsMinusMelee.includes(k)) {
-          return false;
-        }
-      }
-      return true;
-    })
+    const bonusesWithoutMelee = bonuses.filter(b => b.matchesKeywords(cardKeywordsMinusMelee));
     const meleeVal = parseDistanceVal(meleeOrRangedMatch[1], bonusesWithoutRanged, d.values[0]);
     const rangedVal = parseDistanceVal(meleeOrRangedMatch[2], bonusesWithoutMelee, d.values[1]);
     return [
@@ -274,7 +254,7 @@ const translateDistance = function (card: new_card, characterData: character_dat
   return []
 }
 
-const translatePrCharacteristic = function (pr: power_roll, characteristics: Map<characteristic, number>) : string {
+const translatePrCharacteristic = function (pr: power_roll, characteristics: CharacteristicSet) : string {
   if (typeof pr.characteristicBonus === 'string') {
     return pr.characteristicBonus as string
   }
@@ -305,15 +285,9 @@ const translatePrCharacteristic = function (pr: power_roll, characteristics: Map
   return `${bestBonus}`
 }
 
-const translatePrTier = function (tier: new_tier, tierNum: number, card: new_card, characterData: character_data) : old_tier {
-  const bonuses = characterData.bonus.filter(b => {
-    for (const keyword in b.keyword_matcher) {
-      if (!(card.header.keywords.includes(keyword))) {
-        return false
-      }
-    }
-    return (b as damage_bonus).rolled_damage_bonus !== undefined
-  }).map(b => (b as damage_bonus))
+const translatePrTier = function (tier: new_tier, tierNum: number, card: new_card, heroData: HeroData) : old_tier {
+  const bonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && b instanceof DamageBonus)
+    .map(b => (b as DamageBonus))
 
   const parseDamageBlock = function () : {
     damageString: string;
@@ -326,20 +300,20 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
     let damage = 0;
     let altDamage : number | undefined = undefined;
     if (card.header.keywords.includes("Melee") && card.header.keywords.includes("Ranged") && bonuses.filter(b => {
-      const isMeleeNotRanged = b.keyword_matcher.has("Melee") && !b.keyword_matcher.has("Ranged")
-      const isRangedNotMelee = b.keyword_matcher.has("Ranged") && !b.keyword_matcher.has("Melee")
+      const isMeleeNotRanged = b.hasKeyword("Melee") && !b.hasKeyword("Ranged")
+      const isRangedNotMelee = b.hasKeyword("Ranged") && !b.hasKeyword("Melee")
       return isMeleeNotRanged || isRangedNotMelee
     }).length > 0) {
       // Card contains both melee and ranged keywords and there are bonuses that affect only melee and ranged abilities
-      damage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.keyword_matcher.has("Ranged")), tier.damage)
-      altDamage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.keyword_matcher.has("Melee")), tier.damage)
+      damage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.hasKeyword("Ranged")), tier.damage)
+      altDamage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.hasKeyword("Melee")), tier.damage)
       if (damage === altDamage) {
         altDamage = undefined
       }
     } else {
       damage = parseBaseDamageVal(tierNum, bonuses, tier.damage)
     }
-    let effectPrefix = tier.damage.otherBonus ? `+ ${tier.damage.otherBonus}` : "";
+    const effectPrefix = tier.damage.otherBonus ? `+ ${tier.damage.otherBonus}` : "";
 
     if (tier.damage?.characteristicBonusOptions.length === 0) {
       // Super simple "2"
@@ -349,9 +323,9 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
       }
     } else if (tier.damage?.characteristicBonusOptions.length === 1) {
       // Super simple "2+M" style damage
-      if (characterData.characteristics.has(tier.damage.characteristicBonusOptions[0])) {
+      if (heroData.characteristics.has(tier.damage.characteristicBonusOptions[0])) {
         // Character data includes characteristic, so render as just "2"
-        const cValue = characterData.characteristics.get(tier.damage.characteristicBonusOptions[0]) || 0;
+        const cValue = heroData.characteristics.get(tier.damage.characteristicBonusOptions[0]) || 0;
         return {
           damageString: `${damage + cValue}${altDamage ? "|" + (altDamage + cValue) : ""}`,
           effectPrefix: effectPrefix,
@@ -371,7 +345,7 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
       // Complex characteristic options; either make a total (i.e. "2") or the vague value (i.e. "x") and expect values in effect
       let maxCharacteristic = -1;
       for (const cOption of tier.damage.characteristicBonusOptions) {
-        if (!characterData.characteristics.has(cOption)) {
+        if (!heroData.characteristics.has(cOption)) {
           const cOptionsString = commaSeparatedOrString(tier.damage.characteristicBonusOptions.map(c => c.toString()[0]))
           // missing a characteristic option, return complex
           return {
@@ -380,7 +354,7 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
             effectPrefix: `${damage}${altDamage ? '|' + altDamage : ''} + ${cOptionsString}${effectPrefix ? ' ' + effectPrefix : ''}`
           }
         }
-        maxCharacteristic = Math.max(characterData.characteristics.get(cOption) || -1, maxCharacteristic)
+        maxCharacteristic = Math.max(heroData.characteristics.get(cOption) || -1, maxCharacteristic)
       }
       return {
         damageString: `${damage + maxCharacteristic}${altDamage ? '|' + altDamage +  + maxCharacteristic : ''}`,
@@ -403,14 +377,14 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
   } satisfies old_tier;
 }
 
-const translateBodyElement = function (element: body, card: new_card, characterData: character_data) : body_statement | undefined {
+const translateBodyElement = function (element: body, card: new_card, heroData: HeroData) : body_statement | undefined {
   if ((element as power_roll).isPowerRoll) {
     const pr = element as power_roll;
     return {
-      characteristic: translatePrCharacteristic(pr, characterData.characteristics),
-      t1: translatePrTier(pr.t1, 1, card, characterData),
-      t2: translatePrTier(pr.t2, 2, card, characterData),
-      t3: translatePrTier(pr.t3, 3, card, characterData),
+      characteristic: translatePrCharacteristic(pr, heroData.characteristics),
+      t1: translatePrTier(pr.t1, 1, card, heroData),
+      t2: translatePrTier(pr.t2, 2, card, heroData),
+      t3: translatePrTier(pr.t3, 3, card, heroData),
     } satisfies power_roll_statement
   } else if ((element as effect).isEffect) {
     return {
@@ -425,11 +399,8 @@ const translateBodyElement = function (element: body, card: new_card, characterD
   return undefined;
 }
 
-export function DowngradeCard (card: new_card, characterData: character_data | undefined) : old_card {
-  const ch_data = characterData ? characterData : {
-    characteristics: new Map<characteristic, number>(),
-    bonus: [],
-  } satisfies character_data
+export function DowngradeCard (card: new_card, heroData: HeroData | undefined) : old_card {
+  const ch_data = heroData ? heroData : buildEmptyHeroData()
 
   const translatedTarget = parseTarget(card.header.target);
   const translatedTargetString = (typeof translatedTarget === 'string') ? translatedTarget : translatedTarget.target;
