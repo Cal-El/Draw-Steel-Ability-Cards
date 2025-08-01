@@ -54,7 +54,7 @@ export class CharacteristicSet {
   }
 
   public has(this: CharacteristicSet, key: characteristic) {
-    return this.get(key) !== undefined;
+    return !(this.get(key) === undefined || this.get(key) === null);
   }
 
   public get(this: CharacteristicSet, key: characteristic) {
@@ -67,7 +67,7 @@ export class CharacteristicSet {
     }
   }
 
-  public set(this: CharacteristicSet, key: characteristic, value: number) {
+  public set(this: CharacteristicSet, key: characteristic, value: number | undefined) {
     let isNew = false;
     switch (key) {
       case characteristic.MIGHT: isNew = this.might === undefined; this.might = value; return isNew;
@@ -181,16 +181,20 @@ export class DamageBonus extends Bonus {
   }
 
   getBonusForTier(this: DamageBonus, tier: number): number {
-    if (typeof this.rolledDamageBonus === "number") {
-      return this.rolledDamageBonus;
+    if (this.isFlatBonus()) {
+      return this.rolledDamageBonus as number;
     } else {
       switch (tier) {
-        case 1: return this.rolledDamageBonus.t1;
-        case 2: return this.rolledDamageBonus.t2;
-        case 3: return this.rolledDamageBonus.t3;
+        case 1: return (this.rolledDamageBonus as {t1: number}).t1;
+        case 2: return (this.rolledDamageBonus as {t2: number}).t2;
+        case 3: return (this.rolledDamageBonus as {t3: number}).t3;
         default: return 0;
       }
     }
+  }
+
+  isFlatBonus(this: DamageBonus) : boolean {
+    return (typeof this.rolledDamageBonus === "number")
   }
 
   public toJSON() {

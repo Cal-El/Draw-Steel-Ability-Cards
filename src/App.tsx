@@ -148,63 +148,63 @@ function App() {
     ],
     fontSizePtOverrides: {}
   };
-  dummyCard = {
-    version: 2,
-    level: 1,
-    type: "Main action",
-    header: {
-      topMatter: "Level 1 Heroic Shadow Ability",
-      title: "Coup de Grace",
-      flavour: "Your blade might be the last thing they see.",
-      keywords: ["Melee", "Ranged", "Strike", "Weapon"],
-      distance: {
-        display: "Melee [1] or ranged [5]",
-        values: [
-          {type: "Melee", baseValue: 1, includedKitValue: 0},
-          {type: "Ranged", baseValue: 5, includedKitValue: 0},
-        ]
-      },
-      target: "One creature"
-    },
-    body: [
-      {
-        isPowerRoll: true,
-        characteristicBonus: [characteristic.AGILITY],
-        t1: {
-          damage: {
-            baseValue: 7,
-            includedKitValue: 0,
-            characteristicBonusOptions: [characteristic.AGILITY],
-            otherBonus: "2d6"
-          },
-          baseEffect: "damage",
-        },
-        t2: {
-          damage: {
-            baseValue: 11,
-            includedKitValue: 0,
-            characteristicBonusOptions: [characteristic.AGILITY],
-            otherBonus: "2d6"
-          },
-          baseEffect: "damage",
-        },
-        t3: {
-          damage: {
-            baseValue: 16,
-            includedKitValue: 0,
-            characteristicBonusOptions: [characteristic.AGILITY],
-            otherBonus: "2d6"
-          },
-          baseEffect: "damage",
-        },
-      },
-    ],
-    cost: {
-      costName: "Insight",
-      costValue: "5",
-    },
-    fontSizePtOverrides: {}
-  };
+  // dummyCard = {
+  //   version: 2,
+  //   level: 1,
+  //   type: "Main action",
+  //   header: {
+  //     topMatter: "Level 1 Heroic Shadow Ability",
+  //     title: "Coup de Grace",
+  //     flavour: "Your blade might be the last thing they see.",
+  //     keywords: ["Melee", "Ranged", "Strike", "Weapon"],
+  //     distance: {
+  //       display: "Melee [1] or ranged [5]",
+  //       values: [
+  //         {type: "Melee", baseValue: 1, includedKitValue: 0},
+  //         {type: "Ranged", baseValue: 5, includedKitValue: 0},
+  //       ]
+  //     },
+  //     target: "One creature"
+  //   },
+  //   body: [
+  //     {
+  //       isPowerRoll: true,
+  //       characteristicBonus: [characteristic.AGILITY],
+  //       t1: {
+  //         damage: {
+  //           baseValue: 7,
+  //           includedKitValue: 0,
+  //           characteristicBonusOptions: [characteristic.AGILITY],
+  //           otherBonus: "2d6"
+  //         },
+  //         baseEffect: "damage",
+  //       },
+  //       t2: {
+  //         damage: {
+  //           baseValue: 11,
+  //           includedKitValue: 0,
+  //           characteristicBonusOptions: [characteristic.AGILITY],
+  //           otherBonus: "2d6"
+  //         },
+  //         baseEffect: "damage",
+  //       },
+  //       t3: {
+  //         damage: {
+  //           baseValue: 16,
+  //           includedKitValue: 0,
+  //           characteristicBonusOptions: [characteristic.AGILITY],
+  //           otherBonus: "2d6"
+  //         },
+  //         baseEffect: "damage",
+  //       },
+  //     },
+  //   ],
+  //   cost: {
+  //     costName: "Insight",
+  //     costValue: "5",
+  //   },
+  //   fontSizePtOverrides: {}
+  // };
 
   const initCardListKey = getActiveCardList()
   const cList : CardList = getCardList(initCardListKey.length === 0 ? initCardListKey : DisplayedCardListKey)

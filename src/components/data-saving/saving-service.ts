@@ -37,7 +37,9 @@ export function getCardList(name: string): CardList {
   let heroData: HeroData = buildEmptyHeroData();
   if (charData) {
     const parsedData = JSON.parse(charData ?? '');
-    heroData = HeroData.fromJSON(parsedData);
+    if (parsedData) {
+      heroData = HeroData.fromJSON(parsedData);
+    }
   }
   return {
     abilityCards: parsedCards,
