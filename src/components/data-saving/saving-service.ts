@@ -7,10 +7,8 @@ export const HeroDataKey = "herodata"
 
 export function saveCardList(name: string, cardList: CardList){
   localStorage.setItem(getCardListStorageKey(name), JSON.stringify(cardList.abilityCards))
+  localStorage.setItem(getHeroDataStorageKey(name), JSON.stringify(cardList.heroData))
   if (name != DisplayedCardListKey) {
-    if (cardList.heroData) {
-      localStorage.setItem(getHeroDataStorageKey(name), JSON.stringify(cardList.heroData))
-    }
     const cardlistnames = getCardListNames()
     if (!cardlistnames.includes(name)){
       saveCardListNames(cardlistnames.concat(name))

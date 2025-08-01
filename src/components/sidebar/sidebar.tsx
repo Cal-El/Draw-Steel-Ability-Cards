@@ -21,6 +21,7 @@ import { SelectedFiles } from "use-file-picker/types";
 import { useHotkeys } from "react-hotkeys-hook";
 import { toast, ToastContainer } from "react-toastify";
 import { CardList } from "../../types/card-list.ts";
+import {buildEmptyHeroData, HeroData} from "../../types/character-data.ts";
 
 export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedCards}: 
   {open: boolean, toggleOpen: () => void, displayedCards: CardList, setDisplayedCards: Dispatch<SetStateAction<CardList>>}){
@@ -110,7 +111,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     if (displayedCards.abilityCards.length > 0) {
       const text = "Are you sure you want to clear the current card list? Any unsaved displayed cards will be lost. This action cannot be reversed."
       openModal(text, () => {
-        updateDisplayedCards({abilityCards: []})
+        updateDisplayedCards({abilityCards: [], heroData: new HeroData({})})
         updateActiveCardList("")
         closeModal()
       }, "load")

@@ -30,7 +30,7 @@ export const getCardTopMatter = function (c: Card) {
 }
 
 export const nonNullHeroData = function (c: CardList) : HeroData {
-  return c.heroData || buildEmptyHeroData();
+  return c.heroData ?? buildEmptyHeroData();
 }
 
 // CLOAK AND DAGGER SHADOW
