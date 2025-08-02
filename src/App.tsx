@@ -17,137 +17,227 @@ import {
 } from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
 import {Card, CardList, nonNullHeroData} from "./types/card-list.ts";
+import HeroDataMenu from "./components/hero-data-menu.tsx";
 
 function App() {
-  let dummyCard: new_ability_card = {
-      version: 2,
-      level: 1,
-      type: "Main action",
-      header: {
-        topMatter: "Level 1 Heroic Tactician Ability",
-        title: "Concussive Strike",
-        flavour: "Your precise strike leaves your foe struggling to respond.",
-        keywords: ["Melee", "Ranged", "Strike", "Weapon"],
-        distance: {
-          display: "Melee [1] or Ranged [5]",
-          values: [
-            {type: "Melee", baseValue: 1, includedKitValue: 0},
-            {type: "Ranged", baseValue: 5, includedKitValue: 0}
-          ]
-        },
-        target: "One creature or object"
-      },
-      body: [
-        {
-          isPowerRoll: true,
-          characteristicBonus: [characteristic.MIGHT],
-          t1: {
-            damage: {
-              baseValue: 3,
-              includedKitValue: 0,
-              characteristicBonusOptions: [characteristic.MIGHT],
-              otherBonus: ""
-            },
-            baseEffect: "damage",
-            potency: {
-              characteristic: characteristic.MIGHT,
-              strength: potency_strength.WEAK,
-              effect: "dazed (save ends)"
-            }
-          },
-          t2: {
-            damage: {
-              baseValue: 5,
-              includedKitValue: 0,
-              characteristicBonusOptions: [characteristic.MIGHT],
-              otherBonus: ""
-            },
-            baseEffect: "damage",
-            potency: {
-              characteristic: characteristic.MIGHT,
-              strength: potency_strength.AVERAGE,
-              effect: "dazed (save ends)"
-            }
-          },
-          t3: {
-            damage: {
-              baseValue: 8,
-              includedKitValue: 0,
-              characteristicBonusOptions: [characteristic.MIGHT],
-              otherBonus: ""
-            },
-            baseEffect: "damage",
-            potency: {
-              characteristic: characteristic.MIGHT,
-              strength: potency_strength.STRONG,
-              effect: "dazed (save ends)"
-            }
-          }
-        }
-      ],
-      cost: {
-        costName: "Focus",
-        costValue: "3"
-      },
-      fontSizePtOverrides: {}
-  };
-  dummyCard = {
+  let dummyCard: ability_card = {
+    type: `Action`,
+    topMatter: `Custom Ability`,
+    title: `Blank Card`,
+    flavour: `You could do anything...`,
+    keywords: [],
+    statements: [],
+    hasCost: false,
+    target: `None`,
+    distance: [],
+  } satisfies ability_card;
+
+  let dummyCard2: new_ability_card = {
     version: 2,
     level: 1,
     type: "Main action",
     header: {
-      topMatter: "Level 1 Signature Spellsword Kit Ability",
-        title: "Leaping Lightning",
-        flavour: "Lightning jumps from your weapon as you strike to harm a nearby foe.",
-        keywords: ["Magic", "Melee", "Strike", "Weapon"],
-        distance: {
-        display: "Melee 1",
-          values: [
+      topMatter: "Level 1 Custom Ability",
+      title: "Blank Card Version 2",
+      flavour: "Careful you don't break anything..",
+      keywords: ["Fire", "Magic", "Melee", "Ranged", "Strike", "Weapon"],
+      distance: {
+        display: "Melee [1] or Ranged [5]",
+        values: [
           {type: "Melee", baseValue: 1, includedKitValue: 0},
+          {type: "Ranged", baseValue: 5, includedKitValue: 0}
         ]
       },
-      target: "One creature or object"
+      target: "Two creatures"
     },
     body: [
       {
         isPowerRoll: true,
-        characteristicBonus: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+        characteristicBonus: [characteristic.MIGHT, characteristic.AGILITY],
         t1: {
           damage: {
-            baseValue: 5,
+            baseValue: 4,
             includedKitValue: 2,
-            characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+            characteristicBonusOptions: [characteristic.MIGHT, characteristic.AGILITY],
             otherBonus: ""
           },
-          baseEffect: "lightning damage",
+          baseEffect: "holy damage; and kill god",
+          potency: {
+            characteristic: characteristic.PRESENCE,
+            strength: potency_strength.WEAK,
+            effect: "this is a potency effect"
+          }
         },
         t2: {
           damage: {
-            baseValue: 8,
+            baseValue: 7,
             includedKitValue: 2,
-            characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+            characteristicBonusOptions: [characteristic.MIGHT, characteristic.AGILITY],
             otherBonus: ""
           },
-          baseEffect: "lightning damage",
+          baseEffect: "holy damage; and kill god",
+          potency: {
+            characteristic: characteristic.PRESENCE,
+            strength: potency_strength.AVERAGE,
+            effect: "this is a potency effect"
+          }
         },
         t3: {
           damage: {
-            baseValue: 11,
+            baseValue: 10,
             includedKitValue: 2,
-            characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+            characteristicBonusOptions: [characteristic.MIGHT, characteristic.AGILITY],
             otherBonus: ""
           },
-          baseEffect: "lightning damage",
+          baseEffect: "holy damage; and kill god",
+          potency: {
+            characteristic: characteristic.PRESENCE,
+            strength: potency_strength.STRONG,
+            effect: "this is a potency effect"
+          }
         }
       },
       {
         isEffect: true,
-        title: "Effect",
-        body: "A creature or object of your choice within 2 squares of the target takes lightning damage equal to the characteristic score used for this ability’s power roll.",
+        title: `Please Note`,
+        body: `You can brick the site if you mess with this. You can fix it by heading into your Local Storage and removing the displayed cardlist.`
       }
     ],
+    cost: {
+      costName: "Focus",
+      costValue: "3"
+    },
     fontSizePtOverrides: {}
   };
+  // let dummyCard2: new_ability_card = {
+  //     version: 2,
+  //     level: 1,
+  //     type: "Main action",
+  //     header: {
+  //       topMatter: "Level 1 Heroic Tactician Ability",
+  //       title: "Concussive Strike",
+  //       flavour: "Your precise strike leaves your foe struggling to respond.",
+  //       keywords: ["Melee", "Ranged", "Strike", "Weapon"],
+  //       distance: {
+  //         display: "Melee [1] or Ranged [5]",
+  //         values: [
+  //           {type: "Melee", baseValue: 1, includedKitValue: 0},
+  //           {type: "Ranged", baseValue: 5, includedKitValue: 0}
+  //         ]
+  //       },
+  //       target: "One creature or object"
+  //     },
+  //     body: [
+  //       {
+  //         isPowerRoll: true,
+  //         characteristicBonus: [characteristic.MIGHT],
+  //         t1: {
+  //           damage: {
+  //             baseValue: 3,
+  //             includedKitValue: 0,
+  //             characteristicBonusOptions: [characteristic.MIGHT],
+  //             otherBonus: ""
+  //           },
+  //           baseEffect: "damage",
+  //           potency: {
+  //             characteristic: characteristic.MIGHT,
+  //             strength: potency_strength.WEAK,
+  //             effect: "dazed (save ends)"
+  //           }
+  //         },
+  //         t2: {
+  //           damage: {
+  //             baseValue: 5,
+  //             includedKitValue: 0,
+  //             characteristicBonusOptions: [characteristic.MIGHT],
+  //             otherBonus: ""
+  //           },
+  //           baseEffect: "damage",
+  //           potency: {
+  //             characteristic: characteristic.MIGHT,
+  //             strength: potency_strength.AVERAGE,
+  //             effect: "dazed (save ends)"
+  //           }
+  //         },
+  //         t3: {
+  //           damage: {
+  //             baseValue: 8,
+  //             includedKitValue: 0,
+  //             characteristicBonusOptions: [characteristic.MIGHT],
+  //             otherBonus: ""
+  //           },
+  //           baseEffect: "damage",
+  //           potency: {
+  //             characteristic: characteristic.MIGHT,
+  //             strength: potency_strength.STRONG,
+  //             effect: "dazed (save ends)"
+  //           }
+  //         }
+  //       }
+  //     ],
+  //     cost: {
+  //       costName: "Focus",
+  //       costValue: "3"
+  //     },
+  //     fontSizePtOverrides: {}
+  // };
+  // dummyCard = {
+  //   version: 2,
+  //   level: 1,
+  //   type: "Main action",
+  //   header: {
+  //     topMatter: "Level 1 Signature Spellsword Kit Ability",
+  //       title: "Leaping Lightning",
+  //       flavour: "Lightning jumps from your weapon as you strike to harm a nearby foe.",
+  //       keywords: ["Magic", "Melee", "Strike", "Weapon"],
+  //       distance: {
+  //       display: "Melee 1",
+  //         values: [
+  //         {type: "Melee", baseValue: 1, includedKitValue: 0},
+  //       ]
+  //     },
+  //     target: "One creature or object"
+  //   },
+  //   body: [
+  //     {
+  //       isPowerRoll: true,
+  //       characteristicBonus: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+  //       t1: {
+  //         damage: {
+  //           baseValue: 5,
+  //           includedKitValue: 2,
+  //           characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+  //           otherBonus: ""
+  //         },
+  //         baseEffect: "lightning damage",
+  //       },
+  //       t2: {
+  //         damage: {
+  //           baseValue: 8,
+  //           includedKitValue: 2,
+  //           characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+  //           otherBonus: ""
+  //         },
+  //         baseEffect: "lightning damage",
+  //       },
+  //       t3: {
+  //         damage: {
+  //           baseValue: 11,
+  //           includedKitValue: 2,
+  //           characteristicBonusOptions: [characteristic.MIGHT, characteristic.REASON, characteristic.INTUITION, characteristic.PRESENCE],
+  //           otherBonus: ""
+  //         },
+  //         baseEffect: "lightning damage",
+  //       }
+  //     },
+  //     {
+  //       isEffect: true,
+  //       title: "Effect",
+  //       body: "A creature or object of your choice within 2 squares of the target takes lightning damage equal to the characteristic score used for this ability’s power roll.",
+  //     }
+  //   ],
+  //   fontSizePtOverrides: {}
+  // };
   // dummyCard = {
   //   version: 2,
   //   level: 1,
@@ -313,21 +403,24 @@ function App() {
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add All Cards</div>
                 </button>
             }
-            <button onClick={() => {
+            <button onClick={(e) => {
                 setSelectedCard(-1)
-                updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, dummyCard]})
+                updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, e.shiftKey ? dummyCard2 : dummyCard]})
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
             </button>
         </nav>
         <div className='flex flex-auto w-full print:m-0 print:p-0'>
             <div className='flex flex-row w-full'>
-                <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300 print:hidden`}>
-                    <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
+              <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300 print:hidden`}>
+                <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
+              </div>
+              <main className={"w-screen bg-zinc-500 print:bg-white"}>
+                <HeroDataMenu displayedCards={cardsList} setDisplayedCards={setCardsList}/>
+                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1pt] print:items-start print:justify-start`}>
+                  {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={nonNullHeroData(cardsList)} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
-                <main className={"flex-auto flex flex-wrap flex-row w-screen bg-zinc-500 print:bg-white items-center justify-center print:gap-[1pt] print:items-start print:justify-start"}>
-                    {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={nonNullHeroData(cardsList)} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
-                </main>
+              </main>
             </div>
         </div>
         <footer className={`flex justify-center max-h-[18pt] items-center p-5 gap-5 visible print:invisible print:h-0`}>

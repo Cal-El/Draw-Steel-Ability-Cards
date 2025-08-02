@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "python3 generateCardManifest.py && vite",
-    "build": "python3 generateCardManifest.py && tsc -b && vite build",
+    "dev": "python generateCardManifest.py && vite",
+    "build": "python generateCardManifest.py && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "gen-manifest": "python3 generateCardManifest.py"
+    "gen-manifest": "python generateCardManifest.py"
   },
   "dependencies": {
     "@types/file-saver": "^2.0.7",

@@ -357,7 +357,7 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
         maxCharacteristic = Math.max(heroData.characteristics.get(cOption) || -1, maxCharacteristic)
       }
       return {
-        damageString: `${damage + maxCharacteristic}${altDamage ? '|' + altDamage +  + maxCharacteristic : ''}`,
+        damageString: `${damage + maxCharacteristic}${altDamage ? '|' + (altDamage + maxCharacteristic) : ''}`,
         // | x | 2 + M or A + 2d6
         effectPrefix: `${effectPrefix ? ' ' + effectPrefix : ''}`
       }

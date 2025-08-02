@@ -1,4 +1,4 @@
-import {ChangeEvent, Dispatch, FormEvent, SetStateAction, useEffect, useState} from "react";
+import {ChangeEvent, Dispatch, SetStateAction, useEffect, useState} from "react";
 import {RiDeleteBin6Fill, RiMenuFold4Line, RiMenuUnfold4Line} from "react-icons/ri";
 import {
   cardListHasUnsavedChanges,
@@ -21,8 +21,7 @@ import {SelectedFiles} from "use-file-picker/types";
 import {useHotkeys} from "react-hotkeys-hook";
 import {toast, ToastContainer} from "react-toastify";
 import {CardList} from "../../types/card-list.ts";
-import {DamageBonus, DistanceBonus, HeroData} from "../../types/character-data.ts";
-import {characteristic} from "../../types/ability-card.ts";
+import {HeroData} from "../../types/character-data.ts";
 
 export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedCards}: 
   {open: boolean, toggleOpen: () => void, displayedCards: CardList, setDisplayedCards: Dispatch<SetStateAction<CardList>>}){
@@ -145,31 +144,6 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     setConfirmModalText("")
   }
 
-  const onUpdateCharacteristic = (e : ChangeEvent<HTMLInputElement>, c : characteristic) => {
-    const val = e.currentTarget.value && e.currentTarget.value.length > 0 ? parseInt(e.currentTarget.value) : undefined;
-    const hd = new HeroData(displayedCards.heroData ?? {});
-    hd.characteristics.set(c, val);
-    updateDisplayedCards({...displayedCards, heroData: hd})
-  }
-
-  const onUpdateBonus = (db : Bonus, i: number) => {
-    const hd = new HeroData(displayedCards.heroData ?? {});
-    hd.bonus.splice(i, 1, db);
-    updateDisplayedCards({...displayedCards, heroData: hd})
-  }
-
-  const onAddDistanceBonus = () => {
-    const hd = new HeroData(displayedCards.heroData ?? {});
-    hd.bonus = [...hd.bonus, new DistanceBonus({keywordMatcher: [], type:"", distanceType: "", value: 0})];
-    updateDisplayedCards({...displayedCards, heroData: hd})
-  }
-
-  const onAddDamageBonus = () => {
-    const hd = new HeroData(displayedCards.heroData ?? {});
-    hd.bonus = [...hd.bonus, new DamageBonus({keywordMatcher: [], type:"", rolledDamageBonus: 0})];
-    updateDisplayedCards({...displayedCards, heroData: hd})
-  }
-
   const exportCardList = () => {
     const exportName = activeCardList ?? "UnnamedCardList"
     const cardData = getCardList(DisplayedCardListKey)
@@ -255,100 +229,6 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
                     <button onClick={() => openDeleteModal(list)}><span className="flex flex-row items-center hover:text-gray-700"><RiDeleteBin6Fill/><span className={`hidden 2xl:block`}>&nbsp;</span></span></button>
                   </span>
                 </div>
-                {activeCardList === list && <>
-                  <div className={`grid grid-cols-5 auto-rows-min p-1 gap-1 text-center items-center justify-center bg-stone-200`}>
-                    <p>M</p>
-                    <p>A</p>
-                    <p>R</p>
-                    <p>I</p>
-                    <p>P</p>
-                    <input className={`text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.MIGHT) ?? ""} type='number' onChange={(event) => onUpdateCharacteristic(event, characteristic.MIGHT)}></input>
-                    <input className={`text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.AGILITY) ?? ""} type='number' onChange={(event) => onUpdateCharacteristic(event, characteristic.AGILITY)}></input>
-                    <input className={`text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.REASON) ?? ""} type='number' onChange={(event) => onUpdateCharacteristic(event, characteristic.REASON)}></input>
-                    <input className={`text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.INTUITION) ?? ""} type='number' onChange={(event) => onUpdateCharacteristic(event, characteristic.INTUITION)}></input>
-                    <input className={`text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.PRESENCE) ?? ""} type='number' onChange={(event) => onUpdateCharacteristic(event, characteristic.PRESENCE)}></input>
-                  </div>
-                  {displayedCards.heroData?.bonus.map((b, i) => {
-                    if (b instanceof DistanceBonus) {
-                      const db = b as DistanceBonus;
-                      return (
-                        <div key={i} className={`p-2 bg-stone-200`}>
-                          <div className={`font-bold`}>Distance Bonus</div>
-                          <div className={`grid auto-rows-min grid-cols-2 gap-1 justify-between items-center`}>
-                            <div className={`col-span-1`}>Type: </div><input className={`col-span-2`} value={db.type} onChange={(e) => {
-                              const ndb = new DistanceBonus({...db, type: e.target.value ?? ""});
-                              onUpdateBonus(ndb, i);
-                            }}></input>
-                            <div className={`col-span-3`}>
-                              <div>Keyword Matcher:</div>
-                              <input value={db.keywordMatcher.join(", ")} onChange={(e) => {
-                                const ndb = new DistanceBonus({...db, keywordMatcher: (e.target.value ?? '').split(', ')});
-                                onUpdateBonus(ndb, i);
-                              }}></input>
-                            </div>
-                            <div className={`col-span-1`}>Distance Type: </div><input className={`col-span-2`} value={db.distanceType} onChange={(e) => {
-                              const ndb = new DistanceBonus({...db, distanceType: e.target.value ?? ''});
-                              onUpdateBonus(ndb, i);
-                            }}></input>
-                            <div className={`col-span-1`}>Value: </div><input type={`number`} className={`col-span-2`} value={db.value ?? ''} onChange={(e) => {
-                              const ndb = new DistanceBonus({...db, value: e.target.value && e.target.value.length > 0 ? parseInt(e.target.value) : 0});
-                              onUpdateBonus(ndb, i);
-                            }}></input>
-                          </div>
-                        </div>
-                      )
-                    } else if (b instanceof DamageBonus) {
-                      const db = b as DamageBonus;
-                      return (
-                        <div key={i} className={`p-2 bg-stone-200`}>
-                          <div className={`font-bold`}>Damage Bonus</div>
-                          <div className={`grid auto-rows-min grid-cols-3 gap-1 justify-between items-center`}>
-                            <div className={`col-span-1`}>Type: </div><input className={`col-span-2`} value={db.type} onChange={(e) => {
-                              const ndb = new DamageBonus({...db, type: e.target.value && e.target.value.length > 0 ? parseInt(e.target.value) : 0});
-                              onUpdateBonus(ndb, i);
-                            }}></input>
-                            <div className={`col-span-3`}>
-                              <div>Keyword Matcher:</div>
-                              <input value={db.keywordMatcher.join(", ")} onChange={(e) => {
-                                const ndb = new DamageBonus({...db, keywordMatcher: (e.target.value ?? '').split(', ')});
-                                onUpdateBonus(ndb, i);
-                              }}></input>
-                            </div>
-                            {db.isFlatBonus() ?
-                              <><div className={`col-span-1`}>Flat bonus: </div><input type={`number`} className={`col-span-2`} value={db.rolledDamageBonus as number} onChange={(e) => {
-                                const ndb = new DamageBonus({...db, rolledDamageBonus: e.target.value && e.target.value.length > 0 ? parseInt(e.target.value) : 0});
-                                onUpdateBonus(ndb, i);
-                              }}></input></> :
-                              <>
-                                <div className={`col-span-1`}/><div className={`col-span-1`}>Tier 1: </div><input type={`number`} className={`col-span-1`} value={(db.rolledDamageBonus as {t1: number}).t1} onChange={(e) => {
-                                  const ndb = new DamageBonus({...db, rolledDamageBonus: {t1: e.target.value && e.target.value.length > 0 ? parseInt(e.target.value) : 0, t2: db.getBonusForTier(2), t3: db.getBonusForTier(3)}});
-                                  onUpdateBonus(ndb, i);
-                                }}></input>
-                                <div className={`col-span-1`}/><div className={`col-span-1`}>Tier 2: </div><input type={`number`} className={`col-span-1`} value={(db.rolledDamageBonus as {t2: number}).t2} onChange={(e) => {
-                                  const ndb = new DamageBonus({...db, rolledDamageBonus: {t1: db.getBonusForTier(1), t2: e.target.value && e.target.value.length > 0 ? parseInt(e.target.value) : 0, t3: db.getBonusForTier(3)}});
-                                  onUpdateBonus(ndb, i);
-                                }}></input>
-                                <div className={`col-span-1`}/><div className={`col-span-1`}>Tier 3: </div><input type={`number`} className={`col-span-1`} value={(db.rolledDamageBonus as {t3: number}).t3} onChange={(e) => {
-                                  const ndb = new DamageBonus({...db, rolledDamageBonus: {t1: db.getBonusForTier(1), t2: db.getBonusForTier(2), t3: e.target.value && e.target.value.length > 0 ? parseInt(e.target.value) : 0}});
-                                  onUpdateBonus(ndb, i);
-                                }}></input>
-                              </>
-                            }
-                            <button className={`col-span-full`} onClick={() => {
-                              const ndb = new DamageBonus({...db, rolledDamageBonus: db.isFlatBonus() ? {t1: 1, t2: 1, t3: 1} : 1});
-                              onUpdateBonus(ndb, i);
-                            }}>{db.isFlatBonus() ? 'Switch to Tier Damage' : 'Switch to Flat Damage'}</button>
-                          </div>
-                        </div>
-                      )
-                    }
-                    return;
-                  })}
-                  <div className={`flex flex-row justify-between items-center`}>
-                    <button onClick={() => onAddDistanceBonus()}>Add Distance Bonus</button>
-                    <button onClick={() => onAddDamageBonus()}>Add Damage Bonus</button>
-                  </div>
-                </>}
               </div>
             </>
           })}
