@@ -297,7 +297,7 @@ function App() {
   // };
 
   const initCardListKey = getActiveCardList()
-  const cList : CardList = getCardList(initCardListKey.length === 0 ? initCardListKey : DisplayedCardListKey)
+  const cList : CardList = getCardList(!initCardListKey ? DisplayedCardListKey : initCardListKey)
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
