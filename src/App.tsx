@@ -11,7 +11,6 @@ import {cardManifest} from "./types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
 import {
   DisplayedCardListKey,
-  getActiveCardList,
   getCardList,
   saveCardList
 } from './components/data-saving/saving-service.ts';
@@ -296,8 +295,7 @@ function App() {
   //   fontSizePtOverrides: {}
   // };
 
-  const initCardListKey = getActiveCardList()
-  const cList : CardList = getCardList(!initCardListKey ? DisplayedCardListKey : initCardListKey)
+  const cList : CardList = getCardList(DisplayedCardListKey)
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
