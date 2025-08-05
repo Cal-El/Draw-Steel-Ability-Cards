@@ -1,13 +1,26 @@
-import {characteristic} from "../types/ability-card.ts";
+import {all_characteristics, characteristic} from "../types/ability-card.ts";
 import {Bonus, DamageBonus, DistanceBonus, HeroData} from "../types/character-data.ts";
 import {CardList} from "../types/card-list.ts";
-import {ChangeEvent, Dispatch, SetStateAction, useState} from "react";
+import {ChangeEvent, Dispatch, SetStateAction, useEffect, useState} from "react";
 import {DisplayedCardListKey, saveCardList} from "./data-saving/saving-service.ts";
 
 export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
     displayedCards: CardList,
     setDisplayedCards: Dispatch<SetStateAction<CardList>>
 }){
+  const [characteristicText, setCharacteristicText] = useState(new Map<characteristic, string>());
+  useEffect(() => {
+    const ct = new Map(characteristicText.entries())
+    for (const c of all_characteristics) {
+      if (displayedCards.heroData && displayedCards.heroData.characteristics.has(c)) {
+        ct.set(c, (displayedCards.heroData.characteristics.get(c) ?? 0).toString())
+      } else if (!ct.has(c)) {
+        ct.set(c, "")
+      }
+    }
+    setCharacteristicText(ct)
+  }, [displayedCards])
+  
   const [isOpen, setIsOpen] = useState(false);
 
   const updateDisplayedCards = (newCards: CardList) => {
@@ -16,6 +29,7 @@ export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
   }
 
   const onUpdateCharacteristic = (e : ChangeEvent<HTMLInputElement>, c : characteristic) => {
+    characteristicText.set(c, e.currentTarget.value)
     const val = e.currentTarget.value && e.currentTarget.value.length > 0 ? parseInt(e.currentTarget.value) || undefined : undefined;
 
     const hd = new HeroData(displayedCards.heroData ?? {});
@@ -57,11 +71,11 @@ export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
         <div className={`flex-none`}>
           <div className={`grid grid-cols-3 auto-rows-min p-2 gap-1 text-center items-center justify-center bg-stone-200`}>
             <div className={`col-span-full font-bold`}>Characteristics</div>
-            <p className={`col-span-2 text-right`}>Might: </p><input className={`w-[20pt] text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.MIGHT) ?? ""} onChange={(event) => onUpdateCharacteristic(event, characteristic.MIGHT)}></input>
-            <p className={`col-span-2 text-right`}>Agility: </p><input className={`w-[20pt] text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.AGILITY) ?? ""} onChange={(event) => onUpdateCharacteristic(event, characteristic.AGILITY)}></input>
-            <p className={`col-span-2 text-right`}>Reason: </p><input className={`w-[20pt] text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.REASON) ?? ""} onChange={(event) => onUpdateCharacteristic(event, characteristic.REASON)}></input>
-            <p className={`col-span-2 text-right`}>Intuition: </p><input className={`w-[20pt] text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.INTUITION) ?? ""} onChange={(event) => onUpdateCharacteristic(event, characteristic.INTUITION)}></input>
-            <p className={`col-span-2 text-right`}>Presence: </p><input className={`w-[20pt] text-center`} value={displayedCards.heroData?.characteristics.get(characteristic.PRESENCE) ?? ""} onChange={(event) => onUpdateCharacteristic(event, characteristic.PRESENCE)}></input>
+            {all_characteristics.map(c => {
+              return (<>
+                <p key={c} className={`col-span-2 text-right`}>{c}: </p><input className={`w-[20pt] text-center`} value={characteristicText.get(c)} onChange={(event) => onUpdateCharacteristic(event, c)}></input>
+              </>)
+            })}
           </div>
         </div>
         {displayedCards.heroData?.bonus.map((b, i) => {

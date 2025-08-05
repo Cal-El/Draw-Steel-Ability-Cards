@@ -115,6 +115,14 @@ export enum characteristic {
   PRESENCE = "Presence"
 }
 
+export const all_characteristics = [
+  characteristic.MIGHT,
+  characteristic.AGILITY,
+  characteristic.REASON,
+  characteristic.INTUITION,
+  characteristic.PRESENCE,
+]
+
 export enum potency_strength {
   WEAK,
   AVERAGE,
