@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {DragEvent, useState} from 'react'
 import './App.css'
 import {ability_card, actionTextColorStyle, cardbackColorStyle} from "./types/ability-card-types.ts";
 import {ability_card as new_ability_card, characteristic, potency_strength} from "./types/ability-card.ts";
@@ -15,8 +15,10 @@ import {
   saveCardList
 } from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
-import {Card, CardList, nonNullHeroData} from "./types/card-list.ts";
+import {Card, CardList, getCardTitle, nonNullHeroData} from "./types/card-list.ts";
 import HeroDataMenu from "./components/hero-data-menu.tsx";
+import {getMetadata} from "meta-png";
+import {toast} from "react-toastify";
 
 function App() {
   let dummyCard: ability_card = {
@@ -357,6 +359,50 @@ function App() {
     saveCardList(DisplayedCardListKey, newList)
   }
 
+  async function dropUpload(e : DragEvent<HTMLDivElement>) {
+    e.preventDefault();
+    const promises : Promise<Card | undefined>[] = [];
+
+    const addCardDataFromPngFileMetadata = async function (file : File | undefined | null) {
+      if (!file) {
+        return;
+      } else if (file.type !== "image/png") {
+        toast.error(`Cannot import ${file.name}: File is not a png`);
+        return;
+      }
+      const r = await file.stream().getReader().read();
+      if (!r.value) {
+        toast.error(`Failed to read ${file.name}`);
+        return;
+      }
+      const metaCarddataURI = getMetadata(r.value, "cardData");
+      if (!metaCarddataURI) {
+        toast.error(`${file.name} is missing embedded card metadata`);
+        return;
+      }
+      const metaCarddata = decodeURI(metaCarddataURI);
+      return yamlParse(metaCarddata) as Card;
+    }
+
+    if (e.dataTransfer?.items) {
+      for (let item of [...e.dataTransfer.items]) {
+        if (item.kind === "file") {
+          promises.push(addCardDataFromPngFileMetadata(item.getAsFile()));
+        }
+      }
+    } else if (e.dataTransfer?.files) {
+      for (let file of [...e.dataTransfer.files]) {
+        promises.push(addCardDataFromPngFileMetadata(file));
+      }
+    }
+    Promise.all(promises).then(cards => {
+      const newCards = cards.filter(c => c !== undefined);
+      setSelectedCard(-1);
+      updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards].concat(...newCards)});
+      newCards.forEach((c) => toast.success(`Added new card: ${getCardTitle(c)}`))
+    })
+  }
+
   const includeAllCardsButton = false;
 
   return (
@@ -413,7 +459,7 @@ function App() {
               <div className={`${sidebarOpen ? 'w-1/4' : 'w-14'} bg-zinc-300 print:hidden`}>
                 <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
               </div>
-              <main className={"w-screen bg-zinc-500 print:bg-white"}>
+              <main onDrop={dropUpload} onDragOver={(event) => event.preventDefault()} className={"w-screen bg-zinc-500 print:bg-white"}>
                 <HeroDataMenu displayedCards={cardsList} setDisplayedCards={setCardsList}/>
                 <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1pt] print:items-start print:justify-start`}>
                   {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={nonNullHeroData(cardsList)} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
