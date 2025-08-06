@@ -68,6 +68,7 @@ export class CharacteristicSet {
   }
 
   public set(this: CharacteristicSet, key: characteristic, value: number | undefined) {
+    console.log(key, value)
     let isNew = false;
     switch (key) {
       case characteristic.MIGHT: isNew = this.might === undefined; this.might = value; return isNew;

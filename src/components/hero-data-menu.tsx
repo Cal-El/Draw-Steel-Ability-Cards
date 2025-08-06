@@ -30,7 +30,7 @@ export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
 
   const onUpdateCharacteristic = (e : ChangeEvent<HTMLInputElement>, c : characteristic) => {
     characteristicText.set(c, e.currentTarget.value)
-    const val = e.currentTarget.value && e.currentTarget.value.length > 0 ? parseInt(e.currentTarget.value) || undefined : undefined;
+    const val = e.currentTarget.value && e.currentTarget.value.length > 0 ? (parseInt(e.currentTarget.value) || (parseInt(e.currentTarget.value) === 0 ? 0 : undefined)) : undefined;
 
     const hd = new HeroData(displayedCards.heroData ?? {});
     hd.characteristics.set(c, val);

@@ -20,7 +20,7 @@ import {useFilePicker} from "use-file-picker";
 import {SelectedFiles} from "use-file-picker/types";
 import {useHotkeys} from "react-hotkeys-hook";
 import {toast, ToastContainer} from "react-toastify";
-import {CardList} from "../../types/card-list.ts";
+import {Card, CardList} from "../../types/card-list.ts";
 import {HeroData} from "../../types/character-data.ts";
 
 export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedCards}: 
@@ -47,8 +47,23 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     multiple: false,
     onFilesSuccessfullySelected: (({filesContent}: SelectedFiles<string>) => {
       filesContent.map((file) => {
-        setDisplayedCards(JSON.parse(file.content ?? ''))
-        updateActiveCardList("")
+        const parsedCardList : object | undefined = JSON.parse(file.content ?? '')
+        if (parsedCardList) {
+          const heroData : HeroData = "heroData" in parsedCardList ? HeroData.fromJSON(parsedCardList.heroData as object) : new HeroData({})
+          const cards : Card[] = "abilityCards" in parsedCardList ? parsedCardList.abilityCards as Card[] : [];
+
+          if(activeCardList.length > 0) toast.success(`Disconnected workspace from ${activeCardList}`)
+          updateActiveCardList("")
+
+          if (displayedCards === ({abilityCards: [], heroData: new HeroData({})} as CardList)) {
+            toast.success("Added imported card list to empty workspace")
+          } else {
+            toast.success("Imported card list replaced all previous cards in workspace")
+          }
+          updateDisplayedCards({abilityCards: cards, heroData: heroData})
+        } else {
+          toast.error("Unable to parse cardlist data")
+        }
       })
     })
   })
