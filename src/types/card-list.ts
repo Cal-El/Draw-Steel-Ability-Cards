@@ -1,6 +1,7 @@
-import {ability_card as NewCard} from "./ability-card.ts";
+import {ability_card as NewCard, all_characteristics} from "./ability-card.ts";
 import {ability_card as OldCard} from "./ability-card-types.ts";
 import {buildEmptyHeroData, HeroData} from "./character-data.ts";
+import react from "@vitejs/plugin-react";
 
 export type CardList = {
   heroData?: HeroData,
@@ -31,6 +32,17 @@ export const getCardTopMatter = function (c: Card) {
 
 export const nonNullHeroData = function (c: CardList) : HeroData {
   return c.heroData ?? buildEmptyHeroData();
+}
+
+export const isEmptyCardList = function (cardList : CardList) {
+  if (cardList.abilityCards.length !== 0) return false;
+  if (cardList.heroData) {
+    if (cardList.heroData.bonus.length !== 0) return false;
+    for (const c of all_characteristics) {
+      if (cardList.heroData.characteristics.has(c)) return false;
+    }
+  }
+  return true;
 }
 
 // CLOAK AND DAGGER SHADOW

@@ -20,7 +20,7 @@ import {useFilePicker} from "use-file-picker";
 import {SelectedFiles} from "use-file-picker/types";
 import {useHotkeys} from "react-hotkeys-hook";
 import {toast, ToastContainer} from "react-toastify";
-import {Card, CardList} from "../../types/card-list.ts";
+import {Card, CardList, isEmptyCardList} from "../../types/card-list.ts";
 import {HeroData} from "../../types/character-data.ts";
 
 export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedCards}: 
@@ -55,7 +55,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
           if(activeCardList.length > 0) toast.success(`Disconnected workspace from ${activeCardList}`)
           updateActiveCardList("")
 
-          if (displayedCards === ({abilityCards: [], heroData: new HeroData({})} as CardList)) {
+          if (isEmptyCardList(displayedCards)) {
             toast.success("Added imported card list to empty workspace")
           } else {
             toast.success("Imported card list replaced all previous cards in workspace")
@@ -84,9 +84,11 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       const cardListToSave = saveDisplayedCards ? displayedCards : { abilityCards: [], heroData: new HeroData({}) }
       setSaveCurrentError("")
       saveCardList(newCardListName, cardListToSave)
+      toast.success(`Created new card list: ${newCardListName}`)
       if (saveDisplayedCards) {
         updateActiveCardList(newCardListName)
         setIsUnsavedChanges(false)
+        toast.success(`Switched workspace to: ${newCardListName}`)
       }
       setCardListNames(cardListNames.concat(newCardListName))
       setNewCardListName("")
@@ -126,12 +128,17 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
     if (displayedCards.abilityCards.length > 0) {
       const text = "Are you sure you want to clear the current card list? Any unsaved displayed cards will be lost. This action cannot be reversed."
       openModal(text, () => {
+        if(activeCardList.length > 0) toast.success(`Disconnected workspace from ${activeCardList}`)
         updateDisplayedCards({abilityCards: [], heroData: new HeroData({})})
         updateActiveCardList("")
         closeModal()
+        toast.success("Cleared workspace")
       }, "load")
     } else {
+      if(activeCardList.length > 0) toast.success(`Disconnected workspace from ${activeCardList}`)
+      updateDisplayedCards({abilityCards: [], heroData: new HeroData({})})
       updateActiveCardList("")
+      toast.success("Cleared workspace")
     }
   }
 
@@ -142,6 +149,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       setCardListNames(getCardListNames() || [])
       if (activeCardList === cardListName) {
         updateActiveCardList("")
+        toast.success(`Disconnected workspace from ${cardListName}`)
       }
       toast.success("Successfully deleted " + cardListName)
       closeModal()
@@ -189,7 +197,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
       <div className={`m-3 space-y-2`}>
         <h1 className="text-xl font-body font-semibold small-caps">Card Lists</h1>
         <div className="bg-zinc-100 rounded-lg p-2 space-y-1">
-          <button disabled={displayedCards.abilityCards.length === 0 && activeCardList.length === 0} onClick={() => openClearCurrentModal()} className={`flex flex-row font-body text-lg text-center items-center ${displayedCards.abilityCards.length === 0 && activeCardList.length === 0 ? 'text-gray-400' : 'hover:text-gray-700'} small w-full`}>
+          <button disabled={isEmptyCardList(displayedCards) && activeCardList.length === 0} onClick={() => openClearCurrentModal()} className={`flex flex-row font-body text-lg text-center items-center ${isEmptyCardList(displayedCards) && activeCardList.length === 0 ? 'text-gray-400' : 'hover:text-gray-700'} small w-full`}>
             <HiTrash/>&nbsp;Clear All Displayed Cards
           </button>
         </div>
