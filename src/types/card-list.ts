@@ -1,7 +1,6 @@
 import {ability_card as NewCard, all_characteristics} from "./ability-card.ts";
 import {ability_card as OldCard} from "./ability-card-types.ts";
 import {buildEmptyHeroData, HeroData} from "./character-data.ts";
-import react from "@vitejs/plugin-react";
 
 export type CardList = {
   heroData?: HeroData,
