@@ -4,6 +4,17 @@ import {CardList} from "../types/card-list.ts";
 import {ChangeEvent, Dispatch, SetStateAction, useEffect, useState} from "react";
 import {DisplayedCardListKey, saveCardList} from "./data-saving/saving-service.ts";
 
+function getNumber(s : string | undefined) : number | undefined {
+  if (s === undefined || s === '') {
+    return undefined;
+  }
+  const v = parseInt(s)
+  if (v === 0) {
+    return 0;
+  }
+  return v || undefined;
+}
+
 export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
     displayedCards: CardList,
     setDisplayedCards: Dispatch<SetStateAction<CardList>>
@@ -14,7 +25,9 @@ export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
     for (const c of all_characteristics) {
       if (displayedCards.heroData && displayedCards.heroData.characteristics.has(c)) {
         ct.set(c, (displayedCards.heroData.characteristics.get(c) ?? 0).toString())
-      } else if (!ct.has(c)) {
+      } else if (ct.has(c) && getNumber(ct.get(c)) === undefined) {
+        // Displayed cards doesn't have characteristic, but text is a number. Reset text
+      } else {
         ct.set(c, "")
       }
     }
@@ -30,7 +43,7 @@ export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
 
   const onUpdateCharacteristic = (e : ChangeEvent<HTMLInputElement>, c : characteristic) => {
     characteristicText.set(c, e.currentTarget.value)
-    const val = e.currentTarget.value && e.currentTarget.value.length > 0 ? (parseInt(e.currentTarget.value) || (parseInt(e.currentTarget.value) === 0 ? 0 : undefined)) : undefined;
+    const val = getNumber(e.currentTarget.value);
 
     const hd = new HeroData(displayedCards.heroData ?? {});
     hd.characteristics.set(c, val);
