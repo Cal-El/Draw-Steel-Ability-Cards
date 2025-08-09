@@ -100,10 +100,9 @@ export function TextEditor({card, cardNum, updateCard}: {card: Card, cardNum: nu
                       placeholder="Write your thoughts here...">
                 </textarea>
             </div>
-            <div className={'flex h-[40pt] bg-zinc-700 border-[3pt] border-zinc-600 justify-center items-center'}>
-                {errorMsg && <p className={`text-red-300`}>{errorMsg}</p>}
-                {!errorMsg && <div role={"button"} onClick={() => saveYamlExport(card, inputBoxValue)} className={`h-full w-full text-blue-300 flex justify-center items-center`}>Download</div>}
-            </div>
+          {errorMsg && <div className={'flex h-[40pt] bg-zinc-700 border-[3pt] border-zinc-600 justify-center items-center'}>
+                <p className={`text-red-300`}>{errorMsg}</p>
+            </div>}
         </>
     );
 }

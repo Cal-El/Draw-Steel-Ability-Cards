@@ -19,6 +19,7 @@ import {Card, CardList, getCardTitle, nonNullHeroData} from "./types/card-list.t
 import HeroDataMenu from "./components/hero-data-menu.tsx";
 import {getMetadata} from "meta-png";
 import {toast} from "react-toastify";
+import EditSidebarModal from "./components/edit-card-sidebar/edit-sidebar-modal.tsx";
 
 function App() {
   let dummyCard: ability_card = {
@@ -407,6 +408,10 @@ function App() {
 
   return (
     <div className={"flex flex-col h-screen"}>
+        <EditSidebarModal callback={(c: Card) => {
+          updateCard(selectedCard, c)
+          setSelectedCard(-1)
+        }} card={selectedCard < 0 ? undefined : {...cardsList.abilityCards[selectedCard]}} heroStats={cardsList.heroData}/>
         {howToModal &&
         <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-10 w-screen overflow-y-auto">
             <div className="flex h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 w-full">
