@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {parse as yamlParse, stringify as yamlStringify} from "yaml";
 import {ability_card, power_roll_statement} from "../../../types/ability-card-types.ts";
-import {saveYamlExport} from "../../../utils/download-utils.ts";
 import {asOldCard, Card, isNewCard} from "../../../types/card-list.ts";
 
 function tryParseCardInputJson(s: string, cardNum: number, setInputBoxValue: React.Dispatch<React.SetStateAction<string>>, setErrorMsg: React.Dispatch<React.SetStateAction<string>>, updateCard: (index: number, card: Card) => void) {
@@ -91,18 +90,18 @@ export function TextEditor({card, cardNum, updateCard}: {card: Card, cardNum: nu
     const [errorMsg, setErrorMsg] = useState('');
 
     return (
-        <>
-            <div className={`flex-grow w-full`}>
-                <textarea id="message"
-                      value={inputBoxValue}
-                      onInput={(e) => setIsValidInput(tryParseCardInputJson((e.target as HTMLTextAreaElement).value, cardNum, setInputBoxValue, setErrorMsg, updateCard))}
-                      className={`block p-2.5 w-full h-full text-sm text-gray-900 bg-gray-50 rounded-lg font-mono ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
-                      placeholder="Write your thoughts here...">
-                </textarea>
-            </div>
-          {errorMsg && <div className={'flex h-[40pt] bg-zinc-700 border-[3pt] border-zinc-600 justify-center items-center'}>
-                <p className={`text-red-300`}>{errorMsg}</p>
-            </div>}
-        </>
+      <>
+        <div className={`flex-grow w-full h-[700pt]`}>
+          <textarea id="message"
+                    value={inputBoxValue}
+                    onInput={(e) => setIsValidInput(tryParseCardInputJson((e.target as HTMLTextAreaElement).value, cardNum, setInputBoxValue, setErrorMsg, updateCard))}
+                    className={`block p-2.5 w-full h-full text-sm text-gray-900 bg-gray-50 rounded-lg font-mono ${isValidInput ? 'caret-regal-blue' : 'caret-triggered-action'}`}
+                    placeholder="Write your thoughts here...">
+          </textarea>
+        </div>
+        {errorMsg && <div className={'flex h-[40pt] bg-zinc-700 border-[3pt] border-zinc-600 justify-center items-center'}>
+          <p className={`text-red-300`}>{errorMsg}</p>
+        </div>}
+      </>
     );
 }

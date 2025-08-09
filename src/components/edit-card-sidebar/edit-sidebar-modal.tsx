@@ -4,22 +4,27 @@ import {DowngradeCard} from "../../utils/ability-card-downgrader.ts";
 import {HeroData} from "../../types/character-data.ts";
 import {TextEditor} from "../editable-ability-card-root/edit-card-menu/text-editor.tsx";
 import {useEffect, useState} from "react";
-import {FaSave} from "react-icons/fa";
+import {FaSave, FaShare, FaTrash} from "react-icons/fa";
 import {IoMdDownload} from "react-icons/io";
 import {saveImage} from "../../utils/download-utils.ts";
+import {toast} from "react-toastify";
+import {EditCardMenu} from "../editable-ability-card-root/edit-card-menu/edit-card-menu.tsx";
 
-export type CallbackFunction = (_: Card) => void;
+export type CloseCallbackFunction = (_: Card | undefined) => void;
+export type DeleteCallbackFunction = () => void;
 
-export default function EditSidebarModal({callback, card, heroStats}: {callback: CallbackFunction, card: Card | undefined, heroStats: HeroData | undefined}) {
+export default function EditSidebarModal({callback, deleteCallback, card, heroStats}: {callback: CloseCallbackFunction, deleteCallback: DeleteCallbackFunction, card: Card | undefined, heroStats: HeroData | undefined}) {
   const [editCard, setEditCard] = useState(card)
   const [useBlankHeroStats, setUseBlankHeroStats] = useState(false)
   useEffect(() => {
     setEditCard(card)
   }, [card])
   const closeModal = () => {
-    if (editCard) {
-      callback(editCard)
-    }
+    callback(editCard);
+  }
+
+  const deleteCard = () => {
+    deleteCallback()
   }
 
   const handleCheckbox = (): void => {
@@ -37,11 +42,29 @@ export default function EditSidebarModal({callback, card, heroStats}: {callback:
         <div role={`button`} onClick={() => saveImage(editCard, `editcard_${getCardTitle(editCard)}_card`)} className={`h-[50pt] w-[50pt] bg-maneuver-card flex items-center justify-center`}>
           <IoMdDownload className={`text-white text-[30pt]`}/>&nbsp;
         </div>
+        <div role={`button`} onClick={()=>{
+          toast.warning("Doesn't work yet, will copy a link to clipboard to share card")
+        }} className={`h-[50pt] w-[50pt] bg-routine-card flex items-center justify-center`}>
+          <FaShare className={`text-white text-[25pt]`}/>&nbsp;
+        </div>
+        <div role={`button`} onClick={deleteCard} className={`h-[50pt] w-[50pt] bg-triggered-action-card flex items-center justify-center`}>
+          <FaTrash className={`text-white text-[25pt]`}/>&nbsp;
+        </div>
       </div>
-      <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-stone-300 flex flex-col items-center border-4 border-stone-400 p-[20pt] gap-[10pt]`}>
-        <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} cardNum={1} selectedCard={1} setSelectedCard={() => {}}/>
-        <label><input type={`checkbox`} checked={useBlankHeroStats} onChange={handleCheckbox}/>Use Blank Hero Stats</label>
-        <TextEditor card={editCard} cardNum={1} updateCard={(_, c) => setEditCard(c)}/>
+      <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-stone-300 flex flex-col items-center border-4 border-stone-400 p-[20pt] gap-[10pt] overflow-y-scroll`}>
+        <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} enlargedState={1}/>
+        {isNewCard(editCard) ?
+          <>
+            <label><input type={`checkbox`} checked={useBlankHeroStats} onChange={handleCheckbox}/>Use Blank Hero Stats</label>
+            <TextEditor card={editCard} cardNum={1} updateCard={(_, c) => setEditCard(c)}/>
+          </> :
+          <>
+            <div role={`button`} onClick={() => {
+              toast.warning("Card upgrader not yet implemented")
+            }} className={`bg-slate-600 border-4 border-treasure-card rounded-3xl text-white text font-bold p-3`}>This is a legacy card. Click here to upgrade to V2</div>
+            <EditCardMenu card={asOldCard(editCard)} cardNum={1} updateCard={(_, c) => setEditCard(c)}/>
+          </>
+        }
       </div>
     </div>}
   </>)

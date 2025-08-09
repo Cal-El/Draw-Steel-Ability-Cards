@@ -13,7 +13,7 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
     const [keywordsInputVal, setKeywordsInputVal] = useState("");
 
     return (
-        <div className={`flex flex-col gap-[5pt] h-[440pt] overflow-auto rounded-lg bg-zinc-400 p-[10pt]`}>
+        <div className={`flex flex-col gap-[5pt] w-full rounded-lg bg-zinc-400 p-[10pt]`}>
             <div className={`flex items-center gap-[5pt]`}>
                 <div className={'font-body w-[80pt] text-right'}>Type:</div>
                 <select

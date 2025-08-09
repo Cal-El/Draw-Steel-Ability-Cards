@@ -408,9 +408,11 @@ function App() {
 
   return (
     <div className={"flex flex-col h-screen"}>
-        <EditSidebarModal callback={(c: Card) => {
-          updateCard(selectedCard, c)
+        <EditSidebarModal callback={(c: Card | undefined) => {
+          if (c) updateCard(selectedCard, c)
           setSelectedCard(-1)
+        }} deleteCallback={() => {
+          deleteCard(selectedCard)
         }} card={selectedCard < 0 ? undefined : {...cardsList.abilityCards[selectedCard]}} heroStats={cardsList.heroData}/>
         {howToModal &&
         <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-10 w-screen overflow-y-auto">

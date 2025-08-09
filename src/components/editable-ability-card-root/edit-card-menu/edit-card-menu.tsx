@@ -9,7 +9,7 @@ export function EditCardMenu({card, cardNum, updateCard}: {card: Card, cardNum: 
     const [useTextEdit, setUseTextEdit] = useState(isNewCard(card));
 
     return (
-        <div className={`flex-none flex flex-col gap-[5pt] h-[504pt] w-[378pt] p-[10pt]`}>
+        <div className={`flex-none flex flex-col gap-[5pt] w-full p-[10pt]`}>
             <div className={`flex justify-center h-[40pt] w-full`}>
               {!isNewCard(card) && <div role={'button'} onClick={() => {
                     setUseTextEdit(false);
