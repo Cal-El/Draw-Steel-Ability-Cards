@@ -9,6 +9,7 @@ import {IoMdDownload} from "react-icons/io";
 import {saveImage} from "../../utils/download-utils.ts";
 import {toast} from "react-toastify";
 import {EditCardMenu} from "../editable-ability-card-root/edit-card-menu/edit-card-menu.tsx";
+import {UpgradeCard} from "../../utils/ability-card-upgrader.ts";
 
 export type CloseCallbackFunction = (_: Card | undefined) => void;
 export type DeleteCallbackFunction = () => void;
@@ -60,7 +61,8 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
           </> :
           <>
             <div role={`button`} onClick={() => {
-              toast.warning("Card upgrader not yet implemented")
+              setEditCard(UpgradeCard(asOldCard(editCard)));
+              toast.success("Upgraded")
             }} className={`bg-slate-600 border-4 border-treasure-card rounded-3xl text-white text font-bold p-3`}>This is a legacy card. Click here to upgrade to V2</div>
             <EditCardMenu card={asOldCard(editCard)} cardNum={1} updateCard={(_, c) => setEditCard(c)}/>
           </>

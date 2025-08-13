@@ -87,7 +87,7 @@ export type damage = {
   baseValue: number; // base value the damage from the book, with kit value if a Kit Signature Ability
   includedKitValue: number; // included kit value of the ability, if any\
   characteristicBonusOptions: characteristic[]
-  otherBonus: string | undefined; // this supports the dice rolling edge case from things like coup de grace. e.g. "2d6"
+  otherBonus?: string; // this supports the dice rolling edge case from things like coup de grace. e.g. "2d6"
 }
 
 export type potency = {

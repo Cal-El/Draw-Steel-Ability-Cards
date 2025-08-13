@@ -251,6 +251,15 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
     ]
   }
 
+  if (d.display.length > 0) {
+    return [
+      {
+        distanceHeader: "Distance",
+        distanceValue: d.display,
+      },
+    ]
+  }
+
   return []
 }
 
