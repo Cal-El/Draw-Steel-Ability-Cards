@@ -55,7 +55,7 @@ export function PowerRollStatement({card, powerRoll}: {card: ability_card, power
         <div className={`flex-none flex flex-col h-[76pt] justify-center gap-y-[2pt]`}>
             <div className={`flex h-[8pt]`}>
                 <div className={`w-[2pt]`}></div>
-                <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><b>Power Roll + {powerRoll.characteristic}:</b></p>
+                <p className={`text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none`}><b>Power Roll {parseInt(powerRoll.characteristic) < 0 ? `- ${parseInt(powerRoll.characteristic) * -1}` : `+ ${powerRoll.characteristic}`}:</b></p>
             </div>
             <div className={`flex flex-col w-full h-[66pt] ${actionBg100ColorStyle[card.type]}`}>
                 {powerRollLine(card, powerRoll.t1, 1)}

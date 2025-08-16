@@ -20,6 +20,8 @@ import HeroDataMenu from "./components/hero-data-menu.tsx";
 import {getMetadata} from "meta-png";
 import {toast} from "react-toastify";
 import EditSidebarModal from "./components/edit-card-sidebar/edit-sidebar-modal.tsx";
+import {buildEmptyHeroData} from "./types/character-data.ts";
+import {UpgradeCard} from "./utils/ability-card-upgrader.ts";
 
 function App() {
   let dummyCard: ability_card = {
@@ -324,7 +326,7 @@ function App() {
   }
 
   async function allCards() {
-      let cccs: ability_card[] = []
+      let cccs: new_ability_card[] = []
       await fetch(baseUrl + "/card-manifest.json")
           .then(r => r.text())
           .then(async text => {
@@ -334,12 +336,12 @@ function App() {
                       .then(r => r.text())
                       .then(textt => {
                           const parsedCard = yamlParse(textt) as ability_card;
-                          cccs = [...cccs, parsedCard]
+                          cccs = [...cccs, UpgradeCard(parsedCard)]
                       });
               }
           });
       setSelectedCard(-1);
-      updateCardList({abilityCards: cccs});
+      updateCardList({abilityCards: cccs, heroData: buildEmptyHeroData()});
   }
 
   function deleteCard(index: number) {
@@ -455,8 +457,15 @@ function App() {
                 </button>
             }
             <button onClick={(e) => {
+              if (e.shiftKey && e.altKey && e.ctrlKey) {
+                allCards();
+              } else {
                 setSelectedCard(-1)
-                updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, e.shiftKey ? dummyCard2 : dummyCard]})
+                updateCardList({
+                  ...cardsList,
+                  abilityCards: [...cardsList.abilityCards, e.shiftKey ? dummyCard2 : dummyCard]
+                })
+              }
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Action`]} justify-center items-center`}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
             </button>

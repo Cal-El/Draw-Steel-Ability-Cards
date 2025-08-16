@@ -89,8 +89,12 @@ function commaSeparatedOrString(strings: string[]) {
   }).join(", ")
 }
 
-function parseDistanceVal(matchedVal: string, filteredBonuses: DistanceBonus[], d: distance_value) {
+function parseDistanceVal(matchedVal: string, filteredBonuses: DistanceBonus[], ds: distance_value[]) {
   if (matchedVal.startsWith('[') && matchedVal.endsWith(']')) {
+    const d = ds.pop()
+    if (!d) {
+      return parseInt(matchedVal.slice(1, matchedVal.length - 1))
+    }
     // Handle value with bonuses
     //
     const bonusTypes: Map<string, number> = new Map()
@@ -125,13 +129,15 @@ function parseBaseDamageVal(tierNum: number, filteredBonuses: DamageBonus[], d: 
 
 const translateDistance = function (card: new_card, heroData: HeroData) : distance_block[] {
   const d = card.header.distance;
+  const dVals = [...d.values].reverse();
+
   const bonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && (b instanceof DistanceBonus))
     .map(b => (b as DistanceBonus))
 
   const burst = new RegExp(/(\[?\d+\]?) burst/)
   const burstMatch = burst.exec(d.display.toLowerCase())
   if (burstMatch) {
-    const val = parseDistanceVal(burstMatch[1], bonuses, d.values[0]);
+    const val = parseDistanceVal(burstMatch[1], bonuses, dVals);
     return [
       {
         distanceHeader: "Burst",
@@ -143,7 +149,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   const aura = new RegExp(/(\[?\d+\]?) aura/)
   const auraMatch = aura.exec(d.display.toLowerCase())
   if (auraMatch) {
-    const val = parseDistanceVal(auraMatch[1], bonuses, d.values[0]);
+    const val = parseDistanceVal(auraMatch[1], bonuses, dVals);
     return [
       {
         distanceHeader: "Aura",
@@ -155,8 +161,8 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   const cube = new RegExp(/(\[?\d+\]?) cube within (\[?\d+\]?)/)
   const cubeMatch = cube.exec(d.display.toLowerCase())
   if (cubeMatch) {
-    const cubeVal = parseDistanceVal(cubeMatch[1], bonuses, d.values[0]);
-    const withinVal = parseDistanceVal(cubeMatch[2], bonuses, d.values[1]);
+    const cubeVal = parseDistanceVal(cubeMatch[1], bonuses, dVals);
+    const withinVal = parseDistanceVal(cubeMatch[2], bonuses, dVals);
     return [
       {
         distanceHeader: "Cube",
@@ -172,7 +178,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   const line = new RegExp(/(\w*?) ?(\d+ [x|×] \d+) lines? within (\[?\d+\]?)/)
   const lineMatch = line.exec(d.display.toLowerCase())
   if (lineMatch) {
-    const withinVal = parseDistanceVal(lineMatch[3], bonuses, d.values[0]);
+    const withinVal = parseDistanceVal(lineMatch[3], bonuses, dVals);
     const blocks : distance_block[] = lineMatch[1] ? [{
       distanceHeader: "Lines",
       distanceValue: parseSpelledNumber(lineMatch[1]).toString()
@@ -192,8 +198,8 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   const wall = new RegExp(/(\[?\d+\]?) wall within (\[?\d+\]?)/)
   const wallMatch = wall.exec(d.display.toLowerCase())
   if (wallMatch) {
-    const wallVal = parseDistanceVal(wallMatch[1], bonuses, d.values[0]);
-    const withinVal = parseDistanceVal(wallMatch[2], bonuses, d.values[1]);
+    const wallVal = parseDistanceVal(wallMatch[1], bonuses, dVals);
+    const withinVal = parseDistanceVal(wallMatch[2], bonuses, dVals);
     return [
       {
         distanceHeader: "Wall",
@@ -213,8 +219,8 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
     const bonusesWithoutRanged = bonuses.filter(b => b.matchesKeywords(cardKeywordsMinusRanged));
     const cardKeywordsMinusMelee = card.header.keywords.filter(k => k !== "Melee");
     const bonusesWithoutMelee = bonuses.filter(b => b.matchesKeywords(cardKeywordsMinusMelee));
-    const meleeVal = parseDistanceVal(meleeOrRangedMatch[1], bonusesWithoutRanged, d.values[0]);
-    const rangedVal = parseDistanceVal(meleeOrRangedMatch[2], bonusesWithoutMelee, d.values[1]);
+    const meleeVal = parseDistanceVal(meleeOrRangedMatch[1], bonusesWithoutRanged, dVals);
+    const rangedVal = parseDistanceVal(meleeOrRangedMatch[2], bonusesWithoutMelee, dVals);
     return [
       {
         distanceHeader: "Melee",
@@ -230,7 +236,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   const melee = new RegExp(/melee (\[?\d+\]?)/)
   const meleeMatch = melee.exec(d.display.toLowerCase())
   if (meleeMatch) {
-    const val = parseDistanceVal(meleeMatch[1], bonuses, d.values[0]);
+    const val = parseDistanceVal(meleeMatch[1], bonuses, dVals);
     return [
       {
         distanceHeader: "Melee",
@@ -242,7 +248,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   const ranged = new RegExp(/ranged (\[?\d+\]?)/)
   const rangedMatch = ranged.exec(d.display.toLowerCase())
   if (rangedMatch) {
-    const val = parseDistanceVal(rangedMatch[1], bonuses, d.values[0]);
+    const val = parseDistanceVal(rangedMatch[1], bonuses, dVals);
     return [
       {
         distanceHeader: "Ranged",
@@ -268,10 +274,10 @@ const translatePrCharacteristic = function (pr: power_roll, characteristics: Cha
     return pr.characteristicBonus as string
   }
   const charOptions = pr.characteristicBonus as characteristic[]
-  let bestBonus = 0;
+  let bestBonus = -1;
   for (const c of charOptions) {
     if (characteristics.has(c)) {
-      bestBonus = Math.max(bestBonus, characteristics.get(c) || 0)
+      bestBonus = Math.max(bestBonus, characteristics.get(c) || -1)
     } else {
       return commaSeparatedOrString(charOptions.map(
         (x) => {
@@ -411,11 +417,20 @@ const translateBodyElement = function (element: body, card: new_card, heroData: 
 export function DowngradeCard (card: new_card, heroData: HeroData | undefined) : old_card {
   const ch_data = heroData ? heroData : buildEmptyHeroData()
 
-  const translatedTarget = parseTarget(card.header.target);
-  const translatedTargetString = (typeof translatedTarget === 'string') ? translatedTarget : translatedTarget.target;
-  const additionalBody : body_statement[] = ((typeof translatedTarget !== 'string') ? [translatedTarget.additionalBody] : [])
-  const translatedDistance = translateDistance(card, ch_data);
-  const translatedBody: body_statement[] = additionalBody.concat(card.body.map(b => translateBodyElement(b, card, ch_data)).filter(b => b !== undefined));
+  let translatedTargetString : string;
+  let translatedDistance : distance_block[];
+  let translatedBody : body_statement[];
+
+  try {
+    const translatedTarget = parseTarget(card.header.target);
+    translatedTargetString = (typeof translatedTarget === 'string') ? translatedTarget : translatedTarget.target;
+    const additionalBody : body_statement[] = ((typeof translatedTarget !== 'string') ? [translatedTarget.additionalBody] : [])
+    translatedDistance = translateDistance(card, ch_data);
+    translatedBody = additionalBody.concat(card.body.map(b => translateBodyElement(b, card, ch_data)).filter(b => b !== undefined));
+  } catch (e) {
+    console.error(card.header.title, card.header.topMatter, e)
+    throw e
+  }
 
   return {
     type: card.type.toLowerCase() === "main action" ? "Action" : card.type,

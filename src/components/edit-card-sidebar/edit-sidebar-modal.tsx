@@ -52,7 +52,7 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
           <FaTrash className={`text-white text-[25pt]`}/>&nbsp;
         </div>
       </div>
-      <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-stone-300 flex flex-col items-center border-4 border-stone-400 p-[20pt] gap-[10pt] overflow-y-scroll`}>
+      <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-sidebar-back flex flex-col items-center border-4 border-sidebar-trim p-[20pt] gap-[10pt] overflow-y-scroll`}>
         <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} enlargedState={1}/>
         {isNewCard(editCard) ?
           <>
