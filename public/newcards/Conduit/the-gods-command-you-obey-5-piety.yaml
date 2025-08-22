@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You speak with the voice of your saint, commanding your enemies.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: The Gods Command You Obey
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Main action
+version: 2

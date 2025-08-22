@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Vines burst forth from the ground and bind your foe, slowly closing around
+    them.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Thorn Cage
+  topMatter: Conduit Level 9 Ability
+level: 9
+type: Main action
+version: 2

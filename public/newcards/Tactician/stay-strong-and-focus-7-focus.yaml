@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: '"We can do this! Keep faith and hold fast!"'
+  keywords:
+  - '-'
+  target: Self
+  title: Stay Strong and Focus!
+  topMatter: Tactician Level 3 Ability
+level: 3
+type: Maneuver
+version: 2

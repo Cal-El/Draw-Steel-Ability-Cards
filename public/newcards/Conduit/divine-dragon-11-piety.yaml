@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: From nothing but divine will, you create a powerful ally.
+  keywords:
+  - Magic
+  - Ranged
+  target: Special
+  title: Divine Dragon
+  topMatter: Conduit Level 9 Ability
+level: 9
+type: Main action
+version: 2

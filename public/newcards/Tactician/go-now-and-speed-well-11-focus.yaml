@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You direct an attack to strike true.
+  keywords:
+  - Ranged
+  target: Self or one ally
+  title: Go Now and Speed Well
+  topMatter: Tactician Level 8 Ability
+level: 8
+type: Main action
+version: 2

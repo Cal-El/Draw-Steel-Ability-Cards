@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Melee 2
+    values: []
+  flavour: Your quick reflexes cost an enemy the precision they seek.
+  keywords:
+  - Melee
+  - Weapon
+  target: Self or one ally
+  title: Parry
+  topMatter: Tactician Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

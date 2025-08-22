@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: '"Let''s not argue about who''s the hammer and who''s the anvil!"'
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Hammer and Anvil
+  topMatter: Tactician Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You conjure an angel who moves a foe and heals your allies.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Drag the Unworthy
+  topMatter: Conduit Level 8 Ability
+level: 8
+type: Main action
+version: 2

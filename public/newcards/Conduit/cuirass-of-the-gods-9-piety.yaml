@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your allies are covered in spiritual armor.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Three creatures
+  title: Cuirass of the Gods
+  topMatter: Conduit Level 6 Ability
+level: 6
+type: Maneuver
+version: 2

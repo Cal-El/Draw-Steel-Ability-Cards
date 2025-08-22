@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Fear of divine judgment overwhelms your foe.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Curse of Terror
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

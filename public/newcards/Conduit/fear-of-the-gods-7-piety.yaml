@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: 5 cube within 10
+    values: []
+  flavour: Your divine magic makes a creature appear as what your enemies fear most.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Fear of the Gods
+  topMatter: Conduit Level 3 Ability
+level: 3
+type: Main action
+version: 2

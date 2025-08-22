@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: The gods reward those who smite their foes.
+  keywords:
+  - Magic
+  - Ranged
+  target: Each ally
+  title: Reap
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

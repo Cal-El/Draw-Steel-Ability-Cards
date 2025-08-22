@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: On your command, you and your allies force back the enemy line.
+  keywords:
+  - Ranged
+  target: Self and two allies
+  title: Squad! Forward!
+  topMatter: Tactician Level 1 Ability
+level: 1
+type: Maneuver
+version: 2

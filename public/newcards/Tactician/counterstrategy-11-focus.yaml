@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: I've identified a way to negate their strengths.
+  keywords:
+  - '-'
+  target: Self
+  title: Counterstrategy
+  topMatter: Tactician Level 9 Ability
+level: 9
+type: Main action
+version: 2

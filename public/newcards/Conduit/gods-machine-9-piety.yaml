@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You conjure a whirring tank made of blades and metal.
+  keywords:
+  - Magic
+  - Ranged
+  target: Special
+  title: Gods' Machine
+  topMatter: Conduit Level 6 Ability
+level: 6
+type: Main action
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your holy word saps an attacking enemy's strength.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Word of Judgment
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Burning radiance falls upon your foe, transferring some of their energy
+    to a nearby ally.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Blessed Light
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 5
+    values: []
+  flavour: Your enemy will think twice about attacking your friend.
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: I've Got Your Back
+  topMatter: Tactician Level 2 Ability
+level: 2
+type: Main action
+version: 2

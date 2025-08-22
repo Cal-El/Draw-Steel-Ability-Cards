@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: You and your allies coordinate to form a new battle line.
+  keywords:
+  - Area
+  target: Self and each ally in the area
+  title: Hustle!
+  topMatter: Tactician Level 6 Ability
+level: 6
+type: Maneuver
+version: 2

@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: You confuse your foes, causing them to turn on each other.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: Two creatures
+  title: Panic in Their Lines
+  topMatter: Tactician Level 6 Ability
+level: 6
+type: Main action
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your enemies suffer their fate; your allies embrace their destiny!
+  keywords:
+  - Magic
+  - Ranged
+  target: Three creatures
+  title: Blessing of Fate and Destiny
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Main action
+version: 2

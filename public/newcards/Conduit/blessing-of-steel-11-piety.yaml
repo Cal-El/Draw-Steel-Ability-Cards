@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: A protective aura defends your allies from harm.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Blessing of Steel
+  topMatter: Conduit Level 8 Ability
+level: 8
+type: Maneuver
+version: 2

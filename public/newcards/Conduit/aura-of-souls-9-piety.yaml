@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: 4 aura
+    values: []
+  flavour: A whirlwind of souls of the dead flies around you at your command.
+  keywords:
+  - Area
+  - Magic
+  target: Each creature in the area
+  title: Aura of Souls
+  topMatter: Conduit Level 6 Ability
+level: 6
+type: Maneuver
+version: 2

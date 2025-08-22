@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your unorthodox strategy causes enemies to lash out in fear, heedless of
+    who they might be attacking.
+  keywords:
+  - Ranged
+  target: Two creatures
+  title: Fog of War
+  topMatter: Tactician Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

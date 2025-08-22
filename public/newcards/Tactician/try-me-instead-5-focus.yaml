@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: '"Try picking on someone my size."'
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Self
+  title: Try Me Instead
+  topMatter: Tactician Level 2 Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: '"The power of the gods is within you, friends. Allow me to unleash it."'
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Blessing of the Blade
+  topMatter: Conduit Level 8 Ability
+level: 8
+type: Maneuver
+version: 2

@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Cursed by you, your enemy takes more damage from your allies.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Corruption's Curse
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

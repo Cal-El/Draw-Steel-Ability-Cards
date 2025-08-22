@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You send yourself or an ally to a divine manifold to instantaneously regain
+    health.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Sanctuary
+  topMatter: Conduit Level 5 Ability
+level: 5
+type: Maneuver
+version: 2

@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Under your direction, an ally waits for just the right moment to strike.
+  keywords:
+  - Ranged
+  target: One creature
+  title: Overwatch
+  topMatter: Tactician Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

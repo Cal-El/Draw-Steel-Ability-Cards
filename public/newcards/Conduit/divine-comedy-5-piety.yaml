@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: You and your allies swap places to confound your foes.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Divine Comedy
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

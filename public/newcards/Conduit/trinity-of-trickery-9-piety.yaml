@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Hey! I'm over here. No, here, numbskull.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Trinity of Trickery
+  topMatter: Conduit Level 7 Ability
+level: 7
+type: Maneuver
+version: 2

@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your quickly uttered prayer lends aggressive divine energy to a friend
+    engaged in melee.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Warrior's Prayer
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

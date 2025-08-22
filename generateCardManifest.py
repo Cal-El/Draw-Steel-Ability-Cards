@@ -22,7 +22,7 @@ publicManString = ""
 for group in groups:
     groupName = group.title()
     manifestFile.write("    {\n")
-    manifestFile.write("        label: \"" + groupName + "\",\n")
+    manifestFile.write("        label: `" + groupName + "`,\n")
     manifestFile.write("        options: [\n",)
 
     files = [f for f in listdir(join(basePath, group)) if isfile(join(basePath, group, f))]
@@ -32,8 +32,8 @@ for group in groups:
         topMatter = card['header']['topMatter']
         name = card['header']['title']
         manifestFile.write("            {\n")
-        manifestFile.write("                label: \"" + name + " (" + topMatter + ")\",\n")
-        manifestFile.write("                value: \"/" + cards + "/" + group + "/"+ file + "\",\n")
+        manifestFile.write("                label: `" + name + " (" + topMatter + ")`,\n")
+        manifestFile.write("                value: `/" + cards + "/" + group + "/"+ file + "`,\n")
         manifestFile.write("            },\n")
         publicManString = publicManString + "  \"/" + cards + "/" + group + "/"+ file + "\",\n"
     manifestFile.write("        ],\n",)

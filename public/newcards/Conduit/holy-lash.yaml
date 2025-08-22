@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: A tendril of divine energy shoots forth to draw in your foe.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Holy Lash
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

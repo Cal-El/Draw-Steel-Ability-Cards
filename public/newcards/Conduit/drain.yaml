@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You drain the energy from your target to revitalize yourself or an ally.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  target: One creature
+  title: Drain
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

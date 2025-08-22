@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: 15 wall within 10
+    values: []
+  flavour: A wall of spinning swords and knives appears where you wish.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Special
+  title: Righteous Phalanx
+  topMatter: Conduit Level 9 Ability
+level: 9
+type: Main action
+version: 2

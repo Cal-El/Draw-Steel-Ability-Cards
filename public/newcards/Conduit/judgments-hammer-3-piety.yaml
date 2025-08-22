@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your divine fury is a hammer that crashes down upon the unrighteous.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Judgment's Hammer
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

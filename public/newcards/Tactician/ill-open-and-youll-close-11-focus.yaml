@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: You create an opening for an ally.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: I'll Open and You'll Close
+  topMatter: Tactician Level 8 Ability
+level: 8
+type: Main action
+version: 2

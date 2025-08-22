@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You trick your enemies into attacking each other and leave them confused
+    by the aftermath.
+  keywords:
+  - Magic
+  - Ranged
+  - Weapon
+  target: Three enemies
+  title: Their Lack of Focus Is Their Undoing
+  topMatter: Tactician Level 9 Ability
+level: 9
+type: Main action
+version: 2

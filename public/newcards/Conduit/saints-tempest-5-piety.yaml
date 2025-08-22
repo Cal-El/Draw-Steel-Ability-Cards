@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: 3 cube within 10
+    values: []
+  flavour: A raging storm appears, striking your foes with lightning and throwing
+    them around with wind.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Saint's Tempest
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Main action
+version: 2

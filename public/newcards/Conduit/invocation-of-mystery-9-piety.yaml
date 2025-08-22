@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: 4 burst
+    values: []
+  flavour: '"Now you see us..."'
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Invocation of Mystery
+  topMatter: Conduit Level 6 Ability
+level: 6
+type: Maneuver
+version: 2

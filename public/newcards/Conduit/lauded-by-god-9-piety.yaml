@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You beseech the gods to give your allies what they need to win the day,
+    and the gods answer.
+  keywords:
+  - Magic
+  - Ranged
+  target: Two allies
+  title: Lauded by God
+  topMatter: Conduit Level 6 Ability
+level: 6
+type: Maneuver
+version: 2

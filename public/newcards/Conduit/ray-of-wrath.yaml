@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You unleash a blast of holy light upon your foe.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Ray of Wrath
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

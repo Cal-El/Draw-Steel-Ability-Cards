@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You concentrate on a friend and teleport to them.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self and each ally
+  title: Guided to Your Side
+  topMatter: Conduit Level 7 Ability
+level: 7
+type: Main action
+version: 2

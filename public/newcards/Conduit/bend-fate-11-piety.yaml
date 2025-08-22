@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: The gods know you must prevail, and they bless your fate.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Bend Fate
+  topMatter: Conduit Level 9 Ability
+level: 9
+type: Main action
+version: 2

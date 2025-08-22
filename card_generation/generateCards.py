@@ -76,6 +76,8 @@ def createCards(className):
 
 # Create censor cards
 manifest = manifest + createCards('Censor')
+manifest = manifest + createCards('Tactician')
+manifest = manifest + createCards('Conduit')
 
 print('Creating card manifest')
 with open(path.join(cardsPath, 'card-manifest.json'), 'w') as m:

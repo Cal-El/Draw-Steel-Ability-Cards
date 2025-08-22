@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: 5 cube within 5
+    values: []
+  flavour: You summon a divine storm that remains under your control.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Godstorm
+  topMatter: Conduit Level 9 Ability
+level: 9
+type: Main action
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your death will fuel our victory.
+  keywords:
+  - Magic
+  - Ranged
+  target: One creature
+  title: Word of Final Redemption
+  topMatter: Conduit Level 9 Ability
+level: 9
+type: Free triggered
+version: 2

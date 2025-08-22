@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: The heroes' armor glows with golden light, granting divine protection.
+  keywords:
+  - Magic
+  - Ranged
+  target: Four allies
+  title: Faith Is Our Armor
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Maneuver
+version: 2

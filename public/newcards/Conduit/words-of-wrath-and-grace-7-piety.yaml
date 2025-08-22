@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: Your saint grants your enemies a vision of pain and fills your allies with
+    healing energy.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Words of Wrath and Grace
+  topMatter: Conduit Level 3 Ability
+level: 3
+type: Main action
+version: 2

@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You direct your squad to strike in unison and with devastating effect.
+  keywords:
+  - Ranged
+  target: Three allies
+  title: Floodgates Open
+  topMatter: Tactician Level 8 Ability
+level: 8
+type: Main action
+version: 2

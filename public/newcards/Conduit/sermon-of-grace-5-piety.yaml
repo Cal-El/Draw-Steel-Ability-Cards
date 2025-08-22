@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: 4 burst
+    values: []
+  flavour: You inspire your allies with tales of your saint's great deeds.
+  keywords:
+  - Area
+  - Magic
+  target: Each ally in the area
+  title: Sermon of Grace
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

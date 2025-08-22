@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You point out an opening to your ally so they can land a killing blow.
+  keywords:
+  - Ranged
+  target: One creature
+  title: Finish Them!
+  topMatter: Tactician Level 8 Ability
+level: 8
+type: Free triggered
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: An ally becomes the wearer of an empowered golden cloak.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Saint's Raiment
+  topMatter: Conduit Level 3 Ability
+level: 3
+type: Maneuver
+version: 2

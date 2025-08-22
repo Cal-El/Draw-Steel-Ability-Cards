@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: An ally gains strength from their friends.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self and one ally
+  title: Our Hearts Your Strength
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

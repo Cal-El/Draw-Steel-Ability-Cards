@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You forge a divine connection between two creatures.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self and one ally
+  title: Sacred Bond
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You bend the fate of a foe, willing them to die.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Your Story Ends Here
+  topMatter: Conduit Level 6 Ability
+level: 6
+type: Main action
+version: 2

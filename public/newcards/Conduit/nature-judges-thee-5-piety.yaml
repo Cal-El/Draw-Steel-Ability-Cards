@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: 3 cube within 10
+    values: []
+  flavour: Mystical thorned vines appear at your bidding and bind your foes.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Nature Judges Thee
+  topMatter: Conduit Level 2 Ability
+level: 2
+type: Main action
+version: 2

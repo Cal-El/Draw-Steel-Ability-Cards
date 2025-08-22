@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: 1 burst
+    values: []
+  flavour: Together we are invincible!
+  keywords:
+  - Area
+  target: Self and each ally in the area
+  title: Squad! On Me!
+  topMatter: Tactician Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

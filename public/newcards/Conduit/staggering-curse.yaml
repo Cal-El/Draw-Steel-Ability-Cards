@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: A blast of judgment disorients your foe.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  target: One creature or object
+  title: Staggering Curse
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: A beam of energy connects a foe to a friend, draining life from one to
+    heal the other.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One enemy
+  title: Soul Siphon
+  topMatter: Conduit Level 3 Ability
+level: 3
+type: Main action
+version: 2

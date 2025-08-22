@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: After some holy lightning, your enemy will think twice about their next
+    attack.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Violence Will Not Aid Thee
+  topMatter: Conduit Level 1 Ability
+level: 1
+type: Main action
+version: 2
