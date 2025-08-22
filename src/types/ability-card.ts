@@ -128,3 +128,27 @@ export enum potency_strength {
   AVERAGE,
   STRONG
 }
+
+export enum abilityType {
+  mainAction = 'Main Action',
+  maneuver = 'Maneuver',
+  triggeredAction = 'Triggered Action',
+  freeTriggeredAction = 'Free Triggered Action',
+  freeManeuver = 'Free Maneuver',
+  noAction = 'No Action',
+  freeStrike = 'Free Strike',
+  trait = 'Trait',
+  treasure = 'Treasure',
+}
+
+export const abilityTypeValues : abilityType[] = [
+  abilityType.mainAction,
+  abilityType.maneuver,
+  abilityType.triggeredAction,
+  abilityType.freeTriggeredAction,
+  abilityType.freeManeuver,
+  abilityType.noAction,
+  abilityType.freeStrike,
+  abilityType.trait,
+  abilityType.treasure,
+]

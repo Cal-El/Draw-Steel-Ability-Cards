@@ -22,6 +22,7 @@ export const abilityTypeValues : abilityType[] = [
 ]
 
 export const cardbackColorStyle: Record<string,string> = {
+    "Main Action": 'bg-cardback border-action-card',
     "Action": 'bg-cardback border-action-card',
     "Maneuver": 'bg-cardback border-maneuver-card',
     "Triggered Action": 'bg-cardback border-triggered-action-card',
@@ -33,7 +34,21 @@ export const cardbackColorStyle: Record<string,string> = {
     "Treasure": 'bg-cardback border-treasure-card'
 }
 
+export const borderColorStyle: Record<string,string> = {
+  "Main Action": 'border-action-card',
+  "Action": 'border-action-card',
+  "Maneuver": 'border-maneuver-card',
+  "Triggered Action": 'border-triggered-action-card',
+  "Free Triggered Action": 'border-free-triggered-action-card',
+  "Free Maneuver": 'border-free-maneuver-card',
+  "Routine": 'border-routine-card',
+  "Passive": 'border-passive-card',
+  "Free Strike Action": 'border-free-strike-card',
+  "Treasure": 'border-treasure-card'
+}
+
 export const actionBg100ColorStyle: Record<string,string> = {
+    "Main Action": 'bg-action-card',
     "Action": 'bg-action-card',
     "Maneuver": 'bg-maneuver-card',
     "Triggered Action": 'bg-triggered-action-card',
@@ -45,6 +60,7 @@ export const actionBg100ColorStyle: Record<string,string> = {
     "Treasure": 'bg-treasure-card',
 }
 export const actionBg50ColorStyle: Record<string,string> = {
+    "Main Action": 'bg-action-card-50',
     "Action": 'bg-action-card-50',
     "Maneuver": 'bg-maneuver-card-50',
     "Triggered Action": 'bg-triggered-action-card-50',
@@ -56,6 +72,7 @@ export const actionBg50ColorStyle: Record<string,string> = {
     "Treasure": 'bg-treasure-card/[0.5]',
 }
 export const actionBg40ColorStyle: Record<string,string> = {
+    "Main Action": 'bg-action-card-40',
     "Action": 'bg-action-card-40',
     "Maneuver": 'bg-maneuver-card-40',
     "Triggered Action": 'bg-triggered-action-card-40',
@@ -67,6 +84,7 @@ export const actionBg40ColorStyle: Record<string,string> = {
     "Treasure": 'bg-treasure-card/[0.4]',
 }
 export const actionBg30ColorStyle: Record<string,string> = {
+    "Main Action": 'text-action-card-30',
     "Action": 'bg-action-card-30',
     "Maneuver": 'bg-maneuver-card-30',
     "Triggered Action": 'bg-triggered-action-card-30',
@@ -78,6 +96,7 @@ export const actionBg30ColorStyle: Record<string,string> = {
     "Treasure": 'bg-treasure-card/[0.3]',
 }
 export const actionBg20ColorStyle: Record<string,string> = {
+    "Main Action": 'text-action-card-20',
     "Action": 'bg-action-card-20',
     "Maneuver": 'bg-maneuver-card-20',
     "Triggered Action": 'bg-triggered-action-card-20',
@@ -90,6 +109,7 @@ export const actionBg20ColorStyle: Record<string,string> = {
 }
 
 export const actionTextColorStyle: Record<string,string> = {
+    "Main Action": 'text-action-card',
     "Action": 'text-action-card',
     "Maneuver": 'text-maneuver-card',
     "Triggered Action": 'text-triggered-action-card',
