@@ -1,0 +1,32 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 2
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 4
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 6
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Two jets of flame lance out at your command.
+  keywords:
+  - Fire
+  - Magic
+  - Ranged
+  - Strike
+  target: Two creatures or objects
+  title: Bifurcated Incineration
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

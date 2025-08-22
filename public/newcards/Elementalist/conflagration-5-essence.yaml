@@ -1,0 +1,36 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 4
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 6
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 10
+- body: At the start of your turn, you can use a maneuver to use this ability again
+    without spending essence.
+  isEffect: true
+  title: Persistent 2
+header:
+  distance:
+    display: 3 cube within 10
+    values: []
+  flavour: A storm of fire descends upon your enemies.
+  keywords:
+  - Area
+  - Fire
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Conflagration
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

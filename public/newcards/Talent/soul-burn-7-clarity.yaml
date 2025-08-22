@@ -1,0 +1,58 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: dazed (save ends)
+      strength: 2
+- body: The target takes a bane on Presence tests until the end of the encounter.
+  isEffect: true
+  title: Effect
+- body: The potency of this ability increases by 1. You take 2d6 damage and gain 3
+    surges that you can use immediately.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You blast their soul out of their body, leaving it to helplessly float
+    back to a weakened husk.
+  keywords:
+  - Animapathy
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Soul Burn
+  topMatter: Talent Level 3 Ability
+level: 3
+type: Main action
+version: 2

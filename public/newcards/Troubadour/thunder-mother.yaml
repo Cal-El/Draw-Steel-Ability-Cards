@@ -1,0 +1,31 @@
+body:
+- body: At the end of each combat round while this performance is active, you can
+    make a power roll against the target that ignores cover. You can't target the
+    same creature twice with this effect.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Lightning damage equal to your level
+  t2:
+    baseEffect: Lightning damage equal to 5 + your level
+  t3:
+    baseEffect: Lightning damage equal to 10 + your level
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: "All for thunder motherrr! \u266A Run and hide for coverrr!\u266A"
+  keywords:
+  - Magic
+  - Performance
+  - Ranged
+  - Strike
+  target: One creature
+  title: '"Thunder Mother"'
+  topMatter: Troubadour Level 1 Ability
+level: 1
+type: No action
+version: 2

@@ -1,4 +1,7 @@
-body: []
+body:
+- body: The target gains 20 temporary Stamina and 3 surges.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

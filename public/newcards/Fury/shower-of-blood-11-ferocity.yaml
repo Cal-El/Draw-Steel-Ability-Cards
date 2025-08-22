@@ -1,0 +1,44 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 24
+      characteristicBonusOptions:
+      - Might
+- body: Each enemy within 5 squares of you is distracted until the end of the round.
+    While a creature is distracted this way, they can't take triggered actions or
+    free triggered actions, ability rolls made against them gain an edge, and their
+    characteristic scores are considered 1 lower for the purpose of resisting potencies.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You shock your foes with the brutality of your strike, resetting the balance
+    of combat.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Shower of Blood
+  topMatter: Fury Level 9 Ability
+level: 9
+type: Main action
+version: 2

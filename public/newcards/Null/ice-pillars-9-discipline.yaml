@@ -1,0 +1,27 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: Vertical slide 6
+  t2:
+    baseEffect: Vertical slide 8
+  t3:
+    baseEffect: Vertical slide 10
+- body: The pillars vanish as soon as the effects of the forced movement are resolved.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Pillars of ice erupt from the ground and launch your foes into the air.
+  keywords:
+  - Psionic
+  - Ranged
+  target: Three creatures or objects
+  title: Ice Pillars
+  topMatter: Null Level 6 Ability
+level: 6
+type: Main action
+version: 2

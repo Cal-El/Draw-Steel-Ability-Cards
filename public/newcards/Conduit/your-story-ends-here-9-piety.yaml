@@ -1,4 +1,41 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 19
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 2
+- body: If this damage kills the target, you and each ally within distance can spend
+    a Recovery.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

@@ -1,0 +1,27 @@
+body:
+- body: The target takes damage.
+  isEffect: true
+  title: Trigger
+- body: The target is teleported to an unoccupied space adjacent to you, taking no
+    damage and suffering no additional effects if this movement would get them out
+    of harm's way.
+  isEffect: true
+  title: Effect
+- body: You can't target yourself, and you take the damage and any additional effects
+    instead of the target.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You freeze time just long enough to bring the victim to safety!
+  keywords:
+  - Psionic
+  - Ranged
+  target: Self, or one creature or object
+  title: Stasis Shield
+  topMatter: Talent Level 8 Ability
+level: 8
+type: Triggered Action
+version: 2

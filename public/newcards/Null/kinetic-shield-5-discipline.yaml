@@ -1,0 +1,27 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: You gain 10 temporary Stamina.
+  t2:
+    baseEffect: You gain 15 temporary Stamina.
+  t3:
+    baseEffect: You gain 20 temporary Stamina.
+- body: While you have temporary Stamina from this ability, you can't be made bleeding
+    even while dying.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You manifest a force barrier that absorbs incoming kinetic energy.
+  keywords:
+  - Psionic
+  target: Self
+  title: Kinetic Shield
+  topMatter: Null Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

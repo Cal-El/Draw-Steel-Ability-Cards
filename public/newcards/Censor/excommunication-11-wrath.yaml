@@ -1,4 +1,42 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Intuition
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Intuition
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Intuition
+      effect: weakened (save ends)
+      strength: 2
+- body: At the end of each of your turns, a target weakened this way deals holy damage
+    equal to twice your Presence score to each enemy within 2 squares of them. Additionally,
+    a target weakened this way can't be targeted by their allies' abilities.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

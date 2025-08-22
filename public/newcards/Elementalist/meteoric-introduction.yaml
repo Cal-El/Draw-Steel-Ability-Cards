@@ -1,0 +1,38 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 2
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+  t2:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+  t3:
+    baseEffect: damage; push 4
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Reason
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You give your enemy a gentle tap-like an asteroid impact.
+  keywords:
+  - Earth
+  - Magic
+  - Melee
+  - Strike
+  target: One creature or object
+  title: Meteoric Introduction
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

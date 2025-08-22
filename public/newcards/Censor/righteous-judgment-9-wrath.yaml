@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 20
+      characteristicBonusOptions:
+      - Might
+- body: Until the end of the encounter, whenever any ally deals damage to a target
+    judged by you, that ally gains 1 surge.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

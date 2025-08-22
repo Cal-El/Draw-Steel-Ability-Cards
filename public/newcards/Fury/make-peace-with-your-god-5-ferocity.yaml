@@ -1,0 +1,18 @@
+body:
+- body: You gain 1 surge, and the next ability roll you make this turn automatically
+    obtains a tier 3 outcome.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: Anger is your energy.
+  keywords:
+  - '-'
+  target: Self
+  title: Make Peace With Your God!
+  topMatter: Fury Level 1 Ability
+level: 1
+type: Free maneuver
+version: 2

@@ -1,4 +1,25 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; you and each ally adjacent to you gain 10 temporary Stamina
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage; you and each ally adjacent to you gain 15 temporary Stamina
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage; you and each ally adjacent to you gain 20 temporary Stamina
+    damage:
+      baseValue: 20
+      characteristicBonusOptions:
+      - Might
 header:
   distance:
     display: Melee 1

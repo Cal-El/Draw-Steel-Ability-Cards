@@ -1,0 +1,45 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+  t2:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Presence
+  t3:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Presence
+- body: You can choose to have this ability deal sonic damage. Additionally, you can
+    use this ability against the same target for the next 2 combat rounds without
+    spending drama.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1 or ranged 10
+    values: []
+  flavour: Your performance travels and doesn't stop moving until your audience is
+    completely rocked.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Star Solo
+  topMatter: Troubadour Level 3 Ability
+level: 3
+type: Main action
+version: 2

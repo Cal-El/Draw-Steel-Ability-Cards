@@ -1,4 +1,23 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: lightning damage; push 1
+    damage:
+      baseValue: 6
+  t2:
+    baseEffect: lightning damage; push 2
+    damage:
+      baseValue: 9
+  t3:
+    baseEffect: lightning damage; push 3
+    damage:
+      baseValue: 13
+- body: The targets are force moved one at a time, starting with the target nearest
+    to you, and can be pushed into other targets in the same line.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Three 10 x 1 lines within 1

@@ -1,0 +1,25 @@
+body:
+- body: The target takes damage or is force moved.
+  isEffect: true
+  title: Trigger
+- body: The target takes half the triggering damage, or the distance of the triggering
+    forced movement is reduced by a number of squares equal to your Reason score.
+    If the target took damage and was force moved, you choose the effect. If the forced
+    movement is reduced to 0 squares, the target can push the source of the forced
+    movement a number of squares equal to your Reason score.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: They aren't going anywhere, but you might!
+  keywords:
+  - Psionic
+  - Ranged
+  target: Self or one ally
+  title: Repel
+  topMatter: Talent Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

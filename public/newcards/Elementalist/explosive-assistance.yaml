@@ -1,0 +1,26 @@
+body:
+- body: The target force moves a creature or object.
+  isEffect: true
+  title: Trigger
+- body: The forced movement distance gains a bonus equal to your Reason score.
+  isEffect: true
+  title: Effect
+- body: The forced movement distance gains a bonus equal to twice your Reason score
+    instead.
+  isEffect: true
+  title: Spend 1 Essence
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You add a little magic to an ally's aggression at just the right time.
+  keywords:
+  - Fire
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Explosive Assistance
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

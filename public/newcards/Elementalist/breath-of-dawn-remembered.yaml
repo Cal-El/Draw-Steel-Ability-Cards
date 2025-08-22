@@ -1,0 +1,25 @@
+body:
+- body: The target starts their turn or takes damage.
+  isEffect: true
+  title: Trigger
+- body: The target can spend a Recovery.
+  isEffect: true
+  title: Effect
+- body: The target can spend an additional Recovery for each essence spent.
+  isEffect: true
+  title: Spend 1+ Essence
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: The power you channel grants the ability to get back in the fight.
+  keywords:
+  - Green
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Breath of Dawn Remembered
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

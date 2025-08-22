@@ -1,0 +1,18 @@
+body:
+- body: You can use a signature or heroic ability. You gain an edge on that ability's
+    power rolls.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You release stored time, allowing you to act twice.
+  keywords:
+  - Psionic
+  target: Self
+  title: Blur
+  topMatter: Null Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

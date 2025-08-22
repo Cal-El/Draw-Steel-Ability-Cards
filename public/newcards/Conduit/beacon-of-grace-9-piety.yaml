@@ -1,4 +1,31 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions:
+      - Intuition
+- body: Until the end of the encounter, whenever you or any ally damages the target
+    using an ability, that creature can spend a Recovery. If the target is reduced
+    to 0 Stamina before the end of the encounter, you can use a free triggered action
+    to move this effect to another creature within distance.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

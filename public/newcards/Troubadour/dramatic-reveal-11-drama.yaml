@@ -1,0 +1,20 @@
+body:
+- body: Until the end of the encounter, whenever you reduce a creature to 0 Stamina
+    using an ability, you can use a free triggered action to teleport an ally within
+    distance of that ability into the creature's space in a plume of rose petals.
+    You or the teleported ally can then make a melee free strike.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: A little stage trickery, and where once stood a foe, now stands a friend!
+  keywords:
+  - Magic
+  target: Self
+  title: Dramatic Reveal
+  topMatter: Troubadour Level 8 Ability
+level: 8
+type: Maneuver
+version: 2

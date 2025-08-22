@@ -1,4 +1,23 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 4
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 6
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 10
+- body: Each ally in the area deals fire damage equal to your Intuition score with
+    their next strike made before the end of their next turn.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 3 burst

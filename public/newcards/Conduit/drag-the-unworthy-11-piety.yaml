@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage; slide 3
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: holy damage; slide 4
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: holy damage; slide 6
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Intuition
+- body: Each ally the target comes adjacent to during the forced movement can spend
+    a Recovery.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

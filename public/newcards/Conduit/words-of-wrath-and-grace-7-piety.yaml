@@ -1,4 +1,22 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 2
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 7
+- body: Each ally in the area can spend a Recovery.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 5 burst

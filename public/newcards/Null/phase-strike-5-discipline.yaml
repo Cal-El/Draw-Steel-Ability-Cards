@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: the target goes out of phase (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: the target goes out of phase (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: the target goes out of phase (save ends)
+      strength: 2
+- body: A target who goes out of phase is slowed, has their stability reduced by 2,
+    and can't obtain a tier 3 outcome on ability rolls.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: For a moment, your foe slips out of phase with this manifold.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Phase Strike
+  topMatter: Null Level 1 Ability
+level: 1
+type: Main action
+version: 2

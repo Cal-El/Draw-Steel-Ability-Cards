@@ -1,4 +1,41 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: the target has fire weakness 3 (save ends)
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: the target has fire weakness 5 (save ends)
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: the target has fire weakness 7 (save ends)
+      strength: 2
+- body: While the target has fire weakness from this ability, you can choose to have
+    your abilities deal fire damage to the target instead of holy damage.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1 or ranged 5

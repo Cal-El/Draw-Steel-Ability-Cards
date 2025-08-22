@@ -1,0 +1,18 @@
+body:
+- body: You take a bonus turn immediately after the triggering creature. This ability
+    can be used only once per combat round.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You show shadows what true speed is.
+  keywords:
+  - Psionic
+  target: Self
+  title: Time Loop
+  topMatter: Null Level 9 Ability
+level: 9
+type: Free triggered
+version: 2

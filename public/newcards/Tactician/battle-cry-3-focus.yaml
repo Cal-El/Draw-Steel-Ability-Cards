@@ -1,4 +1,13 @@
-body: []
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: Each target gains 1 surge.
+  t2:
+    baseEffect: Each target gains 2 surges.
+  t3:
+    baseEffect: Each target gains 3 surges.
 header:
   distance:
     display: Ranged 10

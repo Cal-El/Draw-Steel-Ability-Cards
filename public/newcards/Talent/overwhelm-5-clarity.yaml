@@ -1,0 +1,55 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Intuition
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Intuition
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 2
+- body: You start crying, and you can't use triggered actions or make free strikes
+    until the end of the target's next turn.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You overload their senses, turning all their subconscious thoughts into
+    conscious ones.
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telepathy
+  target: One creature
+  title: Overwhelm
+  topMatter: Talent Level 2 Ability
+level: 2
+type: Main action
+version: 2

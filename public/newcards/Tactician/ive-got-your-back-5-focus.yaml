@@ -1,4 +1,28 @@
-body: []
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; taunted (EoT)
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+  t2:
+    baseEffect: damage; taunted (EoT)
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Reason
+  t3:
+    baseEffect: damage; taunted (EoT)
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Reason
+- body: One ally adjacent to the target can spend a Recovery.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 5

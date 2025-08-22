@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+- body: Until the start of your next turn, enemies take a bane on ability rolls made
+    against you or any ally adjacent to you.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

@@ -1,4 +1,10 @@
-body: []
+body:
+- body: The wall lasts until the end of the encounter or until you are dying, and
+    can be placed in occupied squares. Creatures can enter and pass through the wall.
+    Each enemy who enters the area for the first time in a combat round or starts
+    their turn there takes 15 damage.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 15 wall within 10

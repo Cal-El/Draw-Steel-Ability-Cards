@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage; vertical push 8
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: fire damage; vertical push 10
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: fire damage; vertical push 15
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Agility
+- body: The ground beneath a 3-cube area around the target's starting position is
+    difficult terrain.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1 or ranged 10
+    values: []
+  flavour: You attach your most potent explosive to your foe. Under less pressing
+    circumstances, you're sure you could launch them into orbit.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: To the Stars
+  topMatter: Shadow Level 9 Ability
+level: 9
+type: Main action
+version: 2

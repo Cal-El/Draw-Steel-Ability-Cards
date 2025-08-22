@@ -1,0 +1,38 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 9
+  t2:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 14
+  t3:
+    baseEffect: damage; push 7
+    damage:
+      baseValue: 19
+- body: When a target would end this forced movement by colliding with a creature
+    or object, they take damage as usual, then are pushed the remaining distance away
+    from the creature or object in the direction they came from. As long as forced
+    movement remains, this effect continues if the target collides with another creature
+    or object.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You knock around enemies like playthings.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Two creatures or objects
+  title: Rebounding Storm
+  topMatter: Fury Level 5 Ability
+level: 5
+type: Main action
+version: 2

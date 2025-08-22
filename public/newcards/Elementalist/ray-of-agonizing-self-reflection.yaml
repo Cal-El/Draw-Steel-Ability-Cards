@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: slowed (save ends)
+      strength: 2
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You inflict pain and doubt in equal measure.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  - Void
+  target: One creature or object
+  title: Ray of Agonizing Self-Reflection
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

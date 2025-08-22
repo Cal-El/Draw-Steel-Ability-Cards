@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: cold damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Might
+      effect: slowed (EoT)
+      strength: 0
+  t2:
+    baseEffect: cold damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Might
+      effect: slowed (EoT)
+      strength: 1
+  t3:
+    baseEffect: cold damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Might
+      effect: slowed (EoT)
+      strength: 2
+- body: You are slowed until the end of your next turn. Additionally, a target slowed
+    by this ability is restrained instead.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You blast a foe with a pulse of cold energy.
+  keywords:
+  - Cryokinesis
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Hoarfrost
+  topMatter: Talent Level 1 Ability
+level: 1
+type: Main action
+version: 2

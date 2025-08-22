@@ -1,4 +1,10 @@
-body: []
+body:
+- body: The target can use a signature ability as a free triggered action.
+  isEffect: true
+  title: Effect
+- body: You target two allies instead of one.
+  isEffect: true
+  title: Spend 5 Focus
 header:
   distance:
     display: Ranged 10

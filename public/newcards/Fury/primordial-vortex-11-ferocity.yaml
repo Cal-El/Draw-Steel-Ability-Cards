@@ -1,0 +1,36 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; vertical pull 3
+    damage:
+      baseValue: 3
+  t2:
+    baseEffect: damage; vertical pull 5
+    damage:
+      baseValue: 5
+  t3:
+    baseEffect: damage; vertical pull 7
+    damage:
+      baseValue: 8
+- body: If this forced movement causes a target to slam into you, you take no damage
+    from the collision and the target takes the damage you would have taken.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You channel the power of the Primordial Chaos to pull foes to you.
+  keywords:
+  - Area
+  - Magic
+  - Melee
+  - Weapon
+  target: Each enemy in the area
+  title: Primordial Vortex
+  topMatter: Fury Level 9 Ability
+level: 9
+type: Main action
+version: 2

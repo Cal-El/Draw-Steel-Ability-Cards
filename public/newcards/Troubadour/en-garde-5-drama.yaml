@@ -1,0 +1,41 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Agility
+- body: The target can make a melee free strike against you. If they do, you can make
+    a melee free strike against the target.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Wait, it's... Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: En Garde!
+  topMatter: Troubadour Level 2 Ability
+level: 2
+type: Main action
+version: 2

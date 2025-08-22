@@ -1,0 +1,18 @@
+body:
+- body: You take half the damage, negate any effects associated with the damage for
+    you, and gain 3 surges.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You absorb an attack to empower your body.
+  keywords:
+  - Psionic
+  target: Self
+  title: Inertial Absorption
+  topMatter: Null Level 9 Ability
+level: 9
+type: Free triggered
+version: 2

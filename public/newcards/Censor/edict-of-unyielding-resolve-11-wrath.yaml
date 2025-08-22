@@ -1,4 +1,8 @@
-body: []
+body:
+- body: Until the end of the encounter or until you are dying, each target who starts
+    their turn in the area gains 10 temporary Stamina.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 2 aura

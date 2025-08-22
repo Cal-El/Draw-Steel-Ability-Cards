@@ -1,4 +1,31 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 4
+    potency:
+      characteristic: Intuition
+      effect: prone and can't stand (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 7
+    potency:
+      characteristic: Intuition
+      effect: prone and can't stand (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 11
+    potency:
+      characteristic: Intuition
+      effect: prone and can't stand (save ends)
+      strength: 2
 header:
   distance:
     display: 4 cube within 10

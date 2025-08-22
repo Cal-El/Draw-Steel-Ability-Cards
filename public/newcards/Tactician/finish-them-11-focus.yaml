@@ -1,4 +1,8 @@
-body: []
+body:
+- body: The target is killed. Additionally, the creature who caused the target to
+    be winded can spend a Recovery.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

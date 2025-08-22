@@ -1,0 +1,21 @@
+body:
+- body: You target a creature adjacent to you with the same strike, using the same
+    power roll as the triggering strike.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Once you taste your foe's blood, you become more efficient and turn every
+    killing blow into an opportunity.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Self
+  title: Death Strike
+  topMatter: Fury Level 6 Ability
+level: 6
+type: Free triggered
+version: 2

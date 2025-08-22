@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+- body: One ally within distance gains a number of surges equal to the tier outcome
+    of your power roll.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

@@ -1,0 +1,31 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+  t2:
+    baseEffect: damage; push 1
+    damage:
+      baseValue: 8
+  t3:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 11
+header:
+  distance:
+    display: 1 burst
+    values: []
+  flavour: You hew about you with your mighty weapon, hurling enemies backward.
+  keywords:
+  - Area
+  - Melee
+  - Weapon
+  target: Each enemy in the area
+  title: Back!
+  topMatter: Fury Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: bleeding (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: bleeding (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: bleeding (save ends)
+      strength: 2
+- body: While bleeding this way, the target takes damage equal to your Might score
+    at the end of each of your turns.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Hard for them to fight when they're busy holding in their giblets.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Your Entrails Are Your Extrails!
+  topMatter: Fury Level 1 Ability
+level: 1
+type: Main action
+version: 2

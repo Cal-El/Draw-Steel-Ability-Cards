@@ -1,4 +1,28 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Intuition
+- body: One ally within distance can spend any number of Recoveries.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

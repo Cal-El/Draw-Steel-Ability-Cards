@@ -1,0 +1,21 @@
+body:
+- body: The target shifts up to a number of squares equal to your Reason score.
+  isEffect: true
+  title: Effect
+- body: The target can use a maneuver.
+  isEffect: true
+  title: Spend 2 Clarity
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: To your ally, it seems as though the world has slowed down.
+  keywords:
+  - Psionic
+  - Ranged
+  target: Self or one creature
+  title: Accelerate
+  topMatter: Talent Level 1 Ability
+level: 1
+type: Maneuver
+version: 2

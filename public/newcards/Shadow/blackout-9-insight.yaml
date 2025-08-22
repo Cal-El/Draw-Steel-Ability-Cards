@@ -1,0 +1,22 @@
+body:
+- body: A black cloud fills the area until the end of your next turn, granting you
+    and your allies concealment against enemies. While you are in the area, whenever
+    an enemy ends their turn in the area, you can use a free triggered action to shift
+    to a new location within the area and make a free strike against them.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You cause a plume of shadow to erupt from your eyes and create a cloud
+    of darkness.
+  keywords:
+  - Area
+  - Magic
+  target: Special
+  title: Blackout
+  topMatter: Shadow Level 5 Ability
+level: 5
+type: Maneuver
+version: 2

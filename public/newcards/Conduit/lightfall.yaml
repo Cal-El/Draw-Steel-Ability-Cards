@@ -1,4 +1,23 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 2
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+- body: You can teleport yourself and each ally in the area to unoccupied spaces in
+    the area.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 2 burst

@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+- body: You or one ally within distance gains temporary Stamina equal to your Intuition
+    score.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

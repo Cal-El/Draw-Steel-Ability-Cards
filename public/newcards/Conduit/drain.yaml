@@ -1,4 +1,28 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Intuition
+- body: You or one ally within distance can spend a Recovery.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

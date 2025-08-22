@@ -1,0 +1,25 @@
+body:
+- body: 'A guest star appears to help you during the encounter: either a bystander
+    within distance uplifted by your magic, or a mysterious new hero who appears in
+    an unoccupied space within distance. This guest star is controlled by you, has
+    their own turn, and shares your characteristics. Their Stamina maximum is half
+    yours. They have no abilities other than your melee and ranged free strikes. At
+    the end of the encounter, or when the guest star is reduced to 0 Stamina, they
+    retreat or revert to a bystander. The same bystander can''t be uplifted this way
+    more than once during an encounter.'
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: We offered them a percentage of the gross. So they're working for free!
+  keywords:
+  - Magic
+  - Ranged
+  target: Special
+  title: Guest Star
+  topMatter: Troubadour Level 2 Ability
+level: 2
+type: Main action
+version: 2

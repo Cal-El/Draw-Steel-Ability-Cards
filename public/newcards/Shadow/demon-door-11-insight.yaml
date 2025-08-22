@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage; push 3
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: corruption damage; push 5
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: corruption damage; push 7
+    damage:
+      baseValue: 25
+      characteristicBonusOptions:
+      - Agility
+- body: On a critical hit, the target is grabbed by the demon and pulled through the
+    portal before it closes, never to be seen again.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 3
+    values: []
+  flavour: You create a temporary portal to allow a massive demonic hand to reach
+    through.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Demon Door
+  topMatter: Shadow Level 9 Ability
+level: 9
+type: Main action
+version: 2

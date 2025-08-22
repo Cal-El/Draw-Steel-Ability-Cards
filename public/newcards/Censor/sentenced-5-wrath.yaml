@@ -1,4 +1,41 @@
-body: []
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: restrained (save ends)
+      strength: 2
+- body: While the target is restrained this way, your abilities that impose forced
+    movement can still move them.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

@@ -1,3 +1,5 @@
+import re
+
 def getAbilityType(ability):
   if 'type' not in ability:
     return ''
@@ -5,3 +7,116 @@ def getAbilityType(ability):
   if type == 'Triggered':
     return 'Triggered Action'
   return type
+
+def parseBody(ability):
+  body = []
+  abilityType = getAbilityType(ability)
+  if abilityType == 'Triggered Action':
+    triggered = {}
+    triggered['isEffect'] = True
+    triggered['title'] = "Trigger"
+    triggered['body'] = ability['trigger']
+    body.append(triggered)
+  for block in ability['effects']:
+    if 'roll' in block:
+      body.append(parsePowerRoll(block))
+    if 'effect' in block:
+      effect = {}
+      effect['isEffect'] = True
+      if 'name' in block:
+        effect['title'] = block['name']
+      if 'cost' in block:
+        effect['title'] = block['cost']
+      effect['body'] = block['effect']
+      body.append(effect)
+  return body
+
+def parsePowerRoll(block):
+  powerRoll = {}
+  powerRoll['isPowerRoll'] = True
+  powerRoll['characteristicBonus'] = getCharacteristicList(block['roll'])
+  powerRoll['t1'] = parsePowerRollTier(block['t1'])
+  powerRoll['t2'] = parsePowerRollTier(block['t2'])
+  powerRoll['t3'] = parsePowerRollTier(block['t3'])
+  return powerRoll
+
+def getCharacteristicList(someString):
+  characteristics = []
+  lowerCase = someString.lower()
+  if 'might' in lowerCase:
+    characteristics.append('Might')
+  if 'agility' in lowerCase:
+    characteristics.append('Agility')
+  if 'reason' in lowerCase:
+    characteristics.append('Reason')
+  if 'intuition' in lowerCase:
+    characteristics.append('Intuition')
+  if 'presence' in lowerCase:
+    characteristics.append('Presence')
+  return characteristics
+
+def getPowerRollCharacteristicList(someString):
+  characteristics = []
+  if 'M' in someString:
+    characteristics.append('Might')
+  if 'A' in someString:
+    characteristics.append('Agility')
+  if 'R' in someString:
+    characteristics.append('Reason')
+  if 'I' in someString:
+    characteristics.append('Intuition')
+  if 'P' in someString:
+    characteristics.append('Presence')
+  return characteristics
+
+def getCharacteristic(someString):
+  if 'M' in someString:
+    return 'Might'
+  if 'A' in someString:
+    return 'Agility'
+  if 'R' in someString:
+    return 'Reason'
+  if 'I' in someString:
+    return 'Intuition'
+  if 'P' in someString:
+    return 'Presence'
+  return ''
+
+def getPotency(someString):
+  if someString == 'WEAK':
+    return 0
+  if someString == 'AVERAGE':
+    return 1
+  if someString == 'STRONG':
+    return 2
+  return 0
+
+def parsePowerRollTier(tier):
+  parsed = {}
+  r = re.search('^(([^ +]+ \+ )* *[\dMARIP]+ )*([^;\n]*(; .+?)*?(; the Director loses \d+ Malice)*)( \(see .*\))*(; (if the target has )*(M|A|R|I|P) < (WEAK|AVERAGE|STRONG), .*)*$', tier)
+  parsed['baseEffect'] = r.group(3).strip()
+  parts = tier.split(';')
+  for p in parts:
+    if 'damage' in p and '<' not in p:
+      pattern = '^(([\ddMAARIP]+ \+ )* *[\ddMAARIP]+) (.*)$'
+      d = re.search(pattern, p)
+      if not d:
+        continue
+      damageParts = d.group(1).split('+')
+      damage = {}
+      for x in damageParts: #TODO: handle kits if they get included at some point
+        if 'd' in x:
+          damage['otherBonus'] = x.strip()
+        elif 'M' in x or 'A' in x or 'R' in x or 'I' in x or 'P' in x:
+          damage['characteristicBonusOptions'] = getPowerRollCharacteristicList(x)
+        else:
+          damage['baseValue'] = int(x.strip())
+      parsed['damage'] = damage
+    elif '<' in p:
+      pot = re.search('(M|A|R|I|P) < (WEAK|AVERAGE|STRONG), (.*)', p)
+      potency = {}
+      potency['characteristic'] = getCharacteristic(pot.group(1))
+      potency['strength'] = getPotency(pot.group(2))
+      potency['effect'] = pot.group(3)
+      parsed['potency'] = potency
+  return parsed

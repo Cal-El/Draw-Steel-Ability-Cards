@@ -1,0 +1,41 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Reason
+- body: You slide one creature within 10 squares of the target up to 2 squares.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Whipping vines erupt from a foe's body to grasp at another close by.
+  keywords:
+  - Green
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: The Green Within, the Green Without
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,4 +1,8 @@
-body: []
+body:
+- body: You can target yourself instead of one creature with this ability. Each target
+    has damage immunity 5 until the start of your next turn.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

@@ -1,4 +1,37 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Presence
+      effect: the target takes a bane on their next power roll
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Presence
+      effect: the target takes a bane on their next power roll
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Presence
+      effect: the target takes a bane on their next power roll
+      strength: 2
 header:
   distance:
     display: Ranged 10

@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Reason
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Reason
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions:
+      - Reason
+- body: When the target ends their next turn, or if they drop to 0 Stamina before
+    then, each enemy adjacent to them takes fire damage equal to twice your Reason
+    score. Each affected enemy then gains this same effect.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your flames dance from kindling to kindling to kindling.
+  keywords:
+  - Fire
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Combustion Deferred
+  topMatter: Elementalist Level 5 Ability
+level: 5
+type: Main action
+version: 2

@@ -1,0 +1,24 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Push 1
+  t2:
+    baseEffect: Push 2
+  t3:
+    baseEffect: Push 3
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: Your instrument rings true and your music blows everyone away.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Power Chord
+  topMatter: Troubadour Level 1 Ability
+level: 1
+type: Maneuver
+version: 2

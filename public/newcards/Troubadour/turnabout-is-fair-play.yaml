@@ -1,0 +1,26 @@
+body:
+- body: The target makes an ability roll that has an edge, a double edge, a bane,
+    or a double bane.
+  isEffect: true
+  title: Trigger
+- body: An edge on the triggering roll becomes a bane, or a double edge becomes an
+    edge. A bane becomes an edge, or a double bane becomes a bane.
+  isEffect: true
+  title: Effect
+- body: An edge on the triggering roll becomes a double bane, or a double edge is
+    negated. A bane becomes a double edge, or a double bane is negated.
+  isEffect: true
+  title: Spend 3 Drama
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: All's fair in love and whatever.
+  keywords:
+  - Ranged
+  target: One creature
+  title: Turnabout Is Fair Play
+  topMatter: Troubadour Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

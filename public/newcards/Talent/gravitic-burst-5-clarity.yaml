@@ -1,0 +1,35 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; vertical push 2
+    damage:
+      baseValue: 3
+  t2:
+    baseEffect: damage; vertical push 4
+    damage:
+      baseValue: 6
+  t3:
+    baseEffect: damage; vertical push 6
+    damage:
+      baseValue: 9
+- body: The size of the burst increases by 1, and you are weakened until the end of
+    your turn.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: 1 burst
+    values: []
+  flavour: Everyone get away from me!
+  keywords:
+  - Area
+  - Psionic
+  - Telekinesis
+  target: Each enemy in the area
+  title: Gravitic Burst
+  topMatter: Talent Level 2 Ability
+level: 2
+type: Main action
+version: 2

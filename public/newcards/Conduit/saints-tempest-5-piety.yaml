@@ -1,4 +1,19 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: lightning damage; vertical slide 1
+    damage:
+      baseValue: 2
+  t2:
+    baseEffect: lightning damage; vertical slide 2
+    damage:
+      baseValue: 5
+  t3:
+    baseEffect: lightning damage; vertical slide 3
+    damage:
+      baseValue: 7
 header:
   distance:
     display: 3 cube within 10

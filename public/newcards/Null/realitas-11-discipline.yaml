@@ -1,0 +1,59 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: dazed
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: dazed
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: dazed
+      strength: 2
+- body: While dazed this way, the target takes psychic damage equal to twice your
+    Intuition score at the start of each of your turns. If this ability causes a creature
+    who is not a leader or solo creature to become winded, they are instead reduced
+    to 0 Stamina. Any creature reduced to 0 Stamina by this ability is forgotten by
+    all creatures of your level or lower in the timescape who are not present in the
+    encounter. Loved ones of the forgotten creature retain a faint sense of melancholy.
+    This effect can be reversed only at the Director's discretion.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Your essential hyperreality disrupts your enemy's connection to existence.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Realitas
+  topMatter: Null Level 9 Ability
+level: 9
+type: Main action
+version: 2

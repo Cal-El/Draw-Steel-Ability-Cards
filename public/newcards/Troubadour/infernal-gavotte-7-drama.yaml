@@ -1,0 +1,47 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 5
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 7
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 10
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 2
+- body: Each ally in the area can shift up to 2 squares.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: A spicy performance lights a fire under your allies' feet.
+  keywords:
+  - Area
+  - Magic
+  - Melee
+  - Weapon
+  target: Each enemy in the area
+  title: Infernal Gavotte
+  topMatter: Troubadour Level 3 Ability
+level: 3
+type: Main action
+version: 2

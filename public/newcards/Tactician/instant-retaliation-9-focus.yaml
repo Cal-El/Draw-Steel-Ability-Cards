@@ -1,4 +1,29 @@
-body: []
+body:
+- body: The target takes half the damage. You then make a power roll against the triggering
+    creature.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: < WEAK, dazed (save ends)
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: < AVERAGE, dazed (save ends)
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: < STRONG, dazed (save ends)
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 2
 header:
   distance:
     display: Melee 1

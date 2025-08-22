@@ -1,4 +1,30 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 21
+      characteristicBonusOptions:
+      - Might
+- body: Until the end of the encounter, while the target is judged by you, you can
+    choose to make them the source of any of your abilities. Additionally, the target
+    counts as an ally for the purpose of flanking.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

@@ -1,0 +1,21 @@
+body:
+- body: The target takes damage from a melee strike.
+  isEffect: true
+  title: Trigger
+- body: The target makes a free strike against the creature who made the triggering
+    strike.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: '"I''d have brought treats had I known I''d be fighting a dog."'
+  keywords:
+  - Melee
+  target: Self or one ally
+  title: Riposte
+  topMatter: Troubadour Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

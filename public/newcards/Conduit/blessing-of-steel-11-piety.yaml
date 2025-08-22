@@ -1,4 +1,8 @@
-body: []
+body:
+- body: Until the end of the encounter, any ability roll made against a target takes
+    a bane and each target has damage immunity 5.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 5 aura

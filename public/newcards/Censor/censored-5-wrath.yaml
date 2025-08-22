@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+- body: When a target who is not a leader or solo creature is made winded by this
+    ability, they are reduced to 0 Stamina.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

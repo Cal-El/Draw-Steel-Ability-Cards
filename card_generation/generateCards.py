@@ -41,6 +41,7 @@ abilitiesPath = path.join(rulesPath, 'Abilities')
 manifest = []
 
 def createCards(className):
+  print('Creating cards for ' + className)
   makedirs(path.join(cardsPath, className))
   classManifest = []
   for root, _, files in walk(path.join(abilitiesPath, className)):
@@ -48,7 +49,7 @@ def createCards(className):
       if not file.endswith('.json'):
         print('File ' + file + ' is not the correct format')
         continue
-      with open(path.join(root, file)) as a:
+      with open(path.join(root, file), encoding='utf-8') as a:
         ability = json.load(a)
         if 'metadata' not in ability or 'feature_type' not in ability['metadata'] or ability['metadata']['feature_type'] == 'trait':
           continue
@@ -65,7 +66,7 @@ def createCards(className):
         cardData['header']['distance']['display'] = ability['distance'] # TODO: parse out values
         cardData['header']['distance']['values'] = []
         cardData['header']['target'] = ability['target']
-        cardData['body'] = []
+        cardData['body'] = parseBody(ability)
 
         fileName = ability['metadata']['item_id'] + '.yaml'
         with open(path.join(cardsPath, className, fileName), 'w') as c:
@@ -76,8 +77,14 @@ def createCards(className):
 
 # Create censor cards
 manifest = manifest + createCards('Censor')
-manifest = manifest + createCards('Tactician')
 manifest = manifest + createCards('Conduit')
+manifest = manifest + createCards('Elementalist')
+manifest = manifest + createCards('Fury')
+manifest = manifest + createCards('Null')
+manifest = manifest + createCards('Shadow')
+manifest = manifest + createCards('Tactician')
+manifest = manifest + createCards('Talent')
+manifest = manifest + createCards('Troubadour')
 
 print('Creating card manifest')
 with open(path.join(cardsPath, 'card-manifest.json'), 'w') as m:

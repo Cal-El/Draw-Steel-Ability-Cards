@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Reason
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Reason
+- body: If the target is within distance at the start of your turn, you can make the
+    power roll again without spending essence (no action required).
+  isEffect: true
+  title: Persistent 1
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Fire engulfs your target and continues to churn.
+  keywords:
+  - Fire
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: The Flesh, a Crucible
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

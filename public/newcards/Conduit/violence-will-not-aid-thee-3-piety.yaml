@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+- body: The first time on a turn that the target deals damage to another creature,
+    the target of this ability takes 1d10 lightning damage (save ends).
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

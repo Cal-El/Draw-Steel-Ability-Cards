@@ -1,4 +1,22 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage; push 1
+    damage:
+      baseValue: 2
+  t2:
+    baseEffect: sonic damage; push 2
+    damage:
+      baseValue: 3
+  t3:
+    baseEffect: sonic damage; push 3
+    damage:
+      baseValue: 5
+- body: You can push each willing ally in the area the same distance, ignoring stability.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 3 cube within 10

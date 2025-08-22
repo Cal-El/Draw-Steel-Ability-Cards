@@ -1,4 +1,10 @@
-body: []
+body:
+- body: Until the end of the encounter or until the target is dying, at the start
+    of each of the target's turns, they gain a bonus to speed and a bonus to rolled
+    damage equal to the number of allies within 10 squares of them. This bonus lasts
+    until the start of their next turn.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

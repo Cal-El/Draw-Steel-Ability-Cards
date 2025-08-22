@@ -1,4 +1,8 @@
-body: []
+body:
+- body: You mark two enemies within 10 squares of you. Each target can shift up to
+    their speed. You and each target gain 2 surges.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 2 burst

@@ -1,4 +1,44 @@
-body: []
+body:
+- body: You mark the target.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 2
+- body: Before the start of your next turn, the first time any ally deals damage to
+    any target marked by you, that ally can spend a Recovery.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1 or ranged 5

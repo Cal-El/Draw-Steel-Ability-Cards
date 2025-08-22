@@ -1,4 +1,28 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Might
+- body: You and each ally adjacent to the target gain 10 temporary Stamina.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

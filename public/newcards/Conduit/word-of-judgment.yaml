@@ -1,4 +1,13 @@
-body: []
+body:
+- body: The target would take damage from an ability that uses a power roll.
+  isEffect: true
+  title: Trigger
+- body: The power roll takes a bane against the target.
+  isEffect: true
+  title: Effect
+- body: The power roll has a double bane against the target.
+  isEffect: true
+  title: Spend 1 Piety
 header:
   distance:
     display: Ranged 10

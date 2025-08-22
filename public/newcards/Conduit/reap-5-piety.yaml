@@ -1,4 +1,8 @@
-body: []
+body:
+- body: Until the start of your next turn, each time a target kills an enemy, they
+    regain Stamina equal to 5 + your Intuition score.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

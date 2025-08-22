@@ -1,0 +1,42 @@
+body:
+- body: You attach a small bomb to a creature. If you are hidden from the creature,
+    they don't notice the bomb and you remain hidden. The creature otherwise notices
+    the bomb and can disarm and remove it as a main action. If they don't, at the
+    end of your next turn, the bomb detonates. When the bomb detonates, you make a
+    power roll targeting each enemy within 2 squares of it.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Agility
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Explosives are best when they're attached to an enemy.
+  keywords:
+  - Ranged
+  target: One creature
+  title: Sticky Bomb
+  topMatter: Shadow Level 2 Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,44 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Might
+- body: If the target is a minion or is winded but isn't a leader or solo creature,
+    they are reduced to 0 Stamina before this ability's damage is dealt. If the target
+    is killed by this damage, you can deal any damage over what was required to kill
+    them to another creature within 5 squares of the target.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You strike so no damage is wasted.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Overkill
+  topMatter: Fury Level 8 Ability
+level: 8
+type: Main action
+version: 2

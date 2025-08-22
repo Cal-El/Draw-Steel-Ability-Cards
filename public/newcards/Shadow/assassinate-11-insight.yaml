@@ -1,0 +1,41 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 24
+      characteristicBonusOptions:
+      - Agility
+- body: A target who is not a minion, leader, or solo creature and who is winded after
+    taking this damage is reduced to 0 Stamina.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: A practiced attack will instantly kill an already weakened foe.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Assassinate
+  topMatter: Shadow Level 8 Ability
+level: 8
+type: Main action
+version: 2

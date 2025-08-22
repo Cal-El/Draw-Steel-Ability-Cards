@@ -1,0 +1,43 @@
+body:
+- body: You and the target are removed from the encounter map until the start of your
+    next turn. You reappear in the spaces you left or the nearest unoccupied spaces.
+    Make a power roll upon your return.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions:
+      - Agility
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You sweep your foe off their feet and plunge them into absolute darkness.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Into the Shadows
+  topMatter: Shadow Level 5 Ability
+level: 5
+type: Main action
+version: 2

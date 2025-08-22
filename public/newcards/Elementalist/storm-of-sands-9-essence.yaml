@@ -1,0 +1,41 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+- body: The area lasts until the start of your next turn. It is difficult terrain
+    for enemies, and you and your allies have concealment while in the area.
+  isEffect: true
+  title: Effect
+- body: The area remains until the start of your next turn, and you can move it up
+    to 5 squares (no action required). As a maneuver, you can make the power roll
+    again without spending essence.
+  isEffect: true
+  title: Persistent 1
+header:
+  distance:
+    display: 4 cube within 10
+    values: []
+  flavour: Dirt and debris swirl into a dark, pulsing hurricane.
+  keywords:
+  - Area
+  - Earth
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Storm of Sands
+  topMatter: Elementalist Level 5 Ability
+level: 5
+type: Main action
+version: 2

@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage; push 7
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Might
+- body: When the target ends this forced movement, each creature within 2 squares
+    of the target is pushed 3 squares.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You strike an enemy hard enough to be a projectile that knocks a crowd
+    of creatures around.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Force of Storms
+  topMatter: Fury Level 6 Ability
+level: 6
+type: Main action
+version: 2

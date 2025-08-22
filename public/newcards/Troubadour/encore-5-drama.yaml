@@ -1,0 +1,21 @@
+body:
+- body: You use an ability that you have observed being used this combat round. The
+    ability must have the Strike keyword, cost 5 or fewer of a Heroic Resource, and
+    cost no Malice. When you make the strike, you use your Presence score for any
+    power rolls, and any damage you deal is sonic damage.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Special
+    values: []
+  flavour: Again! Again!
+  keywords:
+  - Magic
+  - Strike
+  target: Special
+  title: Encore
+  topMatter: Troubadour Level 2 Ability
+level: 2
+type: Main action
+version: 2

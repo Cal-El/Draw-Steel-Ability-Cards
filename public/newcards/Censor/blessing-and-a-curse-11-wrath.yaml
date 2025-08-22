@@ -1,4 +1,12 @@
-body: []
+body:
+- body: The target makes a power roll.
+  isEffect: true
+  title: Trigger
+- body: The target obtains a tier 1 or tier 3 outcome on their power roll (your choice).
+    You can then choose another target within distance, who obtains the opposite outcome
+    on their next power roll.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

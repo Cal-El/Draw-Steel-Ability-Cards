@@ -1,0 +1,47 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 21
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 28
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Might
+      effect: bleeding (save ends)
+      strength: 2
+- body: This ability can't obtain better than a tier 2 outcome unless the target is
+    at maximum distance. If you obtain a tier 3 outcome with a natural 17 or higher,
+    you gain 3 surges that you can use immediately.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 3
+    values: []
+  flavour: If you can land the strike, the crowd goes wild.
+  keywords:
+  - Charge
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Expert Fencer
+  topMatter: Troubadour Level 9 Ability
+level: 9
+type: Main action
+version: 2

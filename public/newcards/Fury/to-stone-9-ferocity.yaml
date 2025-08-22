@@ -1,0 +1,56 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Might
+      effect: restrained (save ends)
+      strength: 2
+- body: While the target is slowed this way, any other effect that would make the
+    target slowed instead makes them restrained by this ability. Additionally, a creature
+    who fails the saving throw while restrained this way is petrified until they are
+    given a supernatural cure or you choose to reverse the effect (no action required).
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You channel the Primordial Chaos into blows that petrify your foe... literally.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: To Stone!
+  topMatter: Fury Level 5 Ability
+level: 5
+type: Main action
+version: 2

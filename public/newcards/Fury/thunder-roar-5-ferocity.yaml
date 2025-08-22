@@ -1,0 +1,20 @@
+body:
+- body: The targets are force moved one at a time, starting with the target nearest
+    to you, and can be pushed into other targets in the same line.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 5 x 1 line within 1
+    values: []
+  flavour: You unleash a howl that hurls your enemies back.
+  keywords:
+  - Area
+  - Melee
+  - Weapon
+  target: Each enemy in the area
+  title: Thunder Roar
+  topMatter: Fury Level 1 Ability
+level: 1
+type: Main action
+version: 2

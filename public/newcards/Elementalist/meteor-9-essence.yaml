@@ -1,0 +1,35 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: You teleport the target up to 4 squares.
+  t2:
+    baseEffect: You teleport the target up to 6 squares.
+  t3:
+    baseEffect: You teleport the target up to 8 squares.
+- body: If the target is teleported to a space where they would fall, they immediately
+    do so, treating the fall as if their Agility score were 0. The target takes fire
+    damage from the fall, and each enemy within 3 squares of where they land takes
+    the same amount of fire damage. The ground within 3 squares of where the target
+    lands is difficult terrain.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You teleport the target into the air and let the ground and the elemental
+    force of fire do the rest.
+  keywords:
+  - Earth
+  - Fire
+  - Magic
+  - Ranged
+  - Void
+  target: One creature or object
+  title: Meteor
+  topMatter: Elementalist Level 6 Ability
+level: 6
+type: Main action
+version: 2

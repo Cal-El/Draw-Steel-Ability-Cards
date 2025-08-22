@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: cold damage
+    damage:
+      baseValue: 6
+    potency:
+      characteristic: Agility
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: cold damage
+    damage:
+      baseValue: 9
+    potency:
+      characteristic: Agility
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: cold damage
+    damage:
+      baseValue: 13
+    potency:
+      characteristic: Agility
+      effect: slowed (save ends)
+      strength: 2
+header:
+  distance:
+    display: 3 cube within 1
+    values: []
+  flavour: You drastically increase the local entropy.
+  keywords:
+  - Area
+  - Psionic
+  - Weapon
+  target: Each enemy in the area
+  title: Entropic Field
+  topMatter: Null Level 2 Ability
+level: 2
+type: Main action
+version: 2

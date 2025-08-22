@@ -1,0 +1,22 @@
+body:
+- body: Ability rolls made against the target take a bane until the start of your
+    next turn. Whenever the target takes damage while under this effect, they can
+    use a triggered action to make a free strike against the source of the damage.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 2
+    values: []
+  flavour: You give a target a glimpse into the future so that they're ready for what
+    comes next.
+  keywords:
+  - Chronopathy
+  - Melee
+  - Psionic
+  target: Self or one ally
+  title: Precognition
+  topMatter: Talent Level 1 Ability
+level: 1
+type: Main action
+version: 2

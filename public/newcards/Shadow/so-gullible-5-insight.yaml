@@ -1,0 +1,20 @@
+body:
+- body: You use your Clever Trick ability with no insight cost against the triggering
+    creature and strike. You can teleport to an unoccupied space within 3 squares
+    of that creature and can make a free strike against them. You can then spend a
+    Recovery.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: When your enemy strikes, you reveal you were in a different place all along.
+  keywords:
+  - Magic
+  target: Self
+  title: So Gullible
+  topMatter: Shadow Level 2 Ability
+level: 2
+type: Free triggered
+version: 2

@@ -1,4 +1,14 @@
-body: []
+body:
+- body: The target deals damage to another creature.
+  isEffect: true
+  title: Trigger
+- body: The target gains 2 surges, which they can use on the triggering damage.
+  isEffect: true
+  title: Effect
+- body: If the damage has any potency effect associated with it, the potency is increased
+    by 1.
+  isEffect: true
+  title: Spend 1 Focus
 header:
   distance:
     display: Ranged 10

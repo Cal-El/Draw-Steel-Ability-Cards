@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 20
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: weakened and slowed (save ends)
+      strength: 2
+- body: 'This ability gains an edge against a target with a soul (see *[Draw Steel:
+    Monsters](https://mcdm.gg/DS-Monsters)*). After you make the power roll, you or
+    one ally within distance have a double edge on the next power roll you make before
+    the end of the encounter.'
+  isEffect: true
+  title: Effect
+- body: You feel dispirited until you finish a respite. If you obtain a tier 3 outcome
+    on the power roll, you and the target each have damage weakness 5 (save ends).
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You tug at the strings of the foe's anima and unravel them, allowing someone
+    else to take advantage of their drive.
+  keywords:
+  - Animapathy
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Doubt
+  topMatter: Talent Level 8 Ability
+level: 8
+type: Main action
+version: 2

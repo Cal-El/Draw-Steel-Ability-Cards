@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: dazed and slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: dazed and slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Intuition
+      effect: dazed and slowed (save ends)
+      strength: 2
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You focus your psionic technique into a concussive punch.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Stunning Blow
+  topMatter: Null Level 1 Ability
+level: 1
+type: Main action
+version: 2

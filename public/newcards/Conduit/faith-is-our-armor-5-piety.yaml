@@ -1,4 +1,16 @@
-body: []
+body:
+- body: You can target yourself instead of one ally with this ability.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: The target gains 5 temporary Stamina.
+  t2:
+    baseEffect: The target gains 10 temporary Stamina.
+  t3:
+    baseEffect: The target gains 15 temporary Stamina.
 header:
   distance:
     display: Ranged 10

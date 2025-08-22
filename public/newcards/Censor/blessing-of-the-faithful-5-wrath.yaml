@@ -1,4 +1,8 @@
-body: []
+body:
+- body: Until the end of the encounter or until you are dying, each target gains 1
+    surge at the end of each of your turns.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 3 aura

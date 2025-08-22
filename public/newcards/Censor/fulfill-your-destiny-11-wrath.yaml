@@ -1,4 +1,12 @@
-body: []
+body:
+- body: You or another hero ends their turn.
+  isEffect: true
+  title: Trigger
+- body: The target takes their turn after the triggering hero, and immediately removes
+    all conditions and negative effects on themself. During their turn, the target
+    has a double edge on power rolls.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

@@ -1,0 +1,56 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Might
+      effect: the target is suppressed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 19
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Might
+      effect: the target is suppressed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 24
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Might
+      effect: the target is suppressed (save ends)
+      strength: 2
+- body: While suppressed, a target takes psychic damage equal to twice your Intuition
+    score at the start of their turns, whenever they use a supernatural ability, or
+    whenever they use an ability that costs Malice.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You focus your null field into a pressure point strike that prevents your
+    foe from channeling sorcery.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Arcane Purge
+  topMatter: Null Level 8 Ability
+level: 8
+type: Main action
+version: 2

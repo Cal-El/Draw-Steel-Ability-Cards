@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+- body: As long as you have one or more allies within 5 squares of the target, you
+    gain 1 surge. If you are flanking the target when you use this ability, choose
+    one ally who is flanking with you. That ally also gains 1 surge.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: They can't watch both of you at once.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: You Were Watching the Wrong One
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Main action
+version: 2

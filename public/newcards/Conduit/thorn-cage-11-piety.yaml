@@ -1,4 +1,41 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 21
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 2
+- body: While restrained this way, the target takes 10 damage at the start of each
+    of your turns.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

@@ -1,0 +1,20 @@
+body:
+- body: While this performance is active, each target who starts their turn in the
+    area gains a +2 bonus to speed until the end of their turn.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: Taps, kicks, steps. It's all "choreography."
+  keywords:
+  - Area
+  - Magic
+  - Performance
+  target: Self and each ally in the area
+  title: Choreography
+  topMatter: Troubadour Level 1 Ability
+level: 1
+type: No action
+version: 2

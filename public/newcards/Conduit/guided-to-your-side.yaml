@@ -1,4 +1,9 @@
-body: []
+body:
+- body: Each target is teleported to unoccupied spaces within 5 squares of a willing
+    creature who you are bonded to with your Invocation of the Heart feature. You
+    don't need line of effect to the bonded creature but you must be on the same world.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

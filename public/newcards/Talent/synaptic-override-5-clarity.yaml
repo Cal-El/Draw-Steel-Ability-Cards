@@ -1,0 +1,36 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: The target makes a free strike against one enemy of your choice.
+  t2:
+    baseEffect: The target shifts up to their speed and uses their signature ability
+      against any enemies of your choice.
+  t3:
+    baseEffect: The target moves up to their speed and uses their signature ability
+      against any enemies of your choice.
+- body: You control the target's movement. The target can't be moved in a way that
+    would harm them (such as over a cliff), leave them dying, or result in them suffering
+    a condition or other negative effect. However, you can move them to provoke opportunity
+    attacks.
+  isEffect: true
+  title: Effect
+- body: You take 1d6 damage and are weakened until the end of your turn.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You control an enemy's nervous system. How pleasant for them.
+  keywords:
+  - Psionic
+  - Ranged
+  - Telepathy
+  target: One enemy
+  title: Synaptic Override
+  topMatter: Talent Level 2 Ability
+level: 2
+type: Main action
+version: 2

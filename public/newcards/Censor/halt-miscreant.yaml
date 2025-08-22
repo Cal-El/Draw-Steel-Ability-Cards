@@ -1,4 +1,37 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Presence
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Presence
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Presence
+      effect: slowed (save ends)
+      strength: 2
 header:
   distance:
     display: Melee 1

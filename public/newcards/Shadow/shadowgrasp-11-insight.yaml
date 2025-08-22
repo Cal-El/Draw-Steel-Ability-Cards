@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 11
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 16
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 21
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 2
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: The shadows around you give way, allowing the shadow creature within you
+    to grasp at your foes.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Shadowgrasp
+  topMatter: Shadow Level 8 Ability
+level: 8
+type: Main action
+version: 2

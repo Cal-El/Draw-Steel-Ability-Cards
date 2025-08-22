@@ -1,0 +1,34 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 15
+- body: This ability deals your primordial damage type and ignores damage immunity.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 5 cube within 10
+    values: []
+  flavour: You summon your primordial storm.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Deluge
+  topMatter: Fury Level 9 Ability
+level: 9
+type: Main action
+version: 2

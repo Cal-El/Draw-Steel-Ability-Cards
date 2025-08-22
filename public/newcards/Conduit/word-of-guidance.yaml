@@ -1,4 +1,13 @@
-body: []
+body:
+- body: The target makes an ability roll for a damage-dealing ability.
+  isEffect: true
+  title: Trigger
+- body: The power roll gains an edge.
+  isEffect: true
+  title: Effect
+- body: The power roll has a double edge.
+  isEffect: true
+  title: Spend 1 Piety
 header:
   distance:
     display: Ranged 10

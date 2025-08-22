@@ -1,4 +1,7 @@
-body: []
+body:
+- body: Each target is invisible until the start of your next turn.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 4 burst

@@ -1,0 +1,20 @@
+body:
+- body: You ignore any effects associated with the damage that triggered your In All
+    This Confusion ability. Before you teleport, you can make a free strike against
+    a creature who damaged you to trigger In All This Confusion. After you teleport,
+    you can spend a Recovery.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: Your foe made a big mistake.
+  keywords:
+  - '-'
+  target: Self
+  title: Too Slow
+  topMatter: Shadow Level 2 Ability
+level: 2
+type: Free triggered
+version: 2

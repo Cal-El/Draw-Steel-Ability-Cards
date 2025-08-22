@@ -1,4 +1,42 @@
-body: []
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Presence
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 2
+- body: While frightened this way, if a target who is a leader or solo creature is
+    winded, they take an extra 25 psychic damage. If a target frightened this way
+    is not a leader or solo creature and is winded, they are reduced to 0 Stamina.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

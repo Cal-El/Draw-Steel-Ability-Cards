@@ -1,0 +1,39 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; vertical pull 1
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: psychic damage; vertical pull 2
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: psychic damage; vertical pull 3
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Agility
+header:
+  distance:
+    display: Melee 2
+    values: []
+  flavour: The force of your blow extends past the limits of your body, pulling your
+    enemy closer.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Magnetic Strike
+  topMatter: Null Level 1 Ability
+level: 1
+type: Main action
+version: 2

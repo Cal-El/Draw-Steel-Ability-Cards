@@ -1,4 +1,42 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Might
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 2
+- body: If the target is already frightened of you or another creature and this ability
+    would frighten them again, they instead take psychic damage equal to twice your
+    Presence score.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

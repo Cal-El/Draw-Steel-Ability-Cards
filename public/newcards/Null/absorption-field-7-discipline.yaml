@@ -1,0 +1,19 @@
+body:
+- body: Until the end of the encounter, the size of your Null Field ability increases
+    by 1. While the area of that ability is enlarged this way, each enemy in the area
+    takes a bane on ability rolls.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: Your null field absorbs kinetic energy.
+  keywords:
+  - Psionic
+  target: Self
+  title: Absorption Field
+  topMatter: Null Level 3 Ability
+level: 3
+type: Maneuver
+version: 2

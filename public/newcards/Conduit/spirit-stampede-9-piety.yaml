@@ -1,4 +1,31 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+    potency:
+      characteristic: Might
+      effect: prone and can't stand (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+    potency:
+      characteristic: Might
+      effect: prone and can't stand (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 11
+    potency:
+      characteristic: Might
+      effect: prone and can't stand (save ends)
+      strength: 2
 header:
   distance:
     display: 10 x 2 line within 5

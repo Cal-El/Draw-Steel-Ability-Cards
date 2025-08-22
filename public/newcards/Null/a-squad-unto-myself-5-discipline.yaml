@@ -1,0 +1,35 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+- body: You can take the Disengage move action as a free maneuver before or after
+    you use this ability.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: You move so quickly, it seems as though an army assaulted your foes.
+  keywords:
+  - Area
+  - Psionic
+  - Weapon
+  target: Each enemy in the area
+  title: A Squad Unto Myself
+  topMatter: Null Level 1 Ability
+level: 1
+type: Main action
+version: 2

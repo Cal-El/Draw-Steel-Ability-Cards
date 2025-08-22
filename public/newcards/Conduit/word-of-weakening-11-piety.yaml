@@ -1,4 +1,40 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 21
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 2
+- body: While weakened this way, the target has damage weakness 10.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

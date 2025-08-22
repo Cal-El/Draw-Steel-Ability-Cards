@@ -1,0 +1,17 @@
+body:
+- body: You gain 20 temporary Stamina.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: See how useless their weapons are!
+  keywords:
+  - Magic
+  target: Self
+  title: Steelbreaker
+  topMatter: Fury Level 3 Ability
+level: 3
+type: Maneuver
+version: 2

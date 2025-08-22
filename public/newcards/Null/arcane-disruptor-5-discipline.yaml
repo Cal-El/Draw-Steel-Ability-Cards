@@ -1,0 +1,55 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Might
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Might
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Might
+      effect: weakened (save ends)
+      strength: 2
+- body: While weakened this way, the target takes damage equal to your Intuition score
+    whenever they use a supernatural ability that costs Malice.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Your blow reorders a foe's body, causing pain if they attempt to channel
+    sorcery.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Arcane Disruptor
+  topMatter: Null Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,21 @@
+body:
+- body: If the target is not a leader or solo creature, they are reduced to 0 Stamina
+    at the end of their next turn. If the target is a leader or solo creature, you
+    gain 3 surges and can make a melee free strike against them.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Slash. Walk away.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: You Are Already Dead
+  topMatter: Fury Level 3 Ability
+level: 3
+type: Main action
+version: 2

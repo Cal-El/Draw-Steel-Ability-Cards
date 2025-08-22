@@ -1,0 +1,26 @@
+body:
+- body: Another creature damages you.
+  isEffect: true
+  title: Trigger
+- body: You take half the triggering damage, then can shift up to 2 squares after
+    the triggering effect resolves. If you end this shift with concealment or cover,
+    you can use the Hide maneuver even if you are observed.
+  isEffect: true
+  title: Effect
+- body: The potency of any effects associated with the damage are reduced by 1 for
+    you.
+  isEffect: true
+  title: Spend 1 Insight
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: When an enemy attacks, you roll with the impact to reduce the harm.
+  keywords:
+  - '-'
+  target: Self
+  title: Defensive Roll
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

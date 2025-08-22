@@ -1,0 +1,22 @@
+body:
+- body: You teleport up to 5 squares. If you have concealment or cover at your destination,
+    you can use the Hide maneuver even if you are observed. If you successfully hide
+    using this maneuver, you gain 1 surge.
+  isEffect: true
+  title: Effect
+- body: You teleport 1 additional square for each insight spent.
+  isEffect: true
+  title: Spend 1+ Insight
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: In a swirl of black ash, you step from one place to another.
+  keywords:
+  - Magic
+  target: Self
+  title: Black Ash Teleport
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Maneuver
+version: 2

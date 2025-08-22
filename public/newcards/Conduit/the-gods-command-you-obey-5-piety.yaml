@@ -1,4 +1,41 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Presence
+      effect: before taking damage, the target makes a free strike against a target
+        you choose
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Presence
+      effect: before taking damage, the target uses an ability of your choice and
+        you choose any targets for that ability
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Presence
+      effect: before taking damage, the target shifts up to their speed to a location
+        you choose, uses an ability of your choice, and you choose any targets for
+        that ability
+      strength: 2
 header:
   distance:
     display: Ranged 10

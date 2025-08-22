@@ -1,4 +1,25 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage; vertical pull 2
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: holy damage; vertical pull 3
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: holy damage; vertical pull 4
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
 header:
   distance:
     display: Ranged 10

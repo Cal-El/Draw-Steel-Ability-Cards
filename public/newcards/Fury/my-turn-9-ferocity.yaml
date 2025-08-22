@@ -1,0 +1,40 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+- body: You can spend a Recovery.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You quickly strike back at a foe.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: The triggering creature
+  title: My Turn!
+  topMatter: Fury Level 5 Ability
+level: 5
+type: Free triggered
+version: 2

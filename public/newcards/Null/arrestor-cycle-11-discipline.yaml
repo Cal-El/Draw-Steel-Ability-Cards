@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: < WEAK, the target loses their turn
+    potency:
+      characteristic: Intuition
+      effect: the target loses their turn
+      strength: 0
+  t2:
+    baseEffect: < AVERAGE, the target loses their turn
+    potency:
+      characteristic: Intuition
+      effect: the target loses their turn
+      strength: 1
+  t3:
+    baseEffect: < STRONG, the target loses their turn
+    potency:
+      characteristic: Intuition
+      effect: the target loses their turn
+      strength: 2
+- body: If the target loses their turn, the round continues as if they had acted.
+    A target who doesn't lose their turn takes psychic damage equal to twice your
+    Intuition score for each main action they take until the end of their next turn.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You trap your foe in a looping cycle of time, where they relive the last
+    few seconds over and over again.
+  keywords:
+  - Psionic
+  - Ranged
+  target: One creature
+  title: Arrestor Cycle
+  topMatter: Null Level 9 Ability
+level: 9
+type: Free triggered
+version: 2

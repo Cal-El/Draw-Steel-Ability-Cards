@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+- body: Each enemy adjacent to the target is pushed away from the target up to a number
+    of squares equal to your Presence score.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

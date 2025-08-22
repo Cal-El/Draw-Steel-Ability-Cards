@@ -1,0 +1,36 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 8
+  t2:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 11
+  t3:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 15
+- body: Each creature within distance gains a +5 bonus to speed until the end of their
+    next turn. While under this effect, each target must use their full movement during
+    their turn.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: Your jam session creates new genres that compel everyone to get up and
+    move.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Jam Session
+  topMatter: Troubadour Level 9 Ability
+level: 9
+type: Main action
+version: 2

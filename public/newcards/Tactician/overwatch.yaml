@@ -1,4 +1,14 @@
-body: []
+body:
+- body: The target moves.
+  isEffect: true
+  title: Trigger
+- body: At any time during the target's movement, one ally can make a free strike
+    against them.
+  isEffect: true
+  title: Effect
+- body: If the target has R < AVERAGE, they are slowed (EoT).
+  isEffect: true
+  title: Spend 1 Focus
 header:
   distance:
     display: Ranged 10

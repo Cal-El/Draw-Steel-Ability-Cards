@@ -1,0 +1,20 @@
+body:
+- body: Until the end of the encounter, each target gains the speed bonus, weapon
+    distance bonus, disengage bonus, and stability bonus of your currently equipped
+    kit in addition to their own kit's bonuses.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: It's important for everyone to know each other's lines, just in case...
+  keywords:
+  - Area
+  - Magic
+  target: Each ally in the area
+  title: You're All My Understudies
+  topMatter: Troubadour Level 6 Ability
+level: 6
+type: Maneuver
+version: 2

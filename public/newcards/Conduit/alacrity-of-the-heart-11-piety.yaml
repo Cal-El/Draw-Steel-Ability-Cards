@@ -1,4 +1,8 @@
-body: []
+body:
+- body: The target has an additional main action they can use on their next turn,
+    and gains 3 of their Heroic Resource.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

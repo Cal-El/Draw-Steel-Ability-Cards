@@ -1,0 +1,40 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Reason
+  t2:
+    baseEffect: corruption damage; the target has line of effect only to creatures
+      and objects within 4 squares of them until the start of your next turn
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Reason
+  t3:
+    baseEffect: corruption damage; the target has line of effect only to adjacent
+      creatures and objects until the start of your next turn
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Reason
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You rip an enemy's world in twain.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  - Void
+  target: One creature or object
+  title: Subverted Perception of Space
+  topMatter: Elementalist Level 5 Ability
+level: 5
+type: Main action
+version: 2

@@ -1,0 +1,31 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: The target takes a bane on ability rolls (save ends).
+  t2:
+    baseEffect: The target has a double bane on ability rolls (save ends).
+  t3:
+    baseEffect: The target has a double bane on power rolls (save ends).
+- body: Choose one ally within distance. While the target is affected by this ability,
+    each time they use an ability, that ally can make a free strike against them after
+    the ability is resolved.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1 or ranged 10
+    values: []
+  flavour: Your story tells a tale of the villain's waning power and how the heroes
+    rose to the occasion to stop them.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  target: One creature
+  title: Epic
+  topMatter: Troubadour Level 9 Ability
+level: 9
+type: Maneuver
+version: 2

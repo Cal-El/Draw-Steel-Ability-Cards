@@ -1,0 +1,36 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+- body: At the start of your turn, you can use a maneuver to use this ability again
+    without spending essence.
+  isEffect: true
+  title: Persistent 2
+header:
+  distance:
+    display: 5 cube within 10
+    values: []
+  flavour: Everyone and everything gets blown away in an eruption of rocks and debris.
+  keywords:
+  - Area
+  - Earth
+  - Magic
+  - Ranged
+  target: Each enemy and object in the area
+  title: Earth Rejects You
+  topMatter: Elementalist Level 9 Ability
+level: 9
+type: Main action
+version: 2

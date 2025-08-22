@@ -1,4 +1,43 @@
-body: []
+body:
+- body: You shift up to your speed directly toward an ally, ending adjacent to them,
+    then swapping locations with that ally as long as you can fit into each other's
+    spaces. The ally can spend a Recovery, and you can make the following weapon strike
+    with a distance of melee 1 against a creature.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 2
 header:
   distance:
     display: Self; see below

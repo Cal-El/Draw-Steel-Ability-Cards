@@ -1,0 +1,24 @@
+body:
+- body: You lose Stamina and are not dying.
+  isEffect: true
+  title: Trigger
+- body: You gain temporary Stamina equal to your Might score and can enter your animal
+    form or hybrid form.
+  isEffect: true
+  title: Effect
+- body: If you are not dying, you can spend a Recovery.
+  isEffect: true
+  title: Spend 1 Ferocity
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: In your anger, you revert to a more bestial form.
+  keywords:
+  - '-'
+  target: One enemy
+  title: Furious Change
+  topMatter: Fury Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

@@ -1,0 +1,29 @@
+body:
+- body: You shift up to twice your speed, making one power roll that targets each
+    creature you come adjacent to during the shift.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: An enemy takes 6 damage; an ally can teleport up to 3 squares.
+  t2:
+    baseEffect: An enemy takes 10 damage; an ally can teleport up to 5 squares.
+  t3:
+    baseEffect: An enemy takes 14 damage; an ally can teleport up to 7 squares.
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: You tumble through the battle, stabbing foes and teleporting allies.
+  keywords:
+  - Magic
+  - Melee
+  - Weapon
+  target: Self
+  title: Cacophony of Cinders
+  topMatter: Shadow Level 9 Ability
+level: 9
+type: Main action
+version: 2

@@ -1,4 +1,8 @@
-body: []
+body:
+- body: The first time the target is dying or winded before the end of the encounter,
+    each enemy within 5 squares of them takes 15 holy damage.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

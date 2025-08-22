@@ -1,4 +1,37 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; one ally within 10 squares can use the Charge main action
+      as a free triggered action, and can use a melee strike signature ability instead
+      of a free strike for the charge
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage; one ally within 10 squares can use the Charge main action
+      as a free triggered action, and can use a melee strike signature ability that
+      gains an edge instead of a free strike for the charge
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage; two allies within 10 squares can use the Charge main action
+      as a free triggered action, and can each use a melee strike signature ability
+      that gains an edge instead of a free strike for the charge
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+- body: If the target is hit with two or more strikes as part of this ability and
+    they have R < STRONG, they are dazed (save ends). If the target is reduced to
+    0 Stamina before one or both allies has made their strike, the ally or allies
+    can pick a different target.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Melee 1

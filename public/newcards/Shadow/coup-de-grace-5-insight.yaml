@@ -1,0 +1,41 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+      otherBonus: 2d6
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Agility
+      otherBonus: 2d6
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Agility
+      otherBonus: 2d6
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: Your blade might be the last thing they see.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Coup de Grace
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Main action
+version: 2

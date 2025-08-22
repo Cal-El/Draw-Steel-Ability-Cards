@@ -1,4 +1,26 @@
-body: []
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; you or one ally within 10 squares of you can spend a Recovery
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+  t2:
+    baseEffect: damage; you or one ally within 10 squares of you can spend a Recovery
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+  t3:
+    baseEffect: damage; you and one ally within 10 squares of you can spend a Recovery,
+      and each of you gains an edge on the next ability roll you make during the encounter
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
 header:
   distance:
     display: Melee 1 or ranged 5

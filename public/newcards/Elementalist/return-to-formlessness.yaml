@@ -1,0 +1,21 @@
+body:
+- body: You heat the target and cause it to melt or combust, destroying it. If the
+    object is larger than 1 square, then only the square of the object you touch is
+    destroyed.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: With the merest touch, you cause an object to turn to slag or ash.
+  keywords:
+  - Fire
+  - Magic
+  - Melee
+  target: One mundane object
+  title: Return to Formlessness
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

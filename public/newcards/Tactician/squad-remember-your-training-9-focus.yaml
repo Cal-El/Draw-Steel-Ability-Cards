@@ -1,4 +1,8 @@
-body: []
+body:
+- body: Each target gains 1 surge and can use a signature ability that has a double
+    edge.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

@@ -1,0 +1,19 @@
+body:
+- body: You use a strike signature ability twice.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: They have no idea what the college taught you.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  target: Self
+  title: Shadowstrike
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Main action
+version: 2

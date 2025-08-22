@@ -1,0 +1,21 @@
+body:
+- body: The target takes half the damage, and if the triggering crea ture has I <
+    AVERAGE, they are dazed (save ends). While the triggering creature is dazed this
+    way, they take psychic damage equal to your Intuition score whenever they use
+    a main action.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: You disrupt an enemy's strike and create a feedback loop in their mind,
+    preventing them from focusing on future attacks.
+  keywords:
+  - Psionic
+  target: Self or one creature
+  title: Synaptic Anchor
+  topMatter: Null Level 8 Ability
+level: 8
+type: Free triggered
+version: 2

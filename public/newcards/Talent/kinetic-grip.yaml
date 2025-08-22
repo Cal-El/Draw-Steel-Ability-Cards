@@ -1,0 +1,28 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: Slide 2 + R
+  t2:
+    baseEffect: Slide 4 + R
+  t3:
+    baseEffect: Slide 6 + R; prone
+- body: You must vertical push the target instead of sliding them.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You lift and hurl your foe away from you.
+  keywords:
+  - Psionic
+  - Ranged
+  - Telekinesis
+  target: One creature or object
+  title: Kinetic Grip
+  topMatter: Talent Level 1 Ability
+level: 1
+type: Main action
+version: 2

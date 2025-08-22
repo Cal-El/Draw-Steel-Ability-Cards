@@ -1,0 +1,35 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage; the Director loses 2 Malice
+    damage:
+      baseValue: 7
+  t2:
+    baseEffect: fire damage; the Director loses 3 Malice
+    damage:
+      baseValue: 10
+  t3:
+    baseEffect: fire damage; the Director loses 4 Malice
+    damage:
+      baseValue: 15
+- body: The Director's Malice can become negative as a result of this ability.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 5 cube within 10
+    values: []
+  flavour: The fire burns hot enough to sear the face of any god watching.
+  keywords:
+  - Area
+  - Fire
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Muse of Fire
+  topMatter: Elementalist Level 8 Ability
+level: 8
+type: Main action
+version: 2

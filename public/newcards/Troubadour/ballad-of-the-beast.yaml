@@ -1,0 +1,20 @@
+body:
+- body: While this performance is active, each target who starts their turn in the
+    area gains 1 surge.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: "Teeth are bare! \u266A Eyes black! \u266A No escaping the beast!\u266A"
+  keywords:
+  - Area
+  - Magic
+  - Performance
+  target: Self and each ally in the area
+  title: '"Ballad of the Beast"'
+  topMatter: Troubadour Level 1 Ability
+level: 1
+type: No action
+version: 2

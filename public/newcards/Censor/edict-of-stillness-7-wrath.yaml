@@ -1,4 +1,9 @@
-body: []
+body:
+- body: Until the end of the encounter or until you are dying, whenever a target moves
+    or is force moved out of the area, they take holy damage equal to twice your Presence
+    score. A target judged by you who moves willingly takes an extra 2d6 holy damage.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 2 aura

@@ -1,0 +1,41 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Presence
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Presence
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Presence
+- body: The target is taunted by you or a willing ally adjacent to you until the end
+    of the target's next turn.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: I didn't do it! What?
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Instigator
+  topMatter: Troubadour Level 1 Ability
+level: 1
+type: Main action
+version: 2

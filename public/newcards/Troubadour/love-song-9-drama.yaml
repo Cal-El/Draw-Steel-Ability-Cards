@@ -1,0 +1,20 @@
+body:
+- body: The target gains 20 temporary Stamina. Until the end of the encounter, whenever
+    the target takes damage while you're within distance, you can choose to take the
+    damage instead of the target.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You play a small ditty that plants you inside your target's heart.
+  keywords:
+  - Magic
+  - Ranged
+  target: One creature or object
+  title: Love Song
+  topMatter: Troubadour Level 5 Ability
+level: 5
+type: Maneuver
+version: 2

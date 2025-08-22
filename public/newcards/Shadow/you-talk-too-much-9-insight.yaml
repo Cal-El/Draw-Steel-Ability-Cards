@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Presence
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Presence
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 21
+      characteristicBonusOptions:
+      - Agility
+    potency:
+      characteristic: Presence
+      effect: dazed (save ends)
+      strength: 2
+- body: The target can't communicate with anyone until the end of the encounter.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: Silence is a virtue. A knife pinning their mouth shut is the next best
+    thing.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: You Talk Too Much
+  topMatter: Shadow Level 5 Ability
+level: 5
+type: Main action
+version: 2

@@ -1,0 +1,21 @@
+body:
+- body: An enemy targets you with a strike.
+  isEffect: true
+  title: Trigger
+- body: Choose an enemy within distance of the triggering strike, including the enemy
+    who targeted you. The strike targets that enemy instead.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You sow a moment of confusion in combat, to your enemy's peril.
+  keywords:
+  - Magic
+  target: Self
+  title: Clever Trick
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

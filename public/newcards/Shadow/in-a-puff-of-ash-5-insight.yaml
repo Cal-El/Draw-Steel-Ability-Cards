@@ -1,0 +1,39 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; you can teleport the target 1 square
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage; you can teleport the target up to 3 squares
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage; you can teleport the target up to 5 squares
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Agility
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: You enchant a strike with your teleportation magic.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: In a Puff of Ash
+  topMatter: Shadow Level 2 Ability
+level: 2
+type: Main action
+version: 2

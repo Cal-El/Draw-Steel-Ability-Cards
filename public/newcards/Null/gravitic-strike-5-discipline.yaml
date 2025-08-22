@@ -1,0 +1,38 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; vertical pull 3
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: psychic damage; vertical pull 5
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: psychic damage; vertical pull 7
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Agility
+header:
+  distance:
+    display: Melee 3
+    values: []
+  flavour: Your fist emanates gravitic force that pulls a distant enemy closer.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Gravitic Strike
+  topMatter: Null Level 2 Ability
+level: 2
+type: Main action
+version: 2

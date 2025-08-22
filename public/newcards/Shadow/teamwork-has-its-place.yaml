@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Agility
+- body: If any ally is adjacent to the target, you gain 1 surge before making the
+    power roll.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: You attack an enemy as an ally exposes their weakness.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Teamwork Has Its Place
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Main action
+version: 2

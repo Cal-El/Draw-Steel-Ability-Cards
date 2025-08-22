@@ -1,4 +1,19 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 9
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 14
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 19
 header:
   distance:
     display: 5 cube within 10

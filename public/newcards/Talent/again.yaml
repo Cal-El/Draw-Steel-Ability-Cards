@@ -1,0 +1,22 @@
+body:
+- body: The target makes an ability roll.
+  isEffect: true
+  title: Trigger
+- body: You can use this ability after seeing the result of the triggering roll. The
+    target must reroll the power roll and use the new roll.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You step back a split second to see if things play out a little differently.
+  keywords:
+  - Psionic
+  - Ranged
+  target: Self or one creature
+  title: Again
+  topMatter: Talent Level 1 Ability
+level: 1
+type: Triggered Action
+version: 2

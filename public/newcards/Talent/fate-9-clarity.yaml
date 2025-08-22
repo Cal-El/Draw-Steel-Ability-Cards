@@ -1,0 +1,45 @@
+body:
+- body: The target has damage weakness 5 until the end of your next turn. Whenever
+    the target takes damage while they have this weakness, they are knocked prone.
+  isEffect: true
+  title: Effect
+- body: This ability gains the Strike keyword as the vision hurts the target's psyche.
+    You make a power roll, then are weakened (save ends).
+  isEffect: true
+  title: Strained
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Presence
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Presence
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions:
+      - Presence
+header:
+  distance:
+    display: Melee 2
+    values: []
+  flavour: Your foe gets a glimpse of how it will end for them.
+  keywords:
+  - Chronopathy
+  - Psionic
+  - Melee
+  target: One enemy
+  title: Fate
+  topMatter: Talent Level 6 Ability
+level: 6
+type: Main action
+version: 2

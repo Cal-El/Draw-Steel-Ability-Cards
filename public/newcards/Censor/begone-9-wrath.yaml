@@ -1,4 +1,19 @@
-body: []
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; slide 3
+    damage:
+      baseValue: 4
+  t2:
+    baseEffect: psychic damage; slide 5
+    damage:
+      baseValue: 6
+  t3:
+    baseEffect: psychic damage; slide 7
+    damage:
+      baseValue: 8
 header:
   distance:
     display: 3 burst

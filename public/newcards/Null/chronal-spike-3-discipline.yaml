@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+- body: You can shift up to half your speed before or after you make this strike.
+    Additionally, whenever an effect lets you make a free strike or use a signature
+    ability, you can use this ability instead, paying its discipline cost as usual.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You foresee the best moment to strike, then exploit it.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Chronal Spike
+  topMatter: Null Level 1 Ability
+level: 1
+type: Main action
+version: 2

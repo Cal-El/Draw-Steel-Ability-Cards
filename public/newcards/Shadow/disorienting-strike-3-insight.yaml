@@ -1,0 +1,40 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; slide 2
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Agility
+  t2:
+    baseEffect: damage; slide 3
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+  t3:
+    baseEffect: damage; slide 5
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+- body: You can shift into any square the target leaves when you slide them.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Your attack leaves them reeling, allowing you to follow up.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Disorienting Strike
+  topMatter: Shadow Level 1 Ability
+level: 1
+type: Main action
+version: 2

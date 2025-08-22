@@ -1,4 +1,9 @@
-body: []
+body:
+- body: Until the end of the encounter or until you are dying, the area is filled
+    with magic darkness that your enemies can't see through, but you and your allies
+    can.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 5 cube within 10

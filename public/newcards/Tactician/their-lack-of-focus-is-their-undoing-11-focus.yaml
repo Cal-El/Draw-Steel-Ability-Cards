@@ -1,4 +1,31 @@
-body: []
+body:
+- body: Each target uses a signature ability against one or more targets of your choosing,
+    with each ability automatically obtaining a tier 3 outcome on the power roll.
+    After resolving the targets' abilities, you make a power roll against each original
+    target.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: < WEAK, dazed (save ends)
+    potency:
+      characteristic: Reason
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: < AVERAGE, dazed (save ends)
+    potency:
+      characteristic: Reason
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: < STRONG, dazed (save ends)
+    potency:
+      characteristic: Reason
+      effect: dazed (save ends)
+      strength: 2
 header:
   distance:
     display: Ranged 10

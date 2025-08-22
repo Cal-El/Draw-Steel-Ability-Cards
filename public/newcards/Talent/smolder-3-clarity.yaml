@@ -1,0 +1,56 @@
+body:
+- body: 'Choose the damage type and the weakness for this ability from one of the
+    following: acid, corruption, or fire. The target takes damage before this ability
+    imposes any weakness.'
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: the target has weakness 5 (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: the target has weakness 5 (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Reason
+    potency:
+      characteristic: Reason
+      effect: the target has weakness equal to 5 + your Reason score (save ends)
+      strength: 2
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Smoke flows from your enemy like tears as their skin begins to blacken
+    and flake.
+  keywords:
+  - Psionic
+  - Pyrokinesis
+  - Ranged
+  - Strike
+  target: One creature
+  title: Smolder
+  topMatter: Talent Level 1 Ability
+level: 1
+type: Main action
+version: 2

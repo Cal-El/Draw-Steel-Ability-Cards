@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: Slide 4 + R
+    potency:
+      characteristic: Might
+      effect: the forced movement is vertical
+      strength: 0
+  t2:
+    baseEffect: Slide 8 + R
+    potency:
+      characteristic: Might
+      effect: the forced movement is vertical
+      strength: 1
+  t3:
+    baseEffect: Slide 12 + R; prone
+    potency:
+      characteristic: Might
+      effect: the forced movement is vertical
+      strength: 2
+- body: The forced movement ignores stability. You take 2d6 damage and are weakened
+    (save ends).
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You raise the target into the air without breaking a sweat.
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telekinesis
+  target: One creature or object
+  title: Greater Kinetic Grip
+  topMatter: Talent Level 6 Ability
+level: 6
+type: Main action
+version: 2

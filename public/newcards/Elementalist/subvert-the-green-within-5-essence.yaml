@@ -1,0 +1,45 @@
+body:
+- body: The target uses their signature ability against a creature of your choice.
+    This signature ability can target the creature even if it usually wouldn't. You
+    then make a power roll against the target of this ability.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: poison damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+  t2:
+    baseEffect: poison damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Reason
+  t3:
+    baseEffect: poison damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Reason
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Fungal spores sprout inside your enemy's brain, allowing you to control
+    their actions.
+  keywords:
+  - Green
+  - Magic
+  - Ranged
+  - Strike
+  - Void
+  target: One creature
+  title: Subvert the Green Within
+  topMatter: Elementalist Level 2 Ability
+level: 2
+type: Main action
+version: 2

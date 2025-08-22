@@ -1,4 +1,28 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Intuition
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Intuition
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Intuition
+- body: You can have this ability deal holy damage.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

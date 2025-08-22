@@ -1,4 +1,34 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 6
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 9
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 13
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 2
+- body: Each target is frightened of you or a creature you choose within distance.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: 5 cube within 10

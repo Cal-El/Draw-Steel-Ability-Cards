@@ -1,0 +1,46 @@
+body:
+- body: You and each target ally can't obtain lower than a tier 2 outcome on power
+    rolls until the start of your next turn. Each target enemy is affected by the
+    ability's power roll.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: < WEAK, frightened (save ends)
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: < AVERAGE, frightened (save ends)
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: < STRONG, frightened (save ends)
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 2
+- body: You can't use this ability if doing so would cause you to have negative clarity.
+  isEffect: true
+  title: Strained
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You project a terrifying image into the brains of your foes, and their
+    fear psionically invigorates your allies.
+  keywords:
+  - Area
+  - Psionic
+  - Telepathy
+  target: Each ally and enemy in the area
+  title: Synaptic Terror
+  topMatter: Talent Level 9 Ability
+level: 9
+type: Main action
+version: 2

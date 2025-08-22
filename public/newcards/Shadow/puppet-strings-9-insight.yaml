@@ -1,0 +1,52 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+    potency:
+      characteristic: Reason
+      effect: before the damage is resolved, they make a free strike.
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+    potency:
+      characteristic: Reason
+      effect: before the damage is resolved, they use a main action ability of your
+        choice.
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+    potency:
+      characteristic: Reason
+      effect: before the damage is resolved, they can shift up to their speed and
+        use a main action ability of your choice.
+      strength: 2
+- body: You choose the new targets for the original target's free strike or ability.
+    Additionally, if you are hidden or disguised, using this ability doesn't cause
+    you to be revealed.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You prick little needles on the tips of your fingers into the nerves of
+    your enemies and cause them to lose control.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: Two enemies
+  title: Puppet Strings
+  topMatter: Shadow Level 6 Ability
+level: 6
+type: Main action
+version: 2

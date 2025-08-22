@@ -1,0 +1,21 @@
+body:
+- body: Until the end of the encounter, whenever the target takes damage while winded,
+    they can use a free triggered action to deal half the damage they took to the
+    source of the damage.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: A song for the brokenhearted wraps itself around the target and blossoms
+    into a ward of thorns.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Power Ballad
+  topMatter: Troubadour Level 8 Ability
+level: 8
+type: Maneuver
+version: 2

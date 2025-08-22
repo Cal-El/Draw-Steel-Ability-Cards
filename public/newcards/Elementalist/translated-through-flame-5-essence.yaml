@@ -1,0 +1,36 @@
+body:
+- body: The target is teleported to another space within distance. Make a power roll
+    that affects each enemy adjacent to the target's new space.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 3
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 5
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 8
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your ally disappears, then reappears in a burst of fire.
+  keywords:
+  - Fire
+  - Magic
+  - Ranged
+  - Void
+  target: Self or one ally
+  title: Translated Through Flame
+  topMatter: Elementalist Level 2 Ability
+level: 2
+type: Main action
+version: 2

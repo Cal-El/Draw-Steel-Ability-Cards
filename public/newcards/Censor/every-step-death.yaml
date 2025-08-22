@@ -1,4 +1,29 @@
-body: []
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Presence
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Presence
+- body: Each time the target willingly moves before the end of your next turn, they
+    take 1 psychic damage for each square they move.
+  isEffect: true
+  title: Effect
 header:
   distance:
     display: Ranged 10

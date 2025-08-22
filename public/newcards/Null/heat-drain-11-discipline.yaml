@@ -1,0 +1,55 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: cold damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Might
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: cold damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Might
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: cold damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Intuition
+    potency:
+      characteristic: Might
+      effect: restrained (save ends)
+      strength: 2
+- body: While restrained this way, the target takes cold damage equal to your Intuition
+    score at the start of each of your turns. Additionally, whenever the target damages
+    another creature while restrained this way, any potency associated with the damage
+    is reduced by 2.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You drain all the heat from the target.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  target: One creature
+  title: Heat Drain
+  topMatter: Null Level 9 Ability
+level: 9
+type: Maneuver
+version: 2

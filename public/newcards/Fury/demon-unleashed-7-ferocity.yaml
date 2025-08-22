@@ -1,0 +1,19 @@
+body:
+- body: Until the end of the encounter or until you are dying, each enemy who starts
+    their turn adjacent to you and has P < STRONG is frightened until the end of their
+    turn.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: Foes tremble at the sight of you.
+  keywords:
+  - Magic
+  target: Self
+  title: Demon Unleashed
+  topMatter: Fury Level 3 Ability
+level: 3
+type: Maneuver
+version: 2

@@ -1,4 +1,23 @@
-body: []
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage; push 3
+    damage:
+      baseValue: 3
+  t2:
+    baseEffect: sonic damage; push 5
+    damage:
+      baseValue: 6
+  t3:
+    baseEffect: sonic damage; push 7
+    damage:
+      baseValue: 9
+- body: You can choose to have this ability deal damage to and push objects, and to
+    deal damage to buildings.
+  isEffect: true
+  title: Special
 header:
   distance:
     display: 4 burst

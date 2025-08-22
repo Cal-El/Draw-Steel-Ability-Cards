@@ -1,0 +1,36 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: acid damage
+    damage:
+      baseValue: 4
+  t2:
+    baseEffect: acid damage
+    damage:
+      baseValue: 6
+  t3:
+    baseEffect: acid damage
+    damage:
+      baseValue: 10
+- body: You can end one effect on yourself that is ended by a saving throw or that
+    ends at the end of your turn. Each ally in the area also gains this benefit.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: 3 cube within 10
+    values: []
+  flavour: You call down a rain that burns your enemies and restores your allies.
+  keywords:
+  - Area
+  - Green
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Test of Rain
+  topMatter: Elementalist Level 1 Ability
+level: 1
+type: Main action
+version: 2

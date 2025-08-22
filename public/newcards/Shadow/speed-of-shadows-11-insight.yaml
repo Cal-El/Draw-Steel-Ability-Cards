@@ -1,0 +1,20 @@
+body:
+- body: You can use a strike signature ability four times, use a strike signature
+    ability that gains an edge three times, or use a strike signature ability that
+    has a double edge twice. You can shift up to 2 squares between each use.
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You make multiple strikes against a foe before they even notice they're
+    dead.
+  keywords:
+  - Magic
+  target: Self
+  title: Speed of Shadows
+  topMatter: Shadow Level 8 Ability
+level: 8
+type: Main action
+version: 2
