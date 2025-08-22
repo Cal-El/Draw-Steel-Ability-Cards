@@ -4,6 +4,9 @@ body:
     the target takes holy damage equal to your Presence score.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: 3 aura

@@ -5,6 +5,9 @@ body:
     the power roll.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

@@ -8,18 +8,21 @@ body:
       baseValue: 15
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: psychic damage
     damage:
       baseValue: 24
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: psychic damage
     damage:
       baseValue: 28
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
 - body: This ability ignores cover and concealment.
   isEffect: true
   title: Effect
@@ -27,6 +30,9 @@ body:
     half the damage the target takes, and you can't reduce this damage in any way.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

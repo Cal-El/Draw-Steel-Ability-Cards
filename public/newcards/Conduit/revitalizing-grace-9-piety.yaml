@@ -4,6 +4,9 @@ body:
     the end of their turn, or they can stand up if prone.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: 4 burst

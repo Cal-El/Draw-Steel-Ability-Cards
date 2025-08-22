@@ -14,6 +14,7 @@ body:
     spent.'
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Self; see below

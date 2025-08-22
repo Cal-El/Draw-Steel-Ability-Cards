@@ -8,18 +8,21 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: prone
@@ -27,6 +30,7 @@ body:
 - body: One ally within 5 squares of the target gains 1 surge.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

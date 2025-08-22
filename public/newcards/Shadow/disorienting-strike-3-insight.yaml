@@ -8,21 +8,27 @@ body:
       baseValue: 4
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage; slide 3
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage; slide 5
     damage:
       baseValue: 10
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
 - body: You can shift into any square the target leaves when you slide them.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '3'
 header:
   distance:
     display: Melee 1

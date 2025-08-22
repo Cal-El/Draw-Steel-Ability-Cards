@@ -6,18 +6,27 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: Each ally in the area deals fire damage equal to your Intuition score with
     their next strike made before the end of their next turn.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: 3 burst

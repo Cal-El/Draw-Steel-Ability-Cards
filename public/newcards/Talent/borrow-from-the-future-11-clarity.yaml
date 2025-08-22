@@ -4,6 +4,9 @@ body:
     this ability, you can't gain any clarity until the end of the next combat round.
   isEffect: true
   title: Effect
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: 2 burst

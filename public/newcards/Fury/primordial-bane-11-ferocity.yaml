@@ -8,23 +8,29 @@ body:
       baseValue: 11
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 16
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 21
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. The
     target loses any damage immunity to the chosen type and gains weakness 10 to the
     chosen type (save ends).
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: Melee 1

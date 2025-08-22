@@ -11,22 +11,28 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 17
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: Until the end of the encounter or until you are dying, you can use a signature
     or heroic ability instead of a free strike against any target marked by you.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Melee 1 or ranged 5

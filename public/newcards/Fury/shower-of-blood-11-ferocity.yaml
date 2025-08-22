@@ -8,24 +8,30 @@ body:
       baseValue: 12
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 18
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 24
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: Each enemy within 5 squares of you is distracted until the end of the round.
     While a creature is distracted this way, they can't take triggered actions or
     free triggered actions, ability rolls made against them gain an edge, and their
     characteristic scores are considered 1 lower for the purpose of resisting potencies.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: Melee 1

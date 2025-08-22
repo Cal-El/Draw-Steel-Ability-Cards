@@ -4,6 +4,9 @@ body:
     damage instead of the target.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

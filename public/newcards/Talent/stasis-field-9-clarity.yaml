@@ -33,6 +33,9 @@ body:
     can be force moved. You are restrained until the effect ends.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: 4 cube within 10

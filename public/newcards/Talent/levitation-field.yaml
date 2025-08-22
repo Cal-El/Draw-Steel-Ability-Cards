@@ -7,6 +7,7 @@ body:
 - body: The effects last for 1 hour instead.
   isEffect: true
   title: Spend 5 Clarity
+cost: null
 header:
   distance:
     display: 3 burst

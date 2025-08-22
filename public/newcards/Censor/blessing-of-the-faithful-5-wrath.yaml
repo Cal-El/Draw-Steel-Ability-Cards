@@ -3,6 +3,9 @@ body:
     surge at the end of each of your turns.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: 3 aura

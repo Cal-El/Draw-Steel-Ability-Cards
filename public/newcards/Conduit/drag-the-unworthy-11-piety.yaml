@@ -8,22 +8,28 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t2:
     baseEffect: holy damage; slide 4
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t3:
     baseEffect: holy damage; slide 6
     damage:
       baseValue: 18
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
 - body: Each ally the target comes adjacent to during the forced movement can spend
     a Recovery.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

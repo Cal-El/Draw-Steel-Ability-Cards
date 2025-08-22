@@ -4,6 +4,9 @@ body:
     use a triggered action to make a free strike against the source of the damage.
   isEffect: true
   title: Effect
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Melee 2

@@ -6,18 +6,27 @@ body:
     baseEffect: damage; vertical push 2
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage; vertical push 4
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage; vertical push 6
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: The size of the burst increases by 1, and you are weakened until the end of
     your turn.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: 1 burst

@@ -3,6 +3,9 @@ body:
     any conditions or effects on them, and stand up if they are prone.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: 3 burst

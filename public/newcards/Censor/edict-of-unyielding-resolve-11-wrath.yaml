@@ -3,6 +3,9 @@ body:
     their turn in the area gains 10 temporary Stamina.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: 2 aura

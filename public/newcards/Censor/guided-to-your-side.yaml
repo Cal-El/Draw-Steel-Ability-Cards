@@ -4,6 +4,7 @@ body:
     don't need line of effect to the bonded creature but you must be on the same world.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

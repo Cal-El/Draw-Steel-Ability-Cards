@@ -18,6 +18,9 @@ body:
     score.'
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
 header:
   distance:
     display: Self

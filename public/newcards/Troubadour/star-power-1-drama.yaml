@@ -6,6 +6,9 @@ body:
 - body: You gain a +4 bonus to speed instead.
   isEffect: true
   title: Spend 1 Drama
+cost:
+  costName: Drama
+  costValue: '1'
 header:
   distance:
     display: Self

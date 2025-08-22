@@ -16,6 +16,9 @@ body:
 - body: The effect ends early if you take damage from an enemy's ability.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

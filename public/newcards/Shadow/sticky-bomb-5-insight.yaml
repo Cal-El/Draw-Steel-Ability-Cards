@@ -15,18 +15,24 @@ body:
       baseValue: 4
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 7
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 11
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

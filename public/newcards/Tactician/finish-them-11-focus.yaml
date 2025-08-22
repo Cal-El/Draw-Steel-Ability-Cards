@@ -3,6 +3,9 @@ body:
     be winded can spend a Recovery.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

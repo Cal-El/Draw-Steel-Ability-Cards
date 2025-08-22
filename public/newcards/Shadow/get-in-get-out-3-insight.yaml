@@ -8,18 +8,24 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 11
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
+cost:
+  costName: Insight
+  costValue: '3'
 header:
   distance:
     display: Melee 1

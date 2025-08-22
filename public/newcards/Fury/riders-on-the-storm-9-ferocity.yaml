@@ -12,6 +12,9 @@ body:
     for 1 hour or until a combat encounter begins.
   isEffect: true
   title: Special
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: 3 aura

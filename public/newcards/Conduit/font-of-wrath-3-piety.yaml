@@ -6,6 +6,9 @@ body:
     or starts their turn there takes holy damage equal to your Intuition score.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

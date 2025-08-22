@@ -6,6 +6,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: restrained (save ends)
@@ -14,6 +16,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: restrained (save ends)
@@ -22,6 +26,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: restrained (save ends)
@@ -33,6 +39,9 @@ body:
 - body: The area remains until the start of your next turn.
   isEffect: true
   title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: 4 cube within 10

@@ -6,6 +6,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: grabbed
@@ -14,6 +16,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: grabbed
@@ -22,6 +26,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 17
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: grabbed
@@ -31,6 +37,9 @@ body:
     of each of your turns.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: Melee 1

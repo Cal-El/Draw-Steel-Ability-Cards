@@ -103,7 +103,7 @@ def parsePowerRollTier(tier):
       if not d:
         continue
       damageParts = d.group(1).split('+')
-      damage = {}
+      damage = {'baseValue': 0, 'characteristicBonusOptions': [], 'includedKitValue': 0}
       for x in damageParts: #TODO: handle kits if they get included at some point
         if 'd' in x:
           damage['otherBonus'] = x.strip()
@@ -120,3 +120,20 @@ def parsePowerRollTier(tier):
       potency['effect'] = pot.group(3)
       parsed['potency'] = potency
   return parsed
+
+def parseCost(ability):
+  cost = None
+  if 'cost' in ability:
+    cost = {}
+    c = re.search('(\d+) (.*)', ability['cost'])
+    cost['costName'] = c.group(2)
+    cost['costValue'] = c.group(1)
+  return cost
+
+def parseDistance(ability):
+  distance = {}
+  values = []
+
+  distance['display'] = ability['distance']
+  distance['values'] = values
+  return distance

@@ -26,6 +26,9 @@ body:
     space of their choice outside it.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '11'
 header:
   distance:
     display: 5 burst

@@ -5,6 +5,9 @@ body:
     target as a free triggered action.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: 3 burst

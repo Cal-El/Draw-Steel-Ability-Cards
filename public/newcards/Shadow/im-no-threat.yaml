@@ -19,6 +19,7 @@ body:
     to convince the creature's allies that you are the creature.
   isEffect: true
   title: Spend 1 Insight
+cost: null
 header:
   distance:
     display: Self

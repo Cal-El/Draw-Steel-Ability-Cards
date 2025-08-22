@@ -5,6 +5,9 @@ body:
     ability takes psychic damage equal to your Intuition score.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '3'
 header:
   distance:
     display: 2 burst

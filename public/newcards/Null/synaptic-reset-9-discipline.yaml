@@ -3,6 +3,9 @@ body:
     Stamina for each condition or effect removed.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: 3 burst

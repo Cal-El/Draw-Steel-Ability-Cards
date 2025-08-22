@@ -8,22 +8,28 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage; slide 3
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage; slide 5
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: If a target is force moved into another creature, they must make a free strike
     against that creature.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Melee 1 or ranged 5

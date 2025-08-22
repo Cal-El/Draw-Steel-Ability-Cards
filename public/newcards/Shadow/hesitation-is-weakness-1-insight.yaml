@@ -2,6 +2,9 @@ body:
 - body: You take your turn after the triggering hero.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '1'
 header:
   distance:
     display: Self

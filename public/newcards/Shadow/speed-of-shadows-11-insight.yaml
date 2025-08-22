@@ -4,6 +4,9 @@ body:
     has a double edge twice. You can shift up to 2 squares between each use.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Self

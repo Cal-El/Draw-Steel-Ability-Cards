@@ -6,20 +6,29 @@ body:
     baseEffect: lightning damage, 2 sonic damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: lightning damage, 3 sonic damage
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: lightning damage, 5 sonic damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: A raging storm fills the area until the end of the encounter or until you
     are dying. At the start of each of your turns, you can move the storm up to 5
     squares (no action required). On subsequent turns while the storm is active, you
     can use a maneuver to make its power roll.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: 5 cube within 5

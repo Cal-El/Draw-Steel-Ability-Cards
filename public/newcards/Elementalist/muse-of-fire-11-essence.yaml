@@ -6,17 +6,26 @@ body:
     baseEffect: fire damage; the Director loses 2 Malice
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: fire damage; the Director loses 3 Malice
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: fire damage; the Director loses 4 Malice
     damage:
       baseValue: 15
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: The Director's Malice can become negative as a result of this ability.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '11'
 header:
   distance:
     display: 5 cube within 10

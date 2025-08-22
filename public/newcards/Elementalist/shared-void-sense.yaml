@@ -4,6 +4,7 @@ body:
     but doesn't gain the use of the Shared Void Sense ability.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

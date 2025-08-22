@@ -2,6 +2,9 @@ body:
 - body: You can use up to three signature abilities, each of which gains an edge.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Self

@@ -6,14 +6,20 @@ body:
     baseEffect: damage
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: prone
@@ -26,6 +32,9 @@ body:
     or objects.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '3'
 header:
   distance:
     display: 2 burst

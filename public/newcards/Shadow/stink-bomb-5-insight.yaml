@@ -6,18 +6,27 @@ body:
     baseEffect: poison damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: poison damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: poison damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: The gas remains in the area until the end of the encounter. Any creature who
     starts their turn in the area and has M < AVERAGE is weakened (save ends).
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: 3 cube within 10

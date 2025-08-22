@@ -20,6 +20,9 @@ body:
       characteristic: Intuition
       effect: dazed (save ends)
       strength: 2
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

@@ -14,6 +14,7 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: frightened (save ends)
@@ -24,6 +25,7 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: frightened (save ends)
@@ -34,10 +36,14 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: frightened (save ends)
       strength: 2
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

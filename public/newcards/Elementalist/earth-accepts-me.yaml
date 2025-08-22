@@ -7,6 +7,7 @@ body:
     object you meld with is destroyed, you take 10 damage and exit the object.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Self

@@ -26,6 +26,9 @@ body:
       characteristic: Reason
       effect: dazed (save ends)
       strength: 2
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

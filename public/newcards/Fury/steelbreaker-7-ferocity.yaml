@@ -2,6 +2,9 @@ body:
 - body: You gain 20 temporary Stamina.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '7'
 header:
   distance:
     display: Self

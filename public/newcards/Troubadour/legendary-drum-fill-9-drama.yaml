@@ -3,6 +3,9 @@ body:
     round until the end of the encounter.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: 4 burst

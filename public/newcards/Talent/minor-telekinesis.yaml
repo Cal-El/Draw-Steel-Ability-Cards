@@ -9,6 +9,7 @@ body:
 - body: You can vertical slide the target.
   isEffect: true
   title: Spend 3 Clarity
+cost: null
 header:
   distance:
     display: Ranged 10

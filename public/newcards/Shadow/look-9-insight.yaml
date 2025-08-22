@@ -3,6 +3,9 @@ body:
     gains an edge.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: 5 burst

@@ -4,6 +4,9 @@ body:
     they can use immediately.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '7'
 header:
   distance:
     display: Self

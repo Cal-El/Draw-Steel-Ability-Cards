@@ -4,6 +4,9 @@ body:
     score. A target judged by you who moves willingly takes an extra 2d6 holy damage.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '7'
 header:
   distance:
     display: 2 aura

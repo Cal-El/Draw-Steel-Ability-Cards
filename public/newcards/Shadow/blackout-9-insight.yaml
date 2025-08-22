@@ -5,6 +5,9 @@ body:
     to a new location within the area and make a free strike against them.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: 3 burst

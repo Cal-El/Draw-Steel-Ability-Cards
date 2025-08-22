@@ -10,6 +10,9 @@ body:
   t3:
     baseEffect: The target can shift up to 3 squares and make a free strike that gains
       an edge, then can spend a Recovery.
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: 3 burst

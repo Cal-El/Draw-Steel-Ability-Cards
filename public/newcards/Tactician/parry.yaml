@@ -11,6 +11,7 @@ body:
     up to a number of squares equal to your Reason score instead of 1 square.
   isEffect: true
   title: Spend 1 Focus
+cost: null
 header:
   distance:
     display: Melee 2

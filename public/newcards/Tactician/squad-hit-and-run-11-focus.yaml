@@ -5,6 +5,9 @@ body:
     if they are observed.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

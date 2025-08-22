@@ -13,18 +13,24 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: corruption damage
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: corruption damage
     damage:
       baseValue: 17
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Melee 1

@@ -8,18 +8,22 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: psychic damage; vertical pull 2
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: psychic damage; vertical pull 3
     damage:
       baseValue: 11
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
+cost: null
 header:
   distance:
     display: Melee 2

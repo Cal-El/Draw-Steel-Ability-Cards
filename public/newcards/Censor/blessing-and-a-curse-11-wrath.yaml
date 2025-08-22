@@ -7,6 +7,9 @@ body:
     on their next power roll.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

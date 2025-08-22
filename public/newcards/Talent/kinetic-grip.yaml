@@ -11,6 +11,7 @@ body:
 - body: You must vertical push the target instead of sliding them.
   isEffect: true
   title: Strained
+cost: null
 header:
   distance:
     display: Ranged 10

@@ -4,6 +4,9 @@ body:
     and the target gains 3 surges.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

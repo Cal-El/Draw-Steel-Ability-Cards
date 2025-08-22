@@ -5,6 +5,9 @@ body:
     round. At the end of the encounter, the target turns to dust and is blown away.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

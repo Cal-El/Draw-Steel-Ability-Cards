@@ -4,6 +4,9 @@ body:
     can.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: 5 cube within 10

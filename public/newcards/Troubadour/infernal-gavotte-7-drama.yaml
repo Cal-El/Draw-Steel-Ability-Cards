@@ -6,6 +6,8 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: weakened (save ends)
@@ -14,6 +16,8 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: weakened (save ends)
@@ -22,6 +26,8 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: weakened (save ends)
@@ -29,6 +35,9 @@ body:
 - body: Each ally in the area can shift up to 2 squares.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '7'
 header:
   distance:
     display: 3 burst

@@ -8,6 +8,9 @@ body:
 - body: The effect lasts until the start of your next turn.
   isEffect: true
   title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

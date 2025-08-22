@@ -5,6 +5,9 @@ body:
     to any enemy.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '7'
 header:
   distance:
     display: 2 aura

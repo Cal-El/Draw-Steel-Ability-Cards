@@ -16,14 +16,20 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: Additionally, you can use a maneuver to move the dragon up to their speed,
     or to make a melee weapon strike with their claw against an adjacent creature
     or object. The dragon can also make this strike as a free strike.
@@ -37,18 +43,24 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

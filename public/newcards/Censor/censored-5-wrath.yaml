@@ -8,22 +8,28 @@ body:
       baseValue: 2
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: holy damage
     damage:
       baseValue: 3
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: holy damage
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: When a target who is not a leader or solo creature is made winded by this
     ability, they are reduced to 0 Stamina.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: Melee 1

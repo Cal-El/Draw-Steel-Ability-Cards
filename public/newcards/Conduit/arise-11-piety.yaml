@@ -5,6 +5,9 @@ body:
     until the end of the encounter or until they are dying, the target gains 3 surges.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

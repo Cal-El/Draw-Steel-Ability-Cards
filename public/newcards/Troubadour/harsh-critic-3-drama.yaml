@@ -8,24 +8,30 @@ body:
       baseValue: 7
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t2:
     baseEffect: sonic damage
     damage:
       baseValue: 10
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t3:
     baseEffect: sonic damage
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
 - body: The first time the target uses an ability before the start of your next turn,
     any effects from the ability's tier outcomes other than damage are negated for
     all targets. Ability effects that always happen regardless of the power roll work
     as usual.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '3'
 header:
   distance:
     display: Melee 1 or ranged 10

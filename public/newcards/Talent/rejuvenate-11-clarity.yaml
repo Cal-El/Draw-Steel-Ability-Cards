@@ -15,6 +15,9 @@ body:
     and slowed (save ends).
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

@@ -8,6 +8,7 @@ body:
     baseEffect: Push 2
   t3:
     baseEffect: Push 3
+cost: null
 header:
   distance:
     display: 2 burst

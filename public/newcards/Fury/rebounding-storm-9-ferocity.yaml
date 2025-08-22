@@ -6,14 +6,20 @@ body:
     baseEffect: damage; push 3
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage; push 5
     damage:
       baseValue: 14
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage; push 7
     damage:
       baseValue: 19
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: When a target would end this forced movement by colliding with a creature
     or object, they take damage as usual, then are pushed the remaining distance away
     from the creature or object in the direction they came from. As long as forced
@@ -21,6 +27,9 @@ body:
     or object.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: Melee 1

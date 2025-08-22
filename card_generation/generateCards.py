@@ -62,11 +62,10 @@ def createCards(className):
         cardData['header']['title'] = ability['name']
         cardData['header']['flavour'] = ability['flavor']
         cardData['header']['keywords'] = ability['keywords']
-        cardData['header']['distance'] = {}
-        cardData['header']['distance']['display'] = ability['distance'] # TODO: parse out values
-        cardData['header']['distance']['values'] = []
+        cardData['header']['distance'] = parseDistance(ability)
         cardData['header']['target'] = ability['target']
         cardData['body'] = parseBody(ability)
+        cardData['cost'] = parseCost(ability)
 
         fileName = ability['metadata']['item_id'] + '.yaml'
         with open(path.join(cardsPath, className, fileName), 'w') as c:

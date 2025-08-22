@@ -8,24 +8,30 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 10
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 14
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: If the target is a minion or is winded but isn't a leader or solo creature,
     they are reduced to 0 Stamina before this ability's damage is dealt. If the target
     is killed by this damage, you can deal any damage over what was required to kill
     them to another creature within 5 squares of the target.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: Melee 1

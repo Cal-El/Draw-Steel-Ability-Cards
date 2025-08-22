@@ -11,6 +11,7 @@ body:
     you.
   isEffect: true
   title: Spend 1 Insight
+cost: null
 header:
   distance:
     display: Self

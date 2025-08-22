@@ -3,6 +3,9 @@ body:
     are dying, each target gains 3 surges.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: 5 aura

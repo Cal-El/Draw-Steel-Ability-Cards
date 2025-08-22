@@ -6,14 +6,23 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 14
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 19
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: 5 cube within 10

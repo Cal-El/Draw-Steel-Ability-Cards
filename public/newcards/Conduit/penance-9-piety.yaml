@@ -6,6 +6,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: prone and can't stand (save ends)
@@ -14,6 +16,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: prone and can't stand (save ends)
@@ -22,10 +26,15 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 11
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: prone and can't stand (save ends)
       strength: 2
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: 4 cube within 10

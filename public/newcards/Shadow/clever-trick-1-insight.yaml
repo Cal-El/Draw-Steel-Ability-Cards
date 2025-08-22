@@ -6,6 +6,9 @@ body:
     who targeted you. The strike targets that enemy instead.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '1'
 header:
   distance:
     display: Self

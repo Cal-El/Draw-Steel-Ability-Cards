@@ -8,18 +8,22 @@ body:
       baseValue: 2
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: fire damage; push 3
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: fire damage; push 4
     damage:
       baseValue: 7
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
+cost: null
 header:
   distance:
     display: Ranged 10

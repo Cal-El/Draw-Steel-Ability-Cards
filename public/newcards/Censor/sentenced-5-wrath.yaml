@@ -8,6 +8,7 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: restrained (save ends)
@@ -18,6 +19,7 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: restrained (save ends)
@@ -28,6 +30,7 @@ body:
       baseValue: 12
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: restrained (save ends)
@@ -36,6 +39,9 @@ body:
     movement can still move them.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: Melee 1

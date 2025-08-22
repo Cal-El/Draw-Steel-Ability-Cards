@@ -11,6 +11,7 @@ body:
       baseValue: 4
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: frightened (save ends)
@@ -21,6 +22,7 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: frightened (save ends)
@@ -31,6 +33,7 @@ body:
       baseValue: 10
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: frightened (save ends)
@@ -40,6 +43,9 @@ body:
     If that enemy has P < AVERAGE, they are frightened of you (save ends).
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: Melee 1

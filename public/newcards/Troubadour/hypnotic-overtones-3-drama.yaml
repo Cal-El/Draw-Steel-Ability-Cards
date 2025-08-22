@@ -23,6 +23,9 @@ body:
 - body: The size of the burst increases by 1 for every 2 drama spent.
   isEffect: true
   title: Spend 2+ Drama
+cost:
+  costName: Drama
+  costValue: '3'
 header:
   distance:
     display: 2 burst

@@ -6,14 +6,20 @@ body:
     baseEffect: damage; vertical pull 5 toward the center of the area
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage; vertical pull 7 toward the center of the area
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage; vertical pull 10 toward the center of the area
     damage:
       baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: Targets closest to the center of the area are pulled first.
   isEffect: true
   title: Effect
@@ -21,6 +27,9 @@ body:
     within distance.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: 4 cube within 10

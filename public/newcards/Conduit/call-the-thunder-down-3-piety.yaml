@@ -6,17 +6,26 @@ body:
     baseEffect: sonic damage; push 1
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: sonic damage; push 2
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: sonic damage; push 3
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: You can push each willing ally in the area the same distance, ignoring stability.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '3'
 header:
   distance:
     display: 3 cube within 10

@@ -4,6 +4,7 @@ body:
     if you were there.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

@@ -14,6 +14,7 @@ body:
     - A target can spend 1 additional Recovery.'
   isEffect: true
   title: Spend 1+ Piety
+cost: null
 header:
   distance:
     display: Ranged 10

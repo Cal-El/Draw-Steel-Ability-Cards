@@ -3,6 +3,9 @@ body:
     surge at the end of each of your turns.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

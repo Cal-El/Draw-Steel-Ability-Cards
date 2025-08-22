@@ -12,6 +12,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: pull 1 toward the center of the area
@@ -20,6 +22,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: pull 2 toward the center of the area
@@ -28,10 +32,15 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: pull 3 toward the center of the area
       strength: 2
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: 3 cube within 10

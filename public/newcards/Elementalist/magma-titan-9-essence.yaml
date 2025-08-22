@@ -20,6 +20,9 @@ body:
     of your turn, the target can spend 2 Recoveries.
   isEffect: true
   title: Persistent 2
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

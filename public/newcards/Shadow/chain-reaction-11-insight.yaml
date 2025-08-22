@@ -12,14 +12,23 @@ body:
     baseEffect: damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 15
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

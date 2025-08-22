@@ -17,6 +17,7 @@ body:
     are dying or if you willingly end it (no action required).'
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 1 aura

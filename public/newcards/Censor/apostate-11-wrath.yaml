@@ -8,22 +8,28 @@ body:
       baseValue: 13
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: holy damage
     damage:
       baseValue: 19
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: holy damage
     damage:
       baseValue: 26
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: Until the end of the encounter or until you are dying, the target has damage
     weakness 10.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Melee 1

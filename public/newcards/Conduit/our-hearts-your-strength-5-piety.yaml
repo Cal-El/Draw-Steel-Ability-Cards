@@ -5,6 +5,9 @@ body:
     until the start of their next turn.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

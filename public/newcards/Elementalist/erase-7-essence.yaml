@@ -19,6 +19,9 @@ body:
     their original space or the nearest unoccupied space.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '7'
 header:
   distance:
     display: Ranged 10

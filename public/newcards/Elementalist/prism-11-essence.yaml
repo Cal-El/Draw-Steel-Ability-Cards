@@ -4,6 +4,9 @@ body:
     up to 2 squares between your use of each ability.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '11'
 header:
   distance:
     display: Self

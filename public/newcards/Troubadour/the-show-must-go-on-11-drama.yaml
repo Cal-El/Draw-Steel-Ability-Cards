@@ -6,6 +6,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: the target can't willingly leave the area (EoT)
@@ -14,6 +16,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: the target can't willingly leave the area (save ends)
@@ -23,6 +27,8 @@ body:
       they can't willingly leave the area (save ends)
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: they can't willingly leave the area (save ends)
@@ -31,6 +37,9 @@ body:
     next test they make before the start of your next turn.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
 header:
   distance:
     display: 5 cube within 10

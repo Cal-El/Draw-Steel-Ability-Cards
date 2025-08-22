@@ -8,6 +8,9 @@ body:
     of your turn, each ally in the area can spend a Recovery.
   isEffect: true
   title: Persistent 2
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: 4 burst

@@ -13,14 +13,23 @@ body:
     baseEffect: corruption damage; slowed (save ends)
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: corruption damage; slowed (save ends)
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: corruption damage; slowed (save ends)
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: Ranged 5

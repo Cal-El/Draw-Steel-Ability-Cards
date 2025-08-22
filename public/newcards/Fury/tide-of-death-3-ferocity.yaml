@@ -12,18 +12,27 @@ body:
     baseEffect: damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: The last target you damage takes extra damage equal to your Might score for
     each opportunity attack you trigger during your move.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '3'
 header:
   distance:
     display: Self; see below

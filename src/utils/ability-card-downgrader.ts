@@ -332,13 +332,13 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
     }
     const effectPrefix = tier.damage.otherBonus ? `+ ${tier.damage.otherBonus}` : "";
 
-    if (tier.damage?.characteristicBonusOptions.length === 0) {
+    if (tier.damage?.characteristicBonusOptions?.length === 0) {
       // Super simple "2"
       return {
         damageString: `${damage}${altDamage ? "|" + altDamage : ""}`,
         effectPrefix: effectPrefix,
       }
-    } else if (tier.damage?.characteristicBonusOptions.length === 1) {
+    } else if (tier.damage?.characteristicBonusOptions?.length === 1) {
       // Super simple "2+M" style damage
       if (heroData.characteristics.has(tier.damage.characteristicBonusOptions[0])) {
         // Character data includes characteristic, so render as just "2"
@@ -361,7 +361,7 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
     } else {
       // Complex characteristic options; either make a total (i.e. "2") or the vague value (i.e. "x") and expect values in effect
       let maxCharacteristic = -1;
-      for (const cOption of tier.damage.characteristicBonusOptions) {
+      for (const cOption of tier.damage.characteristicBonusOptions ?? []) {
         if (!heroData.characteristics.has(cOption)) {
           const cOptionsString = commaSeparatedOrString(tier.damage.characteristicBonusOptions.map(c => c.toString()[0]))
           // missing a characteristic option, return complex

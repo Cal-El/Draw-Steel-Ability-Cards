@@ -9,6 +9,9 @@ body:
     causing them to automatically merge and combine their current Stamina.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

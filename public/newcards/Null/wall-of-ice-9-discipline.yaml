@@ -8,6 +8,9 @@ body:
     and has M < AVERAGE is restrained (save ends).
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: 10 wall within 10

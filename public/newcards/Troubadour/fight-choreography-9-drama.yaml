@@ -5,6 +5,9 @@ body:
     free strike targets. You then slide the target 5 squares, ignoring stability.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: Melee 1

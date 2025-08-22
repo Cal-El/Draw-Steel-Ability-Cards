@@ -6,6 +6,9 @@ body:
     and you decide who the ability targets.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

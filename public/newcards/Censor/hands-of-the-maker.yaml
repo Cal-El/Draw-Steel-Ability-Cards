@@ -5,6 +5,7 @@ body:
     required).
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Self

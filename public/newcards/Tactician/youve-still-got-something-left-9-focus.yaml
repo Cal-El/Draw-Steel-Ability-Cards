@@ -5,6 +5,9 @@ body:
     cost 0).
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

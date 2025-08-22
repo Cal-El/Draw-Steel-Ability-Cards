@@ -8,6 +8,7 @@ body:
 - body: The power roll has a double bane against the target.
   isEffect: true
   title: Spend 1 Piety
+cost: null
 header:
   distance:
     display: Ranged 10

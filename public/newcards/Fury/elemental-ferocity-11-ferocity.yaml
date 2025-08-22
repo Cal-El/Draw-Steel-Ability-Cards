@@ -5,6 +5,9 @@ body:
     type. If this damage reduces the enemy to 0 Stamina, you gain 10 temporary Stamina.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: Self

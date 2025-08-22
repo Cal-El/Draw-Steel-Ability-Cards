@@ -6,18 +6,27 @@ body:
     baseEffect: damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: At the start of your turn, you can use a maneuver to use this ability again
     without spending essence.
   isEffect: true
   title: Persistent 2
+cost:
+  costName: Essence
+  costValue: '11'
 header:
   distance:
     display: 5 cube within 10

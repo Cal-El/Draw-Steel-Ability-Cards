@@ -8,18 +8,21 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
 - body: You gain 1 surge.
   isEffect: true
   title: Effect
@@ -27,6 +30,7 @@ body:
     in any way.
   isEffect: true
   title: Strained
+cost: null
 header:
   distance:
     display: Melee 2

@@ -24,6 +24,9 @@ body:
       characteristic: Agility
       effect: dazed (save ends)
       strength: 2
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Melee 1

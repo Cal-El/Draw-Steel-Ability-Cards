@@ -6,17 +6,26 @@ body:
     baseEffect: psychic damage; any target who is a minion is reduced to 0 Stamina
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: psychic damage; any target who is a minion is reduced to 0 Stamina,
       as does one winded target who is not a leader or solo creature
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: psychic damage; each target who is not a leader or solo creature is
       winded; any target who is a minion is reduced to 0 Stamina, as does one winded
       target who is not a leader or solo creature
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: 3 burst

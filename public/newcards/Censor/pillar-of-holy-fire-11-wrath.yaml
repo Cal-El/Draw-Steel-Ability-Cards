@@ -8,6 +8,7 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: dazed (save ends)
@@ -18,6 +19,7 @@ body:
       baseValue: 13
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: dazed (save ends)
@@ -28,6 +30,7 @@ body:
       baseValue: 18
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: dazed (save ends)
@@ -36,6 +39,9 @@ body:
     equal to twice your Presence score to each enemy within 2 squares of them.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Melee 1

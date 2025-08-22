@@ -5,6 +5,9 @@ body:
     movement in concealment or cover can use the Hide maneuver even if they are observed.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: 4 burst

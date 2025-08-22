@@ -8,23 +8,29 @@ body:
       baseValue: 10
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 15
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 21
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: Until the end of the encounter, while the target is judged by you, you can
     choose to make them the source of any of your abilities. Additionally, the target
     counts as an ally for the purpose of flanking.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

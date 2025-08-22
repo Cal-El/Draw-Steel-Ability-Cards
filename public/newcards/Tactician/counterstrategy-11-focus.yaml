@@ -5,6 +5,9 @@ body:
     their Heroic Resource.'
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Self

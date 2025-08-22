@@ -5,6 +5,7 @@ body:
 - body: The target can use a maneuver.
   isEffect: true
   title: Spend 2 Clarity
+cost: null
 header:
   distance:
     display: Ranged 10

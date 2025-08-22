@@ -6,18 +6,27 @@ body:
     baseEffect: damage; vertical pull 3
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage; vertical pull 5
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage; vertical pull 7
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: If this forced movement causes a target to slam into you, you take no damage
     from the collision and the target takes the damage you would have taken.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: 3 burst

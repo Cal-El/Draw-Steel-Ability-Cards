@@ -13,6 +13,7 @@ body:
     instead.
   isEffect: true
   title: Spend 1 Ferocity
+cost: null
 header:
   distance:
     display: Melee 1

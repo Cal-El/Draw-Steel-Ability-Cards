@@ -8,6 +8,7 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: corruption damage; the target has line of effect only to creatures
       and objects within 4 squares of them until the start of your next turn
@@ -15,6 +16,7 @@ body:
       baseValue: 10
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: corruption damage; the target has line of effect only to adjacent
       creatures and objects until the start of your next turn
@@ -22,6 +24,10 @@ body:
       baseValue: 15
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

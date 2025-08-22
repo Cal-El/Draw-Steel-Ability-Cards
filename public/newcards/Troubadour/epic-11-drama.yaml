@@ -13,6 +13,9 @@ body:
     the ability is resolved.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
 header:
   distance:
     display: Melee 1 or ranged 10

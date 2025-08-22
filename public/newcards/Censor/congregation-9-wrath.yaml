@@ -9,6 +9,7 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage; as a free triggered action, one ally within 10 squares of
       the target can use a strike signature ability that gains an edge against the
@@ -17,6 +18,7 @@ body:
       baseValue: 12
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage; as a free triggered action, two allies within 10 squares of
       the target can each use a strike signature ability that gains an edge against
@@ -25,9 +27,13 @@ body:
       baseValue: 16
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: Each ally can shift up to 2 squares and gains 2 surges before making the strike.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Melee 1

@@ -8,6 +8,9 @@ body:
     baseEffect: Each target gains 2 surges.
   t3:
     baseEffect: Each target gains 3 surges.
+cost:
+  costName: Focus
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

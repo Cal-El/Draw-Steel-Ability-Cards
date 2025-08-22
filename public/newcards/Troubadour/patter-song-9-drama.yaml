@@ -11,6 +11,9 @@ body:
     baseEffect: Three allies within distance can take their turns immediately after
       yours in any order. One of those allies can have already taken a turn this combat
       round.
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

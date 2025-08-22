@@ -28,6 +28,7 @@ body:
     benefit from the same trigger.'
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

@@ -5,6 +5,9 @@ body:
     power rolls, and any damage you deal is sonic damage.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Special

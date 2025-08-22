@@ -7,6 +7,9 @@ body:
     of the ability instead. When either duplicate takes damage, it is destroyed.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

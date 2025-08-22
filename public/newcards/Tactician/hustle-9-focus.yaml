@@ -3,6 +3,9 @@ body:
     their speed. You and each target gain 2 surges.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: 2 burst

@@ -8,6 +8,7 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: dazed (save ends)
@@ -18,6 +19,7 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: dazed (save ends)
@@ -28,10 +30,14 @@ body:
       baseValue: 11
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Intuition
       effect: dazed (save ends)
       strength: 2
+cost:
+  costName: Wrath
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

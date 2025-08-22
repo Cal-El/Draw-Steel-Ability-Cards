@@ -6,17 +6,24 @@ body:
     baseEffect: damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: The ground beneath the area is difficult terrain for enemies.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 2 cube within 10

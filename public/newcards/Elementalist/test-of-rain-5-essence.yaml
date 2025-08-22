@@ -6,18 +6,27 @@ body:
     baseEffect: acid damage
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: acid damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: acid damage
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: You can end one effect on yourself that is ended by a saving throw or that
     ends at the end of your turn. Each ally in the area also gains this benefit.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: 3 cube within 10

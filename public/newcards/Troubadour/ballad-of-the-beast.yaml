@@ -3,6 +3,7 @@ body:
     area gains 1 surge.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

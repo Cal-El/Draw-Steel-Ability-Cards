@@ -9,6 +9,8 @@ body:
     baseEffect: sonic damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: prone
@@ -17,6 +19,8 @@ body:
     baseEffect: sonic damage
     damage:
       baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: prone
@@ -25,10 +29,15 @@ body:
     baseEffect: sonic damage
     damage:
       baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: prone
       strength: 2
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: Three 3 cubes within 1

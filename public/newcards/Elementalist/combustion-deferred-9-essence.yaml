@@ -8,23 +8,29 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 17
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
 - body: When the target ends their next turn, or if they drop to 0 Stamina before
     then, each enemy adjacent to them takes fire damage equal to twice your Reason
     score. Each affected enemy then gains this same effect.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

@@ -3,6 +3,9 @@ body:
     power roll as the triggering strike.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: Melee 1

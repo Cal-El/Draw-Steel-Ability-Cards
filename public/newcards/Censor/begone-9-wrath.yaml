@@ -6,14 +6,23 @@ body:
     baseEffect: psychic damage; slide 3
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: psychic damage; slide 5
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: psychic damage; slide 7
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: 3 burst

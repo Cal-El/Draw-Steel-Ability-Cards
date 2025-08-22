@@ -2,6 +2,9 @@ body:
 - body: Each target can move up to their speed.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

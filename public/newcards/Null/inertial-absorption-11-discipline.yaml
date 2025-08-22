@@ -3,6 +3,9 @@ body:
     you, and gain 3 surges.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: Self

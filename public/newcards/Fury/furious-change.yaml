@@ -9,6 +9,7 @@ body:
 - body: If you are not dying, you can spend a Recovery.
   isEffect: true
   title: Spend 1 Ferocity
+cost: null
 header:
   distance:
     display: Ranged 10

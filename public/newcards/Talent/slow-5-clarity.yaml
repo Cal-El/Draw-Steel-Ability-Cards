@@ -32,6 +32,9 @@ body:
     required).
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

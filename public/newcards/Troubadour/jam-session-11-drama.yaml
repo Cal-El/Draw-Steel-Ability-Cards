@@ -6,19 +6,28 @@ body:
     baseEffect: sonic damage
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: sonic damage
     damage:
       baseValue: 11
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: sonic damage
     damage:
       baseValue: 15
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: Each creature within distance gains a +5 bonus to speed until the end of their
     next turn. While under this effect, each target must use their full movement during
     their turn.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
 header:
   distance:
     display: 5 burst

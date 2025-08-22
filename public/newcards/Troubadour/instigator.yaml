@@ -8,22 +8,26 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
 - body: The target is taunted by you or a willing ally adjacent to you until the end
     of the target's next turn.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

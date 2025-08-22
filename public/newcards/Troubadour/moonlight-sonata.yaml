@@ -6,6 +6,7 @@ body:
     to dust and blows away.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

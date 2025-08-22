@@ -8,22 +8,28 @@ body:
       baseValue: 13
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: corruption damage; push 5
     damage:
       baseValue: 18
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: corruption damage; push 7
     damage:
       baseValue: 25
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
 - body: On a critical hit, the target is grabbed by the demon and pulled through the
     portal before it closes, never to be seen again.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Melee 3

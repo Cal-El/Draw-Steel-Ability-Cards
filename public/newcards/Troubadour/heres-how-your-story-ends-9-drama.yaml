@@ -6,6 +6,8 @@ body:
     baseEffect: psychic damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: frightened (save ends)
@@ -14,6 +16,8 @@ body:
     baseEffect: psychic damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: frightened (save ends)
@@ -22,10 +26,15 @@ body:
     baseEffect: damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: frightened (save ends)
       strength: 2
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: 5 burst

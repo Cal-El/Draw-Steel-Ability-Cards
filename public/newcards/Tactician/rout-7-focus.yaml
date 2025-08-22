@@ -4,6 +4,9 @@ body:
     frightened of the creature who dealt the damage (save ends).
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '7'
 header:
   distance:
     display: Self

@@ -5,6 +5,9 @@ body:
     are prone.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

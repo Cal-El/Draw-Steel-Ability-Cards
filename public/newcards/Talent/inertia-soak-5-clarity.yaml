@@ -10,6 +10,9 @@ body:
     are force moved, the forced movement distance gains a +5 bonus.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

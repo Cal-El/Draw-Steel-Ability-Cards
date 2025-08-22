@@ -8,22 +8,26 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: You gain 2 surges, and the target can make an opportunity attack against you
     as a free triggered action.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

@@ -5,6 +5,9 @@ body:
     terrain, and can use a strike signature ability as a free triggered action.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

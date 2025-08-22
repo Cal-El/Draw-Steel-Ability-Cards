@@ -4,6 +4,9 @@ body:
     takes a bane on ability rolls.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '7'
 header:
   distance:
     display: Self

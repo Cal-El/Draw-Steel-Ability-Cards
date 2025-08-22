@@ -8,6 +8,7 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: slowed (save ends)
@@ -18,6 +19,7 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: slowed (save ends)
@@ -28,6 +30,7 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: restrained (save ends)
@@ -36,6 +39,9 @@ body:
     by this ability, this forced movement ignores their stability.
   isEffect: true
   title: Effect
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

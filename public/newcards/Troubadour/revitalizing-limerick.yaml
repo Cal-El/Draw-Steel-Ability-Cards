@@ -4,6 +4,7 @@ body:
     can spend a Recovery.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

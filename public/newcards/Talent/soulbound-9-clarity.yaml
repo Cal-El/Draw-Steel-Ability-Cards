@@ -6,6 +6,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: the target is stitched to the other target (save ends)
@@ -14,6 +16,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: the target is stitched to the other target (save ends)
@@ -22,6 +26,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 17
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: the target is stitched to the other target (save ends)
@@ -36,6 +42,9 @@ body:
 - body: You target yourself and three enemies instead.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

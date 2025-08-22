@@ -6,6 +6,7 @@ body:
     suffering a condition or other negative effect.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 2 aura

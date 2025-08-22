@@ -8,22 +8,28 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 18
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
 - body: The target is taunted by a willing ally within 5 squares of you until the
     end of the target's next turn.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '7'
 header:
   distance:
     display: Melee 1 or ranged 5

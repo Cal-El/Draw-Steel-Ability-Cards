@@ -8,22 +8,28 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 11
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
 - body: If the target is within distance at the start of your turn, you can make the
     power roll again without spending essence (no action required).
   isEffect: true
   title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

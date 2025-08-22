@@ -8,6 +8,7 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: slowed (save ends)
@@ -18,6 +19,7 @@ body:
       baseValue: 13
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: slowed (save ends)
@@ -28,6 +30,7 @@ body:
       baseValue: 18
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: restrained (save ends)
@@ -38,6 +41,9 @@ body:
     given a supernatural cure or you choose to reverse the effect (no action required).
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: Melee 1

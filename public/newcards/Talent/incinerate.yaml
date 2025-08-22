@@ -6,14 +6,20 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: A column of fire remains in the area until the start of your next turn. Each
     enemy who enters the area for the first time in a combat round or starts their
     turn there takes 2 fire damage.
@@ -23,6 +29,7 @@ body:
     your turn.
   isEffect: true
   title: Strained
+cost: null
 header:
   distance:
     display: 3 cube within 10

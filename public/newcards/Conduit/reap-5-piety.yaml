@@ -3,6 +3,9 @@ body:
     regain Stamina equal to 5 + your Intuition score.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

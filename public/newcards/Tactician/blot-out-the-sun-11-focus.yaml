@@ -4,6 +4,9 @@ body:
     and double banes when making this strike.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: 3 burst

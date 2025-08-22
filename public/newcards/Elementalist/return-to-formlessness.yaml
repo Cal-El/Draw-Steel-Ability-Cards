@@ -4,6 +4,7 @@ body:
     destroyed.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

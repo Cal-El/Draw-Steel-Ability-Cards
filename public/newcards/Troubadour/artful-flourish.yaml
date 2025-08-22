@@ -6,20 +6,27 @@ body:
     baseEffect: damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: You can shift up to 3 squares.
   isEffect: true
   title: Effect
 - body: You can target one additional creature or object for every 2 drama spent.
   isEffect: true
   title: Spend 2+ Drama
+cost: null
 header:
   distance:
     display: Melee 1

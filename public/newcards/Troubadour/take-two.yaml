@@ -4,6 +4,7 @@ body:
     They must use the new roll.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

@@ -3,6 +3,9 @@ body:
     power rolls has its outcome improved by one tier.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

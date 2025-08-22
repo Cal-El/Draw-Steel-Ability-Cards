@@ -8,6 +8,7 @@ body:
       baseValue: 10
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: grabbed
@@ -18,6 +19,7 @@ body:
       baseValue: 14
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: grabbed
@@ -28,6 +30,7 @@ body:
       baseValue: 18
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: grabbed
@@ -37,6 +40,9 @@ body:
     score.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Melee 1

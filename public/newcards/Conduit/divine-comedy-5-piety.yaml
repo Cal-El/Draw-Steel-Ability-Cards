@@ -4,6 +4,9 @@ body:
     leave and vice versa.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: 5 burst

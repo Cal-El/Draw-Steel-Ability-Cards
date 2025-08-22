@@ -5,6 +5,9 @@ body:
     0).
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

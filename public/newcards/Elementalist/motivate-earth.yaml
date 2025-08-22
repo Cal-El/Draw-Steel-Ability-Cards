@@ -10,6 +10,7 @@ body:
     is sealed by the same material that makes up the surface.'
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

@@ -10,6 +10,9 @@ body:
     of your next turn.'
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '7'
 header:
   distance:
     display: Ranged 10

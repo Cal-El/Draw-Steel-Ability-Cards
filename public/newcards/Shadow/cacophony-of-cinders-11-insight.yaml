@@ -12,6 +12,9 @@ body:
     baseEffect: An enemy takes 10 damage; an ally can teleport up to 5 squares.
   t3:
     baseEffect: An enemy takes 14 damage; an ally can teleport up to 7 squares.
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Self; see below

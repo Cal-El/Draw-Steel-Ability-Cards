@@ -4,6 +4,9 @@ body:
     gain 3 surges and can make a melee free strike against them.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '7'
 header:
   distance:
     display: Melee 1

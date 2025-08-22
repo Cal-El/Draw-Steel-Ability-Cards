@@ -6,14 +6,23 @@ body:
     baseEffect: lightning damage; vertical slide 1
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: lightning damage; vertical slide 2
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: lightning damage; vertical slide 3
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: 3 cube within 10

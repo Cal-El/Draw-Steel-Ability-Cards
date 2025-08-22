@@ -8,22 +8,26 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t2:
     baseEffect: holy damage
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t3:
     baseEffect: holy damage
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
 - body: You or one ally within distance gains temporary Stamina equal to your Intuition
     score.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

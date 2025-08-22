@@ -16,6 +16,9 @@ body:
 - body: Your speed is halved until the end of the encounter.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

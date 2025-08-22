@@ -9,6 +9,7 @@ body:
     instead.
   isEffect: true
   title: Spend 1 Essence
+cost: null
 header:
   distance:
     display: Ranged 10

@@ -12,6 +12,9 @@ body:
     by a number equal to the target's Intuition score.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: 3 cube within 10

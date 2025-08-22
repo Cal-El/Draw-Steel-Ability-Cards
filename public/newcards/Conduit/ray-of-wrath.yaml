@@ -8,21 +8,25 @@ body:
       baseValue: 2
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 4
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
 - body: You can have this ability deal holy damage.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

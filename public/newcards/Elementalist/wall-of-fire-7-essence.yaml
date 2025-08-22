@@ -10,6 +10,9 @@ body:
     of squares to the wall equal to your Reason score.
   isEffect: true
   title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '7'
 header:
   distance:
     display: 10 wall within 10

@@ -4,6 +4,7 @@ body:
     or climb as part of their movement before the end of their turn.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

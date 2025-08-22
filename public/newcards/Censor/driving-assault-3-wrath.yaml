@@ -8,22 +8,28 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage; push 3
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage; push 5
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: You can shift up to your speed in a straight line toward the target after
     pushing them.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '3'
 header:
   distance:
     display: Melee 1

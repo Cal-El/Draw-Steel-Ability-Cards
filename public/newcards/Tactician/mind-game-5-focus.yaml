@@ -11,6 +11,7 @@ body:
       baseValue: 4
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: weakened (save ends)
@@ -21,6 +22,7 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: weakened (save ends)
@@ -31,6 +33,7 @@ body:
       baseValue: 10
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: weakened (save ends)
@@ -39,6 +42,9 @@ body:
     any target marked by you, that ally can spend a Recovery.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Melee 1 or ranged 5

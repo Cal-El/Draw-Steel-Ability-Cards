@@ -6,14 +6,23 @@ body:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage; push 1
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage; push 3
     damage:
       baseValue: 11
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Ferocity
+  costValue: '3'
 header:
   distance:
     display: 1 burst

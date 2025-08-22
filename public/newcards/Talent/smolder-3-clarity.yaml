@@ -13,6 +13,7 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: the target has weakness 5 (save ends)
@@ -23,6 +24,7 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: the target has weakness 5 (save ends)
@@ -33,10 +35,14 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: the target has weakness equal to 5 + your Reason score (save ends)
       strength: 2
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

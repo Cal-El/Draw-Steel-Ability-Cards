@@ -6,6 +6,7 @@ body:
     a free triggered action.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

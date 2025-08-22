@@ -8,6 +8,7 @@ body:
 - body: The potency of one effect associated with the damage is reduced by 1 for you.
   isEffect: true
   title: Spend 1 Discipline
+cost: null
 header:
   distance:
     display: Self

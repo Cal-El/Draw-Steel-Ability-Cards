@@ -28,6 +28,9 @@ body:
 - body: You can't use this ability if doing so would cause you to have negative clarity.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: 3 burst

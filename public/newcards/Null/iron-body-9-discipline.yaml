@@ -3,6 +3,9 @@ body:
     your stability gains a bonus equal to your Intuition score.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Self

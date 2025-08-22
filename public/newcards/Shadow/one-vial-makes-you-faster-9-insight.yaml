@@ -16,6 +16,9 @@ body:
     baseEffect: The creature can fly until the end of the encounter.
   t3:
     baseEffect: The creature turns invisible until the end of their next turn.
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

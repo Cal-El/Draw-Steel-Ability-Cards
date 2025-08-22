@@ -6,6 +6,7 @@ body:
 - body: You target one additional creature or object.
   isEffect: true
   title: Spend 1 Clarity
+cost: null
 header:
   distance:
     display: Ranged 10

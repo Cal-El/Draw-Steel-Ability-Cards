@@ -11,6 +11,9 @@ body:
     Resource cost of 3 + each additional drama spent.
   isEffect: true
   title: Spend 1+ Drama
+cost:
+  costName: Drama
+  costValue: '3'
 header:
   distance:
     display: Ranged 5

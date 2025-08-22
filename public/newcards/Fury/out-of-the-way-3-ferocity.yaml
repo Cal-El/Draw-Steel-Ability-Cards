@@ -8,23 +8,29 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage; slide 3
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage; slide 5
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: When you slide the target, you can move into any square they leave. If you
     take damage from an opportunity attack by moving this way, the target takes the
     same damage.
   isEffect: true
   title: Effect
+cost:
+  costName: Ferocity
+  costValue: '3'
 header:
   distance:
     display: Melee 1

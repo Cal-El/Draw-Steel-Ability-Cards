@@ -8,6 +8,7 @@ body:
 - body: The target can spend an additional Recovery for each essence spent.
   isEffect: true
   title: Spend 1+ Essence
+cost: null
 header:
   distance:
     display: Ranged 10

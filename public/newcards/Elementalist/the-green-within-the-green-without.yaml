@@ -8,21 +8,25 @@ body:
       baseValue: 2
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 7
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
 - body: You slide one creature within 10 squares of the target up to 2 squares.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

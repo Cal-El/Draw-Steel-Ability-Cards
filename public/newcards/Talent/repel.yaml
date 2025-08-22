@@ -9,6 +9,7 @@ body:
     movement a number of squares equal to your Reason score.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

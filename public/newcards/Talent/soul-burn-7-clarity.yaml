@@ -8,6 +8,7 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: dazed (save ends)
@@ -18,6 +19,7 @@ body:
       baseValue: 10
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: dazed (save ends)
@@ -28,6 +30,7 @@ body:
       baseValue: 14
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: dazed (save ends)
@@ -39,6 +42,9 @@ body:
     surges that you can use immediately.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '7'
 header:
   distance:
     display: Ranged 10

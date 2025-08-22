@@ -13,17 +13,26 @@ body:
     baseEffect: damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: You create five orbs, and you are weakened while you have any orbs active.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '7'
 header:
   distance:
     display: Self; see below

@@ -25,6 +25,9 @@ body:
       characteristic: Agility
       effect: prone and can't stand (EoT)
       strength: 2
+cost:
+  costName: Drama
+  costValue: '3'
 header:
   distance:
     display: Self; see below

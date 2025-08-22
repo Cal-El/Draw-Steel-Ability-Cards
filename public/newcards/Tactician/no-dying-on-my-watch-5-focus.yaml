@@ -30,6 +30,9 @@ body:
       characteristic: Reason
       effect: the target is frightened of the triggering ally (save ends)
       strength: 2
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged 5

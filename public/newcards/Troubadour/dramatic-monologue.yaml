@@ -13,6 +13,7 @@ body:
 - body: You can choose two targets for the chosen effect.
   isEffect: true
   title: Spend 1 Drama
+cost: null
 header:
   distance:
     display: Ranged 10

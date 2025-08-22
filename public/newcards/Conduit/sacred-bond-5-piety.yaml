@@ -6,6 +6,9 @@ body:
     to spend a Recovery.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

@@ -11,6 +11,9 @@ body:
     to end the effect early.'
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

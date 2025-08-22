@@ -3,6 +3,9 @@ body:
     to your Might score. Additionally, each target gains 2 surges.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: 1 burst

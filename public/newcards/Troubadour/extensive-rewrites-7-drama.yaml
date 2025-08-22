@@ -25,6 +25,9 @@ body:
     creatures or objects using this ability.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '7'
 header:
   distance:
     display: 4 burst

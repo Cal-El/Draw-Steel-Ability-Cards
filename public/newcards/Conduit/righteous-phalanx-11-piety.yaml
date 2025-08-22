@@ -5,6 +5,9 @@ body:
     their turn there takes 15 damage.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: 15 wall within 10

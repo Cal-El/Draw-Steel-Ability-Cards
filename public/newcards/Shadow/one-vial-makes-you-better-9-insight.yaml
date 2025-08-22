@@ -9,6 +9,9 @@ body:
     end of the encounter.'
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

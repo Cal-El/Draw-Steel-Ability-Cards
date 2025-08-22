@@ -17,6 +17,9 @@ body:
     all targets take from forced movement.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: Special

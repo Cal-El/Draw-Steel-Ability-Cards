@@ -8,21 +8,25 @@ body:
       baseValue: 2
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t2:
     baseEffect: corruption damage
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t3:
     baseEffect: corruption damage
     damage:
       baseValue: 7
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
 - body: You or one ally within distance can spend a Recovery.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

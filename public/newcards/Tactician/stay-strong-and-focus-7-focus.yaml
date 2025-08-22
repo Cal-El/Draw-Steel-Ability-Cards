@@ -4,6 +4,9 @@ body:
     can spend a Recovery.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '7'
 header:
   distance:
     display: Self

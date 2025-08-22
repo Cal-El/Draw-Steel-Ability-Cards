@@ -5,6 +5,7 @@ body:
 - body: You target two allies instead of one.
   isEffect: true
   title: Spend 5 Focus
+cost: null
 header:
   distance:
     display: Ranged 10

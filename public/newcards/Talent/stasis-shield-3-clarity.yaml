@@ -11,6 +11,9 @@ body:
     instead of the target.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Ranged 10

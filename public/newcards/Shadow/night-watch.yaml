@@ -5,6 +5,7 @@ body:
 - body: The target takes half the damage. You remain hidden.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 5

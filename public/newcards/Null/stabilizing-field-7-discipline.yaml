@@ -7,6 +7,9 @@ body:
     turn. Each ally in the area also gains these benefits.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '7'
 header:
   distance:
     display: Self

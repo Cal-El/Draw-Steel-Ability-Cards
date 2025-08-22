@@ -6,17 +6,26 @@ body:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: The ground in or directly beneath the area drops 3 squares.
   isEffect: true
   title: Effect
+cost:
+  costName: Essence
+  costValue: '7'
 header:
   distance:
     display: 3 cube within 10

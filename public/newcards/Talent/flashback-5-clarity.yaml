@@ -7,6 +7,9 @@ body:
 - body: You take 1d6 damage and are slowed (save ends).
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

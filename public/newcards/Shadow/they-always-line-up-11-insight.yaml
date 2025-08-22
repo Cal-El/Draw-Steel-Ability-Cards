@@ -6,6 +6,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: slowed (save ends)
@@ -14,6 +16,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 18
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: slowed (save ends)
@@ -22,10 +26,15 @@ body:
     baseEffect: damage
     damage:
       baseValue: 24
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: slowed (save ends)
       strength: 2
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: 5 x 1 line within 5

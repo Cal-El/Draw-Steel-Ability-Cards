@@ -11,6 +11,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: dazed
@@ -19,6 +21,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: dazed
@@ -27,10 +31,15 @@ body:
     baseEffect: damage
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Might
       effect: dazed
       strength: 2
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Self; see below

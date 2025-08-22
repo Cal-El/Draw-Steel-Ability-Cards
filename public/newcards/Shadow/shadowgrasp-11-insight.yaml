@@ -6,6 +6,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 11
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: restrained (save ends)
@@ -14,6 +16,8 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 16
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: restrained (save ends)
@@ -22,10 +26,15 @@ body:
     baseEffect: corruption damage
     damage:
       baseValue: 21
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: restrained (save ends)
       strength: 2
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: 2 burst

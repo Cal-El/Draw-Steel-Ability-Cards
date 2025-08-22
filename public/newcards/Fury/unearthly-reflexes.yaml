@@ -10,6 +10,7 @@ body:
     by 1 for you.
   isEffect: true
   title: Spend 1 Ferocity
+cost: null
 header:
   distance:
     display: Self

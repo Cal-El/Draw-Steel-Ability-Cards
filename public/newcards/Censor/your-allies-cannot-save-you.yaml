@@ -8,22 +8,26 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: holy damage
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: holy damage
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: Each enemy adjacent to the target is pushed away from the target up to a number
     of squares equal to your Presence score.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

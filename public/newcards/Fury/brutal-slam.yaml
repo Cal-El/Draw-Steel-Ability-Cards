@@ -8,18 +8,22 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage; push 2
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage; push 4
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
+cost: null
 header:
   distance:
     display: Melee 1

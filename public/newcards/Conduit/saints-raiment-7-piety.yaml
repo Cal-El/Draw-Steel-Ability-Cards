@@ -2,6 +2,9 @@ body:
 - body: The target gains 20 temporary Stamina and 3 surges.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '7'
 header:
   distance:
     display: Ranged 10

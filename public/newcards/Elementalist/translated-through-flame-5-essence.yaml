@@ -10,14 +10,23 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

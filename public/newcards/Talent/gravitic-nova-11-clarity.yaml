@@ -6,14 +6,20 @@ body:
     baseEffect: damage; push 7
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: damage; push 10
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: damage; push 15
     damage:
       baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: On a critical hit, the size of the area increases by 3, and this ability deals
     an extra 10 damage.
   isEffect: true
@@ -22,6 +28,9 @@ body:
     you die.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: 3 burst

@@ -6,17 +6,26 @@ body:
     baseEffect: holy damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: holy damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: holy damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: Each ally in the area can spend a Recovery.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '7'
 header:
   distance:
     display: 5 burst

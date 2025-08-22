@@ -15,6 +15,9 @@ body:
     your line of effect.
   isEffect: true
   title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: 3 cube within 10

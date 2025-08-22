@@ -8,18 +8,22 @@ body:
       baseValue: 4
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage; taunted (EoT), slide 1
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage; taunted (EoT), slide 2
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
+cost: null
 header:
   distance:
     display: Melee 1

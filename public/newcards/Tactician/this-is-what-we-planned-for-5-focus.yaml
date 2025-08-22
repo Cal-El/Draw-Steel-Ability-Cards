@@ -3,6 +3,9 @@ body:
     any order immediately after yours.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

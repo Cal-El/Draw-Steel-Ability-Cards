@@ -7,6 +7,9 @@ body:
 - body: You can't use maneuvers (save ends).
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

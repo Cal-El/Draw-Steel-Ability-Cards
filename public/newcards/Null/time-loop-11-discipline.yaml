@@ -3,6 +3,9 @@ body:
     can be used only once per combat round.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: Self

@@ -9,6 +9,9 @@ body:
     you take 2d6 damage and forget a memory, as determined by you and the Director.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '7'
 header:
   distance:
     display: 3 aura

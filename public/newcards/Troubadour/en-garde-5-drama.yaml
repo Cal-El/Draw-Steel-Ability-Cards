@@ -8,22 +8,28 @@ body:
       baseValue: 7
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 11
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 16
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
 - body: The target can make a melee free strike against you. If they do, you can make
     a melee free strike against the target.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Melee 1

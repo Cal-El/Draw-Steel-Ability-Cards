@@ -11,6 +11,7 @@ body:
     negated. A bane becomes a double edge, or a double bane is negated.
   isEffect: true
   title: Spend 3 Drama
+cost: null
 header:
   distance:
     display: Ranged 10

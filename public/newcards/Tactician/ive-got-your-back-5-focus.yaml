@@ -8,21 +8,27 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: damage; taunted (EoT)
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: damage; taunted (EoT)
     damage:
       baseValue: 12
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
 - body: One ally adjacent to the target can spend a Recovery.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged 5

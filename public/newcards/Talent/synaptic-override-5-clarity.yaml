@@ -19,6 +19,9 @@ body:
 - body: You take 1d6 damage and are weakened until the end of your turn.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

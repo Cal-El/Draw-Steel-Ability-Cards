@@ -13,6 +13,9 @@ body:
     damage.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '5'
 header:
   distance:
     display: Melee 1

@@ -4,6 +4,9 @@ body:
     the end of each of your turns.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: 4 aura

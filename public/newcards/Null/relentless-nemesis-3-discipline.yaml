@@ -8,23 +8,29 @@ body:
       baseValue: 6
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 12
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
 - body: Until the start of your next turn, whenever the target moves or is force moved,
     you can use a free triggered action to shift up to your speed. You must end this
     shift adjacent to the target.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '3'
 header:
   distance:
     display: Melee 1

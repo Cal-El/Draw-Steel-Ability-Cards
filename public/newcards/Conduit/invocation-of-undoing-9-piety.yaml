@@ -6,18 +6,27 @@ body:
     baseEffect: sonic damage; push 3
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: sonic damage; push 5
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: sonic damage; push 7
     damage:
       baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: You can choose to have this ability deal damage to and push objects, and to
     deal damage to buildings.
   isEffect: true
   title: Special
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: 4 burst

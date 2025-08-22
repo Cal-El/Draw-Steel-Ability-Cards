@@ -8,21 +8,27 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 13
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 18
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: You and each ally adjacent to the target gain 10 temporary Stamina.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Melee 1

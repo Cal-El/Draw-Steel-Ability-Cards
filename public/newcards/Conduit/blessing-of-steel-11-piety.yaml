@@ -3,6 +3,9 @@ body:
     a bane and each target has damage immunity 5.
   isEffect: true
   title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: 5 aura

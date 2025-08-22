@@ -11,6 +11,9 @@ body:
     baseEffect: The target gains 10 temporary Stamina.
   t3:
     baseEffect: The target gains 15 temporary Stamina.
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

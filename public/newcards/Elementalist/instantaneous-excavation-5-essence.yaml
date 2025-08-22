@@ -22,6 +22,9 @@ body:
     each creature who could fall into the hole when it opens without spending essence.
   isEffect: true
   title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

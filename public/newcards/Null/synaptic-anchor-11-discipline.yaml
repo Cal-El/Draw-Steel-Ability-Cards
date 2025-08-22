@@ -5,6 +5,9 @@ body:
     a main action.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: Self; see below

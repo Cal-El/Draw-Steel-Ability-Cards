@@ -7,6 +7,9 @@ body:
     enemy.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

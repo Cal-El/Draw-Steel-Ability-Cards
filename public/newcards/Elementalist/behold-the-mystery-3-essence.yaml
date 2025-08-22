@@ -6,18 +6,27 @@ body:
     baseEffect: psychic damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: psychic damage
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: psychic damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: At the start of your turn, you can use a maneuver to use this ability again
     without spending essence.
   isEffect: true
   title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '3'
 header:
   distance:
     display: 3 cube within 10

@@ -5,6 +5,9 @@ body:
     score.
   isEffect: true
   title: Effect
+cost:
+  costName: Discipline
+  costValue: '5'
 header:
   distance:
     display: Self

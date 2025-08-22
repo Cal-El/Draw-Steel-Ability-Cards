@@ -6,14 +6,23 @@ body:
     baseEffect: psychic damage; push 3
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: psychic damage; push 5
     damage:
       baseValue: 17
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: psychic damage; push 7
     damage:
       baseValue: 23
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: 3 cube within 1

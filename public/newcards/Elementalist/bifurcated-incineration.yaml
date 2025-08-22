@@ -6,14 +6,21 @@ body:
     baseEffect: fire damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: fire damage
     damage:
       baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: fire damage
     damage:
       baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost: null
 header:
   distance:
     display: Ranged 10

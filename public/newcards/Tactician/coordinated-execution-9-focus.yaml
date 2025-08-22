@@ -6,6 +6,9 @@ body:
     tier 3 outcome.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Ranged 10

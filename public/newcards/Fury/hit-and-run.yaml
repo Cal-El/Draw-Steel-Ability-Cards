@@ -8,18 +8,21 @@ body:
       baseValue: 2
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage
     damage:
       baseValue: 7
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
     potency:
       characteristic: Agility
       effect: slowed (save ends)
@@ -27,6 +30,7 @@ body:
 - body: You can shift 1 square.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Melee 1

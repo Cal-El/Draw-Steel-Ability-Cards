@@ -10,18 +10,27 @@ body:
     baseEffect: sonic damage
     damage:
       baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: sonic damage
     damage:
       baseValue: 18
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: sonic damage
     damage:
       baseValue: 24
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: If you obtain a tier 2 outcome or better, you are slowed until the end of
     your turn and each target is slowed until the end of their turn.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: 5 x 2 line within 1

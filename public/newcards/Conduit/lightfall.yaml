@@ -6,18 +6,25 @@ body:
     baseEffect: holy damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t2:
     baseEffect: holy damage
     damage:
       baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
   t3:
     baseEffect: holy damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: You can teleport yourself and each ally in the area to unoccupied spaces in
     the area.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 2 burst

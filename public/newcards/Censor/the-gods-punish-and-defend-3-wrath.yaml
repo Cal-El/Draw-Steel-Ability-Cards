@@ -8,22 +8,28 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: holy damage
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: holy damage
     damage:
       baseValue: 11
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: You can spend a Recovery to allow yourself or one ally within 10 squares to
     regain Stamina equal to your recovery value.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '3'
 header:
   distance:
     display: Melee 1

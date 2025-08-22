@@ -8,18 +8,22 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t2:
     baseEffect: holy damage; vertical pull 3
     damage:
       baseValue: 5
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
   t3:
     baseEffect: holy damage; vertical pull 4
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Intuition
+      includedKitValue: 0
+cost: null
 header:
   distance:
     display: Ranged 10

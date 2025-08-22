@@ -10,6 +10,7 @@ body:
     ends at the end of their turn, or a prone target can stand up.
   isEffect: true
   title: Spend 1 Wrath
+cost: null
 header:
   distance:
     display: Ranged 10

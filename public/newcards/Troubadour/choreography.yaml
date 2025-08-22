@@ -3,6 +3,7 @@ body:
     area gains a +2 bonus to speed until the end of their turn.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

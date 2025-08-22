@@ -7,6 +7,9 @@ body:
     ability instead of a melee free strike.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '7'
 header:
   distance:
     display: Self

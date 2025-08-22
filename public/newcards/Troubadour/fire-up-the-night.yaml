@@ -5,6 +5,7 @@ body:
     Hide and Sneak in Chapter 9: Tests).'
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: 5 aura

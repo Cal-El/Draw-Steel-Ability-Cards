@@ -8,21 +8,27 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: damage; vertical push 10
     damage:
       baseValue: 6
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: damage; vertical push 15
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
 - body: A creature force moved by this ability must be moved straight upward.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Melee 1

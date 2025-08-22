@@ -8,23 +8,29 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t2:
     baseEffect: damage; push 3
     damage:
       baseValue: 8
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
   t3:
     baseEffect: damage; push 5
     damage:
       baseValue: 11
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
 - body: You can choose to have this ability deal sonic damage. Additionally, you can
     use this ability against the same target for the next 2 combat rounds without
     spending drama.
   isEffect: true
   title: Effect
+cost:
+  costName: Drama
+  costValue: '7'
 header:
   distance:
     display: Melee 1 or ranged 10

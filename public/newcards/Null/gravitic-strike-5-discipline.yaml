@@ -8,18 +8,24 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t2:
     baseEffect: psychic damage; vertical pull 5
     damage:
       baseValue: 12
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
   t3:
     baseEffect: psychic damage; vertical pull 7
     damage:
       baseValue: 16
       characteristicBonusOptions:
       - Agility
+      includedKitValue: 0
+cost:
+  costName: Discipline
+  costValue: '5'
 header:
   distance:
     display: Melee 3

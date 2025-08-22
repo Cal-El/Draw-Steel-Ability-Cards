@@ -7,6 +7,9 @@ body:
     has a double edge on power rolls.
   isEffect: true
   title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Ranged 10

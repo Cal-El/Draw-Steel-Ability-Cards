@@ -6,6 +6,7 @@ body:
     target must reroll the power roll and use the new roll.
   isEffect: true
   title: Effect
+cost: null
 header:
   distance:
     display: Ranged 10

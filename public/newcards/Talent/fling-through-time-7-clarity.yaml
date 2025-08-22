@@ -8,6 +8,7 @@ body:
       baseValue: 3
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: weakened (save ends)
@@ -19,6 +20,7 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: they are weakened (save ends)
@@ -30,6 +32,7 @@ body:
       baseValue: 8
       characteristicBonusOptions:
       - Presence
+      includedKitValue: 0
     potency:
       characteristic: Presence
       effect: they are weakened (save ends)
@@ -44,6 +47,9 @@ body:
     2 clarity.
   isEffect: true
   title: Strained
+cost:
+  costName: Clarity
+  costValue: '7'
 header:
   distance:
     display: Ranged 10

@@ -12,6 +12,7 @@ body:
     that can be used only with this ability.
   isEffect: true
   title: Spend 2+ Insight
+cost: null
 header:
   distance:
     display: 2 cube within 10

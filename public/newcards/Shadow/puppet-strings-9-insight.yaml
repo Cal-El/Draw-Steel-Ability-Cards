@@ -6,6 +6,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: before the damage is resolved, they make a free strike.
@@ -14,6 +16,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: before the damage is resolved, they use a main action ability of your
@@ -23,6 +27,8 @@ body:
     baseEffect: damage
     damage:
       baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
     potency:
       characteristic: Reason
       effect: before the damage is resolved, they can shift up to their speed and
@@ -33,6 +39,9 @@ body:
     you to be revealed.
   isEffect: true
   title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Melee 1

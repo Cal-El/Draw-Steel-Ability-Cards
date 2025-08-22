@@ -8,6 +8,9 @@ body:
     free strike against a creature of your choice within 5 squares of them.
   isEffect: true
   title: Mark Benefit
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

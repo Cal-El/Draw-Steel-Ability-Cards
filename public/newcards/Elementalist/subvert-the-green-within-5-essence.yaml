@@ -13,18 +13,24 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t2:
     baseEffect: poison damage
     damage:
       baseValue: 9
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
   t3:
     baseEffect: poison damage
     damage:
       baseValue: 12
       characteristicBonusOptions:
       - Reason
+      includedKitValue: 0
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: Ranged 10

@@ -9,6 +9,7 @@ body:
       baseValue: 5
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t2:
     baseEffect: damage; one ally within 10 squares of you can use a strike signature
       ability that gains an edge against the target as a free triggered action
@@ -16,6 +17,7 @@ body:
       baseValue: 9
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
   t3:
     baseEffect: damage; two allies within 10 squares of you can each use a strike
       signature ability that gains an edge against the target as a free triggered
@@ -24,10 +26,14 @@ body:
       baseValue: 12
       characteristicBonusOptions:
       - Might
+      includedKitValue: 0
 - body: If the target is reduced to 0 Stamina before one or both chosen allies has
     made their strike, the ally or allies can pick a different target.
   isEffect: true
   title: Effect
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Melee 1 or ranged 5
