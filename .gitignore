@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 card_generation/temp
+card_generation/__pycache__

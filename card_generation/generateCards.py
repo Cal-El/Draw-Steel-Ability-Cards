@@ -3,6 +3,7 @@ from os import path, makedirs, walk, rmdir, remove
 import sys
 import json
 import yaml
+from abilityParser import *
 
 scriptPath = sys.path[0]
 tempFolderPath = path.join(scriptPath, 'temp')
@@ -51,11 +52,10 @@ def createCards(className):
         ability = json.load(a)
         if 'metadata' not in ability or 'feature_type' not in ability['metadata'] or ability['metadata']['feature_type'] == 'trait':
           continue
-        print(ability)
         cardData = {}
         cardData['version'] = 2
         cardData['level'] = ability['metadata']['level']
-        cardData['type'] = ability['type']
+        cardData['type'] = getAbilityType(ability)
         cardData['header'] = {}
         cardData['header']['topMatter'] = className + ' Level ' + str(cardData['level']) + ' Ability'
         cardData['header']['title'] = ability['name']
