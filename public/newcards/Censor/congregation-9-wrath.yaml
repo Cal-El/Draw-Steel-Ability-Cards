@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You focus your allies' wrath on a chosen foe.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Congregation
+  topMatter: Censor Level 6 Ability
+level: 6
+type: Main action
+version: 2

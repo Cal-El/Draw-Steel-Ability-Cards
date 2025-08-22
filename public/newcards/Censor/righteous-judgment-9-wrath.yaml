@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You amplify the power of your judgment.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Righteous Judgment
+  topMatter: Censor Level 5 Ability
+level: 5
+type: Main action
+version: 2

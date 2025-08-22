@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: As you force your enemy back with your weapon, you use your faith to stay
+    close.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Driving Assault
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Main action
+version: 2

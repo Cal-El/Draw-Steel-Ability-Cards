@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You infuse your weapon with holy magic that makes it difficult for your
+    foe to get away.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Halt Miscreant!
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Main action
+version: 2

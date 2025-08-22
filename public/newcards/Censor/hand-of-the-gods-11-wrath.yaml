@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You use your foe as a tool against your enemies.
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Hand of the Gods
+  topMatter: Censor Level 8 Ability
+level: 8
+type: Main action
+version: 2

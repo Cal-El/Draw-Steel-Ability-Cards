@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You channel holy energy to harm unbelievers and reveal those hidden from
+    your judgment.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Revelator
+  topMatter: Censor Level 2 Ability
+level: 2
+type: Maneuver
+version: 2

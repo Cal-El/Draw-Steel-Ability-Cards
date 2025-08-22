@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You channel divine force for movement that cannot be stopped.
+  keywords:
+  - Ranged
+  target: Self or one ally
+  title: Gods Grant Thee Strength
+  topMatter: Censor Level 5 Ability
+level: 5
+type: Main action
+version: 2

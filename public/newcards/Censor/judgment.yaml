@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You utter a prayer that outlines your foe in holy energy.
+  keywords:
+  - Magic
+  - Ranged
+  target: One enemy
+  title: Judgment
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Maneuver
+version: 2

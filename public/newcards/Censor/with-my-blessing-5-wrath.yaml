@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: A word in prayer, and the gods show the way.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: With My Blessing
+  topMatter: Censor Level 2 Ability
+level: 2
+type: Main action
+version: 2

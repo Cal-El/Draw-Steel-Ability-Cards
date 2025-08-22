@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: The gods bless and damn in equal measure.
+  keywords:
+  - Magic
+  - Ranged
+  target: One creature
+  title: Blessing and a Curse
+  topMatter: Censor Level 9 Ability
+level: 9
+type: Triggered
+version: 2

@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You reveal a vision of your enemies' fate that causes them to scramble
+    as it staggers them.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: Three enemies
+  title: Burden of Evil
+  topMatter: Censor Level 6 Ability
+level: 6
+type: Maneuver
+version: 2

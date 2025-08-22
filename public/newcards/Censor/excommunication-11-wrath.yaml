@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You curse your foe to become a bane to their allies.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Excommunication
+  topMatter: Censor Level 8 Ability
+level: 8
+type: Main action
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You reverse the effects from an evildoer.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Pain of Your Own Making
+  topMatter: Censor Level 6 Ability
+level: 6
+type: Free triggered
+version: 2

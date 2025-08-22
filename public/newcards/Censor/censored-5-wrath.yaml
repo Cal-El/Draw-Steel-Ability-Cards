@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: Judged and sentenced.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Censored
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You channel some of your vitality into more resilience for you or an ally.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: My Life for Yours
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Triggered
+version: 2

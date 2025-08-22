@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: 2 cube within 1
+    values: []
+  flavour: You channel power through your weapon to repel foes.
+  keywords:
+  - Area
+  - Magic
+  - Melee
+  - Weapon
+  target: Each enemy in the area
+  title: Back Blasphemer!
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Gifted by a prescient vision, you warn an ally of an impending attack.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Prescient Grace
+  topMatter: Censor Level 2 Ability
+level: 2
+type: Triggered
+version: 2

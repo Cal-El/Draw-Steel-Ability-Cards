@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You channel holy energy to seal an enemy's fate.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Apostate
+  topMatter: Censor Level 9 Ability
+level: 9
+type: Main action
+version: 2

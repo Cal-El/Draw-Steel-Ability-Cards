@@ -1,0 +1,17 @@
+body: []
+header:
+  distance:
+    display: Melee 1
+    values: []
+  flavour: You strike a foe and create a fleet of divine shields that protect your
+    allies.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Shield of the Righteous
+  topMatter: Censor Level 5 Ability
+level: 5
+type: Main action
+version: 2

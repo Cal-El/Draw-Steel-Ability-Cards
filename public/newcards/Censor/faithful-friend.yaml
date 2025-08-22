@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: An animal spirit is drawn to you, sharing their senses with you and serving
+    you faithfully.
+  keywords:
+  - Magic
+  target: Self
+  title: Faithful Friend
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Main action
+version: 2

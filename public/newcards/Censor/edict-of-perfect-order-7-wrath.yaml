@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: 2 aura
+    values: []
+  flavour: Within the area of your divine presence, your enemies will regret using
+    their fell abilities.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Edict of Perfect Order
+  topMatter: Censor Level 3 Ability
+level: 3
+type: Maneuver
+version: 2

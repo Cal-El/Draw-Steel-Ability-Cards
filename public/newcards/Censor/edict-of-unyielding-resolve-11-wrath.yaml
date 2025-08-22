@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: 2 aura
+    values: []
+  flavour: You and your allies are clad in shimmering armor.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Edict of Unyielding Resolve
+  topMatter: Censor Level 9 Ability
+level: 9
+type: Maneuver
+version: 2

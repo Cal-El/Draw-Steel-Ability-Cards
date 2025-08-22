@@ -1,0 +1,15 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You take your ally's place.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Intercede
+  topMatter: Censor Level 6 Ability
+level: 6
+type: Free triggered
+version: 2

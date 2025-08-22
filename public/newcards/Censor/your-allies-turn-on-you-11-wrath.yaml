@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You turn your enemies' ire to the target.
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Your Allies Turn on You!
+  topMatter: Censor Level 8 Ability
+level: 8
+type: Main action
+version: 2

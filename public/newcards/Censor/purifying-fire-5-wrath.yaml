@@ -1,0 +1,18 @@
+body: []
+header:
+  distance:
+    display: Melee 1 or ranged 5
+    values: []
+  flavour: The gods judge, fire cleanses.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Purifying Fire
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Main action
+version: 2

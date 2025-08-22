@@ -1,0 +1,16 @@
+body: []
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You conjure memories of their sins to harry your foes.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Repent!
+  topMatter: Censor Level 1 Ability
+level: 1
+type: Main action
+version: 2

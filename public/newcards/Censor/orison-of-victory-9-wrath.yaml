@@ -1,0 +1,14 @@
+body: []
+header:
+  distance:
+    display: 1 burst
+    values: []
+  flavour: You channel your god's will to overcome hardship and inflict pain.
+  keywords:
+  - Area
+  target: Self and each ally in the area
+  title: Orison of Victory
+  topMatter: Censor Level 5 Ability
+level: 5
+type: Maneuver
+version: 2

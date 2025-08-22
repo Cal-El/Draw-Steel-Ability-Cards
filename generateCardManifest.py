@@ -1,9 +1,10 @@
 from os import listdir, makedirs
 from os.path import isfile, join, exists
+import yaml
 
 print("Generating Card Manifest...")
 
-cards = "cards"
+cards = "newcards"
 basePath = join("public", cards)
 
 groups = [f for f in listdir(basePath) if not isfile(join(basePath, f))]
@@ -12,14 +13,14 @@ if not exists(join("src", "types", "generated")):
     makedirs(join("src", "types", "generated"))
 
 manifestFile = open(join("src", "types", "generated", "card-manifest.ts"), 'w')
-publicManifestFile = open(join("public", "card-manifest.json"), 'w')
+publicManifestFile = open(join("public", "newcards", "card-manifest.json"), 'w')
 
 manifestFile.write("export const cardManifest  = [\n")
 publicManifestFile.write("[\n")
 publicManString = ""
 
 for group in groups:
-    groupName = group[3:].title()
+    groupName = group.title()
     manifestFile.write("    {\n")
     manifestFile.write("        label: \"" + groupName + "\",\n")
     manifestFile.write("        options: [\n",)
@@ -27,18 +28,9 @@ for group in groups:
     files = [f for f in listdir(join(basePath, group)) if isfile(join(basePath, group, f))]
     for file in files:
         fCon = open(join(basePath, group, file), 'r', encoding='UTF8')
-        topMatter = ""
-        name = ""
-        print(file)
-        for line in fCon:
-            if "title:" in line:
-                name = line[7:-1]
-                if name.startswith("'") and name.endswith("'"):
-                    print(name)
-                    name = name[1:-1].replace('"', '\\"')
-                    print(name)
-            if "topMatter:" in line:
-                topMatter = line[11:-1]
+        card = yaml.safe_load(fCon)
+        topMatter = card['header']['topMatter']
+        name = card['header']['title']
         manifestFile.write("            {\n")
         manifestFile.write("                label: \"" + name + " (" + topMatter + ")\",\n")
         manifestFile.write("                value: \"/" + cards + "/" + group + "/"+ file + "\",\n")
