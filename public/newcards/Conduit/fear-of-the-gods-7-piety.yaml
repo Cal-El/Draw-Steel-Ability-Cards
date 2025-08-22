@@ -40,8 +40,11 @@ cost:
   costValue: '7'
 header:
   distance:
-    display: 5 cube within 10
-    values: []
+    display: 5 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Your divine magic makes a creature appear as what your enemies fear most.
   keywords:
   - Area

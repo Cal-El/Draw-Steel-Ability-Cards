@@ -25,8 +25,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: 3 cube within 10
-    values: []
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: A raging storm appears, striking your foes with lightning and throwing
     them around with wind.
   keywords:

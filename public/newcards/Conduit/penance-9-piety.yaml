@@ -37,8 +37,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: 4 cube within 10
-    values: []
+    display: 4 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: '"If you won''t kneel, the gods will make you."'
   keywords:
   - Area

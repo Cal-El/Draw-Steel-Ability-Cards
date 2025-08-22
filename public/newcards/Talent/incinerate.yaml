@@ -32,8 +32,11 @@ body:
 cost: null
 header:
   distance:
-    display: 3 cube within 10
-    values: []
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: The air erupts into a column of smokeless flame.
   keywords:
   - Area

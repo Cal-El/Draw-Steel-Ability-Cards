@@ -133,7 +133,12 @@ def parseCost(ability):
 def parseDistance(ability):
   distance = {}
   values = []
-
-  distance['display'] = ability['distance']
-  distance['values'] = values
+  distanceString = ability['distance']
+  if re.match('^(\d+ cube within) (\d+)$', distanceString):
+    x = re.search('^(\d+ cube within) (\d+)$', distanceString)
+    distance['display'] = x.group(1) + ' [' + x.group(2) + ']'
+    distance['values'] = [{'type': 'Ranged', 'baseValue': int(x.group(2)), 'includedKitValue': 0}]
+  else:
+    distance['display'] = ability['distance']
+    distance['values'] = values
   return distance

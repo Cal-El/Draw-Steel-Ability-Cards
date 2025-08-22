@@ -31,8 +31,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: 5 cube within 5
-    values: []
+    display: 5 cube within [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
   flavour: You summon a divine storm that remains under your control.
   keywords:
   - Area

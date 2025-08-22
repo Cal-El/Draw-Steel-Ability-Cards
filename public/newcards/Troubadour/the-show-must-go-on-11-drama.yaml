@@ -42,8 +42,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: 5 cube within 10
-    values: []
+    display: 5 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You shine a bright light on the players on the stage and compel them to
     finish the performance.
   keywords:

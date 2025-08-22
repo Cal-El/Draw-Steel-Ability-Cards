@@ -38,8 +38,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: 4 cube within 10
-    values: []
+    display: 4 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Keep everything as it was. Ignore everything that will be.
   keywords:
   - Area

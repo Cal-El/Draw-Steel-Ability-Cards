@@ -32,8 +32,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: 4 cube within 10
-    values: []
+    display: 4 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You bend gravity into a fine point and pull your foes toward it.
   keywords:
   - Area

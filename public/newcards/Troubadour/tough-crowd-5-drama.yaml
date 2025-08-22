@@ -43,8 +43,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: 3 cube within 10
-    values: []
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Your fans don't seem to like the opening act...
   keywords:
   - Area

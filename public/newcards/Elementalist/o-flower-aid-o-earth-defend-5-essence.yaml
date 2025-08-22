@@ -20,8 +20,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: 3 cube within 10
-    values: []
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Revitalizing plants and jagged stones grow, helping allies and hindering
     foes.
   keywords:

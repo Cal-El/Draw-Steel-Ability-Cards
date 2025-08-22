@@ -37,8 +37,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: 3 cube within 1
-    values: []
+    display: 3 cube within [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Within
   flavour: You drastically increase the local entropy.
   keywords:
   - Area
