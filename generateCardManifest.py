@@ -21,10 +21,13 @@ manifestContent = []
 publicManifestContent = []
 manifestFile.write("export const cardManifest  = ")
 
-def getLevelString(level):
-  if level < 10:
-    return '0' + str(level)
-  return str(level)
+def getPaddedNumString(number):
+  return format(number, '03')
+
+def getCost(card):
+  if card['cost'] == None:
+    return getPaddedNumString(0)
+  return getPaddedNumString(card['cost']['costValue'])
 
 for group in groups:
   groupName = group.title()
@@ -39,7 +42,7 @@ for group in groups:
     topMatter = card['header']['topMatter']
     name = card['header']['title']
     option = {'label': name + " (" + topMatter + ")", 'value': cardPath}
-    option['sortKey'] = getLevelString(card['level']) + '-' + name
+    option['sortKey'] = getPaddedNumString(card['level']) + '-' + getCost(card) + '-' + name
     options.append(option)
     publicManifestContent.append(cardPath)
   options.sort(key = lambda x : x['sortKey'])
