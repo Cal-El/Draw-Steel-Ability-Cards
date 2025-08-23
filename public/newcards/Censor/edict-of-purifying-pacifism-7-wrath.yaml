@@ -11,6 +11,7 @@ header:
   distance:
     display: 2 aura
     values: []
+  flavor: ''
   flavour: You shed a righteous energy that punishes enemies who would harm you or
     your allies.
   keywords:
@@ -18,7 +19,7 @@ header:
   - Magic
   target: Each enemy in the area
   title: Edict of Purifying Pacifism
-  topMatter: Censor Level 3 Ability
+  topMatter: Level 3 Censor Heroic Ability
 level: 3
 type: Maneuver
 version: 2

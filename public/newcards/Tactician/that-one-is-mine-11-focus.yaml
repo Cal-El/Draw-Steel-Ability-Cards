@@ -37,6 +37,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: You focus on making an enemy irrelevant.
   keywords:
   - Melee
@@ -45,7 +46,7 @@ header:
   - Weapon
   target: One creature
   title: That One Is Mine!
-  topMatter: Tactician Level 9 Ability
+  topMatter: Level 9 Tactician Heroic Ability
 level: 9
 type: Main action
 version: 2

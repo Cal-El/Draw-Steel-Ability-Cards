@@ -30,6 +30,7 @@ header:
   distance:
     display: Melee 3
     values: []
+  flavor: ''
   flavour: The force of your strike moves your target in a surprising direction.
   keywords:
   - Melee
@@ -38,7 +39,7 @@ header:
   - Weapon
   target: One creature
   title: Force Redirected
-  topMatter: Null Level 2 Ability
+  topMatter: Level 2 Null Heroic Ability
 level: 2
 type: Main action
 version: 2

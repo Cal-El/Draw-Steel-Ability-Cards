@@ -33,6 +33,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You quickly strike back at a foe.
   keywords:
   - Melee
@@ -40,7 +41,7 @@ header:
   - Weapon
   target: The triggering creature
   title: My Turn!
-  topMatter: Fury Level 5 Ability
+  topMatter: Level 5 Fury Heroic Ability
 level: 5
 type: Free triggered
 version: 2

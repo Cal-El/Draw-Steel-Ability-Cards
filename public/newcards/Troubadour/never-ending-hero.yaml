@@ -9,6 +9,7 @@ header:
   distance:
     display: 5 aura
     values: []
+  flavor: ''
   flavour: "And toniiight we can truly say \u266A They will alllways find a way!\u266A"
   keywords:
   - Area
@@ -16,7 +17,7 @@ header:
   - Performance
   target: Self and each ally in the area
   title: '"Never-Ending Hero"'
-  topMatter: Troubadour Level 3 Ability
+  topMatter: Level 3 Troubadour Ability
 level: 3
 type: No action
 version: 2

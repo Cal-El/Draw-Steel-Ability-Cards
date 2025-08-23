@@ -13,6 +13,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: The power you channel grants the ability to get back in the fight.
   keywords:
   - Green
@@ -20,7 +21,7 @@ header:
   - Ranged
   target: Self or one ally
   title: Breath of Dawn Remembered
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Triggered Action
 version: 2

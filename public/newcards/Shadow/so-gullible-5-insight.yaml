@@ -12,12 +12,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: When your enemy strikes, you reveal you were in a different place all along.
   keywords:
   - Magic
   target: Self
   title: So Gullible
-  topMatter: Shadow Level 2 Ability
+  topMatter: Level 2 Shadow Heroic Ability
 level: 2
 type: Free triggered
 version: 2

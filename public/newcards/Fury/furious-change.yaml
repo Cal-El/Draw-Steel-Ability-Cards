@@ -12,14 +12,15 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
+    display: Self
     values: []
+  flavor: ''
   flavour: In your anger, you revert to a more bestial form.
   keywords:
   - '-'
-  target: One enemy
+  target: Self
   title: Furious Change
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Triggered Action
 version: 2

@@ -48,6 +48,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You drain all the heat from the target.
   keywords:
   - Melee
@@ -55,7 +56,7 @@ header:
   - Strike
   target: One creature
   title: Heat Drain
-  topMatter: Null Level 9 Ability
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Maneuver
 version: 2

@@ -47,6 +47,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: I am but a vessel. Your own deeds weigh upon you.
   keywords:
   - Magic
@@ -54,7 +55,7 @@ header:
   - Strike
   target: One creature
   title: It Is Justice You Fear
-  topMatter: Censor Level 2 Ability
+  topMatter: Level 2 Censor Heroic Ability
 level: 2
 type: Main action
 version: 2

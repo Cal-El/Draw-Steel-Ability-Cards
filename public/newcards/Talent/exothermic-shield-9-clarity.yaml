@@ -15,6 +15,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You encase the target in psionic flame and allow them to flicker without
     fear of burning out.
   keywords:
@@ -23,7 +24,7 @@ header:
   - Ranged
   target: Self or one ally
   title: Exothermic Shield
-  topMatter: Talent Level 5 Ability
+  topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Maneuver
 version: 2

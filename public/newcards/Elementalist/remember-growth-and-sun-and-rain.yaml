@@ -9,6 +9,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You stir any wood's memory and learn what it has seen.
   keywords:
   - Green
@@ -16,7 +17,7 @@ header:
   - Melee
   target: One mundane wooden object
   title: Remember Growth and Sun and Rain
-  topMatter: Elementalist Level 3 Ability
+  topMatter: Level 3 Elementalist Ability
 level: 3
 type: Main action
 version: 2

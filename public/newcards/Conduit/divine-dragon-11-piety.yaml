@@ -30,10 +30,6 @@ body:
       baseValue: 12
       characteristicBonusOptions: []
       includedKitValue: 0
-- body: Additionally, you can use a maneuver to move the dragon up to their speed,
-    or to make a melee weapon strike with their claw against an adjacent creature
-    or object. The dragon can also make this strike as a free strike.
-  isEffect: true
 - characteristicBonus:
   - Intuition
   isPowerRoll: true
@@ -65,13 +61,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: From nothing but divine will, you create a powerful ally.
   keywords:
   - Magic
   - Ranged
   target: Special
   title: Divine Dragon
-  topMatter: Conduit Level 9 Ability
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

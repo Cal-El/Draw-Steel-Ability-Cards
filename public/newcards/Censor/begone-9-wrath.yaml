@@ -27,13 +27,14 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You terrify your enemies into retreating, creating chaos in their ranks.
   keywords:
   - Area
   - Magic
   target: Each enemy in the area
   title: Begone!
-  topMatter: Censor Level 6 Ability
+  topMatter: Level 6 Censor Heroic Ability
 level: 6
 type: Main action
 version: 2

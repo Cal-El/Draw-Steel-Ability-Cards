@@ -31,6 +31,7 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You wield your weapon at blistering speed, leaving everyone around you
     fighting for their lives.
   keywords:
@@ -39,7 +40,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Action Hero
-  topMatter: Troubadour Level 5 Ability
+  topMatter: Level 5 Troubadour Heroic Ability
 level: 5
 type: Main action
 version: 2

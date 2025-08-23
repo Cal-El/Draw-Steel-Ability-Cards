@@ -45,6 +45,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You raise the target slightly into the air, then smother them against the
     ground.
   keywords:
@@ -54,7 +55,7 @@ header:
   - Telekinesis
   target: One creature or object
   title: Levity and Gravity
-  topMatter: Talent Level 2 Ability
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Main action
 version: 2

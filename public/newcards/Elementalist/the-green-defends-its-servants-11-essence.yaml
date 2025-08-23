@@ -17,6 +17,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: A luminous green shield shows its true beauty the more it cracks.
   keywords:
   - Green
@@ -24,7 +25,7 @@ header:
   - Ranged
   target: Self or one ally
   title: The Green Defends Its Servants
-  topMatter: Elementalist Level 9 Ability
+  topMatter: Level 9 Elementalist Heroic Ability
 level: 9
 type: Maneuver
 version: 2

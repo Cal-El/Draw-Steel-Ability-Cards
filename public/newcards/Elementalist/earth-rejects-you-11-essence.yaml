@@ -34,6 +34,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: Everyone and everything gets blown away in an eruption of rocks and debris.
   keywords:
   - Area
@@ -42,7 +43,7 @@ header:
   - Ranged
   target: Each enemy and object in the area
   title: Earth Rejects You
-  topMatter: Elementalist Level 9 Ability
+  topMatter: Level 9 Elementalist Heroic Ability
 level: 9
 type: Main action
 version: 2

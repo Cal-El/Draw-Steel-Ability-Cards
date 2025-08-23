@@ -12,12 +12,13 @@ header:
   distance:
     display: 4 burst
     values: []
+  flavor: ''
   flavour: You teleport your friends in a burst of ash and fire.
   keywords:
   - Magic
   target: Self and each ally in the area
   title: Cinderstorm
-  topMatter: Shadow Level 6 Ability
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Maneuver
 version: 2

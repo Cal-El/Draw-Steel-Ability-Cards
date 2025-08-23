@@ -18,13 +18,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: It doesn't need to make sense. Just say it with emotion.
   keywords:
   - Magic
   - Ranged
   target: Special
   title: Dramatic Monologue
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Maneuver
 version: 2

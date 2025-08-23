@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: A mighty blow turns your foe's vitality into a holy light that envelops
     you and an ally, discouraging enemies who might attack you.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Weapon
   target: One creature or object
   title: Behold a Shield of Faith!
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

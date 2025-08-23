@@ -13,13 +13,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: An animal spirit is drawn to you, sharing their senses with you and serving
     you faithfully.
   keywords:
   - Magic
   target: Self
   title: Faithful Friend
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action
 version: 2

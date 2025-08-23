@@ -17,6 +17,7 @@ header:
   distance:
     display: 10 wall within 10
     values: []
+  flavor: ''
   flavour: A blazing, beautifully organized inferno erupts at your command.
   keywords:
   - Area
@@ -25,7 +26,7 @@ header:
   - Ranged
   target: Special
   title: Wall of Fire
-  topMatter: Elementalist Level 3 Ability
+  topMatter: Level 3 Elementalist Heroic Ability
 level: 3
 type: Maneuver
 version: 2

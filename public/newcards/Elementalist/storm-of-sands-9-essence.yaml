@@ -39,6 +39,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: Dirt and debris swirl into a dark, pulsing hurricane.
   keywords:
   - Area
@@ -47,7 +48,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Storm of Sands
-  topMatter: Elementalist Level 5 Ability
+  topMatter: Level 5 Elementalist Heroic Ability
 level: 5
 type: Main action
 version: 2

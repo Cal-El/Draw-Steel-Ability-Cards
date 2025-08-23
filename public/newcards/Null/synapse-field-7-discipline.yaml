@@ -12,13 +12,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Attacks made by allies in your null field disrupt your enemies' thoughts,
     causing psychic pain.
   keywords:
   - Psionic
   target: Self
   title: Synapse Field
-  topMatter: Null Level 3 Ability
+  topMatter: Level 3 Null Heroic Ability
 level: 3
 type: Maneuver
 version: 2

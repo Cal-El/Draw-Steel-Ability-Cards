@@ -40,6 +40,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You skewer your enemy like a boar upon a spit.
   keywords:
   - Melee
@@ -47,7 +48,7 @@ header:
   - Weapon
   target: One creature of your size or smaller
   title: Impaled!
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Main action
 version: 2

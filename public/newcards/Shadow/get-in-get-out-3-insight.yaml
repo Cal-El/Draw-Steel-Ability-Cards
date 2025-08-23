@@ -30,6 +30,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Move unexpectedly, strike fast, and be gone!
   keywords:
   - Melee
@@ -37,7 +38,7 @@ header:
   - Weapon
   target: One creature
   title: Get In Get Out
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

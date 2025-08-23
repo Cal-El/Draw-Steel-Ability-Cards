@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: After everything you've been through together, you twist the blade and
     make the pain extra personal.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Weapon
   target: One creature or object
   title: It Was Me All Along
-  topMatter: Shadow Level 9 Ability
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

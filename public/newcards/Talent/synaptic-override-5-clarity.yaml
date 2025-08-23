@@ -26,6 +26,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You control an enemy's nervous system. How pleasant for them.
   keywords:
   - Psionic
@@ -33,7 +34,7 @@ header:
   - Telepathy
   target: One enemy
   title: Synaptic Override
-  topMatter: Talent Level 2 Ability
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Main action
 version: 2

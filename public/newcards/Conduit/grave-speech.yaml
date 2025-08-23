@@ -13,12 +13,13 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You commune with the lingering soul of the recently dead.
   keywords:
   - Magic
   target: One dead creature
   title: Grave Speech
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Maneuver
 version: 2

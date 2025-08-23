@@ -12,13 +12,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You absorb ambient heat, coating the ground in frost and precipitating
     snow from the air.
   keywords:
   - Psionic
   target: Self
   title: Heat Sink
-  topMatter: Null Level 2 Ability
+  topMatter: Level 2 Null Heroic Ability
 level: 2
 type: Maneuver
 version: 2

@@ -31,6 +31,7 @@ header:
   distance:
     display: 10 x 1 line within 1
     values: []
+  flavor: ''
   flavour: You vanish. They fall. You reappear.
   keywords:
   - Area
@@ -38,7 +39,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Shadowfall
-  topMatter: Shadow Level 5 Ability
+  topMatter: Level 5 Shadow Heroic Ability
 level: 5
 type: Main action
 version: 2

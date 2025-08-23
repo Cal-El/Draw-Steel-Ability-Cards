@@ -15,6 +15,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: The material substance of a creature shreds away at your command.
   keywords:
   - Magic
@@ -22,7 +23,7 @@ header:
   - Void
   target: Self or one ally
   title: No More Than a Breeze
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Maneuver
 version: 2

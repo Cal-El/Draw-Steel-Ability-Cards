@@ -15,12 +15,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You shout a phrase that galvanizes your team.
   keywords:
   - Ranged
   target: Three allies
   title: Battle Cry
-  topMatter: Tactician Level 1 Ability
+  topMatter: Level 1 Tactician Heroic Ability
 level: 1
 type: Maneuver
 version: 2

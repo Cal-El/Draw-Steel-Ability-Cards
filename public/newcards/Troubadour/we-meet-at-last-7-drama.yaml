@@ -17,6 +17,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You magically intertwine your fate with another creature-for better or
     worse.
   keywords:
@@ -24,7 +25,7 @@ header:
   - Ranged
   target: One creature
   title: We Meet at Last
-  topMatter: Troubadour Level 3 Ability
+  topMatter: Level 3 Troubadour Heroic Ability
 level: 3
 type: Maneuver
 version: 2

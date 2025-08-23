@@ -11,6 +11,7 @@ header:
   distance:
     display: 2 aura
     values: []
+  flavor: ''
   flavour: No, no, no, you lose the audience that way. Try it like this...
   keywords:
   - Area
@@ -18,7 +19,7 @@ header:
   - Performance
   target: Each creature in the area
   title: Blocking
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: No action
 version: 2

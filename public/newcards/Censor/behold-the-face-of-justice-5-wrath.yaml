@@ -46,6 +46,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: You attack a foe and your enemies behold a vision of the true nature of
     your resolve.
   keywords:
@@ -56,7 +57,7 @@ header:
   - Weapon
   target: One creature
   title: Behold the Face of Justice!
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

@@ -11,6 +11,7 @@ header:
   distance:
     display: 5 aura
     values: []
+  flavor: ''
   flavour: Music pours out of your heart, filling the area with the utmost delicacy
     and without damper.
   keywords:
@@ -19,7 +20,7 @@ header:
   - Performance
   target: Each ally in the area
   title: Moonlight Sonata
-  topMatter: Troubadour Level 8 Ability
+  topMatter: Level 8 Troubadour Ability
 level: 8
 type: No action
 version: 2

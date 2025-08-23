@@ -29,6 +29,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You strike so quickly that your hands become a blur.
   keywords:
   - Melee
@@ -37,7 +38,7 @@ header:
   - Weapon
   target: Two creatures or objects
   title: Faster Than the Eye
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Ability
 level: 1
 type: Main action
 version: 2

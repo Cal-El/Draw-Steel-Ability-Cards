@@ -15,6 +15,7 @@ header:
   distance:
     display: 4 burst
     values: []
+  flavor: ''
   flavour: You create a terrarium that spans from canopy above to underbrush below.
   keywords:
   - Area
@@ -24,7 +25,7 @@ header:
   - Void
   target: Special
   title: The Wode Remembers and Returns
-  topMatter: Elementalist Level 6 Ability
+  topMatter: Level 6 Elementalist Heroic Ability
 level: 6
 type: Main action
 version: 2

@@ -48,6 +48,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You channel the Primordial Chaos into blows that petrify your foe... literally.
   keywords:
   - Magic
@@ -56,7 +57,7 @@ header:
   - Weapon
   target: One creature
   title: To Stone!
-  topMatter: Fury Level 5 Ability
+  topMatter: Level 5 Fury Heroic Ability
 level: 5
 type: Main action
 version: 2

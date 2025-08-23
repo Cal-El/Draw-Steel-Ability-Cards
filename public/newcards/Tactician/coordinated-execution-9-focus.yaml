@@ -13,12 +13,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You direct your ally to make a killing blow.
   keywords:
   - Ranged
   target: One ally
   title: Coordinated Execution
-  topMatter: Tactician Level 6 Ability
+  topMatter: Level 6 Tactician Heroic Ability
 level: 6
 type: Free triggered
 version: 2

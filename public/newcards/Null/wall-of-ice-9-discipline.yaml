@@ -15,6 +15,7 @@ header:
   distance:
     display: 10 wall within 10
     values: []
+  flavor: ''
   flavour: You create a wall of ice.
   keywords:
   - Area
@@ -22,7 +23,7 @@ header:
   - Ranged
   target: Special
   title: Wall of Ice
-  topMatter: Null Level 6 Ability
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Main action
 version: 2

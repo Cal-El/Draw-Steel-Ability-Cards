@@ -32,6 +32,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: I didn't do it! What?
   keywords:
   - Melee
@@ -39,7 +40,7 @@ header:
   - Weapon
   target: One creature
   title: Instigator
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Main action
 version: 2

@@ -27,6 +27,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Their body swells with lava, mud, and might, towering over their enemies.
   keywords:
   - Earth
@@ -36,7 +37,7 @@ header:
   - Ranged
   target: Self or one ally
   title: Magma Titan
-  topMatter: Elementalist Level 6 Ability
+  topMatter: Level 6 Elementalist Heroic Ability
 level: 6
 type: Maneuver
 version: 2

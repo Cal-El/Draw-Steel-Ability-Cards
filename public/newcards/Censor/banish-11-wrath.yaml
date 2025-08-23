@@ -50,6 +50,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You sever the target's tenuous connection to the world.
   keywords:
   - Melee
@@ -57,7 +58,7 @@ header:
   - Weapon
   target: One creature
   title: Banish
-  topMatter: Censor Level 9 Ability
+  topMatter: Level 9 Censor Heroic Ability
 level: 9
 type: Main action
 version: 2

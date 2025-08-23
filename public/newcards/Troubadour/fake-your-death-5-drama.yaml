@@ -13,12 +13,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: O happy dagger, this is thy sheath!
   keywords:
   - Magic
   target: Self
   title: Fake Your Death
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Maneuver
 version: 2

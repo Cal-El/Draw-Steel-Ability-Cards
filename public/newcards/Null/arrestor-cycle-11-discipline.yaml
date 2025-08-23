@@ -32,6 +32,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You trap your foe in a looping cycle of time, where they relive the last
     few seconds over and over again.
   keywords:
@@ -39,7 +40,7 @@ header:
   - Ranged
   target: One creature
   title: Arrestor Cycle
-  topMatter: Null Level 9 Ability
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Free triggered
 version: 2

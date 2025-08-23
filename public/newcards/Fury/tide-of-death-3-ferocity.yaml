@@ -37,13 +37,14 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: Teach them the folly of lining up for you.
   keywords:
   - Melee
   - Weapon
   target: Self
   title: Tide of Death
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
 version: 2

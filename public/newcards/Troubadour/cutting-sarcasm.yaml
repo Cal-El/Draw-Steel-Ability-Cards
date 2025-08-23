@@ -40,6 +40,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: There you are, radiating your usual charisma.
   keywords:
   - Magic
@@ -48,7 +49,7 @@ header:
   - Weapon
   target: One creature
   title: Cutting Sarcasm
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Main action
 version: 2

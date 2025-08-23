@@ -35,6 +35,7 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: Unbridled psionic energy erupts from your body and flashes outward, hurling
     your foes back.
   keywords:
@@ -43,7 +44,7 @@ header:
   - Telekinesis
   target: Each enemy and object in the area
   title: Gravitic Nova
-  topMatter: Talent Level 9 Ability
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Main action
 version: 2

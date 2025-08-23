@@ -29,6 +29,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: The surface of the world around you opens up to swallow foes.
   keywords:
   - Earth
@@ -36,7 +37,7 @@ header:
   - Ranged
   target: Special
   title: Instantaneous Excavation
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Maneuver
 version: 2

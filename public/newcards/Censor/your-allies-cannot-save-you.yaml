@@ -32,6 +32,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your magic strike turns your foe's guilt into a burst of holy power.
   keywords:
   - Melee
@@ -39,7 +40,7 @@ header:
   - Weapon
   target: One creature or object
   title: Your Allies Cannot Save You!
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Ability
 level: 1
 type: Main action
 version: 2

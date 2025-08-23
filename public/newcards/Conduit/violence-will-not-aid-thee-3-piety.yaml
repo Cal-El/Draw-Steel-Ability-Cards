@@ -34,6 +34,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: After some holy lightning, your enemy will think twice about their next
     attack.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Strike
   target: One creature
   title: Violence Will Not Aid Thee
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

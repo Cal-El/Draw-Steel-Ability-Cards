@@ -46,6 +46,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You prick little needles on the tips of your fingers into the nerves of
     your enemies and cause them to lose control.
   keywords:
@@ -55,7 +56,7 @@ header:
   - Weapon
   target: Two enemies
   title: Puppet Strings
-  topMatter: Shadow Level 6 Ability
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Main action
 version: 2

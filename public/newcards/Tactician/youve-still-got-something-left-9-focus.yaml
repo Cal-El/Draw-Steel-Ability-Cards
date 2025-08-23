@@ -12,12 +12,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You push an ally to use a heroic ability sooner than they otherwise would.
   keywords:
   - Ranged
   target: One ally
   title: You've Still Got Something Left
-  topMatter: Tactician Level 5 Ability
+  topMatter: Level 5 Tactician Heroic Ability
 level: 5
 type: Main action
 version: 2

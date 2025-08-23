@@ -10,13 +10,14 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You expand your nullifying power to mitigate harmful effects.
   keywords:
   - Area
   - Psionic
   target: Self and each ally in the area
   title: Synaptic Reset
-  topMatter: Null Level 4 Ability
-level: 4
+  topMatter: Level 5 Null Heroic Ability
+level: 5
 type: Maneuver
 version: 2

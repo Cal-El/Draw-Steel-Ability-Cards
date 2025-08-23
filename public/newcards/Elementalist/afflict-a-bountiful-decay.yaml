@@ -32,6 +32,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your curse causes your foe's flesh to rot off as spores that aid your allies.
   keywords:
   - Green
@@ -41,7 +42,7 @@ header:
   - Strike
   target: One creature
   title: Afflict a Bountiful Decay
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

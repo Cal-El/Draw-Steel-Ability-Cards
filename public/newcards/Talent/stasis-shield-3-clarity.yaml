@@ -18,13 +18,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You freeze time just long enough to bring the victim to safety!
   keywords:
   - Psionic
   - Ranged
   target: Self, or one creature or object
   title: Stasis Shield
-  topMatter: Talent Level 8 Ability
+  topMatter: Level 8 Talent Heroic Ability
 level: 8
 type: Triggered Action
 version: 2

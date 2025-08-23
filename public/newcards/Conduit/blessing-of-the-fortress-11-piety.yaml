@@ -12,13 +12,14 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: A magic circle extends out from you, barring foes from getting close.
   keywords:
   - Area
   - Magic
   target: Self
   title: Blessing of the Fortress
-  topMatter: Conduit Level 9 Ability
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Maneuver
 version: 2

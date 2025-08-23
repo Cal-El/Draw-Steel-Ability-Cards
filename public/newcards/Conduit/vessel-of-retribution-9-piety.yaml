@@ -10,6 +10,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You infuse yourself or an ally with the retributive energy of the gods,
     waiting to be unleashed.
   keywords:
@@ -17,7 +18,7 @@ header:
   - Ranged
   target: Self or one ally
   title: Vessel of Retribution
-  topMatter: Conduit Level 5 Ability
+  topMatter: Level 5 Conduit Heroic Ability
 level: 5
 type: Maneuver
 version: 2

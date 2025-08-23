@@ -11,12 +11,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Your allies see the advantages in attacking the targets you select.
   keywords:
   - '-'
   target: Self
   title: Hit 'Em Hard!
-  topMatter: Tactician Level 3 Ability
+  topMatter: Level 3 Tactician Heroic Ability
 level: 3
 type: Maneuver
 version: 2

@@ -35,6 +35,7 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You project a terrifying image into the brains of your foes, and their
     fear psionically invigorates your allies.
   keywords:
@@ -43,7 +44,7 @@ header:
   - Telepathy
   target: Each ally and enemy in the area
   title: Synaptic Terror
-  topMatter: Talent Level 9 Ability
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Main action
 version: 2

@@ -30,6 +30,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You strike a foe and create a fleet of divine shields that protect your
     allies.
   keywords:
@@ -38,7 +39,7 @@ header:
   - Weapon
   target: One creature
   title: Shield of the Righteous
-  topMatter: Censor Level 5 Ability
+  topMatter: Level 5 Censor Heroic Ability
 level: 5
 type: Main action
 version: 2

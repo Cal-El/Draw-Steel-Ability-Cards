@@ -11,12 +11,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: The tide begins to turn.
   keywords:
   - '-'
   target: Self
   title: Rout
-  topMatter: Tactician Level 3 Ability
+  topMatter: Level 3 Tactician Heroic Ability
 level: 3
 type: Maneuver
 version: 2

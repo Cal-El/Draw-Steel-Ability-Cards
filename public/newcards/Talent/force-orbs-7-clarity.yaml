@@ -37,6 +37,7 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: Spheres of solid psionic energy float around you.
   keywords:
   - Psionic
@@ -45,7 +46,7 @@ header:
   - Telekinesis
   target: Self
   title: Force Orbs
-  topMatter: Talent Level 3 Ability
+  topMatter: Level 3 Talent Heroic Ability
 level: 3
 type: Main action
 version: 2

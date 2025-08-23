@@ -12,6 +12,7 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You cause a plume of shadow to erupt from your eyes and create a cloud
     of darkness.
   keywords:
@@ -19,7 +20,7 @@ header:
   - Magic
   target: Special
   title: Blackout
-  topMatter: Shadow Level 5 Ability
+  topMatter: Level 5 Shadow Heroic Ability
 level: 5
 type: Maneuver
 version: 2

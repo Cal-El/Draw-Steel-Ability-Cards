@@ -33,6 +33,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You distract a foe while your allies secure their defensive gear.
   keywords:
   - Melee
@@ -40,7 +41,7 @@ header:
   - Weapon
   target: One creature
   title: Squad! Gear Check!
-  topMatter: Tactician Level 5 Ability
+  topMatter: Level 5 Tactician Heroic Ability
 level: 5
 type: Main action
 version: 2

@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Wait, it's... Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!
   keywords:
   - Melee
@@ -41,7 +42,7 @@ header:
   - Weapon
   target: One creature
   title: En Garde!
-  topMatter: Troubadour Level 2 Ability
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

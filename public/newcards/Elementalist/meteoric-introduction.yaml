@@ -28,6 +28,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You give your enemy a gentle tap-like an asteroid impact.
   keywords:
   - Earth
@@ -36,7 +37,7 @@ header:
   - Strike
   target: One creature or object
   title: Meteoric Introduction
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

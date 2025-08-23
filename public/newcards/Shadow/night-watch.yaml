@@ -10,13 +10,14 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: A steely dagger from out of the blue knocks another weapon off course.
   keywords:
   - Ranged
   - Weapon
   target: One ally
   title: Night Watch
-  topMatter: Shadow Level 4 Ability
+  topMatter: Level 4 Shadow Ability
 level: 4
 type: Triggered Action
 version: 2

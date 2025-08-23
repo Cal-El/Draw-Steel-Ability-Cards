@@ -11,12 +11,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Your null field absorbs kinetic energy.
   keywords:
   - Psionic
   target: Self
   title: Absorption Field
-  topMatter: Null Level 3 Ability
+  topMatter: Level 3 Null Heroic Ability
 level: 3
 type: Maneuver
 version: 2

@@ -19,13 +19,14 @@ header:
   distance:
     display: 3 aura
     values: []
+  flavor: ''
   flavour: You focus your connection to the Primordial Chaos into a seething storm.
   keywords:
   - Area
   - Magic
   target: Each creature in the area
   title: Riders on the Storm
-  topMatter: Fury Level 6 Ability
+  topMatter: Level 6 Fury Heroic Ability
 level: 6
 type: Maneuver
 version: 2

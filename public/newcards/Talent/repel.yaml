@@ -14,13 +14,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: They aren't going anywhere, but you might!
   keywords:
   - Psionic
   - Ranged
   target: Self or one ally
   title: Repel
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Triggered Action
 version: 2

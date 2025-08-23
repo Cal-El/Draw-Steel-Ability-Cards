@@ -45,6 +45,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You let fly a fiery missile braided with pure primal energy.
   keywords:
   - Fire
@@ -53,7 +54,7 @@ header:
   - Strike
   target: One enemy or object
   title: Unquenchable Fire
-  topMatter: Elementalist Level 9 Ability
+  topMatter: Level 9 Elementalist Heroic Ability
 level: 9
 type: Main action
 version: 2

@@ -35,6 +35,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your flames dance from kindling to kindling to kindling.
   keywords:
   - Fire
@@ -43,7 +44,7 @@ header:
   - Strike
   target: One creature or object
   title: Combustion Deferred
-  topMatter: Elementalist Level 5 Ability
+  topMatter: Level 5 Elementalist Heroic Ability
 level: 5
 type: Main action
 version: 2

@@ -14,12 +14,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Your enemies' wounds open, your allies' wounds close.
   keywords:
   - Psionic
   target: Self
   title: Molecular Rearrangement Field
-  topMatter: Null Level 3 Ability
+  topMatter: Level 3 Null Heroic Ability
 level: 3
 type: Maneuver
 version: 2

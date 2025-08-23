@@ -16,12 +16,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: A well-timed throw of a potion will keep your allies in the fight.
   keywords:
   - Ranged
   target: Three creatures
   title: One Vial Makes You Better
-  topMatter: Shadow Level 6 Ability
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Maneuver
 version: 2

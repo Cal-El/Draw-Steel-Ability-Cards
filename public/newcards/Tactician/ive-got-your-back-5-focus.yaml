@@ -33,6 +33,7 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: Your enemy will think twice about attacking your friend.
   keywords:
   - Ranged
@@ -40,7 +41,7 @@ header:
   - Weapon
   target: One creature
   title: I've Got Your Back
-  topMatter: Tactician Level 2 Ability
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Main action
 version: 2

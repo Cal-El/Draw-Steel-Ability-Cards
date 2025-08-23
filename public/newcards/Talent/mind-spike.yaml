@@ -32,6 +32,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: A telepathic bolt instantly zaps a creature's brain.
   keywords:
   - Psionic
@@ -40,7 +41,7 @@ header:
   - Telepathy
   target: One creature
   title: Mind Spike
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Main action
 version: 2

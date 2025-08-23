@@ -42,6 +42,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: You leave your foe bleeding out after a devastating attack.
   keywords:
   - Melee
@@ -50,7 +51,7 @@ header:
   - Weapon
   target: One creature
   title: Eviscerate
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

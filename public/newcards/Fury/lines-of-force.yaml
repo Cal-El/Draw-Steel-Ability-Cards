@@ -18,13 +18,14 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You redirect the energy of motion.
   keywords:
   - Magic
   - Melee
   target: Self or one creature
   title: Lines of Force
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Triggered Action
 version: 2

@@ -9,6 +9,7 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: They have no idea what the college taught you.
   keywords:
   - Magic
@@ -16,7 +17,7 @@ header:
   - Ranged
   target: Self
   title: Shadowstrike
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

@@ -37,12 +37,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Explosives are best when they're attached to an enemy.
   keywords:
   - Ranged
   target: One creature
   title: Sticky Bomb
-  topMatter: Shadow Level 2 Ability
+  topMatter: Level 2 Shadow Heroic Ability
 level: 2
 type: Main action
 version: 2

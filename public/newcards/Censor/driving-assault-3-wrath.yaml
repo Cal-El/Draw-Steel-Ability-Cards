@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: As you force your enemy back with your weapon, you use your faith to stay
     close.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Weapon
   target: One creature or object
   title: Driving Assault
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

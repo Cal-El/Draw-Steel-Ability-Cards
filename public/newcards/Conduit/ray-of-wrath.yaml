@@ -31,6 +31,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You unleash a blast of holy light upon your foe.
   keywords:
   - Magic
@@ -38,7 +39,7 @@ header:
   - Strike
   target: One creature or object
   title: Ray of Wrath
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action
 version: 2

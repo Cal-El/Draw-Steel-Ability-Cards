@@ -42,6 +42,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Cursed by you, your enemy takes more damage from your allies.
   keywords:
   - Magic
@@ -49,7 +50,7 @@ header:
   - Strike
   target: One creature or object
   title: Corruption's Curse
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

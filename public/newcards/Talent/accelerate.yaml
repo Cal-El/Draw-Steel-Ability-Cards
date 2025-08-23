@@ -10,13 +10,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: To your ally, it seems as though the world has slowed down.
   keywords:
   - Psionic
   - Ranged
   target: Self or one creature
   title: Accelerate
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Maneuver
 version: 2

@@ -40,6 +40,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You inflict pain and doubt in equal measure.
   keywords:
   - Magic
@@ -48,7 +49,7 @@ header:
   - Void
   target: One creature or object
   title: Ray of Agonizing Self-Reflection
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

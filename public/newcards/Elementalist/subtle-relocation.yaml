@@ -16,6 +16,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You call on the void to swallow and spit out an ally.
   keywords:
   - Magic
@@ -23,7 +24,7 @@ header:
   - Void
   target: Self or one ally
   title: Subtle Relocation
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Triggered Action
 version: 2

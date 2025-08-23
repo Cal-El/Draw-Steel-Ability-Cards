@@ -36,6 +36,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You ignite a foe with holy radiance, rewarding allies who attack them.
   keywords:
   - Magic
@@ -43,7 +44,7 @@ header:
   - Strike
   target: One creature
   title: Beacon of Grace
-  topMatter: Conduit Level 5 Ability
+  topMatter: Level 5 Conduit Heroic Ability
 level: 5
 type: Main action
 version: 2

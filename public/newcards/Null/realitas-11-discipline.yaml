@@ -51,6 +51,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your essential hyperreality disrupts your enemy's connection to existence.
   keywords:
   - Melee
@@ -59,7 +60,7 @@ header:
   - Weapon
   target: One creature
   title: Realitas
-  topMatter: Null Level 9 Ability
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Main action
 version: 2

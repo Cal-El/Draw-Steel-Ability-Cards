@@ -21,6 +21,7 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: You won't escape your fate.
   keywords:
   - Magic
@@ -29,7 +30,7 @@ header:
   - Weapon
   target: Self
   title: Relentless Death
-  topMatter: Fury Level 8 Ability
+  topMatter: Level 8 Fury Heroic Ability
 level: 8
 type: Main action
 version: 2

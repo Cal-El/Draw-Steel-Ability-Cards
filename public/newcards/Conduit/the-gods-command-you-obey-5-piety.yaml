@@ -46,6 +46,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You speak with the voice of your saint, commanding your enemies.
   keywords:
   - Magic
@@ -53,7 +54,7 @@ header:
   - Strike
   target: One creature
   title: The Gods Command You Obey
-  topMatter: Conduit Level 2 Ability
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
 version: 2

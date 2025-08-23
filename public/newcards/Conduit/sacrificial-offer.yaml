@@ -32,6 +32,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Divine magic tears at your foe and defends a nearby friend.
   keywords:
   - Magic
@@ -39,7 +40,7 @@ header:
   - Strike
   target: One creature
   title: Sacrificial Offer
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action
 version: 2

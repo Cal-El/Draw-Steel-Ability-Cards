@@ -33,6 +33,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: They can't watch both of you at once.
   keywords:
   - Melee
@@ -40,7 +41,7 @@ header:
   - Weapon
   target: One creature
   title: You Were Watching the Wrong One
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action
 version: 2

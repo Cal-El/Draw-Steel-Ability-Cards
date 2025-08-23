@@ -47,6 +47,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You grab the target with supernatural force.
   keywords:
   - Melee
@@ -55,7 +56,7 @@ header:
   - Weapon
   target: One creature
   title: Iron Grip
-  topMatter: Null Level 4 Ability
-level: 4
+  topMatter: Level 5 Null Heroic Ability
+level: 5
 type: Main action
 version: 2

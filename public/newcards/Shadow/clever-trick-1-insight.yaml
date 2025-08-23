@@ -13,12 +13,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You sow a moment of confusion in combat, to your enemy's peril.
   keywords:
   - Magic
   target: Self
   title: Clever Trick
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Triggered Action
 version: 2

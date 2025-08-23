@@ -23,13 +23,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Each ally who catches a potion you throw can take the battle to the next
     level.
   keywords:
   - Ranged
   target: Three creatures
   title: One Vial Makes You Faster
-  topMatter: Shadow Level 6 Ability
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Main action
 version: 2

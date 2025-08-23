@@ -11,13 +11,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You make multiple strikes against a foe before they even notice they're
     dead.
   keywords:
   - Magic
   target: Self
   title: Speed of Shadows
-  topMatter: Shadow Level 8 Ability
+  topMatter: Level 8 Shadow Heroic Ability
 level: 8
 type: Main action
 version: 2

@@ -9,12 +9,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Keep up the attack. Never give them a moment's grace.
   keywords:
   - '-'
   target: Self
   title: Hesitation Is Weakness
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Free triggered
 version: 2

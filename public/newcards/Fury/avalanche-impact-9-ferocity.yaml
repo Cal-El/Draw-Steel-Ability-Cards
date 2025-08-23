@@ -31,12 +31,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You leap and crash down, causing a shockwave that devastates foes.
   keywords:
   - Magic
   target: Self
   title: Avalanche Impact
-  topMatter: Fury Level 6 Ability
+  topMatter: Level 6 Fury Heroic Ability
 level: 6
 type: Maneuver
 version: 2

@@ -10,6 +10,7 @@ header:
   distance:
     display: 4 burst
     values: []
+  flavor: ''
   flavour: You start a drumroll that roars like thunder with every impact the heroes
     make.
   keywords:
@@ -17,7 +18,7 @@ header:
   - Magic
   target: Self and each ally in the area
   title: Legendary Drum Fill
-  topMatter: Troubadour Level 6 Ability
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Maneuver
 version: 2

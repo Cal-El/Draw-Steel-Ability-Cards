@@ -29,13 +29,14 @@ header:
   distance:
     display: 2 burst
     values: []
+  flavor: ''
   flavour: A rain of holy light scours your enemies and repositions your allies.
   keywords:
   - Area
   - Magic
   target: Each enemy in the area
   title: Lightfall
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action
 version: 2

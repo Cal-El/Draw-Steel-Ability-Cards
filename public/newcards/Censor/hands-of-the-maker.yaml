@@ -10,12 +10,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You craft objects with the power of your mind.
   keywords:
   - Magic
   target: Self
   title: Hands of the Maker
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Ability
 level: 1
 type: Maneuver
 version: 2

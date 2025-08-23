@@ -31,6 +31,7 @@ header:
   distance:
     display: 1 burst
     values: []
+  flavor: ''
   flavour: Everyone get away from me!
   keywords:
   - Area
@@ -38,7 +39,7 @@ header:
   - Telekinesis
   target: Each enemy in the area
   title: Gravitic Burst
-  topMatter: Talent Level 2 Ability
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Main action
 version: 2

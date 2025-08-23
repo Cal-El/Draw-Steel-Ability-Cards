@@ -11,13 +11,14 @@ header:
   distance:
     display: 3 aura
     values: []
+  flavor: ''
   flavour: You anticipate your foes' moves and deny them.
   keywords:
   - Area
   - Magic
   target: Each enemy in the area
   title: Edict of Peace
-  topMatter: Censor Level 6 Ability
+  topMatter: Level 6 Censor Heroic Ability
 level: 6
 type: Maneuver
 version: 2

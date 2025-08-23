@@ -31,13 +31,14 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: Light shines at your command, burning your foes and blessing your allies.
   keywords:
   - Area
   - Magic
   target: Each enemy in the area
   title: Morning Light
-  topMatter: Conduit Level 2 Ability
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
 version: 2

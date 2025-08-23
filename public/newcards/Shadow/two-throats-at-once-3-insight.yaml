@@ -27,6 +27,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: A bargain.
   keywords:
   - Melee
@@ -35,7 +36,7 @@ header:
   - Weapon
   target: Two creatures or objects
   title: Two Throats at Once
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

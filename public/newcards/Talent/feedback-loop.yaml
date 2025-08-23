@@ -10,6 +10,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Creating a brief psychic link between an enemy and their target gives that
     foe a taste of their own medicine.
   keywords:
@@ -17,7 +18,7 @@ header:
   - Ranged
   target: One creature
   title: Feedback Loop
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Triggered Action
 version: 2

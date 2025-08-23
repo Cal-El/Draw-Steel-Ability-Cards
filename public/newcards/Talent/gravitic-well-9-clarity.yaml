@@ -37,6 +37,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You bend gravity into a fine point and pull your foes toward it.
   keywords:
   - Area
@@ -45,7 +46,7 @@ header:
   - Telekinesis
   target: Each creature and object in the area
   title: Gravitic Well
-  topMatter: Talent Level 6 Ability
+  topMatter: Level 6 Talent Heroic Ability
 level: 6
 type: Main action
 version: 2

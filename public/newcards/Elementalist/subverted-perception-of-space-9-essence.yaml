@@ -32,6 +32,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You rip an enemy's world in twain.
   keywords:
   - Magic
@@ -40,7 +41,7 @@ header:
   - Void
   target: One creature or object
   title: Subverted Perception of Space
-  topMatter: Elementalist Level 5 Ability
+  topMatter: Level 5 Elementalist Heroic Ability
 level: 5
 type: Main action
 version: 2

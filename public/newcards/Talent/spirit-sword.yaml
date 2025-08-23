@@ -35,6 +35,7 @@ header:
   distance:
     display: Melee 2
     values: []
+  flavor: ''
   flavour: You form a blade of mind energy and stab your target, invigorating yourself.
   keywords:
   - Animapathy
@@ -43,7 +44,7 @@ header:
   - Strike
   target: One creature or object
   title: Spirit Sword
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Main action
 version: 2

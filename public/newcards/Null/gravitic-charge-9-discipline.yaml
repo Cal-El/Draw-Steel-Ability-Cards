@@ -20,12 +20,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You channel your discipline into momentum that defies gravity.
   keywords:
   - Psionic
   target: Self
   title: Gravitic Charge
-  topMatter: Null Level 6 Ability
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Maneuver
 version: 2

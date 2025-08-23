@@ -45,6 +45,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: Silence is a virtue. A knife pinning their mouth shut is the next best
     thing.
   keywords:
@@ -54,7 +55,7 @@ header:
   - Weapon
   target: One creature
   title: You Talk Too Much
-  topMatter: Shadow Level 5 Ability
+  topMatter: Level 5 Shadow Heroic Ability
 level: 5
 type: Main action
 version: 2

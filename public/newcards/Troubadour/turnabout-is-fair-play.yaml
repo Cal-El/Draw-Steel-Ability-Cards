@@ -16,12 +16,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: All's fair in love and whatever.
   keywords:
   - Ranged
   target: One creature
   title: Turnabout Is Fair Play
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Triggered Action
 version: 2

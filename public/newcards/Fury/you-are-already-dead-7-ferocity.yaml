@@ -11,6 +11,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Slash. Walk away.
   keywords:
   - Melee
@@ -18,7 +19,7 @@ header:
   - Weapon
   target: One creature
   title: You Are Already Dead
-  topMatter: Fury Level 3 Ability
+  topMatter: Level 3 Fury Heroic Ability
 level: 3
 type: Main action
 version: 2

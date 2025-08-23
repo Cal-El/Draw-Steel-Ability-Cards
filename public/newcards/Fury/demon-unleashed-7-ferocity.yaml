@@ -11,12 +11,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Foes tremble at the sight of you.
   keywords:
   - Magic
   target: Self
   title: Demon Unleashed
-  topMatter: Fury Level 3 Ability
+  topMatter: Level 3 Fury Heroic Ability
 level: 3
 type: Maneuver
 version: 2

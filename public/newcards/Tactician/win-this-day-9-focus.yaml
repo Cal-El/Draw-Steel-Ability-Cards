@@ -10,12 +10,13 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You inspire your allies to recover and gather their strength.
   keywords:
   - Area
   target: Self and each ally in the area
   title: Win This Day!
-  topMatter: Tactician Level 5 Ability
+  topMatter: Level 5 Tactician Heroic Ability
 level: 5
 type: Main action
 version: 2

@@ -10,13 +10,14 @@ header:
   distance:
     display: 3 aura
     values: []
+  flavor: ''
   flavour: The gods reward your faith.
   keywords:
   - Area
   - Magic
   target: Self and each ally in the area
   title: Blessing of the Faithful
-  topMatter: Censor Level 2 Ability
+  topMatter: Level 2 Censor Heroic Ability
 level: 2
 type: Maneuver
 version: 2

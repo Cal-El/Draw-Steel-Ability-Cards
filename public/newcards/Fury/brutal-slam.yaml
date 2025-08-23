@@ -28,6 +28,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: The heavy impact of your weapon attacks drives your foes ever back.
   keywords:
   - Melee
@@ -35,7 +36,7 @@ header:
   - Weapon
   target: One creature or object
   title: Brutal Slam
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Main action
 version: 2

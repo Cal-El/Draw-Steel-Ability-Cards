@@ -28,6 +28,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your opponent staggers. They cannot ignore you.
   keywords:
   - Melee
@@ -36,7 +37,7 @@ header:
   - Weapon
   target: One creature or object
   title: Kinetic Strike
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Ability
 level: 1
 type: Main action
 version: 2

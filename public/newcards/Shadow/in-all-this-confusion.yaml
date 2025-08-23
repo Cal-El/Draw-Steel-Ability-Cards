@@ -14,12 +14,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You vanish in a plume of black smoke to avoid danger.
   keywords:
   - Magic
   target: Self
   title: In All This Confusion
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Triggered Action
 version: 2

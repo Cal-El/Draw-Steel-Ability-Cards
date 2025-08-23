@@ -43,6 +43,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: Keep everything as it was. Ignore everything that will be.
   keywords:
   - Area
@@ -51,7 +52,7 @@ header:
   - Ranged
   target: Each creature and object in the area
   title: Stasis Field
-  topMatter: Talent Level 6 Ability
+  topMatter: Level 6 Talent Heroic Ability
 level: 6
 type: Main action
 version: 2

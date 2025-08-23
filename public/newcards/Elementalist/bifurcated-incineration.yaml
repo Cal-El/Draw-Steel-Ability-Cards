@@ -25,6 +25,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Two jets of flame lance out at your command.
   keywords:
   - Fire
@@ -33,7 +34,7 @@ header:
   - Strike
   target: Two creatures or objects
   title: Bifurcated Incineration
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

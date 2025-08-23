@@ -12,13 +12,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You can slip into the stone.
   keywords:
   - Earth
   - Magic
   target: Self
   title: Earth Accepts Me
-  topMatter: Elementalist Level 3 Ability
+  topMatter: Level 3 Elementalist Ability
 level: 3
 type: Main action
 version: 2

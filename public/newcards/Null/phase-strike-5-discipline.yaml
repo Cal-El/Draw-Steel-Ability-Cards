@@ -46,6 +46,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: For a moment, your foe slips out of phase with this manifold.
   keywords:
   - Melee
@@ -54,7 +55,7 @@ header:
   - Weapon
   target: One creature
   title: Phase Strike
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Heroic Ability
 level: 1
 type: Main action
 version: 2

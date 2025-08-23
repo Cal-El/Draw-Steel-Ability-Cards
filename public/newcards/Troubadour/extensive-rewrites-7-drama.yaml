@@ -32,13 +32,14 @@ header:
   distance:
     display: 4 burst
     values: []
+  flavor: ''
   flavour: No, this isn't right. That foe was over there!
   keywords:
   - Area
   - Magic
   target: Each enemy in the area
   title: Extensive Rewrites
-  topMatter: Troubadour Level 3 Ability
+  topMatter: Level 3 Troubadour Heroic Ability
 level: 3
 type: No action
 version: 2

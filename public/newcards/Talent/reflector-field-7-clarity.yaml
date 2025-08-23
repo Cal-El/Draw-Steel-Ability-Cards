@@ -16,6 +16,7 @@ header:
   distance:
     display: 3 aura
     values: []
+  flavor: ''
   flavour: A protective field reverses the momentum of incoming attacks.
   keywords:
   - Area
@@ -23,7 +24,7 @@ header:
   - Telepathy
   target: Special
   title: Reflector Field
-  topMatter: Talent Level 3 Ability
+  topMatter: Level 3 Talent Heroic Ability
 level: 3
 type: Main action
 version: 2

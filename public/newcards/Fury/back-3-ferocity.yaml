@@ -27,6 +27,7 @@ header:
   distance:
     display: 1 burst
     values: []
+  flavor: ''
   flavour: You hew about you with your mighty weapon, hurling enemies backward.
   keywords:
   - Area
@@ -34,7 +35,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Back!
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
 version: 2

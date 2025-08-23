@@ -11,13 +11,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: An ally gains the benefit of your intellect.
   keywords:
   - Psionic
   - Ranged
   target: One creature or object
   title: Remote Assistance
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Maneuver
 version: 2

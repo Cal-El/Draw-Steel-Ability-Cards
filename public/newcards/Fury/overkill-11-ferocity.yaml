@@ -36,6 +36,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You strike so no damage is wasted.
   keywords:
   - Magic
@@ -44,7 +45,7 @@ header:
   - Weapon
   target: One creature
   title: Overkill
-  topMatter: Fury Level 8 Ability
+  topMatter: Level 8 Fury Heroic Ability
 level: 8
 type: Main action
 version: 2

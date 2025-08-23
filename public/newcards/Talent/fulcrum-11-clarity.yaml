@@ -24,6 +24,7 @@ header:
   distance:
     display: Special
     values: []
+  flavor: ''
   flavour: You precisely manipulate the creatures around you.
   keywords:
   - Area
@@ -31,7 +32,7 @@ header:
   - Telekinesis
   target: Each enemy and object in the area
   title: Fulcrum
-  topMatter: Talent Level 9 Ability
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Main action
 version: 2

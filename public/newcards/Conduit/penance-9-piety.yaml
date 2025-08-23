@@ -42,6 +42,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: '"If you won''t kneel, the gods will make you."'
   keywords:
   - Area
@@ -49,7 +50,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Penance
-  topMatter: Conduit Level 5 Ability
+  topMatter: Level 5 Conduit Heroic Ability
 level: 5
 type: Main action
 version: 2

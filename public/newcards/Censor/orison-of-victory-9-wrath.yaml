@@ -19,12 +19,13 @@ header:
   distance:
     display: 1 burst
     values: []
+  flavor: ''
   flavour: You channel your god's will to overcome hardship and inflict pain.
   keywords:
   - Area
   target: Self and each ally in the area
   title: Orison of Victory
-  topMatter: Censor Level 5 Ability
+  topMatter: Level 5 Censor Heroic Ability
 level: 5
 type: Maneuver
 version: 2

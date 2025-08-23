@@ -39,6 +39,7 @@ header:
   distance:
     display: 10 x 2 line within 5
     values: []
+  flavor: ''
   flavour: Animal spirits run through the battlefield, trampling your foes.
   keywords:
   - Area
@@ -46,7 +47,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Spirit Stampede
-  topMatter: Conduit Level 6 Ability
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Main action
 version: 2

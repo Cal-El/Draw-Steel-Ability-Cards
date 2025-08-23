@@ -13,13 +13,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You invigorate an attacking ally with divine energy.
   keywords:
   - Magic
   - Ranged
   target: One ally
   title: Word of Guidance
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Triggered Action
 version: 2

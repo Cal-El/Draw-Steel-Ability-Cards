@@ -36,6 +36,7 @@ header:
   distance:
     display: Melee 1 or ranged 10
     values: []
+  flavor: ''
   flavour: Just one bad review will ruin their day.
   keywords:
   - Magic
@@ -44,7 +45,7 @@ header:
   - Strike
   target: One creature or object
   title: Harsh Critic
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Main action
 version: 2

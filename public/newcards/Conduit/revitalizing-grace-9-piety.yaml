@@ -11,13 +11,14 @@ header:
   distance:
     display: 4 burst
     values: []
+  flavor: ''
   flavour: With a gesture, you restore your health and that of your allies.
   keywords:
   - Area
   - Magic
   target: Self and each ally in the area
   title: Revitalizing Grace
-  topMatter: Conduit Level 6 Ability
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Main action
 version: 2

@@ -11,6 +11,7 @@ header:
   distance:
     display: Melee 2
     values: []
+  flavor: ''
   flavour: You give a target a glimpse into the future so that they're ready for what
     comes next.
   keywords:
@@ -19,7 +20,7 @@ header:
   - Psionic
   target: Self or one ally
   title: Precognition
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Main action
 version: 2

@@ -12,12 +12,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: I had to pry this secret from the shadow colleges.
   keywords:
   - Ranged
   target: Self and two allies
   title: Squad! Hit and Run!
-  topMatter: Tactician Level 9 Ability
+  topMatter: Level 9 Tactician Heroic Ability
 level: 9
 type: Main action
 version: 2

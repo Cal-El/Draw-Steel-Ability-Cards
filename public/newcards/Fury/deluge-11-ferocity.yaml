@@ -33,6 +33,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You summon your primordial storm.
   keywords:
   - Area
@@ -40,7 +41,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Deluge
-  topMatter: Fury Level 9 Ability
+  topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
 version: 2

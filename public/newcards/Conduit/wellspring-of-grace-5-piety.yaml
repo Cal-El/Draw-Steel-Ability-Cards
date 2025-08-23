@@ -10,13 +10,14 @@ header:
   distance:
     display: 3 aura
     values: []
+  flavor: ''
   flavour: A holy light is emitted from your body, healing your allies.
   keywords:
   - Area
   - Magic
   target: Each ally in the area
   title: Wellspring of Grace
-  topMatter: Conduit Level 2 Ability
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
 version: 2

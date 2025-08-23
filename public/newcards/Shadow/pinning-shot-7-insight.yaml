@@ -42,6 +42,7 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: One missile-placed well and placed hard.
   keywords:
   - Ranged
@@ -49,7 +50,7 @@ header:
   - Weapon
   target: One creature
   title: Pinning Shot
-  topMatter: Shadow Level 3 Ability
+  topMatter: Level 3 Shadow Heroic Ability
 level: 3
 type: Main action
 version: 2

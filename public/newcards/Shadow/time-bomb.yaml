@@ -20,13 +20,14 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: The longer it cooks, the bigger the boom.
   keywords:
   - Area
   - Ranged
   target: Each enemy in the area
   title: Time Bomb
-  topMatter: Shadow Level 8 Ability
+  topMatter: Level 8 Shadow Ability
 level: 8
 type: Free maneuver
 version: 2

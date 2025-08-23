@@ -14,6 +14,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You cover yourself or an ally in protective stone.
   keywords:
   - Earth
@@ -21,7 +22,7 @@ header:
   - Ranged
   target: Self or one ally
   title: Skin Like Castle Walls
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Triggered Action
 version: 2

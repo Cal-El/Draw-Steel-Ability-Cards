@@ -32,6 +32,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: You attack an enemy as an ally exposes their weakness.
   keywords:
   - Melee
@@ -40,7 +41,7 @@ header:
   - Weapon
   target: One creature or object
   title: Teamwork Has Its Place
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action
 version: 2

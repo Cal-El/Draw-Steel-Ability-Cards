@@ -35,6 +35,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You use your foe as a tool against your enemies.
   keywords:
   - Ranged
@@ -42,7 +43,7 @@ header:
   - Weapon
   target: One creature
   title: Hand of the Gods
-  topMatter: Censor Level 8 Ability
+  topMatter: Level 8 Censor Heroic Ability
 level: 8
 type: Main action
 version: 2

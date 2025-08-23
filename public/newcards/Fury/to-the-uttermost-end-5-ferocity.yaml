@@ -35,6 +35,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You gut your life force to ensure a foe's demise.
   keywords:
   - Melee
@@ -42,7 +43,7 @@ header:
   - Weapon
   target: One creature
   title: To the Uttermost End
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
 version: 2

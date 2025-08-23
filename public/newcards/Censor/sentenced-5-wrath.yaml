@@ -46,6 +46,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: The shock of your condemnation freezes your enemy in their boots.
   keywords:
   - Magic
@@ -54,7 +55,7 @@ header:
   - Weapon
   target: One creature
   title: Sentenced
-  topMatter: Censor Level 2 Ability
+  topMatter: Level 2 Censor Heroic Ability
 level: 2
 type: Main action
 version: 2

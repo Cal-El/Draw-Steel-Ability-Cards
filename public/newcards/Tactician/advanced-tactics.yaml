@@ -14,12 +14,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your leadership aids an ally.
   keywords:
   - Ranged
   target: One ally
   title: Advanced Tactics
-  topMatter: Tactician Level 1 Ability
+  topMatter: Level 1 Tactician Ability
 level: 1
 type: Triggered Action
 version: 2

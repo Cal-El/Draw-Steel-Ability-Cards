@@ -32,6 +32,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You show your foe a glimpse of their fate after death.
   keywords:
   - Magic
@@ -39,7 +40,7 @@ header:
   - Strike
   target: One creature
   title: Every Step... Death!
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Ability
 level: 1
 type: Main action
 version: 2

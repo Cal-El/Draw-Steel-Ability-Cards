@@ -29,7 +29,8 @@ header:
     values:
     - baseValue: 1
       includedKitValue: 0
-      type: Within
+      type: Ranged
+  flavor: ''
   flavour: You warp reality to grow a limb for just a moment and make a single devastating
     attack.
   keywords:
@@ -37,7 +38,7 @@ header:
   - Psionic
   target: Each enemy in the area
   title: Scalar Assault
-  topMatter: Null Level 8 Ability
+  topMatter: Level 8 Null Heroic Ability
 level: 8
 type: Main action
 version: 2

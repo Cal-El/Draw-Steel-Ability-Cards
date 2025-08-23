@@ -32,6 +32,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your reckless assault leaves you tactically vulnerable.
   keywords:
   - Melee
@@ -39,7 +40,7 @@ header:
   - Weapon
   target: One creature or object
   title: To the Death!
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Main action
 version: 2

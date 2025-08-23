@@ -17,6 +17,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your psionic energy surrounds the target and pushes everything else away
     from them.
   keywords:
@@ -25,7 +26,7 @@ header:
   - Telekinesis
   target: Self or one ally
   title: Inertia Soak
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Maneuver
 version: 2

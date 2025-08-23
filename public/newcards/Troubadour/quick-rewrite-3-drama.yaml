@@ -45,6 +45,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You write something unexpected into the scene that hinders your enemy.
   keywords:
   - Area
@@ -52,7 +53,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Quick Rewrite
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Main action
 version: 2

@@ -19,6 +19,7 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: You tumble through the battle, stabbing foes and teleporting allies.
   keywords:
   - Magic
@@ -26,7 +27,7 @@ header:
   - Weapon
   target: Self
   title: Cacophony of Cinders
-  topMatter: Shadow Level 9 Ability
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

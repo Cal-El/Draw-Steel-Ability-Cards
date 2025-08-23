@@ -14,13 +14,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You project order, making it harder for your enemies to interfere with
     you and your allies.
   keywords:
   - Psionic
   target: Self
   title: Stabilizing Field
-  topMatter: Null Level 3 Ability
+  topMatter: Level 3 Null Heroic Ability
 level: 3
 type: Maneuver
 version: 2

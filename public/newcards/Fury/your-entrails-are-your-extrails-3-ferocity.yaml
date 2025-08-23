@@ -46,6 +46,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Hard for them to fight when they're busy holding in their giblets.
   keywords:
   - Melee
@@ -53,7 +54,7 @@ header:
   - Weapon
   target: One creature or object
   title: Your Entrails Are Your Extrails!
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
 version: 2

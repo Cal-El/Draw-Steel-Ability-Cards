@@ -10,12 +10,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You show shadows what true speed is.
   keywords:
   - Psionic
   target: Self
   title: Time Loop
-  topMatter: Null Level 9 Ability
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Free triggered
 version: 2

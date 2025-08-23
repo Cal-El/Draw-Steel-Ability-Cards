@@ -36,6 +36,7 @@ header:
     - baseValue: 5
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You summon a divine storm that remains under your control.
   keywords:
   - Area
@@ -43,7 +44,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Godstorm
-  topMatter: Conduit Level 9 Ability
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

@@ -31,13 +31,14 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: As you move across the battlefield, every foe within reach feels your wrath.
   keywords:
   - Melee
   - Weapon
   target: Self
   title: One Hundred Throats
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

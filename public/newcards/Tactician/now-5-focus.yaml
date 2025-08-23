@@ -9,12 +9,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your allies wait for your command-then unleash death!
   keywords:
   - Ranged
   target: Three allies
   title: Now!
-  topMatter: Tactician Level 1 Ability
+  topMatter: Level 1 Tactician Heroic Ability
 level: 1
 type: Maneuver
 version: 2

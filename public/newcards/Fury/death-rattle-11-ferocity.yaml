@@ -30,6 +30,7 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You unleash an otherworldly cry that rips through your enemies, killing
     the weakest of them.
   keywords:
@@ -37,7 +38,7 @@ header:
   - Magic
   target: Each enemy in the area
   title: Death Rattle
-  topMatter: Fury Level 9 Ability
+  topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
 version: 2

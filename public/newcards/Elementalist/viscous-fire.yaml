@@ -28,6 +28,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: A jet of heavy fire erupts where you strike.
   keywords:
   - Fire
@@ -36,7 +37,7 @@ header:
   - Strike
   target: One creature or object
   title: Viscous Fire
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

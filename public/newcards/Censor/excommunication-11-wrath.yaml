@@ -47,6 +47,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You curse your foe to become a bane to their allies.
   keywords:
   - Melee
@@ -54,7 +55,7 @@ header:
   - Weapon
   target: One creature
   title: Excommunication
-  topMatter: Censor Level 8 Ability
+  topMatter: Level 8 Censor Heroic Ability
 level: 8
 type: Main action
 version: 2

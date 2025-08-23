@@ -35,6 +35,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Fungal spores sprout inside your enemy's brain, allowing you to control
     their actions.
   keywords:
@@ -45,7 +46,7 @@ header:
   - Void
   target: One creature
   title: Subvert the Green Within
-  topMatter: Elementalist Level 2 Ability
+  topMatter: Level 2 Elementalist Heroic Ability
 level: 2
 type: Main action
 version: 2

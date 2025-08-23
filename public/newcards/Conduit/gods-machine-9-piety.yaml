@@ -27,9 +27,6 @@ body:
       baseValue: 8
       characteristicBonusOptions: []
       includedKitValue: 0
-- body: Once on each subsequent turn, you can use a free maneuver to move the machine
-    a number of squares up to your Intuition score then repeat the power roll.
-  isEffect: true
 cost:
   costName: Piety
   costValue: '9'
@@ -37,13 +34,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You conjure a whirring tank made of blades and metal.
   keywords:
   - Magic
   - Ranged
   target: Special
   title: Gods' Machine
-  topMatter: Conduit Level 6 Ability
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Main action
 version: 2

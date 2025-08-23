@@ -44,6 +44,7 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: You weaken your connection to this manifold, allowing you to move through
     and damage enemies.
   keywords:
@@ -52,7 +53,7 @@ header:
   - Weapon
   target: Self
   title: Phase Step
-  topMatter: Null Level 6 Ability
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Main action
 version: 2

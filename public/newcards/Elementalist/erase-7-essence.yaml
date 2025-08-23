@@ -26,6 +26,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: With a flick of the wrist, you phase creatures out of existence.
   keywords:
   - Magic
@@ -34,7 +35,7 @@ header:
   - Void
   target: Special
   title: Erase
-  topMatter: Elementalist Level 3 Ability
+  topMatter: Level 3 Elementalist Heroic Ability
 level: 3
 type: Main action
 version: 2

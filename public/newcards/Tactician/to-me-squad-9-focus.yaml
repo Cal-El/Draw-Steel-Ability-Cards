@@ -42,6 +42,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You lead your allies in a charge.
   keywords:
   - Charge
@@ -50,7 +51,7 @@ header:
   - Weapon
   target: One creature
   title: To Me Squad!
-  topMatter: Tactician Level 6 Ability
+  topMatter: Level 6 Tactician Heroic Ability
 level: 6
 type: Main action
 version: 2

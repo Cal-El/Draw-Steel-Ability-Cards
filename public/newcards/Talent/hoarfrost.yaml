@@ -44,6 +44,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You blast a foe with a pulse of cold energy.
   keywords:
   - Cryokinesis
@@ -52,7 +53,7 @@ header:
   - Strike
   target: One creature
   title: Hoarfrost
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Main action
 version: 2

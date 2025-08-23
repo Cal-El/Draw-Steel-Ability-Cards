@@ -49,6 +49,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: Your attack demoralizes your foe. Your allies begin to think you can win.
   keywords:
   - Melee
@@ -57,7 +58,7 @@ header:
   - Weapon
   target: One creature or object
   title: Mind Game
-  topMatter: Tactician Level 1 Ability
+  topMatter: Level 1 Tactician Heroic Ability
 level: 1
 type: Main action
 version: 2

@@ -34,6 +34,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Fire engulfs your target and continues to churn.
   keywords:
   - Fire
@@ -42,7 +43,7 @@ header:
   - Strike
   target: One creature or object
   title: The Flesh, a Crucible
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Main action
 version: 2

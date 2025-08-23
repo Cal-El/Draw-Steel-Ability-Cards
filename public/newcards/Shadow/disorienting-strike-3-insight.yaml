@@ -33,6 +33,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your attack leaves them reeling, allowing you to follow up.
   keywords:
   - Melee
@@ -40,7 +41,7 @@ header:
   - Weapon
   target: One creature
   title: Disorienting Strike
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

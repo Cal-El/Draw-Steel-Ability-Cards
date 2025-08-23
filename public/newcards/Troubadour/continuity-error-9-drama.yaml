@@ -16,13 +16,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your subject is written into two places at once.
   keywords:
   - Magic
   - Ranged
   target: One enemy or object
   title: Continuity Error
-  topMatter: Troubadour Level 5 Ability
+  topMatter: Level 5 Troubadour Heroic Ability
 level: 5
 type: Maneuver
 version: 2

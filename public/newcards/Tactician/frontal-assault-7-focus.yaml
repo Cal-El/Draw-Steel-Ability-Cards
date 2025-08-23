@@ -14,12 +14,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: The purpose of a charge is to break their morale and force a retreat.
   keywords:
   - '-'
   target: Self
   title: Frontal Assault
-  topMatter: Tactician Level 3 Ability
+  topMatter: Level 3 Tactician Heroic Ability
 level: 3
 type: Maneuver
 version: 2

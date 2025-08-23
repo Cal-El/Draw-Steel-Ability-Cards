@@ -30,6 +30,7 @@ header:
   distance:
     display: 2 burst
     values: []
+  flavor: ''
   flavour: You produce an entrancing note that twists the senses in a spectacular
     fashion.
   keywords:
@@ -37,7 +38,7 @@ header:
   - Magic
   target: Each enemy in the area
   title: Hypnotic Overtones
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Main action
 version: 2

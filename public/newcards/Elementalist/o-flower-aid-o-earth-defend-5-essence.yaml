@@ -25,6 +25,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: Revitalizing plants and jagged stones grow, helping allies and hindering
     foes.
   keywords:
@@ -35,7 +36,7 @@ header:
   - Ranged
   target: Special
   title: O Flower Aid, O Earth Defend
-  topMatter: Elementalist Level 2 Ability
+  topMatter: Level 2 Elementalist Heroic Ability
 level: 2
 type: Maneuver
 version: 2

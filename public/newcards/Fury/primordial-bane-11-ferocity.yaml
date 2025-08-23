@@ -35,6 +35,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You attune the target to be weaker to a specific element.
   keywords:
   - Magic
@@ -43,7 +44,7 @@ header:
   - Weapon
   target: One creature
   title: Primordial Bane
-  topMatter: Fury Level 9 Ability
+  topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
 version: 2

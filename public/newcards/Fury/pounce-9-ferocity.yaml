@@ -44,6 +44,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You strike at the target like the ultimate predator you are.
   keywords:
   - Magic
@@ -52,7 +53,7 @@ header:
   - Weapon
   target: One creature
   title: Pounce
-  topMatter: Fury Level 6 Ability
+  topMatter: Level 6 Fury Heroic Ability
 level: 6
 type: Main action
 version: 2

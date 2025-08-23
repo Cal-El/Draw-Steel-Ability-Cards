@@ -13,13 +13,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Shocked in the face of your naked brutality, your enemy's instincts take
     over.
   keywords:
   - Magic
   target: Self
   title: Face the Storm!
-  topMatter: Fury Level 3 Ability
+  topMatter: Level 3 Fury Heroic Ability
 level: 3
 type: Maneuver
 version: 2

@@ -35,6 +35,7 @@ header:
   distance:
     display: 5 x 2 line within 1
     values: []
+  flavor: ''
   flavour: You move fast enough to turn around and watch your foes feel the aftermath.
   keywords:
   - Area
@@ -43,7 +44,7 @@ header:
   - Telekinesis
   target: Each enemy in the area
   title: Hypersonic
-  topMatter: Talent Level 5 Ability
+  topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Main action
 version: 2

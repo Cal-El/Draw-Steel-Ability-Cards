@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 1 or ranged 10
     values: []
+  flavor: ''
   flavour: You attach your most potent explosive to your foe. Under less pressing
     circumstances, you're sure you could launch them into orbit.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Strike
   target: One creature or object
   title: To the Stars
-  topMatter: Shadow Level 9 Ability
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

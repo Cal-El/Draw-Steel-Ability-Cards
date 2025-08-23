@@ -10,12 +10,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your foe left an opening. You point this out to an ally!
   keywords:
   - Ranged
   target: One ally
   title: '"Strike Now!"'
-  topMatter: Tactician Level 1 Ability
+  topMatter: Level 1 Tactician Ability
 level: 1
 type: Main action
 version: 2

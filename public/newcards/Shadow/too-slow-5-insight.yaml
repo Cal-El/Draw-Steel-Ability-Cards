@@ -12,12 +12,13 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: Your foe made a big mistake.
   keywords:
   - '-'
   target: Self
   title: Too Slow
-  topMatter: Shadow Level 2 Ability
+  topMatter: Level 2 Shadow Heroic Ability
 level: 2
 type: Free triggered
 version: 2

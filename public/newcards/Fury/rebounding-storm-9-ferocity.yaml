@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You knock around enemies like playthings.
   keywords:
   - Melee
@@ -41,7 +42,7 @@ header:
   - Weapon
   target: Two creatures or objects
   title: Rebounding Storm
-  topMatter: Fury Level 5 Ability
+  topMatter: Level 5 Fury Heroic Ability
 level: 5
 type: Main action
 version: 2

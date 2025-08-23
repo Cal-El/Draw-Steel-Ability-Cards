@@ -12,6 +12,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You narrate the tension of the scene and put all hope into your protagonist
     to turn things around.
   keywords:
@@ -19,7 +20,7 @@ header:
   - Ranged
   target: One ally
   title: Rising Tension
-  topMatter: Troubadour Level 9 Ability
+  topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Maneuver
 version: 2

@@ -19,12 +19,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You manifest a force barrier that absorbs incoming kinetic energy.
   keywords:
   - Psionic
   target: Self
   title: Kinetic Shield
-  topMatter: Null Level 2 Ability
+  topMatter: Level 2 Null Heroic Ability
 level: 2
 type: Maneuver
 version: 2

@@ -49,6 +49,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You fire a piercing bolt of psychic energy that lances through two foes
     and leaves a faint intangible thread between them.
   keywords:
@@ -58,7 +59,7 @@ header:
   - Strike
   target: Two enemies
   title: Soulbound
-  topMatter: Talent Level 5 Ability
+  topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Main action
 version: 2

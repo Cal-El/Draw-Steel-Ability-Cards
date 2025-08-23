@@ -47,6 +47,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: '"I know what you fear."'
   keywords:
   - Magic
@@ -54,7 +55,7 @@ header:
   - Strike
   target: One creature
   title: Terror Manifest
-  topMatter: Censor Level 9 Ability
+  topMatter: Level 9 Censor Heroic Ability
 level: 9
 type: Main action
 version: 2

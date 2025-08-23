@@ -33,13 +33,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: One explosion, an offense. Three explosions, an assault. Nine explosions,
     a celebration.
   keywords:
   - Ranged
   target: One creature or object
   title: Chain Reaction
-  topMatter: Shadow Level 9 Ability
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

@@ -49,6 +49,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: Threads you've been weaving through your adventures create a vibrant, pearlescent
     web.
   keywords:
@@ -58,7 +59,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Web of All That's Come Before
-  topMatter: Elementalist Level 5 Ability
+  topMatter: Level 5 Elementalist Heroic Ability
 level: 5
 type: Main action
 version: 2

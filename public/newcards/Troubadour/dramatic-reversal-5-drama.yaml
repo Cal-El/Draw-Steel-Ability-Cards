@@ -17,13 +17,14 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: Give the audience a surprise.
   keywords:
   - Area
   - Magic
   target: Self and each ally in the area
   title: Dramatic Reversal
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Main action
 version: 2

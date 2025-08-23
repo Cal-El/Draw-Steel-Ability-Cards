@@ -13,13 +13,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: A marble statue of your deity rises from the earth.
   keywords:
   - Magic
   - Ranged
   target: Special
   title: Statue of Power
-  topMatter: Conduit Level 2 Ability
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Maneuver
 version: 2

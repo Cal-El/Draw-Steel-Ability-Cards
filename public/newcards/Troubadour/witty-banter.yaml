@@ -35,6 +35,7 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
+  flavor: ''
   flavour: A lyrical (and physical) jab insults an enemy and inspires an ally.
   keywords:
   - Magic
@@ -43,7 +44,7 @@ header:
   - Strike
   target: One creature
   title: Witty Banter
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Main action
 version: 2

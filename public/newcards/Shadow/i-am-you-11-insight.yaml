@@ -12,13 +12,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your mask reflects your foe's face. Surely they won't need it much longer.
   keywords:
   - Magic
   - Ranged
   target: One creature
   title: I Am You
-  topMatter: Shadow Level 9 Ability
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Maneuver
 version: 2

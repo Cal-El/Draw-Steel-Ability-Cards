@@ -39,13 +39,14 @@ header:
   distance:
     display: 5 burst
     values: []
+  flavor: ''
   flavour: You give away the ending of this battle, and it's not great for them.
   keywords:
   - Area
   - Magic
   target: Each enemy in the area
   title: Here's How Your Story Ends
-  topMatter: Troubadour Level 6 Ability
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Main action
 version: 2

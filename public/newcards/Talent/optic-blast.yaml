@@ -50,6 +50,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your eyes emit rays of powerful enervating force.
   keywords:
   - Metamorphosis
@@ -58,7 +59,7 @@ header:
   - Strike
   target: One creature or object
   title: Optic Blast
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Main action
 version: 2

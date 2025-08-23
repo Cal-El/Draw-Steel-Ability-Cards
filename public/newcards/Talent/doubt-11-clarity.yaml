@@ -52,6 +52,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You tug at the strings of the foe's anima and unravel them, allowing someone
     else to take advantage of their drive.
   keywords:
@@ -61,7 +62,7 @@ header:
   - Strike
   target: One creature or object
   title: Doubt
-  topMatter: Talent Level 8 Ability
+  topMatter: Level 8 Talent Heroic Ability
 level: 8
 type: Main action
 version: 2

@@ -12,6 +12,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You and your partner make a flashy show of derring-do, then get back to
     your corners.
   keywords:
@@ -20,7 +21,7 @@ header:
   - Weapon
   target: One creature
   title: Fight Choreography
-  topMatter: Troubadour Level 6 Ability
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Main action
 version: 2

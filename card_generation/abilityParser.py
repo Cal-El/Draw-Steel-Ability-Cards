@@ -1,5 +1,21 @@
 import re
 
+def createBlankCard():
+  cardData = {}
+  cardData['version'] = 2
+  cardData['type'] = ''
+  cardData['header'] = {'flavor': '', 'keywords': [], 'target': '', 'distance': {'display': '', 'values': []}}
+  cardData['header']['topMatter'] = ''
+  cardData['header']['title'] = ''
+  cardData['body'] = []
+  return cardData
+
+def getTopMatter(className, ability):
+  levelBlock = 'Level ' + str(ability['metadata']['level'])
+  if 'cost' in ability:
+    return levelBlock + ' ' + className + ' Heroic Ability'
+  return levelBlock + ' ' + className + ' Ability'
+
 def getAbilityType(ability):
   if 'type' not in ability:
     return ''
@@ -23,6 +39,8 @@ def parseBody(ability):
     if 'effect' in block:
       effect = {}
       effect['isEffect'] = True
+      if 'name' not in block and 'cost' not in block:
+        continue
       if 'name' in block:
         effect['title'] = block['name']
       if 'cost' in block:

@@ -12,12 +12,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: In a swirl of black ash, you step from one place to another.
   keywords:
   - Magic
   target: Self
   title: Black Ash Teleport
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Maneuver
 version: 2

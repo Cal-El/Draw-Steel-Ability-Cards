@@ -10,12 +10,13 @@ header:
   distance:
     display: Ranged 20
     values: []
+  flavor: ''
   flavour: A moment of focus leaves a foe firmly in your sights.
   keywords:
   - Ranged
   target: One creature
   title: Careful Observation
-  topMatter: Shadow Level 3 Ability
+  topMatter: Level 3 Shadow Ability
 level: 3
 type: Maneuver
 version: 2

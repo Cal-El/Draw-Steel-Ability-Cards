@@ -18,12 +18,13 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: Give the chorus a little punch.
   keywords:
   - Ranged
   target: One ally
   title: Harmonize
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Triggered Action
 version: 2

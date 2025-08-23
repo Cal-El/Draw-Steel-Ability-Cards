@@ -14,6 +14,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You summon darkness that thwarts only your foes.
   keywords:
   - Area
@@ -21,7 +22,7 @@ header:
   - Ranged
   target: Special
   title: Night Falls
-  topMatter: Conduit Level 9 Ability
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

@@ -18,6 +18,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: "All for thunder motherrr! \u266A Run and hide for coverrr!\u266A"
   keywords:
   - Magic
@@ -26,7 +27,7 @@ header:
   - Strike
   target: One creature
   title: '"Thunder Mother"'
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: No action
 version: 2

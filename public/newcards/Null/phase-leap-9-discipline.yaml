@@ -15,12 +15,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You leap beyond reality, leaving an afterimage of yourself.
   keywords:
   - Psionic
   target: Self
   title: Phase Leap
-  topMatter: Null Level 4 Ability
-level: 4
+  topMatter: Level 5 Null Heroic Ability
+level: 5
 type: Move
 version: 2

@@ -31,6 +31,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You absorb the life energy of another creature and use it to teleport.
   keywords:
   - Magic
@@ -39,7 +40,7 @@ header:
   - Void
   target: One creature
   title: Grasp of Beyond
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

@@ -13,6 +13,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: A brilliant column of holy light appears on the battlefield, striking out
     at nearby enemies.
   keywords:
@@ -20,7 +21,7 @@ header:
   - Ranged
   target: Special
   title: Font of Wrath
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

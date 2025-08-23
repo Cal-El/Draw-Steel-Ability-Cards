@@ -19,12 +19,13 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: Your mastery of elemental power lets you customize your conjurations.
   keywords:
   - Magic
   target: Self
   title: Practical Magic
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Maneuver
 version: 2

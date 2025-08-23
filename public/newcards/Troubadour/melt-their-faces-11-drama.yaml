@@ -33,6 +33,7 @@ header:
   distance:
     display: Melee 1 or ranged 10
     values: []
+  flavor: ''
   flavour: The power of music rips through the reality around the target and blows
     them away.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Strike
   target: One creature or object
   title: Melt Their Faces
-  topMatter: Troubadour Level 9 Ability
+  topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Main action
 version: 2

@@ -42,6 +42,7 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: Your friends will thank you.
   keywords:
   - Ranged
@@ -49,7 +50,7 @@ header:
   - Weapon
   target: One creature
   title: Setup
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

@@ -12,13 +12,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Intense light is emitted from your body, healing your allies.
   keywords:
   - Magic
   - Ranged
   target: Four allies
   title: Radiance of Grace
-  topMatter: Conduit Level 9 Ability
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

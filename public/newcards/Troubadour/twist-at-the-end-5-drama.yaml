@@ -12,13 +12,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You didn't see that coming, did you?!
   keywords:
   - Magic
   - Ranged
   target: One dead enemy
   title: Twist at the End
-  topMatter: Troubadour Level 2 Ability
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

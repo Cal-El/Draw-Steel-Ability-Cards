@@ -32,6 +32,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You cast a ball of elemental energy at a foe.
   keywords:
   - Magic
@@ -39,7 +40,7 @@ header:
   - Strike
   target: One creature or object
   title: Hurl Element
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

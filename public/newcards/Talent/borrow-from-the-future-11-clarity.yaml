@@ -11,6 +11,7 @@ header:
   distance:
     display: 2 burst
     values: []
+  flavor: ''
   flavour: You lean on future heroism to assist you in the now.
   keywords:
   - Area
@@ -18,7 +19,7 @@ header:
   - Psionic
   target: Each ally in the area
   title: Borrow From the Future
-  topMatter: Talent Level 9 Ability
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Maneuver
 version: 2

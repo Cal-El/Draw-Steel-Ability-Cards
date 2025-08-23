@@ -19,6 +19,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: The ground rumbles as an elemental bursts forth, ready to serve.
   keywords:
   - Earth
@@ -26,7 +27,7 @@ header:
   - Ranged
   target: Special
   title: Summon Source of Earth
-  topMatter: Elementalist Level 8 Ability
+  topMatter: Level 8 Elementalist Ability
 level: 8
 type: Main action
 version: 2

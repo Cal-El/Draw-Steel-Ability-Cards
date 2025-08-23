@@ -20,6 +20,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Knowledge of the mystery reveals that two spaces are the same space.
   keywords:
   - Magic
@@ -27,7 +28,7 @@ header:
   - Void
   target: Special
   title: There Is No Space Between
-  topMatter: Elementalist Level 2 Ability
+  topMatter: Level 2 Elementalist Ability
 level: 2
 type: Maneuver
 version: 2

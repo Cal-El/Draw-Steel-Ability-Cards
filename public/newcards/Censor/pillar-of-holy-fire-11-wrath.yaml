@@ -46,6 +46,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your enemy's guilt fuels a holy flame that burns your foes.
   keywords:
   - Melee
@@ -53,7 +54,7 @@ header:
   - Weapon
   target: One creature
   title: Pillar of Holy Fire
-  topMatter: Censor Level 8 Ability
+  topMatter: Level 8 Censor Heroic Ability
 level: 8
 type: Main action
 version: 2

@@ -33,6 +33,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You ask your saint for thunder and your prayer is answered.
   keywords:
   - Area
@@ -40,7 +41,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Call the Thunder Down
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

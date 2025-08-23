@@ -10,12 +10,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Anger is your energy.
   keywords:
   - '-'
   target: Self
   title: Make Peace With Your God!
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Free maneuver
 version: 2

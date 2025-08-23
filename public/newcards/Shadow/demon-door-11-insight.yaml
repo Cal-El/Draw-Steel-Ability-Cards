@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 3
     values: []
+  flavor: ''
   flavour: You create a temporary portal to allow a massive demonic hand to reach
     through.
   keywords:
@@ -43,7 +44,7 @@ header:
   - Weapon
   target: One creature
   title: Demon Door
-  topMatter: Shadow Level 9 Ability
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

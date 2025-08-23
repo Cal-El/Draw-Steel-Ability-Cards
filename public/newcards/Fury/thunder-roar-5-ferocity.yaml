@@ -1,4 +1,25 @@
 body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 2
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 4
+    damage:
+      baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 6
+    damage:
+      baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
 - body: The targets are force moved one at a time, starting with the target nearest
     to you, and can be pushed into other targets in the same line.
   isEffect: true
@@ -10,6 +31,7 @@ header:
   distance:
     display: 5 x 1 line within 1
     values: []
+  flavor: ''
   flavour: You unleash a howl that hurls your enemies back.
   keywords:
   - Area
@@ -17,7 +39,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Thunder Roar
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
 version: 2

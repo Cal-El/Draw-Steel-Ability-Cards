@@ -19,13 +19,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Your divine energy restores the righteous.
   keywords:
   - Magic
   - Ranged
   target: Self or one ally
   title: Healing Grace
-  topMatter: Conduit Level 1 Ability
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Maneuver
 version: 2

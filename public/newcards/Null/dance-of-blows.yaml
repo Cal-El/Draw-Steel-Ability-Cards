@@ -29,6 +29,7 @@ header:
   distance:
     display: 1 burst
     values: []
+  flavor: ''
   flavour: You strike everywhere at once, tricking an enemy into moving out of position.
   keywords:
   - Area
@@ -36,7 +37,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Dance of Blows
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Ability
 level: 1
 type: Main action
 version: 2

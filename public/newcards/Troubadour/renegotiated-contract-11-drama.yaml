@@ -27,6 +27,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: No, no. You don't die until the sequel.
   keywords:
   - Melee
@@ -34,7 +35,7 @@ header:
   - Weapon
   target: One creature
   title: Renegotiated Contract
-  topMatter: Troubadour Level 9 Ability
+  topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Main action
 version: 2

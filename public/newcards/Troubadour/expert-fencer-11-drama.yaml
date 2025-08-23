@@ -39,6 +39,7 @@ header:
   distance:
     display: Melee 3
     values: []
+  flavor: ''
   flavour: If you can land the strike, the crowd goes wild.
   keywords:
   - Charge
@@ -47,7 +48,7 @@ header:
   - Weapon
   target: One creature or object
   title: Expert Fencer
-  topMatter: Troubadour Level 9 Ability
+  topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Main action
 version: 2

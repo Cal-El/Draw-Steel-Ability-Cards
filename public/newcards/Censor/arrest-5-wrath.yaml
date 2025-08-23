@@ -35,6 +35,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: '"I got you, you son of a bitch."'
   keywords:
   - Magic
@@ -43,7 +44,7 @@ header:
   - Weapon
   target: One creature
   title: Arrest
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

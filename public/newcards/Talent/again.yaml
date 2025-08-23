@@ -11,13 +11,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You step back a split second to see if things play out a little differently.
   keywords:
   - Psionic
   - Ranged
   target: Self or one creature
   title: Again
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Triggered Action
 version: 2

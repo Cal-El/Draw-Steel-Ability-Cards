@@ -37,6 +37,7 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: You prioritize saving an ally over your own safety.
   keywords:
   - Ranged
@@ -44,7 +45,7 @@ header:
   - Weapon
   target: One enemy
   title: No Dying on My Watch
-  topMatter: Tactician Level 2 Ability
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Triggered Action
 version: 2

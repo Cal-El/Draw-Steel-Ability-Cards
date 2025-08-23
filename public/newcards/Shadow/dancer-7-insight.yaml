@@ -11,12 +11,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You enter a flow state that makes you nearly impossible to pin down.
   keywords:
   - '-'
   target: Self
   title: Dancer
-  topMatter: Shadow Level 3 Ability
+  topMatter: Level 3 Shadow Heroic Ability
 level: 3
 type: Maneuver
 version: 2

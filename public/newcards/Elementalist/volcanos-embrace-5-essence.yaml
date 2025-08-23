@@ -42,6 +42,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Wrap them up in fire and melting stone.
   keywords:
   - Earth
@@ -51,7 +52,7 @@ header:
   - Strike
   target: One creature
   title: Volcano's Embrace
-  topMatter: Elementalist Level 2 Ability
+  topMatter: Level 2 Elementalist Heroic Ability
 level: 2
 type: Main action
 version: 2

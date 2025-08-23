@@ -9,6 +9,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You grant allies a taste of your unearthly vision.
   keywords:
   - Magic
@@ -16,7 +17,7 @@ header:
   - Void
   target: Special
   title: Shared Void Sense
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Maneuver
 version: 2

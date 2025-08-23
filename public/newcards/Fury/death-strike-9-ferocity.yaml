@@ -10,6 +10,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Once you taste your foe's blood, you become more efficient and turn every
     killing blow into an opportunity.
   keywords:
@@ -18,7 +19,7 @@ header:
   - Weapon
   target: Self
   title: Death Strike
-  topMatter: Fury Level 6 Ability
+  topMatter: Level 6 Fury Heroic Ability
 level: 6
 type: Free triggered
 version: 2

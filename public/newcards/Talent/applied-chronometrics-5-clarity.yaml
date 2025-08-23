@@ -23,6 +23,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Time slows down around you. Your heartbeat is the only gauge of the extra
     moments you've gained.
   keywords:
@@ -31,7 +32,7 @@ header:
   - Ranged
   target: Special
   title: Applied Chronometrics
-  topMatter: Talent Level 2 Ability
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Maneuver
 version: 2

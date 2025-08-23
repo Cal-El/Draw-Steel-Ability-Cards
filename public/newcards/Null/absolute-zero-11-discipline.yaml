@@ -21,12 +21,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You become the coldest thing in the timescape.
   keywords:
   - Psionic
   target: Self
   title: Absolute Zero
-  topMatter: Null Level 9 Ability
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Maneuver
 version: 2

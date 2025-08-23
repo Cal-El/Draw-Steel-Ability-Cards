@@ -11,13 +11,14 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: What makes a good soldier? The ability to fire four shots a minute in any
     weather.
   keywords:
   - Area
   target: Self and each ally in the area
   title: Blot Out the Sun!
-  topMatter: Tactician Level 9 Ability
+  topMatter: Level 9 Tactician Heroic Ability
 level: 9
 type: Main action
 version: 2

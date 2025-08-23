@@ -11,6 +11,7 @@ header:
   distance:
     display: 5 aura
     values: []
+  flavor: ''
   flavour: "\U0001D160\u266AViras, my Viras, will you hold their hands as they cryyy-aaaiigh?\u266A"
   keywords:
   - Area
@@ -18,7 +19,7 @@ header:
   - Performance
   target: Self and each ally in the area
   title: Radical Fantasia
-  topMatter: Troubadour Level 8 Ability
+  topMatter: Level 8 Troubadour Ability
 level: 8
 type: No action
 version: 2

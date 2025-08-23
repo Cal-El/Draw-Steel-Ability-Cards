@@ -34,6 +34,7 @@ header:
   distance:
     display: Melee 2
     values: []
+  flavor: ''
   flavour: It's a subtle mindset shift. It's not that they're your enemy-you just
     don't like them!
   keywords:
@@ -43,7 +44,7 @@ header:
   - Telepathy
   target: One creature
   title: Synaptic Conditioning
-  topMatter: Talent Level 6 Ability
+  topMatter: Level 6 Talent Heroic Ability
 level: 6
 type: Main action
 version: 2

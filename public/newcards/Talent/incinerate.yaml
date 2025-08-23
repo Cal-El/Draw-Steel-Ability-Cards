@@ -37,6 +37,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: The air erupts into a column of smokeless flame.
   keywords:
   - Area
@@ -46,7 +47,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Incinerate
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Main action
 version: 2

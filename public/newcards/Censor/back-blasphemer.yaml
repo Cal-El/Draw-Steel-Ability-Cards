@@ -27,7 +27,8 @@ header:
     values:
     - baseValue: 1
       includedKitValue: 0
-      type: Within
+      type: Ranged
+  flavor: ''
   flavour: You channel power through your weapon to repel foes.
   keywords:
   - Area
@@ -36,7 +37,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Back Blasphemer!
-  topMatter: Censor Level 1 Ability
+  topMatter: Level 1 Censor Ability
 level: 1
 type: Main action
 version: 2

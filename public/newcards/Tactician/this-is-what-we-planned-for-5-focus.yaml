@@ -10,12 +10,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: All those coordination drills you made them do finally pay off.
   keywords:
   - Ranged
   target: Two allies
   title: This Is What We Planned For
-  topMatter: Tactician Level 1 Ability
+  topMatter: Level 1 Tactician Heroic Ability
 level: 1
 type: Maneuver
 version: 2

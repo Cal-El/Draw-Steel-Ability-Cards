@@ -22,6 +22,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: Illusory sounds make your foes reposition themselves as they cower or investigate
     the disturbance.
   keywords:
@@ -30,7 +31,7 @@ header:
   - Ranged
   target: Each creature in the area
   title: Machinations of Sound
-  topMatter: Shadow Level 2 Ability
+  topMatter: Level 2 Shadow Heroic Ability
 level: 2
 type: Maneuver
 version: 2

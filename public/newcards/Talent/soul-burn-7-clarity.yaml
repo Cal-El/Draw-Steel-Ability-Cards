@@ -49,6 +49,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You blast their soul out of their body, leaving it to helplessly float
     back to a weakened husk.
   keywords:
@@ -58,7 +59,7 @@ header:
   - Strike
   target: One creature
   title: Soul Burn
-  topMatter: Talent Level 3 Ability
+  topMatter: Level 3 Talent Heroic Ability
 level: 3
 type: Main action
 version: 2

@@ -45,6 +45,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: See how well they fight after you've bled them dry.
   keywords:
   - Melee
@@ -52,7 +53,7 @@ header:
   - Weapon
   target: One creature or object
   title: Blood for Blood!
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
 version: 2

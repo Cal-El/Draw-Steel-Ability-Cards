@@ -11,13 +11,14 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You split your essence, allowing you to cast multiple effects at once.
   keywords:
   - Magic
   - Void
   target: Self
   title: Prism
-  topMatter: Elementalist Level 9 Ability
+  topMatter: Level 9 Elementalist Heroic Ability
 level: 9
 type: Main action
 version: 2

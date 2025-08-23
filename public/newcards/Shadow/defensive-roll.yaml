@@ -16,12 +16,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: When an enemy attacks, you roll with the impact to reduce the harm.
   keywords:
   - '-'
   target: Self
   title: Defensive Roll
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Triggered Action
 version: 2

@@ -15,12 +15,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You are as elusive as a hummingbird.
   keywords:
   - '-'
   target: Self
   title: Unearthly Reflexes
-  topMatter: Fury Level 1 Ability
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Triggered Action
 version: 2

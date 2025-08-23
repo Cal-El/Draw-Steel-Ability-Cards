@@ -8,6 +8,7 @@ header:
   distance:
     display: 5 aura
     values: []
+  flavor: ''
   flavour: Taps, kicks, steps. It's all "choreography."
   keywords:
   - Area
@@ -15,7 +16,7 @@ header:
   - Performance
   target: Self and each ally in the area
   title: Choreography
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: No action
 version: 2

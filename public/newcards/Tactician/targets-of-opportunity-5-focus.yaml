@@ -11,13 +11,14 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: You point out easy targets to your friends, allowing them to include more
     enemies in their attacks.
   keywords:
   - Ranged
   target: Two creatures
   title: Targets of Opportunity
-  topMatter: Tactician Level 2 Ability
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Maneuver
 version: 2

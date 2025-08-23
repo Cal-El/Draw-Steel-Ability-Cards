@@ -14,6 +14,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: The target's skin turns to hard, dark metal, impenetrable and dense.
   keywords:
   - Metamorphosis
@@ -21,7 +22,7 @@ header:
   - Ranged
   target: Self or one ally
   title: Iron
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Maneuver
 version: 2

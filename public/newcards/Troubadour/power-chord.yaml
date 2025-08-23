@@ -13,13 +13,14 @@ header:
   distance:
     display: 2 burst
     values: []
+  flavor: ''
   flavour: Your instrument rings true and your music blows everyone away.
   keywords:
   - Area
   - Magic
   target: Each enemy in the area
   title: Power Chord
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Maneuver
 version: 2

@@ -30,6 +30,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You call down a sphere of fire that burns your foes to ash.
   keywords:
   - Area
@@ -37,7 +38,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Solar Flare
-  topMatter: Conduit Level 9 Ability
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

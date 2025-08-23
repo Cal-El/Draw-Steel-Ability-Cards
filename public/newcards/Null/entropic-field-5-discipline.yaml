@@ -41,7 +41,8 @@ header:
     values:
     - baseValue: 1
       includedKitValue: 0
-      type: Within
+      type: Ranged
+  flavor: ''
   flavour: You drastically increase the local entropy.
   keywords:
   - Area
@@ -49,7 +50,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Entropic Field
-  topMatter: Null Level 2 Ability
+  topMatter: Level 2 Null Heroic Ability
 level: 2
 type: Main action
 version: 2

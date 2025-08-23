@@ -34,6 +34,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You open a rift into the void to harry your foes.
   keywords:
   - Area
@@ -42,7 +43,7 @@ header:
   - Void
   target: Each enemy in the area
   title: Behold the Mystery
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Main action
 version: 2

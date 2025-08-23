@@ -39,6 +39,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Perhaps they wonder why everyone else is moving so quickly?
   keywords:
   - Chronopathy
@@ -46,7 +47,7 @@ header:
   - Ranged
   target: Three creatures or objects
   title: Slow
-  topMatter: Talent Level 2 Ability
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Maneuver
 version: 2

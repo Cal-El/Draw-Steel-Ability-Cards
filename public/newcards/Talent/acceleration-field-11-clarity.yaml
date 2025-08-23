@@ -34,6 +34,7 @@ header:
   distance:
     display: Ranged 5
     values: []
+  flavor: ''
   flavour: You forcibly stuff more moments into a critical point in time, knowing
     full well you might need to steal some of your own.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Ranged
   target: Three allies
   title: Acceleration Field
-  topMatter: Talent Level 9 Ability
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Main action
 version: 2

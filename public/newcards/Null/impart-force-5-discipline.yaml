@@ -20,6 +20,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: A single touch from you, and your enemy flies backward.
   keywords:
   - Melee
@@ -28,7 +29,7 @@ header:
   - Weapon
   target: One creature or object
   title: Impart Force
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Heroic Ability
 level: 1
 type: Maneuver
 version: 2

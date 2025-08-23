@@ -33,6 +33,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You step momentarily out of phase as you pull an enemy through you.
   keywords:
   - Melee
@@ -41,7 +42,7 @@ header:
   - Weapon
   target: One creature or object
   title: Phase Inversion Strike
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Ability
 level: 1
 type: Main action
 version: 2

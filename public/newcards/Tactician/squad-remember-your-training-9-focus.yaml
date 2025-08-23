@@ -10,12 +10,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You remind your allies how to best use their gear.
   keywords:
   - Ranged
   target: Self and two allies
   title: Squad! Remember Your Training!
-  topMatter: Tactician Level 5 Ability
+  topMatter: Level 5 Tactician Heroic Ability
 level: 5
 type: Main action
 version: 2

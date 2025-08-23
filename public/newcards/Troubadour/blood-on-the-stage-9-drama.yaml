@@ -42,6 +42,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: It's love and blood or drama and blood. Either way, there's always blood.
   keywords:
   - Melee
@@ -49,7 +50,7 @@ header:
   - Weapon
   target: One creature or object
   title: Blood on the Stage
-  topMatter: Troubadour Level 6 Ability
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Main action
 version: 2

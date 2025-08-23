@@ -28,6 +28,7 @@ header:
   distance:
     display: Melee 2
     values: []
+  flavor: ''
   flavour: The force of your blow extends past the limits of your body, pulling your
     enemy closer.
   keywords:
@@ -37,7 +38,7 @@ header:
   - Weapon
   target: One creature
   title: Magnetic Strike
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Ability
 level: 1
 type: Main action
 version: 2

@@ -9,6 +9,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: With the merest touch, you cause an object to turn to slag or ash.
   keywords:
   - Fire
@@ -16,7 +17,7 @@ header:
   - Melee
   target: One mundane object
   title: Return to Formlessness
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

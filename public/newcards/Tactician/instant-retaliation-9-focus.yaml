@@ -31,13 +31,14 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You parry with almost supernatural speed.
   keywords:
   - Melee
   - Weapon
   target: One ally
   title: Instant Retaliation
-  topMatter: Tactician Level 6 Ability
+  topMatter: Level 6 Tactician Heroic Ability
 level: 6
 type: Free triggered
 version: 2

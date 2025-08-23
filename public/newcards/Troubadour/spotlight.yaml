@@ -9,6 +9,7 @@ header:
   distance:
     display: 5 aura
     values: []
+  flavor: ''
   flavour: The audience is watching, so you'd better give them a show.
   keywords:
   - Area
@@ -16,7 +17,7 @@ header:
   - Performance
   target: Self and each ally in the area
   title: Spotlight
-  topMatter: Troubadour Level 6 Ability
+  topMatter: Level 6 Troubadour Ability
 level: 6
 type: No action
 version: 2

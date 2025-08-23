@@ -36,6 +36,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You shock your foes with the brutality of your strike, resetting the balance
     of combat.
   keywords:
@@ -44,7 +45,7 @@ header:
   - Weapon
   target: One creature
   title: Shower of Blood
-  topMatter: Fury Level 9 Ability
+  topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
 version: 2

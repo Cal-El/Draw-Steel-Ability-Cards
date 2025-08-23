@@ -12,6 +12,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Audiences love this bit.
   keywords:
   - Melee
@@ -19,7 +20,7 @@ header:
   - Weapon
   target: Self and one willing ally
   title: Classic Chandelier Stunt
-  topMatter: Troubadour Level 2 Ability
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

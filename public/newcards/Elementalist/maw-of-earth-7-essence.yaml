@@ -33,6 +33,7 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
+  flavor: ''
   flavour: You open up the ground, spewing out shrapnel of stone and debris.
   keywords:
   - Area
@@ -41,7 +42,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Maw of Earth
-  topMatter: Elementalist Level 3 Ability
+  topMatter: Level 3 Elementalist Heroic Ability
 level: 3
 type: Main action
 version: 2

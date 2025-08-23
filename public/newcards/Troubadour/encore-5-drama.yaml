@@ -12,13 +12,14 @@ header:
   distance:
     display: Special
     values: []
+  flavor: ''
   flavour: Again! Again!
   keywords:
   - Magic
   - Strike
   target: Special
   title: Encore
-  topMatter: Troubadour Level 2 Ability
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

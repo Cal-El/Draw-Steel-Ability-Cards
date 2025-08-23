@@ -15,6 +15,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: The earth rises, falls, or opens up at your command.
   keywords:
   - Earth
@@ -22,7 +23,7 @@ header:
   - Melee
   target: Special
   title: Motivate Earth
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

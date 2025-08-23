@@ -47,6 +47,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Smoke flows from your enemy like tears as their skin begins to blacken
     and flake.
   keywords:
@@ -56,7 +57,7 @@ header:
   - Strike
   target: One creature
   title: Smolder
-  topMatter: Talent Level 1 Ability
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Main action
 version: 2

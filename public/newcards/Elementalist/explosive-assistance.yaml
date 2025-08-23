@@ -14,6 +14,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You add a little magic to an ally's aggression at just the right time.
   keywords:
   - Fire
@@ -21,7 +22,7 @@ header:
   - Ranged
   target: Self or one ally
   title: Explosive Assistance
-  topMatter: Elementalist Level 1 Ability
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Triggered Action
 version: 2

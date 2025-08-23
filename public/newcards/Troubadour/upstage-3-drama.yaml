@@ -32,6 +32,7 @@ header:
   distance:
     display: Self; see below
     values: []
+  flavor: ''
   flavour: As you bob and weave through the crowd, you can't help but leave the audience
     wanting more.
   keywords:
@@ -40,7 +41,7 @@ header:
   - Weapon
   target: Self
   title: Upstage
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Maneuver
 version: 2

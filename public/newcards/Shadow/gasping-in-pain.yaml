@@ -35,6 +35,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your precise strikes let your allies take advantage of a target's agony.
   keywords:
   - Melee
@@ -42,7 +43,7 @@ header:
   - Weapon
   target: One creature
   title: Gasping in Pain
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action
 version: 2

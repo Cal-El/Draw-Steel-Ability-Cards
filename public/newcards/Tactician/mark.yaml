@@ -33,12 +33,13 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You draw your allies' attention to a specific foe-with devastating effect.
   keywords:
   - Ranged
   target: One creature
   title: Mark
-  topMatter: Tactician Level 1 Ability
+  topMatter: Level 1 Tactician Ability
 level: 1
 type: Maneuver
 version: 2

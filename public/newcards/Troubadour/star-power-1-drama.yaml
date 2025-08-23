@@ -13,12 +13,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: Your years of practicing fencing and dancing pay off on the battlefield.
   keywords:
   - '-'
   target: Self
   title: Star Power
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Maneuver
 version: 2

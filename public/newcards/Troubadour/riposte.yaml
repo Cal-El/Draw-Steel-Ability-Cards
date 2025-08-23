@@ -11,12 +11,13 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: '"I''d have brought treats had I known I''d be fighting a dog."'
   keywords:
   - Melee
   target: Self or one ally
   title: Riposte
-  topMatter: Troubadour Level 1 Ability
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Triggered Action
 version: 2

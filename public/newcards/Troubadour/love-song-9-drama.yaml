@@ -11,13 +11,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You play a small ditty that plants you inside your target's heart.
   keywords:
   - Magic
   - Ranged
   target: One creature or object
   title: Love Song
-  topMatter: Troubadour Level 5 Ability
+  topMatter: Level 5 Troubadour Heroic Ability
 level: 5
 type: Maneuver
 version: 2

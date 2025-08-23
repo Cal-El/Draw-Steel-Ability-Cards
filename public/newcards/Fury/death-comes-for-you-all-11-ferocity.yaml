@@ -31,6 +31,7 @@ header:
   distance:
     display: 3 burst
     values: []
+  flavor: ''
   flavour: You use your weapon to create a destructive shockwave.
   keywords:
   - Area
@@ -39,7 +40,7 @@ header:
   - Weapon
   target: Each enemy in the area
   title: Death Comes for You All!
-  topMatter: Fury Level 9 Ability
+  topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
 version: 2

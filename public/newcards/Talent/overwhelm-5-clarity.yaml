@@ -46,6 +46,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You overload their senses, turning all their subconscious thoughts into
     conscious ones.
   keywords:
@@ -55,7 +56,7 @@ header:
   - Telepathy
   target: One creature
   title: Overwhelm
-  topMatter: Talent Level 2 Ability
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Main action
 version: 2

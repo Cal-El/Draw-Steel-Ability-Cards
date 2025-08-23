@@ -15,6 +15,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: They shine vibrantly, a beautiful diamond in the night sky.
   keywords:
   - Fire
@@ -24,7 +25,7 @@ header:
   - Void
   target: Self or one ally
   title: Luminous Champion Aloft
-  topMatter: Elementalist Level 6 Ability
+  topMatter: Level 6 Elementalist Heroic Ability
 level: 6
 type: Maneuver
 version: 2

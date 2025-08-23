@@ -36,6 +36,7 @@ header:
   distance:
     display: 3 aura
     values: []
+  flavor: ''
   flavour: Guardian animal spirits surround you to harry your foes and bolster your
     allies.
   keywords:
@@ -44,7 +45,7 @@ header:
   - Magic
   target: Each enemy in the area
   title: Swarm of Spirits
-  topMatter: Elementalist Level 3 Ability
+  topMatter: Level 3 Elementalist Heroic Ability
 level: 3
 type: Main action
 version: 2

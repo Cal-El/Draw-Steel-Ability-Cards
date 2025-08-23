@@ -18,13 +18,14 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: Pillars of ice erupt from the ground and launch your foes into the air.
   keywords:
   - Psionic
   - Ranged
   target: Three creatures or objects
   title: Ice Pillars
-  topMatter: Null Level 6 Ability
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Main action
 version: 2

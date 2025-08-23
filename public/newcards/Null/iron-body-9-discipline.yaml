@@ -10,12 +10,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You focus until your body becomes as hard as iron.
   keywords:
   - Psionic
   target: Self
   title: Iron Body
-  topMatter: Null Level 6 Ability
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Maneuver
 version: 2

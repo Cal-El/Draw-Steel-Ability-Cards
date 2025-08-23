@@ -11,12 +11,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: A little poison goes a long way.
   keywords:
   - '-'
   target: Self
   title: Coat the Blade
-  topMatter: Shadow Level 1 Ability
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Maneuver
 version: 2

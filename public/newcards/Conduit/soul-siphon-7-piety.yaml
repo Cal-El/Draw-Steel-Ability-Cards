@@ -33,6 +33,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: A beam of energy connects a foe to a friend, draining life from one to
     heal the other.
   keywords:
@@ -41,7 +42,7 @@ header:
   - Strike
   target: One enemy
   title: Soul Siphon
-  topMatter: Conduit Level 3 Ability
+  topMatter: Level 3 Conduit Heroic Ability
 level: 3
 type: Main action
 version: 2

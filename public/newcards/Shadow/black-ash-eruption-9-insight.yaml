@@ -33,6 +33,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: Your attack produces a cloud of black ash that launches an enemy into the
     air.
   keywords:
@@ -42,7 +43,7 @@ header:
   - Weapon
   target: One creature
   title: Black Ash Eruption
-  topMatter: Shadow Level 6 Ability
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Main action
 version: 2

@@ -42,6 +42,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You focus your psionic technique into a concussive punch.
   keywords:
   - Melee
@@ -50,7 +51,7 @@ header:
   - Weapon
   target: One creature or object
   title: Stunning Blow
-  topMatter: Null Level 1 Ability
+  topMatter: Level 1 Null Heroic Ability
 level: 1
 type: Main action
 version: 2

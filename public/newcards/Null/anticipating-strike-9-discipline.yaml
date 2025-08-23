@@ -45,6 +45,7 @@ header:
   distance:
     display: Melee 1
     values: []
+  flavor: ''
   flavour: You suddenly strike an enemy, then grab them in a psionically enhanced
     grip.
   keywords:
@@ -54,7 +55,7 @@ header:
   - Weapon
   target: One creature
   title: Anticipating Strike
-  topMatter: Null Level 4 Ability
-level: 4
+  topMatter: Level 5 Null Heroic Ability
+level: 5
 type: Free triggered
 version: 2

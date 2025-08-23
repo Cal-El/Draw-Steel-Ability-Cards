@@ -45,6 +45,7 @@ header:
   distance:
     display: Ranged 10
     values: []
+  flavor: ''
   flavour: You utter a divine word that makes a foe brittle.
   keywords:
   - Magic
@@ -52,7 +53,7 @@ header:
   - Strike
   target: One creature or object
   title: Word of Weakening
-  topMatter: Conduit Level 9 Ability
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

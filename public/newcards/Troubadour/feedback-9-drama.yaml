@@ -42,6 +42,7 @@ header:
   distance:
     display: Three 3 cubes within 1
     values: []
+  flavor: ''
   flavour: Your music pounds the crowd to the beat until their hearts can't stand
     it anymore.
   keywords:
@@ -49,7 +50,7 @@ header:
   - Magic
   target: Each enemy in the area
   title: Feedback
-  topMatter: Troubadour Level 6 Ability
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Main action
 version: 2

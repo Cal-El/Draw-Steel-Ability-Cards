@@ -53,12 +53,10 @@ def createCards(className):
         ability = json.load(a)
         if 'metadata' not in ability or 'feature_type' not in ability['metadata'] or ability['metadata']['feature_type'] == 'trait':
           continue
-        cardData = {}
-        cardData['version'] = 2
+        cardData = createBlankCard()
         cardData['level'] = ability['metadata']['level']
         cardData['type'] = getAbilityType(ability)
-        cardData['header'] = {}
-        cardData['header']['topMatter'] = className + ' Level ' + str(cardData['level']) + ' Ability'
+        cardData['header']['topMatter'] = getTopMatter(className, ability)
         cardData['header']['title'] = ability['name']
         cardData['header']['flavour'] = ability['flavor']
         cardData['header']['keywords'] = ability['keywords']
@@ -74,6 +72,31 @@ def createCards(className):
 
   return classManifest
 
+def createCoreManeuver(name):
+  with open(path.join(abilitiesPath, 'Common', 'Maneuvers', name + '.json'), encoding='utf-8') as a:
+    ability = json.load(a)
+    cardData = createBlankCard()
+    cardData['type'] = 'Maneuver'
+    cardData['header']['topMatter'] = 'Core Maneuver'
+    cardData['header']['title'] = ability['name']
+    cardData['body'] = parseBody(ability)
+
+    fileName = ability['metadata']['item_id'] + '.yaml'
+    with open(path.join(cardsPath, 'Common', fileName), 'w') as c:
+      yaml.dump(cardData, c)
+    return '/newcards/Common/' + name
+
+def createCommonCards():
+  print('Creating common cards')
+  makedirs(path.join(cardsPath, 'Common'))
+  classManifest = []
+  classManifest.append(createCoreManeuver('Escape Grab'))
+  classManifest.append(createCoreManeuver('Grab'))
+  classManifest.append(createCoreManeuver('Knockback'))
+
+  return classManifest
+
+
 # Create censor cards
 manifest = manifest + createCards('Censor')
 manifest = manifest + createCards('Conduit')
@@ -84,6 +107,7 @@ manifest = manifest + createCards('Shadow')
 manifest = manifest + createCards('Tactician')
 manifest = manifest + createCards('Talent')
 manifest = manifest + createCards('Troubadour')
+# manifest = manifest + createCommonCards() # These are not really working because the steel compendium is missing target and distance data
 
 print('Creating card manifest')
 with open(path.join(cardsPath, 'card-manifest.json'), 'w') as m:

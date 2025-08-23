@@ -10,12 +10,13 @@ header:
   distance:
     display: Self
     values: []
+  flavor: ''
   flavour: You release stored time, allowing you to act twice.
   keywords:
   - Psionic
   target: Self
   title: Blur
-  topMatter: Null Level 2 Ability
+  topMatter: Level 2 Null Heroic Ability
 level: 2
 type: Maneuver
 version: 2
