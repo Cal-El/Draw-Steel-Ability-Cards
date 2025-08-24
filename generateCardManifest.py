@@ -25,9 +25,14 @@ def getPaddedNumString(number):
   return format(number, '03')
 
 def getCost(card):
-  if card['cost'] == None:
+  if not 'cost' in card or card['cost'] == None:
     return getPaddedNumString(0)
   return getPaddedNumString(card['cost']['costValue'])
+
+def getLevel(card):
+  if not 'level' in card or card['level'] == None:
+    return getPaddedNumString(0)
+  return getPaddedNumString(card['level'])
 
 for group in groups:
   groupName = group.title()
@@ -42,7 +47,7 @@ for group in groups:
     topMatter = card['header']['topMatter']
     name = card['header']['title']
     option = {'label': name + " (" + topMatter + ")", 'value': cardPath}
-    option['sortKey'] = getPaddedNumString(card['level']) + '-' + getCost(card) + '-' + name
+    option['sortKey'] = getLevel(card) + '-' + getCost(card) + '-' + name
     options.append(option)
     publicManifestContent.append(cardPath)
   options.sort(key = lambda x : x['sortKey'])

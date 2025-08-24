@@ -1,0 +1,37 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: No effect.
+  t2:
+    baseEffect: You can grab the target, but if you do, the target can make a melee
+      free strike against you before they are grabbed.
+  t3:
+    baseEffect: The target is grabbed by you.
+- body: 'You can usually target only creatures of your size or smaller. If your Might
+    score is 2 or higher, you can target any creature with a size equal to or less
+    than your Might score.
+
+    Unless otherwise indicated, a creature can grab only one creature at a time.
+
+    See [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2) for information
+    on the grabbed condition.'
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavor: ''
+  keywords:
+  - Melee
+  - Weapon
+  target: One creature
+  title: Grab
+  topMatter: Core Maneuver
+type: Maneuver
+version: 2

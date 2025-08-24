@@ -1,0 +1,30 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: No effect.
+  t2:
+    baseEffect: You can escape the grab, but if you do, a creature who has you grabbed
+      can make a melee free strike against you before you are no longer grabbed.
+  t3:
+    baseEffect: You are no longer grabbed.
+- body: 'You take a bane on this maneuver if your size is smaller than the size of
+    the creature, object, or effect that has you grabbed.
+
+    See [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2) for information
+    on the grabbed condition.'
+  isEffect: true
+  title: Effect
+header:
+  distance:
+    display: Self
+    values: []
+  flavor: ''
+  keywords: []
+  target: Self
+  title: Escape Grab
+  topMatter: Core Maneuver
+type: Maneuver
+version: 2

@@ -4,9 +4,11 @@ import sys
 import json
 import yaml
 from abilityParser import *
+from patcher import *
 
 scriptPath = sys.path[0]
 tempFolderPath = path.join(scriptPath, 'temp')
+patchesFolderPath = path.join(scriptPath, 'patches')
 repoPath = path.join(tempFolderPath, 'repo')
 rulesPath = path.join(tempFolderPath, 'rules')
 cardsPath = path.normpath(path.join(scriptPath, '..', 'public', 'newcards'))
@@ -64,6 +66,7 @@ def createCards(className):
         cardData['header']['target'] = ability['target']
         cardData['body'] = parseBody(ability)
         cardData['cost'] = parseCost(ability)
+        cardData = patchAbility(patchesFolderPath, className, file, cardData)
 
         fileName = ability['metadata']['item_id'] + '.yaml'
         with open(path.join(cardsPath, className, fileName), 'w') as c:
@@ -80,6 +83,7 @@ def createCoreManeuver(name):
     cardData['header']['topMatter'] = 'Core Maneuver'
     cardData['header']['title'] = ability['name']
     cardData['body'] = parseBody(ability)
+    cardData = patchAbility(patchesFolderPath, 'Common', name + '.json', cardData)
 
     fileName = ability['metadata']['item_id'] + '.yaml'
     with open(path.join(cardsPath, 'Common', fileName), 'w') as c:
@@ -107,7 +111,7 @@ manifest = manifest + createCards('Shadow')
 manifest = manifest + createCards('Tactician')
 manifest = manifest + createCards('Talent')
 manifest = manifest + createCards('Troubadour')
-# manifest = manifest + createCommonCards() # These are not really working because the steel compendium is missing target and distance data
+manifest = manifest + createCommonCards() # These are not really working because the steel compendium is missing target and distance data
 
 print('Creating card manifest')
 with open(path.join(cardsPath, 'card-manifest.json'), 'w') as m:

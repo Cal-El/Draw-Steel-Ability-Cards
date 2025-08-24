@@ -255,6 +255,26 @@ export const cardManifest  = [
     ]
   },
   {
+    "label": "Common",
+    "options": [
+      {
+        "label": "Escape Grab (Core Maneuver)",
+        "value": "/newcards/Common/escape-grab.yaml",
+        "sortKey": "000-000-Escape Grab"
+      },
+      {
+        "label": "Grab (Core Maneuver)",
+        "value": "/newcards/Common/grab.yaml",
+        "sortKey": "000-000-Grab"
+      },
+      {
+        "label": "Knockback (Core Maneuver)",
+        "value": "/newcards/Common/knockback.yaml",
+        "sortKey": "000-000-Knockback"
+      }
+    ]
+  },
+  {
     "label": "Conduit",
     "options": [
       {
