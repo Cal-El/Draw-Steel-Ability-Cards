@@ -44,7 +44,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You blast a foe with a pulse of cold energy.
   keywords:
   - Cryokinesis

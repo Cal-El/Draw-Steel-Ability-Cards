@@ -42,7 +42,6 @@ header:
   distance:
     display: Ranged 5
     values: []
-  flavor: ''
   flavour: A greatsword streams down from the sky, threatening to pin your foe.
   keywords:
   - Magic

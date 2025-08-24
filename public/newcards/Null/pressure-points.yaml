@@ -40,7 +40,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You strike at key nerve clusters to leave your foe staggered.
   keywords:
   - Melee

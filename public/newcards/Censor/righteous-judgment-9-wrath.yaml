@@ -34,7 +34,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You amplify the power of your judgment.
   keywords:
   - Melee

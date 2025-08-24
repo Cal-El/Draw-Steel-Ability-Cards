@@ -33,7 +33,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You draw your allies' attention to a specific foe-with devastating effect.
   keywords:
   - Ranged

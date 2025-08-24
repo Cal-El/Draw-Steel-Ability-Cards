@@ -51,7 +51,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Your essential hyperreality disrupts your enemy's connection to existence.
   keywords:
   - Melee

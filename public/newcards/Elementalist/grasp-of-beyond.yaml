@@ -31,7 +31,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You absorb the life energy of another creature and use it to teleport.
   keywords:
   - Magic

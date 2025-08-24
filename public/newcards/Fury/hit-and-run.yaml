@@ -35,7 +35,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Staying in constant motion helps you slip out of reach after a brutal assault.
   keywords:
   - Melee

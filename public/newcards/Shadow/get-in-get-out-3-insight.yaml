@@ -30,7 +30,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Move unexpectedly, strike fast, and be gone!
   keywords:
   - Melee

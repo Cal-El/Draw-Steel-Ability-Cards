@@ -31,7 +31,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: And they said practicing fencing was a waste!
   keywords:
   - Melee

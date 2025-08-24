@@ -12,7 +12,6 @@ header:
   distance:
     display: 15 wall within 10
     values: []
-  flavor: ''
   flavour: A wall of spinning swords and knives appears where you wish.
   keywords:
   - Area

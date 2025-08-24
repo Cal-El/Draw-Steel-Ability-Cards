@@ -15,7 +15,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You channel some of your vitality into more resilience for you or an ally.
   keywords:
   - Magic

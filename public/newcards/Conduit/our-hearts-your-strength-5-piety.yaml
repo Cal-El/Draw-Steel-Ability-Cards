@@ -12,7 +12,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: An ally gains strength from their friends.
   keywords:
   - Magic

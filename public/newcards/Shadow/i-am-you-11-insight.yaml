@@ -12,7 +12,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your mask reflects your foe's face. Surely they won't need it much longer.
   keywords:
   - Magic

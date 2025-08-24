@@ -46,7 +46,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: You attack a foe and your enemies behold a vision of the true nature of
     your resolve.
   keywords:

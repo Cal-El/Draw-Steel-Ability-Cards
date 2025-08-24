@@ -12,7 +12,6 @@ header:
   distance:
     display: 4 burst
     values: []
-  flavor: ''
   flavour: You teleport your friends in a burst of ash and fire.
   keywords:
   - Magic

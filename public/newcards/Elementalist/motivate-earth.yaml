@@ -15,7 +15,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: The earth rises, falls, or opens up at your command.
   keywords:
   - Earth

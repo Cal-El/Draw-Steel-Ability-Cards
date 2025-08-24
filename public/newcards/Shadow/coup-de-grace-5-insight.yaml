@@ -33,7 +33,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: Your blade might be the last thing they see.
   keywords:
   - Melee

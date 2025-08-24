@@ -22,7 +22,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You teleport the target into the air and let the ground and the elemental
     force of fire do the rest.
   keywords:

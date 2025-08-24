@@ -38,7 +38,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: '"Let''s not argue about who''s the hammer and who''s the anvil!"'
   keywords:
   - Melee

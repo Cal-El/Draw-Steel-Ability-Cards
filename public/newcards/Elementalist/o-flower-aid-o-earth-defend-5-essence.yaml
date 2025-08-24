@@ -25,7 +25,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Revitalizing plants and jagged stones grow, helping allies and hindering
     foes.
   keywords:

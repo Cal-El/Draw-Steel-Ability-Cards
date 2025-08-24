@@ -20,7 +20,7 @@ header:
     - baseValue: 1
       includedKitValue: 0
       type: Melee
-  flavor: ''
+  flavour: ''
   keywords:
   - Melee
   - Weapon

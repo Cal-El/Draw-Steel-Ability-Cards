@@ -25,7 +25,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Two jets of flame lance out at your command.
   keywords:
   - Fire

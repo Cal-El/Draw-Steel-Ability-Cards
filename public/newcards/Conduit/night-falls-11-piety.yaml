@@ -14,7 +14,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You summon darkness that thwarts only your foes.
   keywords:
   - Area

@@ -48,7 +48,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You advance an enemy's age for a moment.
   keywords:
   - Chronopathy

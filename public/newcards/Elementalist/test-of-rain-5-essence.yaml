@@ -34,7 +34,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You call down a rain that burns your enemies and restores your allies.
   keywords:
   - Area

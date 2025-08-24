@@ -29,7 +29,6 @@ header:
   distance:
     display: 2 burst
     values: []
-  flavor: ''
   flavour: A rain of holy light scours your enemies and repositions your allies.
   keywords:
   - Area

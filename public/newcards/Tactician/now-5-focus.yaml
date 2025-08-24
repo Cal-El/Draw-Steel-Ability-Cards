@@ -9,7 +9,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your allies wait for your command-then unleash death!
   keywords:
   - Ranged

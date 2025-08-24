@@ -37,7 +37,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: You create an opening for an ally.
   keywords:
   - Melee

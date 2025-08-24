@@ -48,7 +48,6 @@ header:
   distance:
     display: Melee 2
     values: []
-  flavor: ''
   flavour: You attempt to make them forget all their training.
   keywords:
   - Melee

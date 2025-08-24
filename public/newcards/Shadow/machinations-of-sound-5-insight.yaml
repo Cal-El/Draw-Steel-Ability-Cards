@@ -22,7 +22,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Illusory sounds make your foes reposition themselves as they cower or investigate
     the disturbance.
   keywords:

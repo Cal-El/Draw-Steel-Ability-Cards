@@ -34,7 +34,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: As you force your enemy back with your weapon, you use your faith to stay
     close.
   keywords:

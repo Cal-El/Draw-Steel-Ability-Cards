@@ -19,7 +19,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: You tumble through the battle, stabbing foes and teleporting allies.
   keywords:
   - Magic

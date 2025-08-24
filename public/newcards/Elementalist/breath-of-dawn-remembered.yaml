@@ -13,7 +13,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: The power you channel grants the ability to get back in the fight.
   keywords:
   - Green

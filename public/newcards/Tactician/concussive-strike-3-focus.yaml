@@ -42,7 +42,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: Your precise strike leaves your foe struggling to respond.
   keywords:
   - Melee

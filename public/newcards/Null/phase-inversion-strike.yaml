@@ -33,7 +33,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You step momentarily out of phase as you pull an enemy through you.
   keywords:
   - Melee

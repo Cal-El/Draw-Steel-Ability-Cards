@@ -48,7 +48,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You channel the Primordial Chaos into blows that petrify your foe... literally.
   keywords:
   - Magic

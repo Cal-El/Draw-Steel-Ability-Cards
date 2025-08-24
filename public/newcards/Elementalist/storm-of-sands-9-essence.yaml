@@ -39,7 +39,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Dirt and debris swirl into a dark, pulsing hurricane.
   keywords:
   - Area

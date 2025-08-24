@@ -48,7 +48,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Your fans don't seem to like the opening act...
   keywords:
   - Area

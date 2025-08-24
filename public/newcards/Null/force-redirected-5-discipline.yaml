@@ -30,7 +30,6 @@ header:
   distance:
     display: Melee 3
     values: []
-  flavor: ''
   flavour: The force of your strike moves your target in a surprising direction.
   keywords:
   - Melee

@@ -10,7 +10,6 @@ header:
   distance:
     display: 5 burst
     values: []
-  flavor: ''
   flavour: You distract your foes, allowing your allies to take advantage of that
     distraction.
   keywords:

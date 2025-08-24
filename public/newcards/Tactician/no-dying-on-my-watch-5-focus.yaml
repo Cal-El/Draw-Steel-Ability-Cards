@@ -37,7 +37,6 @@ header:
   distance:
     display: Ranged 5
     values: []
-  flavor: ''
   flavour: You prioritize saving an ally over your own safety.
   keywords:
   - Ranged

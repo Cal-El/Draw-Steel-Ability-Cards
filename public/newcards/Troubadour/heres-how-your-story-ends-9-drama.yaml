@@ -39,7 +39,6 @@ header:
   distance:
     display: 5 burst
     values: []
-  flavor: ''
   flavour: You give away the ending of this battle, and it's not great for them.
   keywords:
   - Area

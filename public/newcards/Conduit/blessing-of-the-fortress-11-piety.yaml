@@ -12,7 +12,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: A magic circle extends out from you, barring foes from getting close.
   keywords:
   - Area

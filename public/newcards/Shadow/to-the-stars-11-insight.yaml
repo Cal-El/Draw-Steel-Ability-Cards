@@ -34,7 +34,6 @@ header:
   distance:
     display: Melee 1 or ranged 10
     values: []
-  flavor: ''
   flavour: You attach your most potent explosive to your foe. Under less pressing
     circumstances, you're sure you could launch them into orbit.
   keywords:

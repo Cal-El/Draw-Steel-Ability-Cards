@@ -46,7 +46,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Your blow reorders a foe's body, causing pain if they attempt to channel
     sorcery.
   keywords:

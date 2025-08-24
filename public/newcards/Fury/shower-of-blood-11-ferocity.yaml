@@ -36,7 +36,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You shock your foes with the brutality of your strike, resetting the balance
     of combat.
   keywords:

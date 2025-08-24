@@ -46,7 +46,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Your enemy's guilt fuels a holy flame that burns your foes.
   keywords:
   - Melee

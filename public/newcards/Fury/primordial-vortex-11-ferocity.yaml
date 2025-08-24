@@ -31,7 +31,6 @@ header:
   distance:
     display: 3 burst
     values: []
-  flavor: ''
   flavour: You channel the power of the Primordial Chaos to pull foes to you.
   keywords:
   - Area

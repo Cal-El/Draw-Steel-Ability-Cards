@@ -35,7 +35,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your flames dance from kindling to kindling to kindling.
   keywords:
   - Fire

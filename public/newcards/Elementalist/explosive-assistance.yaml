@@ -14,7 +14,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You add a little magic to an ally's aggression at just the right time.
   keywords:
   - Fire

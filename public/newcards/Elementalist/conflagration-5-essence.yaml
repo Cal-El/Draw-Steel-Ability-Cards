@@ -34,7 +34,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: A storm of fire descends upon your enemies.
   keywords:
   - Area

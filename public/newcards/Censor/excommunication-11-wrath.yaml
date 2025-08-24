@@ -47,7 +47,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You curse your foe to become a bane to their allies.
   keywords:
   - Melee

@@ -11,7 +11,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You direct your squad to strike in unison and with devastating effect.
   keywords:
   - Ranged

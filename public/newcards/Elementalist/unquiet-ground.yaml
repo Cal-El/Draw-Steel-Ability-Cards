@@ -31,7 +31,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: A sudden storm of detritus assaults your foes and leaves them struggling
     to move.
   keywords:

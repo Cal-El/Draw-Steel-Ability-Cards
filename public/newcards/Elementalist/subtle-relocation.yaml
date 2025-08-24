@@ -16,7 +16,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You call on the void to swallow and spit out an ally.
   keywords:
   - Magic

@@ -34,7 +34,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Putrid yellow gas explodes from a bomb you toss.
   keywords:
   - Area

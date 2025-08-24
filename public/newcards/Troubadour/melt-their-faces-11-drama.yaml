@@ -33,7 +33,6 @@ header:
   distance:
     display: Melee 1 or ranged 10
     values: []
-  flavor: ''
   flavour: The power of music rips through the reality around the target and blows
     them away.
   keywords:

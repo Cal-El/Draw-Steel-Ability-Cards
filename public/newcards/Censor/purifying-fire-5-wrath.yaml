@@ -46,7 +46,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: The gods judge, fire cleanses.
   keywords:
   - Magic

@@ -45,7 +45,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Your divine magic makes a creature appear as what your enemies fear most.
   keywords:
   - Area

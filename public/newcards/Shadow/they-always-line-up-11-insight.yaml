@@ -39,7 +39,6 @@ header:
   distance:
     display: 5 x 1 line within 5
     values: []
-  flavor: ''
   flavour: You fire a projectile so fast that it passes through a line of foes, hamstringing
     them.
   keywords:

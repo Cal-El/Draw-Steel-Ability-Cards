@@ -28,7 +28,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: A tendril of divine energy shoots forth to draw in your foe.
   keywords:
   - Magic

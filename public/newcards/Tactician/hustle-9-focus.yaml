@@ -10,7 +10,6 @@ header:
   distance:
     display: 2 burst
     values: []
-  flavor: ''
   flavour: You and your allies coordinate to form a new battle line.
   keywords:
   - Area

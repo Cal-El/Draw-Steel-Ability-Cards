@@ -12,7 +12,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Intense light is emitted from your body, healing your allies.
   keywords:
   - Magic

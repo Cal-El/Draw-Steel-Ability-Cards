@@ -46,7 +46,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Vines burst forth from the ground and bind your foe, slowly closing around
     them.
   keywords:

@@ -32,7 +32,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Divine magic tears at your foe and defends a nearby friend.
   keywords:
   - Magic

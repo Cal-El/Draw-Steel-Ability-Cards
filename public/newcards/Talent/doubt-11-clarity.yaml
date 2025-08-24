@@ -52,7 +52,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You tug at the strings of the foe's anima and unravel them, allowing someone
     else to take advantage of their drive.
   keywords:

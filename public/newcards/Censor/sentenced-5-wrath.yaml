@@ -46,7 +46,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: The shock of your condemnation freezes your enemy in their boots.
   keywords:
   - Magic

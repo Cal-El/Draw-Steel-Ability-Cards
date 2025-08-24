@@ -12,7 +12,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: Your foe made a big mistake.
   keywords:
   - '-'

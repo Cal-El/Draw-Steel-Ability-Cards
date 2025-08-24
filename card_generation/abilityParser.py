@@ -4,7 +4,7 @@ def createBlankCard():
   cardData = {}
   cardData['version'] = 2
   cardData['type'] = ''
-  cardData['header'] = {'flavor': '', 'keywords': [], 'target': '', 'distance': {'display': '', 'values': []}}
+  cardData['header'] = {'flavour': '', 'keywords': [], 'target': '', 'distance': {'display': '', 'values': []}}
   cardData['header']['topMatter'] = ''
   cardData['header']['title'] = ''
   cardData['body'] = []

@@ -32,7 +32,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You cast a ball of elemental energy at a foe.
   keywords:
   - Magic

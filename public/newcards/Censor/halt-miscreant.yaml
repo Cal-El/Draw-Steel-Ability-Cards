@@ -40,7 +40,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You infuse your weapon with holy magic that makes it difficult for your
     foe to get away.
   keywords:

@@ -15,7 +15,6 @@ header:
   distance:
     display: 4 burst
     values: []
-  flavor: ''
   flavour: You create a terrarium that spans from canopy above to underbrush below.
   keywords:
   - Area

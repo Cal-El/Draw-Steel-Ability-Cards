@@ -11,7 +11,6 @@ header:
   distance:
     display: 4 burst
     values: []
-  flavor: ''
   flavour: With a gesture, you restore your health and that of your allies.
   keywords:
   - Area

@@ -38,7 +38,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You focus your allies' wrath on a chosen foe.
   keywords:
   - Melee

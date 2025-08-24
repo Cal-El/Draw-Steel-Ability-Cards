@@ -42,7 +42,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: '"If you won''t kneel, the gods will make you."'
   keywords:
   - Area

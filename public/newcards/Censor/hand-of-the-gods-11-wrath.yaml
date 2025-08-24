@@ -35,7 +35,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You use your foe as a tool against your enemies.
   keywords:
   - Ranged

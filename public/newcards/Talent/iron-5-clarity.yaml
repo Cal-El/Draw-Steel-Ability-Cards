@@ -14,7 +14,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: The target's skin turns to hard, dark metal, impenetrable and dense.
   keywords:
   - Metamorphosis

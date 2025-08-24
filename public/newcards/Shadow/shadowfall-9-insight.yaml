@@ -31,7 +31,6 @@ header:
   distance:
     display: 10 x 1 line within 1
     values: []
-  flavor: ''
   flavour: You vanish. They fall. You reappear.
   keywords:
   - Area

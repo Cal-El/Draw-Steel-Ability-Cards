@@ -10,7 +10,6 @@ header:
   distance:
     display: 3 aura
     values: []
-  flavor: ''
   flavour: A holy light is emitted from your body, healing your allies.
   keywords:
   - Area

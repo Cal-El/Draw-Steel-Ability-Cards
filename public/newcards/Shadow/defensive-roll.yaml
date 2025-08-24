@@ -16,7 +16,6 @@ header:
   distance:
     display: Self
     values: []
-  flavor: ''
   flavour: When an enemy attacks, you roll with the impact to reduce the harm.
   keywords:
   - '-'

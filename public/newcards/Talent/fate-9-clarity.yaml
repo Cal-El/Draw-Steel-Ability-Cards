@@ -38,7 +38,6 @@ header:
   distance:
     display: Melee 2
     values: []
-  flavor: ''
   flavour: Your foe gets a glimpse of how it will end for them.
   keywords:
   - Chronopathy

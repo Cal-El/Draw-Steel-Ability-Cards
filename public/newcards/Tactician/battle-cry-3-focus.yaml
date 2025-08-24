@@ -15,7 +15,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You shout a phrase that galvanizes your team.
   keywords:
   - Ranged

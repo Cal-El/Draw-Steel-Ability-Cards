@@ -34,7 +34,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You conjure an angel who moves a foe and heals your allies.
   keywords:
   - Magic

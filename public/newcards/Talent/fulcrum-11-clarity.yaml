@@ -24,7 +24,6 @@ header:
   distance:
     display: Special
     values: []
-  flavor: ''
   flavour: You precisely manipulate the creatures around you.
   keywords:
   - Area

@@ -19,7 +19,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: Your mastery of elemental power lets you customize your conjurations.
   keywords:
   - Magic

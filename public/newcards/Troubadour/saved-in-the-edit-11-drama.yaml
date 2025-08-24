@@ -25,7 +25,6 @@ header:
   distance:
     display: Self
     values: []
-  flavor: ''
   flavour: You shout a word of power that allows you to rewrite reality to your whims.
   keywords:
   - Magic

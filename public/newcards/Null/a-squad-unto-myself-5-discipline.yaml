@@ -31,7 +31,6 @@ header:
   distance:
     display: 2 burst
     values: []
-  flavor: ''
   flavour: You move so quickly, it seems as though an army assaulted your foes.
   keywords:
   - Area

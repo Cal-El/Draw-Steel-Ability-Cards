@@ -9,7 +9,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: With the merest touch, you cause an object to turn to slag or ash.
   keywords:
   - Fire

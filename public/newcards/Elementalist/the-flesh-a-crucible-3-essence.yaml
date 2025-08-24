@@ -34,7 +34,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Fire engulfs your target and continues to churn.
   keywords:
   - Fire

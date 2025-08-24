@@ -40,7 +40,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: A bolt of holy energy saps the life from a foe.
   keywords:
   - Magic

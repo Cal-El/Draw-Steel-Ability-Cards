@@ -31,7 +31,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You drain the energy from your target to revitalize yourself or an ally.
   keywords:
   - Magic

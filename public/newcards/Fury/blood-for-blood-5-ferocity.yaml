@@ -45,7 +45,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: See how well they fight after you've bled them dry.
   keywords:
   - Melee

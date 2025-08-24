@@ -46,7 +46,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You need just one blow to sabotage your target.
   keywords:
   - Melee

@@ -47,7 +47,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You shine a bright light on the players on the stage and compel them to
     finish the performance.
   keywords:

@@ -46,7 +46,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You crush a foe in a telekinetic grip.
   keywords:
   - Psionic

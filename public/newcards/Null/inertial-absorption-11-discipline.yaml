@@ -10,7 +10,6 @@ header:
   distance:
     display: Self
     values: []
-  flavor: ''
   flavour: You absorb an attack to empower your body.
   keywords:
   - Psionic

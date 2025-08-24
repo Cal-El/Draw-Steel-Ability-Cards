@@ -20,7 +20,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: The longer it cooks, the bigger the boom.
   keywords:
   - Area

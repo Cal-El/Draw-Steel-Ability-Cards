@@ -32,7 +32,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You trap your foe in a looping cycle of time, where they relive the last
     few seconds over and over again.
   keywords:

@@ -40,7 +40,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: There you are, radiating your usual charisma.
   keywords:
   - Magic

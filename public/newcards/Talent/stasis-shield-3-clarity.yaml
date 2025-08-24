@@ -18,7 +18,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You freeze time just long enough to bring the victim to safety!
   keywords:
   - Psionic

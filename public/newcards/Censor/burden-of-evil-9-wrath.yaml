@@ -27,7 +27,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You reveal a vision of your enemies' fate that causes them to scramble
     as it staggers them.
   keywords:

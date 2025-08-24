@@ -17,7 +17,6 @@ header:
   distance:
     display: 10 wall within 10
     values: []
-  flavor: ''
   flavour: A blazing, beautifully organized inferno erupts at your command.
   keywords:
   - Area

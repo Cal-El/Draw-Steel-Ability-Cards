@@ -49,7 +49,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Threads you've been weaving through your adventures create a vibrant, pearlescent
     web.
   keywords:

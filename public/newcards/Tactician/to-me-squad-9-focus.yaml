@@ -42,7 +42,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You lead your allies in a charge.
   keywords:
   - Charge

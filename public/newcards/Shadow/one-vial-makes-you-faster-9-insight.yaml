@@ -23,7 +23,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Each ally who catches a potion you throw can take the battle to the next
     level.
   keywords:

@@ -35,7 +35,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You foresee the best moment to strike, then exploit it.
   keywords:
   - Melee

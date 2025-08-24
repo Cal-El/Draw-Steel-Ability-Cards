@@ -10,7 +10,6 @@ header:
   distance:
     display: Ranged 20
     values: []
-  flavor: ''
   flavour: A moment of focus leaves a foe firmly in your sights.
   keywords:
   - Ranged

@@ -34,7 +34,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Wait, it's... Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!
   keywords:
   - Melee

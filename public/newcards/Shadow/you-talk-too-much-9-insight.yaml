@@ -45,7 +45,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: Silence is a virtue. A knife pinning their mouth shut is the next best
     thing.
   keywords:

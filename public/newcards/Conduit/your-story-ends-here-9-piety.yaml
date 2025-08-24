@@ -46,7 +46,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You bend the fate of a foe, willing them to die.
   keywords:
   - Magic

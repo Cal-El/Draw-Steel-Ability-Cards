@@ -10,7 +10,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You speak inspiring words to a friend and spur them to incredible feats.
   keywords:
   - Magic

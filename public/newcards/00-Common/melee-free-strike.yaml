@@ -35,8 +35,6 @@ header:
     - type: Melee
       baseValue: 1
       includedKitValue: 0
-  flavor: ''
-  flavour: You cast a ball of elemental energy at a foe.
   keywords:
   - Charge
   - Melee

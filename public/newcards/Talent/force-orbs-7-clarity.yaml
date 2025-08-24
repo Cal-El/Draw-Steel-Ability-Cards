@@ -37,7 +37,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: Spheres of solid psionic energy float around you.
   keywords:
   - Psionic

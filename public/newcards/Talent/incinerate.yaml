@@ -37,7 +37,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: The air erupts into a column of smokeless flame.
   keywords:
   - Area

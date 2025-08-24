@@ -16,7 +16,6 @@ header:
   distance:
     display: 3 aura
     values: []
-  flavor: ''
   flavour: A protective field reverses the momentum of incoming attacks.
   keywords:
   - Area

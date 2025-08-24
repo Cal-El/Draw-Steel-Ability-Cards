@@ -20,7 +20,6 @@ header:
   distance:
     display: Melee 1 or ranged 10
     values: []
-  flavor: ''
   flavour: Your story tells a tale of the villain's waning power and how the heroes
     rose to the occasion to stop them.
   keywords:

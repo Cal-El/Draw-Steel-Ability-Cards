@@ -29,7 +29,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You strike so quickly that your hands become a blur.
   keywords:
   - Melee

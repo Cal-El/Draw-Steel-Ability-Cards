@@ -34,7 +34,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You channel holy energy to smite a foe and heal an ally.
   keywords:
   - Magic

@@ -11,7 +11,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You direct an attack to strike true.
   keywords:
   - Ranged

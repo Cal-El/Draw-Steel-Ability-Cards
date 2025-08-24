@@ -32,7 +32,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your curse causes your foe's flesh to rot off as spores that aid your allies.
   keywords:
   - Green

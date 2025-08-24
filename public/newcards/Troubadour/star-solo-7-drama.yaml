@@ -35,7 +35,6 @@ header:
   distance:
     display: Melee 1 or ranged 10
     values: []
-  flavor: ''
   flavour: Your performance travels and doesn't stop moving until your audience is
     completely rocked.
   keywords:

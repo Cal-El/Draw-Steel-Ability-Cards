@@ -27,7 +27,6 @@ header:
   distance:
     display: 3 burst
     values: []
-  flavor: ''
   flavour: You terrify your enemies into retreating, creating chaos in their ranks.
   keywords:
   - Area

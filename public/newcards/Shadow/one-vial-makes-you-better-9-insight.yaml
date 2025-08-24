@@ -16,7 +16,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: A well-timed throw of a potion will keep your allies in the fight.
   keywords:
   - Ranged

@@ -33,7 +33,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You open up the ground, spewing out shrapnel of stone and debris.
   keywords:
   - Area

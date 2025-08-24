@@ -44,7 +44,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: You weaken your connection to this manifold, allowing you to move through
     and damage enemies.
   keywords:

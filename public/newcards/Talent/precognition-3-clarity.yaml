@@ -11,7 +11,6 @@ header:
   distance:
     display: Melee 2
     values: []
-  flavor: ''
   flavour: You give a target a glimpse into the future so that they're ready for what
     comes next.
   keywords:

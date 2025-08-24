@@ -30,7 +30,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: A raging storm appears, striking your foes with lightning and throwing
     them around with wind.
   keywords:

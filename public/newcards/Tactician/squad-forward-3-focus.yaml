@@ -9,7 +9,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: On your command, you and your allies force back the enemy line.
   keywords:
   - Ranged

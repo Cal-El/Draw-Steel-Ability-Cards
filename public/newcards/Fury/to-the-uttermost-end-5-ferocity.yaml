@@ -35,7 +35,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You gut your life force to ensure a foe's demise.
   keywords:
   - Melee

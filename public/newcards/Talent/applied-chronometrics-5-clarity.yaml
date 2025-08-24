@@ -23,7 +23,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Time slows down around you. Your heartbeat is the only gauge of the extra
     moments you've gained.
   keywords:

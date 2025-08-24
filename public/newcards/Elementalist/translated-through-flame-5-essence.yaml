@@ -31,7 +31,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your ally disappears, then reappears in a burst of fire.
   keywords:
   - Fire

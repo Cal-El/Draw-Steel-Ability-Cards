@@ -32,7 +32,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Your magic strike turns your foe's guilt into a burst of holy power.
   keywords:
   - Melee

@@ -34,7 +34,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Everyone and everything gets blown away in an eruption of rocks and debris.
   keywords:
   - Area

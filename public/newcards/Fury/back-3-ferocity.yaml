@@ -27,7 +27,6 @@ header:
   distance:
     display: 1 burst
     values: []
-  flavor: ''
   flavour: You hew about you with your mighty weapon, hurling enemies backward.
   keywords:
   - Area

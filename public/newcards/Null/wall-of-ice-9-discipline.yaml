@@ -15,7 +15,6 @@ header:
   distance:
     display: 10 wall within 10
     values: []
-  flavor: ''
   flavour: You create a wall of ice.
   keywords:
   - Area

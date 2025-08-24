@@ -42,7 +42,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Fear of divine judgment overwhelms your foe.
   keywords:
   - Magic

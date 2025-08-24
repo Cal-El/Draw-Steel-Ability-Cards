@@ -42,7 +42,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Mystical thorned vines appear at your bidding and bind your foes.
   keywords:
   - Area

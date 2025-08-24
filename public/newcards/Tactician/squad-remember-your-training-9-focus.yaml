@@ -10,7 +10,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You remind your allies how to best use their gear.
   keywords:
   - Ranged

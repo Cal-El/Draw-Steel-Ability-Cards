@@ -33,7 +33,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You distract a foe while your allies secure their defensive gear.
   keywords:
   - Melee

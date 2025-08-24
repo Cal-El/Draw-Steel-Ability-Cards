@@ -32,7 +32,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You show your foe a glimpse of their fate after death.
   keywords:
   - Magic

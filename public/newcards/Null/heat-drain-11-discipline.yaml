@@ -48,7 +48,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You drain all the heat from the target.
   keywords:
   - Melee

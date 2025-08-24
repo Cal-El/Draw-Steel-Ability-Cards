@@ -33,7 +33,6 @@ header:
   distance:
     display: Ranged 5
     values: []
-  flavor: ''
   flavour: Your enemy will think twice about attacking your friend.
   keywords:
   - Ranged

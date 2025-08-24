@@ -37,7 +37,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You bend gravity into a fine point and pull your foes toward it.
   keywords:
   - Area

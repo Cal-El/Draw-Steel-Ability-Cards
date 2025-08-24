@@ -12,7 +12,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You channel divine force for movement that cannot be stopped.
   keywords:
   - Ranged

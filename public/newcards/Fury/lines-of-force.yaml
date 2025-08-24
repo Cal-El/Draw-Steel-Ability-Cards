@@ -18,7 +18,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You redirect the energy of motion.
   keywords:
   - Magic

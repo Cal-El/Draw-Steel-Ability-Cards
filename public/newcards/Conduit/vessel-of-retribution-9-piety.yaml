@@ -10,7 +10,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You infuse yourself or an ally with the retributive energy of the gods,
     waiting to be unleashed.
   keywords:

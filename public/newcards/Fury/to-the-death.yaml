@@ -32,7 +32,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Your reckless assault leaves you tactically vulnerable.
   keywords:
   - Melee

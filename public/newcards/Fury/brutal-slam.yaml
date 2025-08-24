@@ -28,7 +28,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: The heavy impact of your weapon attacks drives your foes ever back.
   keywords:
   - Melee

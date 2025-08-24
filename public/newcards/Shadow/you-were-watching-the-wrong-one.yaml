@@ -33,7 +33,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: They can't watch both of you at once.
   keywords:
   - Melee

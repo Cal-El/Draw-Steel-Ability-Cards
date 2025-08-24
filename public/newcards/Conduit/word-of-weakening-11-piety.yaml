@@ -45,7 +45,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You utter a divine word that makes a foe brittle.
   keywords:
   - Magic

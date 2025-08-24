@@ -16,7 +16,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You lift and hurl your foe away from you.
   keywords:
   - Psionic

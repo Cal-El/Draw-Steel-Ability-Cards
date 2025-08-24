@@ -32,7 +32,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: I didn't do it! What?
   keywords:
   - Melee

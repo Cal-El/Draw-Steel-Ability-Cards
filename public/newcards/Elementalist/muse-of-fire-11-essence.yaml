@@ -33,7 +33,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: The fire burns hot enough to sear the face of any god watching.
   keywords:
   - Area

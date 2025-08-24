@@ -19,7 +19,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: The ground rumbles as an elemental bursts forth, ready to serve.
   keywords:
   - Earth

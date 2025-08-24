@@ -10,7 +10,6 @@ header:
   distance:
     display: 5 aura
     values: []
-  flavor: ''
   flavour: A protective aura defends your allies from harm.
   keywords:
   - Area

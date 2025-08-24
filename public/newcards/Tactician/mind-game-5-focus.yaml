@@ -49,7 +49,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: Your attack demoralizes your foe. Your allies begin to think you can win.
   keywords:
   - Melee

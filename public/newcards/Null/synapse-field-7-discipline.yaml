@@ -12,7 +12,6 @@ header:
   distance:
     display: Self
     values: []
-  flavor: ''
   flavour: Attacks made by allies in your null field disrupt your enemies' thoughts,
     causing psychic pain.
   keywords:

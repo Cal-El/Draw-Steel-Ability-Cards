@@ -1,0 +1,18 @@
+body:
+- body: Spend a Recovery and regain Stamina equal to your recovery value.
+        
+
+        If you are dying you can't use the Catch Breath maneuver, but other creatures can help you spend Recoveries in other ways.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Self
+    values: []
+  title: Catch Breath
+  topMatter: Core Maneuver
+  keywords: []
+  target: Self
+type: Maneuver
+version: 2

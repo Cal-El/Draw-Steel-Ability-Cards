@@ -31,7 +31,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You flit about the battlefield and take an opportunistic strike.
   keywords:
   - Melee

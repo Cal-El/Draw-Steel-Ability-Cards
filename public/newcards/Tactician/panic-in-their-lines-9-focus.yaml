@@ -34,7 +34,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: You confuse your foes, causing them to turn on each other.
   keywords:
   - Melee

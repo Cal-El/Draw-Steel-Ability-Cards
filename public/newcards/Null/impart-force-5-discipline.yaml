@@ -20,7 +20,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: A single touch from you, and your enemy flies backward.
   keywords:
   - Melee

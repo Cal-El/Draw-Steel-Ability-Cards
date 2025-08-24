@@ -12,7 +12,6 @@ header:
   distance:
     display: 2 burst
     values: []
-  flavor: ''
   flavour: A burst of psionic energy interferes with your enemy's synapses.
   keywords:
   - Area

@@ -19,7 +19,6 @@ header:
   distance:
     display: Self
     values: []
-  flavor: ''
   flavour: You manifest a force barrier that absorbs incoming kinetic energy.
   keywords:
   - Psionic

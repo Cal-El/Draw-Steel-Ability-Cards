@@ -22,7 +22,6 @@ header:
   distance:
     display: 1 aura
     values: []
-  flavor: ''
   flavour: You project an aura that dampens the power of your foes.
   keywords:
   - Area

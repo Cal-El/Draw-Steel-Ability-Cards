@@ -49,7 +49,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You fire a piercing bolt of psychic energy that lances through two foes
     and leaves a faint intangible thread between them.
   keywords:

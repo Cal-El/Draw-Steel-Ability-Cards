@@ -30,7 +30,6 @@ header:
   distance:
     display: Melee 3
     values: []
-  flavor: ''
   flavour: Your fist emanates gravitic force that pulls a distant enemy closer.
   keywords:
   - Melee

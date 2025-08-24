@@ -9,7 +9,6 @@ header:
   distance:
     display: 4 burst
     values: []
-  flavor: ''
   flavour: '"Now you see us..."'
   keywords:
   - Area

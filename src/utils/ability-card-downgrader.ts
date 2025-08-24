@@ -47,6 +47,7 @@ function parseSpelledNumber(s: string) {
 }
 
 function parseTarget(s: string) : string | {target: string, additionalBody: key_value_statement} {
+  if (!s) return ''
   switch (s.toLowerCase()) {
     case 'self': return 'Self';
     case 'special': return 'Special';
@@ -131,6 +132,7 @@ function parseBaseDamageVal(tierNum: number, filteredBonuses: DamageBonus[], d: 
 
 const translateDistance = function (card: new_card, heroData: HeroData) : distance_block[] {
   const d = card.header.distance;
+  if (!d.display) return []
   const dVals = [...d.values].reverse();
 
   const bonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && (b instanceof DistanceBonus))

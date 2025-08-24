@@ -28,7 +28,6 @@ header:
     - baseValue: 1
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You channel power through your weapon to repel foes.
   keywords:
   - Area

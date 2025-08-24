@@ -17,7 +17,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your psionic energy surrounds the target and pushes everything else away
     from them.
   keywords:

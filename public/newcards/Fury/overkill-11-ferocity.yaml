@@ -36,7 +36,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You strike so no damage is wasted.
   keywords:
   - Magic

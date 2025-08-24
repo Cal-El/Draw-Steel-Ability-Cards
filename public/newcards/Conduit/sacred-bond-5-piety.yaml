@@ -13,7 +13,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You forge a divine connection between two creatures.
   keywords:
   - Magic

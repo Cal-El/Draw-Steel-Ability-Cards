@@ -11,7 +11,6 @@ header:
   distance:
     display: 4 burst
     values: []
-  flavor: ''
   flavour: You inspire your allies with tales of your saint's great deeds.
   keywords:
   - Area

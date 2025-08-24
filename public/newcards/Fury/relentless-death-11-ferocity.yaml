@@ -21,7 +21,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: You won't escape your fate.
   keywords:
   - Magic

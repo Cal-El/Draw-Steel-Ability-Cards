@@ -32,7 +32,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Burning radiance falls upon your foe, transferring some of their energy
     to a nearby ally.
   keywords:

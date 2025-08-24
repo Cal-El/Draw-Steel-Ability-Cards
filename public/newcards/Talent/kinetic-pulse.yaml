@@ -29,7 +29,6 @@ header:
   distance:
     display: 1 burst
     values: []
-  flavor: ''
   flavour: The force of your mind hurls enemies backward.
   keywords:
   - Area

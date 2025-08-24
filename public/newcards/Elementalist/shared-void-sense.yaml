@@ -9,7 +9,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You grant allies a taste of your unearthly vision.
   keywords:
   - Magic

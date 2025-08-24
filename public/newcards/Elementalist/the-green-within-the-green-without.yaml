@@ -31,7 +31,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Whipping vines erupt from a foe's body to grasp at another close by.
   keywords:
   - Green

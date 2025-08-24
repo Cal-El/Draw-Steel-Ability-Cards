@@ -29,7 +29,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: The surface of the world around you opens up to swallow foes.
   keywords:
   - Earth

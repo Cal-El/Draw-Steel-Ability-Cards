@@ -50,7 +50,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You sever the target's tenuous connection to the world.
   keywords:
   - Melee

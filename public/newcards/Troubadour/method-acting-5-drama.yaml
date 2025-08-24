@@ -46,7 +46,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: They're so hurt by your performance, you start to believe it yourself.
   keywords:
   - Melee

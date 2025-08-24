@@ -3,6 +3,16 @@ export const cardManifest  = [
     "label": "Common",
     "options": [
       {
+        "label": "Aid Attack (Core Maneuver)",
+        "value": "/newcards/00-Common/aid-attack.yaml",
+        "sortKey": "000-000-Aid Attack"
+      },
+      {
+        "label": "Catch Breath (Core Maneuver)",
+        "value": "/newcards/00-Common/catch-breath.yaml",
+        "sortKey": "000-000-Catch Breath"
+      },
+      {
         "label": "Escape Grab (Core Maneuver)",
         "value": "/newcards/00-Common/escape-grab.yaml",
         "sortKey": "000-000-Escape Grab"
@@ -11,6 +21,11 @@ export const cardManifest  = [
         "label": "Grab (Core Maneuver)",
         "value": "/newcards/00-Common/grab.yaml",
         "sortKey": "000-000-Grab"
+      },
+      {
+        "label": "Hide (Core Maneuver)",
+        "value": "/newcards/00-Common/hide.yaml",
+        "sortKey": "000-000-Hide"
       },
       {
         "label": "Knockback (Core Maneuver)",

@@ -45,7 +45,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You raise the target slightly into the air, then smother them against the
     ground.
   keywords:

@@ -35,7 +35,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You strike, and for the next few moments, your enemy can't escape you.
   keywords:
   - Melee

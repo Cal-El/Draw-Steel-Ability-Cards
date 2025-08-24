@@ -30,7 +30,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You call down a sphere of fire that burns your foes to ash.
   keywords:
   - Area

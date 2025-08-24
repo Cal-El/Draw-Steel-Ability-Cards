@@ -19,7 +19,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your divine energy restores the righteous.
   keywords:
   - Magic

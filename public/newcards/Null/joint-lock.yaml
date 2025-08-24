@@ -40,7 +40,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You contort your enemy's body into a stance they struggle to escape from.
   keywords:
   - Melee

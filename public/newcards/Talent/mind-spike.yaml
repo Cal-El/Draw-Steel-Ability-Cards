@@ -32,7 +32,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: A telepathic bolt instantly zaps a creature's brain.
   keywords:
   - Psionic

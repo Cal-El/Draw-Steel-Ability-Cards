@@ -9,7 +9,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You stir any wood's memory and learn what it has seen.
   keywords:
   - Green

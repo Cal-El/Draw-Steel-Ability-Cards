@@ -32,7 +32,6 @@ header:
   distance:
     display: Melee 1 or ranged 5
     values: []
-  flavor: ''
   flavour: You attack an enemy as an ally exposes their weakness.
   keywords:
   - Melee

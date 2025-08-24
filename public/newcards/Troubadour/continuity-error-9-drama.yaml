@@ -16,7 +16,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your subject is written into two places at once.
   keywords:
   - Magic

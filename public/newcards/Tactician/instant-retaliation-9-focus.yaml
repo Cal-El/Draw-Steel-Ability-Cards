@@ -31,7 +31,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You parry with almost supernatural speed.
   keywords:
   - Melee

@@ -36,7 +36,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Mushrooms erupt from a foe, sapping their vitality to spread strengthening
     spores.
   keywords:

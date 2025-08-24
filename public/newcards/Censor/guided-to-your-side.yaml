@@ -9,7 +9,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You concentrate on a friend and teleport to them.
   keywords:
   - Magic

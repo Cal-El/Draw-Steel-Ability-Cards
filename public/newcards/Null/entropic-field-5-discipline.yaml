@@ -42,7 +42,6 @@ header:
     - baseValue: 1
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You drastically increase the local entropy.
   keywords:
   - Area

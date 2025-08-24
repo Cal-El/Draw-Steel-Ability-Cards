@@ -37,7 +37,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Explosives are best when they're attached to an enemy.
   keywords:
   - Ranged

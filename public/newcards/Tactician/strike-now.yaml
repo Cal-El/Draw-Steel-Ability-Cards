@@ -10,7 +10,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: Your foe left an opening. You point this out to an ally!
   keywords:
   - Ranged

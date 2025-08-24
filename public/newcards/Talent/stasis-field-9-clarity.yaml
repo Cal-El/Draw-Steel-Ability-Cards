@@ -43,7 +43,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: Keep everything as it was. Ignore everything that will be.
   keywords:
   - Area

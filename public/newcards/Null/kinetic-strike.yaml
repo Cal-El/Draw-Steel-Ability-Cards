@@ -28,7 +28,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: Your opponent staggers. They cannot ignore you.
   keywords:
   - Melee

@@ -35,7 +35,6 @@ header:
   distance:
     display: 5 x 2 line within 1
     values: []
-  flavor: ''
   flavour: You move fast enough to turn around and watch your foes feel the aftermath.
   keywords:
   - Area

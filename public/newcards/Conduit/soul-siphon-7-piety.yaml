@@ -33,7 +33,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: A beam of energy connects a foe to a friend, draining life from one to
     heal the other.
   keywords:

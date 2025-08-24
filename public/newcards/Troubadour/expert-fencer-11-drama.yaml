@@ -39,7 +39,6 @@ header:
   distance:
     display: Melee 3
     values: []
-  flavor: ''
   flavour: If you can land the strike, the crowd goes wild.
   keywords:
   - Charge

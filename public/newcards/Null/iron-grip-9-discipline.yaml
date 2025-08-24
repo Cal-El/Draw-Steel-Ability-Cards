@@ -47,7 +47,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You grab the target with supernatural force.
   keywords:
   - Melee

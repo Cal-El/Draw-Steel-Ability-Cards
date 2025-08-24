@@ -31,7 +31,6 @@ header:
   distance:
     display: 3 burst
     values: []
-  flavor: ''
   flavour: You use your weapon to create a destructive shockwave.
   keywords:
   - Area

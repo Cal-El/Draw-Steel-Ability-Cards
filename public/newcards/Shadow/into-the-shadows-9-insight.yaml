@@ -35,7 +35,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: You sweep your foe off their feet and plunge them into absolute darkness.
   keywords:
   - Magic

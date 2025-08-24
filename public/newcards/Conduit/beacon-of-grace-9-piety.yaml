@@ -36,7 +36,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You ignite a foe with holy radiance, rewarding allies who attack them.
   keywords:
   - Magic

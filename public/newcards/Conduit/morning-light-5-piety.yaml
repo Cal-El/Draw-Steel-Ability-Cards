@@ -31,7 +31,6 @@ header:
   distance:
     display: 3 burst
     values: []
-  flavor: ''
   flavour: Light shines at your command, burning your foes and blessing your allies.
   keywords:
   - Area

@@ -33,7 +33,6 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavor: ''
   flavour: You summon your primordial storm.
   keywords:
   - Area

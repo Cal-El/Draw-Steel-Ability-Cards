@@ -48,7 +48,6 @@ header:
   distance:
     display: Self; see below
     values: []
-  flavor: ''
   flavour: '"Try picking on someone my size."'
   keywords:
   - Melee

@@ -29,7 +29,6 @@ header:
   distance:
     display: 1 burst
     values: []
-  flavor: ''
   flavour: You strike everywhere at once, tricking an enemy into moving out of position.
   keywords:
   - Area

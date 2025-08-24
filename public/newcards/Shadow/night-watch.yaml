@@ -10,7 +10,6 @@ header:
   distance:
     display: Ranged 5
     values: []
-  flavor: ''
   flavour: A steely dagger from out of the blue knocks another weapon off course.
   keywords:
   - Ranged

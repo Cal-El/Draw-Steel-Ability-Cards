@@ -34,7 +34,6 @@ header:
   distance:
     display: Melee 1
     values: []
-  flavor: ''
   flavour: A practiced attack will instantly kill an already weakened foe.
   keywords:
   - Melee

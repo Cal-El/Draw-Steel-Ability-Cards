@@ -31,7 +31,6 @@ header:
   distance:
     display: 3 burst
     values: []
-  flavor: ''
   flavour: You wield your weapon at blistering speed, leaving everyone around you
     fighting for their lives.
   keywords:

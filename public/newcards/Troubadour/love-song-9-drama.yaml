@@ -11,7 +11,6 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavor: ''
   flavour: You play a small ditty that plants you inside your target's heart.
   keywords:
   - Magic
