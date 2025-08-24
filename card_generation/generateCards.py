@@ -5,10 +5,12 @@ import json
 import yaml
 from abilityParser import *
 from patcher import *
+import shutil
 
 scriptPath = sys.path[0]
 tempFolderPath = path.join(scriptPath, 'temp')
 patchesFolderPath = path.join(scriptPath, 'patches')
+customFolderPath = path.join(scriptPath, 'custom')
 repoPath = path.join(tempFolderPath, 'repo')
 rulesPath = path.join(tempFolderPath, 'rules')
 cardsPath = path.normpath(path.join(scriptPath, '..', 'public', 'newcards'))
@@ -86,13 +88,13 @@ def createCoreManeuver(name):
     cardData = patchAbility(patchesFolderPath, 'Common', name + '.json', cardData)
 
     fileName = ability['metadata']['item_id'] + '.yaml'
-    with open(path.join(cardsPath, 'Common', fileName), 'w') as c:
+    with open(path.join(cardsPath, '00-Common', fileName), 'w') as c:
       yaml.dump(cardData, c)
-    return '/newcards/Common/' + name
+    return '/newcards/00-Common/' + name
 
 def createCommonCards():
   print('Creating common cards')
-  makedirs(path.join(cardsPath, 'Common'))
+  makedirs(path.join(cardsPath, '00-Common'))
   classManifest = []
   classManifest.append(createCoreManeuver('Escape Grab'))
   classManifest.append(createCoreManeuver('Grab'))
@@ -100,6 +102,19 @@ def createCommonCards():
 
   return classManifest
 
+def addCustomCards():
+  print('Adding in custom cards')
+  customManifest = []
+  for _, dirs, _ in walk(customFolderPath):
+    for d in dirs:
+      for root, _, files in walk(path.join(customFolderPath, d)):
+        for file in files:
+          if path.exists(path.join(cardsPath, d, file)):
+            remove(path.join(cardsPath, d, file))
+          else:
+            customManifest.append('/newcards/' + d + '/' + file)
+          shutil.copyfile(path.join(root, file), path.join(cardsPath, d, file))
+  return customManifest
 
 # Create censor cards
 manifest = manifest + createCards('Censor')
@@ -111,8 +126,11 @@ manifest = manifest + createCards('Shadow')
 manifest = manifest + createCards('Tactician')
 manifest = manifest + createCards('Talent')
 manifest = manifest + createCards('Troubadour')
-manifest = manifest + createCommonCards() # These are not really working because the steel compendium is missing target and distance data
+manifest = manifest + createCommonCards()
+manifest = manifest + addCustomCards()
 
 print('Creating card manifest')
 with open(path.join(cardsPath, 'card-manifest.json'), 'w') as m:
   json.dump(manifest, m)
+
+rmtree(tempFolderPath)

@@ -1,0 +1,48 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+cost: null
+header:
+  distance:
+    display: Ranged [5]
+    values:
+    - type: Ranged
+      baseValue: 5
+      includedKitValue: 0
+  flavor: ''
+  flavour: You cast a ball of elemental energy at a foe.
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Ranged Weapon Free Strike
+  topMatter: Ranged Free Strike Ability
+type: Main action
+version: 2

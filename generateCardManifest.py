@@ -2,6 +2,7 @@ from os import listdir, makedirs
 from os.path import isfile, join, exists
 import yaml
 import json
+from re import search
 
 print("Generating Card Manifest...")
 
@@ -36,6 +37,7 @@ def getLevel(card):
 
 for group in groups:
   groupName = group.title()
+  groupName = search('^(\d\d-)?(.*)$', groupName).group(2)
   groupData = {'label': groupName}
   options = []
 

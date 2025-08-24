@@ -1,5 +1,35 @@
 export const cardManifest  = [
   {
+    "label": "Common",
+    "options": [
+      {
+        "label": "Escape Grab (Core Maneuver)",
+        "value": "/newcards/00-Common/escape-grab.yaml",
+        "sortKey": "000-000-Escape Grab"
+      },
+      {
+        "label": "Grab (Core Maneuver)",
+        "value": "/newcards/00-Common/grab.yaml",
+        "sortKey": "000-000-Grab"
+      },
+      {
+        "label": "Knockback (Core Maneuver)",
+        "value": "/newcards/00-Common/knockback.yaml",
+        "sortKey": "000-000-Knockback"
+      },
+      {
+        "label": "Melee Weapon Free Strike (Melee Free Strike Ability)",
+        "value": "/newcards/00-Common/melee-free-strike.yaml",
+        "sortKey": "000-000-Melee Weapon Free Strike"
+      },
+      {
+        "label": "Ranged Weapon Free Strike (Ranged Free Strike Ability)",
+        "value": "/newcards/00-Common/ranged-free-strike.yaml",
+        "sortKey": "000-000-Ranged Weapon Free Strike"
+      }
+    ]
+  },
+  {
     "label": "Censor",
     "options": [
       {
@@ -251,26 +281,6 @@ export const cardManifest  = [
         "label": "Terror Manifest (Level 9 Censor Heroic Ability)",
         "value": "/newcards/Censor/terror-manifest-11-wrath.yaml",
         "sortKey": "009-110-Terror Manifest"
-      }
-    ]
-  },
-  {
-    "label": "Common",
-    "options": [
-      {
-        "label": "Escape Grab (Core Maneuver)",
-        "value": "/newcards/Common/escape-grab.yaml",
-        "sortKey": "000-000-Escape Grab"
-      },
-      {
-        "label": "Grab (Core Maneuver)",
-        "value": "/newcards/Common/grab.yaml",
-        "sortKey": "000-000-Grab"
-      },
-      {
-        "label": "Knockback (Core Maneuver)",
-        "value": "/newcards/Common/knockback.yaml",
-        "sortKey": "000-000-Knockback"
       }
     ]
   },
