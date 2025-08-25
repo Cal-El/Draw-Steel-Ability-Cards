@@ -1,0 +1,16 @@
+body:
+- body: If you are frightened, slowed, or weakened, you can immediately end one of those conditions.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Self
+    values: []
+  target: Self
+  title: Determination
+  topMatter: Human Trait
+  keywords: []
+  flavour: A tolerance for pain and distress allows you to push through difficult situations.
+type: Maneuver
+version: 2

@@ -1,0 +1,22 @@
+body:
+- body: You or an adjacent creature makes a power roll.
+  isEffect: true
+  title: Trigger
+- body: The target removes an edge or a bane on the roll, to turn a double edge into an edge, or to turn a double bane into a bane.
+
+
+    You can only use this benefit once per round.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee 1
+    values: []
+  target: Self or one creature
+  title: Resist The Unnatural
+  topMatter: Memonek Trait
+  keywords: []
+  flavour: Your connection to Axiom, the plane of Uttermost Law, allows you to manage chaos around you.
+type: Free Triggered Action
+version: 2

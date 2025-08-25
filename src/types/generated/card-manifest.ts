@@ -80,6 +80,61 @@ export const cardManifest  = [
     ]
   },
   {
+    "label": "Ancestry",
+    "options": [
+      {
+        "label": "Detect the Supernatural (Human Trait)",
+        "value": "/newcards/01-Ancestry/detect-the-supernatural.yaml",
+        "sortKey": "000-000-Detect the Supernatural"
+      },
+      {
+        "label": "Determination (Human Trait)",
+        "value": "/newcards/01-Ancestry/determination.yaml",
+        "sortKey": "000-000-Determination"
+      },
+      {
+        "label": "Draconian Guard (Dragon Knight Trait)",
+        "value": "/newcards/01-Ancestry/draconian-guard.yaml",
+        "sortKey": "000-000-Draconian Guard"
+      },
+      {
+        "label": "Draconian Pride (Dragon Knight Signature Ability)",
+        "value": "/newcards/01-Ancestry/draconian-pride.yaml",
+        "sortKey": "000-000-Draconian Pride"
+      },
+      {
+        "label": "Dragon Breath (Dragon Knight Signature Ability)",
+        "value": "/newcards/01-Ancestry/dragon-breath.yaml",
+        "sortKey": "000-000-Dragon Breath"
+      },
+      {
+        "label": "Glamor Of Terror (High Elf Trait)",
+        "value": "/newcards/01-Ancestry/glamor-of-terror.yaml",
+        "sortKey": "000-000-Glamor Of Terror"
+      },
+      {
+        "label": "Glowing Eyes (Devil Trait)",
+        "value": "/newcards/01-Ancestry/glowing-eyes.yaml",
+        "sortKey": "000-000-Glowing Eyes"
+      },
+      {
+        "label": "Remember Your Oath (Dragon Knight Trait)",
+        "value": "/newcards/01-Ancestry/remember-your-oath.yaml",
+        "sortKey": "000-000-Remember Your Oath"
+      },
+      {
+        "label": "Resist The Unnatural (Human Trait)",
+        "value": "/newcards/01-Ancestry/resist-the-unnatural.yaml",
+        "sortKey": "000-000-Resist The Unnatural"
+      },
+      {
+        "label": "The Wode Defends (Wode Elf Signature Ability)",
+        "value": "/newcards/01-Ancestry/the-wode-defends.yaml",
+        "sortKey": "000-000-The Wode Defends"
+      }
+    ]
+  },
+  {
     "label": "Censor",
     "options": [
       {

@@ -1,0 +1,19 @@
+body:
+- body: You take damage that isn't untyped.
+  isEffect: true
+  title: Trigger
+- body: You take half the damage.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Self
+    values: []
+  target: Self
+  title: Resist The Unnatural
+  topMatter: Human Trait
+  keywords: []
+  flavour: Your instinctive resilience protects you from injuries beyond the routine.
+type: Triggered Action
+version: 2

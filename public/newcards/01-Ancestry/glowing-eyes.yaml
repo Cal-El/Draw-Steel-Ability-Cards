@@ -1,0 +1,18 @@
+body:
+- body: You take damage from a creature.
+  isEffect: true
+  title: Trigger
+- body: Deal that creature psychic damage equal to 1d10 + your level.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display:
+    values: []
+  target: One creature
+  title: Glowing Eyes
+  topMatter: Devil Trait
+  keywords: []
+type: Triggered Action
+version: 2

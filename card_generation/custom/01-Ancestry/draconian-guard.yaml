@@ -1,0 +1,18 @@
+body:
+- body: You or an adjacent creature takes damage from a strike.
+  isEffect: true
+  title: Trigger
+- body: You reduce any damage from the strike by an amount equal to your level.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee 1
+    values: []
+  target: Self or one creature
+  title: Draconian Guard
+  topMatter: Dragon Knight Trait
+  keywords: []
+type: Triggered Action
+version: 2
