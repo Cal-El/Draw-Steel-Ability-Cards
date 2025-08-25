@@ -40,8 +40,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 5
-    values: []
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
   flavour: Your friends will thank you.
   keywords:
   - Ranged

@@ -38,8 +38,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: A bolt of holy energy saps the life from a foe.
   keywords:
   - Magic

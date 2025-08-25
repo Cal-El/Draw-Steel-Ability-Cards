@@ -25,8 +25,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Their body swells with lava, mud, and might, towering over their enemies.
   keywords:
   - Earth

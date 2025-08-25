@@ -12,8 +12,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: The target's skin turns to hard, dark metal, impenetrable and dense.
   keywords:
   - Metamorphosis

@@ -47,8 +47,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You fire a piercing bolt of psychic energy that lances through two foes
     and leaves a faint intangible thread between them.
   keywords:

@@ -12,8 +12,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: The gods bless and damn in equal measure.
   keywords:
   - Magic

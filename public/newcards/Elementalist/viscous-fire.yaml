@@ -26,8 +26,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: A jet of heavy fire erupts where you strike.
   keywords:
   - Fire

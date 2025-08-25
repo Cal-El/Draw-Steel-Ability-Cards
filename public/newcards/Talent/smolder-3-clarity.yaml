@@ -45,8 +45,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Smoke flows from your enemy like tears as their skin begins to blacken
     and flake.
   keywords:

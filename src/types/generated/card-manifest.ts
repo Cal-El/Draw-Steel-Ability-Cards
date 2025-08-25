@@ -123,9 +123,19 @@ export const cardManifest  = [
         "sortKey": "000-000-Remember Your Oath"
       },
       {
+        "label": "Resist The Unnatural (Memonek Trait)",
+        "value": "/newcards/01-Ancestry/keeper-of-order.yaml",
+        "sortKey": "000-000-Resist The Unnatural"
+      },
+      {
         "label": "Resist The Unnatural (Human Trait)",
         "value": "/newcards/01-Ancestry/resist-the-unnatural.yaml",
         "sortKey": "000-000-Resist The Unnatural"
+      },
+      {
+        "label": "Shadowmeld (Polder Trait)",
+        "value": "/newcards/01-Ancestry/shadowmeld.yaml",
+        "sortKey": "000-000-Shadowmeld"
       },
       {
         "label": "The Wode Defends (Wode Elf Signature Ability)",

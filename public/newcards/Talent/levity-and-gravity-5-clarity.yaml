@@ -43,8 +43,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You raise the target slightly into the air, then smother them against the
     ground.
   keywords:

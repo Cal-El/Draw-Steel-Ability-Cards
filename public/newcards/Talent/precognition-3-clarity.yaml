@@ -9,8 +9,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Melee 2
-    values: []
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
   flavour: You give a target a glimpse into the future so that they're ready for what
     comes next.
   keywords:

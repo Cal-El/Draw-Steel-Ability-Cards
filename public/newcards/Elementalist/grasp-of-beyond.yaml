@@ -29,8 +29,11 @@ body:
 cost: null
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: You absorb the life energy of another creature and use it to teleport.
   keywords:
   - Magic

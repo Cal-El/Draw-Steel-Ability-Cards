@@ -13,8 +13,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: They shine vibrantly, a beautiful diamond in the night sky.
   keywords:
   - Fire

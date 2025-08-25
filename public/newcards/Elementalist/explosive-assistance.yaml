@@ -12,8 +12,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You add a little magic to an ally's aggression at just the right time.
   keywords:
   - Fire

@@ -7,8 +7,11 @@ cost:
   costValue: '7'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: An ally becomes the wearer of an empowered golden cloak.
   keywords:
   - Magic

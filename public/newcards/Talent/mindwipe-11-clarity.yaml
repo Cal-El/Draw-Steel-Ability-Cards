@@ -46,8 +46,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Melee 2
-    values: []
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
   flavour: You attempt to make them forget all their training.
   keywords:
   - Melee

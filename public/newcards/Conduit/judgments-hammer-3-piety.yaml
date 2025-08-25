@@ -40,8 +40,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Your divine fury is a hammer that crashes down upon the unrighteous.
   keywords:
   - Magic

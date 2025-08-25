@@ -33,8 +33,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: You sweep your foe off their feet and plunge them into absolute darkness.
   keywords:
   - Magic

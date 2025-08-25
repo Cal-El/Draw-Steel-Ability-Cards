@@ -9,8 +9,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: A song for the brokenhearted wraps itself around the target and blossoms
     into a ward of thorns.
   keywords:

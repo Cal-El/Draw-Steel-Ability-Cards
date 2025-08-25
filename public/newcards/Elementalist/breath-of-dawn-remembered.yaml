@@ -11,8 +11,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: The power you channel grants the ability to get back in the fight.
   keywords:
   - Green

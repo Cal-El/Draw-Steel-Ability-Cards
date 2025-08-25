@@ -33,8 +33,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Fungal spores sprout inside your enemy's brain, allowing you to control
     their actions.
   keywords:

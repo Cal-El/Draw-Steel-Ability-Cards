@@ -44,8 +44,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You overload their senses, turning all their subconscious thoughts into
     conscious ones.
   keywords:

@@ -10,8 +10,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: Audiences love this bit.
   keywords:
   - Melee

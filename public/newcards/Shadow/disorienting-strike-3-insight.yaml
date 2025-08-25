@@ -31,8 +31,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: Your attack leaves them reeling, allowing you to follow up.
   keywords:
   - Melee

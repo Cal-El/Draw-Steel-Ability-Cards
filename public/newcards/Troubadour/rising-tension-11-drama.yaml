@@ -10,8 +10,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You narrate the tension of the scene and put all hope into your protagonist
     to turn things around.
   keywords:

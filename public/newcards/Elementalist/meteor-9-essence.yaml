@@ -20,8 +20,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You teleport the target into the air and let the ground and the elemental
     force of fire do the rest.
   keywords:

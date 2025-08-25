@@ -44,8 +44,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: Hard for them to fight when they're busy holding in their giblets.
   keywords:
   - Melee

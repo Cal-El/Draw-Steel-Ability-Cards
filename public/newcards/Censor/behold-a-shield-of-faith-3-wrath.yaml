@@ -32,8 +32,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: A mighty blow turns your foe's vitality into a holy light that envelops
     you and an ally, discouraging enemies who might attack you.
   keywords:

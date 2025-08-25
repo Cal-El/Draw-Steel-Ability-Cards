@@ -7,8 +7,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You beseech the gods to give your allies what they need to win the day,
     and the gods answer.
   keywords:

@@ -10,8 +10,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: A word in prayer, and the gods show the way.
   keywords:
   - Magic

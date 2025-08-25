@@ -36,8 +36,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Melee 2
-    values: []
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
   flavour: Your foe gets a glimpse of how it will end for them.
   keywords:
   - Chronopathy

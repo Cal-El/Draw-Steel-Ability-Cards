@@ -30,8 +30,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Burning radiance falls upon your foe, transferring some of their energy
     to a nearby ally.
   keywords:

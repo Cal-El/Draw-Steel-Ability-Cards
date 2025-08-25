@@ -15,8 +15,11 @@ cost:
   costValue: '7'
 header:
   distance:
-    display: 10 wall within 10
-    values: []
+    display: 10 wall within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: A blazing, beautifully organized inferno erupts at your command.
   keywords:
   - Area

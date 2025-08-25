@@ -24,8 +24,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You control an enemy's nervous system. How pleasant for them.
   keywords:
   - Psionic

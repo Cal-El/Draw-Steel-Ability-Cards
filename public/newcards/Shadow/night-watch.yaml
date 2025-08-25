@@ -8,8 +8,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 5
-    values: []
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
   flavour: A steely dagger from out of the blue knocks another weapon off course.
   keywords:
   - Ranged

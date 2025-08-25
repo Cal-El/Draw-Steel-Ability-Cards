@@ -12,8 +12,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Wisps of psychic energy ripple visibly from your brain as you force the
     target to move using only your mind.
   keywords:

@@ -30,8 +30,11 @@ body:
 cost: null
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: Your reckless assault leaves you tactically vulnerable.
   keywords:
   - Melee

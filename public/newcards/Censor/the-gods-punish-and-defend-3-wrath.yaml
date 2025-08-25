@@ -32,8 +32,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: You channel holy energy to smite a foe and heal an ally.
   keywords:
   - Magic

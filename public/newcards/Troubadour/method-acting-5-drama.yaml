@@ -44,8 +44,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: They're so hurt by your performance, you start to believe it yourself.
   keywords:
   - Melee

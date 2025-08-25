@@ -31,8 +31,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You trick your enemies into attacking each other and leave them confused
     by the aftermath.
   keywords:

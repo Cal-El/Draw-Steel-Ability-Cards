@@ -16,8 +16,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: It doesn't need to make sense. Just say it with emotion.
   keywords:
   - Magic

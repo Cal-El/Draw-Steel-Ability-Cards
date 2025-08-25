@@ -17,8 +17,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: The ground rumbles as an elemental bursts forth, ready to serve.
   keywords:
   - Earth

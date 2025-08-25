@@ -32,8 +32,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Melee 2
-    values: []
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
   flavour: It's a subtle mindset shift. It's not that they're your enemy-you just
     don't like them!
   keywords:

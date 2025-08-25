@@ -151,11 +151,33 @@ def parseCost(ability):
 def parseDistance(ability):
   distance = {}
   values = []
+  keywords = ability['keywords']
   distanceString = ability['distance']
-  if re.match('^(\d+ cube within) (\d+)$', distanceString):
-    x = re.search('^(\d+ cube within) (\d+)$', distanceString)
-    distance['display'] = x.group(1) + ' [' + x.group(2) + ']'
-    distance['values'] = [{'type': 'Ranged', 'baseValue': int(x.group(2)), 'includedKitValue': 0}]
+  if ('Melee' in keywords or 'Ranged' in keywords) and ('Magic' in keywords or 'Psionic' in keywords or 'Weapon' in keywords):
+    if re.match('^(.*? within )(\d+)(.*?)$', distanceString):
+      x = re.search('^(.*? within )(\d+)(.*?)$', distanceString)
+      distance['display'] = x.group(1) + '[' + x.group(2) + ']' + x.group(3)
+      typeString = 'Within'
+      if 'Melee' in keywords:
+        typeString = 'Melee'
+      if 'Ranged' in keywords:
+        typeString = 'Ranged'
+      distance['values'] = [{'type': typeString, 'baseValue': int(x.group(2)), 'includedKitValue': 0}]
+    elif re.match('^[M|m]elee (\d+?) or [R|r]anged (\d+?)$', distanceString):
+      x = re.search('^[M|m]elee (\d+?) or [R|r]anged (\d+?)$', distanceString)
+      distance['display'] = 'Melee [' + x.group(1) + '] or Ranged [' + x.group(2) + ']'
+      distance['values'] = [{'type': 'Melee', 'baseValue': int(x.group(1)), 'includedKitValue': 0}, {'type': 'Ranged', 'baseValue': int(x.group(2)), 'includedKitValue': 0}]
+    elif re.match('^[M|m]elee (\d+?)$', distanceString):
+      x = re.search('^[M|m]elee (\d+?)$', distanceString)
+      distance['display'] = 'Melee [' + x.group(1) + ']'
+      distance['values'] = [{'type': 'Melee', 'baseValue': int(x.group(1)), 'includedKitValue': 0}]
+    elif re.match('^[R|r]anged (\d+?)$', distanceString):
+      x = re.search('^[R|r]anged (\d+?)$', distanceString)
+      distance['display'] = 'Ranged [' + x.group(1) + ']'
+      distance['values'] = [{'type': 'Ranged', 'baseValue': int(x.group(1)), 'includedKitValue': 0}]
+    else:
+      distance['display'] = ability['distance']
+      distance['values'] = values
   else:
     distance['display'] = ability['distance']
     distance['values'] = values

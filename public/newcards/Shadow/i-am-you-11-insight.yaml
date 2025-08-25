@@ -10,8 +10,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Your mask reflects your foe's face. Surely they won't need it much longer.
   keywords:
   - Magic

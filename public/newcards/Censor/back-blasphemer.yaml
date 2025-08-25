@@ -27,7 +27,7 @@ header:
     values:
     - baseValue: 1
       includedKitValue: 0
-      type: Ranged
+      type: Melee
   flavour: You channel power through your weapon to repel foes.
   keywords:
   - Area

@@ -34,8 +34,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Mushrooms erupt from a foe, sapping their vitality to spread strengthening
     spores.
   keywords:

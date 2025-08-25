@@ -16,8 +16,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: "All for thunder motherrr! \u266A Run and hide for coverrr!\u266A"
   keywords:
   - Magic

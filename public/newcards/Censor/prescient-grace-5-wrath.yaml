@@ -12,8 +12,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Gifted by a prescient vision, you warn an ally of an impending attack.
   keywords:
   - Magic

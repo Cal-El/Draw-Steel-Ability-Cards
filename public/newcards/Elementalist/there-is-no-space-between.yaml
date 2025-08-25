@@ -18,8 +18,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Knowledge of the mystery reveals that two spaces are the same space.
   keywords:
   - Magic

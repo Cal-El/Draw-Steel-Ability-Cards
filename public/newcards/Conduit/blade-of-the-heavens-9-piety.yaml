@@ -40,8 +40,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Ranged 5
-    values: []
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
   flavour: A greatsword streams down from the sky, threatening to pin your foe.
   keywords:
   - Magic

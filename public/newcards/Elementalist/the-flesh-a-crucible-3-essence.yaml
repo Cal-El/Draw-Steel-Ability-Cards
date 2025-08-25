@@ -32,8 +32,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Fire engulfs your target and continues to churn.
   keywords:
   - Fire

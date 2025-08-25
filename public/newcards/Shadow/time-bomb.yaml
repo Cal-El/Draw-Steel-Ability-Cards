@@ -15,11 +15,8 @@ body:
 cost: null
 header:
   distance:
-    display: 2 cube within [10]
-    values:
-    - baseValue: 10
-      includedKitValue: 0
-      type: Ranged
+    display: 2 cube within 10
+    values: []
   flavour: The longer it cooks, the bigger the boom.
   keywords:
   - Area

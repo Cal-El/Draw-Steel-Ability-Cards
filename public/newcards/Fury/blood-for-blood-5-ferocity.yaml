@@ -43,8 +43,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: See how well they fight after you've bled them dry.
   keywords:
   - Melee

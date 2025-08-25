@@ -45,8 +45,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: You focus your null field into a pressure point strike that prevents your
     foe from channeling sorcery.
   keywords:

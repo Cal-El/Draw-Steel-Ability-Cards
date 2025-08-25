@@ -47,8 +47,11 @@ cost:
   costValue: '7'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You blast their soul out of their body, leaving it to helplessly float
     back to a weakened husk.
   keywords:

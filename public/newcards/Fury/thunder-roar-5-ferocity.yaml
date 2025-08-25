@@ -29,8 +29,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: 5 x 1 line within 1
-    values: []
+    display: 5 x 1 line within [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: You unleash a howl that hurls your enemies back.
   keywords:
   - Area

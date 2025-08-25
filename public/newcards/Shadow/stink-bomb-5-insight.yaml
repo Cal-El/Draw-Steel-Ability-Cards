@@ -29,11 +29,8 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: 3 cube within [10]
-    values:
-    - baseValue: 10
-      includedKitValue: 0
-      type: Ranged
+    display: 3 cube within 10
+    values: []
   flavour: Putrid yellow gas explodes from a bomb you toss.
   keywords:
   - Area

@@ -33,8 +33,11 @@ body:
 cost: null
 header:
   distance:
-    display: Melee 2
-    values: []
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
   flavour: You form a blade of mind energy and stab your target, invigorating yourself.
   keywords:
   - Animapathy

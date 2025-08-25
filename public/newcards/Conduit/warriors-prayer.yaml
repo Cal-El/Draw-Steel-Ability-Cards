@@ -30,8 +30,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Your quickly uttered prayer lends aggressive divine energy to a friend
     engaged in melee.
   keywords:

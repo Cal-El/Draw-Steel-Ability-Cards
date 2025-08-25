@@ -29,8 +29,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Your ally disappears, then reappears in a burst of fire.
   keywords:
   - Fire

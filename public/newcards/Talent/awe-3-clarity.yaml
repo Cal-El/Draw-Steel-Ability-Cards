@@ -46,8 +46,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You project psionic energy out to a creature and take on a new visage in
     their mind.
   keywords:

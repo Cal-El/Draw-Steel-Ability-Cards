@@ -35,8 +35,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 5
-    values: []
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
   flavour: You prioritize saving an ally over your own safety.
   keywords:
   - Ranged

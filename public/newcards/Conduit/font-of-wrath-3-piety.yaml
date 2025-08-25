@@ -11,8 +11,11 @@ cost:
   costValue: '3'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: A brilliant column of holy light appears on the battlefield, striking out
     at nearby enemies.
   keywords:

@@ -31,8 +31,14 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Melee 1 or ranged 10
-    values: []
+    display: Melee [1] or Ranged [10]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: The power of music rips through the reality around the target and blows
     them away.
   keywords:

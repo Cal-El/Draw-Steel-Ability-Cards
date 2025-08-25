@@ -32,8 +32,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Melee 3
-    values: []
+    display: Melee [3]
+    values:
+    - baseValue: 3
+      includedKitValue: 0
+      type: Melee
   flavour: You create a temporary portal to allow a massive demonic hand to reach
     through.
   keywords:

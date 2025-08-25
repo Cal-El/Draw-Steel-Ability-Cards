@@ -20,8 +20,11 @@ cost:
   costValue: '11'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You reshape the flow of time in the target's body to return it to an earlier
     state.
   keywords:

@@ -44,8 +44,11 @@ cost:
   costValue: '9'
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: You need just one blow to sabotage your target.
   keywords:
   - Melee

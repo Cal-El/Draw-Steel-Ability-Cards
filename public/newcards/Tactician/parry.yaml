@@ -14,8 +14,11 @@ body:
 cost: null
 header:
   distance:
-    display: Melee 2
-    values: []
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
   flavour: Your quick reflexes cost an enemy the precision they seek.
   keywords:
   - Melee

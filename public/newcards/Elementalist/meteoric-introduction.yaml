@@ -26,8 +26,11 @@ body:
 cost: null
 header:
   distance:
-    display: Melee 1
-    values: []
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
   flavour: You give your enemy a gentle tap-like an asteroid impact.
   keywords:
   - Earth

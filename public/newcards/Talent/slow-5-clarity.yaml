@@ -37,8 +37,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: Perhaps they wonder why everyone else is moving so quickly?
   keywords:
   - Chronopathy

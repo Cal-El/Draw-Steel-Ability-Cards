@@ -13,8 +13,11 @@ body:
 cost: null
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You channel some of your vitality into more resilience for you or an ally.
   keywords:
   - Magic

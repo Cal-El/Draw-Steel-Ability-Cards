@@ -28,8 +28,11 @@ cost:
   costValue: '5'
 header:
   distance:
-    display: Melee 3
-    values: []
+    display: Melee [3]
+    values:
+    - baseValue: 3
+      includedKitValue: 0
+      type: Melee
   flavour: Your fist emanates gravitic force that pulls a distant enemy closer.
   keywords:
   - Melee

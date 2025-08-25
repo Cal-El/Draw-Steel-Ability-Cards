@@ -33,8 +33,14 @@ body:
 cost: null
 header:
   distance:
-    display: Melee 1 or ranged 5
-    values: []
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
   flavour: A lyrical (and physical) jab insults an enemy and inspires an ally.
   keywords:
   - Magic

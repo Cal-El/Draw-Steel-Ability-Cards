@@ -52,8 +52,11 @@ cost:
   costValue: '7'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: You hurl the target through the annals of time, forcing them to witness
     every moment of their existence all at once.
   keywords:

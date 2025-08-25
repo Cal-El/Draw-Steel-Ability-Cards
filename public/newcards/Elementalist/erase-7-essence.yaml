@@ -24,8 +24,11 @@ cost:
   costValue: '7'
 header:
   distance:
-    display: Ranged 10
-    values: []
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
   flavour: With a flick of the wrist, you phase creatures out of existence.
   keywords:
   - Magic
