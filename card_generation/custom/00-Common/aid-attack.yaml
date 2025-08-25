@@ -13,5 +13,6 @@ header:
   target: One enemy
   title: Aid Attack
   topMatter: Core Maneuver
+  keywords: []
 type: Maneuver
 version: 2

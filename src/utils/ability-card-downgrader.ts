@@ -75,6 +75,7 @@ function parseTarget(s: string) : string | {target: string, additionalBody: key_
     case 'self and each creature in the area': return 'Self and All Creatures';
     case 'self and each ally in the area': return 'Self and All Allies';
     case 'none': return 'None';
+    case 'all creatures': return 'All Creatures';
     default: return {target: 'Special', additionalBody: {key: "Target", value: s}}
   }
 }

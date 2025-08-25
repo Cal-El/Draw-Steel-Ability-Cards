@@ -13,6 +13,16 @@ export const cardManifest  = [
         "sortKey": "000-000-Catch Breath"
       },
       {
+        "label": "Charge (Core Action)",
+        "value": "/newcards/00-Common/charge.yaml",
+        "sortKey": "000-000-Charge"
+      },
+      {
+        "label": "Defend (Core Action)",
+        "value": "/newcards/00-Common/defend.yaml",
+        "sortKey": "000-000-Defend"
+      },
+      {
         "label": "Escape Grab (Core Maneuver)",
         "value": "/newcards/00-Common/escape-grab.yaml",
         "sortKey": "000-000-Escape Grab"
@@ -21,6 +31,11 @@ export const cardManifest  = [
         "label": "Grab (Core Maneuver)",
         "value": "/newcards/00-Common/grab.yaml",
         "sortKey": "000-000-Grab"
+      },
+      {
+        "label": "Heal (Core Action)",
+        "value": "/newcards/00-Common/heal.yaml",
+        "sortKey": "000-000-Heal"
       },
       {
         "label": "Hide (Core Maneuver)",
@@ -33,6 +48,11 @@ export const cardManifest  = [
         "sortKey": "000-000-Knockback"
       },
       {
+        "label": "Make Or Assist A Test (Core Maneuver)",
+        "value": "/newcards/00-Common/make-or-assist-a-test.yaml",
+        "sortKey": "000-000-Make Or Assist A Test"
+      },
+      {
         "label": "Melee Weapon Free Strike (Melee Free Strike Ability)",
         "value": "/newcards/00-Common/melee-free-strike.yaml",
         "sortKey": "000-000-Melee Weapon Free Strike"
@@ -41,6 +61,21 @@ export const cardManifest  = [
         "label": "Ranged Weapon Free Strike (Ranged Free Strike Ability)",
         "value": "/newcards/00-Common/ranged-free-strike.yaml",
         "sortKey": "000-000-Ranged Weapon Free Strike"
+      },
+      {
+        "label": "Search For Hidden Creatures (Core Maneuver)",
+        "value": "/newcards/00-Common/search-for-hidden-creatures.yaml",
+        "sortKey": "000-000-Search For Hidden Creatures"
+      },
+      {
+        "label": "Stand Up (Core Maneuver)",
+        "value": "/newcards/00-Common/stand-up.yaml",
+        "sortKey": "000-000-Stand Up"
+      },
+      {
+        "label": "Use Consumable (Core Maneuver)",
+        "value": "/newcards/00-Common/use-consumable.yaml",
+        "sortKey": "000-000-Use Consumable"
       }
     ]
   },

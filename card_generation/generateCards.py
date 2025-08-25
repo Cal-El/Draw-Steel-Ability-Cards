@@ -113,6 +113,8 @@ def addCustomCards():
             remove(path.join(cardsPath, d, file))
           else:
             customManifest.append('/newcards/' + d + '/' + file)
+          if not path.exists(path.join(cardsPath, d)):
+            makedirs(path.join(cardsPath, d))
           shutil.copyfile(path.join(root, file), path.join(cardsPath, d, file))
   return customManifest
 

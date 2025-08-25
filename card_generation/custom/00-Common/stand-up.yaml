@@ -1,0 +1,18 @@
+body:
+- body: You can stand up if you are prone, ending that condition.
+
+
+        Alternatively, you can use this maneuver to make a willing adjacent prone creature stand up.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee 1
+    values: []
+  title: Stand Up
+  topMatter: Core Maneuver
+  keywords: []
+  target: Self or one creature
+type: Maneuver
+version: 2
