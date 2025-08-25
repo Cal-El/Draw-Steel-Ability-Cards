@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; slide 1
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; slide 2
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; slide 3
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+- body: The sigil disappears from the creature.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: 'Ranged [10]'
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Detonate Sigil
+  topMatter: Revenant Signature Ability
+  flavour: A magic sigil you placed on a creature explodes with energy.
+type: Main action
+version: 2

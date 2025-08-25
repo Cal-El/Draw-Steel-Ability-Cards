@@ -1,0 +1,21 @@
+body:
+- body: The target gains a bonus to speed equal to your Reason, Intuition, or Presence score (your choice) until the start of your next turn.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  target: Self or one ally
+  title: Minor Acceleration
+  topMatter: Time Raider Signature Ability
+  keywords: 
+  - Psionic
+  - Melee
+  flavour: You fill yourself or an ally with a burst of speed.
+type: Maneuver
+version: 2

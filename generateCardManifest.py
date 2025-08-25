@@ -23,7 +23,7 @@ publicManifestContent = []
 manifestFile.write("export const cardManifest  = ")
 
 def getPaddedNumString(number):
-  return format(number, '03')
+  return str(number).zfill(3)
 
 def getCost(card):
   if not 'cost' in card or card['cost'] == None:
