@@ -2048,6 +2048,11 @@ export const cardManifest  = [
         "sortKey": "001-000-Kinetic Pulse"
       },
       {
+        "label": "Materialize (Level 1 Talent Ability)",
+        "value": "/newcards/Talent/materialize.yaml",
+        "sortKey": "001-000-Materialize"
+      },
+      {
         "label": "Mind Spike (Level 1 Talent Ability)",
         "value": "/newcards/Talent/mind-spike.yaml",
         "sortKey": "001-000-Mind Spike"

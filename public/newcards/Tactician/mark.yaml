@@ -29,6 +29,9 @@ body:
   isEffect: true
   title: Effect
 cost: null
+fontSizePtOverrides:
+  body: 5.2
+  flavour: 7
 header:
   distance:
     display: Ranged 10

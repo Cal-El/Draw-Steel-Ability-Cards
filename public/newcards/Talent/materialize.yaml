@@ -1,0 +1,56 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+- body: A worthless size 1M object drops onto the target to deal the damage, then
+    rolls into an adjacent unoccupied space of your choice. The object is made of
+    wood, stone, or metal (your choice).
+  isEffect: true
+  title: Effect
+- body: The object explodes after the damage is dealt, and each creature adjacent
+    to the target takes damage equal to your Reason score. You also take damage equal
+    to your Reason score that can't be reduced in any way.
+  isEffect: true
+  title: Strained
+cost: null
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You picture an object in your mind and give it form-directly above your
+    opponent's head.
+  keywords:
+  - Psionic
+  - Ranged
+  - Resopathy
+  - Strike
+  target: One creature or object
+  title: Materialize
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Main action
+version: 2

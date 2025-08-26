@@ -30,4 +30,6 @@ def patchAbility(patchFolderPath, group, fileName, card):
         updated['header']['target'] = patch['header']['target']
     if 'body' in patch:
       updated['body'] = patch['body']
+    if 'fontSizePtOverrides' in patch:
+      updated['fontSizePtOverrides'] = patch['fontSizePtOverrides']
   return updated
