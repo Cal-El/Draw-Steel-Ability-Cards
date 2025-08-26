@@ -36,8 +36,7 @@ def getLevel(card):
   return getPaddedNumString(card['level'])
 
 for group in groups:
-  groupName = group.title()
-  groupName = search('^(\d\d-)?(.*)$', groupName).group(2)
+  groupName = search('^(z?z?\d\d-)?(.*)$', group).group(2) # 01 style prefixes force groups to the start of the list, zz01 style prefixes force them to the end
   groupData = {'label': groupName}
   options = []
 

@@ -12,5 +12,8 @@
     },
     "keywords": ["Melee", "Weapon"],
     "target": "One creature"
+  },
+  "fontSizePtOverrides": {
+    "body": 8
   }
 }

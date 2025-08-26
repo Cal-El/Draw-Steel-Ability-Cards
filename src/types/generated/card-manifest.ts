@@ -2593,5 +2593,45 @@ export const cardManifest  = [
         "sortKey": "009-011-Rising Tension"
       }
     ]
+  },
+  {
+    "label": "Kits",
+    "options": [
+      {
+        "label": "Battle Grace (Martial Artist Kit Signature Ability)",
+        "value": "/newcards/zz01-Kits/battle-grace.yaml",
+        "sortKey": "000-000-Battle Grace"
+      },
+      {
+        "label": "Double Strike (Dual Wielder Kit Signature Ability)",
+        "value": "/newcards/zz01-Kits/double-strike.yaml",
+        "sortKey": "000-000-Double Strike"
+      },
+      {
+        "label": "Exploding Arrow (Arcane Archer Kit Signature Ability)",
+        "value": "/newcards/zz01-Kits/exploding-arrow.yaml",
+        "sortKey": "000-000-Exploding Arrow"
+      },
+      {
+        "label": "Fade (Cloak and Dagger Kit Signature Ability)",
+        "value": "/newcards/zz01-Kits/fade.yaml",
+        "sortKey": "000-000-Fade"
+      },
+      {
+        "label": "Forward Thrust, Backward Smash (Guisarmier Kit Signature Ability)",
+        "value": "/newcards/zz01-Kits/forward-thrust-backward-smash.yaml",
+        "sortKey": "000-000-Forward Thrust, Backward Smash"
+      },
+      {
+        "label": "Pain for Pain (Mountain Kit Signature Ability)",
+        "value": "/newcards/zz01-Kits/pain-for-pain.yaml",
+        "sortKey": "000-000-Pain for Pain"
+      },
+      {
+        "label": "Unmooring (Battlemind Kit Signature Ability)",
+        "value": "/newcards/zz01-Kits/unmooring.yaml",
+        "sortKey": "000-000-Unmooring"
+      }
+    ]
   }
 ]

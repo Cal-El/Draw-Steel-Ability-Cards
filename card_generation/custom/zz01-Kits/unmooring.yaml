@@ -1,0 +1,59 @@
+body:
+- characteristicBonus:
+  - Might
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+- body: Until the end of the target's next turn, any forced movement that affects the target has its distance increased by 2.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Unmooring
+  topMatter: Battlemind Kit Signature Ability
+  flavour: Your weapon unleashes psionic energy that reduces your target's weight.
+type: Main action
+version: 2

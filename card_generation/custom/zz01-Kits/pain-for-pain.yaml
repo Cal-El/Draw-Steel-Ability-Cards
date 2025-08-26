@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 4
+- body: If the target dealt damage to you since the end of your last turn, this strike deals additional damage equal to your Might or Agility score (your choice).
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Pain for Pain
+  topMatter: Mountain Kit Signature Ability
+  flavour: An enemy who tagged you will pay for that.
+type: Main action
+version: 2

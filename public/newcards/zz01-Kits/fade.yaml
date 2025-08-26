@@ -1,0 +1,51 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; you can shift 1 square
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+  t2:
+    baseEffect: damage; you can shift up to 2 squares
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+  t3:
+    baseEffect: damage; you can shift up to 3 squares
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+cost: null
+header:
+  distance:
+    display: Melee [1] or ranged [10]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 5
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Fade
+  topMatter: Cloak and Dagger Kit Signature Ability
+  flavour: A stab, and a few quick, careful steps back.
+type: Main action
+version: 2
