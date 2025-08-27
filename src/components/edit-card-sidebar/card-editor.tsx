@@ -7,12 +7,17 @@ import {
   all_characteristics,
   characteristic,
   effect,
-  power_roll,
+  power_roll, power_roll_tier,
   spacer
 } from "../../types/ability-card.ts";
 import Select from "react-select";
 import {keywords, rawKeywords} from "../../types/keywords.ts";
-import {actionTextColorStyle, borderColorStyle} from "../../types/ability-card-types.ts";
+import {
+  actionBg20ColorStyle,
+  actionBg40ColorStyle,
+  actionTextColorStyle,
+  borderColorStyle
+} from "../../types/ability-card-types.ts";
 import {HiArrowDown, HiArrowUp, HiX} from "react-icons/hi";
 
 function EditorTypeSwitch({useTextEditor, setUseTextEditor} : {useTextEditor : boolean, setUseTextEditor : Dispatch<boolean>}) {
@@ -28,19 +33,19 @@ function EditorTypeSwitch({useTextEditor, setUseTextEditor} : {useTextEditor : b
   );
 }
 
-function EditTextInput({fieldName, fieldValue, onChange}: {fieldName: string, fieldValue: string, onChange: ChangeEventHandler<HTMLInputElement>}) {
+function EditTextInput({fieldName, fieldValue, onChange, isBold=true}: {fieldName: string, fieldValue: string, onChange: ChangeEventHandler<HTMLInputElement>, isBold:boolean}) {
   return <div className={`col-span-full grid grid-cols-subgrid gap-2`}>
     <div className={`flex justify-end items-center w-full`}>
-      <div className={`font-bold text-right`}>{fieldName}:</div>
+      <div className={`${isBold ? 'font-bold' : ''} text-right`}>{fieldName}:</div>
     </div>
     <input value={fieldValue} onChange={onChange} className={`col-span-3 border-2 border-stone-400 p-1`}></input>
   </div>;
 }
 
-function EditTextAreaInput({fieldName, fieldValue, onChange}: {fieldName: string, fieldValue: string, onChange: FormEventHandler<HTMLTextAreaElement>}) {
+function EditTextAreaInput({fieldName, fieldValue, onChange, isBold=true}: {fieldName: string, fieldValue: string, onChange: FormEventHandler<HTMLTextAreaElement>, isBold:boolean}) {
   return <div className={`col-span-full grid grid-cols-subgrid gap-2 items-start`}>
     <div className={`flex justify-end items-center w-full py-1`}>
-      <div className={`font-bold text-right`}>{fieldName}:</div>
+      <div className={`${isBold ? 'font-bold' : ''} text-right`}>{fieldName}:</div>
     </div>
     <textarea rows={3}
               value={fieldValue}
@@ -91,18 +96,18 @@ function EditKeywordsInput({fieldName, fieldValues, onChange}: {fieldName: strin
   </div>
 }
 
-function EditCharacteristicInput({fieldName, fieldValues, onChange}: {fieldName: string, fieldValues: string[], onChange: (ks: characteristic[]) => void}) {
+function EditCharacteristicInput({fieldName, fieldValues, onChange, isBold=true}: {fieldName: string, fieldValues: string[] | string, onChange: (ks: characteristic[]) => void, isBold:boolean},) {
   const [keywordsInputVal, setKeywordsInputVal] = useState("");
   const cOptions = all_characteristics.map((s) => {return {value: s, label: s}})
-
+  const fv = (fieldValues as string[]).map ? fieldValues as string[] : [fieldValues as string]
 
   return <div className={`col-span-full grid grid-cols-subgrid gap-2 items-center`}>
     <div className={`flex justify-end items-center w-full`}>
-      <div className={`font-bold text-right`}>{fieldName}:</div>
+      <div className={`${isBold ? 'font-bold' : ''} text-right`}>{fieldName}:</div>
     </div>
     <Select
       inputValue={keywordsInputVal}
-      value={fieldValues.map((s) => {return {label: s, value: s}})}
+      value={fv.map((s) => {return {label: s, value: s}})}
       onInputChange={(newValue) => {
         if (newValue.includes(", ")) {
           const values = newValue.split(", ");
@@ -355,35 +360,97 @@ function PowerRollBodyEditor({card, setCard, bodyIdx} : {card: ability_card, set
   return <>
     <BodyEditorTopbar card={card} setCard={setCard} bodyIdx={bodyIdx} type={'Power Roll'}/>
     <div className={`col-span-full grid grid-cols-subgrid gap-2`}>
-      <div className={`flex justify-end items-center w-full`}>
-        <div className={`font-bold text-right`}>Characteristic Bonus:</div>
-      </div>
-      <div className={`col-span-3 grid grid-cols-5`}>
-        {all_characteristics.map(c => {
-          return (
-            <div className={`flex flex-col gap-1 text-center items-center justify-center`}>
-              <div>{c}</div>
-              <input type={"checkbox"} checked={
-                ((card.body[bodyIdx] as power_roll).characteristicBonus as characteristic[]).includes(c)
-              } onChange={(e) => {
-                const tempBody = [...card.body]
-                const temp = [...((tempBody[bodyIdx] as power_roll).characteristicBonus as characteristic[])];
-                const tempSet = new Set<characteristic>(temp)
-                if (e.target.checked) {
-                  tempSet.add(c);
-                } else {
-                  tempSet.delete(c);
-                }
-                (tempBody[bodyIdx] as power_roll).characteristicBonus = [...tempSet.keys()]
-                setCard({...card, body: tempBody})
-               }}/>
-            </div>
-          )
-        })}
-      </div>
+      <EditCharacteristicInput fieldName={'Power Roll Bonus'} fieldValues={((card.body[bodyIdx] as power_roll).characteristicBonus as characteristic[])} onChange={(e) => {
+        const tempBody = [...card.body];
+        (tempBody[bodyIdx] as power_roll).characteristicBonus = e.sort((a, b) => all_characteristics.indexOf(a) - all_characteristics.indexOf(b));
+        setCard({...card, body: tempBody})
+      }}/>
     </div>
+    <PowerRollTierBodyEditor card={card} setCard={setCard} bodyIdx={bodyIdx} tier={(card.body[bodyIdx] as power_roll).t1} tierNum={1}/>
+    <PowerRollTierBodyEditor card={card} setCard={setCard} bodyIdx={bodyIdx} tier={(card.body[bodyIdx] as power_roll).t2} tierNum={2}/>
+    <PowerRollTierBodyEditor card={card} setCard={setCard} bodyIdx={bodyIdx} tier={(card.body[bodyIdx] as power_roll).t3} tierNum={3}/>
   </>
 }
+
+function PowerRollTierBodyEditor({tier, tierNum, card, setCard, bodyIdx} : {card: ability_card, setCard: Dispatch<Card>, bodyIdx: number, tier: power_roll_tier, tierNum: number}) {
+  return (<>
+    <div className={`col-span-full grid grid-cols-subgrid gap-y-2 gap-x-0`}>
+      <div className={`col-span-1 border-r-[2pt] ${borderColorStyle[abilityTypeValues[tierNum - 1]]} text-lg font-bold flex justify-end items-center ${actionTextColorStyle[abilityTypeValues[tierNum - 1]]} p-2 w-full`}>
+        {tierNum === 1 ? '≤11' : tierNum === 2 ? '12-16' : '17+'}
+      </div>
+      <div className={`col-span-3 grid grid-cols-[2pt_min-content_min-content_1fr_min-content] auto-cols-min gap-x-2 gap-y-1 ${actionBg20ColorStyle[abilityTypeValues[tierNum - 1]]} p-2`}>
+        <div key={'DamageSegment'} className={`col-span-full grid grid-cols-subgrid gap-x-2 gap-y-1`}>
+          <div className={`col-span-full flex justify-start items-center gap-x-2 gap-y-1`}>
+            <div className={`font-bold text-right`}>Deals damage:</div>
+            <input type={'checkbox'} checked={tier.damage !== undefined} onChange={(e) => {
+
+            }} className={`col-span-3 border-2 border-stone-400 p-1`}></input>
+          </div>
+          {tier.damage && <>
+            <div className={`col-start-1 col-span-1 row-span-2 ${actionBg40ColorStyle[abilityTypeValues[tierNum - 1]]} w-full`}/>
+            <div className={`flex justify-end items-center`}>
+              <div className={`text-right w-[80pt]`}>Base damage:</div>
+            </div>
+            <input value={tier.damage?.baseValue} type={"number"} onChange={(e) => {
+            }} className={`border-2 border-stone-400 p-1 w-[40pt] flex-none text-center`}></input>
+            <div className={`flex justify-end items-center`}>
+              <div className={`text-right w-[140pt] line-clamp-1`}>including a kit bonus of:</div>
+            </div>
+            <input value={tier.damage?.includedKitValue} type={"number"} onChange={(e) => {
+            }} className={`border-2 border-stone-400 p-1 w-[40pt] flex-none text-center`}></input>
+            <div className={`col-start-2 col-span-4 grid grid-cols-2 gap-x-2 gap-y-1`}>
+              <EditCharacteristicInput isBold={false} fieldName={'Characteristic Bonus Options'} fieldValues={tier.damage?.characteristicBonusOptions} onChange={(e) => {}}/>
+              <EditTextInput isBold={false} fieldName={'Other bonuses'} fieldValue={tier.damage?.otherBonus} onChange={(e) => {}}/>
+            </div>
+          </>}
+        </div>
+        <div key={'BaseEffectSegment'} className={`col-span-full flex justify-start items-center gap-x-2 gap-y-1`}>
+          <div className={`font-bold text-right`}>Effect text:</div>
+          <input value={tier.baseEffect} onChange={(e) => {
+
+          }} className={`flex-grow border-2 border-stone-400 p-1`}></input>
+        </div>
+        <div key={'PotencySegment'} className={`col-span-full grid grid-cols-subgrid gap-x-2 gap-y-1`}>
+          <div className={`col-span-full flex justify-start items-center gap-x-2 gap-y-1`}>
+            <div className={`font-bold text-right`}>Has potency effect:</div>
+            <input type={'checkbox'} checked={tier.potency !== undefined} onChange={(e) => {
+
+            }} className={`col-span-3 border-2 border-stone-400 p-1`}></input>
+          </div>
+          {tier.potency && <>
+            <div className={`col-start-1 col-span-1 row-span-2 ${actionBg40ColorStyle[abilityTypeValues[tierNum - 1]]} w-full`}/>
+            <div className={`col-span-4 flex items-center gap-x-2 gap-y-1`}>
+              <div className={``}>If</div>
+              <select value={tier.potency?.characteristic} className={`border-2 border-stone-400 p-1`}>
+                <option value={undefined}>-</option>
+                {all_characteristics.map(x => <option>{x}</option>)}
+              </select>
+              <div className={``}>is less than</div>
+              <select value={tier.potency?.strength} className={`border-2 border-stone-400 p-1`}>
+                <option value={undefined}>-</option>
+                <option value={0}>Weak</option>
+                <option value={1}>Average</option>
+                <option value={2}>Strong</option>
+              </select>
+            </div>
+            <div className={`col-span-4 flex items-center gap-2`}>
+              <div className={`text-right`}>Potency effect:</div>
+              <input value={tier.potency?.effect} onChange={(e) => {
+
+              }} className={`flex-grow border-2 border-stone-400 p-1`}></input>
+            </div>
+          </>}
+        </div>
+        {/*<input value={v.includedKitValue} type={"number"} onChange={(e) => {*/}
+        {/*  const temp = [...card.header.distance.values]*/}
+        {/*  temp[i].includedKitValue = parseInt(e.target.value);*/}
+        {/*  onChange({...card, header: {...card.header, distance: {...card.header.distance, values: temp}}})*/}
+        {/*}} className={`border-2 border-stone-400 p-1 w-full flex-none text-center`}></input>*/}
+      </div>
+      </div>
+  </>);
+}
+
 
 function EffectBodyEditor({card, setCard, bodyIdx} : {card: ability_card, setCard: Dispatch<Card>, bodyIdx: number}) {
   return <>
@@ -525,13 +592,13 @@ function EditorUI({card, setCard} : {card: ability_card, setCard: Dispatch<Card>
       </div>
       {card.body.map((v, i) => {
         if ((v as effect).isEffect) {
-          return <EffectBodyEditor card={card} setCard={setCard} key={`${(v as effect).title}-${i}`} bodyIdx={i}/>
+          return <EffectBodyEditor card={card} setCard={setCard} key={`${i}`} bodyIdx={i}/>
         }
         if ((v as spacer).isSpacer) {
-          return <SpacerBodyEditor card={card} setCard={setCard} key={`${(v as spacer).sizePt}-${i}`} bodyIdx={i}/>
+          return <SpacerBodyEditor card={card} setCard={setCard} key={`${i}`} bodyIdx={i}/>
         }
         if ((v as power_roll).isPowerRoll) {
-          return <PowerRollBodyEditor card={card} setCard={setCard} key={`${(v as power_roll).characteristicBonus}-${i}`} bodyIdx={i}/>
+          return <PowerRollBodyEditor card={card} setCard={setCard} key={`${i}`} bodyIdx={i}/>
         }
       })}
       <AddToBodyButtons card={card} setCard={setCard}/>

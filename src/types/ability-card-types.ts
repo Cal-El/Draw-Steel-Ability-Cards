@@ -96,7 +96,7 @@ export const actionBg30ColorStyle: Record<string,string> = {
     "Treasure": 'bg-treasure-card/[0.3]',
 }
 export const actionBg20ColorStyle: Record<string,string> = {
-    "Main Action": 'text-action-card-20',
+    "Main Action": 'bg-action-card-20',
     "Action": 'bg-action-card-20',
     "Maneuver": 'bg-maneuver-card-20',
     "Triggered Action": 'bg-triggered-action-card-20',
