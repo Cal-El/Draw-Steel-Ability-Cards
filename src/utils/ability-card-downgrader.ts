@@ -438,7 +438,7 @@ export function DowngradeCard (card: new_card, heroData: HeroData | undefined) :
     title: card.header.title,
     flavour: card.header.flavour,
     keywords: card.header.keywords,
-    hasCost: card.cost !== undefined,
+    hasCost: card.cost !== undefined && card.cost !== null,
     cost: card.cost,
     target: translatedTargetString,
     distance: translatedDistance,

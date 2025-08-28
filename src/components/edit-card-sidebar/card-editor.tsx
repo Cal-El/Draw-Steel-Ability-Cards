@@ -1,5 +1,5 @@
 import {asNewCard, Card} from "../../types/card-list.ts";
-import {ChangeEvent, ChangeEventHandler, ClipboardEvent, Dispatch, FormEventHandler, useEffect, useState} from "react";
+import {ChangeEvent, ChangeEventHandler, ClipboardEvent, ComponentType, Dispatch, FormEventHandler, useEffect, useState} from "react";
 import {TextEditor} from "../editable-ability-card-root/edit-card-menu/text-editor.tsx";
 import {
   ability_card,
@@ -10,7 +10,7 @@ import {
   power_roll, power_roll_tier,
   spacer
 } from "../../types/ability-card.ts";
-import Select, {components, MultiValueGenericProps} from "react-select";
+import Select, { GroupBase, MultiValueProps, OptionProps } from "react-select";
 import {keywords, rawKeywords} from "../../types/keywords.ts";
 import {
   actionBg20ColorStyle,
@@ -19,7 +19,7 @@ import {
   borderColorStyle
 } from "../../types/ability-card-types.ts";
 import {HiArrowDown, HiArrowUp, HiX} from "react-icons/hi";
-import {MultiValueProps} from "react-select/dist/declarations/src/components/MultiValue";
+// import {MultiValueProps} from "react-select/dist/declarations/src/components/MultiValue";
 
 function EditorTypeSwitch({useTextEditor, setUseTextEditor} : {useTextEditor : boolean, setUseTextEditor : Dispatch<boolean>}) {
   return (
@@ -34,7 +34,7 @@ function EditorTypeSwitch({useTextEditor, setUseTextEditor} : {useTextEditor : b
   );
 }
 
-function EditTextInput({fieldName, fieldValue, onChange, isBold=true}: {fieldName: string, fieldValue: string, onChange: ChangeEventHandler<HTMLInputElement>, isBold:boolean}) {
+function EditTextInput({fieldName, fieldValue, onChange, isBold=true}: {fieldName: string, fieldValue: string, onChange: ChangeEventHandler<HTMLInputElement>, isBold?:boolean}) {
   return <div className={`col-span-full grid grid-cols-subgrid gap-2`}>
     <div className={`flex justify-end items-center w-full`}>
       <div className={`${isBold ? 'font-bold' : ''} text-right`}>{fieldName}:</div>
@@ -43,7 +43,7 @@ function EditTextInput({fieldName, fieldValue, onChange, isBold=true}: {fieldNam
   </div>;
 }
 
-function EditTextAreaInput({fieldName, fieldValue, onChange, isBold=true}: {fieldName: string, fieldValue: string, onChange: FormEventHandler<HTMLTextAreaElement>, isBold:boolean}) {
+function EditTextAreaInput({fieldName, fieldValue, onChange, isBold=true}: {fieldName: string, fieldValue: string, onChange: FormEventHandler<HTMLTextAreaElement>, isBold?:boolean}) {
   return <div className={`col-span-full grid grid-cols-subgrid gap-2 items-start`}>
     <div className={`flex justify-end items-center w-full py-1`}>
       <div className={`${isBold ? 'font-bold' : ''} text-right`}>{fieldName}:</div>
@@ -98,14 +98,18 @@ function EditKeywordsInput({fieldName, fieldValues, onChange}: {fieldName: strin
   </div>
 }
 
-const MultiValue = (props: MultiValueProps) => (
-  <button className={`rounded-sm border-orange-300 border-1 border bg-orange-50 text-gray-600 font-medium px-1 mx-0.5 min-w-[15pt]`}
+const MultiValue = <
+  Option,
+  IsMulti extends boolean,
+  Group extends GroupBase<Option>
+>(props: MultiValueProps<Option, IsMulti, Group>) => (
+  <div className={`rounded-sm border-orange-300 border-1 border bg-orange-50 text-gray-600 font-medium px-1 mx-0.5 min-w-[15pt]`}
           onClick={props.removeProps.onClick}>
-    {props.data.label}
-  </button>
+    {(props.data as OptionProps).label}
+  </div>
 );
 
-function EditCharacteristicInput({fieldName, fieldValues, onChange, isBold=true, useSmall=false}: {fieldName: string, fieldValues: string[] | string, onChange: (ks: characteristic[]) => void, isBold:boolean, useSmall:boolean},) {
+function EditCharacteristicInput({fieldName, fieldValues, onChange, isBold=true, useSmall=false}: {fieldName: string, fieldValues: string[] | string, onChange: (ks: characteristic[]) => void, isBold?:boolean, useSmall?:boolean},) {
   const [keywordsInputVal, setKeywordsInputVal] = useState("");
   const cOptions = all_characteristics.map((s) => {return {value: s, label: (useSmall ? s[0] : s)}})
   const fv = (fieldValues as string[]).map ? fieldValues as string[] : [fieldValues as string]
@@ -415,7 +419,7 @@ function PowerRollTierBodyEditor({tier, tierNum, card, setCard, bodyIdx} : {card
             }} className={`border-2 border-stone-400 p-1 w-[40pt] flex-none text-center`}></input>
             <div className={`col-start-2 col-span-4 grid grid-cols-[1fr_1fr] gap-x-2 gap-y-1`}>
               <EditCharacteristicInput isBold={false} useSmall={true} fieldName={'Characteristic Bonus Options'} fieldValues={tier.damage?.characteristicBonusOptions} onChange={(e) => {}}/>
-              <EditTextInput isBold={false} fieldName={'Other bonuses'} fieldValue={tier.damage?.otherBonus} onChange={(e) => {}}/>
+              <EditTextInput isBold={false} fieldName={'Other bonuses'} fieldValue={tier.damage?.otherBonus ?? ""} onChange={(e) => {}}/>
             </div>
           </>}
         </div>
@@ -556,7 +560,7 @@ function EditorUI({card, setCard} : {card: ability_card, setCard: Dispatch<Card>
           <div className={`font-bold text-right`}>HR Cost:</div>
         </div>
         <div className={`col-span-3 flex justify-start items-center w-full gap-2`}>
-          <input type={"checkbox"} checked={card.cost !== undefined} onInput={() => {
+          <input type={"checkbox"} checked={!!card.cost} onInput={() => {
             if (card.cost) {
               setCard({...card, cost: undefined})
             } else {
