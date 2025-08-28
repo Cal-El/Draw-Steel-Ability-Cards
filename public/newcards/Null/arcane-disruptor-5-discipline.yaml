@@ -3,33 +3,30 @@ body:
   - Agility
   isPowerRoll: true
   t1:
-    baseEffect: psychic damage
+    baseEffect: + **A** psychic damage
     damage:
       baseValue: 8
-      characteristicBonusOptions:
-      - Agility
+      characteristicBonusOptions: []
       includedKitValue: 0
     potency:
       characteristic: Might
       effect: weakened (save ends)
       strength: 0
   t2:
-    baseEffect: psychic damage
+    baseEffect: + **A** psychic damage
     damage:
       baseValue: 12
-      characteristicBonusOptions:
-      - Agility
+      characteristicBonusOptions: []
       includedKitValue: 0
     potency:
       characteristic: Might
       effect: weakened (save ends)
       strength: 1
   t3:
-    baseEffect: psychic damage
+    baseEffect: + **A** psychic damage
     damage:
       baseValue: 16
-      characteristicBonusOptions:
-      - Agility
+      characteristicBonusOptions: []
       includedKitValue: 0
     potency:
       characteristic: Might
@@ -39,9 +36,7 @@ body:
     whenever they use a supernatural ability that costs Malice.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -57,8 +52,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Arcane Disruptor
-  topMatter: Level 1 Null Heroic Ability
+  title: ''
+  topMatter: Level 1 Null Ability
 level: 1
 type: Main action
 version: 2

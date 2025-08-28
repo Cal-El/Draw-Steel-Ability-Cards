@@ -23,9 +23,7 @@ body:
       baseValue: 10
       characteristicBonusOptions: []
       includedKitValue: 0
-cost:
-  costName: Ferocity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 3 burst
@@ -36,8 +34,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: Death Rattle
-  topMatter: Level 9 Fury Heroic Ability
+  title: ''
+  topMatter: Level 9 Fury Ability
 level: 9
 type: Main action
 version: 2

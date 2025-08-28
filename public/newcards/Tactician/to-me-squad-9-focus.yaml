@@ -35,9 +35,7 @@ body:
     can pick a different target.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -52,8 +50,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: To Me Squad!
-  topMatter: Level 6 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 6 Tactician Ability
 level: 6
 type: Main action
 version: 2

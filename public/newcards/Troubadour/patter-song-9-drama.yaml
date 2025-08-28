@@ -11,9 +11,7 @@ body:
     baseEffect: Three allies within distance can take their turns immediately after
       yours in any order. One of those allies can have already taken a turn this combat
       round.
-cost:
-  costName: Drama
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -26,8 +24,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: Patter Song
-  topMatter: Level 5 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 5 Troubadour Ability
 level: 5
 type: Maneuver
 version: 2

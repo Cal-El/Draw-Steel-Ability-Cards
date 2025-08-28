@@ -28,9 +28,7 @@ body:
       characteristicBonusOptions:
       - Agility
       includedKitValue: 0
-cost:
-  costName: Insight
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -45,8 +43,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Into the Shadows
-  topMatter: Level 5 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 5 Shadow Ability
 level: 5
 type: Main action
 version: 2

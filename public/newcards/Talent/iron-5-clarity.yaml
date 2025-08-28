@@ -7,9 +7,7 @@ body:
 - body: You can't use maneuvers (save ends).
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -23,8 +21,8 @@ header:
   - Psionic
   - Ranged
   target: Self or one ally
-  title: Iron
-  topMatter: Level 1 Talent Heroic Ability
+  title: ''
+  topMatter: Level 1 Talent Ability
 level: 1
 type: Maneuver
 version: 2

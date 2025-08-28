@@ -26,9 +26,7 @@ body:
       characteristic: Reason
       effect: dazed (save ends)
       strength: 2
-cost:
-  costName: Focus
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -43,8 +41,8 @@ header:
   - Ranged
   - Weapon
   target: Three enemies
-  title: Their Lack of Focus Is Their Undoing
-  topMatter: Level 9 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 9 Tactician Ability
 level: 9
 type: Main action
 version: 2

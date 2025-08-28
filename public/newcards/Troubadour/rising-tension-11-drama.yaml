@@ -5,9 +5,7 @@ body:
     not taken their turn already this round.
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -21,8 +19,8 @@ header:
   - Magic
   - Ranged
   target: One ally
-  title: Rising Tension
-  topMatter: Level 9 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 9 Troubadour Ability
 level: 9
 type: Maneuver
 version: 2

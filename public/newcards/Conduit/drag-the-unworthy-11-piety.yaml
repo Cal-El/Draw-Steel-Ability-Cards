@@ -27,9 +27,7 @@ body:
     a Recovery.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -43,8 +41,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: Drag the Unworthy
-  topMatter: Level 8 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 8 Conduit Ability
 level: 8
 type: Main action
 version: 2

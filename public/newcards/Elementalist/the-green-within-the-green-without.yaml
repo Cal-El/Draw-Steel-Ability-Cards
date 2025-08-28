@@ -41,7 +41,7 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: The Green Within, the Green Without
+  title: ''
   topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action

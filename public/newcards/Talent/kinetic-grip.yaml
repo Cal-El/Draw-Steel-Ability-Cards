@@ -25,7 +25,7 @@ header:
   - Ranged
   - Telekinesis
   target: One creature or object
-  title: Kinetic Grip
+  title: ''
   topMatter: Level 1 Talent Ability
 level: 1
 type: Main action

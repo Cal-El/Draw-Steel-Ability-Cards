@@ -35,9 +35,7 @@ body:
       characteristic: Agility
       effect: prone and can't stand (save ends)
       strength: 2
-cost:
-  costName: Piety
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -51,8 +49,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: Judgment's Hammer
-  topMatter: Level 1 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action
 version: 2

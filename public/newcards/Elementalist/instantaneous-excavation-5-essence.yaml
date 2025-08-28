@@ -22,9 +22,7 @@ body:
     each creature who could fall into the hole when it opens without spending essence.
   isEffect: true
   title: Persistent 1
-cost:
-  costName: Essence
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -38,8 +36,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: Instantaneous Excavation
-  topMatter: Level 1 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Maneuver
 version: 2

@@ -7,9 +7,7 @@ body:
     of the ability instead. When either duplicate takes damage, it is destroyed.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -22,8 +20,8 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: Trinity of Trickery
-  topMatter: Level 7 Censor Heroic Ability
+  title: ''
+  topMatter: Level 7 Censor Ability
 level: 7
 type: Maneuver
 version: 2

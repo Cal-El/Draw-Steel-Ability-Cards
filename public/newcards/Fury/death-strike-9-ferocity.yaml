@@ -3,9 +3,7 @@ body:
     power roll as the triggering strike.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -20,8 +18,8 @@ header:
   - Strike
   - Weapon
   target: Self
-  title: Death Strike
-  topMatter: Level 6 Fury Heroic Ability
+  title: ''
+  topMatter: Level 6 Fury Ability
 level: 6
 type: Free triggered
 version: 2

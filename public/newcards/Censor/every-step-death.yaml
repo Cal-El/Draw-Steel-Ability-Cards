@@ -41,7 +41,7 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: Every Step... Death!
+  title: ''
   topMatter: Level 1 Censor Ability
 level: 1
 type: Main action

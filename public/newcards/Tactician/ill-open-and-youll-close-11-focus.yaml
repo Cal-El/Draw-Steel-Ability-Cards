@@ -30,9 +30,7 @@ body:
     a different target.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -50,8 +48,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: I'll Open and You'll Close
-  topMatter: Level 8 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 8 Tactician Ability
 level: 8
 type: Main action
 version: 2

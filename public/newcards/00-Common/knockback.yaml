@@ -25,7 +25,7 @@ header:
   - Melee
   - Weapon
   target: One creature
-  title: Knockback
+  title: ''
   topMatter: Core Maneuver
 type: Maneuver
 version: 2

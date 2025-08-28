@@ -4,9 +4,7 @@ body:
     damage instead of the target.
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -19,8 +17,8 @@ header:
   - Magic
   - Ranged
   target: One creature or object
-  title: Love Song
-  topMatter: Level 5 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 5 Troubadour Ability
 level: 5
 type: Maneuver
 version: 2

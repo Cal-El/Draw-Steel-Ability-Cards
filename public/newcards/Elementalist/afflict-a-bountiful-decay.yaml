@@ -43,7 +43,7 @@ header:
   - Rot
   - Strike
   target: One creature
-  title: Afflict a Bountiful Decay
+  title: ''
   topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action

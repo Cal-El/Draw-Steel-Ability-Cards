@@ -13,9 +13,7 @@ body:
     through that creature's space.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Self
@@ -24,8 +22,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: Gravitic Charge
-  topMatter: Level 6 Null Heroic Ability
+  title: ''
+  topMatter: Level 6 Null Ability
 level: 6
 type: Maneuver
 version: 2

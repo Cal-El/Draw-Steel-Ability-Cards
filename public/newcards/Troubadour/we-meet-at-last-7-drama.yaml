@@ -10,9 +10,7 @@ body:
     of your next turn.'
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -26,8 +24,8 @@ header:
   - Magic
   - Ranged
   target: One creature
-  title: We Meet at Last
-  topMatter: Level 3 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 3 Troubadour Ability
 level: 3
 type: Maneuver
 version: 2

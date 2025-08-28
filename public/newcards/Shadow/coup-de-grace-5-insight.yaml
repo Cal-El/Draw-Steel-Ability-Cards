@@ -26,9 +26,7 @@ body:
       - Agility
       includedKitValue: 0
       otherBonus: 2d6
-cost:
-  costName: Insight
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -46,8 +44,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Coup de Grace
-  topMatter: Level 1 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action
 version: 2

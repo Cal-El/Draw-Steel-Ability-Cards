@@ -49,7 +49,7 @@ header:
   - Strike
   - Weapon
   target: One creature of your size or smaller
-  title: Impaled!
+  title: ''
   topMatter: Level 1 Fury Ability
 level: 1
 type: Main action

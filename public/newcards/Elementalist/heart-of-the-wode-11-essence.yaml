@@ -11,9 +11,7 @@ body:
     to end the effect early.'
   isEffect: true
   title: Effect
-cost:
-  costName: Essence
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -28,8 +26,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: Heart of the Wode
-  topMatter: Level 8 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 8 Elementalist Ability
 level: 8
 type: Main action
 version: 2

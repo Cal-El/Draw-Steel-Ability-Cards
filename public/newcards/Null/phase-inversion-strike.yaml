@@ -43,7 +43,7 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Phase Inversion Strike
+  title: ''
   topMatter: Level 1 Null Ability
 level: 1
 type: Main action

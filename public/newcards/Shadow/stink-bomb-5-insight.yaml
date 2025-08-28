@@ -24,9 +24,7 @@ body:
     starts their turn in the area and has M < AVERAGE is weakened (save ends).
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '5'
+cost: null
 header:
   distance:
     display: 3 cube within 10
@@ -36,8 +34,8 @@ header:
   - Area
   - Ranged
   target: Each creature in the area
-  title: Stink Bomb
-  topMatter: Level 2 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 2 Shadow Ability
 level: 2
 type: Main action
 version: 2

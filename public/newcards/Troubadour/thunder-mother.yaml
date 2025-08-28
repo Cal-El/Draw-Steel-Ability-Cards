@@ -28,7 +28,7 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: '"Thunder Mother"'
+  title: ''
   topMatter: Level 1 Troubadour Ability
 level: 1
 type: No action

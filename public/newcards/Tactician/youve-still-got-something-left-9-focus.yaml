@@ -5,9 +5,7 @@ body:
     cost 0).
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged 10
@@ -16,8 +14,8 @@ header:
   keywords:
   - Ranged
   target: One ally
-  title: You've Still Got Something Left
-  topMatter: Level 5 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 5 Tactician Ability
 level: 5
 type: Main action
 version: 2

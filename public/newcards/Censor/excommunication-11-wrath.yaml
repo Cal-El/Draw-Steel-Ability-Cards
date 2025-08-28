@@ -40,9 +40,7 @@ body:
     a target weakened this way can't be targeted by their allies' abilities.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -56,8 +54,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Excommunication
-  topMatter: Level 8 Censor Heroic Ability
+  title: ''
+  topMatter: Level 8 Censor Ability
 level: 8
 type: Main action
 version: 2

@@ -4,9 +4,7 @@ body:
     has a double edge twice. You can shift up to 2 squares between each use.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self
@@ -16,8 +14,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: Speed of Shadows
-  topMatter: Level 8 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 8 Shadow Ability
 level: 8
 type: Main action
 version: 2

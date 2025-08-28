@@ -32,9 +32,7 @@ body:
       characteristic: Might
       effect: slowed (save ends)
       strength: 2
-cost:
-  costName: Insight
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 5 x 1 line within [5]
@@ -49,8 +47,8 @@ header:
   - Ranged
   - Weapon
   target: Each enemy in the area
-  title: They Always Line Up
-  topMatter: Level 8 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 8 Shadow Ability
 level: 8
 type: Main action
 version: 2

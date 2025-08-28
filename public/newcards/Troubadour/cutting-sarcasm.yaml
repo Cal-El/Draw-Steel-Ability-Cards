@@ -50,7 +50,7 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Cutting Sarcasm
+  title: ''
   topMatter: Level 1 Troubadour Ability
 level: 1
 type: Main action

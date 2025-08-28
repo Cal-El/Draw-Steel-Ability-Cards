@@ -39,9 +39,7 @@ body:
     including from forced movement.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -55,8 +53,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Debilitating Strike
-  topMatter: Level 5 Fury Heroic Ability
+  title: ''
+  topMatter: Level 5 Fury Ability
 level: 5
 type: Main action
 version: 2

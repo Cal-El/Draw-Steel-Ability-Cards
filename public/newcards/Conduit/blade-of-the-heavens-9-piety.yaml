@@ -35,9 +35,7 @@ body:
       characteristic: Agility
       effect: prone and restrained (save ends)
       strength: 2
-cost:
-  costName: Piety
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [5]
@@ -51,8 +49,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: Blade of the Heavens
-  topMatter: Level 6 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 6 Conduit Ability
 level: 6
 type: Main action
 version: 2

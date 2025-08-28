@@ -27,9 +27,7 @@ body:
     ability, they are reduced to 0 Stamina.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -43,8 +41,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Censored
-  topMatter: Level 1 Censor Heroic Ability
+  title: ''
+  topMatter: Level 1 Censor Ability
 level: 1
 type: Main action
 version: 2

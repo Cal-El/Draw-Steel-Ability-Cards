@@ -44,7 +44,7 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Gasping in Pain
+  title: ''
   topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action

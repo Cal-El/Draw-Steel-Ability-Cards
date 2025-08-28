@@ -38,9 +38,7 @@ body:
 - body: This damage ignores immunity.
   isEffect: true
   title: Effect
-cost:
-  costName: Essence
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -55,8 +53,8 @@ header:
   - Ranged
   - Strike
   target: One enemy or object
-  title: Unquenchable Fire
-  topMatter: Level 9 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 9 Elementalist Ability
 level: 9
 type: Main action
 version: 2

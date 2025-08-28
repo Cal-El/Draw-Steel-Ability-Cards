@@ -24,7 +24,7 @@ header:
   - Melee
   - Weapon
   target: Self or one ally
-  title: Parry
+  title: ''
   topMatter: Level 1 Tactician Ability
 level: 1
 type: Triggered Action

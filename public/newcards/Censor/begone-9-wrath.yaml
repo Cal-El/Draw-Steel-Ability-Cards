@@ -20,9 +20,7 @@ body:
       baseValue: 8
       characteristicBonusOptions: []
       includedKitValue: 0
-cost:
-  costName: Wrath
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 3 burst
@@ -32,8 +30,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: Begone!
-  topMatter: Level 6 Censor Heroic Ability
+  title: ''
+  topMatter: Level 6 Censor Ability
 level: 6
 type: Main action
 version: 2

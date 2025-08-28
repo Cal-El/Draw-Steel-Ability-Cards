@@ -2,9 +2,7 @@ body:
 - body: Each target can move up to their speed.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Ranged 10
@@ -13,8 +11,8 @@ header:
   keywords:
   - Ranged
   target: Self and two allies
-  title: Squad! Forward!
-  topMatter: Level 1 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 1 Tactician Ability
 level: 1
 type: Maneuver
 version: 2

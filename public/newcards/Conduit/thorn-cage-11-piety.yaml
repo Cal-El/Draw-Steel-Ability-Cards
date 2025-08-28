@@ -39,9 +39,7 @@ body:
     of your turns.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -56,8 +54,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: Thorn Cage
-  topMatter: Level 9 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 9 Conduit Ability
 level: 9
 type: Main action
 version: 2

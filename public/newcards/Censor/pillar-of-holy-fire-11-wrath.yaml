@@ -39,9 +39,7 @@ body:
     equal to twice your Presence score to each enemy within 2 squares of them.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -55,8 +53,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Pillar of Holy Fire
-  topMatter: Level 8 Censor Heroic Ability
+  title: ''
+  topMatter: Level 8 Censor Ability
 level: 8
 type: Main action
 version: 2

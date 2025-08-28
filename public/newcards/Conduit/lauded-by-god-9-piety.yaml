@@ -2,9 +2,7 @@ body:
 - body: Each target gains 3 of their Heroic Resource.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -18,8 +16,8 @@ header:
   - Magic
   - Ranged
   target: Two allies
-  title: Lauded by God
-  topMatter: Level 6 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 6 Conduit Ability
 level: 6
 type: Maneuver
 version: 2

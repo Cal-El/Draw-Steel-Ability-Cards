@@ -42,9 +42,7 @@ body:
     surges that you can use immediately.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -60,8 +58,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: Soul Burn
-  topMatter: Level 3 Talent Heroic Ability
+  title: ''
+  topMatter: Level 3 Talent Ability
 level: 3
 type: Main action
 version: 2

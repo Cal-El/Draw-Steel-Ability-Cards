@@ -18,9 +18,7 @@ body:
     score.'
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self
@@ -29,8 +27,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: Saved in the Edit
-  topMatter: Level 8 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 8 Troubadour Ability
 level: 8
 type: Maneuver
 version: 2

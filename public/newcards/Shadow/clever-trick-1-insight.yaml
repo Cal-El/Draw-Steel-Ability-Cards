@@ -6,9 +6,7 @@ body:
     who targeted you. The strike targets that enemy instead.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '1'
+cost: null
 header:
   distance:
     display: Self
@@ -17,8 +15,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: Clever Trick
-  topMatter: Level 1 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Triggered Action
 version: 2

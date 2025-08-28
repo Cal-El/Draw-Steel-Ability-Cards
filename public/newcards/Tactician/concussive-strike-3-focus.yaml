@@ -35,9 +35,7 @@ body:
       characteristic: Might
       effect: dazed (save ends)
       strength: 2
-cost:
-  costName: Focus
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -55,8 +53,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Concussive Strike
-  topMatter: Level 1 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 1 Tactician Ability
 level: 1
 type: Main action
 version: 2

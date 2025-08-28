@@ -24,9 +24,7 @@ body:
     from the collision and the target takes the damage you would have taken.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 3 burst
@@ -38,8 +36,8 @@ header:
   - Melee
   - Weapon
   target: Each enemy in the area
-  title: Primordial Vortex
-  topMatter: Level 9 Fury Heroic Ability
+  title: ''
+  topMatter: Level 9 Fury Ability
 level: 9
 type: Main action
 version: 2

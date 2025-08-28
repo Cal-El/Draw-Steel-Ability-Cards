@@ -24,9 +24,7 @@ body:
     without spending essence.
   isEffect: true
   title: Persistent 2
-cost:
-  costName: Essence
-  costValue: '5'
+cost: null
 header:
   distance:
     display: 3 cube within [10]
@@ -41,8 +39,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: Conflagration
-  topMatter: Level 1 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

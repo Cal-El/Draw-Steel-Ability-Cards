@@ -26,9 +26,7 @@ body:
 - body: A creature force moved by this ability must be moved straight upward.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -44,8 +42,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Black Ash Eruption
-  topMatter: Level 6 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 6 Shadow Ability
 level: 6
 type: Main action
 version: 2

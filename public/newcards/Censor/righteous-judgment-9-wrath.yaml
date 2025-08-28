@@ -27,9 +27,7 @@ body:
     judged by you, that ally gains 1 surge.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -43,8 +41,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Righteous Judgment
-  topMatter: Level 5 Censor Heroic Ability
+  title: ''
+  topMatter: Level 5 Censor Ability
 level: 5
 type: Main action
 version: 2

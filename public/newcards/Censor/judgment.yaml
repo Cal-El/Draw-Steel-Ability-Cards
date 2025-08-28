@@ -40,7 +40,7 @@ header:
   - Magic
   - Ranged
   target: One enemy
-  title: Judgment
+  title: ''
   topMatter: Level 1 Censor Ability
 level: 1
 type: Maneuver

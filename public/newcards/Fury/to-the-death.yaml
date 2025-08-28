@@ -41,7 +41,7 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: To the Death!
+  title: ''
   topMatter: Level 1 Fury Ability
 level: 1
 type: Main action

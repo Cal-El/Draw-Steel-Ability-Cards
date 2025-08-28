@@ -5,9 +5,7 @@ body:
     of your movement.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self; see below
@@ -17,8 +15,8 @@ header:
   - Area
   - Magic
   target: Self
-  title: Blessing of the Fortress
-  topMatter: Level 9 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 9 Conduit Ability
 level: 9
 type: Maneuver
 version: 2

@@ -27,9 +27,7 @@ body:
     taking this damage is reduced to 0 Stamina.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -43,8 +41,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Assassinate
-  topMatter: Level 8 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 8 Shadow Ability
 level: 8
 type: Main action
 version: 2

@@ -6,9 +6,7 @@ body:
     tier 3 outcome.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged 10
@@ -17,8 +15,8 @@ header:
   keywords:
   - Ranged
   target: One ally
-  title: Coordinated Execution
-  topMatter: Level 6 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 6 Tactician Ability
 level: 6
 type: Free triggered
 version: 2

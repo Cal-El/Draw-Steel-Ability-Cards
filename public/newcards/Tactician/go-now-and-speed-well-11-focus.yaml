@@ -4,9 +4,7 @@ body:
     immunity, and increases the potency of any potency effects by 1.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged 10
@@ -15,8 +13,8 @@ header:
   keywords:
   - Ranged
   target: Self or one ally
-  title: Go Now and Speed Well
-  topMatter: Level 8 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 8 Tactician Ability
 level: 8
 type: Main action
 version: 2

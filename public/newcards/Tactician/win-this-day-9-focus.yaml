@@ -3,9 +3,7 @@ body:
     any conditions or effects on them, and stand up if they are prone.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 3 burst
@@ -14,8 +12,8 @@ header:
   keywords:
   - Area
   target: Self and each ally in the area
-  title: Win This Day!
-  topMatter: Level 5 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 5 Tactician Ability
 level: 5
 type: Main action
 version: 2

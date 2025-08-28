@@ -28,9 +28,7 @@ body:
       characteristicBonusOptions:
       - Reason
       includedKitValue: 0
-cost:
-  costName: Essence
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -47,8 +45,8 @@ header:
   - Strike
   - Void
   target: One creature
-  title: Subvert the Green Within
-  topMatter: Level 2 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 2 Elementalist Ability
 level: 2
 type: Main action
 version: 2

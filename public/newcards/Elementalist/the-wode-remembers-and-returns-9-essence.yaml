@@ -8,9 +8,7 @@ body:
     of your turn, each ally in the area can spend a Recovery.
   isEffect: true
   title: Persistent 2
-cost:
-  costName: Essence
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 4 burst
@@ -23,8 +21,8 @@ header:
   - Magic
   - Void
   target: Special
-  title: The Wode Remembers and Returns
-  topMatter: Level 6 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 6 Elementalist Ability
 level: 6
 type: Main action
 version: 2

@@ -3,33 +3,28 @@ body:
   - Agility
   isPowerRoll: true
   t1:
-    baseEffect: damage
+    baseEffect: + **A** damage
     damage:
       baseValue: 7
-      characteristicBonusOptions:
-      - Agility
+      characteristicBonusOptions: []
       includedKitValue: 0
   t2:
-    baseEffect: damage
+    baseEffect: + **A** damage
     damage:
       baseValue: 11
-      characteristicBonusOptions:
-      - Agility
+      characteristicBonusOptions: []
       includedKitValue: 0
   t3:
-    baseEffect: damage
+    baseEffect: + **A** damage
     damage:
       baseValue: 16
-      characteristicBonusOptions:
-      - Agility
+      characteristicBonusOptions: []
       includedKitValue: 0
 - body: The target can make a melee free strike against you. If they do, you can make
     a melee free strike against the target.
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -43,8 +38,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: En Garde!
-  topMatter: Level 2 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 2 Troubadour Ability
 level: 2
 type: Main action
 version: 2

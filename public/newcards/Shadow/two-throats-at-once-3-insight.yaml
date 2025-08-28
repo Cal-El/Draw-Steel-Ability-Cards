@@ -20,9 +20,7 @@ body:
       baseValue: 10
       characteristicBonusOptions: []
       includedKitValue: 0
-cost:
-  costName: Insight
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -40,8 +38,8 @@ header:
   - Strike
   - Weapon
   target: Two creatures or objects
-  title: Two Throats at Once
-  topMatter: Level 1 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action
 version: 2

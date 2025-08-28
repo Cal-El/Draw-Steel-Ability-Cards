@@ -39,9 +39,7 @@ body:
     your abilities deal fire damage to the target instead of holy damage.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -60,8 +58,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Purifying Fire
-  topMatter: Level 1 Censor Heroic Ability
+  title: ''
+  topMatter: Level 1 Censor Ability
 level: 1
 type: Main action
 version: 2

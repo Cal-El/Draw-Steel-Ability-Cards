@@ -10,9 +10,7 @@ body:
     of squares to the wall equal to your Reason score.
   isEffect: true
   title: Persistent 1
-cost:
-  costName: Essence
-  costValue: '7'
+cost: null
 header:
   distance:
     display: 10 wall within [10]
@@ -27,8 +25,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: Wall of Fire
-  topMatter: Level 3 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 3 Elementalist Ability
 level: 3
 type: Maneuver
 version: 2

@@ -9,9 +9,7 @@ body:
     causing them to automatically merge and combine their current Stamina.
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -24,8 +22,8 @@ header:
   - Magic
   - Ranged
   target: One enemy or object
-  title: Continuity Error
-  topMatter: Level 5 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 5 Troubadour Ability
 level: 5
 type: Maneuver
 version: 2

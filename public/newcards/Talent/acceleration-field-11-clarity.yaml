@@ -27,9 +27,7 @@ body:
       baseValue: 10
       characteristicBonusOptions: []
       includedKitValue: 0
-cost:
-  costName: Clarity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [5]
@@ -44,8 +42,8 @@ header:
   - Psionic
   - Ranged
   target: Three allies
-  title: Acceleration Field
-  topMatter: Level 9 Talent Heroic Ability
+  title: ''
+  topMatter: Level 9 Talent Ability
 level: 9
 type: Main action
 version: 2

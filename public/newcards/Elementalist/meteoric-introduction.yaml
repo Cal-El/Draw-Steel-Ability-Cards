@@ -38,7 +38,7 @@ header:
   - Melee
   - Strike
   target: One creature or object
-  title: Meteoric Introduction
+  title: ''
   topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action

@@ -3,9 +3,7 @@ body:
     Stamina for each condition or effect removed.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 3 burst
@@ -15,8 +13,8 @@ header:
   - Area
   - Psionic
   target: Self and each ally in the area
-  title: Synaptic Reset
-  topMatter: Level 5 Null Heroic Ability
+  title: ''
+  topMatter: Level 5 Null Ability
 level: 5
 type: Maneuver
 version: 2

@@ -35,9 +35,7 @@ body:
       characteristic: Intuition
       effect: dazed and slowed (save ends)
       strength: 2
-cost:
-  costName: Discipline
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -52,8 +50,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Stunning Blow
-  topMatter: Level 1 Null Heroic Ability
+  title: ''
+  topMatter: Level 1 Null Ability
 level: 1
 type: Main action
 version: 2

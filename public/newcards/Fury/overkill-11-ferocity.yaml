@@ -29,9 +29,7 @@ body:
     them to another creature within 5 squares of the target.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -46,8 +44,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Overkill
-  topMatter: Level 8 Fury Heroic Ability
+  title: ''
+  topMatter: Level 8 Fury Ability
 level: 8
 type: Main action
 version: 2

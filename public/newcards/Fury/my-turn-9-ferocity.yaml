@@ -26,9 +26,7 @@ body:
 - body: You can spend a Recovery.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -42,8 +40,8 @@ header:
   - Strike
   - Weapon
   target: The triggering creature
-  title: My Turn!
-  topMatter: Level 5 Fury Heroic Ability
+  title: ''
+  topMatter: Level 5 Fury Ability
 level: 5
 type: Free triggered
 version: 2

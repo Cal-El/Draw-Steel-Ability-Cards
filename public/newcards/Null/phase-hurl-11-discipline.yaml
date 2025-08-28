@@ -41,9 +41,7 @@ body:
     from other parts of the timescape.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -59,8 +57,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Phase Hurl
-  topMatter: Level 8 Null Heroic Ability
+  title: ''
+  topMatter: Level 8 Null Ability
 level: 8
 type: Main action
 version: 2

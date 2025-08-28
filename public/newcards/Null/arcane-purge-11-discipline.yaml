@@ -40,9 +40,7 @@ body:
     whenever they use an ability that costs Malice.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -58,8 +56,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Arcane Purge
-  topMatter: Level 8 Null Heroic Ability
+  title: ''
+  topMatter: Level 8 Null Ability
 level: 8
 type: Main action
 version: 2

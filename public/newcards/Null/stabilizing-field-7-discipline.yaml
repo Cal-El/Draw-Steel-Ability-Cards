@@ -7,9 +7,7 @@ body:
     turn. Each ally in the area also gains these benefits.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Self
@@ -19,8 +17,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: Stabilizing Field
-  topMatter: Level 3 Null Heroic Ability
+  title: ''
+  topMatter: Level 3 Null Ability
 level: 3
 type: Maneuver
 version: 2

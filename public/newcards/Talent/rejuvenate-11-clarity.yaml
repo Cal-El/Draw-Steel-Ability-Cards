@@ -15,9 +15,7 @@ body:
     and slowed (save ends).
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -32,8 +30,8 @@ header:
   - Psionic
   - Ranged
   target: Self or one ally
-  title: Rejuvenate
-  topMatter: Level 8 Talent Heroic Ability
+  title: ''
+  topMatter: Level 8 Talent Ability
 level: 8
 type: Maneuver
 version: 2

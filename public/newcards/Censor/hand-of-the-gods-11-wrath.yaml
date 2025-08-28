@@ -28,9 +28,7 @@ body:
     counts as an ally for the purpose of flanking.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -44,8 +42,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Hand of the Gods
-  topMatter: Level 8 Censor Heroic Ability
+  title: ''
+  topMatter: Level 8 Censor Ability
 level: 8
 type: Main action
 version: 2

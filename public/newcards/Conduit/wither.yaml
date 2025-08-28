@@ -49,7 +49,7 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: Wither
+  title: ''
   topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action

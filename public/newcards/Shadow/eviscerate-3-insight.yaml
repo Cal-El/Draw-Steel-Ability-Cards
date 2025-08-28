@@ -35,9 +35,7 @@ body:
       characteristic: Reason
       effect: bleeding (save ends)
       strength: 2
-cost:
-  costName: Insight
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -55,8 +53,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Eviscerate
-  topMatter: Level 1 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action
 version: 2

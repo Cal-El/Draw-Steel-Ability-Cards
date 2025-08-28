@@ -25,9 +25,7 @@ body:
       characteristicBonusOptions:
       - Reason
       includedKitValue: 0
-cost:
-  costName: Essence
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -42,8 +40,8 @@ header:
   - Strike
   - Void
   target: One creature or object
-  title: Subverted Perception of Space
-  topMatter: Level 5 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 5 Elementalist Ability
 level: 5
 type: Main action
 version: 2

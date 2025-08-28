@@ -31,9 +31,7 @@ body:
     made their strike, the ally or allies can pick a different target.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -51,8 +49,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Hammer and Anvil
-  topMatter: Level 1 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 1 Tactician Ability
 level: 1
 type: Main action
 version: 2

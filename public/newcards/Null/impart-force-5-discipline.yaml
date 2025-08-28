@@ -13,9 +13,7 @@ body:
     damage.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -30,8 +28,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Impart Force
-  topMatter: Level 1 Null Heroic Ability
+  title: ''
+  topMatter: Level 1 Null Ability
 level: 1
 type: Maneuver
 version: 2

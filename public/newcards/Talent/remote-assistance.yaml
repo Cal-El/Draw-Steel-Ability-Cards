@@ -19,7 +19,7 @@ header:
   - Psionic
   - Ranged
   target: One creature or object
-  title: Remote Assistance
+  title: ''
   topMatter: Level 1 Talent Ability
 level: 1
 type: Maneuver

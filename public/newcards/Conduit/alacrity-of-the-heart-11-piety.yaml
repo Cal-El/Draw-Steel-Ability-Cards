@@ -3,9 +3,7 @@ body:
     and gains 3 of their Heroic Resource.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -18,8 +16,8 @@ header:
   - Magic
   - Ranged
   target: One ally
-  title: Alacrity of the Heart
-  topMatter: Level 9 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 9 Conduit Ability
 level: 9
 type: Maneuver
 version: 2

@@ -20,9 +20,7 @@ body:
       baseValue: 19
       characteristicBonusOptions: []
       includedKitValue: 0
-cost:
-  costName: Piety
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 5 cube within [10]
@@ -36,8 +34,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: Solar Flare
-  topMatter: Level 9 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 9 Conduit Ability
 level: 9
 type: Main action
 version: 2

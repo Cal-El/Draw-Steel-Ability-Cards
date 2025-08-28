@@ -20,9 +20,7 @@ body:
     baseEffect: You can choose any of the current effects on you and the target that
       are ended by a saving throw or that end at the end of your turns, apply the
       chosen effects to the target, and end the rest.
-cost:
-  costName: Drama
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -36,8 +34,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Renegotiated Contract
-  topMatter: Level 9 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 9 Troubadour Ability
 level: 9
 type: Main action
 version: 2

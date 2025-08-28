@@ -28,9 +28,7 @@ body:
 - body: You can't use this ability if doing so would cause you to have negative clarity.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 3 burst
@@ -42,8 +40,8 @@ header:
   - Psionic
   - Telepathy
   target: Each ally and enemy in the area
-  title: Synaptic Terror
-  topMatter: Level 9 Talent Heroic Ability
+  title: ''
+  topMatter: Level 9 Talent Ability
 level: 9
 type: Main action
 version: 2

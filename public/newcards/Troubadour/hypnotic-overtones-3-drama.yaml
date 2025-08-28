@@ -23,9 +23,7 @@ body:
 - body: The size of the burst increases by 1 for every 2 drama spent.
   isEffect: true
   title: Spend 2+ Drama
-cost:
-  costName: Drama
-  costValue: '3'
+cost: null
 header:
   distance:
     display: 2 burst
@@ -36,8 +34,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: Hypnotic Overtones
-  topMatter: Level 1 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Main action
 version: 2

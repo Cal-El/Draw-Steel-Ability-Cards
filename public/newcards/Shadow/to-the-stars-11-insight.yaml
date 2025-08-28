@@ -27,9 +27,7 @@ body:
     difficult terrain.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee 1 or ranged 10
@@ -41,8 +39,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: To the Stars
-  topMatter: Level 9 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 9 Shadow Ability
 level: 9
 type: Main action
 version: 2

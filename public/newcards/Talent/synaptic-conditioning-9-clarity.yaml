@@ -27,9 +27,7 @@ body:
     to be your enemies when using your abilities and features.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [2]
@@ -45,8 +43,8 @@ header:
   - Strike
   - Telepathy
   target: One creature
-  title: Synaptic Conditioning
-  topMatter: Level 6 Talent Heroic Ability
+  title: ''
+  topMatter: Level 6 Talent Ability
 level: 6
 type: Main action
 version: 2

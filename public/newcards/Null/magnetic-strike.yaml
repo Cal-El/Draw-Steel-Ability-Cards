@@ -39,7 +39,7 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Magnetic Strike
+  title: ''
   topMatter: Level 1 Null Ability
 level: 1
 type: Main action

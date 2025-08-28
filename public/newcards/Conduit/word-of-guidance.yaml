@@ -21,7 +21,7 @@ header:
   - Magic
   - Ranged
   target: One ally
-  title: Word of Guidance
+  title: ''
   topMatter: Level 1 Conduit Ability
 level: 1
 type: Triggered Action

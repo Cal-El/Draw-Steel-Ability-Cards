@@ -14,9 +14,7 @@ body:
     dying, and you have a +2 bonus to potencies.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self
@@ -25,8 +23,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: Absolute Zero
-  topMatter: Level 9 Null Heroic Ability
+  title: ''
+  topMatter: Level 9 Null Ability
 level: 9
 type: Maneuver
 version: 2

@@ -5,9 +5,7 @@ body:
     allies.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 4 aura
@@ -17,8 +15,8 @@ header:
   - Area
   - Magic
   target: Each creature in the area
-  title: Aura of Souls
-  topMatter: Level 6 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 6 Conduit Ability
 level: 6
 type: Maneuver
 version: 2

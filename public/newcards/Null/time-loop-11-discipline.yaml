@@ -3,9 +3,7 @@ body:
     can be used only once per combat round.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self
@@ -14,8 +12,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: Time Loop
-  topMatter: Level 9 Null Heroic Ability
+  title: ''
+  topMatter: Level 9 Null Ability
 level: 9
 type: Free triggered
 version: 2

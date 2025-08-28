@@ -41,9 +41,7 @@ body:
     given a supernatural cure or you choose to reverse the effect (no action required).
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -58,8 +56,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: To Stone!
-  topMatter: Level 5 Fury Heroic Ability
+  title: ''
+  topMatter: Level 5 Fury Ability
 level: 5
 type: Main action
 version: 2

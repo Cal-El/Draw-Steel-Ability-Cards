@@ -28,9 +28,7 @@ body:
     same damage.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -44,8 +42,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Out of the Way!
-  topMatter: Level 1 Fury Heroic Ability
+  title: ''
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Main action
 version: 2

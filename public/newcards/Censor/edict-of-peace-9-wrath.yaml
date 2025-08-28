@@ -4,9 +4,7 @@ body:
     the target takes holy damage equal to your Presence score.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 3 aura
@@ -16,8 +14,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: Edict of Peace
-  topMatter: Level 6 Censor Heroic Ability
+  title: ''
+  topMatter: Level 6 Censor Ability
 level: 6
 type: Maneuver
 version: 2

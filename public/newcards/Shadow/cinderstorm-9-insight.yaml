@@ -5,9 +5,7 @@ body:
     movement in concealment or cover can use the Hide maneuver even if they are observed.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 4 burst
@@ -16,8 +14,8 @@ header:
   keywords:
   - Magic
   target: Self and each ally in the area
-  title: Cinderstorm
-  topMatter: Level 6 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 6 Shadow Ability
 level: 6
 type: Maneuver
 version: 2

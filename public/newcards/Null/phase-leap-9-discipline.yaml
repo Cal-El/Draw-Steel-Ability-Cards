@@ -8,9 +8,7 @@ body:
     were in the afterimage's space.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Self
@@ -19,8 +17,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: Phase Leap
-  topMatter: Level 5 Null Heroic Ability
+  title: ''
+  topMatter: Level 5 Null Ability
 level: 5
 type: Move
 version: 2

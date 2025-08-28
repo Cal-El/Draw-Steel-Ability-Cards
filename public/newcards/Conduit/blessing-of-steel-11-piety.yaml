@@ -3,9 +3,7 @@ body:
     a bane and each target has damage immunity 5.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 5 aura
@@ -15,8 +13,8 @@ header:
   - Area
   - Magic
   target: Self and each ally in the area
-  title: Blessing of Steel
-  topMatter: Level 8 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 8 Conduit Ability
 level: 8
 type: Maneuver
 version: 2

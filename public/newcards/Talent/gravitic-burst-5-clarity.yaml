@@ -24,9 +24,7 @@ body:
     your turn.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '5'
+cost: null
 header:
   distance:
     display: 1 burst
@@ -37,8 +35,8 @@ header:
   - Psionic
   - Telekinesis
   target: Each enemy in the area
-  title: Gravitic Burst
-  topMatter: Level 2 Talent Heroic Ability
+  title: ''
+  topMatter: Level 2 Talent Ability
 level: 2
 type: Main action
 version: 2

@@ -26,9 +26,7 @@ body:
 - body: You and each ally adjacent to the target gain 10 temporary Stamina.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -42,8 +40,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Squad! Gear Check!
-  topMatter: Level 5 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 5 Tactician Ability
 level: 5
 type: Main action
 version: 2

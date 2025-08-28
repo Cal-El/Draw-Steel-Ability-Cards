@@ -42,7 +42,7 @@ header:
   - Strike
   - Telepathy
   target: One creature
-  title: Mind Spike
+  title: ''
   topMatter: Level 1 Talent Ability
 level: 1
 type: Main action

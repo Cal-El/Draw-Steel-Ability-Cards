@@ -27,9 +27,7 @@ body:
     power roll again without spending essence (no action required).
   isEffect: true
   title: Persistent 1
-cost:
-  costName: Essence
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -44,8 +42,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: The Flesh, a Crucible
-  topMatter: Level 1 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action
 version: 2

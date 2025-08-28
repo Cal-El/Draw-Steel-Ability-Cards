@@ -35,9 +35,7 @@ body:
       characteristic: Intuition
       effect: frightened (save ends)
       strength: 2
-cost:
-  costName: Piety
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -51,8 +49,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: Curse of Terror
-  topMatter: Level 1 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action
 version: 2

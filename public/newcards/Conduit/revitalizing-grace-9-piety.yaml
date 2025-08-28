@@ -4,9 +4,7 @@ body:
     the end of their turn, or they can stand up if prone.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 4 burst
@@ -16,8 +14,8 @@ header:
   - Area
   - Magic
   target: Self and each ally in the area
-  title: Revitalizing Grace
-  topMatter: Level 6 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 6 Conduit Ability
 level: 6
 type: Main action
 version: 2

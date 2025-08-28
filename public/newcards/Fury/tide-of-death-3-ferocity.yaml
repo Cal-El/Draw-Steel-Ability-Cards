@@ -30,9 +30,7 @@ body:
     each opportunity attack you trigger during your move.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Self; see below
@@ -42,8 +40,8 @@ header:
   - Melee
   - Weapon
   target: Self
-  title: Tide of Death
-  topMatter: Level 1 Fury Heroic Ability
+  title: ''
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Main action
 version: 2

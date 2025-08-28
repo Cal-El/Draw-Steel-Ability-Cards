@@ -48,7 +48,7 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: Witty Banter
+  title: ''
   topMatter: Level 1 Troubadour Ability
 level: 1
 type: Main action

@@ -39,9 +39,7 @@ body:
     at the end of each of your turns.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -55,8 +53,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Your Entrails Are Your Extrails!
-  topMatter: Level 1 Fury Heroic Ability
+  title: ''
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Main action
 version: 2

@@ -25,9 +25,7 @@ body:
       characteristic: Agility
       effect: prone and can't stand (EoT)
       strength: 2
-cost:
-  costName: Drama
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Self; see below
@@ -39,8 +37,8 @@ header:
   - Strike
   - Weapon
   target: Self
-  title: Upstage
-  topMatter: Level 1 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Maneuver
 version: 2

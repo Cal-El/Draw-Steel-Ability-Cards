@@ -24,9 +24,7 @@ body:
       baseValue: 11
       characteristicBonusOptions: []
       includedKitValue: 0
-cost:
-  costName: Ferocity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Self
@@ -35,8 +33,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: Avalanche Impact
-  topMatter: Level 6 Fury Heroic Ability
+  title: ''
+  topMatter: Level 6 Fury Ability
 level: 6
 type: Maneuver
 version: 2

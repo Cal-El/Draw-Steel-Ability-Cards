@@ -2,9 +2,7 @@ body:
 - body: You take your turn after the triggering hero.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '1'
+cost: null
 header:
   distance:
     display: Self
@@ -13,8 +11,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: Hesitation Is Weakness
-  topMatter: Level 1 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Free triggered
 version: 2

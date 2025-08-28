@@ -18,7 +18,7 @@ header:
   - Area
   - Psionic
   target: Each ally in the area
-  title: Levitation Field
+  title: ''
   topMatter: Level 8 Talent Ability
 level: 8
 type: Maneuver

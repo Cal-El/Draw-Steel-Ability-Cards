@@ -43,9 +43,7 @@ body:
     If that enemy has P < AVERAGE, they are frightened of you (save ends).
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -59,8 +57,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Seek and Destroy
-  topMatter: Level 6 Fury Heroic Ability
+  title: ''
+  topMatter: Level 6 Fury Ability
 level: 6
 type: Main action
 version: 2

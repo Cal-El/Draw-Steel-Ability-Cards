@@ -24,9 +24,7 @@ body:
       baseValue: 9
       characteristicBonusOptions: []
       includedKitValue: 0
-cost:
-  costName: Insight
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Self; see below
@@ -36,8 +34,8 @@ header:
   - Melee
   - Weapon
   target: Self
-  title: One Hundred Throats
-  topMatter: Level 1 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action
 version: 2

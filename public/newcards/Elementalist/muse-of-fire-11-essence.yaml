@@ -23,9 +23,7 @@ body:
 - body: The Director's Malice can become negative as a result of this ability.
   isEffect: true
   title: Effect
-cost:
-  costName: Essence
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 5 cube within [10]
@@ -40,8 +38,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: Muse of Fire
-  topMatter: Level 8 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 8 Elementalist Ability
 level: 8
 type: Main action
 version: 2

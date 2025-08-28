@@ -34,7 +34,7 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: Lightfall
+  title: ''
   topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action

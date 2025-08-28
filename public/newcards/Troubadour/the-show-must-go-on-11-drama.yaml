@@ -37,9 +37,7 @@ body:
     next test they make before the start of your next turn.
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 5 cube within [10]
@@ -54,8 +52,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: The Show Must Go On
-  topMatter: Level 8 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 8 Troubadour Ability
 level: 8
 type: Maneuver
 version: 2

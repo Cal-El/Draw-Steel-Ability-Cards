@@ -3,9 +3,7 @@ body:
     regain Stamina equal to 5 + your Intuition score.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -18,8 +16,8 @@ header:
   - Magic
   - Ranged
   target: Each ally
-  title: Reap
-  topMatter: Level 2 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 2 Conduit Ability
 level: 2
 type: Maneuver
 version: 2

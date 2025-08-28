@@ -18,7 +18,7 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: Power Chord
+  title: ''
   topMatter: Level 1 Troubadour Ability
 level: 1
 type: Maneuver

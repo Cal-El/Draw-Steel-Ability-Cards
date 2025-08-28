@@ -41,7 +41,7 @@ header:
   - Strike
   - Void
   target: One creature
-  title: Grasp of Beyond
+  title: ''
   topMatter: Level 1 Elementalist Ability
 level: 1
 type: Main action

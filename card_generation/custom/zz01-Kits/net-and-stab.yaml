@@ -1,0 +1,59 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+    potency:
+      characteristic: Agility
+      strength: 0
+      effect: slowed (EoT)
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+    potency:
+      characteristic: Agility
+      strength: 1
+      effect: slowed (EoT)
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+    potency:
+      characteristic: Agility
+      strength: 2
+      effect: restrained (EoT)
+cost: null
+header:
+  distance:
+    display: Melee [2]
+    values:
+    - type: Melee
+      baseValue: 2
+      includedKitValue: 1
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Net and Stab
+  topMatter: Retarius Kit Signature Ability
+  flavour: The well-thrown net that follows your main attack leaves your foes right where you want them.
+type: Main action
+version: 2

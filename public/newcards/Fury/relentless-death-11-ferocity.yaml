@@ -14,9 +14,7 @@ body:
     baseEffect: Any target whose Stamina is equal to or less than 11 dies.
   t3:
     baseEffect: Any target whose Stamina is equal to or less than 17 dies.
-cost:
-  costName: Ferocity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self; see below
@@ -28,8 +26,8 @@ header:
   - Strike
   - Weapon
   target: Self
-  title: Relentless Death
-  topMatter: Level 8 Fury Heroic Ability
+  title: ''
+  topMatter: Level 8 Fury Ability
 level: 8
 type: Main action
 version: 2

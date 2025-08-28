@@ -4,9 +4,7 @@ body:
     triggered action.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Self
@@ -15,8 +13,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: Dancer
-  topMatter: Level 3 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 3 Shadow Ability
 level: 3
 type: Maneuver
 version: 2

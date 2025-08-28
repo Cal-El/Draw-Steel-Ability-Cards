@@ -41,7 +41,7 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Instigator
+  title: ''
   topMatter: Level 1 Troubadour Ability
 level: 1
 type: Main action

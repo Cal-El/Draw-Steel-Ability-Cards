@@ -4,9 +4,7 @@ body:
     take psychic damage equal to your Intuition score whenever they use a main action.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self; see below
@@ -16,8 +14,8 @@ header:
   keywords:
   - Psionic
   target: Self or one creature
-  title: Synaptic Anchor
-  topMatter: Level 8 Null Heroic Ability
+  title: ''
+  topMatter: Level 8 Null Ability
 level: 8
 type: Free triggered
 version: 2

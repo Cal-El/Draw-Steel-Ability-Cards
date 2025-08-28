@@ -41,9 +41,7 @@ body:
 - body: You take 3d6 damage.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [2]
@@ -58,8 +56,8 @@ header:
   - Strike
   - Telepathy
   target: One creature
-  title: Mindwipe
-  topMatter: Level 8 Talent Heroic Ability
+  title: ''
+  topMatter: Level 8 Talent Ability
 level: 8
 type: Main action
 version: 2

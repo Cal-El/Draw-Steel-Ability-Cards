@@ -24,9 +24,7 @@ body:
     to you, and can be pushed into other targets in the same line.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '5'
+cost: null
 header:
   distance:
     display: 5 x 1 line within [1]
@@ -40,8 +38,8 @@ header:
   - Melee
   - Weapon
   target: Each enemy in the area
-  title: Thunder Roar
-  topMatter: Level 1 Fury Heroic Ability
+  title: ''
+  topMatter: Level 1 Fury Ability
 level: 1
 type: Main action
 version: 2

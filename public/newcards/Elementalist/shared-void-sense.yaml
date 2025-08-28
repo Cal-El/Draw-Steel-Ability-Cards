@@ -18,7 +18,7 @@ header:
   - Ranged
   - Void
   target: Special
-  title: Shared Void Sense
+  title: ''
   topMatter: Level 1 Elementalist Ability
 level: 1
 type: Maneuver

@@ -4,9 +4,7 @@ body:
     source of the damage.
   isEffect: true
   title: Effect
-cost:
-  costName: Drama
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -20,8 +18,8 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: Power Ballad
-  topMatter: Level 8 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 8 Troubadour Ability
 level: 8
 type: Maneuver
 version: 2

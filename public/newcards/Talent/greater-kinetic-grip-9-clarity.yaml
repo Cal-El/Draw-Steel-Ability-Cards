@@ -24,9 +24,7 @@ body:
     (save ends).
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -41,8 +39,8 @@ header:
   - Strike
   - Telekinesis
   target: One creature or object
-  title: Greater Kinetic Grip
-  topMatter: Level 6 Talent Heroic Ability
+  title: ''
+  topMatter: Level 6 Talent Ability
 level: 6
 type: Main action
 version: 2

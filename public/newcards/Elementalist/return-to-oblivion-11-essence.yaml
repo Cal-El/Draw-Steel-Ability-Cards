@@ -7,9 +7,7 @@ body:
     destroyed.
   isEffect: true
   title: Effect
-cost:
-  costName: Essence
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -24,8 +22,8 @@ header:
   - Ranged
   - Void
   target: Special
-  title: Return to Oblivion
-  topMatter: Level 8 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 8 Elementalist Ability
 level: 8
 type: Main action
 version: 2

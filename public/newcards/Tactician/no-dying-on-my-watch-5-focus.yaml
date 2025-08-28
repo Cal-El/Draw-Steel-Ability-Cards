@@ -30,9 +30,7 @@ body:
       characteristic: Reason
       effect: the target is frightened of the triggering ally (save ends)
       strength: 2
-cost:
-  costName: Focus
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [5]
@@ -46,8 +44,8 @@ header:
   - Strike
   - Weapon
   target: One enemy
-  title: No Dying on My Watch
-  topMatter: Level 2 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 2 Tactician Ability
 level: 2
 type: Triggered Action
 version: 2

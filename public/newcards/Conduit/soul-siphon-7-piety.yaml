@@ -26,9 +26,7 @@ body:
 - body: One ally within distance can spend any number of Recoveries.
   isEffect: true
   title: Effect
-cost:
-  costName: Piety
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -43,8 +41,8 @@ header:
   - Ranged
   - Strike
   target: One enemy
-  title: Soul Siphon
-  topMatter: Level 3 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 3 Conduit Ability
 level: 3
 type: Main action
 version: 2

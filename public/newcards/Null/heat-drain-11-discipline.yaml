@@ -41,9 +41,7 @@ body:
     is reduced by 2.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -57,8 +55,8 @@ header:
   - Psionic
   - Strike
   target: One creature
-  title: Heat Drain
-  topMatter: Level 9 Null Heroic Ability
+  title: ''
+  topMatter: Level 9 Null Ability
 level: 9
 type: Maneuver
 version: 2

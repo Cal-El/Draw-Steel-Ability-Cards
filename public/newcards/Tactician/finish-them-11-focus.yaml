@@ -3,9 +3,7 @@ body:
     be winded can spend a Recovery.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged 10
@@ -14,8 +12,8 @@ header:
   keywords:
   - Ranged
   target: One creature
-  title: Finish Them!
-  topMatter: Level 8 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 8 Tactician Ability
 level: 8
 type: Free triggered
 version: 2

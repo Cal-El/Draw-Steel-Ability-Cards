@@ -29,7 +29,7 @@ header:
   - Ranged
   - Void
   target: Special
-  title: There Is No Space Between
+  title: ''
   topMatter: Level 2 Elementalist Ability
 level: 2
 type: Maneuver

@@ -32,9 +32,7 @@ body:
       characteristic: Might
       effect: prone and can't stand (save ends)
       strength: 2
-cost:
-  costName: Piety
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 10 x 2 line within [5]
@@ -48,8 +46,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: Spirit Stampede
-  topMatter: Level 6 Conduit Heroic Ability
+  title: ''
+  topMatter: Level 6 Conduit Ability
 level: 6
 type: Main action
 version: 2

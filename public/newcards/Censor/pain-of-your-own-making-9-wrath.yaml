@@ -4,9 +4,7 @@ body:
     score.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -19,8 +17,8 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: Pain of Your Own Making
-  topMatter: Level 6 Censor Heroic Ability
+  title: ''
+  topMatter: Level 6 Censor Ability
 level: 6
 type: Free triggered
 version: 2

@@ -7,9 +7,7 @@ body:
     has a double edge on power rolls.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -22,8 +20,8 @@ header:
   - Magic
   - Ranged
   target: One ally
-  title: Fulfill Your Destiny
-  topMatter: Level 9 Censor Heroic Ability
+  title: ''
+  topMatter: Level 9 Censor Ability
 level: 9
 type: Triggered Action
 version: 2

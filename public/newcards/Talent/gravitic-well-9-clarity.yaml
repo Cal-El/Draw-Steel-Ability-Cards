@@ -27,9 +27,7 @@ body:
     within distance.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 4 cube within [10]
@@ -44,8 +42,8 @@ header:
   - Ranged
   - Telekinesis
   target: Each creature and object in the area
-  title: Gravitic Well
-  topMatter: Level 6 Talent Heroic Ability
+  title: ''
+  topMatter: Level 6 Talent Ability
 level: 6
 type: Main action
 version: 2

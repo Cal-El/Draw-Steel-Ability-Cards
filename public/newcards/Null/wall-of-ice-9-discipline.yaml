@@ -8,9 +8,7 @@ body:
     and has M < AVERAGE is restrained (save ends).
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 10 wall within [10]
@@ -24,8 +22,8 @@ header:
   - Psionic
   - Ranged
   target: Special
-  title: Wall of Ice
-  topMatter: Level 6 Null Heroic Ability
+  title: ''
+  topMatter: Level 6 Null Ability
 level: 6
 type: Main action
 version: 2

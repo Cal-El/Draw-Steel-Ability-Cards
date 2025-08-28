@@ -4,9 +4,7 @@ body:
     up to 2 squares between your use of each ability.
   isEffect: true
   title: Effect
-cost:
-  costName: Essence
-  costValue: '11'
+cost: null
 header:
   distance:
     display: Self
@@ -16,8 +14,8 @@ header:
   - Magic
   - Void
   target: Self
-  title: Prism
-  topMatter: Level 9 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 9 Elementalist Ability
 level: 9
 type: Main action
 version: 2

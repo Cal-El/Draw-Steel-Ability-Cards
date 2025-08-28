@@ -29,9 +29,7 @@ body:
     again without spending essence.
   isEffect: true
   title: Persistent 1
-cost:
-  costName: Essence
-  costValue: '9'
+cost: null
 header:
   distance:
     display: 4 cube within [10]
@@ -46,8 +44,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: Storm of Sands
-  topMatter: Level 5 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 5 Elementalist Ability
 level: 5
 type: Main action
 version: 2

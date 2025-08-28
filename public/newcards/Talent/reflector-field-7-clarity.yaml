@@ -9,9 +9,7 @@ body:
     you take 2d6 damage and forget a memory, as determined by you and the Director.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '7'
+cost: null
 header:
   distance:
     display: 3 aura
@@ -22,8 +20,8 @@ header:
   - Psionic
   - Telepathy
   target: Special
-  title: Reflector Field
-  topMatter: Level 3 Talent Heroic Ability
+  title: ''
+  topMatter: Level 3 Talent Ability
 level: 3
 type: Main action
 version: 2

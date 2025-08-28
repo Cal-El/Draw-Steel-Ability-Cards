@@ -27,9 +27,7 @@ body:
     end of the target's next turn.
   isEffect: true
   title: Effect
-cost:
-  costName: Insight
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -47,8 +45,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Misdirecting Strike
-  topMatter: Level 3 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 3 Shadow Ability
 level: 3
 type: Main action
 version: 2

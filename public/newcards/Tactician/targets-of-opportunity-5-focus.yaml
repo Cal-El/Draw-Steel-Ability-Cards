@@ -4,9 +4,7 @@ body:
     marked by you, you can spend 2 focus to add one additional target to the strike.'
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged 5
@@ -16,8 +14,8 @@ header:
   keywords:
   - Ranged
   target: Two creatures
-  title: Targets of Opportunity
-  topMatter: Level 2 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 2 Tactician Ability
 level: 2
 type: Maneuver
 version: 2

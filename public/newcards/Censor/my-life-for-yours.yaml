@@ -23,7 +23,7 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: My Life for Yours
+  title: ''
   topMatter: Level 1 Censor Ability
 level: 1
 type: Triggered Action

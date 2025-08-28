@@ -35,9 +35,7 @@ body:
       characteristic: Might
       effect: prone and can't stand (save ends)
       strength: 2
-cost:
-  costName: Insight
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -55,8 +53,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: Staggering Blow
-  topMatter: Level 3 Shadow Heroic Ability
+  title: ''
+  topMatter: Level 3 Shadow Ability
 level: 3
 type: Main action
 version: 2

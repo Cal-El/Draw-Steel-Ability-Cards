@@ -7,9 +7,7 @@ body:
     equal to your Intuition score.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Self
@@ -18,8 +16,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: Molecular Rearrangement Field
-  topMatter: Level 3 Null Heroic Ability
+  title: ''
+  topMatter: Level 3 Null Ability
 level: 3
 type: Maneuver
 version: 2

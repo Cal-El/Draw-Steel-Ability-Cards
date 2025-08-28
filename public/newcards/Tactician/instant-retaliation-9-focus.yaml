@@ -24,9 +24,7 @@ body:
       characteristic: Agility
       effect: dazed (save ends)
       strength: 2
-cost:
-  costName: Focus
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Melee [1]
@@ -39,8 +37,8 @@ header:
   - Melee
   - Weapon
   target: One ally
-  title: Instant Retaliation
-  topMatter: Level 6 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 6 Tactician Ability
 level: 6
 type: Free triggered
 version: 2

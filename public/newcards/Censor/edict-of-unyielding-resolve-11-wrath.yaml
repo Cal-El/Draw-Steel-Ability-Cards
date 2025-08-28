@@ -3,9 +3,7 @@ body:
     their turn in the area gains 10 temporary Stamina.
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 2 aura
@@ -15,8 +13,8 @@ header:
   - Area
   - Magic
   target: Self and each ally in the area
-  title: Edict of Unyielding Resolve
-  topMatter: Level 9 Censor Heroic Ability
+  title: ''
+  topMatter: Level 9 Censor Ability
 level: 9
 type: Maneuver
 version: 2

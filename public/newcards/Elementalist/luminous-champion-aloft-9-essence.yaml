@@ -8,9 +8,7 @@ body:
 - body: The effect lasts until the start of your next turn.
   isEffect: true
   title: Persistent 1
-cost:
-  costName: Essence
-  costValue: '9'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -26,8 +24,8 @@ header:
   - Ranged
   - Void
   target: Self or one ally
-  title: Luminous Champion Aloft
-  topMatter: Level 6 Elementalist Heroic Ability
+  title: ''
+  topMatter: Level 6 Elementalist Ability
 level: 6
 type: Maneuver
 version: 2

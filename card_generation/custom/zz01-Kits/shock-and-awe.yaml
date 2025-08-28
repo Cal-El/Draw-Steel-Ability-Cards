@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+- body: The target takes a bane on their next power roll made before the end of their next turn.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1] or ranged [10]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 5
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Shock and Awe
+  topMatter: Raider Kit Signature Ability
+  flavour: You execute a brutal strike that leaves your foe reeling.
+type: Main action
+version: 2

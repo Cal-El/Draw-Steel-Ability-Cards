@@ -49,7 +49,7 @@ header:
   - Resopathy
   - Strike
   target: One creature or object
-  title: Materialize
+  title: ''
   topMatter: Level 1 Talent Ability
 level: 1
 type: Main action

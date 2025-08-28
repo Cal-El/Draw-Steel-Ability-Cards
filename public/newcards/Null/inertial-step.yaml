@@ -41,7 +41,7 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: Inertial Step
+  title: ''
   topMatter: Level 1 Null Ability
 level: 1
 type: Main action

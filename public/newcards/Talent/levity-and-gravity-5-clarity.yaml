@@ -38,9 +38,7 @@ body:
 - body: You take half the damage the target takes.
   isEffect: true
   title: Strained
-cost:
-  costName: Clarity
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -56,8 +54,8 @@ header:
   - Strike
   - Telekinesis
   target: One creature or object
-  title: Levity and Gravity
-  topMatter: Level 2 Talent Heroic Ability
+  title: ''
+  topMatter: Level 2 Talent Ability
 level: 2
 type: Main action
 version: 2

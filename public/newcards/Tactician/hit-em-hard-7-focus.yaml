@@ -4,9 +4,7 @@ body:
     they can use immediately.
   isEffect: true
   title: Effect
-cost:
-  costName: Focus
-  costValue: '7'
+cost: null
 header:
   distance:
     display: Self
@@ -15,8 +13,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: Hit 'Em Hard!
-  topMatter: Level 3 Tactician Heroic Ability
+  title: ''
+  topMatter: Level 3 Tactician Ability
 level: 3
 type: Maneuver
 version: 2

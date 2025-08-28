@@ -3,9 +3,7 @@ body:
     power rolls.
   isEffect: true
   title: Effect
-cost:
-  costName: Discipline
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Self
@@ -14,8 +12,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: Blur
-  topMatter: Level 2 Null Heroic Ability
+  title: ''
+  topMatter: Level 2 Null Ability
 level: 2
 type: Maneuver
 version: 2

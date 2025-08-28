@@ -5,9 +5,7 @@ body:
     0).
   isEffect: true
   title: Effect
-cost:
-  costName: Wrath
-  costValue: '5'
+cost: null
 header:
   distance:
     display: Ranged [10]
@@ -20,8 +18,8 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: With My Blessing
-  topMatter: Level 2 Censor Heroic Ability
+  title: ''
+  topMatter: Level 2 Censor Ability
 level: 2
 type: Main action
 version: 2

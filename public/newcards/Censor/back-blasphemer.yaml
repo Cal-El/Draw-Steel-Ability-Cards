@@ -35,7 +35,7 @@ header:
   - Melee
   - Weapon
   target: Each enemy in the area
-  title: Back Blasphemer!
+  title: ''
   topMatter: Level 1 Censor Ability
 level: 1
 type: Main action

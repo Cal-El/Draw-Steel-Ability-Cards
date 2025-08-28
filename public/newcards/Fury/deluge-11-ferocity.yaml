@@ -23,9 +23,7 @@ body:
 - body: This ability deals your primordial damage type and ignores damage immunity.
   isEffect: true
   title: Effect
-cost:
-  costName: Ferocity
-  costValue: '11'
+cost: null
 header:
   distance:
     display: 5 cube within [10]
@@ -39,8 +37,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: Deluge
-  topMatter: Level 9 Fury Heroic Ability
+  title: ''
+  topMatter: Level 9 Fury Ability
 level: 9
 type: Main action
 version: 2

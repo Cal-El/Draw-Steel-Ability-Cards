@@ -22,7 +22,7 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: Breath of Dawn Remembered
+  title: ''
   topMatter: Level 1 Elementalist Ability
 level: 1
 type: Triggered Action

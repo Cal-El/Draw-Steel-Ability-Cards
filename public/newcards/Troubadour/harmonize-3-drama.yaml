@@ -11,9 +11,7 @@ body:
     Resource cost of 3 + each additional drama spent.
   isEffect: true
   title: Spend 1+ Drama
-cost:
-  costName: Drama
-  costValue: '3'
+cost: null
 header:
   distance:
     display: Ranged 5
@@ -22,8 +20,8 @@ header:
   keywords:
   - Ranged
   target: One ally
-  title: Harmonize
-  topMatter: Level 1 Troubadour Heroic Ability
+  title: ''
+  topMatter: Level 1 Troubadour Ability
 level: 1
 type: Triggered Action
 version: 2
