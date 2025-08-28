@@ -9,7 +9,7 @@ import {saveImage} from "../../utils/download-utils.ts";
 import {toast} from "react-toastify";
 import {EditCardMenu} from "../editable-ability-card-root/edit-card-menu/edit-card-menu.tsx";
 import {UpgradeCard} from "../../utils/ability-card-upgrader.ts";
-import CardEditor from "./card-editor.tsx";
+import CardEditor from "./card-editor/card-editor.tsx";
 
 export type CloseCallbackFunction = (_: Card | undefined) => void;
 export type DeleteCallbackFunction = () => void;

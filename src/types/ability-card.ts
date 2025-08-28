@@ -129,6 +129,12 @@ export enum potency_strength {
   STRONG
 }
 
+export const all_potency_strength = [
+  potency_strength.WEAK,
+  potency_strength.AVERAGE,
+  potency_strength.STRONG,
+]
+
 export enum abilityType {
   mainAction = 'Main Action',
   maneuver = 'Maneuver',
