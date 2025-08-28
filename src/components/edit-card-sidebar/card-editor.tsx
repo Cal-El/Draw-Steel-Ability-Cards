@@ -10,7 +10,7 @@ import {
   power_roll, power_roll_tier,
   spacer
 } from "../../types/ability-card.ts";
-import Select from "react-select";
+import Select, {components, MultiValueGenericProps} from "react-select";
 import {keywords, rawKeywords} from "../../types/keywords.ts";
 import {
   actionBg20ColorStyle,
@@ -19,6 +19,7 @@ import {
   borderColorStyle
 } from "../../types/ability-card-types.ts";
 import {HiArrowDown, HiArrowUp, HiX} from "react-icons/hi";
+import {MultiValueProps} from "react-select/dist/declarations/src/components/MultiValue";
 
 function EditorTypeSwitch({useTextEditor, setUseTextEditor} : {useTextEditor : boolean, setUseTextEditor : Dispatch<boolean>}) {
   return (
@@ -87,6 +88,7 @@ function EditKeywordsInput({fieldName, fieldValues, onChange}: {fieldName: strin
       onChange={(newValue) => onChange(newValue.map((x) => {return x.value}).sort())}
       options={keywords}
       isMulti
+      components={{MultiValue}}
       className={`col-span-3 border-2 border-stone-400`}
       theme={(t) => ({
         ...t,
@@ -96,9 +98,16 @@ function EditKeywordsInput({fieldName, fieldValues, onChange}: {fieldName: strin
   </div>
 }
 
-function EditCharacteristicInput({fieldName, fieldValues, onChange, isBold=true}: {fieldName: string, fieldValues: string[] | string, onChange: (ks: characteristic[]) => void, isBold:boolean},) {
+const MultiValue = (props: MultiValueProps) => (
+  <button className={`rounded-sm border-orange-300 border-1 border bg-orange-50 text-gray-600 font-medium px-1 mx-0.5 min-w-[15pt]`}
+          onClick={props.removeProps.onClick}>
+    {props.data.label}
+  </button>
+);
+
+function EditCharacteristicInput({fieldName, fieldValues, onChange, isBold=true, useSmall=false}: {fieldName: string, fieldValues: string[] | string, onChange: (ks: characteristic[]) => void, isBold:boolean, useSmall:boolean},) {
   const [keywordsInputVal, setKeywordsInputVal] = useState("");
-  const cOptions = all_characteristics.map((s) => {return {value: s, label: s}})
+  const cOptions = all_characteristics.map((s) => {return {value: s, label: (useSmall ? s[0] : s)}})
   const fv = (fieldValues as string[]).map ? fieldValues as string[] : [fieldValues as string]
 
   return <div className={`col-span-full grid grid-cols-subgrid gap-2 items-center`}>
@@ -107,7 +116,7 @@ function EditCharacteristicInput({fieldName, fieldValues, onChange, isBold=true}
     </div>
     <Select
       inputValue={keywordsInputVal}
-      value={fv.map((s) => {return {label: s, value: s}})}
+      value={fv.map((s) => {return {label: (useSmall ? s[0] : s), value: s}})}
       onInputChange={(newValue) => {
         if (newValue.includes(", ")) {
           const values = newValue.split(", ");
@@ -130,6 +139,12 @@ function EditCharacteristicInput({fieldName, fieldValues, onChange, isBold=true}
       options={cOptions}
       isMulti
       className={`col-span-3 border-2 border-stone-400`}
+      isClearable={false}
+      components={{MultiValue}}
+      styles={{
+        valueContainer: (base) => ({ ...base, flexWrap: "nowrap", overflow: "hidden" }),
+        multiValueRemove: (base) => ({ ...base, maxWidth: '12pt'}),
+      }}
       theme={(t) => ({
         ...t,
         borderRadius: 0,
@@ -398,8 +413,8 @@ function PowerRollTierBodyEditor({tier, tierNum, card, setCard, bodyIdx} : {card
             </div>
             <input value={tier.damage?.includedKitValue} type={"number"} onChange={(e) => {
             }} className={`border-2 border-stone-400 p-1 w-[40pt] flex-none text-center`}></input>
-            <div className={`col-start-2 col-span-4 grid grid-cols-2 gap-x-2 gap-y-1`}>
-              <EditCharacteristicInput isBold={false} fieldName={'Characteristic Bonus Options'} fieldValues={tier.damage?.characteristicBonusOptions} onChange={(e) => {}}/>
+            <div className={`col-start-2 col-span-4 grid grid-cols-[1fr_1fr] gap-x-2 gap-y-1`}>
+              <EditCharacteristicInput isBold={false} useSmall={true} fieldName={'Characteristic Bonus Options'} fieldValues={tier.damage?.characteristicBonusOptions} onChange={(e) => {}}/>
               <EditTextInput isBold={false} fieldName={'Other bonuses'} fieldValue={tier.damage?.otherBonus} onChange={(e) => {}}/>
             </div>
           </>}
@@ -610,7 +625,7 @@ export default function CardEditor({card, setCard} : {card: Card, setCard: Dispa
   const [useTextEditor, setUseTextEditor] = useState(false);
 
   return (
-    <div className={`h-full w-full overflow-y-scroll scrollbar border-t border-t-gray-300 flex flex-col gap-[10pt]`}>
+    <div className={`h-full max-w-[511.5pt] overflow-y-scroll scrollbar border-t border-t-gray-300 flex flex-col gap-[10pt]`}>
       <EditorTypeSwitch useTextEditor={useTextEditor} setUseTextEditor={setUseTextEditor}/>
       {useTextEditor ?
         <TextEditor card={card} cardNum={1} updateCard={(_, c) => setCard(c)}/> :
