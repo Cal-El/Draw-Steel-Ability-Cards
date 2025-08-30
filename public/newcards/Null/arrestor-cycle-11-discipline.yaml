@@ -3,19 +3,19 @@ body:
   - Intuition
   isPowerRoll: true
   t1:
-    baseEffect: < WEAK, the target loses their turn
+    baseEffect: null
     potency:
       characteristic: Intuition
       effect: the target loses their turn
       strength: 0
   t2:
-    baseEffect: < AVERAGE, the target loses their turn
+    baseEffect: null
     potency:
       characteristic: Intuition
       effect: the target loses their turn
       strength: 1
   t3:
-    baseEffect: < STRONG, the target loses their turn
+    baseEffect: null
     potency:
       characteristic: Intuition
       effect: the target loses their turn

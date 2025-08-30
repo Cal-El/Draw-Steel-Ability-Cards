@@ -387,11 +387,11 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
   const dmg = parseDamageBlock()
 
   return {
-    hasDamage: tier.damage !== undefined,
+    hasDamage: !!tier.damage,
     damageValue: dmg?.damageString,
-    hasGeneralEffect: tier.baseEffect !== undefined,
+    hasGeneralEffect: !!tier.baseEffect,
     generalEffect: (dmg?.effectPrefix ? dmg.effectPrefix + " " : "") + tier.baseEffect,
-    hasPotency: tier.potency !== undefined,
+    hasPotency: !!tier.potency,
     potencyValue: `${tier.potency?.characteristic.toString().toLowerCase()[0]}<${tier.potency?.strength.valueOf()}`,
     potencyEffect: tier.potency?.effect,
   } satisfies old_tier;

@@ -10,19 +10,19 @@ body:
   - Might
   isPowerRoll: true
   t1:
-    baseEffect: < WEAK, the target is frightened of the triggering ally (save ends)
+    baseEffect: null
     potency:
       characteristic: Reason
       effect: the target is frightened of the triggering ally (save ends)
       strength: 0
   t2:
-    baseEffect: < AVERAGE, the target is frightened of the triggering ally (save ends)
+    baseEffect: null
     potency:
       characteristic: Reason
       effect: the target is frightened of the triggering ally (save ends)
       strength: 1
   t3:
-    baseEffect: < STRONG, the target is frightened of the triggering ally (save ends)
+    baseEffect: null
     potency:
       characteristic: Reason
       effect: the target is frightened of the triggering ally (save ends)

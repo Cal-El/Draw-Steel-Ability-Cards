@@ -111,10 +111,13 @@ def getPotency(someString):
     return 2
   return 0
 
-def parsePowerRollTier(tier):
+def parsePowerRollTier(rawTier):
+  tier = rawTier.replace("**", "")
   parsed = {}
   r = re.search('^(([^ +]+ \+ )* *[\dMARIP]+ )*([^;\n]*(; .+?)*?(; the Director loses \d+ Malice)*)( \(see .*\))*(; (if the target has )*(M|A|R|I|P) < (WEAK|AVERAGE|STRONG), .*)*$', tier)
   parsed['baseEffect'] = r.group(3).strip()
+  if re.match('^(if the target has )* *(M|A|R|I|P)? ?< (WEAK|AVERAGE|STRONG), .*$', parsed['baseEffect']):
+    parsed['baseEffect'] = None
   parts = tier.split(';')
   for p in parts:
     if 'damage' in p and '<' not in p:

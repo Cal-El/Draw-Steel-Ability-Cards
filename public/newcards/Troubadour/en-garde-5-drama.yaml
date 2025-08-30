@@ -3,22 +3,25 @@ body:
   - Agility
   isPowerRoll: true
   t1:
-    baseEffect: + **A** damage
+    baseEffect: damage
     damage:
       baseValue: 7
-      characteristicBonusOptions: []
+      characteristicBonusOptions:
+      - Agility
       includedKitValue: 0
   t2:
-    baseEffect: + **A** damage
+    baseEffect: damage
     damage:
       baseValue: 11
-      characteristicBonusOptions: []
+      characteristicBonusOptions:
+      - Agility
       includedKitValue: 0
   t3:
-    baseEffect: + **A** damage
+    baseEffect: damage
     damage:
       baseValue: 16
-      characteristicBonusOptions: []
+      characteristicBonusOptions:
+      - Agility
       includedKitValue: 0
 - body: The target can make a melee free strike against you. If they do, you can make
     a melee free strike against the target.

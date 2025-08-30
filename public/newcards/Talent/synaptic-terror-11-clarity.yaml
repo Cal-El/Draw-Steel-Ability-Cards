@@ -8,19 +8,19 @@ body:
   - Reason
   isPowerRoll: true
   t1:
-    baseEffect: < WEAK, frightened (save ends)
+    baseEffect: null
     potency:
       characteristic: Reason
       effect: frightened (save ends)
       strength: 0
   t2:
-    baseEffect: < AVERAGE, frightened (save ends)
+    baseEffect: null
     potency:
       characteristic: Reason
       effect: frightened (save ends)
       strength: 1
   t3:
-    baseEffect: < STRONG, frightened (save ends)
+    baseEffect: null
     potency:
       characteristic: Reason
       effect: frightened (save ends)

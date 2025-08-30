@@ -11,19 +11,19 @@ body:
   - Presence
   isPowerRoll: true
   t1:
-    baseEffect: < WEAK, the target is slowed until the effect ends
+    baseEffect: null
     potency:
       characteristic: Presence
       effect: the target is slowed until the effect ends
       strength: 0
   t2:
-    baseEffect: < AVERAGE, the target's speed is 0 until the effect ends
+    baseEffect: null
     potency:
       characteristic: Presence
       effect: the target's speed is 0 until the effect ends
       strength: 1
   t3:
-    baseEffect: < STRONG, the target is restrained until the effect ends
+    baseEffect: null
     potency:
       characteristic: Presence
       effect: the target is restrained until the effect ends

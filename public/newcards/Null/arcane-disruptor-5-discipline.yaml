@@ -3,30 +3,33 @@ body:
   - Agility
   isPowerRoll: true
   t1:
-    baseEffect: + **A** psychic damage
+    baseEffect: psychic damage
     damage:
       baseValue: 8
-      characteristicBonusOptions: []
+      characteristicBonusOptions:
+      - Agility
       includedKitValue: 0
     potency:
       characteristic: Might
       effect: weakened (save ends)
       strength: 0
   t2:
-    baseEffect: + **A** psychic damage
+    baseEffect: psychic damage
     damage:
       baseValue: 12
-      characteristicBonusOptions: []
+      characteristicBonusOptions:
+      - Agility
       includedKitValue: 0
     potency:
       characteristic: Might
       effect: weakened (save ends)
       strength: 1
   t3:
-    baseEffect: + **A** psychic damage
+    baseEffect: psychic damage
     damage:
       baseValue: 16
-      characteristicBonusOptions: []
+      characteristicBonusOptions:
+      - Agility
       includedKitValue: 0
     potency:
       characteristic: Might
