@@ -8,6 +8,7 @@ import BodyEditor from "./body-editor/body-editor.tsx";
 import HeaderEditor from "./header-editor/header-editor.tsx";
 import HrCostEditor from "./hr-cost-editor.tsx";
 import LevelAndTypeEditor from "./level-and-type-editor.tsx";
+import FontsizeEditor from "./fontsize-editor.tsx";
 
 function EditorTypeSwitch({useTextEditor, setUseTextEditor} : {useTextEditor : boolean, setUseTextEditor : Dispatch<boolean>}) {
   return (
@@ -29,6 +30,7 @@ function EditorUI({card, setCard} : {card: ability_card, setCard: Dispatch<Card>
       <HrCostEditor card={card} setCard={setCard}/>
       <HeaderEditor card={card} setCard={setCard}/>
       <BodyEditor card={card} setCard={setCard}/>
+      <FontsizeEditor card={card} setCard={setCard}/>
     </div>
   </>);
 }

@@ -5,8 +5,8 @@ import {keywords, rawKeywords} from "../../../types/keywords.ts";
 
 export function SectionSeparator({name}:{name: string}) {
   return (<div className={`col-span-full flex gap-2 items-center`}>
-    <span className={`text-xs small-caps font-bold pb-1`}>{name}</span>
-    <hr className={`w-full border-gray-300`}/>
+    <span className={`text-xs small-caps font-bold pb-1 flex-none`}>{name}</span>
+    <hr className={`flex-grow border-gray-300`}/>
   </div>);
 }
 
