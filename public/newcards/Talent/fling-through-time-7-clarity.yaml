@@ -14,8 +14,7 @@ body:
       effect: weakened (save ends)
       strength: 0
   t2:
-    baseEffect: corruption damage; the target is flung through time, and if P < AVERAGE,
-      they are weakened (save ends)
+    baseEffect: corruption damage; the target is flung through time
     damage:
       baseValue: 5
       characteristicBonusOptions:
@@ -26,8 +25,7 @@ body:
       effect: they are weakened (save ends)
       strength: 1
   t3:
-    baseEffect: corruption damage; the target is flung through time, and if P < STRONG,
-      they are weakened (save ends)
+    baseEffect: corruption damage; the target is flung through time
     damage:
       baseValue: 8
       characteristicBonusOptions:
