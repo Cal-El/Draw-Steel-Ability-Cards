@@ -129,7 +129,7 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
       <div className={`col-span-3 flex gap-2 items-center`}>
         <div>
           <input value={card.header.distance.display} onPaste={pasteDistanceText} onChange={(e) => changeDistanceText(e.target.value)}
-                 className={`border-2 border-stone-400 bg-white py-1 px-2`}/>
+                 className={`border-2 border-stone-400 bg-white p-1`}/>
         </div>
         <div className={`py-1 px-2`}>
           {distanceDisplay()}

@@ -409,7 +409,7 @@ function App() {
   const includeAllCardsButton = false;
 
   return (
-    <div className={"flex flex-col h-screen"}>
+    <div className={`flex flex-col h-screen ${selectedCard > -1 ? 'overflow-hidden': 'overflow-y-scroll'}`}>
         <EditSidebarModal callback={(c: Card | undefined) => {
           if (c) updateCard(selectedCard, c)
           setSelectedCard(-1)
