@@ -1,4 +1,4 @@
-import {ability_card, abilityTypeValues} from "../../../types/ability-card.ts";
+import {ability_card, abilityType, abilityTypeValues} from "../../../types/ability-card.ts";
 import {Dispatch} from "react";
 import {Card} from "../../../types/card-list.ts";
 
@@ -24,7 +24,7 @@ export default function LevelAndTypeEditor({card, setCard} : {card: ability_card
             setCard({...card, type: (e.target as HTMLSelectElement).value})
           }}
           className={`border-2 border-stone-400 p-1 flex-grow`}>
-          {abilityTypeValues.map(t => (<option>{t}</option>))}
+          {abilityTypeValues.filter(x => x !== abilityType.treasure).map(t => (<option>{t}</option>))}
         </select>
       </div>
     </div>

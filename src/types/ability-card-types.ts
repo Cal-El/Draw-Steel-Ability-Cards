@@ -129,7 +129,7 @@ export const typeAbbreviation: Record<string,string> = {
     "Free Maneuver": 'FM',
     "Routine": 'NA',
     "Passive": 'P',
-    "Free Strike Action": 'FS-MA',
+    "Free Strike Action": 'MA',
     "Treasure": "E",
 }
 
