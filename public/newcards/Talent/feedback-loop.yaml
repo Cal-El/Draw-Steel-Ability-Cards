@@ -1,7 +1,4 @@
 body:
-- body: The target deals damage to an ally.
-  isEffect: true
-  title: Trigger
 - body: The target takes psychic damage equal to half the triggering damage.
   isEffect: true
   title: Effect

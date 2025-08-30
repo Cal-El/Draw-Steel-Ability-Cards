@@ -1,7 +1,4 @@
 body:
-- body: The target takes damage.
-  isEffect: true
-  title: Trigger
 - body: The target is teleported to an unoccupied space adjacent to you, taking no
     damage and suffering no additional effects if this movement would get them out
     of harm's way.

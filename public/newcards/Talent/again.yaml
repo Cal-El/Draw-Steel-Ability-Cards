@@ -1,7 +1,4 @@
 body:
-- body: The target makes an ability roll.
-  isEffect: true
-  title: Trigger
 - body: You can use this ability after seeing the result of the triggering roll. The
     target must reroll the power roll and use the new roll.
   isEffect: true

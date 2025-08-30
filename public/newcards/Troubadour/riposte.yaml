@@ -1,7 +1,4 @@
 body:
-- body: The target takes damage from a melee strike.
-  isEffect: true
-  title: Trigger
 - body: The target makes a free strike against the creature who made the triggering
     strike.
   isEffect: true

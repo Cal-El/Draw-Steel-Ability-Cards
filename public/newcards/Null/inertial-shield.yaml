@@ -1,7 +1,4 @@
 body:
-- body: You take damage.
-  isEffect: true
-  title: Trigger
 - body: You take half the damage.
   isEffect: true
   title: Effect

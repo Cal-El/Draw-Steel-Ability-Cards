@@ -1,7 +1,4 @@
 body:
-- body: You lose Stamina and are not dying.
-  isEffect: true
-  title: Trigger
 - body: You gain temporary Stamina equal to your Might score and can enter your animal
     form or hybrid form.
   isEffect: true

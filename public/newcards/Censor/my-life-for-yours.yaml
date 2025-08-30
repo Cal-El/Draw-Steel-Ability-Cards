@@ -1,7 +1,4 @@
 body:
-- body: The target starts their turn or takes damage.
-  isEffect: true
-  title: Trigger
 - body: You spend a Recovery and the target regains Stamina equal to your recovery
     value.
   isEffect: true
