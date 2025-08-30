@@ -62,6 +62,8 @@ export default {
         'bermuda': '#78dcca',
         'regal-blue': '#243c5a',
         'ash-yellow': '#f9c710',
+        'sidebar-back': '#e5e7e6',
+        'sidebar-trim': '#c0c0c0',
       },
     },
   },

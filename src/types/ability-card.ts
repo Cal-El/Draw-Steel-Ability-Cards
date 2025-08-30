@@ -87,7 +87,7 @@ export type damage = {
   baseValue: number; // base value the damage from the book, with kit value if a Kit Signature Ability
   includedKitValue: number; // included kit value of the ability, if any\
   characteristicBonusOptions: characteristic[]
-  otherBonus: string | undefined; // this supports the dice rolling edge case from things like coup de grace. e.g. "2d6"
+  otherBonus?: string; // this supports the dice rolling edge case from things like coup de grace. e.g. "2d6"
 }
 
 export type potency = {
@@ -128,3 +128,33 @@ export enum potency_strength {
   AVERAGE,
   STRONG
 }
+
+export const all_potency_strength = [
+  potency_strength.WEAK,
+  potency_strength.AVERAGE,
+  potency_strength.STRONG,
+]
+
+export enum abilityType {
+  mainAction = 'Main Action',
+  maneuver = 'Maneuver',
+  triggeredAction = 'Triggered Action',
+  freeTriggeredAction = 'Free Triggered Action',
+  freeManeuver = 'Free Maneuver',
+  noAction = 'No Action',
+  freeStrike = 'Free Strike',
+  trait = 'Trait',
+  treasure = 'Treasure',
+}
+
+export const abilityTypeValues : abilityType[] = [
+  abilityType.mainAction,
+  abilityType.maneuver,
+  abilityType.triggeredAction,
+  abilityType.freeTriggeredAction,
+  abilityType.freeManeuver,
+  abilityType.noAction,
+  abilityType.freeStrike,
+  abilityType.trait,
+  abilityType.treasure,
+]
