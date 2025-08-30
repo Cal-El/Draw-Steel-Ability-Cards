@@ -1,5 +1,5 @@
 from os import path
-import json
+import yaml
 
 def patchAbility(patchFolderPath, group, fileName, card):
   patchFilePath = path.join(patchFolderPath, group, fileName)
@@ -7,7 +7,7 @@ def patchAbility(patchFolderPath, group, fileName, card):
     return card
   updated = card.copy()
   with open(patchFilePath, encoding='utf-8') as p:
-    patch = json.load(p)
+    patch = yaml.safe_load(p)
     if 'level' in patch:
       updated['level'] = patch['level']
     if 'type' in patch:

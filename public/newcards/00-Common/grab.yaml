@@ -20,13 +20,13 @@ body:
   isEffect: true
   title: Effect
 fontSizePtOverrides:
-  body: 8
+  body: '8'
 header:
   distance:
     display: Melee [1]
     values:
-    - baseValue: 1
-      includedKitValue: 0
+    - baseValue: '1'
+      includedKitValue: '0'
       type: Melee
   flavour: ''
   keywords:

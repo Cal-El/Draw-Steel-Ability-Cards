@@ -68,7 +68,7 @@ def createCards(className):
         cardData['header']['target'] = ability['target']
         cardData['body'] = parseBody(ability)
         cardData['cost'] = parseCost(ability)
-        cardData = patchAbility(patchesFolderPath, className, file, cardData)
+        cardData = patchAbility(patchesFolderPath, className, file.replace('.json', '.yaml'), cardData)
 
         fileName = ability['metadata']['item_id'] + '.yaml'
         with open(path.join(cardsPath, className, fileName), 'w') as c:
@@ -85,7 +85,7 @@ def createCoreManeuver(name):
     cardData['header']['topMatter'] = 'Core Maneuver'
     cardData['header']['title'] = ability['name']
     cardData['body'] = parseBody(ability)
-    cardData = patchAbility(patchesFolderPath, 'Common', name + '.json', cardData)
+    cardData = patchAbility(patchesFolderPath, 'Common', name + '.yaml', cardData)
 
     fileName = ability['metadata']['item_id'] + '.yaml'
     with open(path.join(cardsPath, '00-Common', fileName), 'w') as c:
