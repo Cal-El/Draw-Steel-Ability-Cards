@@ -1,5 +1,6 @@
 import {
   ability_card as old_card,
+  abilityType as old_types,
   body_statement,
   distance_block,
   key_value_statement,
@@ -9,6 +10,7 @@ import {
 } from "../types/ability-card-types.ts";
 import {
   ability_card as new_card,
+  abilityType as new_types,
   body,
   characteristic, damage,
   distance_value,
@@ -414,6 +416,25 @@ const translateBodyElement = function (element: body, card: new_card, heroData: 
   return undefined;
 }
 
+function translateType(s: string) : string {
+  const dict = new Map([
+    [new_types.mainAction.toLowerCase(), old_types.action],
+    [new_types.maneuver.toLowerCase(), old_types.maneuver],
+    [new_types.triggeredAction.toLowerCase(), old_types.triggeredAction],
+    [new_types.freeManeuver.toLowerCase(), old_types.freeManeuver],
+    [new_types.freeTriggeredAction.toLowerCase(), old_types.freeTriggeredAction],
+    [new_types.freeStrike.toLowerCase(), old_types.freeStrikeAction],
+    [new_types.noAction.toLowerCase(), old_types.routine],
+    [new_types.trait.toLowerCase(), old_types.passive],
+    [new_types.treasure.toLowerCase(), old_types.treasure],
+  ])
+
+  if (dict.has(s.toLowerCase())) {
+    return dict.get(s.toLowerCase()) ?? s;
+  }
+  return s;
+}
+
 export function DowngradeCard (card: new_card, heroData: HeroData | undefined) : old_card {
   const ch_data = heroData ? heroData : buildEmptyHeroData()
 
@@ -433,7 +454,7 @@ export function DowngradeCard (card: new_card, heroData: HeroData | undefined) :
   }
 
   return {
-    type: card.type.toLowerCase() === "main action" ? "Action" : card.type,
+    type: translateType(card.type),
     topMatter: card.header.topMatter,
     title: card.header.title,
     flavour: card.header.flavour,

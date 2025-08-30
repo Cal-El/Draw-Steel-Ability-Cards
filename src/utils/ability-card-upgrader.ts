@@ -1,5 +1,5 @@
 import {
-  ability_card as old_card,
+  ability_card as old_card, abilityType as old_types,
   body_statement,
   distance_block,
   key_value_statement,
@@ -8,7 +8,7 @@ import {
   spacer_statement,
 } from "../types/ability-card-types.ts";
 import {
-  ability_card as new_card,
+  ability_card as new_card, abilityType as new_types,
   all_characteristics,
   body,
   characteristic,
@@ -385,6 +385,25 @@ function singleLetterCharacteristicTranslator(x : string) {
   }
 }
 
+function translateType(s: string) : string {
+  const dict = new Map([
+    [old_types.action.toLowerCase(), new_types.mainAction],
+    [old_types.maneuver.toLowerCase(), new_types.maneuver],
+    [old_types.triggeredAction.toLowerCase(), new_types.triggeredAction],
+    [old_types.freeManeuver.toLowerCase(), new_types.freeManeuver],
+    [old_types.freeTriggeredAction.toLowerCase(), new_types.freeTriggeredAction],
+    [old_types.freeStrikeAction.toLowerCase(), new_types.freeStrike],
+    [old_types.routine.toLowerCase(), new_types.noAction],
+    [old_types.passive.toLowerCase(), new_types.trait],
+    [old_types.treasure.toLowerCase(), new_types.treasure],
+  ])
+
+  if (dict.has(s.toLowerCase())) {
+    return dict.get(s.toLowerCase()) ?? s;
+  }
+  return s;
+}
+
 export function UpgradeCard (card: old_card) : new_card {
   const target = translateTarget(card.target);
   const distance = translateDistance(card.keywords, card.distance);
@@ -394,7 +413,7 @@ export function UpgradeCard (card: old_card) : new_card {
   return {
     version: 2,
     level: 1,
-    type: card.type,
+    type: translateType(card.type),
     header: {
       topMatter: card.topMatter,
       title: card.title,
