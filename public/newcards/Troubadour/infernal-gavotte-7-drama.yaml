@@ -35,7 +35,9 @@ body:
 - body: Each ally in the area can shift up to 2 squares.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '7'
 header:
   distance:
     display: 3 burst
@@ -47,8 +49,8 @@ header:
   - Melee
   - Weapon
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 3 Troubadour Ability
+  title: Infernal Gavotte
+  topMatter: Level 3 Troubadour Heroic Ability
 level: 3
 type: Main action
 version: 2

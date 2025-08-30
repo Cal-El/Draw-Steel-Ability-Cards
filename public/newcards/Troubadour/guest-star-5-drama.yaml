@@ -9,7 +9,9 @@ body:
     more than once during an encounter.'
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -22,8 +24,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: ''
-  topMatter: Level 2 Troubadour Ability
+  title: Guest Star
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

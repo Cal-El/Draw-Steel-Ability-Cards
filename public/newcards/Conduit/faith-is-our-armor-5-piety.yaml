@@ -11,7 +11,9 @@ body:
     baseEffect: The target gains 10 temporary Stamina.
   t3:
     baseEffect: The target gains 15 temporary Stamina.
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -24,8 +26,8 @@ header:
   - Magic
   - Ranged
   target: Four allies
-  title: ''
-  topMatter: Level 1 Conduit Ability
+  title: Faith Is Our Armor
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Maneuver
 version: 2

@@ -5,7 +5,9 @@ body:
     by you takes an extra 2d6 holy damage.'
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '7'
 header:
   distance:
     display: 2 aura
@@ -16,8 +18,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 3 Censor Ability
+  title: Edict of Perfect Order
+  topMatter: Level 3 Censor Heroic Ability
 level: 3
 type: Maneuver
 version: 2

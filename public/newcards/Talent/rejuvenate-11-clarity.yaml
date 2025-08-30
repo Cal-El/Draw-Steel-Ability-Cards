@@ -11,11 +11,13 @@ body:
   isEffect: true
   title: Effect
 - body: You and the target both permanently grow visibly younger (the equivalent of
-    20 human years, to the minimum of an 18-yearold). Additionally, you are weakened
+    20 human years, to the minimum of an 18-year-old). Additionally, you are weakened
     and slowed (save ends).
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -30,8 +32,8 @@ header:
   - Psionic
   - Ranged
   target: Self or one ally
-  title: ''
-  topMatter: Level 8 Talent Ability
+  title: Rejuvenate
+  topMatter: Level 8 Talent Heroic Ability
 level: 8
 type: Maneuver
 version: 2

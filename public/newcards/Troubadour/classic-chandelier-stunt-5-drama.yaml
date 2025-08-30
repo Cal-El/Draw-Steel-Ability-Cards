@@ -5,7 +5,9 @@ body:
     characteristic score.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Melee [1]
@@ -19,8 +21,8 @@ header:
   - Strike
   - Weapon
   target: Self and one willing ally
-  title: ''
-  topMatter: Level 2 Troubadour Ability
+  title: Classic Chandelier Stunt
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

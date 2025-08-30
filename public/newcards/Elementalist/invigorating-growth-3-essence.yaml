@@ -29,7 +29,9 @@ body:
     a main action.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Essence
+  costValue: '3'
 header:
   distance:
     display: Ranged [10]
@@ -45,8 +47,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 1 Elementalist Ability
+  title: Invigorating Growth
+  topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Main action
 version: 2

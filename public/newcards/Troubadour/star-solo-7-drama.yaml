@@ -28,7 +28,9 @@ body:
     spending drama.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '7'
 header:
   distance:
     display: Melee [1] or Ranged [10]
@@ -48,8 +50,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: ''
-  topMatter: Level 3 Troubadour Ability
+  title: Star Solo
+  topMatter: Level 3 Troubadour Heroic Ability
 level: 3
 type: Main action
 version: 2

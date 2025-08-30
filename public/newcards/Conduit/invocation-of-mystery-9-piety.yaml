@@ -2,7 +2,9 @@ body:
 - body: Each target is invisible until the start of your next turn.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: 4 burst
@@ -12,8 +14,8 @@ header:
   - Area
   - Magic
   target: Self and each ally in the area
-  title: ''
-  topMatter: Level 6 Conduit Ability
+  title: Invocation of Mystery
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Maneuver
 version: 2

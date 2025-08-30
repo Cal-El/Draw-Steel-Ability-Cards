@@ -19,7 +19,7 @@ header:
   - Psionic
   - Ranged
   target: Self or one creature
-  title: ''
+  title: Again
   topMatter: Level 1 Talent Ability
 level: 1
 type: Triggered Action

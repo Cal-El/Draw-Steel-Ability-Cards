@@ -37,7 +37,7 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: ''
+  title: Brutal Slam
   topMatter: Level 1 Fury Ability
 level: 1
 type: Main action

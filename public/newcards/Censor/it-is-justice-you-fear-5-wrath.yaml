@@ -40,7 +40,9 @@ body:
     Presence score.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -54,8 +56,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 2 Censor Ability
+  title: It Is Justice You Fear
+  topMatter: Level 2 Censor Heroic Ability
 level: 2
 type: Main action
 version: 2

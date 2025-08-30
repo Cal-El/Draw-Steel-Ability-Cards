@@ -35,7 +35,9 @@ body:
       characteristic: Presence
       effect: prone
       strength: 2
-cost: null
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: Three 3 cubes within 1
@@ -46,8 +48,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 6 Troubadour Ability
+  title: Feedback
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Main action
 version: 2

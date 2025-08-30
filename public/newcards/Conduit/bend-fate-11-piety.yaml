@@ -3,7 +3,9 @@ body:
     power rolls has its outcome improved by one tier.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -16,8 +18,8 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: ''
-  topMatter: Level 9 Conduit Ability
+  title: Bend Fate
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

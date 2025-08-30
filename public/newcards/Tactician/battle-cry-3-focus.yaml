@@ -8,7 +8,9 @@ body:
     baseEffect: Each target gains 2 surges.
   t3:
     baseEffect: Each target gains 3 surges.
-cost: null
+cost:
+  costName: Focus
+  costValue: '3'
 header:
   distance:
     display: Ranged 10
@@ -17,8 +19,8 @@ header:
   keywords:
   - Ranged
   target: Three allies
-  title: ''
-  topMatter: Level 1 Tactician Ability
+  title: Battle Cry
+  topMatter: Level 1 Tactician Heroic Ability
 level: 1
 type: Maneuver
 version: 2

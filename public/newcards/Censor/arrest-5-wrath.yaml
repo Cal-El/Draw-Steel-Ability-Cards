@@ -28,7 +28,9 @@ body:
     change the target of the strike to another target within the strike's distance.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: Melee [1]
@@ -43,8 +45,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 1 Censor Ability
+  title: Arrest
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

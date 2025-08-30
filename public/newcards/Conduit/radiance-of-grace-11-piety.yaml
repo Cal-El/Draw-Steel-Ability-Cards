@@ -5,7 +5,9 @@ body:
     are prone.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -18,8 +20,8 @@ header:
   - Magic
   - Ranged
   target: Four allies
-  title: ''
-  topMatter: Level 9 Conduit Ability
+  title: Radiance of Grace
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

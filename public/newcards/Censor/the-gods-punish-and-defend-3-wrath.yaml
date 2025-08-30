@@ -27,7 +27,9 @@ body:
     regain Stamina equal to your recovery value.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '3'
 header:
   distance:
     display: Melee [1]
@@ -42,8 +44,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: ''
-  topMatter: Level 1 Censor Ability
+  title: The Gods Punish and Defend
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

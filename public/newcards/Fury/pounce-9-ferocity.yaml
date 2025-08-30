@@ -37,7 +37,9 @@ body:
     of each of your turns.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -52,8 +54,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 6 Fury Ability
+  title: Pounce
+  topMatter: Level 6 Fury Heroic Ability
 level: 6
 type: Main action
 version: 2

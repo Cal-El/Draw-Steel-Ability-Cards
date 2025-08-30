@@ -27,7 +27,9 @@ body:
     or object.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -41,8 +43,8 @@ header:
   - Strike
   - Weapon
   target: Two creatures or objects
-  title: ''
-  topMatter: Level 5 Fury Ability
+  title: Rebounding Storm
+  topMatter: Level 5 Fury Heroic Ability
 level: 5
 type: Main action
 version: 2

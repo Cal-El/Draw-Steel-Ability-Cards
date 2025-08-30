@@ -39,7 +39,9 @@ body:
         you choose, uses an ability of your choice, and you choose any targets for
         that ability
       strength: 2
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -53,8 +55,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 2 Conduit Ability
+  title: The Gods Command You Obey
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
 version: 2

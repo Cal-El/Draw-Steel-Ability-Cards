@@ -32,7 +32,9 @@ body:
       characteristic: Agility
       effect: restrained (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: 3 cube within [10]
@@ -46,8 +48,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 2 Conduit Ability
+  title: Nature Judges Thee
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
 version: 2

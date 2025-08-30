@@ -40,7 +40,9 @@ body:
       characteristic: Reason
       effect: the target has weakness equal to 5 + your Reason score (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Ranged [10]
@@ -56,8 +58,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 1 Talent Ability
+  title: Smolder
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Main action
 version: 2

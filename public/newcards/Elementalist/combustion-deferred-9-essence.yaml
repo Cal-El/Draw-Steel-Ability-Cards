@@ -28,7 +28,9 @@ body:
     score. Each affected enemy then gains this same effect.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -43,8 +45,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: ''
-  topMatter: Level 5 Elementalist Ability
+  title: Combustion Deferred
+  topMatter: Level 5 Elementalist Heroic Ability
 level: 5
 type: Main action
 version: 2

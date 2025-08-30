@@ -40,7 +40,9 @@ body:
     score.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -55,8 +57,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 5 Null Ability
+  title: Iron Grip
+  topMatter: Level 5 Null Heroic Ability
 level: 5
 type: Main action
 version: 2

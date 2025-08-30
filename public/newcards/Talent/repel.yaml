@@ -22,7 +22,7 @@ header:
   - Psionic
   - Ranged
   target: Self or one ally
-  title: ''
+  title: Repel
   topMatter: Level 1 Talent Ability
 level: 1
 type: Triggered Action

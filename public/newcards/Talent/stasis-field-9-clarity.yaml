@@ -33,7 +33,9 @@ body:
     can be force moved. You are restrained until the effect ends.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: 4 cube within [10]
@@ -48,8 +50,8 @@ header:
   - Psionic
   - Ranged
   target: Each creature and object in the area
-  title: ''
-  topMatter: Level 6 Talent Ability
+  title: Stasis Field
+  topMatter: Level 6 Talent Heroic Ability
 level: 6
 type: Main action
 version: 2

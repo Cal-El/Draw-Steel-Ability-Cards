@@ -25,7 +25,9 @@ body:
     their turn.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '11'
 header:
   distance:
     display: 5 burst
@@ -36,8 +38,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 9 Troubadour Ability
+  title: Jam Session
+  topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Main action
 version: 2

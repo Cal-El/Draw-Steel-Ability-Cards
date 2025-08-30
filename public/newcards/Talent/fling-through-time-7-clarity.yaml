@@ -47,7 +47,9 @@ body:
     2 clarity.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '7'
 header:
   distance:
     display: Ranged [10]
@@ -63,8 +65,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: ''
-  topMatter: Level 3 Talent Ability
+  title: Fling Through Time
+  topMatter: Level 3 Talent Heroic Ability
 level: 3
 type: Main action
 version: 2

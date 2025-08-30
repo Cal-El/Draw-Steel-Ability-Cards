@@ -1,0 +1,17 @@
+body:
+- body: Until the end of your turn, whenever you use a damage-dealing heroic ability against a single target, you can weaken that target’s life force. The ability deals extra corruption damage equal to your highest characteristic score.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Self
+    values: []
+  target: Self
+  title: Corrupt Spirit
+  topMatter: Corrupted Mentor Complication Ability
+  keywords:
+  - Magic
+  flavour: You unlock the sinister secrets of pain.
+type: Maneuver
+version: 2

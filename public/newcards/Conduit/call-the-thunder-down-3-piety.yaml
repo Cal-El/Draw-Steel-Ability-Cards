@@ -23,7 +23,9 @@ body:
 - body: You can push each willing ally in the area the same distance, ignoring stability.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '3'
 header:
   distance:
     display: 3 cube within [10]
@@ -37,8 +39,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 1 Conduit Ability
+  title: Call the Thunder Down
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

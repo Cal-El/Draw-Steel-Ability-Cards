@@ -1,0 +1,23 @@
+body:
+- body: The target can use a triggered action to take a main action, a maneuver, or a move action.
+  isEffect: true
+  title: Effect
+- body: If you have the Strike Now tactician ability, the target can use a free triggered action instead of a triggered action to gain the benefit of this ability.
+  isEffect: true
+  title: Special
+cost: null
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  target: One ally
+  title: Issue Order
+  topMatter: Stripped of Rank Complication Ability
+  keywords:
+  - Ranged
+  flavour: “Move or die, folks.”
+type: Main action
+version: 2

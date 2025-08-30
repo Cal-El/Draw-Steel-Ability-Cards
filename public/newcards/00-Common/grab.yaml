@@ -33,7 +33,7 @@ header:
   - Melee
   - Weapon
   target: One creature
-  title: ''
+  title: Grab
   topMatter: Core Maneuver
 type: Maneuver
 version: 2

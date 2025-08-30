@@ -32,7 +32,9 @@ body:
       characteristic: Agility
       effect: slowed (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Discipline
+  costValue: '5'
 header:
   distance:
     display: 3 cube within 1
@@ -43,8 +45,8 @@ header:
   - Psionic
   - Weapon
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 2 Null Ability
+  title: Entropic Field
+  topMatter: Level 2 Null Heroic Ability
 level: 2
 type: Main action
 version: 2

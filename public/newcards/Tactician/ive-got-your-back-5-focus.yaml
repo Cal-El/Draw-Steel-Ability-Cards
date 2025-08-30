@@ -26,7 +26,9 @@ body:
 - body: One ally adjacent to the target can spend a Recovery.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged [5]
@@ -40,8 +42,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 2 Tactician Ability
+  title: I've Got Your Back
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Main action
 version: 2

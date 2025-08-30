@@ -41,7 +41,7 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
+  title: Sacrificial Offer
   topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action

@@ -2,7 +2,9 @@ body:
 - body: You use a strike signature ability twice.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: Self; see below
@@ -13,8 +15,8 @@ header:
   - Melee
   - Ranged
   target: Self
-  title: ''
-  topMatter: Level 1 Shadow Ability
+  title: Shadowstrike
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

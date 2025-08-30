@@ -3,7 +3,9 @@ body:
     obtains a tier 3 outcome.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '5'
 header:
   distance:
     display: Self
@@ -12,8 +14,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: ''
-  topMatter: Level 1 Fury Ability
+  title: Make Peace With Your God!
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Free maneuver
 version: 2

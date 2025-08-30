@@ -39,7 +39,9 @@ body:
     until the end of the target's next turn.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -55,8 +57,8 @@ header:
   - Strike
   - Telepathy
   target: One creature
-  title: ''
-  topMatter: Level 2 Talent Ability
+  title: Overwhelm
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Main action
 version: 2

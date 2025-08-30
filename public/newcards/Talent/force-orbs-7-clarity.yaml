@@ -30,7 +30,9 @@ body:
 - body: You create five orbs, and you are weakened while you have any orbs active.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '7'
 header:
   distance:
     display: Self; see below
@@ -42,8 +44,8 @@ header:
   - Strike
   - Telekinesis
   target: Self
-  title: ''
-  topMatter: Level 3 Talent Ability
+  title: Force Orbs
+  topMatter: Level 3 Talent Heroic Ability
 level: 3
 type: Main action
 version: 2

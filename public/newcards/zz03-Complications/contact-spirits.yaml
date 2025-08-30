@@ -1,0 +1,24 @@
+body:
+- characteristicBonus:
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: You take corruption damage equal to 5 + your level.
+  t2:
+    baseEffect: The spirit of anyone you know of who has died speaks to you, provided they are on the same world as you. You learn how they died and can ask them one question, which they can answer truthfully or untruthfully. The spirit knows everything they knew in life, and is aware of events that took place in their immediate surroundings since their death. 
+  t3:
+    baseEffect: As tier 2, but you can ask three questions.
+cost: null
+header:
+  distance:
+    display: Self
+    values: []
+  keywords:
+  - Magic
+  target: Self
+  title: Contact Spirits
+  topMatter: Medium Complication Ability
+  flavour: You feint to move your enemies into perfect position.
+type: Main action
+version: 2

@@ -27,7 +27,9 @@ body:
     the target of this ability takes 1d10 lightning damage (save ends).
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '3'
 header:
   distance:
     display: Ranged [10]
@@ -42,8 +44,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 1 Conduit Ability
+  title: Violence Will Not Aid Thee
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

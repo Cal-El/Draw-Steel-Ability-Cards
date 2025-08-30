@@ -15,7 +15,9 @@ body:
     lands is difficult terrain.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -32,8 +34,8 @@ header:
   - Ranged
   - Void
   target: One creature or object
-  title: ''
-  topMatter: Level 6 Elementalist Ability
+  title: Meteor
+  topMatter: Level 6 Elementalist Heroic Ability
 level: 6
 type: Main action
 version: 2

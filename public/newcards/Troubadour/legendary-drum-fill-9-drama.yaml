@@ -3,7 +3,9 @@ body:
     round until the end of the encounter.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: 4 burst
@@ -14,8 +16,8 @@ header:
   - Area
   - Magic
   target: Self and each ally in the area
-  title: ''
-  topMatter: Level 6 Troubadour Ability
+  title: Legendary Drum Fill
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Maneuver
 version: 2

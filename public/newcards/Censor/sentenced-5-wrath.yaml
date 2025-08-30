@@ -39,7 +39,9 @@ body:
     movement can still move them.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: Melee [1]
@@ -54,8 +56,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 2 Censor Ability
+  title: Sentenced
+  topMatter: Level 2 Censor Heroic Ability
 level: 2
 type: Main action
 version: 2

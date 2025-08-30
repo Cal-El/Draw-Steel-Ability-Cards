@@ -35,7 +35,9 @@ body:
       characteristic: Agility
       effect: restrained (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Insight
+  costValue: '7'
 header:
   distance:
     display: Ranged [5]
@@ -49,8 +51,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 3 Shadow Ability
+  title: Pinning Shot
+  topMatter: Level 3 Shadow Heroic Ability
 level: 3
 type: Main action
 version: 2

@@ -12,7 +12,9 @@ body:
     baseEffect: An enemy takes 10 damage; an ally can teleport up to 5 squares.
   t3:
     baseEffect: An enemy takes 14 damage; an ally can teleport up to 7 squares.
-cost: null
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Self; see below
@@ -23,8 +25,8 @@ header:
   - Melee
   - Weapon
   target: Self
-  title: ''
-  topMatter: Level 9 Shadow Ability
+  title: Cacophony of Cinders
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

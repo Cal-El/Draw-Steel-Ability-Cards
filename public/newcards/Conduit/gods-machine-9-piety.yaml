@@ -27,7 +27,9 @@ body:
       baseValue: 8
       characteristicBonusOptions: []
       includedKitValue: 0
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -40,8 +42,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: ''
-  topMatter: Level 6 Conduit Ability
+  title: Gods' Machine
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Main action
 version: 2

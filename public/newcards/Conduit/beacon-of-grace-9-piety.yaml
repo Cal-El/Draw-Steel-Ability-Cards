@@ -29,7 +29,9 @@ body:
     to move this effect to another creature within distance.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -43,8 +45,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 5 Conduit Ability
+  title: Beacon of Grace
+  topMatter: Level 5 Conduit Heroic Ability
 level: 5
 type: Main action
 version: 2

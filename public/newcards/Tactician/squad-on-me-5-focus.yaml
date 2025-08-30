@@ -3,7 +3,9 @@ body:
     to your Might score. Additionally, each target gains 2 surges.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: 1 burst
@@ -12,8 +14,8 @@ header:
   keywords:
   - Area
   target: Self and each ally in the area
-  title: ''
-  topMatter: Level 2 Tactician Ability
+  title: Squad! On Me!
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Maneuver
 version: 2

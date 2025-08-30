@@ -4,7 +4,9 @@ body:
     use a triggered action to make a free strike against the source of the damage.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Melee [2]
@@ -19,8 +21,8 @@ header:
   - Melee
   - Psionic
   target: Self or one ally
-  title: ''
-  topMatter: Level 1 Talent Ability
+  title: Precognition
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Main action
 version: 2

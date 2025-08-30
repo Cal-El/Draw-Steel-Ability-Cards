@@ -2,7 +2,9 @@ body:
 - body: Each target can make a free strike.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged 10
@@ -11,8 +13,8 @@ header:
   keywords:
   - Ranged
   target: Three allies
-  title: ''
-  topMatter: Level 1 Tactician Ability
+  title: Now!
+  topMatter: Level 1 Tactician Heroic Ability
 level: 1
 type: Maneuver
 version: 2

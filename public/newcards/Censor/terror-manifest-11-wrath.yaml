@@ -40,7 +40,9 @@ body:
     is not a leader or solo creature and is winded, they are reduced to 0 Stamina.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -54,8 +56,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 9 Censor Ability
+  title: Terror Manifest
+  topMatter: Level 9 Censor Heroic Ability
 level: 9
 type: Main action
 version: 2

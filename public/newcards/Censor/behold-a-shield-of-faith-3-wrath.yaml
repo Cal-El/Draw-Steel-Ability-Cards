@@ -27,7 +27,9 @@ body:
     against you or any ally adjacent to you.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '3'
 header:
   distance:
     display: Melee [1]
@@ -42,8 +44,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: ''
-  topMatter: Level 1 Censor Ability
+  title: Behold a Shield of Faith!
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

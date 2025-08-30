@@ -39,7 +39,9 @@ body:
     a Recovery.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -53,8 +55,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 6 Conduit Ability
+  title: Your Story Ends Here
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Main action
 version: 2

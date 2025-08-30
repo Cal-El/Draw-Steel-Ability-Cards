@@ -38,7 +38,9 @@ body:
 - body: The target can't communicate with anyone until the end of the encounter.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -57,8 +59,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 5 Shadow Ability
+  title: You Talk Too Much
+  topMatter: Level 5 Shadow Heroic Ability
 level: 5
 type: Main action
 version: 2

@@ -38,7 +38,9 @@ body:
 - body: This strike resolves before the triggering movement or main action.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -54,8 +56,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 5 Null Ability
+  title: Anticipating Strike
+  topMatter: Level 5 Null Heroic Ability
 level: 5
 type: Free triggered
 version: 2

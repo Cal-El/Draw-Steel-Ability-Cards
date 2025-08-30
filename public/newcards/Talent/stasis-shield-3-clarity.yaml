@@ -11,7 +11,9 @@ body:
     instead of the target.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Ranged [10]
@@ -24,8 +26,8 @@ header:
   - Psionic
   - Ranged
   target: Self, or one creature or object
-  title: ''
-  topMatter: Level 8 Talent Ability
+  title: Stasis Shield
+  topMatter: Level 8 Talent Heroic Ability
 level: 8
 type: Triggered Action
 version: 2

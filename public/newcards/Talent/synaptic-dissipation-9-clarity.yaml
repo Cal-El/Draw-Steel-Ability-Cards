@@ -16,7 +16,9 @@ body:
 - body: The effect ends early if you take damage from an enemy's ability.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -32,8 +34,8 @@ header:
   - Strike
   - Telepathy
   target: Special
-  title: ''
-  topMatter: Level 6 Talent Ability
+  title: Synaptic Dissipation
+  topMatter: Level 6 Talent Heroic Ability
 level: 6
 type: Maneuver
 version: 2

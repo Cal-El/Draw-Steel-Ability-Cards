@@ -28,7 +28,9 @@ body:
     In either case, you lose 1d6 Stamina after making this strike.
   isEffect: true
   title: Spend 1+ Ferocity
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '5'
 header:
   distance:
     display: Melee [1]
@@ -42,8 +44,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 1 Fury Ability
+  title: To the Uttermost End
+  topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
 version: 2

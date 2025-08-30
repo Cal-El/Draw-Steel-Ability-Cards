@@ -39,7 +39,9 @@ body:
     you to be revealed.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -55,8 +57,8 @@ header:
   - Strike
   - Weapon
   target: Two enemies
-  title: ''
-  topMatter: Level 6 Shadow Ability
+  title: Puppet Strings
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Main action
 version: 2

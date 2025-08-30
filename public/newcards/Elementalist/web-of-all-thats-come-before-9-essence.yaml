@@ -39,7 +39,9 @@ body:
 - body: The area remains until the start of your next turn.
   isEffect: true
   title: Persistent 1
-cost: null
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: 4 cube within [10]
@@ -55,8 +57,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 5 Elementalist Ability
+  title: Web of All That's Come Before
+  topMatter: Level 5 Elementalist Heroic Ability
 level: 5
 type: Main action
 version: 2

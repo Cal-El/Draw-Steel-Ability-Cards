@@ -35,7 +35,9 @@ body:
       characteristic: Might
       effect: damage weakness 5 (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -49,8 +51,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: ''
-  topMatter: Level 1 Conduit Ability
+  title: Corruption's Curse
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

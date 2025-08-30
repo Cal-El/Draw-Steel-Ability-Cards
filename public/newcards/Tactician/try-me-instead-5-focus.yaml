@@ -41,7 +41,9 @@ body:
       characteristic: Reason
       effect: frightened (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Self; see below
@@ -52,8 +54,8 @@ header:
   - Strike
   - Weapon
   target: Self
-  title: ''
-  topMatter: Level 2 Tactician Ability
+  title: Try Me Instead
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Main action
 version: 2

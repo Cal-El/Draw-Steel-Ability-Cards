@@ -4,7 +4,9 @@ body:
     and double banes when making this strike.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: 3 burst
@@ -14,8 +16,8 @@ header:
   keywords:
   - Area
   target: Self and each ally in the area
-  title: ''
-  topMatter: Level 9 Tactician Ability
+  title: Blot Out the Sun!
+  topMatter: Level 9 Tactician Heroic Ability
 level: 9
 type: Main action
 version: 2

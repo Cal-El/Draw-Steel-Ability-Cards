@@ -26,7 +26,9 @@ body:
     space of their choice outside it.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Essence
+  costValue: '11'
 header:
   distance:
     display: 5 burst
@@ -37,8 +39,8 @@ header:
   - Earth
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 8 Elementalist Ability
+  title: World Torn Asunder
+  topMatter: Level 8 Elementalist Heroic Ability
 level: 8
 type: Main action
 version: 2

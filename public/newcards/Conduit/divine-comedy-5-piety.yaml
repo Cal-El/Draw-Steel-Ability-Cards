@@ -4,7 +4,9 @@ body:
     leave and vice versa.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: 5 burst
@@ -14,8 +16,8 @@ header:
   - Area
   - Magic
   target: Self and each ally in the area
-  title: ''
-  topMatter: Level 2 Conduit Ability
+  title: Divine Comedy
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Maneuver
 version: 2

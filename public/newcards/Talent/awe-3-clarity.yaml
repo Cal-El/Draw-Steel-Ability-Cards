@@ -41,7 +41,9 @@ body:
       characteristic: Intuition
       effect: frightened (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Clarity
+  costValue: '3'
 header:
   distance:
     display: Ranged [10]
@@ -57,8 +59,8 @@ header:
   - Strike
   - Telepathy
   target: One creature
-  title: ''
-  topMatter: Level 1 Talent Ability
+  title: Awe
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Main action
 version: 2

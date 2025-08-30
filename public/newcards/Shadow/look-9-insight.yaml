@@ -3,7 +3,9 @@ body:
     gains an edge.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: 5 burst
@@ -14,8 +16,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 6 Shadow Ability
+  title: Look!
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Maneuver
 version: 2

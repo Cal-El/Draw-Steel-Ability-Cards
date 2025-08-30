@@ -24,7 +24,9 @@ body:
     without spending essence.
   isEffect: true
   title: Persistent 1
-cost: null
+cost:
+  costName: Essence
+  costValue: '3'
 header:
   distance:
     display: 3 cube within [10]
@@ -39,8 +41,8 @@ header:
   - Ranged
   - Void
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 1 Elementalist Ability
+  title: Behold the Mystery
+  topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Main action
 version: 2

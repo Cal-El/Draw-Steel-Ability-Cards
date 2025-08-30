@@ -25,7 +25,9 @@ body:
     Intuition score for each main action they take until the end of their next turn.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -39,8 +41,8 @@ header:
   - Psionic
   - Ranged
   target: One creature
-  title: ''
-  topMatter: Level 9 Null Ability
+  title: Arrestor Cycle
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Free triggered
 version: 2

@@ -28,7 +28,9 @@ body:
     your turn and each target is slowed until the end of their turn.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: 5 x 2 line within 1
@@ -40,8 +42,8 @@ header:
   - Psionic
   - Telekinesis
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 5 Talent Ability
+  title: Hypersonic
+  topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Main action
 version: 2

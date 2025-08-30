@@ -28,7 +28,9 @@ body:
     ability, you can use this ability instead, paying its discipline cost as usual.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '3'
 header:
   distance:
     display: Melee [1]
@@ -43,8 +45,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: ''
-  topMatter: Level 1 Null Ability
+  title: Chronal Spike
+  topMatter: Level 1 Null Heroic Ability
 level: 1
 type: Main action
 version: 2

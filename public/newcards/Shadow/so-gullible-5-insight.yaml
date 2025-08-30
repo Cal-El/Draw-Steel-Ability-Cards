@@ -5,7 +5,9 @@ body:
     Recovery.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: Self
@@ -14,8 +16,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: ''
-  topMatter: Level 2 Shadow Ability
+  title: So Gullible
+  topMatter: Level 2 Shadow Heroic Ability
 level: 2
 type: Free triggered
 version: 2

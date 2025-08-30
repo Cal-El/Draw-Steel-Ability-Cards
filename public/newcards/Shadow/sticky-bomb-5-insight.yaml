@@ -30,7 +30,9 @@ body:
       characteristicBonusOptions:
       - Agility
       includedKitValue: 0
-cost: null
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: Ranged 10
@@ -39,8 +41,8 @@ header:
   keywords:
   - Ranged
   target: One creature
-  title: ''
-  topMatter: Level 2 Shadow Ability
+  title: Sticky Bomb
+  topMatter: Level 2 Shadow Heroic Ability
 level: 2
 type: Main action
 version: 2

@@ -10,7 +10,9 @@ body:
     lowest two rolls.'
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -23,8 +25,8 @@ header:
   - Magic
   - Ranged
   target: Three creatures
-  title: ''
-  topMatter: Level 2 Conduit Ability
+  title: Blessing of Fate and Destiny
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
 version: 2

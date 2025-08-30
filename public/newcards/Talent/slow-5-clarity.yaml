@@ -32,7 +32,9 @@ body:
     required).
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -46,8 +48,8 @@ header:
   - Psionic
   - Ranged
   target: Three creatures or objects
-  title: ''
-  topMatter: Level 2 Talent Ability
+  title: Slow
+  topMatter: Level 2 Talent Heroic Ability
 level: 2
 type: Maneuver
 version: 2

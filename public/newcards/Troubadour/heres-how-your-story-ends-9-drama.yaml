@@ -23,7 +23,7 @@ body:
       effect: frightened (save ends)
       strength: 1
   t3:
-    baseEffect: damage
+    baseEffect: psychic damage
     damage:
       baseValue: 7
       characteristicBonusOptions: []
@@ -32,7 +32,9 @@ body:
       characteristic: Presence
       effect: frightened (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: 5 burst
@@ -42,8 +44,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 6 Troubadour Ability
+  title: Here's How Your Story Ends
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Main action
 version: 2

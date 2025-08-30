@@ -39,7 +39,9 @@ body:
     the target.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Melee [1]
@@ -53,8 +55,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 1 Troubadour Ability
+  title: Method Acting
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Main action
 version: 2

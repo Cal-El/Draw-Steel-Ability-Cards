@@ -35,7 +35,9 @@ body:
       characteristic: Reason
       effect: the target has damage weakness 5 (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: Ranged [5]
@@ -49,8 +51,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 1 Shadow Ability
+  title: Setup
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2

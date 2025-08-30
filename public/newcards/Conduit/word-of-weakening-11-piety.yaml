@@ -38,7 +38,9 @@ body:
 - body: While weakened this way, the target has damage weakness 10.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -52,8 +54,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: ''
-  topMatter: Level 9 Conduit Ability
+  title: Word of Weakening
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

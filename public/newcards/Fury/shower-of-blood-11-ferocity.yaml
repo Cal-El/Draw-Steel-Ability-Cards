@@ -29,7 +29,9 @@ body:
     characteristic scores are considered 1 lower for the purpose of resisting potencies.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: Melee [1]
@@ -44,8 +46,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 9 Fury Ability
+  title: Shower of Blood
+  topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
 version: 2

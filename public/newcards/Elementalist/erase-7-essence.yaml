@@ -19,7 +19,9 @@ body:
     their original space or the nearest unoccupied space.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Essence
+  costValue: '7'
 header:
   distance:
     display: Ranged [10]
@@ -34,8 +36,8 @@ header:
   - Strike
   - Void
   target: Special
-  title: ''
-  topMatter: Level 3 Elementalist Ability
+  title: Erase
+  topMatter: Level 3 Elementalist Heroic Ability
 level: 3
 type: Main action
 version: 2

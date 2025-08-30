@@ -3,7 +3,9 @@ body:
     has damage immunity 5 until the start of your next turn.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -17,8 +19,8 @@ header:
   - Magic
   - Ranged
   target: Three creatures
-  title: ''
-  topMatter: Level 6 Conduit Ability
+  title: Cuirass of the Gods
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Maneuver
 version: 2

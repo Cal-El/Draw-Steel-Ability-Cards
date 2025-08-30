@@ -20,7 +20,9 @@ body:
       baseValue: 23
       characteristicBonusOptions: []
       includedKitValue: 0
-cost: null
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: 3 cube within 1
@@ -31,8 +33,8 @@ header:
   - Area
   - Psionic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 8 Null Ability
+  title: Scalar Assault
+  topMatter: Level 8 Null Heroic Ability
 level: 8
 type: Main action
 version: 2

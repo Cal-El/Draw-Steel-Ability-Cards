@@ -25,7 +25,7 @@ header:
   - Ranged
   - Void
   target: Self or one ally
-  title: ''
+  title: Subtle Relocation
   topMatter: Level 1 Elementalist Ability
 level: 1
 type: Triggered Action

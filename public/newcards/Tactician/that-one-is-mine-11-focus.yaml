@@ -30,7 +30,9 @@ body:
     or heroic ability instead of a free strike against any target marked by you.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -48,8 +50,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 9 Tactician Ability
+  title: That One Is Mine!
+  topMatter: Level 9 Tactician Heroic Ability
 level: 9
 type: Main action
 version: 2

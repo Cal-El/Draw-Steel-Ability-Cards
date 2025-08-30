@@ -44,7 +44,9 @@ body:
     This effect can be reversed only at the Director's discretion.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: Melee [1]
@@ -59,8 +61,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 9 Null Ability
+  title: Realitas
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Main action
 version: 2

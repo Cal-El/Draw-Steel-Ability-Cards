@@ -23,7 +23,9 @@ body:
       characteristicBonusOptions:
       - Might
       includedKitValue: 0
-cost: null
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -38,8 +40,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 5 Censor Ability
+  title: Shield of the Righteous
+  topMatter: Level 5 Censor Heroic Ability
 level: 5
 type: Main action
 version: 2

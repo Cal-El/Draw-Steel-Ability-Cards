@@ -3,7 +3,9 @@ body:
     their speed. You and each target gain 2 surges.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: 2 burst
@@ -12,8 +14,8 @@ header:
   keywords:
   - Area
   target: Self and each ally in the area
-  title: ''
-  topMatter: Level 6 Tactician Ability
+  title: Hustle!
+  topMatter: Level 6 Tactician Heroic Ability
 level: 6
 type: Maneuver
 version: 2

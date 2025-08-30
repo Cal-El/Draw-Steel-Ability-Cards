@@ -10,7 +10,9 @@ body:
     immunity and deal extra damage equal to three times your Reason score.
   isEffect: true
   title: Mark Benefit
-cost: null
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Ranged 10
@@ -20,8 +22,8 @@ header:
   keywords:
   - Ranged
   target: Three creatures
-  title: ''
-  topMatter: Level 6 Tactician Ability
+  title: Battle Plan
+  topMatter: Level 6 Tactician Heroic Ability
 level: 6
 type: Maneuver
 version: 2

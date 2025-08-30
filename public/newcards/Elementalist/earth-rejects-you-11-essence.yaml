@@ -24,7 +24,9 @@ body:
     without spending essence.
   isEffect: true
   title: Persistent 2
-cost: null
+cost:
+  costName: Essence
+  costValue: '11'
 header:
   distance:
     display: 5 cube within [10]
@@ -39,8 +41,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy and object in the area
-  title: ''
-  topMatter: Level 9 Elementalist Ability
+  title: Earth Rejects You
+  topMatter: Level 9 Elementalist Heroic Ability
 level: 9
 type: Main action
 version: 2

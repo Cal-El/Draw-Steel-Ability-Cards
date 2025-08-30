@@ -3,7 +3,9 @@ body:
     you, and gain 3 surges.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '11'
 header:
   distance:
     display: Self
@@ -12,8 +14,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: ''
-  topMatter: Level 9 Null Ability
+  title: Inertial Absorption
+  topMatter: Level 9 Null Heroic Ability
 level: 9
 type: Free triggered
 version: 2

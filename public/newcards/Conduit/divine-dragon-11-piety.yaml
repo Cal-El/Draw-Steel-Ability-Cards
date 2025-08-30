@@ -54,7 +54,9 @@ body:
       characteristicBonusOptions:
       - Intuition
       includedKitValue: 0
-cost: null
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -67,8 +69,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: ''
-  topMatter: Level 9 Conduit Ability
+  title: Divine Dragon
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

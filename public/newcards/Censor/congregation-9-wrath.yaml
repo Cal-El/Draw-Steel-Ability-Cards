@@ -31,7 +31,9 @@ body:
 - body: Each ally can shift up to 2 squares and gains 2 surges before making the strike.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -45,8 +47,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 6 Censor Ability
+  title: Congregation
+  topMatter: Level 6 Censor Heroic Ability
 level: 6
 type: Main action
 version: 2

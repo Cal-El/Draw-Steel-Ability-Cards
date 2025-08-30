@@ -2,7 +2,9 @@ body:
 - body: The target gains 20 temporary Stamina and 3 surges.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '7'
 header:
   distance:
     display: Ranged [10]
@@ -15,8 +17,8 @@ header:
   - Magic
   - Ranged
   target: One ally
-  title: ''
-  topMatter: Level 3 Conduit Ability
+  title: Saint's Raiment
+  topMatter: Level 3 Conduit Heroic Ability
 level: 3
 type: Maneuver
 version: 2

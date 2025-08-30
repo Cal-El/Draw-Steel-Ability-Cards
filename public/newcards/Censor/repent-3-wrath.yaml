@@ -35,7 +35,9 @@ body:
       characteristic: Intuition
       effect: dazed (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Wrath
+  costValue: '3'
 header:
   distance:
     display: Ranged [10]
@@ -49,8 +51,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 1 Censor Ability
+  title: Repent!
+  topMatter: Level 1 Censor Heroic Ability
 level: 1
 type: Main action
 version: 2

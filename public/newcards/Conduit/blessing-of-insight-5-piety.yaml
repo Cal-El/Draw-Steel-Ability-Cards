@@ -3,7 +3,9 @@ body:
     surge at the end of each of your turns.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -16,8 +18,8 @@ header:
   - Magic
   - Ranged
   target: Self and each ally
-  title: ''
-  topMatter: Level 2 Conduit Ability
+  title: Blessing of Insight
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Maneuver
 version: 2

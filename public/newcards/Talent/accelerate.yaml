@@ -18,7 +18,7 @@ header:
   - Psionic
   - Ranged
   target: Self or one creature
-  title: ''
+  title: Accelerate
   topMatter: Level 1 Talent Ability
 level: 1
 type: Maneuver

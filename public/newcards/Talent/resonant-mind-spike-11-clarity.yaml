@@ -30,7 +30,9 @@ body:
     half the damage the target takes, and you can't reduce this damage in any way.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -46,8 +48,8 @@ header:
   - Strike
   - Telepathy
   target: One creature
-  title: ''
-  topMatter: Level 9 Talent Ability
+  title: Resonant Mind Spike
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Main action
 version: 2

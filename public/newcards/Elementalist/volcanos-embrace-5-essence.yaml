@@ -35,7 +35,9 @@ body:
       characteristic: Agility
       effect: restrained (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -51,8 +53,8 @@ header:
   - Ranged
   - Strike
   target: One creature
-  title: ''
-  topMatter: Level 2 Elementalist Ability
+  title: Volcano's Embrace
+  topMatter: Level 2 Elementalist Heroic Ability
 level: 2
 type: Main action
 version: 2

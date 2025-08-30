@@ -44,7 +44,9 @@ body:
     the target while they are slowed this way.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -60,8 +62,8 @@ header:
   - Strike
   - Telepathy
   target: One creature
-  title: ''
-  topMatter: Level 5 Talent Ability
+  title: Mind Snare
+  topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Main action
 version: 2

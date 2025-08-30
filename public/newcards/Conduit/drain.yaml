@@ -40,7 +40,7 @@ header:
   - Melee
   - Strike
   target: One creature
-  title: ''
+  title: Drain
   topMatter: Level 1 Conduit Ability
 level: 1
 type: Main action

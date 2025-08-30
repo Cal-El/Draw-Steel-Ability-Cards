@@ -4,7 +4,9 @@ body:
     that ends at the end of their turn, or to stand up if prone.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: 4 burst
@@ -14,8 +16,8 @@ header:
   - Area
   - Magic
   target: Each ally in the area
-  title: ''
-  topMatter: Level 1 Conduit Ability
+  title: Sermon of Grace
+  topMatter: Level 1 Conduit Heroic Ability
 level: 1
 type: Main action
 version: 2

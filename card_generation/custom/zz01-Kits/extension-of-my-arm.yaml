@@ -1,0 +1,47 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; vertical pull 1
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+  t2:
+    baseEffect: damage; vertical pull 2
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+  t3:
+    baseEffect: damage; vertical pull 3
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+cost: null
+header:
+  distance:
+    display: Melee [3]
+    values:
+    - type: Melee
+      baseValue: 3
+      includedKitValue: 1
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Extension of My Arm
+  topMatter: Whirlwind Kit Signature Ability
+  flavour: When you draw your whip back after an attack, your enemy is drawn ever closer.
+type: Main action
+version: 2

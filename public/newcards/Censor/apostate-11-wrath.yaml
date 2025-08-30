@@ -27,7 +27,9 @@ body:
     weakness 10.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Melee [1]
@@ -41,8 +43,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 9 Censor Ability
+  title: Apostate
+  topMatter: Level 9 Censor Heroic Ability
 level: 9
 type: Main action
 version: 2

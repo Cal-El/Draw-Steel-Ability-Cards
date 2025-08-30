@@ -27,7 +27,7 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: ''
+  title: Healing Grace
   topMatter: Level 1 Conduit Ability
 level: 1
 type: Maneuver

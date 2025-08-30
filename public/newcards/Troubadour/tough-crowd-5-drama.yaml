@@ -38,7 +38,9 @@ body:
       characteristic: Might
       effect: pull 3 toward the center of the area
       strength: 2
-cost: null
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: 3 cube within [10]
@@ -52,8 +54,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: ''
-  topMatter: Level 2 Troubadour Ability
+  title: Tough Crowd
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

@@ -42,7 +42,9 @@ body:
     creature must make the free strike against the target instead.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -56,8 +58,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 8 Censor Ability
+  title: Your Allies Turn on You!
+  topMatter: Level 8 Censor Heroic Ability
 level: 8
 type: Main action
 version: 2

@@ -17,7 +17,9 @@ body:
     all targets take from forced movement.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: Special
@@ -28,8 +30,8 @@ header:
   - Psionic
   - Telekinesis
   target: Each enemy and object in the area
-  title: ''
-  topMatter: Level 9 Talent Ability
+  title: Fulcrum
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Main action
 version: 2

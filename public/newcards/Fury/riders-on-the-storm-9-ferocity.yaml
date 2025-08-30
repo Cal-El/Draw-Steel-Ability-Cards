@@ -12,7 +12,9 @@ body:
     for 1 hour or until a combat encounter begins.
   isEffect: true
   title: Special
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '9'
 header:
   distance:
     display: 3 aura
@@ -22,8 +24,8 @@ header:
   - Area
   - Magic
   target: Each creature in the area
-  title: ''
-  topMatter: Level 6 Fury Ability
+  title: Riders on the Storm
+  topMatter: Level 6 Fury Heroic Ability
 level: 6
 type: Maneuver
 version: 2

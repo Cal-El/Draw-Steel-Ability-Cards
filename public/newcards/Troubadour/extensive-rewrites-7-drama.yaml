@@ -25,7 +25,9 @@ body:
     creatures or objects using this ability.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '7'
 header:
   distance:
     display: 4 burst
@@ -35,8 +37,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 3 Troubadour Ability
+  title: Extensive Rewrites
+  topMatter: Level 3 Troubadour Heroic Ability
 level: 3
 type: Maneuver
 version: 2

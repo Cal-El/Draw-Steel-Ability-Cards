@@ -5,7 +5,9 @@ body:
     round. At the end of the encounter, the target turns to dust and is blown away.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -18,8 +20,8 @@ header:
   - Magic
   - Ranged
   target: One dead enemy
-  title: ''
-  topMatter: Level 2 Troubadour Ability
+  title: Twist at the End
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

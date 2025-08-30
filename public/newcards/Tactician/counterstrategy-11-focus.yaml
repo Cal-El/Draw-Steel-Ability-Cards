@@ -5,7 +5,9 @@ body:
     their Heroic Resource.'
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Self
@@ -14,8 +16,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: ''
-  topMatter: Level 9 Tactician Ability
+  title: Counterstrategy
+  topMatter: Level 9 Tactician Heroic Ability
 level: 9
 type: Main action
 version: 2

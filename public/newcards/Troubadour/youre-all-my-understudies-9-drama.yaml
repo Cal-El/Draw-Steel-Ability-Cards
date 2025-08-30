@@ -4,7 +4,9 @@ body:
     kit in addition to their own kit's bonuses.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: 5 burst
@@ -14,8 +16,8 @@ header:
   - Area
   - Magic
   target: Each ally in the area
-  title: ''
-  topMatter: Level 6 Troubadour Ability
+  title: You're All My Understudies
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Maneuver
 version: 2

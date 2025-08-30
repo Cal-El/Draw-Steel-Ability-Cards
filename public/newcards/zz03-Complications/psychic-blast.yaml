@@ -1,0 +1,30 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: 1 psychic damage for each Heroic Resource you spend, to a maximum equal to your level
+  t2:
+    baseEffect: 1 psychic damage for each Heroic Resource you spend, to a maximum equal to your level + your highest characteristic 
+  t3:
+    baseEffect: 1 psychic damage for each Heroic Resource you spend
+cost:
+  costName: HR
+  costValue: X
+header:
+  distance:
+    display: 3 burst
+    values: []
+  keywords:
+  - Area
+  - Psionic
+  target: Each creature in the area
+  title: Psychic Blast
+  topMatter: Psychic Eruption Complication Heroic Ability
+  flavour: Psionic energy bursts from your body in an iridescent shimmer.
+type: Main action
+version: 2

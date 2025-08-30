@@ -8,7 +8,9 @@ body:
     free strike against a creature of your choice within 5 squares of them.
   isEffect: true
   title: Mark Benefit
-cost: null
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged 10
@@ -18,8 +20,8 @@ header:
   keywords:
   - Ranged
   target: Two creatures
-  title: ''
-  topMatter: Level 2 Tactician Ability
+  title: Fog of War
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Maneuver
 version: 2

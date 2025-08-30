@@ -27,7 +27,9 @@ body:
     portal before it closes, never to be seen again.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Melee [3]
@@ -43,8 +45,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 9 Shadow Ability
+  title: Demon Door
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

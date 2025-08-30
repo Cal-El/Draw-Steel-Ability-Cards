@@ -35,7 +35,9 @@ body:
 - body: The area is difficult terrain for enemies.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '3'
 header:
   distance:
     display: 3 cube within [10]
@@ -49,8 +51,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 1 Troubadour Ability
+  title: Quick Rewrite
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Main action
 version: 2

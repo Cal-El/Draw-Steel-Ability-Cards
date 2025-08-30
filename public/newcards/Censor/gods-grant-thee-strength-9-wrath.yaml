@@ -5,7 +5,9 @@ body:
     terrain, and can use a strike signature ability as a free triggered action.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '9'
 header:
   distance:
     display: Ranged 10
@@ -14,8 +16,8 @@ header:
   keywords:
   - Ranged
   target: Self or one ally
-  title: ''
-  topMatter: Level 5 Censor Ability
+  title: Gods Grant Thee Strength
+  topMatter: Level 5 Censor Heroic Ability
 level: 5
 type: Main action
 version: 2

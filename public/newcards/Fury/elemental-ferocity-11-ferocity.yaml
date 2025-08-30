@@ -5,7 +5,9 @@ body:
     type. If this damage reduces the enemy to 0 Stamina, you gain 10 temporary Stamina.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: Self
@@ -14,8 +16,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: ''
-  topMatter: Level 8 Fury Ability
+  title: Elemental Ferocity
+  topMatter: Level 8 Fury Heroic Ability
 level: 8
 type: Maneuver
 version: 2

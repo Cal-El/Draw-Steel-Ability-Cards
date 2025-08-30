@@ -23,7 +23,9 @@ body:
       characteristicBonusOptions:
       - Agility
       includedKitValue: 0
-cost: null
+cost:
+  costName: Discipline
+  costValue: '5'
 header:
   distance:
     display: Melee [3]
@@ -38,8 +40,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 2 Null Ability
+  title: Gravitic Strike
+  topMatter: Level 2 Null Heroic Ability
 level: 2
 type: Main action
 version: 2

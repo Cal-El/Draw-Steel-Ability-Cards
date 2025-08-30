@@ -42,7 +42,9 @@ body:
 - body: You target yourself and three enemies instead.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -58,8 +60,8 @@ header:
   - Ranged
   - Strike
   target: Two enemies
-  title: ''
-  topMatter: Level 5 Talent Ability
+  title: Soulbound
+  topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Main action
 version: 2

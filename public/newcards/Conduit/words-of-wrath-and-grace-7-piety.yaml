@@ -23,7 +23,9 @@ body:
 - body: Each ally in the area can spend a Recovery.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '7'
 header:
   distance:
     display: 5 burst
@@ -34,8 +36,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 3 Conduit Ability
+  title: Words of Wrath and Grace
+  topMatter: Level 3 Conduit Heroic Ability
 level: 3
 type: Main action
 version: 2

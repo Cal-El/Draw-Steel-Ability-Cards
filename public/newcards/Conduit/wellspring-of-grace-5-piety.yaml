@@ -3,7 +3,9 @@ body:
     their turn in the area, they can spend a Recovery.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '5'
 header:
   distance:
     display: 3 aura
@@ -13,8 +15,8 @@ header:
   - Area
   - Magic
   target: Each ally in the area
-  title: ''
-  topMatter: Level 2 Conduit Ability
+  title: Wellspring of Grace
+  topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
 version: 2

@@ -5,7 +5,9 @@ body:
     if they are observed.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '11'
 header:
   distance:
     display: Ranged 10
@@ -14,8 +16,8 @@ header:
   keywords:
   - Ranged
   target: Self and two allies
-  title: ''
-  topMatter: Level 9 Tactician Ability
+  title: Squad! Hit and Run!
+  topMatter: Level 9 Tactician Heroic Ability
 level: 9
 type: Main action
 version: 2

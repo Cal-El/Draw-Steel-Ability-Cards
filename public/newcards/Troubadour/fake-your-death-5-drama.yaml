@@ -6,7 +6,9 @@ body:
     a main action or a maneuver.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Self
@@ -15,8 +17,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: ''
-  topMatter: Level 1 Troubadour Ability
+  title: Fake Your Death
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Maneuver
 version: 2

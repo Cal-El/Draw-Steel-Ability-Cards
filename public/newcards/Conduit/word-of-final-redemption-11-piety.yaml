@@ -6,7 +6,9 @@ body:
     and you decide who the ability targets.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -19,8 +21,8 @@ header:
   - Magic
   - Ranged
   target: One creature
-  title: ''
-  topMatter: Level 9 Conduit Ability
+  title: Word of Final Redemption
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Free triggered
 version: 2

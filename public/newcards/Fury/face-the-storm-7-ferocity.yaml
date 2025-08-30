@@ -6,7 +6,9 @@ body:
     score and increases its potency by 1.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '7'
 header:
   distance:
     display: Self
@@ -16,8 +18,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: ''
-  topMatter: Level 3 Fury Ability
+  title: Face the Storm!
+  topMatter: Level 3 Fury Heroic Ability
 level: 3
 type: Maneuver
 version: 2

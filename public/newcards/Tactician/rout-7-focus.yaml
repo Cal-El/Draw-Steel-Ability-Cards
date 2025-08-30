@@ -4,7 +4,9 @@ body:
     frightened of the creature who dealt the damage (save ends).
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '7'
 header:
   distance:
     display: Self
@@ -13,8 +15,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: ''
-  topMatter: Level 3 Tactician Ability
+  title: Rout
+  topMatter: Level 3 Tactician Heroic Ability
 level: 3
 type: Maneuver
 version: 2

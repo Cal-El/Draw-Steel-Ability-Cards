@@ -31,7 +31,9 @@ body:
       characteristicBonusOptions:
       - Presence
       includedKitValue: 0
-cost: null
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: Melee [2]
@@ -45,8 +47,8 @@ header:
   - Psionic
   - Melee
   target: One enemy
-  title: ''
-  topMatter: Level 6 Talent Ability
+  title: Fate
+  topMatter: Level 6 Talent Heroic Ability
 level: 6
 type: Main action
 version: 2

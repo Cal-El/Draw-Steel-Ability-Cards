@@ -4,7 +4,9 @@ body:
     this ability, you can't gain any clarity until the end of the next combat round.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: 2 burst
@@ -15,8 +17,8 @@ header:
   - Chronopathy
   - Psionic
   target: Each ally in the area
-  title: ''
-  topMatter: Level 9 Talent Ability
+  title: Borrow From the Future
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Maneuver
 version: 2

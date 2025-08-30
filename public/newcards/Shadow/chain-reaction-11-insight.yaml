@@ -26,7 +26,9 @@ body:
       baseValue: 15
       characteristicBonusOptions: []
       includedKitValue: 0
-cost: null
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Ranged 10
@@ -36,8 +38,8 @@ header:
   keywords:
   - Ranged
   target: One creature or object
-  title: ''
-  topMatter: Level 9 Shadow Ability
+  title: Chain Reaction
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Main action
 version: 2

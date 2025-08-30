@@ -4,7 +4,9 @@ body:
     turn.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '7'
 header:
   distance:
     display: Self
@@ -13,8 +15,8 @@ header:
   keywords:
   - Magic
   target: Self
-  title: ''
-  topMatter: Level 3 Fury Ability
+  title: Demon Unleashed
+  topMatter: Level 3 Fury Heroic Ability
 level: 3
 type: Maneuver
 version: 2

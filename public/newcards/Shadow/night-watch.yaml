@@ -18,7 +18,7 @@ header:
   - Ranged
   - Weapon
   target: One ally
-  title: ''
+  title: Night Watch
   topMatter: Level 4 Shadow Ability
 level: 4
 type: Triggered Action

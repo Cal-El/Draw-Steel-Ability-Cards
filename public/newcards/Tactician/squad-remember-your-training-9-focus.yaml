@@ -3,7 +3,9 @@ body:
     edge.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Ranged 10
@@ -12,8 +14,8 @@ header:
   keywords:
   - Ranged
   target: Self and two allies
-  title: ''
-  topMatter: Level 5 Tactician Ability
+  title: Squad! Remember Your Training!
+  topMatter: Level 5 Tactician Heroic Ability
 level: 5
 type: Main action
 version: 2

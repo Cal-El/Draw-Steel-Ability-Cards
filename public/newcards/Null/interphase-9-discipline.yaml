@@ -2,7 +2,9 @@ body:
 - body: You can use up to three signature abilities, each of which gains an edge.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Self
@@ -11,8 +13,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: ''
-  topMatter: Level 6 Null Ability
+  title: Interphase
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Main action
 version: 2

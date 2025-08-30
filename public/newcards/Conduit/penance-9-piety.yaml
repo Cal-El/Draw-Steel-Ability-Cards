@@ -32,7 +32,9 @@ body:
       characteristic: Intuition
       effect: prone and can't stand (save ends)
       strength: 2
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: 4 cube within [10]
@@ -46,8 +48,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 5 Conduit Ability
+  title: Penance
+  topMatter: Level 5 Conduit Heroic Ability
 level: 5
 type: Main action
 version: 2

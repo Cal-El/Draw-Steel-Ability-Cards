@@ -3,7 +3,9 @@ body:
     your stability gains a bonus equal to your Intuition score.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Self
@@ -12,8 +14,8 @@ header:
   keywords:
   - Psionic
   target: Self
-  title: ''
-  topMatter: Level 6 Null Ability
+  title: Iron Body
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Maneuver
 version: 2

@@ -1,10 +1,15 @@
 body:
-- body: 'Each target is marked by you, and you gain two surges. Mark Benefit: Until
-    the end of the encounter, whenever you or any ally makes a strike against a creature
-    marked by you, you can spend 2 focus to add one additional target to the strike.'
+- body: Each target is marked by you, and you gain two surges.
   isEffect: true
   title: Effect
-cost: null
+- body: Until the end of the encounter, whenever you or any ally makes a strike against
+    a creature marked by you, you can spend 2 focus to add one additional target to
+    the strike.
+  isEffect: true
+  title: Mark Benefit
+cost:
+  costName: Focus
+  costValue: '5'
 header:
   distance:
     display: Ranged 5
@@ -14,8 +19,8 @@ header:
   keywords:
   - Ranged
   target: Two creatures
-  title: ''
-  topMatter: Level 2 Tactician Ability
+  title: Targets of Opportunity
+  topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Maneuver
 version: 2

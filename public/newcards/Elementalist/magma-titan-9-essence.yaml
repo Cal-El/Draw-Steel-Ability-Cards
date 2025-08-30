@@ -20,7 +20,9 @@ body:
     of your turn, the target can spend 2 Recoveries.
   isEffect: true
   title: Persistent 2
-cost: null
+cost:
+  costName: Essence
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -36,8 +38,8 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: ''
-  topMatter: Level 6 Elementalist Ability
+  title: Magma Titan
+  topMatter: Level 6 Elementalist Heroic Ability
 level: 6
 type: Maneuver
 version: 2

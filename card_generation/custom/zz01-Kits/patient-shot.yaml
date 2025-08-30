@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 4
+- body: If you don't take a move action this turn, this strike deals extra damage equal to your Might or Agility score (your choice).
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Ranged [15]
+    values:
+    - type: Ranged
+      baseValue: 15
+      includedKitValue: 10
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Patient Shot
+  topMatter: Sniper Kit Signature Ability
+  flavour: Breathe ... aim ... waith ... then strike!
+type: Main action
+version: 2

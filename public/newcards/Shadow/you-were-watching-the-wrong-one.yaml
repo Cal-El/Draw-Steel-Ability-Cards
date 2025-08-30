@@ -42,7 +42,7 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
+  title: You Were Watching the Wrong One
   topMatter: Level 1 Shadow Ability
 level: 1
 type: Main action

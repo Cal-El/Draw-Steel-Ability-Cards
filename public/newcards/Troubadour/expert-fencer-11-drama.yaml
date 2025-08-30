@@ -32,7 +32,9 @@ body:
     you gain 3 surges that you can use immediately.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '11'
 header:
   distance:
     display: Melee [3]
@@ -47,8 +49,8 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: ''
-  topMatter: Level 9 Troubadour Ability
+  title: Expert Fencer
+  topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Main action
 version: 2

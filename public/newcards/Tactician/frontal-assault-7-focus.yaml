@@ -7,7 +7,9 @@ body:
     ability instead of a melee free strike.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '7'
 header:
   distance:
     display: Self
@@ -16,8 +18,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: ''
-  topMatter: Level 3 Tactician Ability
+  title: Frontal Assault
+  topMatter: Level 3 Tactician Heroic Ability
 level: 3
 type: Maneuver
 version: 2

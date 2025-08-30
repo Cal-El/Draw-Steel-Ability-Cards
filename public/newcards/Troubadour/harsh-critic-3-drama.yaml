@@ -29,7 +29,9 @@ body:
     as usual.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '3'
 header:
   distance:
     display: Melee [1] or Ranged [10]
@@ -47,8 +49,8 @@ header:
   - Ranged
   - Strike
   target: One creature or object
-  title: ''
-  topMatter: Level 1 Troubadour Ability
+  title: Harsh Critic
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Main action
 version: 2

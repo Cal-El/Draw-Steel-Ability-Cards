@@ -12,7 +12,9 @@ body:
     by a number equal to the target's Intuition score.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '5'
 header:
   distance:
     display: 3 cube within [10]
@@ -27,8 +29,8 @@ header:
   - Magic
   - Ranged
   target: Each creature in the area
-  title: ''
-  topMatter: Level 2 Shadow Ability
+  title: Machinations of Sound
+  topMatter: Level 2 Shadow Heroic Ability
 level: 2
 type: Maneuver
 version: 2

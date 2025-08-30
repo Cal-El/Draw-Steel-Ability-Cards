@@ -8,7 +8,9 @@ body:
 - body: The target gains 2 surges. You are weakened and slowed (save ends).
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -23,8 +25,8 @@ header:
   - Psionic
   - Ranged
   target: Self or one ally
-  title: ''
-  topMatter: Level 5 Talent Ability
+  title: Exothermic Shield
+  topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Maneuver
 version: 2

@@ -27,7 +27,9 @@ body:
     against that creature.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Focus
+  costValue: '9'
 header:
   distance:
     display: Melee [1] or Ranged [5]
@@ -45,8 +47,8 @@ header:
   - Strike
   - Weapon
   target: Two creatures
-  title: ''
-  topMatter: Level 6 Tactician Ability
+  title: Panic in Their Lines
+  topMatter: Level 6 Tactician Heroic Ability
 level: 6
 type: Main action
 version: 2

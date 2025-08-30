@@ -39,7 +39,9 @@ body:
     and can't obtain a tier 3 outcome on ability rolls.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '5'
 header:
   distance:
     display: Melee [1]
@@ -54,8 +56,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 1 Null Ability
+  title: Phase Strike
+  topMatter: Level 1 Null Heroic Ability
 level: 1
 type: Main action
 version: 2

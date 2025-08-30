@@ -28,7 +28,9 @@ body:
     you die.
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '11'
 header:
   distance:
     display: 3 burst
@@ -40,8 +42,8 @@ header:
   - Psionic
   - Telekinesis
   target: Each enemy and object in the area
-  title: ''
-  topMatter: Level 9 Talent Ability
+  title: Gravitic Nova
+  topMatter: Level 9 Talent Heroic Ability
 level: 9
 type: Main action
 version: 2

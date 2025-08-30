@@ -5,7 +5,9 @@ body:
     to a new location within the area and make a free strike against them.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: 3 burst
@@ -16,8 +18,8 @@ header:
   - Area
   - Magic
   target: Special
-  title: ''
-  topMatter: Level 5 Shadow Ability
+  title: Blackout
+  topMatter: Level 5 Shadow Heroic Ability
 level: 5
 type: Maneuver
 version: 2

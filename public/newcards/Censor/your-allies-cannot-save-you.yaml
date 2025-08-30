@@ -41,7 +41,7 @@ header:
   - Strike
   - Weapon
   target: One creature or object
-  title: ''
+  title: Your Allies Cannot Save You!
   topMatter: Level 1 Censor Ability
 level: 1
 type: Main action

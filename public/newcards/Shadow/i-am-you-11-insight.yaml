@@ -5,7 +5,9 @@ body:
     the power roll.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '11'
 header:
   distance:
     display: Ranged [10]
@@ -18,8 +20,8 @@ header:
   - Magic
   - Ranged
   target: One creature
-  title: ''
-  topMatter: Level 9 Shadow Ability
+  title: I Am You
+  topMatter: Level 9 Shadow Heroic Ability
 level: 9
 type: Maneuver
 version: 2

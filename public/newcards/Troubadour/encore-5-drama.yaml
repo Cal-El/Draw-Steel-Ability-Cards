@@ -5,7 +5,9 @@ body:
     power rolls, and any damage you deal is sonic damage.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '5'
 header:
   distance:
     display: Special
@@ -15,8 +17,8 @@ header:
   - Magic
   - Strike
   target: Special
-  title: ''
-  topMatter: Level 2 Troubadour Ability
+  title: Encore
+  topMatter: Level 2 Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

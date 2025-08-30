@@ -37,7 +37,9 @@ body:
       characteristic: Might
       effect: dazed
       strength: 2
-cost: null
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Self; see below
@@ -49,8 +51,8 @@ header:
   - Psionic
   - Weapon
   target: Self
-  title: ''
-  topMatter: Level 6 Null Ability
+  title: Phase Step
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Main action
 version: 2

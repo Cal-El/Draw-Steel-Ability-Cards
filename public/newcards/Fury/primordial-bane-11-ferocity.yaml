@@ -28,7 +28,9 @@ body:
     chosen type (save ends).
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Ferocity
+  costValue: '11'
 header:
   distance:
     display: Melee [1]
@@ -43,8 +45,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 9 Fury Ability
+  title: Primordial Bane
+  topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
 version: 2

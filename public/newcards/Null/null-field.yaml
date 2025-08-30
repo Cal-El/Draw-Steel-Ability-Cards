@@ -27,7 +27,7 @@ header:
   - Area
   - Psionic
   target: Each enemy in the area
-  title: ''
+  title: Null Field
   topMatter: Level 1 Null Ability
 level: 1
 type: Maneuver

@@ -26,7 +26,9 @@ body:
     can use a maneuver to make its power roll.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '11'
 header:
   distance:
     display: 5 cube within [5]
@@ -40,8 +42,8 @@ header:
   - Magic
   - Ranged
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 9 Conduit Ability
+  title: Godstorm
+  topMatter: Level 9 Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

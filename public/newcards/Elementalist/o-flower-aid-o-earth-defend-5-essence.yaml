@@ -15,7 +15,9 @@ body:
     your line of effect.
   isEffect: true
   title: Persistent 1
-cost: null
+cost:
+  costName: Essence
+  costValue: '5'
 header:
   distance:
     display: 3 cube within [10]
@@ -32,8 +34,8 @@ header:
   - Magic
   - Ranged
   target: Special
-  title: ''
-  topMatter: Level 2 Elementalist Ability
+  title: O Flower Aid, O Earth Defend
+  topMatter: Level 2 Elementalist Heroic Ability
 level: 2
 type: Maneuver
 version: 2

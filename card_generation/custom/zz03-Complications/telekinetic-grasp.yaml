@@ -1,0 +1,30 @@
+body:
+- characteristicBonus:
+  - Might
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Push or pull 1
+  t2:
+    baseEffect: Push or pull 2
+  t3:
+    baseEffect: Push or pull 3
+cost: null
+header:
+  distance:
+    display: Ranged 10
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Telekinetic Grasp
+  topMatter: Rogue Talent Complication Ability
+  flavour: You reach out with your mind to move a creature or object.
+type: Maneuver
+version: 2

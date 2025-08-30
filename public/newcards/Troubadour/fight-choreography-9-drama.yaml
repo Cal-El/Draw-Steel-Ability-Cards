@@ -5,7 +5,9 @@ body:
     free strike targets. You then slide the target 5 squares, ignoring stability.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: Melee [1]
@@ -20,8 +22,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 6 Troubadour Ability
+  title: Fight Choreography
+  topMatter: Level 6 Troubadour Heroic Ability
 level: 6
 type: Main action
 version: 2

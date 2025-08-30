@@ -24,7 +24,9 @@ body:
     deal damage to buildings.
   isEffect: true
   title: Special
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: 4 burst
@@ -34,8 +36,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 6 Conduit Ability
+  title: Invocation of Undoing
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Main action
 version: 2

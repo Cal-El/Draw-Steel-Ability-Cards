@@ -24,7 +24,9 @@ body:
     below 1 Stamina.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '9'
 header:
   distance:
     display: 3 burst
@@ -36,8 +38,8 @@ header:
   - Melee
   - Weapon
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 5 Troubadour Ability
+  title: Action Hero
+  topMatter: Level 5 Troubadour Heroic Ability
 level: 5
 type: Main action
 version: 2

@@ -13,7 +13,9 @@ body:
     the ability is resolved.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Drama
+  costValue: '11'
 header:
   distance:
     display: Melee [1] or Ranged [10]
@@ -31,8 +33,8 @@ header:
   - Melee
   - Ranged
   target: One creature
-  title: ''
-  topMatter: Level 9 Troubadour Ability
+  title: Epic
+  topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Maneuver
 version: 2

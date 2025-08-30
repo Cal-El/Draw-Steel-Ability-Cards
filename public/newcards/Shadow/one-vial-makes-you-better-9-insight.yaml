@@ -9,7 +9,9 @@ body:
     end of the encounter.'
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Insight
+  costValue: '9'
 header:
   distance:
     display: Ranged 10
@@ -18,8 +20,8 @@ header:
   keywords:
   - Ranged
   target: Three creatures
-  title: ''
-  topMatter: Level 6 Shadow Ability
+  title: One Vial Makes You Better
+  topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Maneuver
 version: 2

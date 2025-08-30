@@ -1,0 +1,18 @@
+body:
+- body: Your loyalty collar detonates, dealing fire damage equal to 5 plus your level to each target. Once you use this ability, you can’t use it again until you spend 1 uninterrupted minute out of combat resetting the collar.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: 1 burst
+    values: []
+  target: Each enemy in the area
+  title: Posthumous Retirement
+  topMatter: War Dog Collar Complication Ability
+  keywords:
+  - Area
+  - Magic
+  flavour: You make your modified collar explode.
+type: Maneuver
+version: 2

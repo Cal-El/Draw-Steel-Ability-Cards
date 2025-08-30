@@ -11,7 +11,9 @@ body:
 - body: The pillars vanish as soon as the effects of the forced movement are resolved.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -24,8 +26,8 @@ header:
   - Psionic
   - Ranged
   target: Three creatures or objects
-  title: ''
-  topMatter: Level 6 Null Ability
+  title: Ice Pillars
+  topMatter: Level 6 Null Heroic Ability
 level: 6
 type: Main action
 version: 2

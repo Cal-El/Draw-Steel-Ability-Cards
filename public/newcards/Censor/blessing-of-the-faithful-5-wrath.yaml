@@ -3,7 +3,9 @@ body:
     surge at the end of each of your turns.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Wrath
+  costValue: '5'
 header:
   distance:
     display: 3 aura
@@ -13,8 +15,8 @@ header:
   - Area
   - Magic
   target: Self and each ally in the area
-  title: ''
-  topMatter: Level 2 Censor Ability
+  title: Blessing of the Faithful
+  topMatter: Level 2 Censor Heroic Ability
 level: 2
 type: Maneuver
 version: 2

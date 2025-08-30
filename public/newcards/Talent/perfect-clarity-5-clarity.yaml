@@ -7,7 +7,9 @@ body:
 - body: You take 1d6 damage, and you can't use triggered actions (save ends).
   isEffect: true
   title: Strained
-cost: null
+cost:
+  costName: Clarity
+  costValue: '5'
 header:
   distance:
     display: Ranged [10]
@@ -21,8 +23,8 @@ header:
   - Ranged
   - Telepathy
   target: Self or one ally
-  title: ''
-  topMatter: Level 1 Talent Ability
+  title: Perfect Clarity
+  topMatter: Level 1 Talent Heroic Ability
 level: 1
 type: Maneuver
 version: 2

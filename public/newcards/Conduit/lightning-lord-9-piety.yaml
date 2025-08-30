@@ -24,7 +24,9 @@ body:
     to you, and can be pushed into other targets in the same line.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: Three 10 x 1 lines within 1
@@ -34,8 +36,8 @@ header:
   - Area
   - Magic
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 6 Conduit Ability
+  title: Lightning Lord
+  topMatter: Level 6 Conduit Heroic Ability
 level: 6
 type: Main action
 version: 2

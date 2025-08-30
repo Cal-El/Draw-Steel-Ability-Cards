@@ -6,7 +6,9 @@ body:
 - body: You gain a +4 bonus to speed instead.
   isEffect: true
   title: Spend 1 Drama
-cost: null
+cost:
+  costName: Drama
+  costValue: '1'
 header:
   distance:
     display: Self
@@ -15,8 +17,8 @@ header:
   keywords:
   - '-'
   target: Self
-  title: ''
-  topMatter: Level 1 Troubadour Ability
+  title: Star Power
+  topMatter: Level 1 Troubadour Heroic Ability
 level: 1
 type: Maneuver
 version: 2

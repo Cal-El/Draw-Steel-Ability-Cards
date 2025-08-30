@@ -24,7 +24,9 @@ body:
     you use this ability.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Discipline
+  costValue: '5'
 header:
   distance:
     display: 2 burst
@@ -35,8 +37,8 @@ header:
   - Psionic
   - Weapon
   target: Each enemy in the area
-  title: ''
-  topMatter: Level 1 Null Ability
+  title: A Squad Unto Myself
+  topMatter: Level 1 Null Heroic Ability
 level: 1
 type: Main action
 version: 2

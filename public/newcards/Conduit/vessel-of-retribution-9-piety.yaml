@@ -3,7 +3,9 @@ body:
     each enemy within 5 squares of them takes 15 holy damage.
   isEffect: true
   title: Effect
-cost: null
+cost:
+  costName: Piety
+  costValue: '9'
 header:
   distance:
     display: Ranged [10]
@@ -17,8 +19,8 @@ header:
   - Magic
   - Ranged
   target: Self or one ally
-  title: ''
-  topMatter: Level 5 Conduit Ability
+  title: Vessel of Retribution
+  topMatter: Level 5 Conduit Heroic Ability
 level: 5
 type: Maneuver
 version: 2

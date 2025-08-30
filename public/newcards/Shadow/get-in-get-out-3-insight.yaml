@@ -23,7 +23,9 @@ body:
       characteristicBonusOptions:
       - Agility
       includedKitValue: 0
-cost: null
+cost:
+  costName: Insight
+  costValue: '3'
 header:
   distance:
     display: Melee [1]
@@ -37,8 +39,8 @@ header:
   - Strike
   - Weapon
   target: One creature
-  title: ''
-  topMatter: Level 1 Shadow Ability
+  title: Get In Get Out
+  topMatter: Level 1 Shadow Heroic Ability
 level: 1
 type: Main action
 version: 2
