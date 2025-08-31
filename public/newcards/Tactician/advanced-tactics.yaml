@@ -1,4 +1,7 @@
 body:
+- body: The target deals damage to another creature.
+  isEffect: true
+  title: Trigger
 - body: The target gains 2 surges, which they can use on the triggering damage.
   isEffect: true
   title: Effect

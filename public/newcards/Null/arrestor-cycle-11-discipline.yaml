@@ -1,4 +1,7 @@
 body:
+- body: The triggering creature starts their turn.
+  isEffect: true
+  title: Trigger
 - characteristicBonus:
   - Intuition
   isPowerRoll: true

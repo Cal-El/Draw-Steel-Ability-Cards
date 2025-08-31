@@ -29,7 +29,7 @@ def getAbilityType(ability):
 def parseBody(ability):
   body = []
   abilityType = getAbilityType(ability)
-  if abilityType == 'Triggered action' or abilityType == 'Free triggered action':
+  if abilityType.lower() == 'triggered action' or abilityType.lower() == 'free triggered action':
     triggered = {}
     triggered['isEffect'] = True
     triggered['title'] = "Trigger"

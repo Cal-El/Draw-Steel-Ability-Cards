@@ -1,4 +1,7 @@
 body:
+- body: You take damage.
+  isEffect: true
+  title: Trigger
 - body: You take half the damage from the triggering effect and can shift up to a
     number of squares equal to your Agility score.
   isEffect: true

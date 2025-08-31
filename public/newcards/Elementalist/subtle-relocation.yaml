@@ -1,4 +1,7 @@
 body:
+- body: The target starts their turn, moves, or is force moved.
+  isEffect: true
+  title: Trigger
 - body: You teleport the target up to a number of squares equal to your Reason score.
     If the target moves to trigger this ability, you can teleport them at any point
     during the move.

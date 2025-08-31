@@ -1,4 +1,7 @@
 body:
+- body: The target moves.
+  isEffect: true
+  title: Trigger
 - body: At any time during the target's movement, one ally can make a free strike
     against them.
   isEffect: true

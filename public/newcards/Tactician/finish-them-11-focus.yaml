@@ -1,4 +1,7 @@
 body:
+- body: The target is not a leader or solo creature, and becomes winded.
+  isEffect: true
+  title: Trigger
 - body: The target is killed. Additionally, the creature who caused the target to
     be winded can spend a Recovery.
   isEffect: true

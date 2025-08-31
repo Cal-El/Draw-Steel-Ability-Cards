@@ -1,4 +1,7 @@
 body:
+- body: Another creature on the encounter map ends their turn.
+  isEffect: true
+  title: Trigger
 - body: You take a bonus turn immediately after the triggering creature. This ability
     can be used only once per combat round.
   isEffect: true

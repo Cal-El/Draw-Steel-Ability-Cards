@@ -1,4 +1,8 @@
 body:
+- body: The target uses an ability that targets only one enemy and costs 3 or fewer
+    of their Heroic Resource.
+  isEffect: true
+  title: Trigger
 - body: The target can choose one additional target for the triggering ability. Any
     damage dealt to the additional target is sonic damage.
   isEffect: true

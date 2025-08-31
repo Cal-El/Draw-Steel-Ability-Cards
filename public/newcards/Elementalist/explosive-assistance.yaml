@@ -1,4 +1,7 @@
 body:
+- body: The target force moves a creature or object.
+  isEffect: true
+  title: Trigger
 - body: The forced movement distance gains a bonus equal to your Reason score.
   isEffect: true
   title: Effect

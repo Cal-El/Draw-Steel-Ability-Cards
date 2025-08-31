@@ -1,4 +1,7 @@
 body:
+- body: The target would be force moved.
+  isEffect: true
+  title: Trigger
 - body: You can select a new target of the same size or smaller within distance to
     be force moved instead. You become the source of the forced movement, determine
     the new target's destination, and can push the target instead of using the original

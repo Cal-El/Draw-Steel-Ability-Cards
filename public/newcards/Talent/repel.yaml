@@ -1,4 +1,7 @@
 body:
+- body: The target takes damage or is force moved.
+  isEffect: true
+  title: Trigger
 - body: The target takes half the triggering damage, or the distance of the triggering
     forced movement is reduced by a number of squares equal to your Reason score.
     If the target took damage and was force moved, you choose the effect. If the forced

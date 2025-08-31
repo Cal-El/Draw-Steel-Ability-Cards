@@ -1,4 +1,7 @@
 body:
+- body: Another creature targets you with a strike.
+  isEffect: true
+  title: Trigger
 - body: You use your Clever Trick ability with no insight cost against the triggering
     creature and strike. You can teleport to an unoccupied space within 3 squares
     of that creature and can make a free strike against them. You can then spend a

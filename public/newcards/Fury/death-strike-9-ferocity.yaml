@@ -1,4 +1,7 @@
 body:
+- body: You reduce a creature to 0 Stamina with a strike.
+  isEffect: true
+  title: Trigger
 - body: You target a creature adjacent to you with the same strike, using the same
     power roll as the triggering strike.
   isEffect: true

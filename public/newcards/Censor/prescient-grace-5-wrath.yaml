@@ -1,4 +1,7 @@
 body:
+- body: An enemy within 10 squares starts their turn.
+  isEffect: true
+  title: Trigger
 - body: You can spend a Recovery to allow the target to regain Stamina equal to your
     recovery value. The target can then take their turn immediately before the triggering
     enemy.

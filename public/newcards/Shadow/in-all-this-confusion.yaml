@@ -1,4 +1,7 @@
 body:
+- body: You take damage.
+  isEffect: true
+  title: Trigger
 - body: You take half the damage, then can teleport up to 4 squares after the triggering
     effect resolves.
   isEffect: true

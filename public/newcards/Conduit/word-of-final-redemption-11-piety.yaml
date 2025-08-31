@@ -1,4 +1,7 @@
 body:
+- body: The target dies.
+  isEffect: true
+  title: Trigger
 - body: Before the target dies, you can look at their stat block and force them to
     use one ability that is a main action or a maneuver. If the ability costs a Heroic
     Resource or Malice, the creature can use it without any cost. For the purpose

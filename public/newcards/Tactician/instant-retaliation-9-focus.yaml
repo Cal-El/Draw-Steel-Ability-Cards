@@ -1,4 +1,7 @@
 body:
+- body: A creature deals damage to the target.
+  isEffect: true
+  title: Trigger
 - body: The target takes half the damage. You then make a power roll against the triggering
     creature.
   isEffect: true

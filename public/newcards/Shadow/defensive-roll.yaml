@@ -1,4 +1,7 @@
 body:
+- body: Another creature damages you.
+  isEffect: true
+  title: Trigger
 - body: You take half the triggering damage, then can shift up to 2 squares after
     the triggering effect resolves. If you end this shift with concealment or cover,
     you can use the Hide maneuver even if you are observed.

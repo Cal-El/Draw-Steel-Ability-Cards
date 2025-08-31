@@ -1,4 +1,8 @@
 body:
+- body: Another hero ends their turn. That hero can't have used this ability to start
+    their turn.
+  isEffect: true
+  title: Trigger
 - body: You take your turn after the triggering hero.
   isEffect: true
   title: Effect

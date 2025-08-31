@@ -1,4 +1,7 @@
 body:
+- body: A creature deals damage to the target.
+  isEffect: true
+  title: Trigger
 - body: You can shift 1 square. If the target is you, or if you end this shift adjacent
     to the target, the target takes half the damage. If the damage has any potency
     effect associated with it, the potency is decreased by 1.

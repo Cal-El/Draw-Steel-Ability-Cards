@@ -1,4 +1,7 @@
 body:
+- body: The target starts their turn or takes damage.
+  isEffect: true
+  title: Trigger
 - body: The target can spend a Recovery.
   isEffect: true
   title: Effect

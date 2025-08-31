@@ -1,4 +1,7 @@
 body:
+- body: The target takes damage from another creature's ability while you are hidden.
+  isEffect: true
+  title: Trigger
 - body: The target takes half the damage. You remain hidden.
   isEffect: true
   title: Effect

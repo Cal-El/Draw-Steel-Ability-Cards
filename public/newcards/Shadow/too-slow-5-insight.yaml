@@ -1,4 +1,7 @@
 body:
+- body: You use your In All This Confusion ability.
+  isEffect: true
+  title: Trigger
 - body: You ignore any effects associated with the damage that triggered your In All
     This Confusion ability. Before you teleport, you can make a free strike against
     a creature who damaged you to trigger In All This Confusion. After you teleport,

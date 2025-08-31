@@ -1,4 +1,7 @@
 body:
+- body: An enemy targets you with a strike.
+  isEffect: true
+  title: Trigger
 - body: Choose an enemy within distance of the triggering strike, including the enemy
     who targeted you. The strike targets that enemy instead.
   isEffect: true

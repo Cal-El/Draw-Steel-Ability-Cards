@@ -1,4 +1,8 @@
 body:
+- body: A creature causes you to be winded or dying, or damages you while you are
+    winded or dying.
+  isEffect: true
+  title: Trigger
 - characteristicBonus:
   - Might
   isPowerRoll: true

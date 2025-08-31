@@ -1,4 +1,7 @@
 body:
+- body: The target moves or uses a main action.
+  isEffect: true
+  title: Trigger
 - characteristicBonus:
   - Agility
   isPowerRoll: true

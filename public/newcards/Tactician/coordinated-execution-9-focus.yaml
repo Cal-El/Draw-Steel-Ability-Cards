@@ -1,4 +1,7 @@
 body:
+- body: The target uses an ability to deal rolled damage to a creature while hidden.
+  isEffect: true
+  title: Trigger
 - body: If the target of the triggering ability is not a leader or solo creature,
     they are reduced to 0 Stamina. If the target of the triggering ability is a minion,
     the entire squad is killed. If the target of the triggering ability is a leader

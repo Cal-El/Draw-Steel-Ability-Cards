@@ -1,4 +1,7 @@
 body:
+- body: Another creature damages you using an ability.
+  isEffect: true
+  title: Trigger
 - body: You take half the damage, negate any effects associated with the damage for
     you, and gain 3 surges.
   isEffect: true
