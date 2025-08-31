@@ -41,7 +41,7 @@ rulesRepo = Repo.init(repoPath, bare=True)
 try:
   rulesRepo.clone_from('git@github.com:SteelCompendium/data-rules-json.git', rulesPath)
 except:
-  rulesRepo.clone_from('https://github.com/Cal-El/Draw-Steel-Ability-Cards.git', rulesPath)
+  rulesRepo.clone_from('https://github.com/SteelCompendium/data-rules-json.git', rulesPath)
 rulesRepo.close()
 
 abilitiesPath = path.join(rulesPath, 'Abilities')
