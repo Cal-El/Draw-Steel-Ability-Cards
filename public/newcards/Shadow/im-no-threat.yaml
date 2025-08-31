@@ -20,6 +20,8 @@ body:
   isEffect: true
   title: Spend 1 Insight
 cost: null
+fontSizePtOverrides:
+  body: 6.5
 header:
   distance:
     display: Self
