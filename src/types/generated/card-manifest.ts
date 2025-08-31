@@ -748,6 +748,21 @@ export const cardManifest  = [
         "sortKey": "008-011-Drag the Unworthy"
       },
       {
+        "label": "Breathe Fire (Divine Dragon Command)",
+        "value": "/newcards/Conduit/divine-dragon-command-action.yaml",
+        "sortKey": "009-000-Breathe Fire"
+      },
+      {
+        "label": "Claw (Divine Dragon Melee Weapon Free Strike)",
+        "value": "/newcards/Conduit/divine-dragon-command-free-strike.yaml",
+        "sortKey": "009-000-Claw"
+      },
+      {
+        "label": "Move or Attack (Divine Dragon Command)",
+        "value": "/newcards/Conduit/divine-dragon-command-maneuver.yaml",
+        "sortKey": "009-000-Move or Attack"
+      },
+      {
         "label": "Alacrity of the Heart (Level 9 Conduit Heroic Ability)",
         "value": "/newcards/Conduit/alacrity-of-the-heart-11-piety.yaml",
         "sortKey": "009-011-Alacrity of the Heart"
