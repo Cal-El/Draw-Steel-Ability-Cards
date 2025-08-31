@@ -47,7 +47,7 @@ def parseBody(ability):
         effect['title'] = block['name']
       if 'cost' in block:
         effect['title'] = block['cost']
-      effect['body'] = block['effect']
+      effect['body'] = block['effect'].replace('\n- ','\n` `• ')
       body.append(effect)
   return body
 

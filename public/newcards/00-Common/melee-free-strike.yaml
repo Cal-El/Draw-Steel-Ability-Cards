@@ -43,5 +43,5 @@ header:
   target: One creature or object
   title: Melee Weapon Free Strike
   topMatter: Melee Free Strike Ability
-type: Main action
+type: Free Strike
 version: 2

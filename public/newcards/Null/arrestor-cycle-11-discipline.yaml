@@ -31,6 +31,8 @@ body:
 cost:
   costName: Discipline
   costValue: '11'
+fontSizePtOverrides:
+  body: 6.5
 header:
   distance:
     display: Ranged [10]
