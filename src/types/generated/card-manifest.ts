@@ -138,6 +138,11 @@ export const cardManifest  = [
         "sortKey": "000-000-Glowing Eyes"
       },
       {
+        "label": "Keeper of Order (Memonek Trait)",
+        "value": "/newcards/01-Ancestry/keeper-of-order.yaml",
+        "sortKey": "000-000-Keeper of Order"
+      },
+      {
         "label": "Minor Acceleration (Time Raider Signature Ability)",
         "value": "/newcards/01-Ancestry/minor-acceleration.yaml",
         "sortKey": "000-000-Minor Acceleration"
@@ -153,14 +158,9 @@ export const cardManifest  = [
         "sortKey": "000-000-Remember Your Oath"
       },
       {
-        "label": "Resist The Unnatural (Memonek Trait)",
-        "value": "/newcards/01-Ancestry/keeper-of-order.yaml",
-        "sortKey": "000-000-Resist The Unnatural"
-      },
-      {
-        "label": "Resist The Unnatural (Human Trait)",
+        "label": "Resist the Unnatural (Human Trait)",
         "value": "/newcards/01-Ancestry/resist-the-unnatural.yaml",
-        "sortKey": "000-000-Resist The Unnatural"
+        "sortKey": "000-000-Resist the Unnatural"
       },
       {
         "label": "Shadowmeld (Polder Trait)",

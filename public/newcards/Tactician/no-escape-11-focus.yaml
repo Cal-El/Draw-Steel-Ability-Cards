@@ -35,6 +35,8 @@ body:
 cost:
   costName: Focus
   costValue: '11'
+fontSizePtOverrides:
+  body: 7.5
 header:
   distance:
     display: Melee [1]
