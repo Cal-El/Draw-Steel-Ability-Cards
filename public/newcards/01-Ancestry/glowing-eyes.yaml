@@ -8,7 +8,7 @@ body:
 cost: null
 header:
   distance:
-    display:
+    display: ""
     values: []
   target: One creature
   title: Glowing Eyes

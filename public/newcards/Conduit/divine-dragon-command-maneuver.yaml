@@ -1,0 +1,19 @@
+version: 2
+level: 9
+type: Maneuver
+header:
+  topMatter: Divine Dragon Command
+  title: Move or Attack
+  flavour: You command your divine creation to reposition or to lash out with a
+    quick strike.
+  keywords: []
+  distance:
+    display: Special
+    values: []
+  target: Special
+body:
+  - isEffect: true
+    title: Effect
+    body: Move the dragon up to their speed, or to make a melee weapon free strike
+      with their claw.
+fontSizePtOverrides: {}

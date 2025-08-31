@@ -8,7 +8,7 @@ body:
 cost: null
 header:
   distance:
-    display:
+    display: ""
     values: []
   title: Charge
   topMatter: Core Action

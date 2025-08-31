@@ -1,0 +1,40 @@
+version: 2
+level: 9
+type: Main action
+header:
+  topMatter: Divine Dragon Command
+  title: Breathe Fire
+  flavour: You command your creation to use its breathe magic fire
+  keywords:
+    - Area
+    - Magic
+  distance:
+    display: 3 cube within 1
+    values: []
+  target: Each enemy in the area
+body:
+  - isPowerRoll: true
+    characteristicBonus:
+      - Intuition
+    t1:
+      damage:
+        baseValue: 5
+        includedKitValue: 0
+        characteristicBonusOptions: []
+        otherBonus: ""
+      baseEffect: fire damage
+    t2:
+      damage:
+        baseValue: 9
+        includedKitValue: 0
+        characteristicBonusOptions: []
+        otherBonus: ""
+      baseEffect: fire damage
+    t3:
+      damage:
+        baseValue: 12
+        includedKitValue: 0
+        characteristicBonusOptions: []
+        otherBonus: ""
+      baseEffect: fire damage
+fontSizePtOverrides: {}
