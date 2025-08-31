@@ -31,6 +31,8 @@ body:
 cost:
   costName: Clarity
   costValue: '9'
+fontSizePtOverrides:
+  body: 7.5
 header:
   distance:
     display: 5 x 2 line within 1

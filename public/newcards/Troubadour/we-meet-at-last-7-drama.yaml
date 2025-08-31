@@ -20,8 +20,8 @@ header:
     - baseValue: 10
       includedKitValue: 0
       type: Ranged
-  flavour: You magically intertwine your fate with another creature-for better or
-    worse.
+  flavour: "You magically intertwine your fate with another creature\u2014for better\
+    \ or worse."
   keywords:
   - Magic
   - Ranged

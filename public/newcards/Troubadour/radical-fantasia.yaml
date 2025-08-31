@@ -11,7 +11,8 @@ header:
   distance:
     display: 5 aura
     values: []
-  flavour: "\U0001D160\u266AViras, my Viras, will you hold their hands as they cryyy-aaaiigh?\u266A"
+  flavour: "\U0001D160\u266AViras, my Viras, will you hold their hands as they cryyy\u2014\
+    aaaiigh?\u266A"
   keywords:
   - Area
   - Magic

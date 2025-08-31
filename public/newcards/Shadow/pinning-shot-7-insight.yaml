@@ -45,7 +45,7 @@ header:
     - baseValue: 5
       includedKitValue: 0
       type: Ranged
-  flavour: One missile-placed well and placed hard.
+  flavour: "One missile\u2014placed well and placed hard."
   keywords:
   - Ranged
   - Strike

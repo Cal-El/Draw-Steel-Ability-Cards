@@ -25,7 +25,8 @@ header:
   distance:
     display: Ranged 10
     values: []
-  flavour: You draw your allies' attention to a specific foe-with devastating effect.
+  flavour: "You draw your allies' attention to a specific foe\u2014with devastating\
+    \ effect."
   keywords:
   - Ranged
   target: One creature

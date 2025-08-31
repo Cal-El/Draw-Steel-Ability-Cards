@@ -38,7 +38,7 @@ header:
     - baseValue: 1
       includedKitValue: 0
       type: Melee
-  flavour: Your enemies will clear your path-whether they want to or not.
+  flavour: "Your enemies will clear your path\u2014whether they want to or not."
   keywords:
   - Melee
   - Strike

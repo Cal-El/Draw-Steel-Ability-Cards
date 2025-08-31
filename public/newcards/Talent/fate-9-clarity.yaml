@@ -34,6 +34,8 @@ body:
 cost:
   costName: Clarity
   costValue: '9'
+fontSizePtOverrides:
+  body: 7
 header:
   distance:
     display: Melee [2]

@@ -37,8 +37,8 @@ header:
     - baseValue: 2
       includedKitValue: 0
       type: Melee
-  flavour: It's a subtle mindset shift. It's not that they're your enemy-you just
-    don't like them!
+  flavour: "It's a subtle mindset shift. It's not that they're your enemy\u2014you\
+    \ just don't like them!"
   keywords:
   - Psionic
   - Melee

@@ -118,6 +118,8 @@ def parsePowerRollTier(rawTier):
   parsed['baseEffect'] = r.group(3).strip()
   if re.match('^(if the target has )* *(M|A|R|I|P)? ?< (WEAK|AVERAGE|STRONG), .*$', parsed['baseEffect']):
     parsed['baseEffect'] = None
+  if re.match('^\d+ burst.*$', tier):
+    parsed['baseEffect'] = tier
   parts = tier.split(';')
   for p in parts:
     if 'damage' in p and '<' not in p:

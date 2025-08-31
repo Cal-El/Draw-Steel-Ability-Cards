@@ -33,6 +33,8 @@ body:
 cost:
   costName: Clarity
   costValue: '7'
+fontSizePtOverrides:
+  body: 6
 header:
   distance:
     display: Self; see below

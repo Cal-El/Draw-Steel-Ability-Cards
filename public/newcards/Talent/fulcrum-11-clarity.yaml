@@ -7,11 +7,11 @@ body:
   - Reason
   isPowerRoll: true
   t1:
-    baseEffect: burst
+    baseEffect: 2 burst
   t2:
-    baseEffect: burst
+    baseEffect: 3 burst
   t3:
-    baseEffect: burst
+    baseEffect: 4 burst
 - body: You can choose to reduce the size of the burst by 2 (to a minimum of 1 burst)
     to give the forced movement distance a +2 bonus. You take half the total damage
     all targets take from forced movement.
@@ -20,6 +20,8 @@ body:
 cost:
   costName: Clarity
   costValue: '11'
+fontSizePtOverrides:
+  body: 6
 header:
   distance:
     display: Special
