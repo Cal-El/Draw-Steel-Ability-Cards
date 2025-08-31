@@ -8,7 +8,7 @@ export function KeyValueStatement({card, kv}: {card: ability_card, kv: key_value
           <div className={`w-[2pt] flex-none`}></div>
           {!card.bodyFontSizeOverride ?
             // Old Flow: Uses AutoTextSize
-            <p key={'autosized'} className={`max-w-[217pt] text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><AutoTextSize maxFontSizePx={18} mode="box"><Markdown>{(kv.key?.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></AutoTextSize></p>
+            <p key={'autosized'} className={`max-w-[217pt] text-[9pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><AutoTextSize minFontSizePx={4} maxFontSizePx={18} mode="box"><Markdown>{(kv.key?.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></AutoTextSize></p>
             :
             // New Flow: Uses body fontsize override
             <p key={'override'} style={{fontSize: card.bodyFontSizeOverride}} className={`max-w-[217pt] font-body ${actionTextColorStyle[card.type]} leading-none whitespace-pre-line`}><Markdown>{(kv.key?.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></p>

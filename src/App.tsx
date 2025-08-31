@@ -15,7 +15,7 @@ import {
   saveCardList
 } from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
-import {Card, CardList, getCardTitle, nonNullHeroData} from "./types/card-list.ts";
+import {asNewCard, Card, CardList, getCardTitle, isNewCard, nonNullHeroData} from "./types/card-list.ts";
 import HeroDataMenu from "./components/hero-data-menu.tsx";
 import {getMetadata} from "meta-png";
 import {toast} from "react-toastify";
@@ -327,7 +327,7 @@ function App() {
 
   async function allCards() {
       let cccs: new_ability_card[] = []
-      await fetch(baseUrl + "/card-manifest.json")
+      await fetch(baseUrl + "/newcards/card-manifest.json")
           .then(r => r.text())
           .then(async text => {
               const allCardz = JSON.parse(text);
@@ -336,8 +336,11 @@ function App() {
                       .then(r => r.text())
                       .then(textt => {
                           const parsedCard = yamlParse(textt) as ability_card;
-                          cccs = [...cccs, UpgradeCard(parsedCard)]
-                      });
+                          if (isNewCard(parsedCard)) {
+                            cccs = [...cccs, asNewCard(parsedCard)]
+                          } else {
+                            cccs = [...cccs, UpgradeCard(parsedCard)]
+                          }});
               }
           });
       setSelectedCard(-1);
@@ -409,7 +412,7 @@ function App() {
   const includeAllCardsButton = false;
 
   return (
-    <div className={`flex flex-col h-screen ${selectedCard > -1 ? 'overflow-hidden': 'overflow-y-scroll'}`}>
+    <div className={`flex flex-col h-screen ${selectedCard > -1 ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
         <EditSidebarModal callback={(c: Card | undefined) => {
           if (c) updateCard(selectedCard, c)
           setSelectedCard(-1)
