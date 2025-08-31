@@ -22,7 +22,7 @@ async function getMatchingCardsFromManifest(c: Card, callback: (cs:Card[]) => vo
 
   const matches = await Promise.all(cardManifest
     .flatMap(e => e.options)
-    .filter(e => e.label.split(' (')[0] === getCardTitle(c))
+    .filter(e => e.label.split(' (')[0].toLowerCase() === getCardTitle(c).toLowerCase())
     .map(manifestEntry => fetch(baseUrl + manifestEntry?.value)
       .then(r => r.text())
       .then(r => yamlParse(r) as ability_card)
@@ -33,8 +33,8 @@ async function getMatchingCardsFromManifest(c: Card, callback: (cs:Card[]) => vo
 
 function OldCardMenu({editCard, setEditCard, newDefaults, newDefaultsLoading}:{editCard : Card, setEditCard : Dispatch<Card>, newDefaults : Card[], newDefaultsLoading: boolean}) {
   return (<>
-    <div className={`w-[509.5pt]`}>
-      <div className={`text-black text-md text-center pb-2`}>
+    <div className={`w-[509.5pt] flex flex-col gap-2`}>
+      <div className={`text-black text-md text-center`}>
         <span className={`font-bold`}>This is using an old data model!</span><br/>
         As is, it won't make use of Hero Stats and can't be displayed with new card designs.
       </div>
@@ -45,8 +45,9 @@ function OldCardMenu({editCard, setEditCard, newDefaults, newDefaultsLoading}:{e
               setEditCard(c);
               toast.success("Upgraded")
             }} className={`flex-1 bg-slate-600 border-4 border-treasure-card rounded-3xl text-white text-center p-3`}>
+              Found matching card!<br/>
               <span className={`font-bold`}>
-                Use new "{getCardTitle(c)}"<br/>
+                "{getCardTitle(c)} ({getCardTopMatter(c)})"<br/>
               </span>
               Replaces the card with the latest default
             </div>
@@ -61,15 +62,15 @@ function OldCardMenu({editCard, setEditCard, newDefaults, newDefaultsLoading}:{e
             Cannot load a replacement V2 card
           </div>
         }
-        <div role={`button`} onClick={() => {
-          setEditCard(UpgradeCard(asOldCard(editCard)));
-          toast.success("Upgraded")
-        }} className={`flex-1 bg-slate-600 border-4 border-treasure-card rounded-3xl text-white text-center p-3`}>
+      </div>
+      <div role={`button`} onClick={() => {
+        setEditCard(UpgradeCard(asOldCard(editCard)));
+        toast.success("Upgraded")
+      }} className={`flex-1 bg-slate-600 border-4 border-treasure-card rounded-3xl text-white text-center p-3`}>
           <span className={`font-bold`}>
             Use a best-effort upgrader<br/>
           </span>
-          You may need to fix some things
-        </div>
+        You may need to fix some things
       </div>
     </div>
     <EditCardMenu card={asOldCard(editCard)} cardNum={1} updateCard={(_, c) => setEditCard(c)}/>

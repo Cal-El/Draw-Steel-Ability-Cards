@@ -50,6 +50,7 @@ function parseTarget(s: string) : string | {target: string, additionalBody: key_
   if (!s) return ''
   switch (s.toLowerCase()) {
     case 'self': return 'Self';
+    case 'self; see below': return 'Self';
     case 'special': return 'Special';
     case 'one creature': return '1 Creature';
     case 'one creature or object': return '1 Creature or Object';
@@ -133,6 +134,10 @@ function parseBaseDamageVal(tierNum: number, filteredBonuses: DamageBonus[], d: 
 
 const translateDistance = function (card: new_card, heroData: HeroData) : distance_block[] {
   const d = card.header.distance;
+  if (d.display.toLowerCase() === 'self' || d.display.toLowerCase() === 'self; see below') {
+    return [{distanceHeader: 'Distance', distanceValue: 'Self'}];
+  }
+
   if (!d.display) return []
   const dVals = [...d.values].reverse();
 
