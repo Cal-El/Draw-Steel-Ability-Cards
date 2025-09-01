@@ -72,7 +72,7 @@ export function PowerRollStatement({card, powerRoll}: {card: ability_card, power
                   <b>Power Roll {parseInt(powerRoll.characteristic) < 0 ? `- ${parseInt(powerRoll.characteristic) * -1}` : `+ ${powerRoll.characteristic}`}:</b>
                 </p>
             </div>
-            <div className={`flex flex-col w-full h-[66pt]`}>
+            <div className={`flex flex-col w-full h-[66pt]`} style={{backgroundColor: getDynamicColorBase(card.type)}}>
                 {powerRollLine(card, powerRoll.t1, 1)}
                 {powerRollLine(card, powerRoll.t2, 2)}
                 {powerRollLine(card, powerRoll.t3, 3)}
