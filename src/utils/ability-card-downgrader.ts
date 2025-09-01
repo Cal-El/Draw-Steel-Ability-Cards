@@ -103,15 +103,17 @@ function parseDistanceVal(matchedVal: string, filteredBonuses: DistanceBonus[], 
     // Handle value with bonuses
     //
     const bonusTypes: Map<string, number> = new Map()
+    let kitBonusOverridden = false;
     filteredBonuses.filter(b => d.type === b.distanceType)
       .forEach(b => {
         bonusTypes.set(b.type, Math.max((bonusTypes.get(b.type) || 0), b.value))
+        if (b.replaceKitValue) kitBonusOverridden = true;
       })
     let totalBonuses = 0
     for (const key of bonusTypes.keys()) {
       totalBonuses += bonusTypes.get(key) || 0
     }
-    return d.baseValue + totalBonuses - (bonusTypes.has("Kit") ? d.includedKitValue : 0)
+    return d.baseValue + totalBonuses - (kitBonusOverridden ? d.includedKitValue : 0)
   } else {
     return parseInt(matchedVal)
   }
@@ -121,14 +123,16 @@ function parseBaseDamageVal(tierNum: number, filteredBonuses: DamageBonus[], d: 
   // Handle value with bonuses
   //
   const bonusTypes: Map<string, number> = new Map()
+  let kitBonusOverridden = false;
   filteredBonuses.forEach(b => {
     bonusTypes.set(b.type, Math.max((bonusTypes.get(b.type) || 0), b.getBonusForTier(tierNum)))
+    if (b.replaceKitValue) kitBonusOverridden = true;
   })
   let totalBonuses = 0
   for (const key of bonusTypes.keys()) {
     totalBonuses += bonusTypes.get(key) || 0
   }
-  return d.baseValue + totalBonuses - (bonusTypes.has("Kit") ? d.includedKitValue : 0)
+  return d.baseValue + totalBonuses - (kitBonusOverridden ? d.includedKitValue : 0)
 
 }
 

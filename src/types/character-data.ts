@@ -100,11 +100,13 @@ export class CharacteristicSet {
 export abstract class Bonus {
   keywordMatcher: string[]; // If all keywords match the ability, the bonus is applied
   type: string; // "Kit" or "Honed ability"; only apply the highest bonus of a type
+  replaceKitValue: boolean; // Whether this is a bonus that replaces the "included kit value" of distance/damage
   private keywordMatcherSet: Set<string>; // If all keywords match the ability, the bonus is applied
 
-  protected constructor({keywordMatcher, type}: {keywordMatcher: string[], type: string}) {
+  protected constructor({keywordMatcher, type, replaceKitValue}: {keywordMatcher: string[], type: string, replaceKitValue: boolean}) {
     this.keywordMatcher = keywordMatcher;
     this.keywordMatcherSet = new Set(keywordMatcher);
+    this.replaceKitValue = replaceKitValue;
     this.type = type;
   }
 
@@ -136,6 +138,10 @@ export abstract class Bonus {
     this.keywordMatcher = Array.from(this.keywordMatcherSet);
   }
 
+  doesReplaceKitValue(this: Bonus) {
+    return this.replaceKitValue;
+  }
+
   public static fromJSON(jsonObj : object): DistanceBonus | DamageBonus | undefined {
     return DistanceBonus.fromJSON(jsonObj) || DamageBonus.fromJSON(jsonObj);
   }
@@ -145,8 +151,8 @@ export class DistanceBonus extends Bonus {
   distanceType: string; // "Ranged" or "Melee"
   value: number;
 
-  constructor({keywordMatcher, type, distanceType, value}: {keywordMatcher: string[], type: string, distanceType: string, value: number}) {
-    super({keywordMatcher, type});
+  constructor({keywordMatcher, type, replaceKitValue, distanceType, value}: {keywordMatcher: string[], type: string, replaceKitValue: boolean, distanceType: string, value: number}) {
+    super({keywordMatcher, type, replaceKitValue});
     this.distanceType = distanceType;
     this.value = value;
   }
@@ -167,6 +173,7 @@ export class DistanceBonus extends Bonus {
     return new DistanceBonus(jsonObj as {
       keywordMatcher: string[],
       type: string,
+      replaceKitValue: boolean,
       distanceType: string,
       value: number,
     });
@@ -176,8 +183,8 @@ export class DistanceBonus extends Bonus {
 export class DamageBonus extends Bonus {
   rolledDamageBonus: RolledDamageBonus;
 
-  constructor({keywordMatcher, type, rolledDamageBonus}: {keywordMatcher: string[], type: string, rolledDamageBonus: RolledDamageBonus}) {
-    super({keywordMatcher, type});
+  constructor({keywordMatcher, type, replaceKitValue, rolledDamageBonus}: {keywordMatcher: string[], type: string, replaceKitValue: boolean, rolledDamageBonus: RolledDamageBonus}) {
+    super({keywordMatcher, type, replaceKitValue});
     this.rolledDamageBonus = rolledDamageBonus;
   }
 
@@ -213,6 +220,7 @@ export class DamageBonus extends Bonus {
     return new DamageBonus(jsonObj as {
       keywordMatcher: string[],
       type: string,
+      replaceKitValue: boolean,
       rolledDamageBonus: RolledDamageBonus,
     });
   }
@@ -239,6 +247,7 @@ export const CloakAndDaggerShadow = new HeroData({
   bonus: [
     new DamageBonus({
       type: "Kit",
+      replaceKitValue: true,
       keywordMatcher: ["Melee", "Weapon"],
       rolledDamageBonus: {
         t1: 1,
@@ -248,6 +257,7 @@ export const CloakAndDaggerShadow = new HeroData({
     }),
     new DamageBonus({
       type: "Kit",
+      replaceKitValue: true,
       keywordMatcher: ["Ranged", "Weapon"],
       rolledDamageBonus: {
         t1: 1,
@@ -257,6 +267,7 @@ export const CloakAndDaggerShadow = new HeroData({
     }),
     new DistanceBonus({
       type: "Kit",
+      replaceKitValue: true,
       keywordMatcher: ["Ranged", "Weapon"],
       distanceType: "Ranged",
       value: 5,
