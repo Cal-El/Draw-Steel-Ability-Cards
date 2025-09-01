@@ -121,7 +121,7 @@ export default function TierDamageSegmentEditor({setTier, tier, tierNum} : Segme
     <div key={'DamageSegment'} className={`col-span-full grid grid-cols-subgrid gap-x-2 gap-y-1`}>
       <div className={`col-span-full flex justify-start items-center gap-x-2 gap-y-1`}>
         <div className={`font-bold text-right`}>Deals damage:</div>
-        <input type={'checkbox'} checked={!!tier.damage} onChange={(e) => {
+        <input type={'checkbox'} checked={hasDamage} onChange={(e) => {
           setHasDamage(e.target.checked)
           if (!e.target.checked) {
             setTier({...tier, damage: undefined})
