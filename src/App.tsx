@@ -1,7 +1,7 @@
 import {DragEvent, useState} from 'react'
 import './App.css'
 import {ability_card, getDynamicColorBase} from "./types/ability-card-types.ts";
-import {ability_card as new_ability_card, characteristic, potency_strength} from "./types/ability-card.ts";
+import {ability_card as new_ability_card} from "./types/ability-card.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
@@ -24,94 +24,31 @@ import {buildEmptyHeroData} from "./types/character-data.ts";
 import {UpgradeCard} from "./utils/ability-card-upgrader.ts";
 
 function App() {
-  let dummyCard: ability_card = {
-    type: `Action`,
-    topMatter: `Custom Ability`,
-    title: `Blank Card`,
-    flavour: `You could do anything...`,
-    keywords: [],
-    statements: [],
-    hasCost: false,
-    target: `None`,
-    distance: [],
-  } satisfies ability_card;
-
-  let dummyCard2: new_ability_card = {
+  let dummyCard: new_ability_card = {
     version: 2,
     level: 1,
     type: "Main action",
     header: {
-      topMatter: "Level 1 Custom Ability",
-      title: "Blank Card Version 2",
-      flavour: "Careful you don't break anything..",
-      keywords: ["Fire", "Magic", "Melee", "Ranged", "Strike", "Weapon"],
+      topMatter: "Level 1 Homebrew Ability",
+      title: "Card Name",
+      flavour: "Flavour",
+      keywords: ['Melee', 'Weapon'],
       distance: {
-        display: "Melee [1] or Ranged [5]",
+        display: "Melee [1]",
         values: [
-          {type: "Melee", baseValue: 1, includedKitValue: 0},
-          {type: "Ranged", baseValue: 5, includedKitValue: 0}
+          {
+            type: "Melee",
+            baseValue: 1,
+            includedKitValue: 0,
+          }
         ]
       },
-      target: "Two creatures"
+      target: "One creature or object"
     },
-    body: [
-      {
-        isPowerRoll: true,
-        characteristicBonus: [characteristic.MIGHT, characteristic.AGILITY],
-        t1: {
-          damage: {
-            baseValue: 4,
-            includedKitValue: 2,
-            characteristicBonusOptions: [characteristic.MIGHT, characteristic.AGILITY],
-            otherBonus: ""
-          },
-          baseEffect: "holy damage; and kill god",
-          potency: {
-            characteristic: characteristic.PRESENCE,
-            strength: potency_strength.WEAK,
-            effect: "this is a potency effect"
-          }
-        },
-        t2: {
-          damage: {
-            baseValue: 7,
-            includedKitValue: 2,
-            characteristicBonusOptions: [characteristic.MIGHT, characteristic.AGILITY],
-            otherBonus: ""
-          },
-          baseEffect: "holy damage; and kill god",
-          potency: {
-            characteristic: characteristic.PRESENCE,
-            strength: potency_strength.AVERAGE,
-            effect: "this is a potency effect"
-          }
-        },
-        t3: {
-          damage: {
-            baseValue: 10,
-            includedKitValue: 2,
-            characteristicBonusOptions: [characteristic.MIGHT, characteristic.AGILITY],
-            otherBonus: ""
-          },
-          baseEffect: "holy damage; and kill god",
-          potency: {
-            characteristic: characteristic.PRESENCE,
-            strength: potency_strength.STRONG,
-            effect: "this is a potency effect"
-          }
-        }
-      },
-      {
-        isEffect: true,
-        title: `Please Note`,
-        body: `You can brick the site if you mess with this. You can fix it by heading into your Local Storage and removing the displayed cardlist.`
-      }
-    ],
-    cost: {
-      costName: "Focus",
-      costValue: "3"
-    },
-    fontSizePtOverrides: {}
+    body: [],
+    fontSizePtOverrides: {
+      body: 9,
+    }
   };
 
   const cList : CardList = getCardList(DisplayedCardListKey)
@@ -286,7 +223,7 @@ function App() {
                 setSelectedCard(-1)
                 updateCardList({
                   ...cardsList,
-                  abilityCards: [...cardsList.abilityCards, e.shiftKey ? dummyCard2 : dummyCard]
+                  abilityCards: [...cardsList.abilityCards, dummyCard]
                 })
               }
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
