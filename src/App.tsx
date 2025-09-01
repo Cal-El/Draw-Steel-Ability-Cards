@@ -16,12 +16,13 @@ import {
 } from './components/data-saving/saving-service.ts';
 import Sidebar from './components/sidebar/sidebar.tsx';
 import {asNewCard, Card, CardList, getCardTitle, isNewCard, nonNullHeroData} from "./types/card-list.ts";
-import HeroDataMenu from "./components/hero-data-menu.tsx";
 import {getMetadata} from "meta-png";
 import {toast} from "react-toastify";
 import EditSidebarModal from "./components/edit-card-sidebar/edit-sidebar-modal.tsx";
 import {buildEmptyHeroData} from "./types/character-data.ts";
 import {UpgradeCard} from "./utils/ability-card-upgrader.ts";
+import TopMenu from './components/top-menu.tsx';
+import EditHeroDataSidebar from './components/hero-data/edit-hero-data-sidebar.tsx';
 
 function App() {
   let dummyCard: new_ability_card = {
@@ -60,6 +61,7 @@ function App() {
   const [cardChoiceLoading, setCardChoiceLoading] = useState(true)
   const [howToModal, setHowToModal] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [heroDataSidebarOpen, setHeroDataSidebarOpen] = useState(false)
 
   const baseUrl = `${window.location.protocol}//${window.location.host}`;
 
@@ -163,13 +165,14 @@ function App() {
   const includeAllCardsButton = false;
 
   return (
-    <div className={`flex flex-col h-screen ${selectedCard > -1 ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
+    <div className={`flex flex-col h-screen ${selectedCard > -1 || heroDataSidebarOpen ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
         <EditSidebarModal callback={(c: Card | undefined) => {
           if (c) updateCard(selectedCard, c)
           setSelectedCard(-1)
         }} deleteCallback={() => {
           deleteCard(selectedCard)
         }} card={selectedCard < 0 ? undefined : {...cardsList.abilityCards[selectedCard]}} heroStats={cardsList.heroData}/>
+        {heroDataSidebarOpen && <EditHeroDataSidebar onClose={() => setHeroDataSidebarOpen(false)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>}
         {howToModal &&
         <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-10 w-screen overflow-y-auto">
             <div className="flex h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 w-full">
@@ -238,7 +241,7 @@ function App() {
                 <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
               </div>
               <main onDrop={dropUpload} onDragOver={(event) => event.preventDefault()} className={"w-screen bg-zinc-500 print:bg-white"}>
-                <HeroDataMenu displayedCards={cardsList} setDisplayedCards={setCardsList}/>
+                <TopMenu openHeroDataSidebar={() => setHeroDataSidebarOpen(true)}/>
                 <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1pt] print:items-start print:justify-start`}>
                   {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={nonNullHeroData(cardsList)} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
