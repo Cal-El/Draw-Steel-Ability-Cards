@@ -45,4 +45,5 @@ body:
           - Intuition
         otherBonus: ""
       baseEffect: damage
-fontSizePtOverrides: {}
+fontSizePtOverrides:
+  body: 9

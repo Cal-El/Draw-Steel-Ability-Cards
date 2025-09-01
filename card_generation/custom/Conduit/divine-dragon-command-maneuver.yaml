@@ -16,4 +16,6 @@ body:
     title: Effect
     body: Your divine dragon moves up to their speed or they make a melee weapon free strike
       with their claw attack.
-fontSizePtOverrides: {}
+fontSizePtOverrides:
+  body: 9
+

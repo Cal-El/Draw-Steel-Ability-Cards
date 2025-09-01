@@ -37,4 +37,5 @@ body:
         characteristicBonusOptions: []
         otherBonus: ""
       baseEffect: fire damage
-fontSizePtOverrides: {}
+fontSizePtOverrides:
+  body: 9
