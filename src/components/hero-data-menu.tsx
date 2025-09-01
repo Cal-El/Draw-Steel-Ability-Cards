@@ -77,8 +77,8 @@ export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
   return (
     <div className={`print:hidden w-full flex flex-col bg-stone-300`}>
       {isOpen && <div className={`text-center w-full`}>
-        <span className={`font-bold`}>[!] This feature is still under construction [!]</span><br/>
-        You can update and save hero stats to your card-lists and they will impact any cards using Version 2 card data. However, there is not currently a way to make or update a Version 2 card.
+        <span className={`font-bold`}>Hero Stats</span><br/>
+        Your cards will be automatically updated to include hero's stats, without affecting the underlying card.
       </div>}
       {isOpen && <div className={`w-full flex justify-start gap-2 p-2 overflow-x-scroll`}>
         <div className={`flex-none`}>
