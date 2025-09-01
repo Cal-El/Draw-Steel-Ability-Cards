@@ -132,13 +132,16 @@ function parseBaseDamageVal(tierNum: number, filteredBonuses: DamageBonus[], d: 
 
 }
 
-const translateDistance = function (card: new_card, heroData: HeroData) : distance_block[] {
+const translateDistance = function (card: new_card, heroData: HeroData) : {distanceBlocks: distance_block[], additionalBody?: body_statement[]} {
   const d = card.header.distance;
   if (d.display.toLowerCase() === 'self' || d.display.toLowerCase() === 'self; see below') {
-    return [{distanceHeader: 'Distance', distanceValue: 'Self'}];
+    return {distanceBlocks: [{distanceHeader: 'Distance', distanceValue: 'Self'}]};
+  }
+  if (d.display.toLowerCase() === 'special') {
+    return {distanceBlocks: [{distanceHeader: 'Distance', distanceValue: 'Special'}]};
   }
 
-  if (!d.display) return []
+  if (!d.display) return {distanceBlocks: []}
   const dVals = [...d.values].reverse();
 
   const bonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && (b instanceof DistanceBonus))
@@ -148,32 +151,36 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   const burstMatch = burst.exec(d.display.toLowerCase())
   if (burstMatch) {
     const val = parseDistanceVal(burstMatch[1], bonuses, dVals);
-    return [
+    return {distanceBlocks: [
       {
         distanceHeader: "Burst",
         distanceValue: val.toString()
       }
-    ]
+    ]}
   }
 
   const aura = new RegExp(/(\[?\d+\]?) aura/)
   const auraMatch = aura.exec(d.display.toLowerCase())
   if (auraMatch) {
     const val = parseDistanceVal(auraMatch[1], bonuses, dVals);
-    return [
+    return {distanceBlocks: [
       {
         distanceHeader: "Aura",
         distanceValue: val.toString()
       }
-    ]
+    ]}
   }
 
-  const cube = new RegExp(/(\[?\d+\]?) cube within (\[?\d+\]?)/)
+  const cube = new RegExp(/(\w*?) ?(\[?\d+\]?) cubes? within (\[?\d+\]?)/)
   const cubeMatch = cube.exec(d.display.toLowerCase())
   if (cubeMatch) {
-    const cubeVal = parseDistanceVal(cubeMatch[1], bonuses, dVals);
-    const withinVal = parseDistanceVal(cubeMatch[2], bonuses, dVals);
-    return [
+    const blocks : distance_block[] = cubeMatch[1] ? [{
+      distanceHeader: "Cubes",
+      distanceValue: parseSpelledNumber(cubeMatch[1]).toString()
+    }] : []
+    const cubeVal = parseDistanceVal(cubeMatch[2], bonuses, dVals);
+    const withinVal = parseDistanceVal(cubeMatch[3], bonuses, dVals);
+    return {distanceBlocks: [...blocks,
       {
         distanceHeader: "Cube",
         distanceValue: cubeVal.toString()
@@ -182,7 +189,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
         distanceHeader: (card.header.keywords.includes("Ranged")) ? "Ranged" : "Within",
         distanceValue: withinVal.toString()
       },
-    ]
+    ]}
   }
 
   const line = new RegExp(/(\w*?) ?(\d+ [x|×] \d+) lines? within (\[?\d+\]?)/)
@@ -193,7 +200,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
       distanceHeader: "Lines",
       distanceValue: parseSpelledNumber(lineMatch[1]).toString()
     }] : []
-    return [...blocks,
+    return {distanceBlocks: [...blocks,
       {
         distanceHeader: "Line",
         distanceValue: lineMatch[2].replace("×", "x").replace(" ", "")
@@ -202,7 +209,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
         distanceHeader: (card.header.keywords.includes("Ranged")) ? "Ranged" : "Within",
         distanceValue: withinVal.toString()
       },
-    ]
+    ]}
   }
 
   const wall = new RegExp(/(\[?\d+\]?) wall within (\[?\d+\]?)/)
@@ -210,7 +217,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
   if (wallMatch) {
     const wallVal = parseDistanceVal(wallMatch[1], bonuses, dVals);
     const withinVal = parseDistanceVal(wallMatch[2], bonuses, dVals);
-    return [
+    return {distanceBlocks: [
       {
         distanceHeader: "Wall",
         distanceValue: wallVal.toString()
@@ -219,7 +226,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
         distanceHeader: (card.header.keywords.includes("Ranged")) ? "Ranged" : "Within",
         distanceValue: withinVal.toString()
       },
-    ]
+    ]}
   }
 
   const meleeOrRanged = new RegExp(/melee (\[?\d+\]?) or ranged (\[?\d+\]?)/)
@@ -231,7 +238,7 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
     const bonusesWithoutMelee = bonuses.filter(b => b.matchesKeywords(cardKeywordsMinusMelee));
     const meleeVal = parseDistanceVal(meleeOrRangedMatch[1], bonusesWithoutRanged, dVals);
     const rangedVal = parseDistanceVal(meleeOrRangedMatch[2], bonusesWithoutMelee, dVals);
-    return [
+    return {distanceBlocks: [
       {
         distanceHeader: "Melee",
         distanceValue: meleeVal.toString()
@@ -240,43 +247,43 @@ const translateDistance = function (card: new_card, heroData: HeroData) : distan
         distanceHeader: "Ranged",
         distanceValue: rangedVal.toString()
       },
-    ]
+    ]}
   }
 
   const melee = new RegExp(/melee (\[?\d+\]?)/)
   const meleeMatch = melee.exec(d.display.toLowerCase())
   if (meleeMatch) {
     const val = parseDistanceVal(meleeMatch[1], bonuses, dVals);
-    return [
+    return {distanceBlocks: [
       {
         distanceHeader: "Melee",
         distanceValue: val.toString()
       },
-    ]
+    ]}
   }
 
   const ranged = new RegExp(/ranged (\[?\d+\]?)/)
   const rangedMatch = ranged.exec(d.display.toLowerCase())
   if (rangedMatch) {
     const val = parseDistanceVal(rangedMatch[1], bonuses, dVals);
-    return [
+    return {distanceBlocks: [
       {
         distanceHeader: "Ranged",
         distanceValue: val.toString()
       },
-    ]
+    ]}
   }
 
   if (d.display.length > 0) {
-    return [
-      {
-        distanceHeader: "Distance",
-        distanceValue: d.display,
-      },
-    ]
+    return {distanceBlocks: [
+        {distanceHeader: "Distance", distanceValue: "Special"}
+    ],
+    additionalBody: [
+      {key: "Distance", value: d.display}
+    ]}
   }
 
-  return []
+  return {distanceBlocks: []}
 }
 
 const translatePrCharacteristic = function (pr: power_roll, characteristics: CharacteristicSet) : string {
@@ -447,15 +454,16 @@ export function DowngradeCard (card: new_card, heroData: HeroData | undefined) :
   const ch_data = heroData ? heroData : buildEmptyHeroData()
 
   let translatedTargetString : string;
-  let translatedDistance : distance_block[];
+  let translatedDistanceBlocks : distance_block[];
   let translatedBody : body_statement[];
 
   try {
     const translatedTarget = parseTarget(card.header.target);
     translatedTargetString = (typeof translatedTarget === 'string') ? translatedTarget : translatedTarget.target;
     const additionalBody : body_statement[] = ((typeof translatedTarget !== 'string') ? [translatedTarget.additionalBody] : [])
-    translatedDistance = translateDistance(card, ch_data);
-    translatedBody = additionalBody.concat(card.body.map(b => translateBodyElement(b, card, ch_data)).filter(b => b !== undefined));
+    const translatedDistance = translateDistance(card, ch_data);
+    translatedDistanceBlocks = translatedDistance.distanceBlocks;
+    translatedBody = additionalBody.concat(...translatedDistance.additionalBody ?? []).concat(card.body.map(b => translateBodyElement(b, card, ch_data)).filter(b => b !== undefined));
   } catch (e) {
     console.error(card.header.title, card.header.topMatter, e)
     throw e
@@ -470,7 +478,7 @@ export function DowngradeCard (card: new_card, heroData: HeroData | undefined) :
     hasCost: card.cost !== undefined && card.cost !== null,
     cost: card.cost,
     target: translatedTargetString,
-    distance: translatedDistance,
+    distance: translatedDistanceBlocks,
     statements: translatedBody,
     topMatterFontSizeOverride: fontSizeTranslate(card.fontSizePtOverrides?.topMatter),
     titleFontSizeOverride: fontSizeTranslate(card.fontSizePtOverrides?.titleFont),

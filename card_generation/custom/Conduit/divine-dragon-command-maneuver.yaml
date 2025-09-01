@@ -14,6 +14,6 @@ header:
 body:
   - isEffect: true
     title: Effect
-    body: Move the dragon up to their speed, or to make a melee weapon free strike
-      with their claw.
+    body: Your divine dragon moves up to their speed or they make a melee weapon free strike
+      with their claw attack.
 fontSizePtOverrides: {}
