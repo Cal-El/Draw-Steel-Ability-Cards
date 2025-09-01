@@ -3,22 +3,19 @@ body:
   - Presence
   isPowerRoll: true
   t1:
-    baseEffect: The target's speed is halved (save ends), or if P < WEAK, the target
-      is slowed (save ends).
+    baseEffect: The target's speed is halved (save ends), or
     potency:
       characteristic: Presence
       effect: the target is slowed (save ends).
       strength: 0
   t2:
-    baseEffect: The target is slowed (save ends), or if P < AVERAGE, the target's
-      speed is 0 (save ends).
+    baseEffect: The target is slowed (save ends), or
     potency:
       characteristic: Presence
       effect: the target's speed is 0 (save ends).
       strength: 1
   t3:
-    baseEffect: The target is slowed (save ends), or if P < STRONG, the target's speed
-      is 0 (save ends).
+    baseEffect: The target is slowed (save ends), or
     potency:
       characteristic: Presence
       effect: the target's speed is 0 (save ends).
@@ -35,6 +32,8 @@ body:
 cost:
   costName: Clarity
   costValue: '5'
+fontSizePtOverrides:
+  body: 6.5
 header:
   distance:
     display: Ranged [10]

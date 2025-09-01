@@ -25,7 +25,7 @@ body:
       effect: bleeding (save ends)
       strength: 1
   t3:
-    baseEffect: damage; bleeding (EoT), or if
+    baseEffect: damage; bleeding (EoT), or
     damage:
       baseValue: 24
       characteristicBonusOptions:

@@ -36,6 +36,8 @@ body:
 cost:
   costName: Clarity
   costValue: '9'
+fontSizePtOverrides:
+  body: 4.5
 header:
   distance:
     display: 4 cube within [10]

@@ -22,6 +22,8 @@ body:
 cost:
   costName: Clarity
   costValue: '5'
+fontSizePtOverrides:
+  body: 6.5
 header:
   distance:
     display: Ranged [10]

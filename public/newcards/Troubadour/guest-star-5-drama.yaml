@@ -12,6 +12,8 @@ body:
 cost:
   costName: Drama
   costValue: '5'
+fontSizePtOverrides:
+  body: 9.5
 header:
   distance:
     display: Ranged [10]

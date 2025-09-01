@@ -34,6 +34,8 @@ body:
   isEffect: true
   title: Strained
 cost: null
+fontSizePtOverrides:
+  body: 6
 header:
   distance:
     display: Ranged [10]
