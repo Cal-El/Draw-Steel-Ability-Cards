@@ -23,32 +23,76 @@ export const abilityTypeValues : abilityType[] = [
     abilityType.freeStrikeAction,
 ]
 
-export const cardbackColorStyle: Record<string,string> = {
-    "Main Action": 'bg-cardback border-action-card',
-    "Action": 'bg-cardback border-action-card',
-    "Maneuver": 'bg-cardback border-maneuver-card',
-    "Triggered Action": 'bg-cardback border-triggered-action-card',
-    "Move Action": 'bg-cardback border-move-action-card',
-    "Free Triggered Action": 'bg-cardback border-free-triggered-action-card',
-    "Free Maneuver": 'bg-cardback border-free-maneuver-card',
-    "Routine": 'bg-cardback border-routine-card',
-    "Passive": 'bg-cardback border-passive-card',
-    "Free Strike Action": 'bg-cardback border-free-strike-card',
-    "Treasure": 'bg-cardback border-treasure-card'
+function getHue(cardType: string): number {
+  switch(cardType.toLowerCase()){
+    case 'main action':
+      return 120
+    case 'maneuver':
+      return 210
+    case 'triggered action':
+      return 0
+    case 'free triggered action':
+      return 300
+    case 'free maneuver':
+      return 150
+    case 'routine':
+    case 'no action':
+      return 240
+    case 'passive':
+      return 270
+    case 'free strike action':
+      return 0
+    case 'treasure':
+      return 0
+    case 'move action':
+      return 30
+    default:
+      return 120
+  }
 }
 
-export const borderColorStyle: Record<string,string> = {
-  "Main Action": 'border-action-card',
-  "Action": 'border-action-card',
-  "Maneuver": 'border-maneuver-card',
-  "Triggered Action": 'border-triggered-action-card',
-  "Move Action": 'border-move-action-card',
-  "Free Triggered Action": 'border-free-triggered-action-card',
-  "Free Maneuver": 'border-free-maneuver-card',
-  "Routine": 'border-routine-card',
-  "Passive": 'border-passive-card',
-  "Free Strike Action": 'border-free-strike-card',
-  "Treasure": 'border-treasure-card'
+function getCssHslColor(hue: number, saturation: string, lightness: string): string {
+  return `hsl(${hue} ${saturation} ${lightness})`
+}
+
+function isGreyCard(cardType: string): boolean {
+  const t = cardType.toLowerCase()
+  return t === 'free strike action' || t === 'treasure'
+}
+
+export function getDynamicColorBase(cardType: string): string {
+  const hue = getHue(cardType)
+  const saturation = isGreyCard(cardType) ? '0%' : '40%'
+  const luminance = cardType.toLowerCase() === 'treasure' ? '20%' : '35%'
+  return getCssHslColor(hue, saturation, luminance)
+}
+
+export function getDynamicColor50(cardType: string): string {
+  const hue = getHue(cardType)
+  const saturation = isGreyCard(cardType) ? '0%' : '22%'
+  const luminance = cardType.toLowerCase() === 'treasure' ? '60%' : '67%'
+  return getCssHslColor(hue, saturation, luminance)
+}
+
+export function getDynamicColor40(cardType: string): string {
+  const hue = getHue(cardType)
+  const saturation = isGreyCard(cardType) ? '0%' : '23%'
+  const luminance = cardType.toLowerCase() === 'treasure' ? '68%' : '74%'
+  return getCssHslColor(hue, saturation, luminance)
+}
+
+export function getDynamicColor30(cardType: string): string {
+  const hue = getHue(cardType)
+  const saturation = isGreyCard(cardType) ? '0%' : '22%'
+  const luminance = cardType.toLowerCase() === 'treasure' ? '76%' : '80%'
+  return getCssHslColor(hue, saturation, luminance)
+}
+
+export function getDynamicColor20(cardType: string): string {
+  const hue = getHue(cardType)
+  const saturation = isGreyCard(cardType) ? '0%' : '22%'
+  const luminance = cardType.toLowerCase() === 'treasure' ? '84%' : '87%'
+  return getCssHslColor(hue, saturation, luminance)
 }
 
 export const actionBg100ColorStyle: Record<string,string> = {

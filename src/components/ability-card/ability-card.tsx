@@ -1,5 +1,6 @@
 import {
-    ability_card, cardbackColorStyle,
+    ability_card,
+    getDynamicColorBase,
 } from "../../types/ability-card-types.ts";
 import {AbilityCardHeader} from "./header-content/ability-card-header.tsx";
 import {AbilityCardBody} from "./body-content/ability-card-body.tsx";
@@ -7,7 +8,8 @@ import {AbilityCardSideMatter} from "./side-matter/ability-card-side-matter.tsx"
 
 function cardContainer(card: ability_card, enlargedState: number) {
     return (
-        <div className={`cardContainer flex h-[180pt] w-[252pt] rounded-[9pt] border-[1.5pt] print:scale-[1] ${cardbackColorStyle[card.type]} ${enlargedState > 0 ? 'scale-[2]' : enlargedState < 0 ? 'scale-[1]' : 'scale-[1.5]'}`}>
+        <div className={`cardContainer flex h-[180pt] w-[252pt] rounded-[9pt] border-[1.5pt] print:scale-[1] bg-cardback ${enlargedState > 0 ? 'scale-[2]' : enlargedState < 0 ? 'scale-[1]' : 'scale-[1.5]'}`}
+          style={{borderColor: getDynamicColorBase(card.type)}}>
             <div className={`w-[222pt]`}>
                 <AbilityCardHeader card={card}/>
                 <AbilityCardBody card={card}/>

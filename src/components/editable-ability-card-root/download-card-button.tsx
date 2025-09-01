@@ -1,4 +1,4 @@
-import { actionTextColorStyle, cardbackColorStyle} from "../../types/ability-card-types.ts";
+import { actionTextColorStyle, getDynamicColorBase} from "../../types/ability-card-types.ts";
 import {saveImage} from "../../utils/download-utils.ts";
 import {Card, getCardTitle} from "../../types/card-list.ts";
 
@@ -8,7 +8,8 @@ export function DownloadCardButton({card, id}: {card: Card, id: string}) {
     return (
         <div role='button' onClick={() => {
             saveImage(card, cardId);
-        }} className={`flex flex-1 h-[40pt] rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Routine`]} justify-center items-center`}>
+        }} className={`flex flex-1 h-[40pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
+          style={{borderColor: getDynamicColorBase(card.type)}}>
             <div className={`text-[16pt] text-center ${actionTextColorStyle[`Routine`]} font-bold select-none`}>Download Card</div>
         </div>
     );

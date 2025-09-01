@@ -1,7 +1,8 @@
 import {
     ability_card,
     abilityTypeValues,
-    cardbackColorStyle, key_value_statement, power_roll_statement, spacer_statement,
+    getDynamicColorBase,
+    key_value_statement, power_roll_statement, spacer_statement,
     supportedAbilityTargets
 } from "../../../types/ability-card-types.ts";
 import {useState} from "react";
@@ -87,7 +88,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                 <div className={'font-body w-[80pt] text-right'}>Has HR Cost:</div>
                 <div role={'button'} onClick={() => {
                     updateCard(cardNum, {...card, hasCost: !card.hasCost, cost: (!card.hasCost ? undefined : card.cost)})
-                }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                style={{borderColor: getDynamicColorBase(`Action`)}}>
                     <div className={`text-center font-bold`}>{card.hasCost && 'X'}</div>
                 </div>
             </div>
@@ -243,7 +245,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t1.hasDamage = !(bs[i] as power_roll_statement).t1.hasDamage;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t1.hasDamage && 'X'}</div>
                                         </div>
                                     </div>
@@ -271,7 +274,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t1.hasGeneralEffect = !(bs[i] as power_roll_statement).t1.hasGeneralEffect;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t1.hasGeneralEffect && 'X'}</div>
                                         </div>
                                     </div>
@@ -298,7 +302,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t1.hasPotency = !(bs[i] as power_roll_statement).t1.hasPotency;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t1.hasPotency && 'X'}</div>
                                         </div>
                                     </div>
@@ -347,7 +352,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t2.hasDamage = !(bs[i] as power_roll_statement).t2.hasDamage;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t2.hasDamage && 'X'}</div>
                                         </div>
                                     </div>
@@ -375,7 +381,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t2.hasGeneralEffect = !(bs[i] as power_roll_statement).t2.hasGeneralEffect;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t2.hasGeneralEffect && 'X'}</div>
                                         </div>
                                     </div>
@@ -402,7 +409,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t2.hasPotency = !(bs[i] as power_roll_statement).t2.hasPotency;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t2.hasPotency && 'X'}</div>
                                         </div>
                                     </div>
@@ -451,7 +459,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t3.hasDamage = !(bs[i] as power_roll_statement).t3.hasDamage;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t3.hasDamage && 'X'}</div>
                                         </div>
                                     </div>
@@ -479,7 +488,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t3.hasGeneralEffect = !(bs[i] as power_roll_statement).t3.hasGeneralEffect;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t3.hasGeneralEffect && 'X'}</div>
                                         </div>
                                     </div>
@@ -506,7 +516,8 @@ export function UIEditor({card, cardNum, updateCard}: {card: ability_card, cardN
                                             const bs = [...card.statements];
                                             (bs[i] as power_roll_statement).t3.hasPotency = !(bs[i] as power_roll_statement).t3.hasPotency;
                                             updateCard(cardNum, {...card, statements: bs})
-                                        }} className={`flex h-[10pt] w-[10pt] ${cardbackColorStyle['Action']} justify-center items-center`}>
+                                        }} className={`flex h-[10pt] w-[10pt] bg-cardback justify-center items-center`}
+                                        style={{borderColor: getDynamicColorBase(`Action`)}}>
                                             <div className={`text-center font-bold`}>{(card.statements[i] as power_roll_statement).t3.hasPotency && 'X'}</div>
                                         </div>
                                     </div>

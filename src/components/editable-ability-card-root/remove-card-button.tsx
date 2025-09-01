@@ -1,4 +1,4 @@
-import {actionTextColorStyle, cardbackColorStyle} from "../../types/ability-card-types.ts";
+import {actionTextColorStyle, getDynamicColorBase} from "../../types/ability-card-types.ts";
 import {useState} from "react";
 
 export function RemoveCardButton({cardNum, deleteCard}: {cardNum: number, deleteCard: (index: number) => void}) {
@@ -15,7 +15,8 @@ export function RemoveCardButton({cardNum, deleteCard}: {cardNum: number, delete
             } else {
                 setCount(count + 1)
             }
-        }} className={`flex h-[40pt] flex-1 rounded-[13.5pt] border-[3pt] ${cardbackColorStyle[`Triggered Action`]} justify-center items-center`}>
+        }} className={`flex h-[40pt] flex-1 rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
+          style={{borderColor: getDynamicColorBase('Triggered Action')}}>
             <div className={`text-[16pt] text-center ${actionTextColorStyle[`Triggered Action`]} font-bold select-none`}>{btnName[count]}</div>
         </div>
     );

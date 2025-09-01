@@ -2,9 +2,8 @@ import {ability_card, abilityTypeValues, power_roll, power_roll_tier} from "../.
 import {Dispatch} from "react";
 import {Card} from "../../../../../types/card-list.ts";
 import {
-  actionBg20ColorStyle,
-  actionTextColorStyle,
-  borderColorStyle
+  getDynamicColor20,
+  getDynamicColorBase
 } from "../../../../../types/ability-card-types.ts";
 import TierDamageSegmentEditor from "./tier-damage-segment-editor.tsx";
 import TierBaseEffectEditor from "./tier-base-effect-editor.tsx";
@@ -41,10 +40,12 @@ export default function PowerRollTierBodyEditor({tier, tierNum, card, setCard, b
 
   return (<>
     <div className={`col-span-full grid grid-cols-subgrid gap-y-2 gap-x-0`}>
-      <div className={`col-span-1 text-lg font-bold flex justify-end items-center ${actionTextColorStyle[abilityTypeValues[tierNum - 1]]} p-2 w-full`}>
+      <div className={`col-span-1 text-lg font-bold flex justify-end items-center p-2 w-full`}
+        style={{color: getDynamicColorBase(abilityTypeValues[tierNum-1])}}>
         {tierNum === 1 ? '≤11' : tierNum === 2 ? '12-16' : '17+'}
       </div>
-      <div className={`col-span-3 border-l-[2pt] ${borderColorStyle[abilityTypeValues[tierNum - 1]]} grid grid-cols-[2pt_min-content_min-content_1fr_min-content] auto-cols-min gap-x-2 gap-y-1 ${actionBg20ColorStyle[abilityTypeValues[tierNum - 1]]} p-2`}>
+      <div className={`col-span-3 border-l-[2pt] grid grid-cols-[2pt_min-content_min-content_1fr_min-content] auto-cols-min gap-x-2 gap-y-1 p-2`}
+        style={{borderColor: getDynamicColorBase(abilityTypeValues[tierNum-1]), backgroundColor: getDynamicColor20(abilityTypeValues[tierNum - 1])}}>
         <TierDamageSegmentEditor {...props}/>
         <TierBaseEffectEditor {...props}/>
         <TierPotencySegmentEditor {...props}/>
