@@ -54,3 +54,5 @@ header:
   flavour: Your looks don't kill—they petrify.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

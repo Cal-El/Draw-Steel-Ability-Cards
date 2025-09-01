@@ -27,6 +27,8 @@ body:
 cost:
   costName: Piety
   costValue: '9'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Three 10 x 1 lines within 1

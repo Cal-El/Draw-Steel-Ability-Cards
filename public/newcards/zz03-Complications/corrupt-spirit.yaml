@@ -15,3 +15,5 @@ header:
   flavour: You unlock the sinister secrets of pain.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

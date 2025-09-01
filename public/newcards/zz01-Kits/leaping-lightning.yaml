@@ -57,3 +57,5 @@ header:
   flavour: Lightning jumps from your weapon as you strike to harm a nearby foe.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

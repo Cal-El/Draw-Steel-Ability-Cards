@@ -36,6 +36,8 @@ body:
       effect: bleeding (save ends)
       strength: 2
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Ranged [10]

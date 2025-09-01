@@ -23,6 +23,8 @@ body:
 cost:
   costName: Ferocity
   costValue: '3'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 1 burst

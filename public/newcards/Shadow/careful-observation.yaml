@@ -6,6 +6,8 @@ body:
   isEffect: true
   title: Effect
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Ranged 20

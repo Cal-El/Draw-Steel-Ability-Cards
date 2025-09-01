@@ -20,3 +20,5 @@ header:
   flavour: Your connection to Axiom, the plane of Uttermost Law, allows you to manage chaos around you.
 type: Free Triggered Action
 version: 2
+fontSizePtOverrides:
+  body: 9

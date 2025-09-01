@@ -19,3 +19,5 @@ header:
   flavour: You fill yourself or an ally with a burst of speed.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

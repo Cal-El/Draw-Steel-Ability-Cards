@@ -31,6 +31,8 @@ body:
 cost:
   costName: Ferocity
   costValue: '11'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Melee [1]

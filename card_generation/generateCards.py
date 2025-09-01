@@ -71,6 +71,7 @@ def createCards(className):
         cardData['header']['target'] = ability['target']
         cardData['body'] = parseBody(ability)
         cardData['cost'] = parseCost(ability)
+        cardData['fontSizePtOverrides'] = {'body': 9}
 
         fileName = ability['metadata']['item_id'] + '.yaml'
         cardData = patchAbility(patchesFolderPath, className, fileName, cardData)
@@ -89,6 +90,7 @@ def createCoreManeuver(name):
     cardData['header']['topMatter'] = 'Core Maneuver'
     cardData['header']['title'] = ability['name']
     cardData['body'] = parseBody(ability)
+    cardData['fontSizePtOverrides'] = {'body': 9}
 
     fileName = ability['metadata']['item_id'] + '.yaml'
     cardData = patchAbility(patchesFolderPath, 'Common', fileName, cardData)

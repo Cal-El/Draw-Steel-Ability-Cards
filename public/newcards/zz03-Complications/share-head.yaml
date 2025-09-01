@@ -19,3 +19,5 @@ header:
   flavour: You don't have a head, but you can psionically borrow another.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

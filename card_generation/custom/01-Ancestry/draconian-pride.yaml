@@ -38,3 +38,5 @@ header:
   flavour: You let loose a mighty roar to shake your foes' spirits.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

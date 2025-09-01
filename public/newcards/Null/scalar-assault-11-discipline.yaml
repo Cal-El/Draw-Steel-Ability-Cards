@@ -23,6 +23,8 @@ body:
 cost:
   costName: Discipline
   costValue: '11'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 3 cube within 1

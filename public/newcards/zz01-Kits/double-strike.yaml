@@ -42,3 +42,5 @@ header:
   flavour: Why strike once when you could do it twice?
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

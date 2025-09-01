@@ -33,6 +33,8 @@ body:
 cost:
   costName: Focus
   costValue: '11'
+fontSizePtOverrides:
+  body: 7
 header:
   distance:
     display: Melee [1] or Ranged [5]

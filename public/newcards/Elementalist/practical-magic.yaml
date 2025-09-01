@@ -12,7 +12,7 @@ body:
   title: Effect
 cost: null
 fontSizePtOverrides:
-  body: 8.5
+  body: 8
 header:
   distance:
     display: Self; see below

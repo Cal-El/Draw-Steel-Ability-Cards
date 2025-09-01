@@ -25,6 +25,8 @@ body:
   isEffect: true
   title: Effect
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 1 burst

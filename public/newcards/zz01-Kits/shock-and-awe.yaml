@@ -52,3 +52,5 @@ header:
   flavour: You execute a brutal strike that leaves your foe reeling.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

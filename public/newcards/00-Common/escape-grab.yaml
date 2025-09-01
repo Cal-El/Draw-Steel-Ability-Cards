@@ -17,6 +17,8 @@ body:
     on the grabbed condition.'
   isEffect: true
   title: Effect
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Self

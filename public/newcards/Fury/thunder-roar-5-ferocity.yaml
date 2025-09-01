@@ -27,6 +27,8 @@ body:
 cost:
   costName: Ferocity
   costValue: '5'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 5 x 1 line within [1]

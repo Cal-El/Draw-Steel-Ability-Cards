@@ -35,6 +35,8 @@ body:
 cost:
   costName: Piety
   costValue: '5'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 3 cube within [10]

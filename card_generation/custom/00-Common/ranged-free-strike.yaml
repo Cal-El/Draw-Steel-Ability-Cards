@@ -44,3 +44,5 @@ header:
   topMatter: Ranged Free Strike Ability
 type: Free Strike
 version: 2
+fontSizePtOverrides:
+  body: 9

@@ -12,6 +12,8 @@ body:
 cost:
   costName: Clarity
   costValue: '7'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 3 aura

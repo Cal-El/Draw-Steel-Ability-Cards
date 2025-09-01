@@ -17,3 +17,5 @@ header:
   flavour: You reverse the magic of your glamor to instill fear into a foe's heart.
 type: Triggered Action
 version: 2
+fontSizePtOverrides:
+  body: 9

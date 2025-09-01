@@ -12,6 +12,8 @@ body:
   isEffect: true
   title: Spend 3 Drama
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Ranged 10

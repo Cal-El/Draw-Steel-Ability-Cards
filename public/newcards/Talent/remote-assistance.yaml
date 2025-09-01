@@ -7,6 +7,8 @@ body:
   isEffect: true
   title: Spend 1 Clarity
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Ranged [10]

@@ -57,3 +57,5 @@ header:
   flavour: A well-placed shot leaves your enemy struggling to move.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

@@ -49,3 +49,5 @@ header:
   flavour: In your hands, a shield isn't just for protection.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

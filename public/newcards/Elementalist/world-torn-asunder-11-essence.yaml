@@ -29,6 +29,8 @@ body:
 cost:
   costName: Essence
   costValue: '11'
+fontSizePtOverrides:
+  body: 8
 header:
   distance:
     display: 5 burst

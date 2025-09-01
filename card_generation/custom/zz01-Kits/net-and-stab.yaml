@@ -57,3 +57,5 @@ header:
   flavour: The well-thrown net that follows your main attack leaves your foes right where you want them.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

@@ -48,3 +48,5 @@ header:
   flavour: Keeping your enemies stumbling around the battlefield is second nature to you.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

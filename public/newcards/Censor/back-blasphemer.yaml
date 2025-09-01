@@ -21,6 +21,8 @@ body:
       characteristicBonusOptions: []
       includedKitValue: 0
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 2 cube within [1]

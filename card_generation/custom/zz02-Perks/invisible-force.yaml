@@ -19,3 +19,5 @@ header:
   flavour: You manipulate a tiny object with your mind.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

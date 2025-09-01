@@ -52,3 +52,5 @@ header:
   flavour: A magic sigil you placed on a creature explodes with energy.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

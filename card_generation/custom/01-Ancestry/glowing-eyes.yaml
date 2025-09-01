@@ -16,3 +16,5 @@ header:
   keywords: []
 type: Triggered Action
 version: 2
+fontSizePtOverrides:
+  body: 9

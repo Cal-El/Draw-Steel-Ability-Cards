@@ -45,3 +45,5 @@ header:
   flavour: You summon a wave of water to batter your foe.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

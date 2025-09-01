@@ -38,3 +38,5 @@ header:
   flavour: A furious exhalation of energy washes over your foes.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

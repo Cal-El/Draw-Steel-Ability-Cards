@@ -57,3 +57,5 @@ header:
   flavour: The impact of your weapon brands your target foe for destruction.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

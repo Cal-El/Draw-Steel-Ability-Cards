@@ -7,6 +7,8 @@ body:
 cost:
   costName: Wrath
   costValue: '7'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 2 aura

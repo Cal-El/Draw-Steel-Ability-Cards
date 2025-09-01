@@ -13,6 +13,8 @@ body:
 cost:
   costName: Essence
   costValue: '7'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 10 wall within [10]

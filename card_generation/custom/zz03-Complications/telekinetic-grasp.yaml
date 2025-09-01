@@ -28,3 +28,5 @@ header:
   flavour: You reach out with your mind to move a creature or object.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

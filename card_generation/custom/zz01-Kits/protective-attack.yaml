@@ -48,3 +48,5 @@ header:
   flavour: The strength of your assault makes it impossible for your foe to ignore you.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

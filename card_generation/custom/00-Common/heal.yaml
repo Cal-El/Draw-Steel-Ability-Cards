@@ -14,3 +14,5 @@ header:
   flavour: You employ medicine or inspiring words to make an adjacent creature feel better and stay in the fight.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

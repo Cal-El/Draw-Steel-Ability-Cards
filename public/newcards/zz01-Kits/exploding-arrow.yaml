@@ -57,3 +57,5 @@ header:
   flavour: Your ammunition explodes with magical energy.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

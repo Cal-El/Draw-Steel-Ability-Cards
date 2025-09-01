@@ -42,6 +42,8 @@ body:
 cost:
   costName: Essence
   costValue: '9'
+fontSizePtOverrides:
+  body: 8
 header:
   distance:
     display: 4 cube within [10]

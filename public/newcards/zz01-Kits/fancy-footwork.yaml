@@ -48,3 +48,5 @@ header:
   flavour: All combat is a dance—and you'll be the one leading.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

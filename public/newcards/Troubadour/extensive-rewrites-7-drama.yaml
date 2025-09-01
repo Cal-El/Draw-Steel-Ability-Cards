@@ -28,6 +28,8 @@ body:
 cost:
   costName: Drama
   costValue: '7'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 4 burst

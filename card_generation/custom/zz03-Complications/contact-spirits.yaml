@@ -22,3 +22,5 @@ header:
   flavour: You feint to move your enemies into perfect position.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

@@ -11,6 +11,8 @@ body:
 cost:
   costName: Insight
   costValue: '5'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Self; see below

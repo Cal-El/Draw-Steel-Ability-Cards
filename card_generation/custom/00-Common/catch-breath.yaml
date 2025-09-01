@@ -16,3 +16,5 @@ header:
   target: Self
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

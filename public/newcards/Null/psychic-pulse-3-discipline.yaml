@@ -8,6 +8,8 @@ body:
 cost:
   costName: Discipline
   costValue: '3'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 2 burst

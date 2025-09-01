@@ -10,6 +10,8 @@ body:
   isEffect: true
   title: Spend 1 Ferocity
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Self

@@ -13,3 +13,5 @@ header:
   keywords: []
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

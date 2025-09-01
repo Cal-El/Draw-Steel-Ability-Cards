@@ -49,3 +49,5 @@ header:
   flavour: A stab, and a few quick, careful steps back.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

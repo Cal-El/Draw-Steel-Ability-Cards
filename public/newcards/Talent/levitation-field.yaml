@@ -8,6 +8,8 @@ body:
   isEffect: true
   title: Spend 5 Clarity
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 3 burst

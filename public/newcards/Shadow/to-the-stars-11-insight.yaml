@@ -30,6 +30,8 @@ body:
 cost:
   costName: Insight
   costValue: '11'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Melee 1 or ranged 10

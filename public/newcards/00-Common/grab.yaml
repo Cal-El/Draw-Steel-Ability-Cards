@@ -20,7 +20,7 @@ body:
   isEffect: true
   title: Effect
 fontSizePtOverrides:
-  body: '8'
+  body: 8
 header:
   distance:
     display: Melee [1]

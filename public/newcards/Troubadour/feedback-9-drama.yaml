@@ -38,6 +38,8 @@ body:
 cost:
   costName: Drama
   costValue: '9'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Three 3 cubes within 1

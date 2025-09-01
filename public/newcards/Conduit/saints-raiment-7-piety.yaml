@@ -5,6 +5,8 @@ body:
 cost:
   costName: Piety
   costValue: '7'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Ranged [10]

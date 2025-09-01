@@ -36,6 +36,8 @@ body:
       effect: grabbed
       strength: 2
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Melee [1]

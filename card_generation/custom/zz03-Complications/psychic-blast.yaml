@@ -28,3 +28,5 @@ header:
   flavour: Psionic energy bursts from your body in an iridescent shimmer.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

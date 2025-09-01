@@ -49,3 +49,5 @@ header:
   flavour: You shoot forth a purple beam of psychic force that moves your target.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

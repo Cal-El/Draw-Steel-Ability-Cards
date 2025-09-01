@@ -16,3 +16,5 @@ header:
   target: Self or one creature
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

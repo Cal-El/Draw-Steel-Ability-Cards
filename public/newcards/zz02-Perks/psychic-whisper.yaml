@@ -19,3 +19,5 @@ header:
   flavour: You send a one-way telepathic message to a friend.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

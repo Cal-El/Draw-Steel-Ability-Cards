@@ -11,6 +11,8 @@ body:
 cost:
   costName: Discipline
   costValue: '11'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Self; see below

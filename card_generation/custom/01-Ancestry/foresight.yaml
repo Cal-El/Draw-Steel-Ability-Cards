@@ -17,3 +17,5 @@ header:
   flavour: Your senses extend past mundane obscuration and the veil of the future alike.
 type: Triggered Action
 version: 2
+fontSizePtOverrides:
+  body: 9

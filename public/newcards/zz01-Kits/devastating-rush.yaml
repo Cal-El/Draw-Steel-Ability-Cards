@@ -48,3 +48,5 @@ header:
   flavour: The faster you move, the harder you hit.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

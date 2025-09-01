@@ -10,4 +10,4 @@ header:
   - "Weapon"
   target: "One creature"
 fontSizePtOverrides: 
-  body: "8"
+  body: 8

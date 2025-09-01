@@ -6,6 +6,8 @@ body:
 cost:
   costName: Insight
   costValue: '9'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 5 burst

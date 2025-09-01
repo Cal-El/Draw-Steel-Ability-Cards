@@ -13,6 +13,8 @@ body:
     than your Might score.
   isEffect: true
   title: Effect
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Melee [1]

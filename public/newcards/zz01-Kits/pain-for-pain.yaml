@@ -48,3 +48,5 @@ header:
   flavour: An enemy who tagged you will pay for that.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

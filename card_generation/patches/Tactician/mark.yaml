@@ -33,3 +33,5 @@ body:
       You can't gain more than one benefit from the same trigger.
     isEffect: true
     title: Effect
+fontSizePtOverrides:
+  body: 5.2

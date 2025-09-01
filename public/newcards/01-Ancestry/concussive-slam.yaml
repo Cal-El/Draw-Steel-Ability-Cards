@@ -53,3 +53,5 @@ header:
   flavour: You slam an invisible force down upon the target.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

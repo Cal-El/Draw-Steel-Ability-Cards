@@ -16,3 +16,5 @@ header:
   flavour: You make your modified collar explode.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

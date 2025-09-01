@@ -17,3 +17,5 @@ header:
   flavour: You become an actual shadow.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 8

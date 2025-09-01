@@ -28,6 +28,8 @@ body:
   isEffect: true
   title: Effect
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Melee [1] or Ranged [5]

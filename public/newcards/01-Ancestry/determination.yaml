@@ -14,3 +14,5 @@ header:
   flavour: A tolerance for pain and distress allows you to push through difficult situations.
 type: Maneuver
 version: 2
+fontSizePtOverrides:
+  body: 9

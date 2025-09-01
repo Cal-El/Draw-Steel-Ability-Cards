@@ -57,3 +57,5 @@ header:
   flavour: Your weapon unleashes psionic energy that reduces your target's weight.
 type: Main action
 version: 2
+fontSizePtOverrides:
+  body: 9

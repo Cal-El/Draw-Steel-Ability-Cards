@@ -6,6 +6,8 @@ body:
 cost:
   costName: Focus
   costValue: '9'
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Ranged 10

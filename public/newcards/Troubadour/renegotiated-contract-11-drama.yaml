@@ -23,6 +23,9 @@ body:
 cost:
   costName: Drama
   costValue: '11'
+fontSizePtOverrides:
+  body: 6.5
+  powerRoll: 6.5
 header:
   distance:
     display: Melee [1]

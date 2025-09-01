@@ -24,6 +24,8 @@ body:
       - Agility
       includedKitValue: 0
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: Melee [2]

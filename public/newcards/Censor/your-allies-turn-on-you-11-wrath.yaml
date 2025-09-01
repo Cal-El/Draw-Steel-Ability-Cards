@@ -45,6 +45,8 @@ body:
 cost:
   costName: Wrath
   costValue: '11'
+fontSizePtOverrides:
+  body: 7
 header:
   distance:
     display: Ranged [10]

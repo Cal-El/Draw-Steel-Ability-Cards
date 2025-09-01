@@ -44,6 +44,8 @@ body:
 cost:
   costName: Focus
   costValue: '5'
+fontSizePtOverrides:
+  body: 8
 header:
   distance:
     display: Self; see below

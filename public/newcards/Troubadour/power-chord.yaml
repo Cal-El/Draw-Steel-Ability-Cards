@@ -9,6 +9,8 @@ body:
   t3:
     baseEffect: Push 3
 cost: null
+fontSizePtOverrides:
+  body: 9
 header:
   distance:
     display: 2 burst

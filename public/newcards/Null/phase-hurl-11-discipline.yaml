@@ -44,6 +44,8 @@ body:
 cost:
   costName: Discipline
   costValue: '11'
+fontSizePtOverrides:
+  body: 8
 header:
   distance:
     display: Melee [1]

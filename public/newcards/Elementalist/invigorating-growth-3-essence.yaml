@@ -32,6 +32,8 @@ body:
 cost:
   costName: Essence
   costValue: '3'
+fontSizePtOverrides:
+  body: 8
 header:
   distance:
     display: Ranged [10]
