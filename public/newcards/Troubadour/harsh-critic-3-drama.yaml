@@ -1,0 +1,58 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+- body: The first time the target uses an ability before the start of your next turn,
+    any effects from the ability's tier outcomes other than damage are negated for
+    all targets. Ability effects that always happen regardless of the power roll work
+    as usual.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '3'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Melee [1] or Ranged [10]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Just one bad review will ruin their day.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Harsh Critic
+  topMatter: Level 1 Troubadour Heroic Ability
+level: 1
+type: Main action
+version: 2

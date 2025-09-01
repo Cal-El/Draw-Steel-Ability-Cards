@@ -1,0 +1,31 @@
+body:
+- body: 'You conjure a size 4 dragon that appears in an unoccupied space within distance.
+    The dragon has speed 6 and can fly, stability 4, 100 Stamina, immunity all to
+    fire damage, and uses your characteristics. The dragon disappears at the end of
+    the encounter, if their Stamina drops to 0, or if you are dying.
+
+    On subsequent turns, you can use a main action or maneuver to command the dragon.'
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: From nothing but divine will, you create a powerful ally.
+  keywords:
+  - Magic
+  - Ranged
+  target: Special
+  title: Divine Dragon
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Main action
+version: 2

@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 1
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: You can shift up to your speed in a straight line toward the target after
+    pushing them.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: As you force your enemy back with your weapon, you use your faith to stay
+    close.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Driving Assault
+  topMatter: Level 1 Censor Heroic Ability
+level: 1
+type: Main action
+version: 2

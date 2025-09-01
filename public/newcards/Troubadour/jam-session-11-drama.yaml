@@ -1,0 +1,47 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: Each creature within distance gains a +5 bonus to speed until the end of their
+    next turn. While under this effect, each target must use their full movement during
+    their turn.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: Your jam session creates new genres that compel everyone to get up and
+    move.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Jam Session
+  topMatter: Level 9 Troubadour Heroic Ability
+level: 9
+type: Main action
+version: 2

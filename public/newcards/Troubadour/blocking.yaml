@@ -1,0 +1,26 @@
+body:
+- body: At the end of each of your turns while this performance is active, you can
+    choose up to a number of targets equal to your Presence score and teleport those
+    targets to unoccupied spaces in the area. A target can't be teleported in a way
+    that would harm them (such as over a cliff), leave them dying, or result in them
+    suffering a condition or other negative effect.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 2 aura
+    values: []
+  flavour: No, no, no, you lose the audience that way. Try it like this...
+  keywords:
+  - Area
+  - Magic
+  - Performance
+  target: Each creature in the area
+  title: Blocking
+  topMatter: Level 1 Troubadour Ability
+level: 1
+type: No action
+version: 2

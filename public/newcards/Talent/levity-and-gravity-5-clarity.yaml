@@ -1,0 +1,65 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: prone and can't stand (save ends)
+      strength: 2
+- body: You take half the damage the target takes.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You raise the target slightly into the air, then smother them against the
+    ground.
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telekinesis
+  target: One creature or object
+  title: Levity and Gravity
+  topMatter: Level 2 Talent Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,25 @@
+body:
+- body: Each target can teleport up to 5 squares. For each target in addition to you
+    who teleports away from or into a space adjacent to an enemy, that enemy takes
+    fire damage equal to your Agility score. Additionally, a target who ends this
+    movement in concealment or cover can use the Hide maneuver even if they are observed.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 4 burst
+    values: []
+  flavour: You teleport your friends in a burst of ash and fire.
+  keywords:
+  - Magic
+  target: Self and each ally in the area
+  title: Cinderstorm
+  topMatter: Level 6 Shadow Heroic Ability
+level: 6
+type: Maneuver
+version: 2

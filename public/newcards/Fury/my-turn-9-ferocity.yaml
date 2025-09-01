@@ -1,0 +1,55 @@
+body:
+- body: A creature causes you to be winded or dying, or damages you while you are
+    winded or dying.
+  isEffect: true
+  title: Trigger
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: You can spend a Recovery.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 7.5
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You quickly strike back at a foe.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: The triggering creature
+  title: My Turn!
+  topMatter: Level 5 Fury Heroic Ability
+level: 5
+type: Free Triggered Action
+version: 2

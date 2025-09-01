@@ -1,0 +1,51 @@
+body:
+- body: You conjure a size 2 rolling machine that appears in an unoccupied space within
+    distance. The machine has 50 Stamina and immunity all to poison and psychic damage.
+    It disappears at the end of the encounter, if its Stamina drops to 0, or if you
+    are dying. When the machine first appears, make the following power roll once,
+    targeting each enemy adjacent to it.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 6.5
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You conjure a whirring tank made of blades and metal.
+  keywords:
+  - Magic
+  - Ranged
+  target: Special
+  title: Gods' Machine
+  topMatter: Level 6 Conduit Heroic Ability
+level: 6
+type: Main action
+version: 2

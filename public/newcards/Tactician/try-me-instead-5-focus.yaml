@@ -1,0 +1,63 @@
+body:
+- body: You shift up to your speed directly toward an ally, ending adjacent to them,
+    then swapping locations with that ally as long as you can fit into each other's
+    spaces. The ally can spend a Recovery, and you can make the following weapon strike
+    with a distance of melee 1 against a creature.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: frightened (save ends)
+      strength: 2
+cost:
+  costName: Focus
+  costValue: '5'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: '"Try picking on someone my size."'
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Self
+  title: Try Me Instead
+  topMatter: Level 2 Tactician Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,27 @@
+body:
+- body: Each target can fly until the start of your next turn, and can immediately
+    shift up to their speed. You can also shift up to your speed. While flying, a
+    target's stability is reduced to 0 and can't be increased.
+  isEffect: true
+  title: Effect
+- body: The effects last for 1 hour instead.
+  isEffect: true
+  title: Spend 5 Clarity
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You manipulate the air around your allies so they can move as freely through
+    the sky as you can.
+  keywords:
+  - Area
+  - Psionic
+  target: Each ally in the area
+  title: Levitation Field
+  topMatter: Level 8 Talent Ability
+level: 8
+type: Maneuver
+version: 2

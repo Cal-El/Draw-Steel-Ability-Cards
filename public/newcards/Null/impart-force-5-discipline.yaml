@@ -1,0 +1,39 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: Push 3
+  t2:
+    baseEffect: Push 5
+  t3:
+    baseEffect: Push 7
+- body: An object you target must be your size or smaller. You gain an edge on this
+    ability. Additionally, for each square you push the target, they take 1 psychic
+    damage.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: A single touch from you, and your enemy flies backward.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Impart Force
+  topMatter: Level 1 Null Heroic Ability
+level: 1
+type: Maneuver
+version: 2

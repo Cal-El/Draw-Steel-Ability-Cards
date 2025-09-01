@@ -1,0 +1,28 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: Each target gains 1 surge.
+  t2:
+    baseEffect: Each target gains 2 surges.
+  t3:
+    baseEffect: Each target gains 3 surges.
+cost:
+  costName: Focus
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You shout a phrase that galvanizes your team.
+  keywords:
+  - Ranged
+  target: Three allies
+  title: Battle Cry
+  topMatter: Level 1 Tactician Heroic Ability
+level: 1
+type: Maneuver
+version: 2

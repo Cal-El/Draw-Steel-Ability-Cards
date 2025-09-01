@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Agility
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Agility
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+- body: One creature or object of your choice within 2 squares of the target takes fire damage equal to the characteristic score used for the ability's power roll.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Ranged [15]
+    values:
+    - type: Ranged
+      baseValue: 15
+      includedKitValue: 10
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Exploding Arrow
+  topMatter: Arcane Archer Kit Signature Ability
+  flavour: Your ammunition explodes with magical energy.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

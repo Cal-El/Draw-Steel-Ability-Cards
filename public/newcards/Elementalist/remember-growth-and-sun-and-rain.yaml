@@ -1,0 +1,27 @@
+body:
+- body: You see and hear any events that have occurred within 10 squares of the object
+    within the last 12 hours, perceiving those events from the object's location as
+    if you were there.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You stir any wood's memory and learn what it has seen.
+  keywords:
+  - Green
+  - Magic
+  - Melee
+  target: One mundane wooden object
+  title: Remember Growth and Sun and Rain
+  topMatter: Level 3 Elementalist Ability
+level: 3
+type: Main action
+version: 2

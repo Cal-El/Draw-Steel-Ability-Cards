@@ -1,0 +1,57 @@
+body:
+- body: A prone target ignores this ability.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: prone
+      strength: 0
+  t2:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: prone
+      strength: 1
+  t3:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: prone
+      strength: 2
+cost:
+  costName: Drama
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Three 3 cubes within 1
+    values: []
+  flavour: Your music pounds the crowd to the beat until their hearts can't stand
+    it anymore.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Feedback
+  topMatter: Level 6 Troubadour Heroic Ability
+level: 6
+type: Main action
+version: 2

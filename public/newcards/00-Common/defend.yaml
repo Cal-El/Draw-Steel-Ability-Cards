@@ -1,0 +1,20 @@
+body:
+- body: Ability rolls made against you have a double bane until the start of your next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature's traits or abilities.
+
+
+        You gain no benefit from this action while another creature is taunted by you.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: ""
+    values: []
+  title: Defend
+  topMatter: Core Action
+  keywords: []
+  target: Self
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

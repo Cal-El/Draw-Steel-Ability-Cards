@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: You target two creatures, one of which can be you.
+  t2:
+    baseEffect: You target three creatures, one of which can be you.
+  t3:
+    baseEffect: You target four creatures, one of which can be you.
+- body: Until the start of your next turn, each target gains a +5 bonus to speed,
+    they can't be made dazed, and they can use an additional maneuver on their turn.
+    If a target is already dazed, that condition ends for them.
+  isEffect: true
+  title: Effect
+- body: Your speed is halved until the end of the encounter.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 7.5
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Time slows down around you. Your heartbeat is the only gauge of the extra
+    moments you've gained.
+  keywords:
+  - Chronopathy
+  - Psionic
+  - Ranged
+  target: Special
+  title: Applied Chronometrics
+  topMatter: Level 2 Talent Heroic Ability
+level: 2
+type: Maneuver
+version: 2

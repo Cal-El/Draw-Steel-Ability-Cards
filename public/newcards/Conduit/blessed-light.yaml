@@ -1,0 +1,51 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+- body: One ally within distance gains a number of surges equal to the tier outcome
+    of your power roll.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Burning radiance falls upon your foe, transferring some of their energy
+    to a nearby ally.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Blessed Light
+  topMatter: Level 1 Conduit Ability
+level: 1
+type: Main action
+version: 2

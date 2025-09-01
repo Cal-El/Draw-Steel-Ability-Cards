@@ -1,0 +1,29 @@
+body:
+- body: "Each target reduces their potencies by 1.\nOnce as a free maneuver on each\
+    \ of your turns, you can spend 1 discipline and give your Null Field one of the\
+    \ following additional effects until the start of your next turn:\n` `\u2022 Gravitic\
+    \ Disruption: The first time on a turn that a target takes damage, you can slide\
+    \ them up to 2 squares.\n` `\u2022 Inertial Anchor: Any target who starts their\
+    \ turn in the area can't shift.\n` `\u2022 Synaptic Break: Whenever you or any\
+    \ ally uses an ability against a target that has a potency effect, the potency\
+    \ is increased by 1.\nThis ability remains active even after an encounter ends.\
+    \ It ends only if you are dying or if you willingly end it (no action required)."
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: 1 aura
+    values: []
+  flavour: You project an aura that dampens the power of your foes.
+  keywords:
+  - Area
+  - Psionic
+  target: Each enemy in the area
+  title: Null Field
+  topMatter: Level 1 Null Ability
+level: 1
+type: Maneuver
+version: 2

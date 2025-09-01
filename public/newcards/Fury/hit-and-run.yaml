@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: slowed (save ends)
+      strength: 2
+- body: You can shift 1 square.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: Staying in constant motion helps you slip out of reach after a brutal assault.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Hit and Run
+  topMatter: Level 1 Fury Ability
+level: 1
+type: Main action
+version: 2

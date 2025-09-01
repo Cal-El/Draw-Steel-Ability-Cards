@@ -1,0 +1,68 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage; push 7
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage; push 10
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 2
+- body: The target and each creature or object they collide with from this forced
+    movement takes psychic damage equal to the total number of squares the target
+    was force moved. While the target is dazed this way, they see glimpses of creatures
+    from other parts of the timescape.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '11'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You throw your foe out of phase with this manifold, causing them to harm
+    other enemies as they return.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Phase Hurl
+  topMatter: Level 8 Null Heroic Ability
+level: 8
+type: Main action
+version: 2

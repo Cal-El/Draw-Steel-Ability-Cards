@@ -1,0 +1,50 @@
+body:
+- body: The target is teleported to another space within distance. Make a power roll
+    that affects each enemy adjacent to the target's new space.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Essence
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your ally disappears, then reappears in a burst of fire.
+  keywords:
+  - Fire
+  - Magic
+  - Ranged
+  - Void
+  target: Self or one ally
+  title: Translated Through Flame
+  topMatter: Level 2 Elementalist Heroic Ability
+level: 2
+type: Main action
+version: 2

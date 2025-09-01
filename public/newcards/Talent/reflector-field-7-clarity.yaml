@@ -1,0 +1,31 @@
+body:
+- body: The aura lasts until the start of your next turn. Whenever an enemy targets
+    an ally in the area with a ranged ability, the ability is negated on the ally
+    and reflected back at the enemy. The ability deals half the damage to the enemy
+    that it would have dealt to the ally and loses any additional effects.
+  isEffect: true
+  title: Effect
+- body: The size of the aura increases by 1. Whenever your aura reflects an ability,
+    you take 2d6 damage and forget a memory, as determined by you and the Director.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 aura
+    values: []
+  flavour: A protective field reverses the momentum of incoming attacks.
+  keywords:
+  - Area
+  - Psionic
+  - Telepathy
+  target: Special
+  title: Reflector Field
+  topMatter: Level 3 Talent Heroic Ability
+level: 3
+type: Main action
+version: 2

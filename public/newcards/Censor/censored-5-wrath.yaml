@@ -1,0 +1,52 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: When a target who is not a leader or solo creature is made winded by this
+    ability, they are reduced to 0 Stamina.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: Judged and sentenced.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Censored
+  topMatter: Level 1 Censor Heroic Ability
+level: 1
+type: Main action
+version: 2

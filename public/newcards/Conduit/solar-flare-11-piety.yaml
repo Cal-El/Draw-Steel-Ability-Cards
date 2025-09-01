@@ -1,0 +1,45 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 19
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You call down a sphere of fire that burns your foes to ash.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Solar Flare
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Main action
+version: 2

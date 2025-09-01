@@ -1,0 +1,63 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: grabbed
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: grabbed
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: grabbed
+      strength: 2
+- body: You can shift up to 4 squares, bringing the target with you. While grabbed
+    this way, the target takes damage equal to twice your Might score at the start
+    of each of your turns.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You strike at the target like the ultimate predator you are.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Pounce
+  topMatter: Level 6 Fury Heroic Ability
+level: 6
+type: Main action
+version: 2

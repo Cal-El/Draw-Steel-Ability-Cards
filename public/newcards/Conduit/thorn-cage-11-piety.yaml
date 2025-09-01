@@ -1,0 +1,65 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 21
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 2
+- body: While restrained this way, the target takes 10 damage at the start of each
+    of your turns.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Vines burst forth from the ground and bind your foe, slowly closing around
+    them.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Thorn Cage
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Main action
+version: 2

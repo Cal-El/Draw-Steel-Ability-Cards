@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+    potency:
+      characteristic: Agility
+      strength: 0
+      effect: slowed (save ends)
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+    potency:
+      characteristic: Agility
+      strength: 1
+      effect: slowed (save ends)
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 1
+    potency:
+      characteristic: Agility
+      strength: 2
+      effect: slowed (save ends)
+cost: null
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 5
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Hamstring Shot
+  topMatter: Ranger Kit Signature Ability
+  flavour: A well-placed shot leaves your enemy struggling to move.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

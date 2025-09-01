@@ -1,0 +1,27 @@
+body:
+- body: You take damage.
+  isEffect: true
+  title: Trigger
+- body: You take half the damage, then can teleport up to 4 squares after the triggering
+    effect resolves.
+  isEffect: true
+  title: Effect
+- body: You teleport 1 additional square for each insight spent.
+  isEffect: true
+  title: Spend 1+ Insight
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You vanish in a plume of black smoke to avoid danger.
+  keywords:
+  - Magic
+  target: Self
+  title: In All This Confusion
+  topMatter: Level 1 Shadow Ability
+level: 1
+type: Triggered Action
+version: 2

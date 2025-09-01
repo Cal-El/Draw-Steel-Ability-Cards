@@ -1,0 +1,59 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+- body: You can choose to have this ability deal sonic damage. Additionally, you can
+    use this ability against the same target for the next 2 combat rounds without
+    spending drama.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [10]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your performance travels and doesn't stop moving until your audience is
+    completely rocked.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Star Solo
+  topMatter: Level 3 Troubadour Heroic Ability
+level: 3
+type: Main action
+version: 2

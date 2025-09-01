@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+- body: You can teleport up to a number of squares equal to your Reason score.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You absorb the life energy of another creature and use it to teleport.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Void
+  target: One creature
+  title: Grasp of Beyond
+  topMatter: Level 1 Elementalist Ability
+level: 1
+type: Main action
+version: 2

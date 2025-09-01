@@ -1,0 +1,70 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: each enemy within 2 squares of them is frightened of you (save ends)
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: each enemy within 2 squares of them is frightened of you (save ends)
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: each enemy within 2 squares of them is frightened of you (save ends)
+      strength: 2
+- body: Each enemy frightened this way is pushed up to 2 squares away from the target
+    and takes psychic damage equal to your Presence score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: You attack a foe and your enemies behold a vision of the true nature of
+    your resolve.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Behold the Face of Justice!
+  topMatter: Level 1 Censor Heroic Ability
+level: 1
+type: Main action
+version: 2

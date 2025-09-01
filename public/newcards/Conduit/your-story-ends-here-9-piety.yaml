@@ -1,0 +1,64 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 19
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: weakened (save ends)
+      strength: 2
+- body: If this damage kills the target, you and each ally within distance can spend
+    a Recovery.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You bend the fate of a foe, willing them to die.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Your Story Ends Here
+  topMatter: Level 6 Conduit Heroic Ability
+level: 6
+type: Main action
+version: 2

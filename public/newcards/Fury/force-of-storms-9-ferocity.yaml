@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 7
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: When the target ends this forced movement, each creature within 2 squares
+    of the target is pushed 3 squares.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You strike an enemy hard enough to be a projectile that knocks a crowd
+    of creatures around.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Force of Storms
+  topMatter: Level 6 Fury Heroic Ability
+level: 6
+type: Main action
+version: 2

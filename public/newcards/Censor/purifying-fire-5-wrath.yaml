@@ -1,0 +1,69 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: the target has fire weakness 3 (save ends)
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: the target has fire weakness 5 (save ends)
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: the target has fire weakness 7 (save ends)
+      strength: 2
+- body: While the target has fire weakness from this ability, you can choose to have
+    your abilities deal fire damage to the target instead of holy damage.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: The gods judge, fire cleanses.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Purifying Fire
+  topMatter: Level 1 Censor Heroic Ability
+level: 1
+type: Main action
+version: 2

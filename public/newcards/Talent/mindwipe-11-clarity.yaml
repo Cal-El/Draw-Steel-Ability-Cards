@@ -1,0 +1,67 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: the target takes a bane on their next power roll
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: the target takes a bane on power rolls (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 23
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: the target has a double bane on power rolls (save ends)
+      strength: 2
+- body: The target can't communicate with anyone until the end of the encounter.
+  isEffect: true
+  title: Effect
+- body: You take 3d6 damage.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
+  flavour: You attempt to make them forget all their training.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Telepathy
+  target: One creature
+  title: Mindwipe
+  topMatter: Level 8 Talent Heroic Ability
+level: 8
+type: Main action
+version: 2

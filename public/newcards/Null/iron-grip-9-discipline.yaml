@@ -1,0 +1,66 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: grabbed
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: grabbed
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: grabbed
+      strength: 2
+- body: While grabbed this way, the target takes a bane on the Escape Grab maneuver.
+    Each time they use that maneuver, they take damage equal to twice your Agility
+    score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You grab the target with supernatural force.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Iron Grip
+  topMatter: Level 5 Null Heroic Ability
+level: 5
+type: Main action
+version: 2

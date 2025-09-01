@@ -1,0 +1,25 @@
+body:
+- body: Until the end of the encounter or until you are dying, whenever any target
+    takes a triggered action or a free triggered action, that action is negated and
+    the target takes holy damage equal to your Presence score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 aura
+    values: []
+  flavour: You anticipate your foes' moves and deny them.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Edict of Peace
+  topMatter: Level 6 Censor Heroic Ability
+level: 6
+type: Maneuver
+version: 2

@@ -1,0 +1,35 @@
+body:
+- body: The target would be force moved.
+  isEffect: true
+  title: Trigger
+- body: You can select a new target of the same size or smaller within distance to
+    be force moved instead. You become the source of the forced movement, determine
+    the new target's destination, and can push the target instead of using the original
+    forced movement type. Additionally, the forced movement distance gains a bonus
+    equal to your Might score.
+  isEffect: true
+  title: Effect
+- body: The forced movement distance gains a bonus equal to twice your Might score
+    instead.
+  isEffect: true
+  title: Spend 1 Ferocity
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You redirect the energy of motion.
+  keywords:
+  - Magic
+  - Melee
+  target: Self or one creature
+  title: Lines of Force
+  topMatter: Level 1 Fury Ability
+level: 1
+type: Triggered Action
+version: 2

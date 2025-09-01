@@ -1,0 +1,24 @@
+body:
+- body: While this performance is active, each target who starts their turn dying
+    while in the area gains an edge on power rolls and ignores the effects of bleeding
+    until the end of their turn.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: "And toniiight we can truly say \u266A They will alllways find a way!\u266A"
+  keywords:
+  - Area
+  - Magic
+  - Performance
+  target: Self and each ally in the area
+  title: '"Never-Ending Hero"'
+  topMatter: Level 3 Troubadour Ability
+level: 3
+type: No action
+version: 2

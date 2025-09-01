@@ -1,0 +1,51 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+- body: The target takes an extra 2 psychic damage. You also take 2 psychic damage
+    that can't be reduced in any way.
+  isEffect: true
+  title: Strained
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A telepathic bolt instantly zaps a creature's brain.
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telepathy
+  target: One creature
+  title: Mind Spike
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Free Strike
+version: 2

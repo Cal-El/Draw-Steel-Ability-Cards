@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Might
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: You choose the ability's damage type from acid, cold, corruption, fire, lightning, or poison.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: '3 cube within 1'
+    values: []
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Dragon Breath
+  topMatter: Dragon Knight Signature Ability
+  flavour: A furious exhalation of energy washes over your foes.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

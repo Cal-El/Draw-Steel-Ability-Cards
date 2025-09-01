@@ -1,0 +1,23 @@
+body:
+- body: Each target gains 1 surge and can use a signature ability that has a double
+    edge.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You remind your allies how to best use their gear.
+  keywords:
+  - Ranged
+  target: Self and two allies
+  title: Squad! Remember Your Training!
+  topMatter: Level 5 Tactician Heroic Ability
+level: 5
+type: Main action
+version: 2

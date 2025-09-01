@@ -1,0 +1,54 @@
+body:
+- body: You and the target are removed from the encounter map until the start of your
+    next turn. You reappear in the spaces you left or the nearest unoccupied spaces.
+    Make a power roll upon your return.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+cost:
+  costName: Insight
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You sweep your foe off their feet and plunge them into absolute darkness.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Into the Shadows
+  topMatter: Level 5 Shadow Heroic Ability
+level: 5
+type: Main action
+version: 2

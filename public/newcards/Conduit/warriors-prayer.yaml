@@ -1,0 +1,51 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+- body: You or one ally within distance gains temporary Stamina equal to your Intuition
+    score.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your quickly uttered prayer lends aggressive divine energy to a friend
+    engaged in melee.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Warrior's Prayer
+  topMatter: Level 1 Conduit Ability
+level: 1
+type: Main action
+version: 2

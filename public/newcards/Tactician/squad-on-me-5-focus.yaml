@@ -1,0 +1,23 @@
+body:
+- body: Until the start of your next turn, each target has a bonus to stability equal
+    to your Might score. Additionally, each target gains 2 surges.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 1 burst
+    values: []
+  flavour: Together we are invincible!
+  keywords:
+  - Area
+  target: Self and each ally in the area
+  title: Squad! On Me!
+  topMatter: Level 2 Tactician Heroic Ability
+level: 2
+type: Maneuver
+version: 2

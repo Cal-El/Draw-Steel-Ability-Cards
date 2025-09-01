@@ -1,0 +1,51 @@
+body:
+- body: You move up to your speed in a straight line, and enemy squares are not difficult
+    terrain for this movement. You can end this movement in a creature's space and
+    move them to an adjacent unoccupied space. You make one power roll that targets
+    each enemy whose space you move through.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: The last target you damage takes extra damage equal to your Might score for
+    each opportunity attack you trigger during your move.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '3'
+fontSizePtOverrides:
+  body: 6
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: Teach them the folly of lining up for you.
+  keywords:
+  - Melee
+  - Weapon
+  target: Self
+  title: Tide of Death
+  topMatter: Level 1 Fury Heroic Ability
+level: 1
+type: Main action
+version: 2

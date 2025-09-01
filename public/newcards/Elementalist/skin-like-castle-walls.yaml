@@ -1,0 +1,32 @@
+body:
+- body: The target takes damage.
+  isEffect: true
+  title: Trigger
+- body: The target takes half the damage.
+  isEffect: true
+  title: Effect
+- body: If the damage has any potency effects associated with it, the potency is reduced
+    by 1 for the target.
+  isEffect: true
+  title: Spend 1 Essence
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You cover yourself or an ally in protective stone.
+  keywords:
+  - Earth
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Skin Like Castle Walls
+  topMatter: Level 1 Elementalist Ability
+level: 1
+type: Triggered Action
+version: 2

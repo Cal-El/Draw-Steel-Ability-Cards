@@ -1,0 +1,47 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; taunted (EoT)
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; taunted (EoT), slide 1
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; taunted (EoT), slide 2
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: Your opponent staggers. They cannot ignore you.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Kinetic Strike
+  topMatter: Level 1 Null Ability
+level: 1
+type: Main action
+version: 2

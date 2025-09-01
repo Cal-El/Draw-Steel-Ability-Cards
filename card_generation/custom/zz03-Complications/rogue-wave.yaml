@@ -1,0 +1,49 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push or pull 1
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push or pull 2
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push or pull 3
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: You can forgo dealing damage with this ability.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: 1 creature or object
+  title: Rogue Wave
+  topMatter: Waterborn Complication Ability
+  flavour: You summon a wave of water to batter your foe.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

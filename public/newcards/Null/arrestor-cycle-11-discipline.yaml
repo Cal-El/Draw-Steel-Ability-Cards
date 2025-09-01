@@ -1,0 +1,53 @@
+body:
+- body: The triggering creature starts their turn.
+  isEffect: true
+  title: Trigger
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: null
+    potency:
+      characteristic: Intuition
+      effect: the target loses their turn
+      strength: 0
+  t2:
+    baseEffect: null
+    potency:
+      characteristic: Intuition
+      effect: the target loses their turn
+      strength: 1
+  t3:
+    baseEffect: null
+    potency:
+      characteristic: Intuition
+      effect: the target loses their turn
+      strength: 2
+- body: If the target loses their turn, the round continues as if they had acted.
+    A target who doesn't lose their turn takes psychic damage equal to twice your
+    Intuition score for each main action they take until the end of their next turn.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '11'
+fontSizePtOverrides:
+  body: 6.5
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You trap your foe in a looping cycle of time, where they relive the last
+    few seconds over and over again.
+  keywords:
+  - Psionic
+  - Ranged
+  target: One creature
+  title: Arrestor Cycle
+  topMatter: Level 9 Null Heroic Ability
+level: 9
+type: Free Triggered Action
+version: 2

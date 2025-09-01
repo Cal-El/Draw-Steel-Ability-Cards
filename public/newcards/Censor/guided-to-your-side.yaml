@@ -1,0 +1,26 @@
+body:
+- body: Each target is teleported to unoccupied spaces within 5 squares of a willing
+    creature who you are bonded to with your Invocation of the Heart feature. You
+    don't need line of effect to the bonded creature but you must be on the same world.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You concentrate on a friend and teleport to them.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self and each ally
+  title: Guided to Your Side
+  topMatter: Level 7 Censor Ability
+level: 7
+type: Main action
+version: 2

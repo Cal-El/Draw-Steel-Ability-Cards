@@ -1,0 +1,49 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: The ground in or directly beneath the area drops 3 squares.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Essence
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You open up the ground, spewing out shrapnel of stone and debris.
+  keywords:
+  - Area
+  - Earth
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Maw of Earth
+  topMatter: Level 3 Elementalist Heroic Ability
+level: 3
+type: Main action
+version: 2

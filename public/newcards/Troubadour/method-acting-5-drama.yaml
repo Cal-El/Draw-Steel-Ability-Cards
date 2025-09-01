@@ -1,0 +1,64 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: weakened (save ends)
+      strength: 2
+- body: You can become bleeding (save ends) to deal an extra 5 corruption damage to
+    the target.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: They're so hurt by your performance, you start to believe it yourself.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Method Acting
+  topMatter: Level 1 Troubadour Heroic Ability
+level: 1
+type: Main action
+version: 2

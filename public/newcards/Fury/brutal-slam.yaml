@@ -1,0 +1,46 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 1
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 2
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 4
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: The heavy impact of your weapon attacks drives your foes ever back.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Brutal Slam
+  topMatter: Level 1 Fury Ability
+level: 1
+type: Main action
+version: 2

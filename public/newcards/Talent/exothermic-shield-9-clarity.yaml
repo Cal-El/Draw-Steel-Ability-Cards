@@ -1,0 +1,34 @@
+body:
+- body: Until the start of your next turn, the target has cold immunity 10 and fire
+    immunity 10, and their strikes deal extra fire damage equal to twice your Reason
+    score. Additionally, whenever an enemy uses a melee ability against the target
+    while they are under this effect, the enemy takes 5 fire damage.
+  isEffect: true
+  title: Effect
+- body: The target gains 2 surges. You are weakened and slowed (save ends).
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You encase the target in psionic flame and allow them to flicker without
+    fear of burning out.
+  keywords:
+  - Pyrokinesis
+  - Psionic
+  - Ranged
+  target: Self or one ally
+  title: Exothermic Shield
+  topMatter: Level 5 Talent Heroic Ability
+level: 5
+type: Maneuver
+version: 2

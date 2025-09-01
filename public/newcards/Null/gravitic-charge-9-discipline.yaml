@@ -1,0 +1,33 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: Vertical slide 5
+  t2:
+    baseEffect: Vertical slide 7
+  t3:
+    baseEffect: Vertical slide 9
+- body: This movement ignores stability. If you slide into another creature, you resolve
+    damage to both of you as if your force movement had ended, but you keep moving
+    through that creature's space.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You channel your discipline into momentum that defies gravity.
+  keywords:
+  - Psionic
+  target: Self
+  title: Gravitic Charge
+  topMatter: Level 6 Null Heroic Ability
+level: 6
+type: Maneuver
+version: 2

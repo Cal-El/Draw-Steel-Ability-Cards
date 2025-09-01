@@ -1,0 +1,58 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 24
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: slowed (save ends)
+      strength: 2
+cost:
+  costName: Insight
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 x 1 line within [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: You fire a projectile so fast that it passes through a line of foes, hamstringing
+    them.
+  keywords:
+  - Area
+  - Ranged
+  - Weapon
+  target: Each enemy in the area
+  title: They Always Line Up
+  topMatter: Level 8 Shadow Heroic Ability
+level: 8
+type: Main action
+version: 2

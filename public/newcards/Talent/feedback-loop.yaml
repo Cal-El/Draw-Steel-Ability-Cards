@@ -1,0 +1,28 @@
+body:
+- body: The target deals damage to an ally.
+  isEffect: true
+  title: Trigger
+- body: The target takes psychic damage equal to half the triggering damage.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Creating a brief psychic link between an enemy and their target gives that
+    foe a taste of their own medicine.
+  keywords:
+  - Psionic
+  - Ranged
+  target: One creature
+  title: Feedback Loop
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Triggered Action
+version: 2

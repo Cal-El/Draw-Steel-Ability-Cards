@@ -1,0 +1,22 @@
+body:
+- body: Each target can make a free strike.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: "Your allies wait for your command\u2014then unleash death!"
+  keywords:
+  - Ranged
+  target: Three allies
+  title: Now!
+  topMatter: Level 1 Tactician Heroic Ability
+level: 1
+type: Maneuver
+version: 2

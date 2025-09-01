@@ -1,0 +1,28 @@
+body:
+- body: The next ability roll an ally makes against the target before the start of
+    your next turn gains an edge.
+  isEffect: true
+  title: Effect
+- body: You target one additional creature or object.
+  isEffect: true
+  title: Spend 1 Clarity
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: An ally gains the benefit of your intellect.
+  keywords:
+  - Psionic
+  - Ranged
+  target: One creature or object
+  title: Remote Assistance
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Maneuver
+version: 2

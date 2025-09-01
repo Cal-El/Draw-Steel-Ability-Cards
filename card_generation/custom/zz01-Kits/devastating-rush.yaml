@@ -1,0 +1,52 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 4
+- body: You can move up to 3 squares straight toward the target before this strike, which deals extra damage equal to the number of squares you move this way.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Devastating Rush
+  topMatter: Panther Kit Signature Ability
+  flavour: The faster you move, the harder you hit.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

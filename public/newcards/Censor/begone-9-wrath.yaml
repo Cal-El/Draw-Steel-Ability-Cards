@@ -1,0 +1,41 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; slide 3
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage; slide 5
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage; slide 7
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Wrath
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You terrify your enemies into retreating, creating chaos in their ranks.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Begone!
+  topMatter: Level 6 Censor Heroic Ability
+level: 6
+type: Main action
+version: 2

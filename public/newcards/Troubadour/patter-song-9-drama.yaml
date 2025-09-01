@@ -1,0 +1,35 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: One ally within distance can take their turn immediately after yours.
+  t2:
+    baseEffect: Two allies within distance can take their turns immediately after
+      yours in any order.
+  t3:
+    baseEffect: Three allies within distance can take their turns immediately after
+      yours in any order. One of those allies can have already taken a turn this combat
+      round.
+cost:
+  costName: Drama
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Dazzle them with your fancy patter and they forget where they were.
+  keywords:
+  - Magic
+  - Ranged
+  target: Special
+  title: Patter Song
+  topMatter: Level 5 Troubadour Heroic Ability
+level: 5
+type: Maneuver
+version: 2

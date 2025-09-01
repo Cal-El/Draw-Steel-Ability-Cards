@@ -1,0 +1,57 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+- body: One ally within 10 squares of you can end one effect on them that is ended
+    by a saving throw or that ends at the end of their turn.
+  isEffect: true
+  title: Effect
+- body: The chosen ally can spend a Recovery.
+  isEffect: true
+  title: Spend 1 Drama
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: A lyrical (and physical) jab insults an enemy and inspires an ally.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  target: One creature
+  title: Witty Banter
+  topMatter: Level 1 Troubadour Ability
+level: 1
+type: Main action
+version: 2

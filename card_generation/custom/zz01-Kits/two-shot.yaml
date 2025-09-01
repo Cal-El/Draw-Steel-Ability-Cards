@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 2
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 2
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 2
+cost: null
+header:
+  distance:
+    display: Ranged [12]
+    values:
+    - type: Ranged
+      baseValue: 12
+      includedKitValue: 7
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: Two creatures or objects
+  title: Two Shot
+  topMatter: Rapid-Fire Kit Signature Ability
+  flavour: When you fire two arrows back-to-back, both hit their mark.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

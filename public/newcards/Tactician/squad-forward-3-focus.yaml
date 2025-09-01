@@ -1,0 +1,22 @@
+body:
+- body: Each target can move up to their speed.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: On your command, you and your allies force back the enemy line.
+  keywords:
+  - Ranged
+  target: Self and two allies
+  title: Squad! Forward!
+  topMatter: Level 1 Tactician Heroic Ability
+level: 1
+type: Maneuver
+version: 2

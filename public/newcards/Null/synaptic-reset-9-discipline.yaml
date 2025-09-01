@@ -1,0 +1,24 @@
+body:
+- body: Each target can end any conditions or effects on themself, and gains 5 temporary
+    Stamina for each condition or effect removed.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You expand your nullifying power to mitigate harmful effects.
+  keywords:
+  - Area
+  - Psionic
+  target: Self and each ally in the area
+  title: Synaptic Reset
+  topMatter: Level 5 Null Heroic Ability
+level: 5
+type: Maneuver
+version: 2

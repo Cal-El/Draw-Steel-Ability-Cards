@@ -1,0 +1,47 @@
+body:
+- body: Each enemy within 3 squares of the target who is not currently targeted by
+    this ability also becomes targeted by this ability. This effect continues until
+    there are no more available targets. The ability deals acid, fire, or poison damage
+    (your choice).
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Insight
+  costValue: '11'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: One explosion, an offense. Three explosions, an assault. Nine explosions,
+    a celebration.
+  keywords:
+  - Ranged
+  target: One creature or object
+  title: Chain Reaction
+  topMatter: Level 9 Shadow Heroic Ability
+level: 9
+type: Main action
+version: 2

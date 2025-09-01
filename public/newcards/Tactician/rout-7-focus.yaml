@@ -1,0 +1,24 @@
+body:
+- body: Until the end of the encounter or until you are dying, whenever you or any
+    ally deals damage to a target marked by you who has R < AVERAGE, the target is
+    frightened of the creature who dealt the damage (save ends).
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: The tide begins to turn.
+  keywords:
+  - '-'
+  target: Self
+  title: Rout
+  topMatter: Level 3 Tactician Heroic Ability
+level: 3
+type: Maneuver
+version: 2

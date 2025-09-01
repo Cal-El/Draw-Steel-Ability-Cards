@@ -1,0 +1,47 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage; push 2
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t2:
+    baseEffect: fire damage; push 3
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t3:
+    baseEffect: fire damage; push 4
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A jet of heavy fire erupts where you strike.
+  keywords:
+  - Fire
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Viscous Fire
+  topMatter: Level 1 Elementalist Ability
+level: 1
+type: Main action
+version: 2

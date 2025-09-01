@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Might
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+  t2:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+  t3:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 2
+- body: A creature or object of your choice within 2 squares of the target takes lightning damage equal to the characteristic score used for this ability's power roll.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Leaping Lightning
+  topMatter: Spellsword Kit Signature Ability
+  flavour: Lightning jumps from your weapon as you strike to harm a nearby foe.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

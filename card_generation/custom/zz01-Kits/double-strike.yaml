@@ -1,0 +1,46 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 2
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 2
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 2
+- body: If you use this ability on your turn, you can use it against one target, then use your maneuver and your move action for that turn before using the ability against a second target. You still use the same power roll for both targets.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Two creatures or objects
+  title: Double Strike
+  topMatter: Dual Wielder Kit Signature Ability
+  flavour: Why strike once when you could do it twice?
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

@@ -1,0 +1,24 @@
+body:
+- body: Until the end of the encounter or until you are dying, each target gains 1
+    surge at the end of each of your turns.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 aura
+    values: []
+  flavour: The gods reward your faith.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Blessing of the Faithful
+  topMatter: Level 2 Censor Heroic Ability
+level: 2
+type: Maneuver
+version: 2

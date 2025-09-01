@@ -1,0 +1,23 @@
+body:
+- body: You create a mundane object of size 1S or smaller. You can maintain a number
+    of objects created this way equal to your Presence score. You can destroy an object
+    created this way with a thought, no matter how far you are from it (no action
+    required).
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You craft objects with the power of your mind.
+  keywords:
+  - Magic
+  target: Self
+  title: Hands of the Maker
+  topMatter: Level 1 Censor Ability
+level: 1
+type: Maneuver
+version: 2

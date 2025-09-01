@@ -1,0 +1,32 @@
+body:
+- body: The area becomes dark and verdant, with trees and plant life appearing in
+    unoccupied spaces within it until the start of your next turn. The area is difficult
+    terrain for enemies, and any ally who ends their turn in the area has cover.
+  isEffect: true
+  title: Effect
+- body: The area remains until the start of your next turn. Additionally, at the start
+    of your turn, each ally in the area can spend a Recovery.
+  isEffect: true
+  title: Persistent 2
+cost:
+  costName: Essence
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 4 burst
+    values: []
+  flavour: You create a terrarium that spans from canopy above to underbrush below.
+  keywords:
+  - Area
+  - Earth
+  - Green
+  - Magic
+  - Void
+  target: Special
+  title: The Wode Remembers and Returns
+  topMatter: Level 6 Elementalist Heroic Ability
+level: 6
+type: Main action
+version: 2

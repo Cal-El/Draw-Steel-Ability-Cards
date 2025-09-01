@@ -1,0 +1,66 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 2
+- body: The area is difficult terrain until the start of your next turn. Each enemy
+    who ends their turn in the area is restrained (save ends).
+  isEffect: true
+  title: Effect
+- body: The area remains until the start of your next turn.
+  isEffect: true
+  title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '9'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: 4 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Threads you've been weaving through your adventures create a vibrant, pearlescent
+    web.
+  keywords:
+  - Area
+  - Green
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Web of All That's Come Before
+  topMatter: Level 5 Elementalist Heroic Ability
+level: 5
+type: Main action
+version: 2

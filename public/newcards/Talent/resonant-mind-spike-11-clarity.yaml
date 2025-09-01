@@ -1,0 +1,57 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 24
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 28
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+- body: This ability ignores cover and concealment.
+  isEffect: true
+  title: Effect
+- body: The ability roll scores a critical hit on a natural 17 or higher. You take
+    half the damage the target takes, and you can't reduce this damage in any way.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You fire a telepathic bolt empowered by every consciousness within reach
+    directly into your foe's mind.
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telepathy
+  target: One creature
+  title: Resonant Mind Spike
+  topMatter: Level 9 Talent Heroic Ability
+level: 9
+type: Main action
+version: 2

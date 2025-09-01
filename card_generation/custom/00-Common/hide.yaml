@@ -1,0 +1,17 @@
+body:
+- body: You attempt to hide from other creatures who aren't observing you while you have cover or concealment.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Self
+    values: []
+  title: Hide
+  topMatter: Core Maneuver
+  keywords: []
+  target: Self
+type: Maneuver
+version: 2
+fontSizePtOverrides:
+  body: 9

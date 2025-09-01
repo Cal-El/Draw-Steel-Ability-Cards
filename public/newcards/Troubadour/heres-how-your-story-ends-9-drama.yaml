@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 2
+cost:
+  costName: Drama
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: You give away the ending of this battle, and it's not great for them.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Here's How Your Story Ends
+  topMatter: Level 6 Troubadour Heroic Ability
+level: 6
+type: Main action
+version: 2

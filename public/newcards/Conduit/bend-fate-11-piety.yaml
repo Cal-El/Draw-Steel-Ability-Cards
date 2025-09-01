@@ -1,0 +1,27 @@
+body:
+- body: Until the end of the encounter or until you are dying, each of the target's
+    power rolls has its outcome improved by one tier.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: The gods know you must prevail, and they bless your fate.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Bend Fate
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Main action
+version: 2

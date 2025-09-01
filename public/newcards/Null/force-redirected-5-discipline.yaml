@@ -1,0 +1,49 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; slide 1
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; slide 3
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; slide 5
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+cost:
+  costName: Discipline
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [3]
+    values:
+    - baseValue: 3
+      includedKitValue: 0
+      type: Melee
+  flavour: The force of your strike moves your target in a surprising direction.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Force Redirected
+  topMatter: Level 2 Null Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,51 @@
+body:
+- body: You teleport to a square on the opposite side of the area before making the
+    power roll.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: sonic damage
+    damage:
+      baseValue: 24
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: If you obtain a tier 2 outcome or better, you are slowed until the end of
+    your turn and each target is slowed until the end of their turn.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 7.5
+header:
+  distance:
+    display: 5 x 2 line within 1
+    values: []
+  flavour: You move fast enough to turn around and watch your foes feel the aftermath.
+  keywords:
+  - Area
+  - Charge
+  - Psionic
+  - Telekinesis
+  target: Each enemy in the area
+  title: Hypersonic
+  topMatter: Level 5 Talent Heroic Ability
+level: 5
+type: Main action
+version: 2

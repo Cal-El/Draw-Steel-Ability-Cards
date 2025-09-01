@@ -1,0 +1,63 @@
+body:
+- body: The area is haunted by a swirling horde of phantoms until the end of the encounter.
+    Allies can enter any square of the area without spending movement. At the end
+    of each of your turns, you can make one power roll that targets each enemy in
+    the area.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: pull 1 toward the center of the area
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: pull 2 toward the center of the area
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: pull 3 toward the center of the area
+      strength: 2
+cost:
+  costName: Drama
+  costValue: '5'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your fans don't seem to like the opening act...
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Special
+  title: Tough Crowd
+  topMatter: Level 2 Troubadour Heroic Ability
+level: 2
+type: Main action
+version: 2

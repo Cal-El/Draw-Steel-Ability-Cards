@@ -1,0 +1,28 @@
+body:
+- body: You can target yourself instead of one creature with this ability. Each target
+    has damage immunity 5 until the start of your next turn.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your allies are covered in spiritual armor.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Three creatures
+  title: Cuirass of the Gods
+  topMatter: Level 6 Conduit Heroic Ability
+level: 6
+type: Maneuver
+version: 2

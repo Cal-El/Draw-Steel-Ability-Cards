@@ -1,0 +1,36 @@
+body:
+- body: The wall lasts until the start of your next turn, and can be placed in occupied
+    squares. Creatures can enter and pass through the wall. Each enemy who enters
+    the area for the first time in a combat round or starts their turn there takes
+    fire damage equal to your Reason score for each square of the area they start
+    their turn in or enter.
+  isEffect: true
+  title: Effect
+- body: The wall lasts until the start of your next turn, and you can add a number
+    of squares to the wall equal to your Reason score.
+  isEffect: true
+  title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 10 wall within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A blazing, beautifully organized inferno erupts at your command.
+  keywords:
+  - Area
+  - Fire
+  - Magic
+  - Ranged
+  target: Special
+  title: Wall of Fire
+  topMatter: Level 3 Elementalist Heroic Ability
+level: 3
+type: Maneuver
+version: 2

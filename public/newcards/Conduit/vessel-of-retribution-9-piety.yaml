@@ -1,0 +1,28 @@
+body:
+- body: The first time the target is dying or winded before the end of the encounter,
+    each enemy within 5 squares of them takes 15 holy damage.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You infuse yourself or an ally with the retributive energy of the gods,
+    waiting to be unleashed.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Vessel of Retribution
+  topMatter: Level 5 Conduit Heroic Ability
+level: 5
+type: Maneuver
+version: 2

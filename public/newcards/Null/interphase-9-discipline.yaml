@@ -1,0 +1,22 @@
+body:
+- body: You can use up to three signature abilities, each of which gains an edge.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You slip into a faster timestream to act more quickly.
+  keywords:
+  - Psionic
+  target: Self
+  title: Interphase
+  topMatter: Level 6 Null Heroic Ability
+level: 6
+type: Main action
+version: 2

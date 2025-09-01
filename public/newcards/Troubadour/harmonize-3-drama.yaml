@@ -1,0 +1,31 @@
+body:
+- body: The target uses an ability that targets only one enemy and costs 3 or fewer
+    of their Heroic Resource.
+  isEffect: true
+  title: Trigger
+- body: The target can choose one additional target for the triggering ability. Any
+    damage dealt to the additional target is sonic damage.
+  isEffect: true
+  title: Effect
+- body: You can trigger this ability when a target uses an ability that has a Heroic
+    Resource cost of 3 + each additional drama spent.
+  isEffect: true
+  title: Spend 1+ Drama
+cost:
+  costName: Drama
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 5
+    values: []
+  flavour: Give the chorus a little punch.
+  keywords:
+  - Ranged
+  target: One ally
+  title: Harmonize
+  topMatter: Level 1 Troubadour Heroic Ability
+level: 1
+type: Triggered Action
+version: 2

@@ -1,0 +1,25 @@
+body:
+- body: Each target can spend any number of Recoveries. Additionally, each target
+    can end one effect on themself that is ended by a saving throw or that ends at
+    the end of their turn, or they can stand up if prone.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 4 burst
+    values: []
+  flavour: With a gesture, you restore your health and that of your allies.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Revitalizing Grace
+  topMatter: Level 6 Conduit Heroic Ability
+level: 6
+type: Main action
+version: 2

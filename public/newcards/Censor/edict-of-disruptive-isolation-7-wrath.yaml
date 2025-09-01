@@ -1,0 +1,27 @@
+body:
+- body: Until the end of the encounter or until you are dying, each target takes holy
+    damage equal to your Presence score at the end of each of your turns. A target
+    takes an extra 2d6 holy damage if they are judged by you or if they are adjacent
+    to any enemy.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 2 aura
+    values: []
+  flavour: The evil within your foes detonates with holy fire that burns only the
+    guilty.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Edict of Disruptive Isolation
+  topMatter: Level 3 Censor Heroic Ability
+level: 3
+type: Maneuver
+version: 2

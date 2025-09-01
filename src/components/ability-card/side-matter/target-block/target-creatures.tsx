@@ -1,7 +1,7 @@
 import { ability_card } from "../../../../types/ability-card-types";
 import TargetBox from "./target-box";
 
-export default function TargetCreatures({card, bgColorStyle, numCreatures, type}: {card: ability_card, bgColorStyle: Record<string, string>, numCreatures: string, type: "Creatures" | "Enemies" | "Allies"}){
+export default function TargetCreatures({card, bgColorGetter, numCreatures, type}: {card: ability_card, bgColorGetter: (t: string) => string, numCreatures: string, type: "Creatures" | "Enemies" | "Allies"}){
     const getTargetDescription = (): string => {
         switch(type){
             case "Creatures":
@@ -15,7 +15,7 @@ export default function TargetCreatures({card, bgColorStyle, numCreatures, type}
         }
     }
     return (
-        <TargetBox card={card} bgColorStyle={bgColorStyle}>
+        <TargetBox card={card} bgColorGetter={bgColorGetter}>
             <div className={`flex flex-col justify-center items-center w-full h-full pt-[1.3333pt]`}>
                 { numCreatures === "All" ? 
                 <div

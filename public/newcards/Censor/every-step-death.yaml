@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+- body: Each time the target willingly moves before the end of your next turn, they
+    take 1 psychic damage for each square they move.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You show your foe a glimpse of their fate after death.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Every Step... Death!
+  topMatter: Level 1 Censor Ability
+level: 1
+type: Main action
+version: 2

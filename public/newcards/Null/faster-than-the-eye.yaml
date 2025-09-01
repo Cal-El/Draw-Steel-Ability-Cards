@@ -1,0 +1,48 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: You can deal damage equal to your Agility score to one creature or object
+    adjacent to you.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You strike so quickly that your hands become a blur.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: Two creatures or objects
+  title: Faster Than the Eye
+  topMatter: Level 1 Null Ability
+level: 1
+type: Main action
+version: 2

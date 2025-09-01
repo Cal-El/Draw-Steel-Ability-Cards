@@ -1,0 +1,63 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: bleeding and weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: bleeding and weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: bleeding and weakened (save ends)
+      strength: 2
+- body: You can deal 1d6 damage to yourself to deal an extra 1d6 damage to the target.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: See how well they fight after you've bled them dry.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Blood for Blood!
+  topMatter: Level 1 Fury Heroic Ability
+level: 1
+type: Main action
+version: 2

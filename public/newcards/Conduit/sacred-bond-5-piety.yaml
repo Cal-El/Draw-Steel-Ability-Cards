@@ -1,0 +1,30 @@
+body:
+- body: Until the end of the encounter, whenever one target takes damage, the other
+    target can use a free triggered action to take the damage instead. The original
+    target suffers any effects associated with the damage. Additionally, whenever
+    one target spends a Recovery, the other target can use a free triggered action
+    to spend a Recovery.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You forge a divine connection between two creatures.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self and one ally
+  title: Sacred Bond
+  topMatter: Level 2 Conduit Heroic Ability
+level: 2
+type: Maneuver
+version: 2

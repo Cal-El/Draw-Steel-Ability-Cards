@@ -1,0 +1,30 @@
+body:
+- body: Each target can shift up to 5 squares, including vertically, but must end
+    this movement adjacent to the other target and on solid ground. Each target can
+    then make a melee free strike that deals extra damage equal to twice their highest
+    characteristic score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: Audiences love this bit.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Self and one willing ally
+  title: Classic Chandelier Stunt
+  topMatter: Level 2 Troubadour Heroic Ability
+level: 2
+type: Main action
+version: 2

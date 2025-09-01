@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: Each enemy adjacent to the target is pushed away from the target up to a number
+    of squares equal to your Presence score.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: Your magic strike turns your foe's guilt into a burst of holy power.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Your Allies Cannot Save You!
+  topMatter: Level 1 Censor Ability
+level: 1
+type: Main action
+version: 2

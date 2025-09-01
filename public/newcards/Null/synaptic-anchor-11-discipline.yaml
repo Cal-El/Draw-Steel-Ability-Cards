@@ -1,0 +1,29 @@
+body:
+- body: The target takes damage from another creature's ability while in the area
+    of your Null Field ability.
+  isEffect: true
+  title: Trigger
+- body: The target takes half the damage, and if the triggering creature has I < AVERAGE,
+    they are dazed (save ends). While the triggering creature is dazed this way, they
+    take psychic damage equal to your Intuition score whenever they use a main action.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: You disrupt an enemy's strike and create a feedback loop in their mind,
+    preventing them from focusing on future attacks.
+  keywords:
+  - Psionic
+  target: Self or one creature
+  title: Synaptic Anchor
+  topMatter: Level 8 Null Heroic Ability
+level: 8
+type: Free Triggered Action
+version: 2

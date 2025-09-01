@@ -1,0 +1,68 @@
+body:
+- body: You shift up to your speed.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: frightened (save ends)
+      strength: 2
+- body: If a target who is not a leader or solo creature is winded by this strike,
+    they are reduced to 0 Stamina and you choose an enemy within 5 squares of you.
+    If that enemy has P < AVERAGE, they are frightened of you (save ends).
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 7.5
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You break through the enemy lines to make an example.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Seek and Destroy
+  topMatter: Level 6 Fury Heroic Ability
+level: 6
+type: Main action
+version: 2

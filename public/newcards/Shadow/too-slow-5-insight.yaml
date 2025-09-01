@@ -1,0 +1,28 @@
+body:
+- body: You use your In All This Confusion ability.
+  isEffect: true
+  title: Trigger
+- body: You ignore any effects associated with the damage that triggered your In All
+    This Confusion ability. Before you teleport, you can make a free strike against
+    a creature who damaged you to trigger In All This Confusion. After you teleport,
+    you can spend a Recovery.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: Your foe made a big mistake.
+  keywords:
+  - '-'
+  target: Self
+  title: Too Slow
+  topMatter: Level 2 Shadow Heroic Ability
+level: 2
+type: Free Triggered Action
+version: 2

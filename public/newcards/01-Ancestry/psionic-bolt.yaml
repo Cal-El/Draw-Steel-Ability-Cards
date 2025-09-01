@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; slide 1
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage; slide 2
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage; slide 3
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+cost: null
+header:
+  distance:
+    display: 'Ranged [10]'
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Psionic Bolt
+  topMatter: Time Raider Signature Ability
+  flavour: You shoot forth a purple beam of psychic force that moves your target.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

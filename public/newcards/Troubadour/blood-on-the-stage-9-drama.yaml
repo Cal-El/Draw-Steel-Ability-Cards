@@ -1,0 +1,60 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: bleeding (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: bleeding (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage; bleeding (EoT), or
+    damage:
+      baseValue: 24
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: bleeding (save ends)
+      strength: 2
+cost:
+  costName: Drama
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: It's love and blood or drama and blood. Either way, there's always blood.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Blood on the Stage
+  topMatter: Level 6 Troubadour Heroic Ability
+level: 6
+type: Main action
+version: 2

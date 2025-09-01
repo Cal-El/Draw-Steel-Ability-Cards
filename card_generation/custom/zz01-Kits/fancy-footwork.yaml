@@ -1,0 +1,52 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+  t2:
+    baseEffect: damage; push 1
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+  t3:
+    baseEffect: damage; push 2
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+- body: You can shift into any square the target leaves after you push them.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Fancy Footwork
+  topMatter: Swashbuckler Kit Signature Ability
+  flavour: All combat is a dance—and you'll be the one leading.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

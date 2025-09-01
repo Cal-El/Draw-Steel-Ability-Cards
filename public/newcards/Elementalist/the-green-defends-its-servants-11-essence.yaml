@@ -1,0 +1,35 @@
+body:
+- body: You conjure an elemental shield that protects the target until the end of
+    your next turn. While the shield is active, the target can take the Defend main
+    action as a maneuver on each of their turns. The target gains 30 temporary Stamina
+    that lasts until depleted or until the effect ends. If this temporary Stamina
+    disappears, the effect ends and the shield explodes, dealing 10 damage to each
+    enemy within 5 squares of the target.
+  isEffect: true
+  title: Effect
+- body: The effect lasts until the start of your next turn.
+  isEffect: true
+  title: Persistent 2
+cost:
+  costName: Essence
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A luminous green shield shows its true beauty the more it cracks.
+  keywords:
+  - Green
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: The Green Defends Its Servants
+  topMatter: Level 9 Elementalist Heroic Ability
+level: 9
+type: Maneuver
+version: 2

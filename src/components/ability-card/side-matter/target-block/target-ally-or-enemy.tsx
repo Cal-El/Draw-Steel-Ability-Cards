@@ -1,9 +1,9 @@
 import { ability_card } from "../../../../types/ability-card-types";
 import TargetBox from "./target-box";
 
-export default function TargetAllyOrEnemy({card, bgColorStyle, numCreatures}: {card: ability_card, bgColorStyle: Record<string, string>, numCreatures: string}){
+export default function TargetAllyOrEnemy({card, bgColorGetter, numCreatures}: {card: ability_card, bgColorGetter: (t: string) => string, numCreatures: string}){
     return (
-        <TargetBox card={card} bgColorStyle={bgColorStyle}>
+        <TargetBox card={card} bgColorGetter={bgColorGetter}>
             <div className={`flex flex-col justify-center items-center w-full h-full pt-[3.3333pt]`}>
                     <div
                         className={`text-[16pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center ${numCreatures === "3"? 'lining-nums': ''}`}>{numCreatures}

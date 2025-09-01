@@ -1,0 +1,31 @@
+body:
+- body: You and the target each make a melee free strike that targets each enemy within
+    3 squares of either of you, dividing the enemies between each of you. You choose
+    which enemies your free strike targets and which enemies the target creature's
+    free strike targets. You then slide the target 5 squares, ignoring stability.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You and your partner make a flashy show of derring-do, then get back to
+    your corners.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Fight Choreography
+  topMatter: Level 6 Troubadour Heroic Ability
+level: 6
+type: Main action
+version: 2

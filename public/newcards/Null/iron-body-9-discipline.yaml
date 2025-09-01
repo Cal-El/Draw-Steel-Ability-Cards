@@ -1,0 +1,23 @@
+body:
+- body: You gain 20 temporary Stamina. Additionally, until the end of the encounter,
+    your stability gains a bonus equal to your Intuition score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You focus until your body becomes as hard as iron.
+  keywords:
+  - Psionic
+  target: Self
+  title: Iron Body
+  topMatter: Level 6 Null Heroic Ability
+level: 6
+type: Maneuver
+version: 2

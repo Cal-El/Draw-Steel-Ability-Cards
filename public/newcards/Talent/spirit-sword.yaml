@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+- body: You gain 1 surge.
+  isEffect: true
+  title: Effect
+- body: The target takes an extra 3 damage. You also take 3 damage that can't be reduced
+    in any way.
+  isEffect: true
+  title: Strained
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
+  flavour: You form a blade of mind energy and stab your target, invigorating yourself.
+  keywords:
+  - Animapathy
+  - Melee
+  - Psionic
+  - Strike
+  target: One creature or object
+  title: Spirit Sword
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Main action
+version: 2

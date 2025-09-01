@@ -1,0 +1,26 @@
+body:
+- body: The target gains 20 temporary Stamina and 3 surges.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: An ally becomes the wearer of an empowered golden cloak.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Saint's Raiment
+  topMatter: Level 3 Conduit Heroic Ability
+level: 3
+type: Maneuver
+version: 2

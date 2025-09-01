@@ -1,0 +1,60 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 2
+cost:
+  costName: Piety
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Fear of divine judgment overwhelms your foe.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Curse of Terror
+  topMatter: Level 1 Conduit Heroic Ability
+level: 1
+type: Main action
+version: 2

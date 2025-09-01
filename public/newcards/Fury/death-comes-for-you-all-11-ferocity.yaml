@@ -1,0 +1,47 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 5
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 7
+    damage:
+      baseValue: 15
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: If this forced movement causes a target to be hurled through an object, that
+    target takes an extra 10 damage.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You use your weapon to create a destructive shockwave.
+  keywords:
+  - Area
+  - Magic
+  - Melee
+  - Weapon
+  target: Each enemy in the area
+  title: Death Comes for You All!
+  topMatter: Level 9 Fury Heroic Ability
+level: 9
+type: Main action
+version: 2

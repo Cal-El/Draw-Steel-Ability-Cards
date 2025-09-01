@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; one ally within 10 squares can use the Charge main action
+      as a free triggered action, and can use a melee strike signature ability instead
+      of a free strike for the charge
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; one ally within 10 squares can use the Charge main action
+      as a free triggered action, and can use a melee strike signature ability that
+      gains an edge instead of a free strike for the charge
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; two allies within 10 squares can use the Charge main action
+      as a free triggered action, and can each use a melee strike signature ability
+      that gains an edge instead of a free strike for the charge
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: If the target is hit with two or more strikes as part of this ability and
+    they have R < STRONG, they are dazed (save ends). If the target is reduced to
+    0 Stamina before one or both allies has made their strike, the ally or allies
+    can pick a different target.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '9'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You lead your allies in a charge.
+  keywords:
+  - Charge
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: To Me Squad!
+  topMatter: Level 6 Tactician Heroic Ability
+level: 6
+type: Main action
+version: 2

@@ -1,0 +1,25 @@
+body:
+- body: Until the start of your next turn, any ability roll made against a target
+    gains an edge.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: You distract your foes, allowing your allies to take advantage of that
+    distraction.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Look!
+  topMatter: Level 6 Shadow Heroic Ability
+level: 6
+type: Maneuver
+version: 2

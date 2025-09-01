@@ -1,0 +1,32 @@
+body:
+- body: You reduce a creature to 0 Stamina with a strike.
+  isEffect: true
+  title: Trigger
+- body: You target a creature adjacent to you with the same strike, using the same
+    power roll as the triggering strike.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: Once you taste your foe's blood, you become more efficient and turn every
+    killing blow into an opportunity.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Self
+  title: Death Strike
+  topMatter: Level 6 Fury Heroic Ability
+level: 6
+type: Free Triggered Action
+version: 2

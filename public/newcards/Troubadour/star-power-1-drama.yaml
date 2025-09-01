@@ -1,0 +1,26 @@
+body:
+- body: You gain a +2 bonus to speed until the end of your turn. Additionally, the
+    next power roll you make this turn can't have an outcome lower than tier 2.
+  isEffect: true
+  title: Effect
+- body: You gain a +4 bonus to speed instead.
+  isEffect: true
+  title: Spend 1 Drama
+cost:
+  costName: Drama
+  costValue: '1'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: Your years of practicing fencing and dancing pay off on the battlefield.
+  keywords:
+  - '-'
+  target: Self
+  title: Star Power
+  topMatter: Level 1 Troubadour Heroic Ability
+level: 1
+type: Maneuver
+version: 2

@@ -1,0 +1,42 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; push 3
+    damage:
+      baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage; push 5
+    damage:
+      baseValue: 17
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage; push 7
+    damage:
+      baseValue: 23
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Discipline
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 cube within 1
+    values: []
+  flavour: You warp reality to grow a limb for just a moment and make a single devastating
+    attack.
+  keywords:
+  - Area
+  - Psionic
+  target: Each enemy in the area
+  title: Scalar Assault
+  topMatter: Level 8 Null Heroic Ability
+level: 8
+type: Main action
+version: 2

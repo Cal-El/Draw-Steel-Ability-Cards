@@ -1,0 +1,46 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Slide 3
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: Slide 5
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: Slide 7
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 2
+cost:
+  costName: Wrath
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You reveal a vision of your enemies' fate that causes them to scramble
+    as it staggers them.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: Three enemies
+  title: Burden of Evil
+  topMatter: Level 6 Censor Heroic Ability
+level: 6
+type: Maneuver
+version: 2

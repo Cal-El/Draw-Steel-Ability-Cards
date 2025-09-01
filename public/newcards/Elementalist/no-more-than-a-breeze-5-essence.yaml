@@ -1,0 +1,33 @@
+body:
+- body: Until the start of your next turn, the target can move through solid matter,
+    they ignore difficult terrain, and their movement can't provoke opportunity attacks.
+    If the target ends their turn inside solid matter, they are forced out into the
+    space where they entered it and this effect ends.
+  isEffect: true
+  title: Effect
+- body: The effect lasts until the start of your next turn.
+  isEffect: true
+  title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: The material substance of a creature shreds away at your command.
+  keywords:
+  - Magic
+  - Ranged
+  - Void
+  target: Self or one ally
+  title: No More Than a Breeze
+  topMatter: Level 1 Elementalist Heroic Ability
+level: 1
+type: Maneuver
+version: 2

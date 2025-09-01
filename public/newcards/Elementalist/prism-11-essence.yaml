@@ -1,0 +1,25 @@
+body:
+- body: You use up to three heroic abilities whose essence costs total 11 or less,
+    spending no additional essence beyond the cost of this ability. You can shift
+    up to 2 squares between your use of each ability.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Essence
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You split your essence, allowing you to cast multiple effects at once.
+  keywords:
+  - Magic
+  - Void
+  target: Self
+  title: Prism
+  topMatter: Level 9 Elementalist Heroic Ability
+level: 9
+type: Main action
+version: 2

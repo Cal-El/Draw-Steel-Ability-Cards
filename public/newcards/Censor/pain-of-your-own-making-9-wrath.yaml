@@ -1,0 +1,32 @@
+body:
+- body: The target gains a condition or effect that is ended by a saving throw or
+    that ends at the end of their turn.
+  isEffect: true
+  title: Trigger
+- body: The effect ends on the target and is applied to the creature who imposed the
+    effect on them. That creature also takes damage equal to three times your Presence
+    score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You reverse the effects from an evildoer.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Pain of Your Own Making
+  topMatter: Level 6 Censor Heroic Ability
+level: 6
+type: Free Triggered Action
+version: 2

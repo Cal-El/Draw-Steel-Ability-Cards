@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; you or one ally within 10 squares of you can spend a Recovery
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; you or one ally within 10 squares of you can spend a Recovery
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; you and one ally within 10 squares of you can spend a Recovery,
+      and each of you gains an edge on the next ability roll you make during the encounter
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+cost:
+  costName: Focus
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your attack gives an ally hope.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Inspiring Strike
+  topMatter: Level 1 Tactician Heroic Ability
+level: 1
+type: Main action
+version: 2

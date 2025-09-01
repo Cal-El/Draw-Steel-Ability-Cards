@@ -1,0 +1,46 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Slide 3
+    potency:
+      characteristic: Presence
+      effect: this slide ignores the target's stability
+      strength: 0
+  t2:
+    baseEffect: Slide 5
+    potency:
+      characteristic: Presence
+      effect: this slide ignores the target's stability
+      strength: 1
+  t3:
+    baseEffect: Slide 7
+    potency:
+      characteristic: Presence
+      effect: this slide ignores the target's stability
+      strength: 2
+- body: Instead of sliding a target, you can swap their location with another target
+    as long as each can fit into the other's space. You can't slide targets into other
+    creatures or objects using this ability.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 4 burst
+    values: []
+  flavour: No, this isn't right. That foe was over there!
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Extensive Rewrites
+  topMatter: Level 3 Troubadour Heroic Ability
+level: 3
+type: Maneuver
+version: 2

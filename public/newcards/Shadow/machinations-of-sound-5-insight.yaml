@@ -1,0 +1,38 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: Slide 4
+  t2:
+    baseEffect: Slide 5
+  t3:
+    baseEffect: Slide 7
+- body: This forced movement ignores stability. Instead, the forced movement is reduced
+    by a number equal to the target's Intuition score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Illusory sounds make your foes reposition themselves as they cower or investigate
+    the disturbance.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each creature in the area
+  title: Machinations of Sound
+  topMatter: Level 2 Shadow Heroic Ability
+level: 2
+type: Maneuver
+version: 2

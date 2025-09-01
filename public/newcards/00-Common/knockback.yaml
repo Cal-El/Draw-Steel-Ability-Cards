@@ -1,0 +1,33 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: Push 1
+  t2:
+    baseEffect: Push 2
+  t3:
+    baseEffect: Push 3
+- body: You can usually target only creatures of your size or smaller. If your Might
+    score is 2 or higher, you can target any creature with a size equal to or less
+    than your Might score.
+  isEffect: true
+  title: Effect
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: '1'
+      includedKitValue: '0'
+      type: Melee
+  flavour: ''
+  keywords:
+  - Melee
+  - Weapon
+  target: One creature
+  title: Knockback
+  topMatter: Core Maneuver
+type: Maneuver
+version: 2

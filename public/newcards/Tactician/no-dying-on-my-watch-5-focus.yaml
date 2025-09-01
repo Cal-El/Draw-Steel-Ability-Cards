@@ -1,0 +1,55 @@
+body:
+- body: The target deals damage to an ally.
+  isEffect: true
+  title: Trigger
+- body: You move up to your speed toward the triggering ally, ending this movement
+    adjacent to them or in the nearest square if you can't reach an adjacent square.
+    The triggering ally can spend a Recovery and gains 5 temporary Stamina for each
+    enemy you came adjacent to during the move. You then make a power roll against
+    the target.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: null
+    potency:
+      characteristic: Reason
+      effect: the target is frightened of the triggering ally (save ends)
+      strength: 0
+  t2:
+    baseEffect: null
+    potency:
+      characteristic: Reason
+      effect: the target is frightened of the triggering ally (save ends)
+      strength: 1
+  t3:
+    baseEffect: null
+    potency:
+      characteristic: Reason
+      effect: the target is frightened of the triggering ally (save ends)
+      strength: 2
+cost:
+  costName: Focus
+  costValue: '5'
+fontSizePtOverrides:
+  body: 5.5
+header:
+  distance:
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: You prioritize saving an ally over your own safety.
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One enemy
+  title: No Dying on My Watch
+  topMatter: Level 2 Tactician Heroic Ability
+level: 2
+type: Triggered Action
+version: 2

@@ -1,0 +1,53 @@
+body:
+- body: Each target can use any main action available to them as a free triggered
+    action, but they lose their main action on their next turn.
+  isEffect: true
+  title: Effect
+- body: Make a power roll that targets you and each enemy within distance.
+  isEffect: true
+  title: Strained
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage; slowed (save ends)
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: corruption damage; slowed (save ends)
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: corruption damage; slowed (save ends)
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Clarity
+  costValue: '11'
+fontSizePtOverrides:
+  body: 7.5
+header:
+  distance:
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: You forcibly stuff more moments into a critical point in time, knowing
+    full well you might need to steal some of your own.
+  keywords:
+  - Chronopathy
+  - Psionic
+  - Ranged
+  target: Three allies
+  title: Acceleration Field
+  topMatter: Level 9 Talent Heroic Ability
+level: 9
+type: Main action
+version: 2

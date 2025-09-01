@@ -1,0 +1,56 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; as a free triggered action, one ally within 10 squares of
+      the target can use a strike signature ability against the target
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; as a free triggered action, one ally within 10 squares of
+      the target can use a strike signature ability that gains an edge against the
+      target
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; as a free triggered action, two allies within 10 squares of
+      the target can each use a strike signature ability that gains an edge against
+      the target
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: Each ally can shift up to 2 squares and gains 2 surges before making the strike.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You focus your allies' wrath on a chosen foe.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Congregation
+  topMatter: Level 6 Censor Heroic Ability
+level: 6
+type: Main action
+version: 2

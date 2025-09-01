@@ -1,0 +1,52 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+- body: Choose yourself or one ally within distance. That character can end one effect
+    on them that is ended by a saving throw or that ends at the end of their turn.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your curse causes your foe's flesh to rot off as spores that aid your allies.
+  keywords:
+  - Green
+  - Magic
+  - Ranged
+  - Rot
+  - Strike
+  target: One creature
+  title: Afflict a Bountiful Decay
+  topMatter: Level 1 Elementalist Ability
+level: 1
+type: Main action
+version: 2

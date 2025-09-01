@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; you can teleport the target 1 square
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; you can teleport the target up to 3 squares
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; you can teleport the target up to 5 squares
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+cost:
+  costName: Insight
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: You enchant a strike with your teleportation magic.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: In a Puff of Ash
+  topMatter: Level 2 Shadow Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,64 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 2
+- body: At the end of each of your turns, a target dazed this way deals holy damage
+    equal to twice your Presence score to each enemy within 2 squares of them.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: Your enemy's guilt fuels a holy flame that burns your foes.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Pillar of Holy Fire
+  topMatter: Level 8 Censor Heroic Ability
+level: 8
+type: Main action
+version: 2

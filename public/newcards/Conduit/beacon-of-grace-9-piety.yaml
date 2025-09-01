@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 17
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+- body: Until the end of the encounter, whenever you or any ally damages the target
+    using an ability, that creature can spend a Recovery. If the target is reduced
+    to 0 Stamina before the end of the encounter, you can use a free triggered action
+    to move this effect to another creature within distance.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You ignite a foe with holy radiance, rewarding allies who attack them.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Beacon of Grace
+  topMatter: Level 5 Conduit Heroic Ability
+level: 5
+type: Main action
+version: 2

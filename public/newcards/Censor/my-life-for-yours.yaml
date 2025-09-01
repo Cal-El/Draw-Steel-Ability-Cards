@@ -1,0 +1,32 @@
+body:
+- body: The target starts their turn or takes damage.
+  isEffect: true
+  title: Trigger
+- body: You spend a Recovery and the target regains Stamina equal to your recovery
+    value.
+  isEffect: true
+  title: Effect
+- body: You can end one effect on the target that is ended by a saving throw or that
+    ends at the end of their turn, or a prone target can stand up.
+  isEffect: true
+  title: Spend 1 Wrath
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You channel some of your vitality into more resilience for you or an ally.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: My Life for Yours
+  topMatter: Level 1 Censor Ability
+level: 1
+type: Triggered Action
+version: 2

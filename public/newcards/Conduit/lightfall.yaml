@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: You can teleport yourself and each ally in the area to unoccupied spaces in
+    the area.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: A rain of holy light scours your enemies and repositions your allies.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Lightfall
+  topMatter: Level 1 Conduit Ability
+level: 1
+type: Main action
+version: 2

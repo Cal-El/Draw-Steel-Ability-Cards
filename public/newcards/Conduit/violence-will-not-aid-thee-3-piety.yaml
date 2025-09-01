@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t2:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t3:
+    baseEffect: lightning damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+- body: The first time on a turn that the target deals damage to another creature,
+    the target of this ability takes 1d10 lightning damage (save ends).
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: After some holy lightning, your enemy will think twice about their next
+    attack.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Violence Will Not Aid Thee
+  topMatter: Level 1 Conduit Heroic Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,32 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Each target gains 1 surge.
+  t2:
+    baseEffect: Each target gains 2 surges.
+  t3:
+    baseEffect: Each target gains 3 surges.
+- body: A target can end one effect on them that is ended by a saving throw or that
+    ends at the end of their turn, or a prone target can stand up.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 1 burst
+    values: []
+  flavour: You channel your god's will to overcome hardship and inflict pain.
+  keywords:
+  - Area
+  target: Self and each ally in the area
+  title: Orison of Victory
+  topMatter: Level 5 Censor Heroic Ability
+level: 5
+type: Maneuver
+version: 2

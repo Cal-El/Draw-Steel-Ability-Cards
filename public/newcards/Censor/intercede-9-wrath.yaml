@@ -1,0 +1,31 @@
+body:
+- body: A creature makes a strike against the target.
+  isEffect: true
+  title: Trigger
+- body: The target is unaffected by the strike and you become the target instead,
+    even if you aren't a valid target for it. You take half the damage from the strike,
+    and the target gains 3 surges.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You take your ally's place.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Intercede
+  topMatter: Level 6 Censor Heroic Ability
+level: 6
+type: Free Triggered Action
+version: 2

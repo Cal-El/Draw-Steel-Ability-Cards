@@ -1,0 +1,26 @@
+body:
+- body: Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until
+    the end of the encounter or until you are dying, you can choose one target of
+    any ability you use, with that target taking an extra 15 damage of the chosen
+    type. Additionally, whenever you gain ferocity from taking damage, the source
+    of the damage takes 5 damage of the chosen type.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: Your ferocity manifests into primordial power.
+  keywords:
+  - Magic
+  target: Self
+  title: Primordial Rage
+  topMatter: Level 8 Fury Heroic Ability
+level: 8
+type: Maneuver
+version: 2

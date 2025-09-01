@@ -1,0 +1,24 @@
+body:
+- body: Until the end of the encounter or until you are dying, each target who starts
+    their turn in the area gains 10 temporary Stamina.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 2 aura
+    values: []
+  flavour: You and your allies are clad in shimmering armor.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Edict of Unyielding Resolve
+  topMatter: Level 9 Censor Heroic Ability
+level: 9
+type: Maneuver
+version: 2

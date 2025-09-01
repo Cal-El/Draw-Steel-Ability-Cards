@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+- body: 'When you make this strike, choose the damage type from one of the following
+    options: acid, cold, corruption, fire, lightning, poison, or sonic.'
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You cast a ball of elemental energy at a foe.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Hurl Element
+  topMatter: Level 1 Elementalist Ability
+level: 1
+type: Free Strike
+version: 2

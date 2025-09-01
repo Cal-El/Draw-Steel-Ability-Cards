@@ -1,0 +1,31 @@
+body:
+- body: The target makes a power roll.
+  isEffect: true
+  title: Trigger
+- body: The target obtains a tier 1 or tier 3 outcome on their power roll (your choice).
+    You can then choose another target within distance, who obtains the opposite outcome
+    on their next power roll.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: The gods bless and damn in equal measure.
+  keywords:
+  - Magic
+  - Ranged
+  target: One creature
+  title: Blessing and a Curse
+  topMatter: Level 9 Censor Heroic Ability
+level: 9
+type: Triggered Action
+version: 2

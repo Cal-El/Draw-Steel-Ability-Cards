@@ -1,0 +1,62 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 2
+cost:
+  costName: Essence
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Wrap them up in fire and melting stone.
+  keywords:
+  - Earth
+  - Fire
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Volcano's Embrace
+  topMatter: Level 2 Elementalist Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,29 @@
+body:
+- body: Until the end of the encounter, you gain the target's damage immunities and
+    speed (if they are better than yours), and can use any types of movement they
+    can use. You can also use the target's signature ability, using their bonus for
+    the power roll.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your mask reflects your foe's face. Surely they won't need it much longer.
+  keywords:
+  - Magic
+  - Ranged
+  target: One creature
+  title: I Am You
+  topMatter: Level 9 Shadow Heroic Ability
+level: 9
+type: Maneuver
+version: 2

@@ -1,0 +1,57 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: prone and can't stand (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: prone and can't stand (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: prone and can't stand (save ends)
+      strength: 2
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 4 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: '"If you won''t kneel, the gods will make you."'
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Penance
+  topMatter: Level 5 Conduit Heroic Ability
+level: 5
+type: Main action
+version: 2

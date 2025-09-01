@@ -1,0 +1,65 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: restrained (save ends)
+      strength: 2
+- body: While the target is restrained this way, your abilities that impose forced
+    movement can still move them.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: The shock of your condemnation freezes your enemy in their boots.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Sentenced
+  topMatter: Level 2 Censor Heroic Ability
+level: 2
+type: Main action
+version: 2

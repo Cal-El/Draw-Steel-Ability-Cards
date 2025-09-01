@@ -1,0 +1,58 @@
+body:
+- characteristicBonus:
+  - Might
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      strength: 0
+      effect: slowed (save ends)
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      strength: 1
+      effect: slowed (save ends)
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      strength: 2
+      effect: slowed (save ends)
+- body: This ability has no effect on a creature who can’t see you or who purposefully avoids looking at your eyes. A creature reduced to 0 Stamina by this ability is turned to inanimate stone.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: 'Ranged [10]'
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Stone Eyes
+  topMatter: Medusa Blood Complication Ability
+  flavour: Your looks don't kill—they petrify.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

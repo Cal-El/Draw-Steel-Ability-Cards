@@ -1,0 +1,29 @@
+body:
+- body: Until the end of the encounter or until the target is dying, at the start
+    of each of the target's turns, they gain a bonus to speed and a bonus to rolled
+    damage equal to the number of allies within 10 squares of them. This bonus lasts
+    until the start of their next turn.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: An ally gains strength from their friends.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self and one ally
+  title: Our Hearts Your Strength
+  topMatter: Level 2 Conduit Heroic Ability
+level: 2
+type: Maneuver
+version: 2

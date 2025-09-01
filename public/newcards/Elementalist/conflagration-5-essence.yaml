@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: fire damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: fire damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: fire damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: At the start of your turn, you can use a maneuver to use this ability again
+    without spending essence.
+  isEffect: true
+  title: Persistent 2
+cost:
+  costName: Essence
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A storm of fire descends upon your enemies.
+  keywords:
+  - Area
+  - Fire
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Conflagration
+  topMatter: Level 1 Elementalist Heroic Ability
+level: 1
+type: Main action
+version: 2

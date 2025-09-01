@@ -1,0 +1,25 @@
+body:
+- body: Each target can choose another creature in the area, then swap places with
+    that creature. The creature they choose must be able to fit into the space they
+    leave and vice versa.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: You and your allies swap places to confound your foes.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each ally in the area
+  title: Divine Comedy
+  topMatter: Level 2 Conduit Heroic Ability
+level: 2
+type: Maneuver
+version: 2

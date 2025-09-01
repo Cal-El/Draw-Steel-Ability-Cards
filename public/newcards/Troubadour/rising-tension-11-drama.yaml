@@ -1,0 +1,30 @@
+body:
+- body: The target gains 3 of their Heroic Resource, has a double edge on a power
+    roll of their choice made during their next turn, is no longer slowed or weakened
+    if they were before, and can immediately take their turn after yours if they have
+    not taken their turn already this round.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You narrate the tension of the scene and put all hope into your protagonist
+    to turn things around.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Rising Tension
+  topMatter: Level 9 Troubadour Heroic Ability
+level: 9
+type: Maneuver
+version: 2

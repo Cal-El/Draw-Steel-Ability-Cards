@@ -1,0 +1,62 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: the target can't willingly leave the area (EoT)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: the target can't willingly leave the area (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage; the target can't willingly leave the area (EoT); if
+    damage:
+      baseValue: 12
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: they can't willingly leave the area (save ends)
+      strength: 2
+- body: Each ally within distance can't obtain lower than a tier 2 outcome on the
+    next test they make before the start of your next turn.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You shine a bright light on the players on the stage and compel them to
+    finish the performance.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: The Show Must Go On
+  topMatter: Level 8 Troubadour Heroic Ability
+level: 8
+type: Maneuver
+version: 2

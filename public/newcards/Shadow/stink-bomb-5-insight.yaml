@@ -1,0 +1,45 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: poison damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: poison damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: poison damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: The gas remains in the area until the end of the encounter. Any creature who
+    starts their turn in the area and has M < AVERAGE is weakened (save ends).
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 cube within 10
+    values: []
+  flavour: Putrid yellow gas explodes from a bomb you toss.
+  keywords:
+  - Area
+  - Ranged
+  target: Each creature in the area
+  title: Stink Bomb
+  topMatter: Level 2 Shadow Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,35 @@
+body:
+- body: The target has a +3 bonus to speed, they can fly, and their abilities ignore
+    concealment. Additionally, whenever the target gains their Heroic Resource, they
+    gain 1 additional Heroic Resource. This effect lasts until the start of your next
+    turn.
+  isEffect: true
+  title: Effect
+- body: The effect lasts until the start of your next turn.
+  isEffect: true
+  title: Persistent 1
+cost:
+  costName: Essence
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: They shine vibrantly, a beautiful diamond in the night sky.
+  keywords:
+  - Fire
+  - Green
+  - Magic
+  - Ranged
+  - Void
+  target: Self or one ally
+  title: Luminous Champion Aloft
+  topMatter: Level 6 Elementalist Heroic Ability
+level: 6
+type: Maneuver
+version: 2

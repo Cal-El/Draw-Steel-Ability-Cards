@@ -1,0 +1,26 @@
+body:
+- body: You turn invisible and create a magical illusion of your corpse falling in
+    your space. While you are invisible, you gain a +3 bonus to speed and you ignore
+    difficult terrain. The illusion and your invisibility last until the end of your
+    next turn, or until the illusion is interacted with, you take damage, or you use
+    a main action or a maneuver.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: O happy dagger, this is thy sheath!
+  keywords:
+  - Magic
+  target: Self
+  title: Fake Your Death
+  topMatter: Level 1 Troubadour Heroic Ability
+level: 1
+type: Maneuver
+version: 2

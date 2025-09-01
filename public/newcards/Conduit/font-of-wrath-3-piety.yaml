@@ -1,0 +1,31 @@
+body:
+- body: You summon a spirit of size 2 who can't be harmed, and who appears in an unoccupied
+    space within distance. The spirit lasts until the end of your next turn. You and
+    your allies can move through the spirit's space, but enemies can't. Any enemy
+    who moves within 2 squares of the spirit for the first time in a combat round
+    or starts their turn there takes holy damage equal to your Intuition score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A brilliant column of holy light appears on the battlefield, striking out
+    at nearby enemies.
+  keywords:
+  - Magic
+  - Ranged
+  target: Special
+  title: Font of Wrath
+  topMatter: Level 1 Conduit Heroic Ability
+level: 1
+type: Main action
+version: 2

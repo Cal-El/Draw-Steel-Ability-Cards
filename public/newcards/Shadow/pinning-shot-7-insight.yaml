@@ -1,0 +1,60 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: restrained (save ends)
+      strength: 2
+cost:
+  costName: Insight
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: "One missile\u2014placed well and placed hard."
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Pinning Shot
+  topMatter: Level 3 Shadow Heroic Ability
+level: 3
+type: Main action
+version: 2

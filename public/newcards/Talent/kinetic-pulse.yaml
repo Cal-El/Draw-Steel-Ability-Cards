@@ -1,0 +1,44 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage; push 1
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage; push 2
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: The size of the burst increases by 2, and you are bleeding until the start
+    of your next turn.
+  isEffect: true
+  title: Strained
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 1 burst
+    values: []
+  flavour: The force of your mind hurls enemies backward.
+  keywords:
+  - Area
+  - Psionic
+  - Telepathy
+  target: Each enemy in the area
+  title: Kinetic Pulse
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Main action
+version: 2

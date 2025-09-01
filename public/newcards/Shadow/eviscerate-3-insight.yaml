@@ -1,0 +1,64 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: bleeding (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: bleeding (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: bleeding (save ends)
+      strength: 2
+cost:
+  costName: Insight
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: You leave your foe bleeding out after a devastating attack.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Eviscerate
+  topMatter: Level 1 Shadow Heroic Ability
+level: 1
+type: Main action
+version: 2

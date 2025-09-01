@@ -1,0 +1,59 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: bleeding (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: bleeding (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: bleeding (save ends)
+      strength: 2
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: There you are, radiating your usual charisma.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Cutting Sarcasm
+  topMatter: Level 1 Troubadour Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,34 @@
+body:
+- body: The target starts their turn, moves, or is force moved.
+  isEffect: true
+  title: Trigger
+- body: You teleport the target up to a number of squares equal to your Reason score.
+    If the target moves to trigger this ability, you can teleport them at any point
+    during the move.
+  isEffect: true
+  title: Effect
+- body: You teleport the target up to a number of squares equal to twice your Reason
+    score instead.
+  isEffect: true
+  title: Spend 1 Essence
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You call on the void to swallow and spit out an ally.
+  keywords:
+  - Magic
+  - Ranged
+  - Void
+  target: Self or one ally
+  title: Subtle Relocation
+  topMatter: Level 1 Elementalist Ability
+level: 1
+type: Triggered Action
+version: 2

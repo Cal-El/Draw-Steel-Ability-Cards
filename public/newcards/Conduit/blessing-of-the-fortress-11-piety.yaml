@@ -1,0 +1,26 @@
+body:
+- body: Until the end of the encounter or until you are dying, no enemy can approach
+    within 5 squares of you by moving or by being force moved by any enemy. Targets
+    can be force moved closer to you by you or your allies, or can move closer because
+    of your movement.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: A magic circle extends out from you, barring foes from getting close.
+  keywords:
+  - Area
+  - Magic
+  target: Self
+  title: Blessing of the Fortress
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Maneuver
+version: 2

@@ -1,0 +1,49 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; vertical pull 3
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage; vertical pull 5
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage; vertical pull 7
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+cost:
+  costName: Discipline
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [3]
+    values:
+    - baseValue: 3
+      includedKitValue: 0
+      type: Melee
+  flavour: Your fist emanates gravitic force that pulls a distant enemy closer.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Gravitic Strike
+  topMatter: Level 2 Null Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,29 @@
+body:
+- body: A target who is not a leader or solo creature comes back to life with half
+    their Stamina and becomes an ally under the Director's control. The players can
+    work with the Director to determine when the target takes their turn each combat
+    round. At the end of the encounter, the target turns to dust and is blown away.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You didn't see that coming, did you?!
+  keywords:
+  - Magic
+  - Ranged
+  target: One dead enemy
+  title: Twist at the End
+  topMatter: Level 2 Troubadour Heroic Ability
+level: 2
+type: Main action
+version: 2

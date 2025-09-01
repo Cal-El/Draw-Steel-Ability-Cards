@@ -1,0 +1,27 @@
+body:
+- body: For each Victory you have, you can target one creature. Each target gains
+    the benefit of your A Beyonding of Vision feature until the end of your next turn,
+    but doesn't gain the use of the Shared Void Sense ability.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You grant allies a taste of your unearthly vision.
+  keywords:
+  - Magic
+  - Ranged
+  - Void
+  target: Special
+  title: Shared Void Sense
+  topMatter: Level 1 Elementalist Ability
+level: 1
+type: Maneuver
+version: 2

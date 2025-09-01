@@ -1,0 +1,30 @@
+body:
+- body: The target makes an ability roll for a damage-dealing ability.
+  isEffect: true
+  title: Trigger
+- body: The power roll gains an edge.
+  isEffect: true
+  title: Effect
+- body: The power roll has a double edge.
+  isEffect: true
+  title: Spend 1 Piety
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You invigorate an attacking ally with divine energy.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Word of Guidance
+  topMatter: Level 1 Conduit Ability
+level: 1
+type: Triggered Action
+version: 2

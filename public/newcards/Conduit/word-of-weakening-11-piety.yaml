@@ -1,0 +1,63 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 15
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 21
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: weakened (save ends)
+      strength: 2
+- body: While weakened this way, the target has damage weakness 10.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You utter a divine word that makes a foe brittle.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Word of Weakening
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Main action
+version: 2

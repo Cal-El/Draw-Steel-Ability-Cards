@@ -1,0 +1,24 @@
+body:
+- body: Until the end of the encounter or until you are dying, whenever a target starts
+    their turn in the area, they can spend a Recovery.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 aura
+    values: []
+  flavour: A holy light is emitted from your body, healing your allies.
+  keywords:
+  - Area
+  - Magic
+  target: Each ally in the area
+  title: Wellspring of Grace
+  topMatter: Level 2 Conduit Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: The target's speed is halved (save ends), or
+    potency:
+      characteristic: Presence
+      effect: the target is slowed (save ends).
+      strength: 0
+  t2:
+    baseEffect: The target is slowed (save ends), or
+    potency:
+      characteristic: Presence
+      effect: the target's speed is 0 (save ends).
+      strength: 1
+  t3:
+    baseEffect: The target is slowed (save ends), or
+    potency:
+      characteristic: Presence
+      effect: the target's speed is 0 (save ends).
+      strength: 2
+- body: A target can't use triggered actions while their speed is reduced this way.
+  isEffect: true
+  title: Effect
+- body: The potency of this ability increases by 1 and you take 1d6 damage. At the
+    start of each combat round while any target is affected by this ability, you take
+    1d6 damage. You can end the effect on all affected targets at any time (no action
+    required).
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 6.5
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Perhaps they wonder why everyone else is moving so quickly?
+  keywords:
+  - Chronopathy
+  - Psionic
+  - Ranged
+  target: Three creatures or objects
+  title: Slow
+  topMatter: Level 2 Talent Heroic Ability
+level: 2
+type: Maneuver
+version: 2

@@ -1,0 +1,22 @@
+body:
+- body: You gain 20 temporary Stamina.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: See how useless their weapons are!
+  keywords:
+  - Magic
+  target: Self
+  title: Steelbreaker
+  topMatter: Level 3 Fury Heroic Ability
+level: 3
+type: Maneuver
+version: 2

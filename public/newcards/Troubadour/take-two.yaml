@@ -1,0 +1,24 @@
+body:
+- body: While this performance is active, each target who starts their turn in the
+    area can reroll the first power roll that turn that obtains a tier 2 outcome.
+    They must use the new roll.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: One more, and this time make it interesting.
+  keywords:
+  - Area
+  - Magic
+  - Performance
+  target: Self and each ally in the area
+  title: Take Two!
+  topMatter: Level 5 Troubadour Ability
+level: 5
+type: No action
+version: 2

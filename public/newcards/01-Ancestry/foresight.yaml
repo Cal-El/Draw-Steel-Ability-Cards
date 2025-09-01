@@ -1,0 +1,21 @@
+body:
+- body: You are targeted by a strike.
+  isEffect: true
+  title: Trigger
+- body: You impose a bane on the power roll.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: ""
+    values: []
+  target: One creature
+  title: Foresight
+  topMatter: Time Raider Trait
+  keywords: []
+  flavour: Your senses extend past mundane obscuration and the veil of the future alike.
+type: Triggered Action
+version: 2
+fontSizePtOverrides:
+  body: 9

@@ -1,0 +1,48 @@
+body:
+- body: You shift up to your speed. You make one power roll that targets each enemy
+    you move adjacent to during this shift.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Agility
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Taunted (EoT)
+    potency:
+      characteristic: Agility
+      effect: prone
+      strength: 0
+  t2:
+    baseEffect: Taunted (EoT)
+    potency:
+      characteristic: Agility
+      effect: prone
+      strength: 1
+  t3:
+    baseEffect: Taunted (EoT)
+    potency:
+      characteristic: Agility
+      effect: prone and can't stand (EoT)
+      strength: 2
+cost:
+  costName: Drama
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: As you bob and weave through the crowd, you can't help but leave the audience
+    wanting more.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Self
+  title: Upstage
+  topMatter: Level 1 Troubadour Heroic Ability
+level: 1
+type: Maneuver
+version: 2

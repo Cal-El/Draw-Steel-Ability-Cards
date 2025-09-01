@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; vertical pull 5 toward the center of the area
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; vertical pull 7 toward the center of the area
+    damage:
+      baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; vertical pull 10 toward the center of the area
+    damage:
+      baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: Targets closest to the center of the area are pulled first.
+  isEffect: true
+  title: Effect
+- body: The size of the area increases by 2. You also target yourself and each ally
+    within distance.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: 4 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You bend gravity into a fine point and pull your foes toward it.
+  keywords:
+  - Area
+  - Psionic
+  - Ranged
+  - Telekinesis
+  target: Each creature and object in the area
+  title: Gravitic Well
+  topMatter: Level 6 Talent Heroic Ability
+level: 6
+type: Main action
+version: 2

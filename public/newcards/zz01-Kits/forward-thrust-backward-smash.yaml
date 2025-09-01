@@ -1,0 +1,43 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 2
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 2
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 2
+cost: null
+header:
+  distance:
+    display: Melee [2]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 1
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Two creatures or objects
+  title: Forward Thrust, Backward Smash
+  topMatter: Guisarmier Kit Signature Ability
+  flavour: In your hands, the haft is as good as the head.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

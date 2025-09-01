@@ -1,0 +1,60 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 2
+- body: Each target is frightened of you or a creature you choose within distance.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 cube within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your divine magic makes a creature appear as what your enemies fear most.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Each enemy in the area
+  title: Fear of the Gods
+  topMatter: Level 3 Conduit Heroic Ability
+level: 3
+type: Main action
+version: 2

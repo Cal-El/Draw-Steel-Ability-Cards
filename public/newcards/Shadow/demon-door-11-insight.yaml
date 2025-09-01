@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage; push 3
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t2:
+    baseEffect: corruption damage; push 5
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+  t3:
+    baseEffect: corruption damage; push 7
+    damage:
+      baseValue: 25
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+- body: On a critical hit, the target is grabbed by the demon and pulled through the
+    portal before it closes, never to be seen again.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [3]
+    values:
+    - baseValue: 3
+      includedKitValue: 0
+      type: Melee
+  flavour: You create a temporary portal to allow a massive demonic hand to reach
+    through.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Demon Door
+  topMatter: Level 9 Shadow Heroic Ability
+level: 9
+type: Main action
+version: 2

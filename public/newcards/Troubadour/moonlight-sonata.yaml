@@ -1,0 +1,27 @@
+body:
+- body: While this performance is active, each target who is dead can choose to continue
+    taking turns after death. On each of their turns, a target can move and use either
+    a main action or a maneuver, but can't spend Recoveries or use triggered actions.
+    At the end of the encounter, each target who chose to take turns this way turns
+    to dust and blows away.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: Music pours out of your heart, filling the area with the utmost delicacy
+    and without damper.
+  keywords:
+  - Area
+  - Magic
+  - Performance
+  target: Each ally in the area
+  title: Moonlight Sonata
+  topMatter: Level 8 Troubadour Ability
+level: 8
+type: No action
+version: 2

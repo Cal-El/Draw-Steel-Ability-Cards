@@ -1,0 +1,68 @@
+body:
+- body: The target moves or uses a main action.
+  isEffect: true
+  title: Trigger
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: restrained (save ends)
+      strength: 2
+- body: This strike resolves before the triggering movement or main action.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You suddenly strike an enemy, then grab them in a psionically enhanced
+    grip.
+  keywords:
+  - Melee
+  - Psionic
+  - Strike
+  - Weapon
+  target: One creature
+  title: Anticipating Strike
+  topMatter: Level 5 Null Heroic Ability
+level: 5
+type: Free Triggered Action
+version: 2

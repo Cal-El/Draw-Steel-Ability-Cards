@@ -1,0 +1,52 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage; slide 3
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage; slide 4
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage; slide 6
+    damage:
+      baseValue: 18
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+- body: Each ally the target comes adjacent to during the forced movement can spend
+    a Recovery.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You conjure an angel who moves a foe and heals your allies.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Drag the Unworthy
+  topMatter: Level 8 Conduit Heroic Ability
+level: 8
+type: Main action
+version: 2

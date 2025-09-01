@@ -1,0 +1,30 @@
+body:
+- body: The wall lasts until the end of the encounter or until you are dying, and
+    can be placed in occupied squares. Creatures can enter and pass through the wall.
+    Each enemy who enters the area for the first time in a combat round or starts
+    their turn there takes 15 damage.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 15 wall within [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A wall of spinning swords and knives appears where you wish.
+  keywords:
+  - Area
+  - Magic
+  - Ranged
+  target: Special
+  title: Righteous Phalanx
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Main action
+version: 2

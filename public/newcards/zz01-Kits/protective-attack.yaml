@@ -1,0 +1,52 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 2
+- body: The target is taunted until the end of their next turn.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Protective Attack
+  topMatter: Shining Armor Kit Signature Ability
+  flavour: The strength of your assault makes it impossible for your foe to ignore you.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

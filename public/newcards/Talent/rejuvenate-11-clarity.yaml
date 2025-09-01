@@ -1,0 +1,37 @@
+body:
+- body: "Choose two of the following effects:\n` `\u2022 The target can spend any\
+    \ number of Recoveries.\n` `\u2022 The target gains 1 of their Heroic Resource,\
+    \ and can end any effects on them that are ended by a saving throw or that end\
+    \ at the end of their turn.\n` `\u2022 The target gains 2 surges, and gains a\
+    \ +3 bonus to speed until the end of the encounter."
+  isEffect: true
+  title: Effect
+- body: You and the target both permanently grow visibly younger (the equivalent of
+    20 human years, to the minimum of an 18-year-old). Additionally, you are weakened
+    and slowed (save ends).
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You reshape the flow of time in the target's body to return it to an earlier
+    state.
+  keywords:
+  - Chronopathy
+  - Psionic
+  - Ranged
+  target: Self or one ally
+  title: Rejuvenate
+  topMatter: Level 8 Talent Heroic Ability
+level: 8
+type: Maneuver
+version: 2

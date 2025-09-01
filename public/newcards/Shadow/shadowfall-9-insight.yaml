@@ -1,0 +1,49 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 20
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: You disappear before making the power roll. After the power roll is resolved,
+    you appear in the first unoccupied space at the far end of the line.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 10 x 1 line within [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You vanish. They fall. You reappear.
+  keywords:
+  - Area
+  - Melee
+  - Weapon
+  target: Each enemy in the area
+  title: Shadowfall
+  topMatter: Level 5 Shadow Heroic Ability
+level: 5
+type: Main action
+version: 2

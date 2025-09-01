@@ -1,0 +1,26 @@
+body:
+- body: Another creature on the encounter map ends their turn.
+  isEffect: true
+  title: Trigger
+- body: You take a bonus turn immediately after the triggering creature. This ability
+    can be used only once per combat round.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Discipline
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You show shadows what true speed is.
+  keywords:
+  - Psionic
+  target: Self
+  title: Time Loop
+  topMatter: Level 9 Null Heroic Ability
+level: 9
+type: Free Triggered Action
+version: 2

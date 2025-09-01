@@ -1,0 +1,60 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: the target has damage weakness 5 (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: the target has damage weakness 5 (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 13
+      characteristicBonusOptions:
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Reason
+      effect: the target has damage weakness 5 (save ends)
+      strength: 2
+cost:
+  costName: Insight
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your friends will thank you.
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Setup
+  topMatter: Level 1 Shadow Heroic Ability
+level: 1
+type: Main action
+version: 2

@@ -1,0 +1,49 @@
+version: 2
+level: 9
+type: Free Strike Action
+header:
+  topMatter: Divine Dragon Melee Weapon Free Strike
+  title: Claw
+  flavour: Your divine creation lashes out with sharp claws.
+  keywords:
+    - Charge
+    - Melee
+    - Strike
+    - Weapon
+  distance:
+    display: Melee [1]
+    values:
+      - type: Melee
+        baseValue: 1
+        includedKitValue: 0
+  target: One creature or object
+body:
+  - isPowerRoll: true
+    characteristicBonus:
+      - Intuition
+    t1:
+      damage:
+        baseValue: 3
+        includedKitValue: 0
+        characteristicBonusOptions:
+          - Intuition
+        otherBonus: ""
+      baseEffect: damage
+    t2:
+      damage:
+        baseValue: 5
+        includedKitValue: 0
+        characteristicBonusOptions:
+          - Intuition
+        otherBonus: ""
+      baseEffect: damage
+    t3:
+      damage:
+        baseValue: 8
+        includedKitValue: 0
+        characteristicBonusOptions:
+          - Intuition
+        otherBonus: ""
+      baseEffect: damage
+fontSizePtOverrides:
+  body: 9

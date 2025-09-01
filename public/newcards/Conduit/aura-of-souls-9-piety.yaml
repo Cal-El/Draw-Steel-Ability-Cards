@@ -1,0 +1,26 @@
+body:
+- body: Until the end of the encounter or until you are dying, at the end of each
+    of your turns, you can slide each creature in the area up to a number of squares
+    equal to your Intuition score. This forced movement ignores stability for your
+    allies.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 4 aura
+    values: []
+  flavour: A whirlwind of souls of the dead flies around you at your command.
+  keywords:
+  - Area
+  - Magic
+  target: Each creature in the area
+  title: Aura of Souls
+  topMatter: Level 6 Conduit Heroic Ability
+level: 6
+type: Maneuver
+version: 2

@@ -1,0 +1,69 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 2
+- body: When targeting an object with a solid reflective surface or a creature carrying
+    or wearing such an object (such as a mirror, an unpainted metal shield, or shiny
+    metal plate armor), you can target one additional creature or object within 3
+    squares of the first target.
+  isEffect: true
+  title: Effect
+- body: You gain 1 surge that you can use immediately, and you take damage equal to
+    your Reason score that can't be reduced in any way.
+  isEffect: true
+  title: Strained
+cost: null
+fontSizePtOverrides:
+  body: 6
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Your eyes emit rays of powerful enervating force.
+  keywords:
+  - Metamorphosis
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Optic Blast
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Main action
+version: 2

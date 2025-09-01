@@ -1,58 +1,65 @@
 from os import listdir, makedirs
 from os.path import isfile, join, exists
+import yaml
+import json
+from re import search
 
 print("Generating Card Manifest...")
 
-cards = "cards"
+cards = "newcards"
 basePath = join("public", cards)
 
 groups = [f for f in listdir(basePath) if not isfile(join(basePath, f))]
+groups.sort()
 
 if not exists(join("src", "types", "generated")):
     makedirs(join("src", "types", "generated"))
 
 manifestFile = open(join("src", "types", "generated", "card-manifest.ts"), 'w')
-publicManifestFile = open(join("public", "card-manifest.json"), 'w')
+publicManifestFile = open(join("public", "newcards", "card-manifest.json"), 'w')
 
-manifestFile.write("export const cardManifest  = [\n")
-publicManifestFile.write("[\n")
-publicManString = ""
+manifestContent = []
+publicManifestContent = []
+manifestFile.write("export const cardManifest  = ")
+
+def getPaddedNumString(number):
+  return str(number).zfill(3)
+
+def getCost(card):
+  if not 'cost' in card or card['cost'] == None:
+    return getPaddedNumString(0)
+  return getPaddedNumString(card['cost']['costValue'])
+
+def getLevel(card):
+  if not 'level' in card or card['level'] == None:
+    return getPaddedNumString(0)
+  return getPaddedNumString(card['level'])
 
 for group in groups:
-    groupName = group[3:].title()
-    manifestFile.write("    {\n")
-    manifestFile.write("        label: \"" + groupName + "\",\n")
-    manifestFile.write("        options: [\n",)
+  groupName = search('^(z?z?\d\d-)?(.*)$', group).group(2) # 01 style prefixes force groups to the start of the list, zz01 style prefixes force them to the end
+  groupData = {'label': groupName}
+  options = []
 
-    files = [f for f in listdir(join(basePath, group)) if isfile(join(basePath, group, f))]
-    for file in files:
-        fCon = open(join(basePath, group, file), 'r', encoding='UTF8')
-        topMatter = ""
-        name = ""
-        print(file)
-        for line in fCon:
-            if "title:" in line:
-                name = line[7:-1]
-                if name.startswith("'") and name.endswith("'"):
-                    print(name)
-                    name = name[1:-1].replace('"', '\\"')
-                    print(name)
-            if "topMatter:" in line:
-                topMatter = line[11:-1]
-        manifestFile.write("            {\n")
-        manifestFile.write("                label: \"" + name + " (" + topMatter + ")\",\n")
-        manifestFile.write("                value: \"/" + cards + "/" + group + "/"+ file + "\",\n")
-        manifestFile.write("            },\n")
-        publicManString = publicManString + "  \"/" + cards + "/" + group + "/"+ file + "\",\n"
-    manifestFile.write("        ],\n",)
-    manifestFile.write("    },\n")
+  files = [f for f in listdir(join(basePath, group)) if isfile(join(basePath, group, f))]
+  for file in files:
+    fCon = open(join(basePath, group, file), 'r', encoding='UTF8')
+    cardPath = "/" + cards + "/" + group + "/"+ file
+    card = yaml.safe_load(fCon)
+    topMatter = card['header']['topMatter']
+    name = card['header']['title']
+    option = {'label': name + " (" + topMatter + ")", 'value': cardPath}
+    option['sortKey'] = getLevel(card) + '-' + getCost(card) + '-' + name
+    options.append(option)
+    publicManifestContent.append(cardPath)
+  options.sort(key = lambda x : x['sortKey'])
+  groupData['options'] = options
+  manifestContent.append(groupData)
 
 
-manifestFile.write("]\n")
+json.dump(manifestContent, manifestFile, indent=2)
 manifestFile.close()
 
-publicManifestFile.write(publicManString[:-2])
-publicManifestFile.write("\n]")
+json.dump(publicManifestContent, publicManifestFile, indent=2)
 publicManifestFile.close()
 
 print("Generated Card Manifest")

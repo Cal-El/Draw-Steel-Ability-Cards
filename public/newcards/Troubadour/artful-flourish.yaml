@@ -1,0 +1,49 @@
+body:
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: You can shift up to 3 squares.
+  isEffect: true
+  title: Effect
+- body: You can target one additional creature or object for every 2 drama spent.
+  isEffect: true
+  title: Spend 2+ Drama
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: And they said practicing fencing was a waste!
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: Two creatures or objects
+  title: Artful Flourish
+  topMatter: Level 1 Troubadour Ability
+level: 1
+type: Main action
+version: 2

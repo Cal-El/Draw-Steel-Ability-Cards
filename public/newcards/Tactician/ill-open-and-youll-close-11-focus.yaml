@@ -1,0 +1,59 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 14
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: One ally within 10 squares of you can use a heroic ability against the target
+    as a free triggered action without spending any of their Heroic Resource, as long
+    as they have enough Heroic Resource to pay for the ability. If the target is reduced
+    to 0 Stamina before the chosen ally has used their ability, the ally can pick
+    a different target.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '11'
+fontSizePtOverrides:
+  body: 7
+header:
+  distance:
+    display: Melee [1] or Ranged [5]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: You create an opening for an ally.
+  keywords:
+  - Melee
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: I'll Open and You'll Close
+  topMatter: Level 8 Tactician Heroic Ability
+level: 8
+type: Main action
+version: 2

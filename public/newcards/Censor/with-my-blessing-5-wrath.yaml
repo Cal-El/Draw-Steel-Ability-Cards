@@ -1,0 +1,29 @@
+body:
+- body: The target can use a free triggered action to use a strike signature ability
+    or a strike heroic ability, and has a double edge on that ability. If a heroic
+    ability is chosen, reduce its Heroic Resource cost by 3 (to a minimum cost of
+    0).
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A word in prayer, and the gods show the way.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: With My Blessing
+  topMatter: Level 2 Censor Heroic Ability
+level: 2
+type: Main action
+version: 2

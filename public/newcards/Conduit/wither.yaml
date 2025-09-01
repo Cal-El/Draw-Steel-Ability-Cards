@@ -1,0 +1,58 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: the target takes a bane on their next power roll
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: the target takes a bane on their next power roll
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: the target takes a bane on their next power roll
+      strength: 2
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: A bolt of holy energy saps the life from a foe.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Wither
+  topMatter: Level 1 Conduit Ability
+level: 1
+type: Main action
+version: 2

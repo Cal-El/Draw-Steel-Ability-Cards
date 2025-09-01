@@ -1,0 +1,60 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 2
+cost:
+  costName: Wrath
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You conjure memories of their sins to harry your foes.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Repent!
+  topMatter: Level 1 Censor Heroic Ability
+level: 1
+type: Main action
+version: 2

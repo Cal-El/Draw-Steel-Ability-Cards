@@ -1,0 +1,31 @@
+body:
+- body: An enemy within 10 squares starts their turn.
+  isEffect: true
+  title: Trigger
+- body: You can spend a Recovery to allow the target to regain Stamina equal to your
+    recovery value. The target can then take their turn immediately before the triggering
+    enemy.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Gifted by a prescient vision, you warn an ally of an impending attack.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Prescient Grace
+  topMatter: Level 2 Censor Heroic Ability
+level: 2
+type: Triggered Action
+version: 2

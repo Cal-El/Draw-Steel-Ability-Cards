@@ -1,0 +1,52 @@
+body:
+- body: Each target uses a signature ability against one or more targets of your choosing,
+    with each ability automatically obtaining a tier 3 outcome on the power roll.
+    After resolving the targets' abilities, you make a power roll against each original
+    target.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: null
+    potency:
+      characteristic: Reason
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: null
+    potency:
+      characteristic: Reason
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: null
+    potency:
+      characteristic: Reason
+      effect: dazed (save ends)
+      strength: 2
+cost:
+  costName: Focus
+  costValue: '11'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You trick your enemies into attacking each other and leave them confused
+    by the aftermath.
+  keywords:
+  - Magic
+  - Ranged
+  - Weapon
+  target: Three enemies
+  title: Their Lack of Focus Is Their Undoing
+  topMatter: Level 9 Tactician Heroic Ability
+level: 9
+type: Main action
+version: 2

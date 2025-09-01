@@ -4,7 +4,9 @@ import {Card} from "../../../../types/card-list.ts";
 
 export default function AddToBodyButtons({card, setCard} : {card: ability_card, setCard: Dispatch<Card>}) {
   return <div className={`col-span-full divide-x divide-black w-full min-h-[24pt] overflow-hidden bg-stone-400 border-2 border-stone-600 rounded-lg flex`}>
-    <div role={`button`} className={`basis-1/4 bg-zinc-100 hover:bg-white flex justify-center items-center`} onClick={() => {}}>
+    <div role={`button`} className={`basis-1/4 bg-zinc-100 hover:bg-white flex justify-center items-center`} onClick={() => {
+      setCard({...card, body: [...card.body, {isPowerRoll: true, characteristicBonus: [], t1: {baseEffect: "some effect"}, t2:  {baseEffect: "some effect"}, t3:  {baseEffect: "some effect"}}]})
+    }}>
       <div>Add Power Roll</div>
     </div>
     <div role={`button`} className={`basis-1/4 bg-zinc-100 hover:bg-white flex justify-center items-center`} onClick={() => {

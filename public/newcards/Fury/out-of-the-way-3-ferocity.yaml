@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; slide 2
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; slide 3
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; slide 5
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: When you slide the target, you can move into any square they leave. If you
+    take damage from an opportunity attack by moving this way, the target takes the
+    same damage.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: "Your enemies will clear your path\u2014whether they want to or not."
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Out of the Way!
+  topMatter: Level 1 Fury Heroic Ability
+level: 1
+type: Main action
+version: 2

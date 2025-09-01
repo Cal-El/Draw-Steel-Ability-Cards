@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Might
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      strength: 0
+      effect: slowed (save ends)
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      strength: 1
+      effect: slowed (save ends)
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Agility
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      strength: 2
+      effect: slowed (save ends)
+cost: null
+header:
+  distance:
+    display: 'Ranged [10]'
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: The Wode Defends
+  topMatter: Wode Elf Signature Ability
+  flavour: Thorny vines erupt from every surface and attempt to bind your foe.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

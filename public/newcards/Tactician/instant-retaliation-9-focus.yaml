@@ -1,0 +1,51 @@
+body:
+- body: A creature deals damage to the target.
+  isEffect: true
+  title: Trigger
+- body: The target takes half the damage. You then make a power roll against the triggering
+    creature.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: null
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: null
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: null
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 2
+cost:
+  costName: Focus
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You parry with almost supernatural speed.
+  keywords:
+  - Melee
+  - Weapon
+  target: One ally
+  title: Instant Retaliation
+  topMatter: Level 6 Tactician Heroic Ability
+level: 6
+type: Free Triggered Action
+version: 2

@@ -1,0 +1,27 @@
+body:
+- body: Until the start of your next turn, each time a target kills an enemy, they
+    regain Stamina equal to 5 + your Intuition score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: The gods reward those who smite their foes.
+  keywords:
+  - Magic
+  - Ranged
+  target: Each ally
+  title: Reap
+  topMatter: Level 2 Conduit Heroic Ability
+level: 2
+type: Maneuver
+version: 2

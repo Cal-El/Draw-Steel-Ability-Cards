@@ -1,0 +1,24 @@
+body:
+- body: While this performance is active, a target who starts their turn in the area
+    gains a bonus to the distance they can shift equal to your Presence score until
+    the end of their turn.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 5 aura
+    values: []
+  flavour: Swordplay so graceful it looks like you all practiced this.
+  keywords:
+  - Area
+  - Magic
+  - Performance
+  target: Self and each ally in the area
+  title: We Can't Be Upstaged!
+  topMatter: Level 5 Troubadour Ability
+level: 5
+type: No action
+version: 2

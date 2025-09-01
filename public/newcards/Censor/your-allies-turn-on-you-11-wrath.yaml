@@ -1,0 +1,67 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: slowed (save ends)
+      strength: 2
+- body: While the target is slowed this way, each of their allies who starts their
+    turn within 5 squares of them must use a free maneuver to make a free strike against
+    the target. Additionally, while the target is slowed this way, each of their allies
+    within 5 squares of them who can make a triggered free strike against a different
+    creature must make the free strike against the target instead.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
+fontSizePtOverrides:
+  body: 7
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You turn your enemies' ire to the target.
+  keywords:
+  - Ranged
+  - Strike
+  - Weapon
+  target: One creature
+  title: Your Allies Turn on You!
+  topMatter: Level 8 Censor Heroic Ability
+level: 8
+type: Main action
+version: 2

@@ -1,0 +1,26 @@
+body:
+- body: The targets share 6 of their Heroic Resource among themselves, as you determine.
+    A target can't gain more than 3 of their Heroic Resource this way. After using
+    this ability, you can't gain any clarity until the end of the next combat round.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Clarity
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: You lean on future heroism to assist you in the now.
+  keywords:
+  - Area
+  - Chronopathy
+  - Psionic
+  target: Each ally in the area
+  title: Borrow From the Future
+  topMatter: Level 9 Talent Heroic Ability
+level: 9
+type: Maneuver
+version: 2

@@ -1,0 +1,27 @@
+body:
+- body: Each target takes holy damage equal to twice your Presence score. Additionally,
+    each hidden target is automatically revealed and can't become hidden again until
+    the start of your next turn. You can then use your Judgment ability against one
+    target as a free triggered action.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 3 burst
+    values: []
+  flavour: You channel holy energy to harm unbelievers and reveal those hidden from
+    your judgment.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Revelator
+  topMatter: Level 2 Censor Heroic Ability
+level: 2
+type: Maneuver
+version: 2

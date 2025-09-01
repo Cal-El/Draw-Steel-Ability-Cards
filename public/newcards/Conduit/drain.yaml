@@ -1,0 +1,49 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+- body: You or one ally within distance can spend a Recovery.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You drain the energy from your target to revitalize yourself or an ally.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  target: One creature
+  title: Drain
+  topMatter: Level 1 Conduit Ability
+level: 1
+type: Main action
+version: 2

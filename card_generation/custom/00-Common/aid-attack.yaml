@@ -1,0 +1,20 @@
+body:
+- body: The next ability roll an ally makes against the enemy before the start of the your next turn gains an edge.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  target: One enemy
+  title: Aid Attack
+  topMatter: Core Maneuver
+  keywords: []
+type: Maneuver
+version: 2
+fontSizePtOverrides:
+  body: 9

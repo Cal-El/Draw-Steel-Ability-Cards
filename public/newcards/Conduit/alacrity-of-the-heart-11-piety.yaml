@@ -1,0 +1,27 @@
+body:
+- body: The target has an additional main action they can use on their next turn,
+    and gains 3 of their Heroic Resource.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You speak inspiring words to a friend and spur them to incredible feats.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Alacrity of the Heart
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Maneuver
+version: 2

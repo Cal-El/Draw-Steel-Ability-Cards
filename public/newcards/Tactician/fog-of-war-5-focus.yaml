@@ -1,0 +1,29 @@
+body:
+- body: Each target is marked by you, and must immediately make a free strike against
+    a creature of your choice within 5 squares of them.
+  isEffect: true
+  title: Effect
+- body: Until the end of the encounter, whenever you or any ally makes a strike against
+    a creature marked by you, you can spend 2 focus to force that target to make a
+    free strike against a creature of your choice within 5 squares of them.
+  isEffect: true
+  title: Mark Benefit
+cost:
+  costName: Focus
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Your unorthodox strategy causes enemies to lash out in fear, heedless of
+    who they might be attacking.
+  keywords:
+  - Ranged
+  target: Two creatures
+  title: Fog of War
+  topMatter: Level 2 Tactician Heroic Ability
+level: 2
+type: Maneuver
+version: 2

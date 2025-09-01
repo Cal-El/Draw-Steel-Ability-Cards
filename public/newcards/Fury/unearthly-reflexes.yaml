@@ -1,0 +1,28 @@
+body:
+- body: You take damage.
+  isEffect: true
+  title: Trigger
+- body: You take half the damage from the triggering effect and can shift up to a
+    number of squares equal to your Agility score.
+  isEffect: true
+  title: Effect
+- body: If the damage has any potency effects associated with it, the potency is reduced
+    by 1 for you.
+  isEffect: true
+  title: Spend 1 Ferocity
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You are as elusive as a hummingbird.
+  keywords:
+  - '-'
+  target: Self
+  title: Unearthly Reflexes
+  topMatter: Level 1 Fury Ability
+level: 1
+type: Triggered Action
+version: 2

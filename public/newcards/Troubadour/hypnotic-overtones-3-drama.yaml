@@ -1,0 +1,45 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: Slide 1
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: Slide 1
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: Slide 2
+    potency:
+      characteristic: Intuition
+      effect: dazed (save ends)
+      strength: 2
+- body: The size of the burst increases by 1 for every 2 drama spent.
+  isEffect: true
+  title: Spend 2+ Drama
+cost:
+  costName: Drama
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: You produce an entrancing note that twists the senses in a spectacular
+    fashion.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Hypnotic Overtones
+  topMatter: Level 1 Troubadour Heroic Ability
+level: 1
+type: Main action
+version: 2

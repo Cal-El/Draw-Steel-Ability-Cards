@@ -1,0 +1,68 @@
+body:
+- body: If you target an ally, they gain temporary Stamina equal to three times your
+    Presence score, and they can end one effect on them that is ended by a saving
+    throw or that ends at the end of their turn. If you target an enemy, you make
+    a power roll.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 0
+  t2:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 1
+  t3:
+    baseEffect: psychic damage
+    damage:
+      baseValue: 9
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: frightened (save ends)
+      strength: 2
+cost:
+  costName: Clarity
+  costValue: '3'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You project psionic energy out to a creature and take on a new visage in
+    their mind.
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telepathy
+  target: One creature
+  title: Awe
+  topMatter: Level 1 Talent Heroic Ability
+level: 1
+type: Main action
+version: 2

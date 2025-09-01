@@ -1,0 +1,26 @@
+body:
+- body: The target is not a leader or solo creature, and becomes winded.
+  isEffect: true
+  title: Trigger
+- body: The target is killed. Additionally, the creature who caused the target to
+    be winded can spend a Recovery.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: You point out an opening to your ally so they can land a killing blow.
+  keywords:
+  - Ranged
+  target: One creature
+  title: Finish Them!
+  topMatter: Level 8 Tactician Heroic Ability
+level: 8
+type: Free Triggered Action
+version: 2

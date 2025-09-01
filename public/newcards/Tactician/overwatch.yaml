@@ -1,0 +1,27 @@
+body:
+- body: The target moves.
+  isEffect: true
+  title: Trigger
+- body: At any time during the target's movement, one ally can make a free strike
+    against them.
+  isEffect: true
+  title: Effect
+- body: If the target has R < AVERAGE, they are slowed (EoT).
+  isEffect: true
+  title: Spend 1 Focus
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Under your direction, an ally waits for just the right moment to strike.
+  keywords:
+  - Ranged
+  target: One creature
+  title: Overwatch
+  topMatter: Level 1 Tactician Ability
+level: 1
+type: Triggered Action
+version: 2

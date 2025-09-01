@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 2
+- body: You must be touching the ground to use this ability. Additionally, you can
+    choose a square of ground in the area that is unoccupied or is occupied by you
+    or any ally. A pillar of earth rises out of the ground in that square, with a
+    height in squares up to your Reason score. The pillar can't collide with any creatures
+    or objects, nor can it force creatures raised by it to collide with other creatures
+    or objects.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Essence
+  costValue: '3'
+fontSizePtOverrides:
+  body: 6.5
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: Like a stone was dropped into a pond, waves in the earth radiate from you.
+  keywords:
+  - Area
+  - Earth
+  - Magic
+  target: Each enemy in the area
+  title: Ripples in the Earth
+  topMatter: Level 1 Elementalist Heroic Ability
+level: 1
+type: Main action
+version: 2

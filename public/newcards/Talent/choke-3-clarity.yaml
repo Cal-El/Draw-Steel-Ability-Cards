@@ -1,0 +1,65 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Reason
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: restrained (save ends)
+      strength: 2
+- body: You can vertical pull the target up to 2 squares. If the target is made restrained
+    by this ability, this forced movement ignores their stability.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Clarity
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You crush a foe in a telekinetic grip.
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  - Telekinesis
+  target: One creature
+  title: Choke
+  topMatter: Level 1 Talent Heroic Ability
+level: 1
+type: Main action
+version: 2

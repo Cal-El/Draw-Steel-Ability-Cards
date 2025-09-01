@@ -1,0 +1,21 @@
+body:
+- body: You take damage from a creature.
+  isEffect: true
+  title: Trigger
+- body: You make that creature frightened of you until the end of their next turn.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: ""
+    values: []
+  target: One creature
+  title: Glamor Of Terror
+  topMatter: High Elf Trait
+  keywords: []
+  flavour: You reverse the magic of your glamor to instill fear into a foe's heart.
+type: Triggered Action
+version: 2
+fontSizePtOverrides:
+  body: 9

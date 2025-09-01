@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: You can spend a Recovery to allow yourself or one ally within 10 squares to
+    regain Stamina equal to your recovery value.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '3'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You channel holy energy to smite a foe and heal an ally.
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: The Gods Punish and Defend
+  topMatter: Level 1 Censor Heroic Ability
+level: 1
+type: Main action
+version: 2

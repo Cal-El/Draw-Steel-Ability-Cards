@@ -1,0 +1,27 @@
+body:
+- body: Until the end of the encounter or until you are dying, each target gains 1
+    surge at the end of each of your turns.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: The gods grant insight revealing where best to strike your enemies.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self and each ally
+  title: Blessing of Insight
+  topMatter: Level 2 Conduit Heroic Ability
+level: 2
+type: Maneuver
+version: 2

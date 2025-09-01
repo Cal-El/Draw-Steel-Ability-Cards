@@ -1,0 +1,45 @@
+body:
+- body: The number of creatures you target with this ability is determined by your
+    power roll.
+  isEffect: true
+  title: Special
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: One creature
+  t2:
+    baseEffect: Two creatures
+  t3:
+    baseEffect: Three creatures
+- body: Each target begins to fade from existence (save ends). On their first turn
+    while fading from existence, a target takes a bane on power rolls. At the end
+    of their first turn, they have a double bane on power rolls. At the end of their
+    second turn, they fade from existence for 1 hour, after which they reappear in
+    their original space or the nearest unoccupied space.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Essence
+  costValue: '7'
+fontSizePtOverrides:
+  body: 5.5
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: With a flick of the wrist, you phase creatures out of existence.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  - Void
+  target: Special
+  title: Erase
+  topMatter: Level 3 Elementalist Heroic Ability
+level: 3
+type: Main action
+version: 2

@@ -1,0 +1,56 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: sonic damage; push 5
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: sonic damage; push 10
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: sonic damage; push 15
+    damage:
+      baseValue: 22
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+- body: Forced movement from this ability ignores stability.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Drama
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1] or Ranged [10]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: The power of music rips through the reality around the target and blows
+    them away.
+  keywords:
+  - Magic
+  - Melee
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Melt Their Faces
+  topMatter: Level 9 Troubadour Heroic Ability
+level: 9
+type: Main action
+version: 2

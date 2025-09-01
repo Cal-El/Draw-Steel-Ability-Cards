@@ -1,0 +1,33 @@
+body:
+- body: A creature deals damage to the target.
+  isEffect: true
+  title: Trigger
+- body: You can shift 1 square. If the target is you, or if you end this shift adjacent
+    to the target, the target takes half the damage. If the damage has any potency
+    effect associated with it, the potency is decreased by 1.
+  isEffect: true
+  title: Effect
+- body: This ability's distance becomes Melee 1 + your Reason score, and you can shift
+    up to a number of squares equal to your Reason score instead of 1 square.
+  isEffect: true
+  title: Spend 1 Focus
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
+  flavour: Your quick reflexes cost an enemy the precision they seek.
+  keywords:
+  - Melee
+  - Weapon
+  target: Self or one ally
+  title: Parry
+  topMatter: Level 1 Tactician Ability
+level: 1
+type: Triggered Action
+version: 2

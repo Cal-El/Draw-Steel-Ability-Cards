@@ -1,0 +1,31 @@
+body:
+- body: You or another hero ends their turn.
+  isEffect: true
+  title: Trigger
+- body: The target takes their turn after the triggering hero, and immediately removes
+    all conditions and negative effects on themself. During their turn, the target
+    has a double edge on power rolls.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Wrath
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You have looked at various futures, and only this one works.
+  keywords:
+  - Magic
+  - Ranged
+  target: One ally
+  title: Fulfill Your Destiny
+  topMatter: Level 9 Censor Heroic Ability
+level: 9
+type: Triggered Action
+version: 2

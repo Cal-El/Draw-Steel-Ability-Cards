@@ -1,0 +1,44 @@
+body:
+- body: You jump up to your maximum jump distance and make one power roll that targets
+    each creature adjacent to the space where you land.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 1
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 2
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 11
+      characteristicBonusOptions: []
+      includedKitValue: 0
+cost:
+  costName: Ferocity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You leap and crash down, causing a shockwave that devastates foes.
+  keywords:
+  - Magic
+  target: Self
+  title: Avalanche Impact
+  topMatter: Level 6 Fury Heroic Ability
+level: 6
+type: Maneuver
+version: 2

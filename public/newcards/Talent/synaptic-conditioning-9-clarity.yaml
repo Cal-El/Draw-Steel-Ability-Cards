@@ -1,0 +1,54 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: psychic damage; the target takes a bane on ability rolls made to harm
+      you or your allies (save ends)
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t2:
+    baseEffect: psychic damage; the target has a double bane on ability rolls made
+      to harm you or your allies (save ends)
+    damage:
+      baseValue: 14
+      characteristicBonusOptions: []
+      includedKitValue: 0
+  t3:
+    baseEffect: psychic damage; the target considers you and your allies to be their
+      allies when using abilities and features (save ends)
+    damage:
+      baseValue: 20
+      characteristicBonusOptions: []
+      includedKitValue: 0
+- body: While the target is under this effect, you no longer consider your enemies
+    to be your enemies when using your abilities and features.
+  isEffect: true
+  title: Strained
+cost:
+  costName: Clarity
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [2]
+    values:
+    - baseValue: 2
+      includedKitValue: 0
+      type: Melee
+  flavour: "It's a subtle mindset shift. It's not that they're your enemy\u2014you\
+    \ just don't like them!"
+  keywords:
+  - Psionic
+  - Melee
+  - Strike
+  - Telepathy
+  target: One creature
+  title: Synaptic Conditioning
+  topMatter: Level 6 Talent Heroic Ability
+level: 6
+type: Main action
+version: 2

@@ -1,0 +1,29 @@
+body:
+- body: You can target yourself instead of one ally with this ability. Each target
+    can spend any number of Recoveries, can end any effects on them that are ended
+    by a saving throw or that end at the end of their turn, and can stand up if they
+    are prone.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '11'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Intense light is emitted from your body, healing your allies.
+  keywords:
+  - Magic
+  - Ranged
+  target: Four allies
+  title: Radiance of Grace
+  topMatter: Level 9 Conduit Heroic Ability
+level: 9
+type: Main action
+version: 2

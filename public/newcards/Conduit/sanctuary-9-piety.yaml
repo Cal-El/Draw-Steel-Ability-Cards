@@ -1,0 +1,29 @@
+body:
+- body: The target is removed from the encounter map until the start of their next
+    turn and can spend any number of Recoveries. At the start of their turn, the target
+    reappears in the space they left or the nearest unoccupied space of their choice.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You send yourself or an ally to a divine manifold to instantaneously regain
+    health.
+  keywords:
+  - Magic
+  - Ranged
+  target: Self or one ally
+  title: Sanctuary
+  topMatter: Level 5 Conduit Heroic Ability
+level: 5
+type: Maneuver
+version: 2

@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Might
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: holy damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 1
+  t2:
+    baseEffect: holy damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 1
+  t3:
+    baseEffect: holy damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Might
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 1
+- body: Until the end of the target's next turn, they have damage weakness equal to the characteristic score used for this ability's power roll.
+  isEffect: true
+  title: Effect
+cost: null
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - type: Melee
+      baseValue: 1
+      includedKitValue: 0
+  keywords:
+  - Magic
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature or object
+  title: Weakening Brand
+  topMatter: Warrior Priest Kit Signature Ability
+  flavour: The impact of your weapon brands your target foe for destruction.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

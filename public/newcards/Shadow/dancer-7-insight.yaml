@@ -1,0 +1,24 @@
+body:
+- body: Until the end of the encounter, whenever an enemy moves or is force moved
+    adjacent to you or damages you, you can take the Disengage move action as a free
+    triggered action.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Insight
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: You enter a flow state that makes you nearly impossible to pin down.
+  keywords:
+  - '-'
+  target: Self
+  title: Dancer
+  topMatter: Level 3 Shadow Heroic Ability
+level: 3
+type: Maneuver
+version: 2

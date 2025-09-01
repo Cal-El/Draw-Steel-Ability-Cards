@@ -1,0 +1,25 @@
+body:
+- body: Until the end of the encounter or until you are dying, each enemy in the area
+    takes a bane on power rolls, and you and each ally in the area gain 1 surge at
+    the end of each of your turns.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 4 aura
+    values: []
+  flavour: Your body emits a heat that bakes your enemies and inspires your allies.
+  keywords:
+  - Area
+  - Magic
+  target: Self and each creature in the area
+  title: Blessing of the Midday Sun
+  topMatter: Level 6 Conduit Heroic Ability
+level: 6
+type: Maneuver
+version: 2

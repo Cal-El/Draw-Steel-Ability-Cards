@@ -1,0 +1,48 @@
+body:
+- characteristicBonus:
+  - Reason
+  isPowerRoll: true
+  t1:
+    baseEffect: null
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 0
+  t2:
+    baseEffect: null
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 1
+  t3:
+    baseEffect: null
+    potency:
+      characteristic: Might
+      effect: prone
+      strength: 2
+- body: You create a fissure in the ground adjacent to you that is a 10 x 2 line and
+    6 squares deep. Each creature in the area who is prone and size 2 or smaller falls
+    in. Other creatures can enter the fissure or can shift to the nearest unoccupied
+    space of their choice outside it.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Essence
+  costValue: '11'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: 5 burst
+    values: []
+  flavour: You stomp your foot and quake the whole world over.
+  keywords:
+  - Area
+  - Earth
+  - Magic
+  target: Each enemy in the area
+  title: World Torn Asunder
+  topMatter: Level 8 Elementalist Heroic Ability
+level: 8
+type: Main action
+version: 2

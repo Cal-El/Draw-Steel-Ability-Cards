@@ -1,0 +1,67 @@
+body:
+- characteristicBonus:
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 3
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Presence
+      effect: slowed (save ends)
+      strength: 2
+- body: The target takes an extra 1 corruption damage for each additional time they
+    are targeted by this ability during the encounter.
+  isEffect: true
+  title: Effect
+- body: You gain 1 clarity when you obtain a tier 2 or tier 3 outcome on the power
+    roll.
+  isEffect: true
+  title: Strained
+cost: null
+fontSizePtOverrides:
+  body: 7.5
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: You advance an enemy's age for a moment.
+  keywords:
+  - Chronopathy
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Entropic Bolt
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Main action
+version: 2

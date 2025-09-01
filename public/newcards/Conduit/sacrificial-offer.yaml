@@ -1,0 +1,50 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t2:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+  t3:
+    baseEffect: corruption damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+- body: Choose yourself or one ally within distance. That character can impose a bane
+    on one power roll made against them before the end of their next turn.
+  isEffect: true
+  title: Effect
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Divine magic tears at your foe and defends a nearby friend.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Sacrificial Offer
+  topMatter: Level 1 Conduit Ability
+level: 1
+type: Main action
+version: 2

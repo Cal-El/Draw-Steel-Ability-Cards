@@ -1,0 +1,57 @@
+body:
+- characteristicBonus:
+  - Reason
+  - Intuition
+  - Presence
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+  t2:
+    baseEffect: damage; push 1
+    damage:
+      baseValue: 5
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+  t3:
+    baseEffect: damage; push 2
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Reason
+      - Intuition
+      - Presence
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      strength: 2
+      effect: prone
+cost: null
+header:
+  distance:
+    display: 'Ranged [10]'
+    values:
+    - type: Ranged
+      baseValue: 10
+      includedKitValue: 0
+  keywords:
+  - Psionic
+  - Ranged
+  - Strike
+  target: One creature or object
+  title: Concussive Slam
+  topMatter: Time Raider Signature Ability
+  flavour: You slam an invisible force down upon the target.
+type: Main action
+version: 2
+fontSizePtOverrides:
+  body: 9

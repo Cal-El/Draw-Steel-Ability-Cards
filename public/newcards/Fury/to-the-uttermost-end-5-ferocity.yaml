@@ -1,0 +1,53 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 7
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 11
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Might
+      includedKitValue: 0
+- body: While you are winded, this ability deals an extra 1d6 damage for each ferocity
+    spent. While you are dying, it deals an extra 1d10 damage for each ferocity spent.
+    In either case, you lose 1d6 Stamina after making this strike.
+  isEffect: true
+  title: Spend 1+ Ferocity
+cost:
+  costName: Ferocity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 8
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You gut your life force to ensure a foe's demise.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: To the Uttermost End
+  topMatter: Level 1 Fury Heroic Ability
+level: 1
+type: Main action
+version: 2

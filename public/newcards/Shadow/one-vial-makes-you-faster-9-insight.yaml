@@ -1,0 +1,37 @@
+body:
+- body: 'You ready, hand, or lob a potion to each target, who can immediately quaff
+    the potion (no action required). If they don''t drink the potion right away, they
+    must use the Use Consumable maneuver to consume it later. The potion loses its
+    potency at the end of the encounter.
+
+    A creature who drinks the potion receives benefits based on your power roll.'
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Agility
+  isPowerRoll: true
+  t1:
+    baseEffect: The creature's speed is increased by 2 until the end of the encounter.
+  t2:
+    baseEffect: The creature can fly until the end of the encounter.
+  t3:
+    baseEffect: The creature turns invisible until the end of their next turn.
+cost:
+  costName: Insight
+  costValue: '9'
+fontSizePtOverrides:
+  body: 6.5
+header:
+  distance:
+    display: Ranged 10
+    values: []
+  flavour: Each ally who catches a potion you throw can take the battle to the next
+    level.
+  keywords:
+  - Ranged
+  target: Three creatures
+  title: One Vial Makes You Faster
+  topMatter: Level 6 Shadow Heroic Ability
+level: 6
+type: Main action
+version: 2

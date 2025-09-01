@@ -1,0 +1,32 @@
+body:
+- body: You slide the target up to a number of squares equal to your Reason score.
+  isEffect: true
+  title: Effect
+- body: The size of the creature or object you can target increases by 1 for every
+    2 clarity spent.
+  isEffect: true
+  title: Spend 2+ Clarity
+- body: You can vertical slide the target.
+  isEffect: true
+  title: Spend 3 Clarity
+cost: null
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [10]
+    values:
+    - baseValue: 10
+      includedKitValue: 0
+      type: Ranged
+  flavour: Wisps of psychic energy ripple visibly from your brain as you force the
+    target to move using only your mind.
+  keywords:
+  - Psionic
+  - Ranged
+  target: Self or one size 1 creature or object
+  title: Minor Telekinesis
+  topMatter: Level 1 Talent Ability
+level: 1
+type: Maneuver
+version: 2

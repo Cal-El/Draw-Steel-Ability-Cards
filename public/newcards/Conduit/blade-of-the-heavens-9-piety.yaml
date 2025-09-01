@@ -1,0 +1,60 @@
+body:
+- characteristicBonus:
+  - Intuition
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 8
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: prone and restrained (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 12
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: prone and restrained (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 16
+      characteristicBonusOptions:
+      - Intuition
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: prone and restrained (save ends)
+      strength: 2
+cost:
+  costName: Piety
+  costValue: '9'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Ranged [5]
+    values:
+    - baseValue: 5
+      includedKitValue: 0
+      type: Ranged
+  flavour: A greatsword streams down from the sky, threatening to pin your foe.
+  keywords:
+  - Magic
+  - Ranged
+  - Strike
+  target: One creature
+  title: Blade of the Heavens
+  topMatter: Level 6 Conduit Heroic Ability
+level: 6
+type: Main action
+version: 2

@@ -1,0 +1,24 @@
+body:
+- body: Until the end of the encounter or until you are dying, whenever you or any
+    ally deals damage to a target marked by you, that creature gains 2 surges, which
+    they can use immediately.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Focus
+  costValue: '7'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self
+    values: []
+  flavour: Your allies see the advantages in attacking the targets you select.
+  keywords:
+  - '-'
+  target: Self
+  title: Hit 'Em Hard!
+  topMatter: Level 3 Tactician Heroic Ability
+level: 3
+type: Maneuver
+version: 2
