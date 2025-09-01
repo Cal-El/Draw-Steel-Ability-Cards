@@ -24,6 +24,8 @@ def getAbilityType(ability):
     return 'Triggered Action'
   if type == 'Free triggered':
     return 'Free Triggered Action'
+  if type == 'Move':
+      return 'Move Action'
   return type
 
 def parseBody(ability):

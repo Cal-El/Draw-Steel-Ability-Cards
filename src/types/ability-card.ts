@@ -15,6 +15,13 @@ export type ability_card = {
     body?: number;
     powerRoll?: number;
   }
+  v2FontSizePtOverrides?: {
+    topMatter?: number;
+    titleFont?: number;
+    flavour?: number;
+    body?: number;
+    powerRoll?: number;
+  }
 }
 
 export type header = {
@@ -139,6 +146,7 @@ export enum abilityType {
   mainAction = 'Main Action',
   maneuver = 'Maneuver',
   triggeredAction = 'Triggered Action',
+  moveAction = 'Move Action',
   freeTriggeredAction = 'Free Triggered Action',
   freeManeuver = 'Free Maneuver',
   noAction = 'No Action',
@@ -151,6 +159,7 @@ export const abilityTypeValues : abilityType[] = [
   abilityType.mainAction,
   abilityType.maneuver,
   abilityType.triggeredAction,
+  abilityType.moveAction,
   abilityType.freeTriggeredAction,
   abilityType.freeManeuver,
   abilityType.noAction,
