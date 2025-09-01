@@ -1,8 +1,8 @@
 import { ability_card } from "../../../../types/ability-card-types";
 import TargetBox from "./target-box";
 
-export default function TargetSelfAndCreatures({card, bgColorStyle, numCreatures, creatureType, andOr}: 
-    {card: ability_card, bgColorStyle: Record<string, string>, numCreatures: string, creatureType: "Creatures" | "Allies", andOr: "and" | "or"}){
+export default function TargetSelfAndCreatures({card, bgColorGetter, numCreatures, creatureType, andOr}:
+    {card: ability_card, bgColorGetter: (t: string) => string, numCreatures: string, creatureType: "Creatures" | "Allies", andOr: "and" | "or"}){
     const getTargetDescription = (): string => {
         switch(creatureType){
             case "Creatures":
@@ -14,7 +14,7 @@ export default function TargetSelfAndCreatures({card, bgColorStyle, numCreatures
         }
     }
     return (
-        <TargetBox card={card} bgColorStyle={bgColorStyle}>
+        <TargetBox card={card} bgColorGetter={bgColorGetter}>
             <div className={`flex flex-col justify-center items-center w-full h-full pt-[5.3333pt]`}>
                 <div
                     className={`text-[6pt] font-body font-bold text-cardback leading-none small-caps text-center`}>Self {andOr}

@@ -1,10 +1,12 @@
-import {ability_card, actionTextColorStyle} from "../../../../types/ability-card-types.ts";
+import {ability_card, getDynamicColorBase} from "../../../../types/ability-card-types.ts";
 
-export default function TargetBox({card, bgColorStyle, children}: {card: ability_card, bgColorStyle: Record<string, string>, children?: JSX.Element | JSX.Element[]}){
+export default function TargetBox({card, bgColorGetter, children}: {card: ability_card, bgColorGetter: (t: string) => string, children?: JSX.Element | JSX.Element[]}){
     return (
-        <div className={`${bgColorStyle[card.type]} w-[27pt] h-[27pt]`}>
+        <div className={`w-[27pt] h-[27pt]`}
+             style={{backgroundColor: bgColorGetter(card.type)}}>
             <div
-                className={`overflow-visible h-0 text-[6pt] font-body font-bold ${actionTextColorStyle[card.type]} leading-none small-caps indent-[0.4pt]`}>Target
+                className={`overflow-visible h-0 text-[6pt] font-body font-bold leading-none small-caps indent-[0.4pt]`}
+                style={{color:getDynamicColorBase(card.type)}}>Target
             </div>
             {children}
         </div>

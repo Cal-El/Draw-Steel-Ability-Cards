@@ -1,7 +1,7 @@
 import {ability_card, abilityTypeValues} from "../../../../types/ability-card.ts";
 import {ChangeEvent, ClipboardEvent, Dispatch, useEffect, useState} from "react";
 import {Card} from "../../../../types/card-list.ts";
-import {actionTextColorStyle, getDynamicColorBase} from "../../../../types/ability-card-types.ts";
+import {getDynamicColorBase} from "../../../../types/ability-card-types.ts";
 
 export default function DistanceEditor({card, onChange}: {card: ability_card, onChange: Dispatch<Card>}) {
   const [displayText, setDisplayText] = useState(card.header.distance.display);
@@ -110,7 +110,8 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
     let val = displayText.split(' ').map(x => {
       if (x.startsWith('[') && x.endsWith(']')) {
         i++;
-        return (<span className={`font-bold ${actionTextColorStyle[abilityTypeValues[i-1]]}`}>{x} </span>)
+        return (<span className={`font-bold`}
+                      style={{color:getDynamicColorBase(abilityTypeValues[i-1])}}>{x} </span>)
       }
       else {
         return (<span className={`italic text-stone-700`}>{x} </span>)

@@ -1,6 +1,6 @@
 import {DragEvent, useState} from 'react'
 import './App.css'
-import {ability_card, actionTextColorStyle, getDynamicColorBase} from "./types/ability-card-types.ts";
+import {ability_card, getDynamicColorBase} from "./types/ability-card-types.ts";
 import {ability_card as new_ability_card, characteristic, potency_strength} from "./types/ability-card.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
@@ -248,7 +248,8 @@ function App() {
             <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
             <button onClick={() => setHowToModal(true)} className={`h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback`}
               style={{borderColor: getDynamicColorBase(`Triggered Action`)}}>
-                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Triggered Action`]}`}>About</div>
+                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
+                     style={{color:getDynamicColorBase(`Triggered Action`)}}>About</div>
             </button>
             <div className={`grow flex justify-end`}>
                 <Select
@@ -266,14 +267,16 @@ function App() {
                 }
             }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
               style={{borderColor: getDynamicColorBase(`Maneuver`)}}>
-                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add Card</div>
+                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
+                     style={{color:getDynamicColorBase(`Maneuver`)}}>Add Card</div>
             </button>
             {includeAllCardsButton &&
                 <button onClick={() => {
                     allCards()
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
                 style={{borderColor: getDynamicColorBase(`Maneuver`)}}>
-                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Maneuver`]}`}>Add All Cards</div>
+                    <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
+                         style={{color:getDynamicColorBase(`Maneuver`)}}>Add All Cards</div>
                 </button>
             }
             <button onClick={(e) => {
@@ -288,7 +291,8 @@ function App() {
               }
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
               style={{borderColor: getDynamicColorBase(`Action`)}}>
-                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none ${actionTextColorStyle[`Action`]}`}>Add New Blank Card</div>
+                <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
+                     style={{color:getDynamicColorBase(`Action`)}}>Add New Blank Card</div>
             </button>
         </nav>
         <div className='flex flex-auto w-full print:m-0 print:p-0'>

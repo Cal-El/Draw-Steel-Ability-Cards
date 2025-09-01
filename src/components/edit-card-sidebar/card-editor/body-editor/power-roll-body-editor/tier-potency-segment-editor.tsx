@@ -4,9 +4,9 @@ import {
   characteristic, potency, potency_strength,
   power_roll_tier,
 } from "../../../../../types/ability-card.ts";
-import {actionBg40ColorStyle} from "../../../../../types/ability-card-types.ts";
 import {SegmentProps, SetTier} from "./power-roll-tier-body-editor.tsx";
 import {useState} from "react";
+import {getDynamicColor40} from "../../../../../types/ability-card-types.ts";
 
 type PotencyDisplayModel = {
   characteristic?: characteristic;
@@ -34,7 +34,8 @@ function PotencyEditor({setTier, tier, tierNum} : {setTier: SetTier, tier: power
   }
 
   return (<>
-    <div className={`col-start-1 col-span-1 row-span-2 ${actionBg40ColorStyle[abilityTypeValues[tierNum - 1]]} w-full`}/>
+    <div className={`col-start-1 col-span-1 row-span-2  w-full`}
+         style={{backgroundColor:getDynamicColor40(abilityTypeValues[tierNum - 1])}}/>
     <div className={`col-span-4 flex items-center gap-x-2 gap-y-1`}>
       <div className={``}>If</div>
       <select value={potencyDisplay.characteristic}
