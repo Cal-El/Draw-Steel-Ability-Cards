@@ -12,7 +12,7 @@ export default function WorkspaceCardContainer({id, card, cardNum, selectedCard,
       } else {
         setSelectedCard(cardNum)
       }
-    }} className={`flex-none flex justify-center items-center break-inside-avoid-page print:h-[180pt] print:w-[252pt] ${selectedCardState > 0 ? '' : 'hover:brightness-90'}`}>
+    }} className={`flex-none flex justify-center items-center break-inside-avoid-page print:h-[180pt] print:w-[252pt] ${selectedCardState > 0 ? '' : 'hover:brightness-90'} print:hover:brightness-100`}>
       <AbilityCard id={id} card={card} enlargedState={0}/>
     </div>
   );
