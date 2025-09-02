@@ -50,3 +50,7 @@
     background: gray;
   }
 }
+
+.markdown > * {
+  all: revert;
+}

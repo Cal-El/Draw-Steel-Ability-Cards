@@ -1,9 +1,22 @@
 import {Card, CardList} from "../../types/card-list.ts";
 import {buildEmptyHeroData, HeroData} from "../../types/character-data.ts";
 
+export const ChangeLogSeenKey = "changelogLastSeenDate"
 export const DisplayedCardListKey = "displayedcards"
 export const CardListKey = "cardlist"
 export const HeroDataKey = "herodata"
+
+export function saveChangelogSeen(t: Date){
+  localStorage.setItem(ChangeLogSeenKey, JSON.stringify(t))
+}
+
+export function getChangelogSeen() : Date {
+  const data = localStorage.getItem(ChangeLogSeenKey)
+  if (data) {
+    return new Date(JSON.parse(data ?? '') as Date)
+  }
+  return new Date(0)
+}
 
 export function saveCardList(name: string, cardList: CardList){
   localStorage.setItem(getCardListStorageKey(name), JSON.stringify(cardList.abilityCards))

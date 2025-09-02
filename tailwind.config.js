@@ -78,5 +78,6 @@ export default {
   },
   plugins: [
     tailwindcss_opentype,
+    require('@tailwindcss/typography'),
   ],
 }
