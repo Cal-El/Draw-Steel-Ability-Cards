@@ -1,7 +1,8 @@
 import {
   ability_card,
-  getDynamicColor40, getDynamicColorBase, typeAbbreviation,
+  typeAbbreviation,
 } from "../../../types/ability-card-types.ts";
+import { getDynamicColor40, getDynamicColorBase } from "../../../utils/color-calculator.ts";
 import {CostBlock} from "./cost-block.tsx";
 import {DistanceBlockList} from "./distance-block.tsx";
 import {TargetBlock} from "./target-block.tsx";

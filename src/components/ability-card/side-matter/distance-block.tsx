@@ -1,10 +1,11 @@
 import {
   ability_card,
-  distance_block,
+  distance_block} from "../../../types/ability-card-types.ts";
+import {
   getDynamicColor40,
   getDynamicColor50,
   getDynamicColorBase
-} from "../../../types/ability-card-types.ts";
+} from "../../../utils/color-calculator.ts";
 
 function distanceBlock(card: ability_card, block: distance_block, bgColorGetter: (t: string) => string) {
     if (block.distanceValue.length === 1 || block.distanceValue.length === 2) {

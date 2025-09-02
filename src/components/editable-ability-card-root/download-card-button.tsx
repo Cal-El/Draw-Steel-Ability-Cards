@@ -1,4 +1,4 @@
-import {getDynamicColorBase} from "../../types/ability-card-types.ts";
+import { getDynamicColorBase } from "../../utils/color-calculator.ts";
 import {saveImage} from "../../utils/download-utils.ts";
 import {Card, getCardTitle} from "../../types/card-list.ts";
 

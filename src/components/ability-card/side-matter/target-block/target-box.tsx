@@ -1,4 +1,5 @@
-import {ability_card, getDynamicColorBase} from "../../../../types/ability-card-types.ts";
+import {ability_card} from "../../../../types/ability-card-types.ts";
+import { getDynamicColorBase } from "../../../../utils/color-calculator.ts";
 
 export default function TargetBox({card, bgColorGetter, children}: {card: ability_card, bgColorGetter: (t: string) => string, children?: JSX.Element | JSX.Element[]}){
     return (

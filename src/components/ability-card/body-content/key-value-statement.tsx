@@ -1,9 +1,12 @@
 import Markdown from "react-markdown";
 import {
-  ability_card, getDynamicColor20,
-  getDynamicColorBase,
+  ability_card, 
   key_value_statement
 } from "../../../types/ability-card-types.ts";
+import {
+  getDynamicColor20,
+  getDynamicColorBase
+} from "../../../utils/color-calculator.ts";
 import {AutoTextSize} from "auto-text-size";
 
 export function KeyValueStatement({card, kv}: {card: ability_card, kv: key_value_statement}) {

@@ -1,13 +1,15 @@
 import {
   ability_card,
+  power_roll_statement,
+  power_roll_tier
+} from "../../../types/ability-card-types.ts";
+import {
   getDynamicColor20,
   getDynamicColor30,
   getDynamicColor40,
   getDynamicColor50,
-  getDynamicColorBase,
-  power_roll_statement,
-  power_roll_tier
-} from "../../../types/ability-card-types.ts";
+  getDynamicColorBase
+} from "../../../utils/color-calculator.ts";
 
 function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNum: number) {
   const generalEffectFontsize = card.powerRollFontSizeOverride ?

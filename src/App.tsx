@@ -1,6 +1,7 @@
 import {DragEvent, useState} from 'react'
 import './App.css'
-import {ability_card, getDynamicColorBase} from "./types/ability-card-types.ts";
+import {ability_card} from "./types/ability-card-types.ts";
+import { getDynamicColorBase } from "./utils/color-calculator.ts";
 import {ability_card as new_ability_card} from "./types/ability-card.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';

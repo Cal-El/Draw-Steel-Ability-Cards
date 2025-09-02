@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {getDynamicColorBase} from "../../../types/ability-card-types.ts";
+import { getDynamicColorBase } from "../../../utils/color-calculator.ts";
 import {TextEditor} from "./text-editor.tsx";
 import {UIEditor} from "./ui-editor.tsx";
 import { Tooltip } from "react-tooltip";

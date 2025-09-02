@@ -1,7 +1,7 @@
 import {ability_card, abilityTypeValues} from "../../../../types/ability-card.ts";
 import {ChangeEvent, ClipboardEvent, Dispatch, useEffect, useState} from "react";
 import {Card} from "../../../../types/card-list.ts";
-import {getDynamicColorBase} from "../../../../types/ability-card-types.ts";
+import { getDynamicColorBase } from "../../../../utils/color-calculator.ts";
 
 export default function DistanceEditor({card, onChange}: {card: ability_card, onChange: Dispatch<Card>}) {
   const [displayText, setDisplayText] = useState(card.header.distance.display);

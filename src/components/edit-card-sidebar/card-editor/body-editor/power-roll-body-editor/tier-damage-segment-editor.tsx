@@ -1,4 +1,4 @@
-import {getDynamicColor40} from "../../../../../types/ability-card-types.ts";
+import { getDynamicColor40 } from "../../../../../utils/color-calculator.ts";
 import {
   abilityTypeValues,
   characteristic, damage,

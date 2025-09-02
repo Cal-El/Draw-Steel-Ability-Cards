@@ -6,7 +6,7 @@ import {
 } from "../../../../../types/ability-card.ts";
 import {SegmentProps, SetTier} from "./power-roll-tier-body-editor.tsx";
 import {useState} from "react";
-import {getDynamicColor40} from "../../../../../types/ability-card-types.ts";
+import { getDynamicColor40 } from "../../../../../utils/color-calculator.ts";
 
 type PotencyDisplayModel = {
   characteristic?: characteristic;

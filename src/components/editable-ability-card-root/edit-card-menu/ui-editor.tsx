@@ -1,10 +1,10 @@
 import {
     ability_card,
     abilityTypeValues,
-    getDynamicColorBase,
     key_value_statement, power_roll_statement, spacer_statement,
     supportedAbilityTargets
 } from "../../../types/ability-card-types.ts";
+import { getDynamicColorBase } from "../../../utils/color-calculator.ts";
 import {useState} from "react";
 import Select from "react-select";
 import { keywords, rawKeywords } from "../../../types/keywords.ts";

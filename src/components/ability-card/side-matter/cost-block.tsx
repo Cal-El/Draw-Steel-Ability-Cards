@@ -1,4 +1,5 @@
-import {ability_card, getDynamicColorBase} from "../../../types/ability-card-types.ts";
+import {ability_card} from "../../../types/ability-card-types.ts";
+import { getDynamicColorBase } from "../../../utils/color-calculator.ts";
 
 export function CostBlock({card}: {card: ability_card}) {
     if (!card.hasCost) {

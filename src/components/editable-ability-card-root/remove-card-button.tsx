@@ -1,4 +1,4 @@
-import {getDynamicColorBase} from "../../types/ability-card-types.ts";
+import { getDynamicColorBase } from "../../utils/color-calculator.ts";
 import {useState} from "react";
 
 export function RemoveCardButton({cardNum, deleteCard}: {cardNum: number, deleteCard: (index: number) => void}) {

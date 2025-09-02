@@ -4,7 +4,7 @@ import {Card} from "../../../../../types/card-list.ts";
 import {
   getDynamicColor20,
   getDynamicColorBase
-} from "../../../../../types/ability-card-types.ts";
+} from "../../../../../utils/color-calculator.ts";
 import TierDamageSegmentEditor from "./tier-damage-segment-editor.tsx";
 import TierBaseEffectEditor from "./tier-base-effect-editor.tsx";
 import TierPotencySegmentEditor from "./tier-potency-segment-editor.tsx";
