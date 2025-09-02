@@ -11,20 +11,29 @@ export const changelog : Change[] = [
   {
     releaseDate: new Date("2025-09-02"),
     type: 'Fix',
-    version: "v1.0.1",
+    version: "v1.0.1a",
     changes: `
 - **Grab** and **Knockback** distance updated from Melee [10] to Melee [1]
+  - Turns out it was using string values, so it wasn't '10' it was '1' + '0' 
       `,
   },
   {
     releaseDate: new Date("2025-09-02"),
     type: 'Feature',
-    version: "v1.0.0",
+    version: "v1.0.1",
     title: "Changelog added",
     changes: `
 - We have implemented this changelog to help track changes and bugfixes
     - The button that summons this changelog will highlight if there has been a change since you last looked at it.
 - A "Report a Bug" button has also been added which links to a Google Form that allows you to reports various types of bugs, give feedback, and suggest features.
+      `,
+  },
+  {
+    releaseDate: new Date("2025-09-02"),
+    type: 'Fix',
+    version: "v1.0.0a",
+    changes: `
+- Add Cardlist name to Hero Stats menu
       `,
   },
 ] satisfies Change[]

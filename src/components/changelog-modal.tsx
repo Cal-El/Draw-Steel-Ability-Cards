@@ -7,7 +7,7 @@ function DisplayChange({change}: {change: Change}) {
       {change.releaseDate.toISOString().split('T')[0]}
     </div>
     <div>
-      <Markdown className="prose prose-sm font-body text-md text-left">
+      <Markdown className="prose prose-sm text-md text-left">
         {`${change.type === 'Feature' ? '###' : '####'} ${change.version} ${change.title ? ' - ' + change.type + ': ' + change.title : '...'} ${change.changes}`}
       </Markdown>
     </div>
