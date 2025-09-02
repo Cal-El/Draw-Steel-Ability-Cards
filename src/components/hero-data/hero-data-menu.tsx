@@ -2,7 +2,7 @@ import {all_characteristics, characteristic} from "../../types/ability-card.ts";
 import {Bonus, DamageBonus, DistanceBonus, HeroData} from "../../types/character-data.ts";
 import {CardList} from "../../types/card-list.ts";
 import {ChangeEvent, Dispatch, SetStateAction, useEffect, useState} from "react";
-import {DisplayedCardListKey, saveCardList} from "../data-saving/saving-service.ts";
+import {DisplayedCardListKey, getActiveCardList, saveCardList} from "../data-saving/saving-service.ts";
 import { EditKeywordsInput, EditTextInput, SectionSeparator } from "../edit-card-sidebar/card-editor/common-editor-elements.tsx";
 import BonusEditorTopbar from "./bonus-editor-topbar.tsx";
 
@@ -72,10 +72,15 @@ export default function HeroDataMenu({displayedCards, setDisplayedCards}: {
     updateDisplayedCards({...displayedCards, heroData: hd})
   }
 
+  const getCardListName = () => {
+    const activeList = getActiveCardList()
+    return !activeList ? 'Unsaved Workspace' : activeList
+  }
+
   return (
     <div className={`print:hidden w-full flex flex-col h-full`}>
       <span className="w-full text-center">
-        <h1 className="font-bold font-body text-xl small-caps">Hero Data</h1>
+        <h1 className="font-bold font-body text-xl small-caps">Hero Data: {getCardListName()}</h1>
       </span>
       <div className={`text-center w-full`}>
         Your cards will be automatically updated to include hero's stats, without affecting the underlying card.
