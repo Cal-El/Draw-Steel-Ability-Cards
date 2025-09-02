@@ -1,12 +1,19 @@
 import { PayloadAction } from "@reduxjs/toolkit";
 import { createAppSlice } from "./create-app-slice";
 import { getCardSettings, saveCardSettings } from "../components/data-saving/card-settings-service";
+import { CardSettings, CardTypeSettings } from "../types/card-settings";
 
-export type CardSettingsState = {
-  keywordColour?: string
+export type UpdateCardTypeSettingsPayload = {
+  cardType: string
+  cardSettings?: CardTypeSettings
 }
 
-const initialState: CardSettingsState = getCardSettings()
+const initialState: CardSettings = getCardSettings()
+
+export const selectCardTypeSettingsByCardType = (action: string) => (state: {cardSettings: CardSettings}) => {
+  if(!state?.cardSettings?.cardTypeSettings) return undefined
+  return state.cardSettings.cardTypeSettings[action]
+}
 
 export const cardSettingsSlice = createAppSlice({
   name: "cardSettings",
@@ -17,6 +24,13 @@ export const cardSettingsSlice = createAppSlice({
       saveCardSettings({
         ...state,
         keywordColour: action.payload
+      } as CardSettings)
+    }),
+    updateCardTypeSettings: create.reducer((state, action: PayloadAction<UpdateCardTypeSettingsPayload>) => {
+      state.cardTypeSettings[action.payload.cardType] = action.payload.cardSettings ?? {}
+      saveCardSettings({
+        ...state,
+        cardTypeSettings: state.cardTypeSettings
       })
     })
   }),
@@ -25,5 +39,5 @@ export const cardSettingsSlice = createAppSlice({
   }
 })
 
-export const {updateKeywordColour} = cardSettingsSlice.actions
+export const {updateKeywordColour, updateCardTypeSettings} = cardSettingsSlice.actions
 export const {selectKeywordColour} = cardSettingsSlice.selectors

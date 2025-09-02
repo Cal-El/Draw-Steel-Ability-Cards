@@ -8,9 +8,14 @@ export function saveCardSettings(settings: CardSettings){
 
 export function getCardSettings(): CardSettings {
   const data = localStorage.getItem(CardSettingsKey)
-  let parsedSettings: CardSettings = {};
+  let parsedSettings: CardSettings | undefined = undefined;
   if(data) {
     parsedSettings = JSON.parse(data ?? '');
+  }
+  if (!parsedSettings){
+    return {
+      cardTypeSettings: {}
+    }
   }
   return parsedSettings satisfies CardSettings
 }
