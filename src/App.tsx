@@ -255,13 +255,13 @@ function App() {
                          }}
                          changeLogLastOpenedDate={changelogLastOpened}
                 />
-                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1pt] print:items-start print:justify-start`}>
+                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1mm] print:items-start print:justify-start`}>
                   {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={nonNullHeroData(cardsList)} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
               </main>
             </div>
         </div>
-        <footer className={`flex justify-center max-h-[18pt] items-center p-5 gap-5 visible print:invisible print:h-0`}>
+        <footer className={`flex justify-center max-h-[18pt] items-center p-5 gap-5 visible print:hidden`}>
             <button onClick={()=> window.open("https://ko-fi.com/calgrier", "_blank")} className={`flex bg-[#323842] p-1 pl-3 pr-3 rounded-lg justify-center items-center gap-2`}>
                 <img className={`h-4`} src="https://storage.ko-fi.com/cdn/cup-border.png"/>
                 <p className={`text-white font-bold font-body small-caps`}>Support Us on Ko-fi</p>
