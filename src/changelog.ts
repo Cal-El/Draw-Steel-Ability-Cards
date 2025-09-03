@@ -9,6 +9,21 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-09-03T00:30:57Z"),
+    type: 'Fix',
+    version: "v1.0.1b",
+    changes: `
+- Print (with ctrl + P) has been updated
+  - Now uses default "small-but-safe" margins
+  - Now applies a 1mm gap between cards
+  - Invisible footer that was causing a blank page is now 'hidden'
+- Power Rolls now handle blank elements better 
+  - A fully blank power roll tier will display an empty box with the correct attenuated primary card colour
+  - A fully blank power roll characteristic options renders 'Power Roll +' instead of 'Power Roll - 1' or 'Power Roll + :'
+- Power Roll characteristic options have also been updated to handle "Your Highest Characteristic Score" cases 
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-02"),
     type: 'Fix',
     version: "v1.0.1a",

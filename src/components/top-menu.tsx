@@ -18,7 +18,7 @@ export default function TopMenu({openHeroDataSidebar, openChangelog, changeLogLa
           <GiScrollUnfurled/><div className={`w-1`}/><span>Changelog</span>
           <div className={`w-0 h-0 overflow-visible flex items-center justify-center`}>
             <div className={`w-2 h-10 overflow-visible`}>
-              {getChangesSinceTime(changeLogLastOpenedDate) > 1 && <div className={`p-0 h-4 w-4 font-bold text-white text-[8pt] rounded-xl bg-red-500 leading-none flex items-center justify-center`}>{getChangesSinceTime(changeLogLastOpenedDate)}</div>}
+              {getChangesSinceTime(changeLogLastOpenedDate) > 0 && <div className={`p-0 h-4 w-4 font-bold text-white text-[8pt] rounded-xl bg-red-500 leading-none flex items-center justify-center`}>{getChangesSinceTime(changeLogLastOpenedDate)}</div>}
             </div>
           </div>
         </button>
