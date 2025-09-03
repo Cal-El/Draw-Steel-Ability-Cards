@@ -67,6 +67,13 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
     </div>
 }
 
+function getCharacteristicBonusString(powerRoll: power_roll_statement) {
+  if (powerRoll.characteristic.length === 0) {
+    return "+";
+  }
+  return parseInt(powerRoll.characteristic) < 0 ? `- ${parseInt(powerRoll.characteristic) * -1}:` : `+ ${powerRoll.characteristic}:`;
+}
+
 export function PowerRollStatement({card, powerRoll}: {card: ability_card, powerRoll: power_roll_statement}) {
     return (
         <div className={`flex-none flex flex-col h-[76pt] justify-center gap-y-[2pt]`}>
@@ -74,7 +81,7 @@ export function PowerRollStatement({card, powerRoll}: {card: ability_card, power
                 <div className={`w-[2pt]`}></div>
                 <p className={`text-[9pt] font-body leading-none`}
                    style={{color:getDynamicColorBase(card.type)}}>
-                  <b>Power Roll {parseInt(powerRoll.characteristic) < 0 ? `- ${parseInt(powerRoll.characteristic) * -1}` : `+ ${powerRoll.characteristic}`}:</b>
+                  <b>Power Roll {getCharacteristicBonusString(powerRoll)}</b>
                 </p>
             </div>
             <div className={`flex flex-col w-full h-[66pt]`} style={{backgroundColor: getDynamicColorBase(card.type)}}>

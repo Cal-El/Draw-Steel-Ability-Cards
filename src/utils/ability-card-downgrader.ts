@@ -10,7 +10,7 @@ import {
 } from "../types/ability-card-types.ts";
 import {
   ability_card as new_card,
-  abilityType as new_types,
+  abilityType as new_types, all_characteristics,
   body,
   characteristic, damage,
   distance_value,
@@ -79,6 +79,13 @@ function parseTarget(s: string) : string | {target: string, additionalBody: key_
     case 'all creatures': return 'All Creatures';
     default: return {target: 'Special', additionalBody: {key: "Target", value: s}}
   }
+}
+
+function commaSeparatedOrCharacteristicList(charOptions: characteristic[]) {
+  if (charOptions.length === all_characteristics.length) {
+    return 'Your Highest Characteristic Score'
+  }
+  return commaSeparatedOrString(charOptions);
 }
 
 function commaSeparatedOrString(strings: string[]) {
@@ -296,28 +303,24 @@ const translatePrCharacteristic = function (pr: power_roll, characteristics: Cha
   }
   const charOptions = pr.characteristicBonus as characteristic[]
   let bestBonus = -1;
+  let bestBonusSet = false;
+  if (charOptions.length === 0) {
+    return "";
+  }
+
   for (const c of charOptions) {
     if (characteristics.has(c)) {
       bestBonus = Math.max(bestBonus, characteristics.get(c) || -1)
+      bestBonusSet = true
     } else {
-      return commaSeparatedOrString(charOptions.map(
-        (x) => {
-          switch (x) {
-            case characteristic.MIGHT:
-              return "Might";
-            case characteristic.AGILITY:
-              return "Agility";
-            case characteristic.REASON:
-              return "Reason";
-            case characteristic.INTUITION:
-              return "Intuition";
-            case characteristic.PRESENCE:
-              return "Presence";
-          }
-        }
-      ))
+      return commaSeparatedOrCharacteristicList(charOptions)
     }
   }
+
+  if (!bestBonusSet && charOptions.length === all_characteristics.length) {
+    return "Your Highest Characteristic Score"
+  }
+
   return `${bestBonus}`
 }
 
