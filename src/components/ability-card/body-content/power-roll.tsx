@@ -16,7 +16,7 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
   const potencyEffectFontsize = card.powerRollFontSizeOverride ?
     card.powerRollFontSizeOverride :
     powerRollTier.potencyEffect && powerRollTier.potencyEffect?.length < 81 || !powerRollTier.hasGeneralEffect && powerRollTier.potencyEffect && powerRollTier.potencyEffect?.length < 161 ? `6pt` : `5pt`
-  return <div className={`flex w-full h-1/3`}>
+  return <div className={`flex w-[100%] h-1/3`}>
         <div className={` w-[5.4pt] h-full flex justify-center`}
              style={{backgroundColor:getDynamicColorBase(card.type)}}>
             <div className={`[writing-mode:vertical-lr] rotate-180 text-[4pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{rowNum === 1 ? '11 or less' : rowNum === 2 ? '12-16' : '17+'}</div>
@@ -58,6 +58,11 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
                          style={{color:getDynamicColorBase(card.type), fontSize: potencyEffectFontsize}}>{powerRollTier.potencyEffect}</div>
                 </div>
             </div> : <></>
+        }
+        {!powerRollTier.hasGeneralEffect && !powerRollTier.hasPotency ?
+          <div className={`flex-1 flex h-full`}
+               style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor20(card.type) : getDynamicColor30(card.type)}`}}>
+          </div> : <></>
         }
     </div>
 }
