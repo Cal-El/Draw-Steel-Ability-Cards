@@ -77,9 +77,15 @@ function OldCardMenu({editCard, setEditCard, newDefaults, newDefaultsLoading}:{e
   </>);
 }
 
-export default function EditSidebarModal({callback, deleteCallback, card, heroStats}: {callback: CloseCallbackFunction, deleteCallback: DeleteCallbackFunction, card: Card | undefined, heroStats: HeroData | undefined}) {
+export default function EditSidebarModal({callback, deleteCallback, card, heroStats, initialDisplayHeroStats}: {
+  callback: CloseCallbackFunction,
+  deleteCallback: DeleteCallbackFunction,
+  card: Card | undefined,
+  heroStats: HeroData | undefined,
+  initialDisplayHeroStats: boolean,
+}) {
   const [editCard, setEditCard] = useState(card)
-  const [useBlankHeroStats, setUseBlankHeroStats] = useState(false)
+  const [useBlankHeroStats, setUseBlankHeroStats] = useState(!initialDisplayHeroStats)
   const [newDefaults, setNewDefaults] = useState([] as Card[]);
   const [newDefaultsLoading, setNewDefaultsLoading] = useState(false);
 
@@ -92,7 +98,8 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
         setNewDefaultsLoading(false);
       })
     }
-  }, [card])
+    setUseBlankHeroStats(!initialDisplayHeroStats);
+  }, [card, initialDisplayHeroStats])
   const closeModal = () => {
     callback(editCard);
   }
@@ -106,7 +113,7 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
   };
 
   return (<>
-    {editCard && <div className={`fixed inset-0 z-10 w-screen h-screen bg-black bg-opacity-50 flex justify-end print:hidden`}>
+    {editCard && <div className={`fixed inset-0 z-20 w-screen h-screen bg-black bg-opacity-50 flex justify-end print:hidden`}>
       <div role={`button`} onClick={closeModal} className={`flex-grow`}/>
       <div className={`flex-none w-[50pt] flex flex-col`}>
         <div className={`h-[50pt] w-[50pt]`}></div>

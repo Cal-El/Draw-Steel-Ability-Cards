@@ -9,6 +9,18 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-09-04T01:53:00Z"),
+    type: 'Feature',
+    version: 'v1.0.2',
+    title: 'Add "Render without Hero" button',
+    changes: `
+- Added a new button in the top-bar of the workspace that allows you to blank out the hero stats all the rendered cards
+  - This allows you to see your cards with rendered stats digitally, but display the 'default' card for for printing with Ctrl+P
+- The top-bar has also been made "sticky" so it stays with the window while scrolling down
+  - This is to let you toggle the button and see changes in the cards, even if the first rows of cards are things like "Mark" which aren't usually affected by hero stats. 
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-03T00:30:57Z"),
     type: 'Fix',
     version: "v1.0.1b",
