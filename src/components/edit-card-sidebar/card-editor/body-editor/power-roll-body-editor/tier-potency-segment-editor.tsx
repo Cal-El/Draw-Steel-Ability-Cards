@@ -35,7 +35,7 @@ function PotencyEditor({setTier, tier, tierNum} : {setTier: SetTier, tier: power
 
   return (<>
     <div className={`col-start-1 col-span-1 row-span-2  w-full`}
-         style={{backgroundColor:getDynamicColor40(abilityTypeValues[tierNum - 1])}}/>
+         style={{backgroundColor:getDynamicColor40(abilityTypeValues[tierNum - 1], {})}}/>
     <div className={`col-span-4 flex items-center gap-x-2 gap-y-1`}>
       <div className={``}>If</div>
       <select value={potencyDisplay.characteristic}

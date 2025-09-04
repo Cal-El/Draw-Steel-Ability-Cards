@@ -1,7 +1,7 @@
 import { ability_card } from "../../../../types/ability-card-types";
 import TargetBox from "./target-box";
 
-export default function TargetCreatures({card, bgColorGetter, numCreatures, type}: {card: ability_card, bgColorGetter: (t: string) => string, numCreatures: string, type: "Creatures" | "Enemies" | "Allies"}){
+export default function TargetCreatures({card, bgColorGetter, numCreatures, type}: {card: ability_card, bgColorGetter: (t: string, s: CardTypeSettings) => string, numCreatures: string, type: "Creatures" | "Enemies" | "Allies"}){
     const getTargetDescription = (): string => {
         switch(type){
             case "Creatures":

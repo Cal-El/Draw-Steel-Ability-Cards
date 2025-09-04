@@ -1,5 +1,5 @@
 export enum abilityType {
-    action = 'Action',
+    action = 'Main Action',
     maneuver = 'Maneuver',
     triggeredAction = 'Triggered Action',
     moveAction = 'Move Action',
@@ -24,7 +24,7 @@ export const abilityTypeValues : abilityType[] = [
 ]
 
 export const typeAbbreviation: Record<string,string> = {
-    "Action": 'MA',
+    "Main Action": 'MA',
     "Maneuver": 'M',
     "Triggered Action": 'TA',
     "Move Action": 'MV',

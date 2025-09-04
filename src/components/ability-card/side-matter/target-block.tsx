@@ -5,8 +5,9 @@ import TargetCreatures from "./target-block/target-creatures.tsx";
 import TargetSelfAndCreatures from "./target-block/target-self-and-creatures.tsx";
 import TargetAllyOrEnemy from "./target-block/target-ally-or-enemy.tsx";
 import TargetWillingCreatures from "./target-block/target-willing-creatures.tsx";
+import { CardTypeSettings } from "../../../types/card-settings.ts";
 
-export function TargetBlock({card, bgColorGetter}: {card: ability_card, bgColorGetter: (t: string) => string}) {
+export function TargetBlock({card, bgColorGetter}: {card: ability_card, bgColorGetter: (t: string, s: CardTypeSettings) => string}) {
     if (card.target === '1 Creature or Object') {
         return <TargetCreaturesOrObjects card={card} bgColorGetter={bgColorGetter} numCreatures="1"/>
     } else if (card.target === '2 Creatures or Objects') {

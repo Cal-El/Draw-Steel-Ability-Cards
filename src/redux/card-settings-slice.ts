@@ -12,7 +12,7 @@ const initialState: CardSettings = getCardSettings()
 
 export const selectCardTypeSettingsByCardType = (action: string) => (state: {cardSettings: CardSettings}) => {
   if(!state?.cardSettings?.cardTypeSettings) return undefined
-  return state.cardSettings.cardTypeSettings[action]
+  return state.cardSettings.cardTypeSettings[action.toLowerCase()]
 }
 
 export const cardSettingsSlice = createAppSlice({
@@ -27,7 +27,7 @@ export const cardSettingsSlice = createAppSlice({
       } as CardSettings)
     }),
     updateCardTypeSettings: create.reducer((state, action: PayloadAction<UpdateCardTypeSettingsPayload>) => {
-      state.cardTypeSettings[action.payload.cardType] = action.payload.cardSettings ?? {}
+      state.cardTypeSettings[action.payload.cardType.toLowerCase()] = action.payload.cardSettings ?? {}
       saveCardSettings({
         ...state,
         cardTypeSettings: state.cardTypeSettings
@@ -35,9 +35,10 @@ export const cardSettingsSlice = createAppSlice({
     })
   }),
   selectors: {
-    selectKeywordColour: state => state.keywordColour
+    selectKeywordColour: state => state.keywordColour,
+    selectCardTypeSettings: state => state.cardTypeSettings
   }
 })
 
 export const {updateKeywordColour, updateCardTypeSettings} = cardSettingsSlice.actions
-export const {selectKeywordColour} = cardSettingsSlice.selectors
+export const {selectKeywordColour, selectCardTypeSettings} = cardSettingsSlice.selectors

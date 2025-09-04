@@ -1,3 +1,5 @@
+import { selectCardTypeSettingsByCardType } from "../../../redux/card-settings-slice.ts";
+import { useAppSelector } from "../../../redux/hooks.ts";
 import {
   ability_card,
   typeAbbreviation,
@@ -8,6 +10,7 @@ import {DistanceBlockList} from "./distance-block.tsx";
 import {TargetBlock} from "./target-block.tsx";
 
 export function AbilityCardSideMatter({card}: {card: ability_card}) {
+    const cardTypeSettings = useAppSelector(selectCardTypeSettingsByCardType(card.type)) ?? {}
     return (
       <div className={`relative w-[27pt] overflow-visible flex flex-col items-end`}>
         <CostBlock card={card}/>
@@ -16,7 +19,7 @@ export function AbilityCardSideMatter({card}: {card: ability_card}) {
             <DistanceBlockList card={card}/>
         </div>
         <div className={`w-[27pt] h-[15pt] absolute right-0 bottom-0 flex flex-col justify-center rounded-tl-[5pt] rounded-br-[4pt]`}
-             style={{backgroundColor:getDynamicColorBase(card.type)}}>
+             style={{backgroundColor:getDynamicColorBase(card.type, cardTypeSettings)}}>
             <div className={`text-[8pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{typeAbbreviation[card.type]}</div>
         </div>
       </div>

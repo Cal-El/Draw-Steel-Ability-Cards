@@ -1,7 +1,8 @@
 import { ability_card } from "../../../../types/ability-card-types";
+import { CardTypeSettings } from "../../../../types/card-settings";
 import TargetBox from "./target-box";
 
-export default function TargetCreaturesOrObjects({card, bgColorGetter, numCreatures}: {card: ability_card, bgColorGetter: (t: string) => string, numCreatures: string}){
+export default function TargetCreaturesOrObjects({card, bgColorGetter, numCreatures}: {card: ability_card, bgColorGetter: (t: string, s: CardTypeSettings) => string, numCreatures: string}){
     return (
         <TargetBox card={card} bgColorGetter={bgColorGetter}>
             <div className={`flex flex-col justify-center items-center w-full h-full pt-[3.3333pt]`}>

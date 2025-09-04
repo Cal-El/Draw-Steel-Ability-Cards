@@ -17,6 +17,7 @@ export type SegmentProps = {
 }
 
 export default function PowerRollTierBodyEditor({tier, tierNum, card, setCard, bodyIdx} : {card: ability_card, setCard: Dispatch<Card>, bodyIdx: number, tier: power_roll_tier, tierNum: number}) {
+
   const setTier: SetTier = (t: power_roll_tier) => {
     const temp = [...card.body]
     const tempPr : power_roll = {...temp[bodyIdx] as power_roll}
@@ -41,11 +42,11 @@ export default function PowerRollTierBodyEditor({tier, tierNum, card, setCard, b
   return (<>
     <div className={`col-span-full grid grid-cols-subgrid gap-y-2 gap-x-0`}>
       <div className={`col-span-1 text-lg font-bold flex justify-end items-center p-2 w-full`}
-        style={{color: getDynamicColorBase(abilityTypeValues[tierNum-1])}}>
+        style={{color: getDynamicColorBase(abilityTypeValues[tierNum-1], {})}}>
         {tierNum === 1 ? '≤11' : tierNum === 2 ? '12-16' : '17+'}
       </div>
       <div className={`col-span-3 border-l-[2pt] grid grid-cols-[2pt_min-content_min-content_1fr_min-content] auto-cols-min gap-x-2 gap-y-1 p-2`}
-        style={{borderColor: getDynamicColorBase(abilityTypeValues[tierNum-1]), backgroundColor: getDynamicColor20(abilityTypeValues[tierNum - 1])}}>
+        style={{borderColor: getDynamicColorBase(abilityTypeValues[tierNum-1], {}), backgroundColor: getDynamicColor20(abilityTypeValues[tierNum - 1], {})}}>
         <TierDamageSegmentEditor {...props}/>
         <TierBaseEffectEditor {...props}/>
         <TierPotencySegmentEditor {...props}/>
