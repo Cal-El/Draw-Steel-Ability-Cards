@@ -1,5 +1,6 @@
 export type CardSettings = {
   keywordColour?: string
+  baseColours?: ColourSet
   cardTypeSettings: Record<string, ColourSet>
 }
 

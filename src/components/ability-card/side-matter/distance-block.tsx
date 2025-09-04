@@ -1,4 +1,4 @@
-import { selectCardTypeSettingsByCardType } from "../../../redux/card-settings-slice.ts";
+import { selectBaseColours, selectCardTypeSettingsByCardType } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 import {
   ability_card,
@@ -10,13 +10,13 @@ import {
   getDynamicColorBase
 } from "../../../utils/color-calculator.ts";
 
-function distanceBlock(card: ability_card, block: distance_block, bgColorGetter: (t: string, s: ColourSet) => string, colourSettings: ColourSet) {
+function distanceBlock(card: ability_card, block: distance_block, bgColorGetter: (t: string, s: ColourSet, b: ColourSet) => string, colourSettings: ColourSet, baseColours: ColourSet) {
     if (block.distanceValue.length === 1 || block.distanceValue.length === 2) {
         return (
             <div className={`relative w-[27pt] h-[27pt]`}
-                 style={{backgroundColor:bgColorGetter(card.type, colourSettings)}}>
+                 style={{backgroundColor:bgColorGetter(card.type, colourSettings, baseColours)}}>
                 <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold leading-none small-caps indent-[0.4pt]`}
-                     style={{color:getDynamicColorBase(card.type, colourSettings)}}>{block.distanceHeader}</div>
+                     style={{color:getDynamicColorBase(card.type, colourSettings, baseColours)}}>{block.distanceHeader}</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[16pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{block.distanceValue}</div>
                 </div>
@@ -25,9 +25,9 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorGetter:
     } else if (block.distanceValue === 'Line of Effect') {
         return (
             <div className={`relative w-[27pt] h-[27pt]`}
-                 style={{backgroundColor:bgColorGetter(card.type, colourSettings)}}>
+                 style={{backgroundColor:bgColorGetter(card.type, colourSettings, baseColours)}}>
                 <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold leading-none small-caps indent-[0.4pt]`}
-                     style={{color:getDynamicColorBase(card.type, colourSettings)}}>{block.distanceHeader}</div>
+                     style={{color:getDynamicColorBase(card.type, colourSettings, baseColours)}}>{block.distanceHeader}</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div
                         className={`text-[6pt] font-body font-bold text-cardback leading-[12pt] small-caps text-center`}>Line of
@@ -41,9 +41,9 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorGetter:
     } else if (block.distanceValue === 'Special') {
         return (
             <div className={`relative w-[27pt] h-[27pt]`}
-                 style={{backgroundColor:bgColorGetter(card.type, colourSettings)}}>
+                 style={{backgroundColor:bgColorGetter(card.type, colourSettings, baseColours)}}>
             <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold leading-none small-caps indent-[0.4pt]`}
-                     style={{color:getDynamicColorBase(card.type, colourSettings)}}>{block.distanceHeader}</div>
+                     style={{color:getDynamicColorBase(card.type, colourSettings, baseColours)}}>{block.distanceHeader}</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[7pt] font-body font-bold text-cardback leading-[5.3333pt] small-caps text-center`}>Special</div>
                 </div>
@@ -53,9 +53,9 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorGetter:
 
     return (
         <div className={`relative w-[27pt] h-[27pt]`}
-             style={{backgroundColor:bgColorGetter(card.type, colourSettings)}}>
+             style={{backgroundColor:bgColorGetter(card.type, colourSettings, baseColours)}}>
         <div className={`absolute top-0 left-0 text-[6pt] font-body font-bold leading-none small-caps indent-[0.4pt]`}
-                 style={{color:getDynamicColorBase(card.type, colourSettings)}}>{block.distanceHeader}</div>
+                 style={{color:getDynamicColorBase(card.type, colourSettings, baseColours)}}>{block.distanceHeader}</div>
             <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                 <div className={`text-[11pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{block.distanceValue}</div>
             </div>
@@ -65,12 +65,14 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorGetter:
 
 export function DistanceBlockList({card}: {card: ability_card}) {
     const cardTypeSettings = useAppSelector(selectCardTypeSettingsByCardType(card.type)) ?? {}
+    const baseColours = useAppSelector(selectBaseColours) ?? {}
     return (<>
         {card.distance.map((b, i) => distanceBlock(
             card,
             b,
             i % 2 === 0 ? getDynamicColor50 : getDynamicColor40,
-            cardTypeSettings
+            cardTypeSettings,
+            baseColours
         ))}
     </>);
 }

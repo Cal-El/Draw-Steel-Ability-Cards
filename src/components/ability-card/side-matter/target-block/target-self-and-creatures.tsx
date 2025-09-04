@@ -3,7 +3,7 @@ import { ColourSet } from "../../../../types/card-settings";
 import TargetBox from "./target-box";
 
 export default function TargetSelfAndCreatures({card, bgColorGetter, numCreatures, creatureType, andOr}:
-    {card: ability_card, bgColorGetter: (t: string, s: ColourSet) => string, numCreatures: string, creatureType: "Creatures" | "Allies", andOr: "and" | "or"}){
+    {card: ability_card, bgColorGetter: (t: string, s: ColourSet, b: ColourSet) => string, numCreatures: string, creatureType: "Creatures" | "Allies", andOr: "and" | "or"}){
     const getTargetDescription = (): string => {
         switch(creatureType){
             case "Creatures":

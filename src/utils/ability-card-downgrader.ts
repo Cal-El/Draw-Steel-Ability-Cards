@@ -409,8 +409,6 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
     const potencyBonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && b instanceof PotencyBonus)
       .map(b => (b as PotencyBonus));
 
-    console.log(tier, heroData);
-
     let baseValue = tier.potency.strength - 2;
 
     if (heroData.potencyCharacteristic && heroData.characteristics.has(heroData.potencyCharacteristic)) {

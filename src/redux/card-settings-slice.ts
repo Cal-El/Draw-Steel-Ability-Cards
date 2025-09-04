@@ -15,6 +15,7 @@ export const selectCardTypeSettingsByCardType = (action: string) => (state: {car
   let cardType = action.toLowerCase()
   if (cardType === 'action') cardType = 'main action'
   if (cardType === 'passive') cardType = 'trait'
+  if (cardType === 'free strike action') cardType = 'free strike'
   return state.cardSettings.cardTypeSettings[cardType]
 }
 
@@ -35,12 +36,20 @@ export const cardSettingsSlice = createAppSlice({
         ...state,
         cardTypeSettings: state.cardTypeSettings
       })
-    })
+    }),
+    updateBaseColours: create.reducer((state, action: PayloadAction<ColourSet>) => {
+      state.baseColours = action.payload
+      saveCardSettings({
+        ...state,
+        baseColours: action.payload
+      } as CardSettings)
+    }),
   }),
   selectors: {
     selectKeywordColour: state => state.keywordColour,
+    selectBaseColours: state => state.baseColours
   }
 })
 
-export const {updateKeywordColour, updateCardTypeSettings} = cardSettingsSlice.actions
-export const {selectKeywordColour} = cardSettingsSlice.selectors
+export const {updateKeywordColour, updateCardTypeSettings, updateBaseColours} = cardSettingsSlice.actions
+export const {selectKeywordColour, selectBaseColours} = cardSettingsSlice.selectors

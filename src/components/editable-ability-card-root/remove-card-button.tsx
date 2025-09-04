@@ -16,9 +16,9 @@ export function RemoveCardButton({cardNum, deleteCard}: {cardNum: number, delete
                 setCount(count + 1)
             }
         }} className={`flex h-[40pt] flex-1 rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-          style={{borderColor: getDynamicColorBase('Triggered Action', {})}}>
+          style={{borderColor: getDynamicColorBase('Triggered Action', {}, {})}}>
             <div className={`text-[16pt] text-center font-bold select-none`}
-                 style={{color:getDynamicColorBase(`Triggered Action`, {})}}>{btnName[count]}</div>
+                 style={{color:getDynamicColorBase(`Triggered Action`, {}, {})}}>{btnName[count]}</div>
         </div>
     );
 }
