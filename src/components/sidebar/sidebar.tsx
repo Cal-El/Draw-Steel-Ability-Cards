@@ -257,7 +257,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
           })}
           {activeCardList.length === 0 && displayedCards.abilityCards.length > 0 &&
             <div className={`flex flex-row justify-between items-center rounded-md p-2`} key={'unsaved list'}>
-              <p className={`line-clamp-1 overflow-hidden flex-1 text-center bg-stone-300 border border-2 border-stone-400 border-dashed`}>Unsaved Current Workspace</p>
+              <p className={`line-clamp-1 overflow-hidden flex-1 text-center bg-stone-300 border-2 border-stone-400 border-dashed`}>Unsaved Current Workspace</p>
             </div>
           }
         </div>
