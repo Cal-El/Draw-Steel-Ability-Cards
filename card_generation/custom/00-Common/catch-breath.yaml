@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: Spend a Recovery and regain Stamina equal to your recovery value.
         
@@ -15,6 +17,5 @@ header:
   keywords: []
   target: Self
 type: Maneuver
-version: 2
 fontSizePtOverrides:
   body: 9

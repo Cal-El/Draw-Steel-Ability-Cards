@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -56,6 +58,5 @@ header:
   topMatter: Battlemind Kit Signature Ability
   flavour: Your weapon unleashes psionic energy that reduces your target's weight.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

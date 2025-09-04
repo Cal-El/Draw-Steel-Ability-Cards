@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: You or an adjacent creature takes damage from a strike.
   isEffect: true
@@ -15,6 +17,5 @@ header:
   topMatter: Dragon Knight Trait
   keywords: []
 type: Triggered Action
-version: 2
 fontSizePtOverrides:
   body: 9

@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: You or an adjacent creature makes a power roll.
   isEffect: true
@@ -19,6 +21,5 @@ header:
   keywords: []
   flavour: Your connection to Axiom, the plane of Uttermost Law, allows you to manage chaos around you.
 type: Free Triggered Action
-version: 2
 fontSizePtOverrides:
   body: 9

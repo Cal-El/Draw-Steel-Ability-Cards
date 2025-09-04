@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -48,6 +50,5 @@ header:
   topMatter: Cloak and Dagger Kit Signature Ability
   flavour: A stab, and a few quick, careful steps back.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

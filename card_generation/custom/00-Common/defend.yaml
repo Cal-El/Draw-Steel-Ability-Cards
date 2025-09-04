@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: Ability rolls made against you have a double bane until the start of your next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature's traits or abilities.
 
@@ -15,6 +17,5 @@ header:
   keywords: []
   target: Self
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

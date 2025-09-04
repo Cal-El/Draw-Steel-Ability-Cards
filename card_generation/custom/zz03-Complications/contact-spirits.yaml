@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Intuition
@@ -21,6 +23,5 @@ header:
   topMatter: Medium Complication Ability
   flavour: You feint to move your enemies into perfect position.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

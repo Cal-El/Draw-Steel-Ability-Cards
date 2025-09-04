@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -56,6 +58,5 @@ header:
   topMatter: Warrior Priest Kit Signature Ability
   flavour: The impact of your weapon brands your target foe for destruction.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

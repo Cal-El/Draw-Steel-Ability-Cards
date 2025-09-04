@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -43,6 +45,5 @@ header:
   title: Ranged Weapon Free Strike
   topMatter: Ranged Free Strike Ability
 type: Free Strike
-version: 2
 fontSizePtOverrides:
   body: 9
