@@ -183,7 +183,7 @@ function App() {
         {heroDataSidebarOpen && <EditHeroDataSidebar onClose={() => setHeroDataSidebarOpen(false)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>}
         {changelogModalOpen && <ChangelogModal onClose={() => setChangelogModalOpen(false)}/>}
         {howToModal &&
-        <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-20 w-screen overflow-y-auto">
+        <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-30 w-screen overflow-y-auto">
             <div className="flex h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 w-full">
                 <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-full max-w-7xl">
                     <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
@@ -200,7 +200,7 @@ function App() {
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
                      style={{color:getDynamicColorBase(`Triggered Action`)}}>About</div>
             </button>
-            <div className={`grow flex justify-end`}>
+            <div className={`grow flex justify-end z-20`}>
                 <Select
                     value={newCardChoice}
                     onChange={chooseCard}
