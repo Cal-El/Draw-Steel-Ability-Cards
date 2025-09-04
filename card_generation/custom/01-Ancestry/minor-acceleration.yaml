@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: The target gains a bonus to speed equal to your Reason, Intuition, or Presence score (your choice) until the start of your next turn.
   isEffect: true
@@ -20,5 +18,6 @@ header:
   - Melee
   flavour: You fill yourself or an ally with a burst of speed.
 type: Maneuver
+version: 2
 fontSizePtOverrides:
   body: 9

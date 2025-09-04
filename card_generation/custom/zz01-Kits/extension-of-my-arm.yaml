@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -46,5 +44,6 @@ header:
   topMatter: Whirlwind Kit Signature Ability
   flavour: When you draw your whip back after an attack, your enemy is drawn ever closer.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

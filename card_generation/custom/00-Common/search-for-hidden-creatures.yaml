@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an Intuition test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed Agility test using the Hide skill. At the Director’s discretion, different characteristics and skills can be used in this opposed test.
 
@@ -17,5 +15,6 @@ header:
   topMatter: Core Maneuver
   keywords: []
 type: Maneuver
+version: 2
 fontSizePtOverrides:
   body: 8

@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: The next ability roll an ally makes against the enemy before the start of the your next turn gains an edge.
   isEffect: true
@@ -17,5 +15,6 @@ header:
   topMatter: Core Maneuver
   keywords: []
 type: Maneuver
+version: 2
 fontSizePtOverrides:
   body: 9

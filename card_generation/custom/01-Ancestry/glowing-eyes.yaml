@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: You take damage from a creature.
   isEffect: true
@@ -17,5 +15,6 @@ header:
   topMatter: Devil Trait
   keywords: []
 type: Triggered Action
+version: 2
 fontSizePtOverrides:
   body: 9

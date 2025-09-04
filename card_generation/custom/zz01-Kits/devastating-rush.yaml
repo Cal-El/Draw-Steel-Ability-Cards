@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -49,5 +47,6 @@ header:
   topMatter: Panther Kit Signature Ability
   flavour: The faster you move, the harder you hit.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

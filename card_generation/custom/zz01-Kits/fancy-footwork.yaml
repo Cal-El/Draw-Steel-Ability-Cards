@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -49,5 +47,6 @@ header:
   topMatter: Swashbuckler Kit Signature Ability
   flavour: All combat is a dance—and you'll be the one leading.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

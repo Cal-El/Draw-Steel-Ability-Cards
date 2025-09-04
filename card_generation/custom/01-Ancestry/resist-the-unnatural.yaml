@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: You take damage that isn't untyped.
   isEffect: true
@@ -18,5 +16,6 @@ header:
   keywords: []
   flavour: Your instinctive resilience protects you from injuries beyond the routine.
 type: Triggered Action
+version: 2
 fontSizePtOverrides:
   body: 9

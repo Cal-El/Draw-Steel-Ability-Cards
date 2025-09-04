@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: You can open your awareness to detect supernatural creatures and phenomena. Until the end of your next turn, you know the location of any supernatural object, or any undead, construct, or creature from another world within 5 squares, even if you don't have line of effect to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
   isEffect: true
@@ -14,5 +12,6 @@ header:
   topMatter: Human Trait
   keywords: []
 type: Maneuver
+version: 2
 fontSizePtOverrides:
   body: 9

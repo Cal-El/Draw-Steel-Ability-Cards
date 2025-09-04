@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: You place a magic sigil on a creature within 10 squares. When you place a sigil, you decide where it appears on the creature's body, and whether the sigil is visible to only you or to all creatures.
 
@@ -17,5 +15,6 @@ header:
   topMatter: Revenant Trait
   keywords: []
 type: Maneuver
+version: 2
 fontSizePtOverrides:
   body: 9

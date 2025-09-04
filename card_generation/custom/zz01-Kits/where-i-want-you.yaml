@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -46,5 +44,6 @@ header:
   topMatter: Stick and Robe Kit Signature Ability
   flavour: When your stick speaks, your enemy moves.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: The target can use a triggered action to take a main action, a maneuver, or a move action.
   isEffect: true
@@ -22,5 +20,6 @@ header:
   - Ranged
   flavour: “Move or die, folks.”
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -58,5 +56,6 @@ header:
   topMatter: Retarius Kit Signature Ability
   flavour: The well-thrown net that follows your main attack leaves your foes right where you want them.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

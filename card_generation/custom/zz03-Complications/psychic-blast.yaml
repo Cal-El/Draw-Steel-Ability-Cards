@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -29,5 +27,6 @@ header:
   topMatter: Psychic Eruption Complication Heroic Ability
   flavour: Psionic energy bursts from your body in an iridescent shimmer.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

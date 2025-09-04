@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Reason
@@ -54,5 +52,6 @@ header:
   topMatter: Time Raider Signature Ability
   flavour: You slam an invisible force down upon the target.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

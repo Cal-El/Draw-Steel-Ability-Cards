@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: Many tests are maneuvers if made in combat. Searching a chest with a Reason test, picking a door’s lock with an Agility test, or lifting a portcullis with a Might test would all be maneuvers. Assisting a test is also a maneuver in combat.
 
@@ -17,5 +15,6 @@ header:
   keywords: []
   target: None
 type: Maneuver
+version: 2
 fontSizePtOverrides:
   body: 9

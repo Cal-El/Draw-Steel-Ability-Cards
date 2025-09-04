@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Reason
@@ -50,5 +48,6 @@ header:
   topMatter: Time Raider Signature Ability
   flavour: You shoot forth a purple beam of psychic force that moves your target.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

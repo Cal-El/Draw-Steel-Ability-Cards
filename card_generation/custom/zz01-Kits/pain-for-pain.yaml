@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -49,5 +47,6 @@ header:
   topMatter: Mountain Kit Signature Ability
   flavour: An enemy who tagged you will pay for that.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

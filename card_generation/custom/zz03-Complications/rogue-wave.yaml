@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - characteristicBonus:
   - Might
@@ -46,5 +44,6 @@ header:
   topMatter: Waterborn Complication Ability
   flavour: You summon a wave of water to batter your foe.
 type: Main action
+version: 2
 fontSizePtOverrides:
   body: 9

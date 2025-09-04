@@ -1,5 +1,3 @@
-version: 2
-level: 1
 body:
 - body: As long as the target understands one or more languages, you send a telepathic message to them that takes 10 seconds or less to speak. The target knows who the message is from and can decide to ignore it and subsequent messages. 
   isEffect: true
@@ -20,5 +18,6 @@ header:
   - Ranged
   flavour: You send a one-way telepathic message to a friend.
 type: Maneuver
+version: 2
 fontSizePtOverrides:
   body: 9
