@@ -11,8 +11,8 @@ import {
   getDynamicColor50,
   getDynamicColorBase
 } from "../../../utils/color-calculator.ts";
-import { selectCardTypeSettings } from "../../../redux/card-settings-slice.ts";
 import { CardTypeSettings } from "../../../types/card-settings.ts";
+import { selectCardTypeSettingsByCardType } from "../../../redux/card-settings-slice.ts";
 
 function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNum: number, cardTypeSettings: CardTypeSettings) {
   const generalEffectFontsize = card.powerRollFontSizeOverride ?
@@ -80,21 +80,21 @@ function getCharacteristicBonusString(powerRoll: power_roll_statement) {
 }
 
 export function PowerRollStatement({card, powerRoll}: {card: ability_card, powerRoll: power_roll_statement}) {
-    const cardTypeSettings = useSelector(selectCardTypeSettings)
+    const cardTypeSettings = useSelector(selectCardTypeSettingsByCardType(card.type)) ?? {}
 
     return (
         <div className={`flex-none flex flex-col h-[76pt] justify-center gap-y-[2pt]`}>
             <div className={`flex h-[8pt]`}>
                 <div className={`w-[2pt]`}></div>
                 <p className={`text-[9pt] font-body leading-none`}
-                   style={{color:getDynamicColorBase(card.type, cardTypeSettings[card.type.toLowerCase()])}}>
+                   style={{color:getDynamicColorBase(card.type, cardTypeSettings)}}>
                   <b>Power Roll {getCharacteristicBonusString(powerRoll)}</b>
                 </p>
             </div>
-            <div className={`flex flex-col w-full h-[66pt]`} style={{backgroundColor: getDynamicColorBase(card.type, cardTypeSettings[card.type.toLowerCase()])}}>
-                {powerRollLine(card, powerRoll.t1, 1, cardTypeSettings[card.type.toLowerCase()])}
-                {powerRollLine(card, powerRoll.t2, 2, cardTypeSettings[card.type.toLowerCase()])}
-                {powerRollLine(card, powerRoll.t3, 3, cardTypeSettings[card.type.toLowerCase()])}
+            <div className={`flex flex-col w-full h-[66pt]`} style={{backgroundColor: getDynamicColorBase(card.type, cardTypeSettings)}}>
+                {powerRollLine(card, powerRoll.t1, 1, cardTypeSettings)}
+                {powerRollLine(card, powerRoll.t2, 2, cardTypeSettings)}
+                {powerRollLine(card, powerRoll.t3, 3, cardTypeSettings)}
             </div>
         </div>
     )

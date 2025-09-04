@@ -12,7 +12,10 @@ const initialState: CardSettings = getCardSettings()
 
 export const selectCardTypeSettingsByCardType = (action: string) => (state: {cardSettings: CardSettings}) => {
   if(!state?.cardSettings?.cardTypeSettings) return undefined
-  return state.cardSettings.cardTypeSettings[action.toLowerCase()]
+  let cardType = action.toLowerCase()
+  if (cardType === 'action') cardType = 'main action'
+  if (cardType === 'passive') cardType = 'trait'
+  return state.cardSettings.cardTypeSettings[cardType]
 }
 
 export const cardSettingsSlice = createAppSlice({
@@ -36,9 +39,8 @@ export const cardSettingsSlice = createAppSlice({
   }),
   selectors: {
     selectKeywordColour: state => state.keywordColour,
-    selectCardTypeSettings: state => state.cardTypeSettings
   }
 })
 
 export const {updateKeywordColour, updateCardTypeSettings} = cardSettingsSlice.actions
-export const {selectKeywordColour, selectCardTypeSettings} = cardSettingsSlice.selectors
+export const {selectKeywordColour} = cardSettingsSlice.selectors
