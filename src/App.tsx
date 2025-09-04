@@ -26,7 +26,7 @@ import EditHeroDataSidebar from "./components/hero-data/edit-hero-data-sidebar.t
 import ChangelogModal from "./components/changelog-modal.tsx";
 
 function App() {
-  let dummyCard: new_ability_card = {
+  const dummyCard: new_ability_card = {
     version: 2,
     level: 1,
     type: "Main action",
@@ -66,6 +66,7 @@ function App() {
   const [heroDataSidebarOpen, setHeroDataSidebarOpen] = useState(false)
   const [changelogModalOpen, setChangelogModalOpen] = useState(false)
   const [changelogLastOpened, setChangelogLastOpened] = useState(lastSeenChangelogDate)
+  const [showHeroData, setShowHeroData] = useState(true)
 
   const baseUrl = `${window.location.protocol}//${window.location.host}`;
 
@@ -148,13 +149,13 @@ function App() {
     }
 
     if (e.dataTransfer?.items) {
-      for (let item of [...e.dataTransfer.items]) {
+      for (const item of [...e.dataTransfer.items]) {
         if (item.kind === "file") {
           promises.push(addCardDataFromPngFileMetadata(item.getAsFile()));
         }
       }
     } else if (e.dataTransfer?.files) {
-      for (let file of [...e.dataTransfer.files]) {
+      for (const file of [...e.dataTransfer.files]) {
         promises.push(addCardDataFromPngFileMetadata(file));
       }
     }
@@ -171,15 +172,18 @@ function App() {
   return (
     <div className={`flex flex-col h-screen ${selectedCard > -1 || heroDataSidebarOpen ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
         <EditSidebarModal callback={(c: Card | undefined) => {
-          if (c) updateCard(selectedCard, c)
-          setSelectedCard(-1)
-        }} deleteCallback={() => {
-          deleteCard(selectedCard)
-        }} card={selectedCard < 0 ? undefined : {...cardsList.abilityCards[selectedCard]}} heroStats={cardsList.heroData}/>
+                            if (c) updateCard(selectedCard, c)
+                            setSelectedCard(-1)
+                          }} deleteCallback={() => {
+                            deleteCard(selectedCard)
+                          }} card={selectedCard < 0 ? undefined : {...cardsList.abilityCards[selectedCard]}}
+                          heroStats={cardsList.heroData}
+                          initialDisplayHeroStats={showHeroData}
+        />
         {heroDataSidebarOpen && <EditHeroDataSidebar onClose={() => setHeroDataSidebarOpen(false)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>}
         {changelogModalOpen && <ChangelogModal onClose={() => setChangelogModalOpen(false)}/>}
         {howToModal &&
-        <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-20 w-screen overflow-y-auto">
             <div className="flex h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 w-full">
                 <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-full max-w-7xl">
                     <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
@@ -246,7 +250,9 @@ function App() {
                 <Sidebar open={sidebarOpen} toggleOpen={() => setSidebarOpen(!sidebarOpen)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>
               </div>
               <main onDrop={dropUpload} onDragOver={(event) => event.preventDefault()} className={"w-screen bg-zinc-500 print:bg-white"}>
-                <TopMenu openHeroDataSidebar={() => setHeroDataSidebarOpen(true)}
+                <TopMenu showHeroData={showHeroData}
+                         clickShowHeroData={() => setShowHeroData(!showHeroData)}
+                         openHeroDataSidebar={() => setHeroDataSidebarOpen(true)}
                          openChangelog={() => {
                            setChangelogModalOpen(true);
                            const now = new Date(Date.now())
@@ -256,7 +262,7 @@ function App() {
                          changeLogLastOpenedDate={changelogLastOpened}
                 />
                 <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1mm] print:items-start print:justify-start`}>
-                  {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={nonNullHeroData(cardsList)} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
+                  {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={showHeroData ? nonNullHeroData(cardsList) : buildEmptyHeroData()} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
               </main>
             </div>

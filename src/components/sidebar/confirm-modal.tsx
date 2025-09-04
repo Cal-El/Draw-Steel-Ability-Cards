@@ -23,7 +23,7 @@ export default function ConfirmModal({text, onSubmit, onCancel, icon}: {text: st
             }
             <p className="mb-4">{text}</p>
             <div className="flex justify-center items-center space-x-4">
-                <button type="button" onClick={onCancel} className="py-2 px-3 text-sm font-medium text-cardback bg-[#323842] hover:brightness-90 rounded-lg border border-gray-20 focus:ring-4 focus:outline-none focus:ring-primary-300 focus:z-10">
+                <button type="button" onClick={onCancel} className="py-2 px-3 text-sm font-medium text-cardback bg-[#323842] hover:brightness-90 rounded-lg border border-gray-20 focus:ring-4 focus:outline-none focus:ring-primary-300 focus:z-20">
                     Cancel
                 </button>
                 <button type="submit" onClick={onSubmit} className="py-2 px-3 text-sm font-medium text-center text-cardback bg-action-card hover:brightness-90 rounded-lg focus:ring-4 focus:outline-none focus:ring-green-300">
