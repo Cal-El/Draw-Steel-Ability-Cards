@@ -22,7 +22,7 @@ import {
 import {
   HeroData,
   buildEmptyHeroData,
-  CharacteristicSet, DistanceBonus, DamageBonus
+  CharacteristicSet, DistanceBonus, DamageBonus, PotencyBonus
 } from "../types/character-data.ts";
 
 
@@ -140,7 +140,6 @@ function parseBaseDamageVal(tierNum: number, filteredBonuses: DamageBonus[], d: 
     totalBonuses += bonusTypes.get(key) || 0
   }
   return d.baseValue + totalBonuses - (kitBonusOverridden ? d.includedKitValue : 0)
-
 }
 
 const translateDistance = function (card: new_card, heroData: HeroData) : {distanceBlocks: distance_block[], additionalBody?: body_statement[]} {
@@ -325,7 +324,7 @@ const translatePrCharacteristic = function (pr: power_roll, characteristics: Cha
 }
 
 const translatePrTier = function (tier: new_tier, tierNum: number, card: new_card, heroData: HeroData) : old_tier {
-  const bonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && b instanceof DamageBonus)
+  const damageBonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && b instanceof DamageBonus)
     .map(b => (b as DamageBonus))
 
   const parseDamageBlock = function () : {
@@ -338,19 +337,19 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
 
     let damage = 0;
     let altDamage : number | undefined = undefined;
-    if (card.header.keywords.includes("Melee") && card.header.keywords.includes("Ranged") && bonuses.filter(b => {
+    if (card.header.keywords.includes("Melee") && card.header.keywords.includes("Ranged") && damageBonuses.filter(b => {
       const isMeleeNotRanged = b.hasKeyword("Melee") && !b.hasKeyword("Ranged")
       const isRangedNotMelee = b.hasKeyword("Ranged") && !b.hasKeyword("Melee")
       return isMeleeNotRanged || isRangedNotMelee
     }).length > 0) {
       // Card contains both melee and ranged keywords and there are bonuses that affect only melee and ranged abilities
-      damage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.hasKeyword("Ranged")), tier.damage)
-      altDamage = parseBaseDamageVal(tierNum, bonuses.filter(b => !b.hasKeyword("Melee")), tier.damage)
+      damage = parseBaseDamageVal(tierNum, damageBonuses.filter(b => !b.hasKeyword("Ranged")), tier.damage)
+      altDamage = parseBaseDamageVal(tierNum, damageBonuses.filter(b => !b.hasKeyword("Melee")), tier.damage)
       if (damage === altDamage) {
         altDamage = undefined
       }
     } else {
-      damage = parseBaseDamageVal(tierNum, bonuses, tier.damage)
+      damage = parseBaseDamageVal(tierNum, damageBonuses, tier.damage)
     }
     const effectPrefix = tier.damage.otherBonus ? `+ ${tier.damage.otherBonus}` : "";
 
@@ -403,7 +402,44 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
     }
   }
 
+  const parsePotencyValue = () : number | string => {
+    if (!tier.potency) {
+      return ''
+    }
+    const potencyBonuses = heroData.bonus.filter(b => b.matchesKeywords(card.header.keywords) && b instanceof PotencyBonus)
+      .map(b => (b as PotencyBonus));
+
+    console.log(tier, heroData);
+
+    let baseValue = tier.potency.strength - 2;
+
+    if (heroData.potencyCharacteristic && heroData.characteristics.has(heroData.potencyCharacteristic)) {
+      baseValue += heroData.characteristics.get(heroData.potencyCharacteristic) ?? 0;
+    } else {
+      const characteristicBonuses = all_characteristics.filter(c => heroData.characteristics.has(c))
+        .map(c => heroData.characteristics.get(c))
+        .filter(c => c !== undefined);
+      if (characteristicBonuses.length > 0) {
+        baseValue += Math.max(...characteristicBonuses);
+      } else {
+        baseValue += 2; // assume a character with +2 in their best stat, and that stat is their potency bonus
+      }
+    }
+
+    const bonusTypes: Map<string, number> = new Map();
+    potencyBonuses.forEach(b => {
+      bonusTypes.set(b.type, Math.max((bonusTypes.get(b.type) || 0), b.potencyIncrease))
+    })
+    let totalBonuses = 0
+    for (const key of bonusTypes.keys()) {
+      totalBonuses += bonusTypes.get(key) || 0
+    }
+
+    return baseValue + totalBonuses;
+  }
+
   const dmg = parseDamageBlock()
+  const potencyValue = parsePotencyValue()
 
   return {
     hasDamage: !!tier.damage,
@@ -411,7 +447,7 @@ const translatePrTier = function (tier: new_tier, tierNum: number, card: new_car
     hasGeneralEffect: !!tier.baseEffect,
     generalEffect: (dmg?.effectPrefix ? dmg.effectPrefix + " " : "") + tier.baseEffect,
     hasPotency: !!tier.potency,
-    potencyValue: `${tier.potency?.characteristic.toString().toLowerCase()[0]}<${tier.potency?.strength.valueOf()}`,
+    potencyValue: `${tier.potency?.characteristic.toString().toLowerCase()[0]}<${potencyValue}`,
     potencyEffect: tier.potency?.effect,
   } satisfies old_tier;
 }

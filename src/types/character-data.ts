@@ -2,16 +2,19 @@ import {characteristic} from "./ability-card.ts";
 
 export class HeroData {
   characteristics: CharacteristicSet;
+  potencyCharacteristic?: characteristic;
   bonus: Bonus[];
 
-  constructor({characteristics, bonus} : {characteristics?: CharacteristicSet, bonus?: Bonus[]}) {
+  constructor({characteristics, potencyCharacteristic, bonus} : {characteristics?: CharacteristicSet, potencyCharacteristic?: characteristic, bonus?: Bonus[]}) {
     this.characteristics = characteristics || new CharacteristicSet({});
+    this.potencyCharacteristic = potencyCharacteristic || undefined;
     this.bonus = bonus || [];
   }
 
   public toJSON() {
     return {
       characteristics: this.characteristics,
+      potencyCharacteristic: this.potencyCharacteristic,
       bonus: this.bonus,
     }
   }
@@ -22,10 +25,12 @@ export class HeroData {
     }
     const cast = jsonObj as {
       characteristics: object,
+      potencyCharacteristic?: characteristic,
       bonus: object[],
     }
     return new HeroData({
       characteristics: CharacteristicSet.fromJSON(cast.characteristics),
+      potencyCharacteristic: cast.potencyCharacteristic,
       bonus: cast.bonus.map((b: object) => Bonus.fromJSON(b)).filter(b => b !== undefined),
     })
   }
@@ -54,6 +59,7 @@ export class CharacteristicSet {
   }
 
   public has(this: CharacteristicSet, key: characteristic) {
+    console.log(this, key, this.get)
     return !(this.get(key) === undefined || this.get(key) === null);
   }
 
@@ -142,8 +148,8 @@ export abstract class Bonus {
     return this.replaceKitValue;
   }
 
-  public static fromJSON(jsonObj : object): DistanceBonus | DamageBonus | undefined {
-    return DistanceBonus.fromJSON(jsonObj) || DamageBonus.fromJSON(jsonObj);
+  public static fromJSON(jsonObj : object): DistanceBonus | DamageBonus | PotencyBonus | undefined {
+    return DistanceBonus.fromJSON(jsonObj) || DamageBonus.fromJSON(jsonObj) || PotencyBonus.fromJSON(jsonObj);
   }
 }
 
@@ -222,6 +228,34 @@ export class DamageBonus extends Bonus {
       type: string,
       replaceKitValue: boolean,
       rolledDamageBonus: RolledDamageBonus,
+    });
+  }
+}
+
+export class PotencyBonus extends Bonus {
+  potencyIncrease: number;
+
+  constructor({keywordMatcher, type, potencyIncrease}: {keywordMatcher: string[], type: string, potencyIncrease: number}) {
+    super({keywordMatcher, type, replaceKitValue: false});
+    this.potencyIncrease = potencyIncrease;
+  }
+
+  public toJSON() {
+    return {
+      keywordMatcher: this.keywordMatcher,
+      type: this.type,
+      potencyIncrease: this.potencyIncrease
+    }
+  }
+
+  public static fromJSON(jsonObj : object) {
+    if (!jsonObj || !("type" in jsonObj && "keywordMatcher" in jsonObj && "potencyIncrease" in jsonObj)) {
+      return undefined;
+    }
+    return new PotencyBonus(jsonObj as {
+      keywordMatcher: string[],
+      type: string,
+      potencyIncrease: number
     });
   }
 }

@@ -9,6 +9,18 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-09-04T02:54:00Z"),
+    type: 'Fix',
+    version: 'v1.0.2a',
+    changes: `
+- Fix potencies to display (more) correctly, using the highest characteristic score
+  - This fix lays the groundwork for...
+    - Setting the specific score to use for potencies, as there are cases where it won't be your highest stat.
+    - Adding a "Potency Bonus" (added even after verifying that this isn't a thing anywhere in the game).
+  - Adding these options to UI will be done in a follow-up change.
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-04T01:53:00Z"),
     type: 'Feature',
     version: 'v1.0.2',
