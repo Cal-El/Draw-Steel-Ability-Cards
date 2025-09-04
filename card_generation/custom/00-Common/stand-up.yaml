@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: You can stand up if you are prone, ending that condition.
 
@@ -15,6 +17,5 @@ header:
   keywords: []
   target: Self or one creature
 type: Maneuver
-version: 2
 fontSizePtOverrides:
   body: 9

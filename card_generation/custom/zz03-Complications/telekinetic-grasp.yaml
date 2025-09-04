@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -27,6 +29,5 @@ header:
   topMatter: Rogue Talent Complication Ability
   flavour: You reach out with your mind to move a creature or object.
 type: Maneuver
-version: 2
 fontSizePtOverrides:
   body: 9

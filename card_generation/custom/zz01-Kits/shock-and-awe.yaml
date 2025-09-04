@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -51,6 +53,5 @@ header:
   topMatter: Raider Kit Signature Ability
   flavour: You execute a brutal strike that leaves your foe reeling.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

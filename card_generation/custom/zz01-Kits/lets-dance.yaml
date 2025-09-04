@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -47,6 +49,5 @@ header:
   topMatter: Pugilist Kit Signature Ability
   flavour: Keeping your enemies stumbling around the battlefield is second nature to you.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

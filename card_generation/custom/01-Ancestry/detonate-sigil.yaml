@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Reason
@@ -51,6 +53,5 @@ header:
   topMatter: Revenant Signature Ability
   flavour: A magic sigil you placed on a creature explodes with energy.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

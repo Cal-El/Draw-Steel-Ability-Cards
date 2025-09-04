@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -38,6 +40,5 @@ header:
   topMatter: Guisarmier Kit Signature Ability
   flavour: In your hands, the haft is as good as the head.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9
