@@ -1,3 +1,8 @@
+export const BaseSaturation = 40
+export const MutedSaturation = 22
+export const BaseLightness = 35
+export const LightnessIncreaseStep = 6.5
+
 function getHue(cardType: string): number {
   switch (cardType.toLowerCase()) {
     case 'main action':
@@ -68,6 +73,6 @@ export function getDynamicColor20(cardType: string): string {
   return getCssHslColor(hue, saturation, luminance);
 }
 
-export function getKeywordColor(): string {
-  return '#b87f47'
+export function getKeywordColor(customColour?: string): string {
+  return customColour ? customColour : '#b87f47'
 }

@@ -1,4 +1,5 @@
 import { FaSave } from "react-icons/fa"
+import CardSettingsMenu from "./card-settings-menu"
 
 export default function EditCardSettingsSidebar({onClose}: 
   {onClose: () => void}){
@@ -21,6 +22,7 @@ export default function EditCardSettingsSidebar({onClose}:
           <span className="w-full text-center">
             <h1 className="font-bold font-body text-xl small-caps">Global Card Settings</h1>
           </span>
+          <CardSettingsMenu/>
         </div>
       </div>
     </div>
