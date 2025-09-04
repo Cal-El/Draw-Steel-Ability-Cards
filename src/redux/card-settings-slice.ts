@@ -1,11 +1,11 @@
 import { PayloadAction } from "@reduxjs/toolkit";
 import { createAppSlice } from "./create-app-slice";
 import { getCardSettings, saveCardSettings } from "../components/data-saving/card-settings-service";
-import { CardSettings, CardTypeSettings } from "../types/card-settings";
+import { CardSettings, ColourSet } from "../types/card-settings";
 
 export type UpdateCardTypeSettingsPayload = {
   cardType: string
-  cardSettings?: CardTypeSettings
+  cardSettings?: ColourSet
 }
 
 const initialState: CardSettings = getCardSettings()

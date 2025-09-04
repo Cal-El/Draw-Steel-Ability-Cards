@@ -1,5 +1,5 @@
-import { CardTypeSettings } from "../types/card-settings";
 import chroma from 'chroma-js'
+import { ColourSet } from '../types/card-settings'
 
 export const BaseSaturation = 40
 export const MutedSaturation = 22
@@ -43,14 +43,14 @@ function isGreyCard(cardType: string): boolean {
   return t === 'free strike action' || t === 'treasure';
 }
 
-function getCustomColor(cardTypeSettings: CardTypeSettings, gradientValue: number): string | undefined {
-  if (!cardTypeSettings?.baseColour) return undefined
-  const gradient = chroma.scale(["#ffffff", cardTypeSettings.baseColour])
+function getCustomColor(colourSettings: ColourSet, gradientValue: number): string | undefined {
+  if (!colourSettings?.primaryColour?.baseColour) return undefined
+  const gradient = chroma.scale(["#ffffff", colourSettings.primaryColour.baseColour])
   return gradient(gradientValue/100).toString()
 }
 
-export function getDynamicColorBase(cardType: string, cardTypeSettings: CardTypeSettings): string {
-  const custom = getCustomColor(cardTypeSettings, 100)
+export function getDynamicColorBase(cardType: string, colourSettings: ColourSet): string {
+  const custom = getCustomColor(colourSettings, 100)
   if(custom) return custom
   const hue = getHue(cardType);
   const saturation = isGreyCard(cardType) ? '0%' : '40%';
@@ -58,8 +58,8 @@ export function getDynamicColorBase(cardType: string, cardTypeSettings: CardType
   return getCssHslColor(hue, saturation, luminance);
 }
 
-export function getDynamicColor50(cardType: string, cardTypeSettings: CardTypeSettings): string {
-  const custom = getCustomColor(cardTypeSettings, 50)
+export function getDynamicColor50(cardType: string, colourSettings: ColourSet): string {
+  const custom = getCustomColor(colourSettings, 50)
   if(custom) return custom
   const hue = getHue(cardType);
   const saturation = isGreyCard(cardType) ? '0%' : '22%';
@@ -67,8 +67,8 @@ export function getDynamicColor50(cardType: string, cardTypeSettings: CardTypeSe
   return getCssHslColor(hue, saturation, luminance);
 }
 
-export function getDynamicColor40(cardType: string, cardTypeSettings: CardTypeSettings): string {
-  const custom = getCustomColor(cardTypeSettings, 40)
+export function getDynamicColor40(cardType: string, colourSettings: ColourSet): string {
+  const custom = getCustomColor(colourSettings, 40)
   if(custom) return custom
   const hue = getHue(cardType);
   const saturation = isGreyCard(cardType) ? '0%' : '23%';
@@ -76,8 +76,8 @@ export function getDynamicColor40(cardType: string, cardTypeSettings: CardTypeSe
   return getCssHslColor(hue, saturation, luminance);
 }
 
-export function getDynamicColor30(cardType: string, cardTypeSettings: CardTypeSettings): string {
-  const custom = getCustomColor(cardTypeSettings, 30)
+export function getDynamicColor30(cardType: string, colourSettings: ColourSet): string {
+  const custom = getCustomColor(colourSettings, 30)
   if(custom) return custom
   const hue = getHue(cardType);
   const saturation = isGreyCard(cardType) ? '0%' : '22%';
@@ -85,8 +85,8 @@ export function getDynamicColor30(cardType: string, cardTypeSettings: CardTypeSe
   return getCssHslColor(hue, saturation, luminance);
 }
 
-export function getDynamicColor20(cardType: string, cardTypeSettings: CardTypeSettings): string {
-  const custom = getCustomColor(cardTypeSettings, 20)
+export function getDynamicColor20(cardType: string, colourSettings: ColourSet): string {
+  const custom = getCustomColor(colourSettings, 20)
   if(custom) return custom
   const hue = getHue(cardType);
   const saturation = isGreyCard(cardType) ? '0%' : '22%';

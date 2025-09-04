@@ -7,7 +7,7 @@ import { PopoverPicker } from "../common/popover-picker";
 export default function CardTypeColourMenu({cardType}: {cardType: string}){
   const cardTypeSettings = useAppSelector(selectCardTypeSettingsByCardType(cardType))
   const [customiseCardTypeColours, setCustomiseCardTypeColours] = useState(!!cardTypeSettings)
-  const [baseColourField, setBaseColourField] = useState(cardTypeSettings?.baseColour ?? "")
+  const [baseColourField, setBaseColourField] = useState(cardTypeSettings?.primaryColour?.baseColour ?? "")
   const dispatch = useAppDispatch()
 
   const onChangeCustomiseCardTypeColours = (e: ChangeEvent<HTMLInputElement>) => {
@@ -15,13 +15,13 @@ export default function CardTypeColourMenu({cardType}: {cardType: string}){
     if(!e.target.checked){
       dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: undefined}))
     } else {
-      dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: {baseColour: baseColourField}}))
+      dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: {primaryColour: {baseColour: baseColourField}}}))
     }
   }
 
   const onChangeBaseColour = (newColor: string) => {
     setBaseColourField(newColor)
-    dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: {baseColour: newColor}}))
+    dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: {primaryColour: {baseColour: newColor}}}))
   }
 
   return (
