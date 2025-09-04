@@ -20,7 +20,7 @@ export function PopoverPicker({ color, onChange }: {color: string, onChange: (ne
         onClick={() => toggle(true)} />
 
       {isOpen && (
-        <div className="absolute top-10 left-0 rounded-lg z-10" ref={popover}>
+        <div className="absolute top-10 left-0 rounded-lg z-40" ref={popover}>
           <HexColorPicker color={color} onChange={onChange} />
         </div>
       )}

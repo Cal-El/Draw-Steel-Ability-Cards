@@ -9,7 +9,7 @@ export default function EditCardSettingsSidebar({onClose}:
   }
 
   return (
-    <div className={`fixed inset-0 z-10 w-screen h-screen bg-black bg-opacity-50 flex justify-end print:hidden`}>
+    <div className={`fixed inset-0 z-30 w-screen h-screen bg-black bg-opacity-50 flex justify-end print:hidden`}>
       <div role={`button`} onClick={closeModal} className={`flex-grow`}/>
       <div className={`flex-none w-[50pt] flex flex-col`}>
         <div className={`h-[50pt] w-[50pt]`}></div>
