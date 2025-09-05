@@ -1,32 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: 'Consta';
-        font-weight: normal;
-        src: url('./fonts/constan.ttf');
-    }
+  @font-face {
+    font-family: 'Consta';
+    font-weight: normal;
+    src: url('./fonts/constan.ttf');
+  }
 
-    @font-face {
-        font-family: 'Consta';
-        font-weight: bold;
-        src: url('./fonts/constanb.ttf');
-    }
+  @font-face {
+    font-family: 'Consta';
+    font-weight: bold;
+    src: url('./fonts/constanb.ttf');
+  }
 
-    @font-face {
-        font-family: 'Consta';
-        font-weight: normal;
-        font-style: italic;
-        src: url('./fonts/constani.ttf');
-    }
-    @font-face {
-        font-family: 'Consta';
-        font-weight: bold;
-        font-style: italic;
-        src: url('./fonts/constanz.ttf');
-    }
+  @font-face {
+    font-family: 'Consta';
+    font-weight: normal;
+    font-style: italic;
+    src: url('./fonts/constani.ttf');
+  }
+  @font-face {
+    font-family: 'Consta';
+    font-weight: bold;
+    font-style: italic;
+    src: url('./fonts/constanz.ttf');
+  }
+  @font-face {
+    font-family: 'EB Garamond';
+    font-weight: normal;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+  }
+
+  @font-face {
+    font-family: 'EB Garamond';
+    font-weight: bold;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+  }
+
+  @font-face {
+    font-family: 'EB Garamond';
+    font-weight: normal;
+    font-style: italic;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+  }
+  @font-face {
+    font-family: 'EB Garamond';
+    font-weight: bold;
+    font-style: italic;
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+  }
+  @font-face {
+    font-family: 'DS Open Glyphs';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./fonts/DS Open Glyphs.ttf');
+  }
 }
 
 @layer utilities {

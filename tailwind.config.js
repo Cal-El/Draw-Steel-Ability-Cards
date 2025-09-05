@@ -11,6 +11,8 @@ export default {
       fontFamily: {
         'display': ['Consta'],
         'body': ['Consta'],
+        'v2Card': ['EB Garamond'],
+        'dsGlyphs': ['DS Open Glyphs'],
       },
       colors: {
         transparent: 'transparent',

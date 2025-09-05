@@ -13,6 +13,7 @@ import CardEditor from "./card-editor/card-editor.tsx";
 import {cardManifest} from "../../types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
 import {ability_card} from "../../types/ability-card-types.ts";
+import AbilityCardV2 from "../ability-card-v2/ability-card-v2.tsx";
 
 export type CloseCallbackFunction = (_: Card | undefined) => void;
 export type DeleteCallbackFunction = () => void;
@@ -134,7 +135,10 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
       </div>
       <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-sidebar-back flex flex-col items-center outline outline-4 outline-sidebar-trim border-sidebar-trim pl-[20pt] pr-[12.5pt] py-[20pt] gap-[10pt]`}>
         <div className={`w-[511.5pt] pr-[2pt] place-items-center`}>
-          <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} enlargedState={0}/>
+          {isNewCard(editCard) ?
+            <AbilityCardV2 id={`editcard`} card={asNewCard(editCard)} heroData={useBlankHeroStats || !heroStats ? new HeroData({}) : heroStats} enlargedState={0} />:
+            <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} enlargedState={0}/>
+          }
         </div>
         {isNewCard(editCard) ?
           <>
