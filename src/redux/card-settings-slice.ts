@@ -12,41 +12,34 @@ export type UpdateCardTypeSettingsPayload = {
 const initialState: CardSettings = getCardSettings()
 
 export const selectCardTypeSettingsByCardType = (action: string) => (state: {cardSettings: CardSettings}) => {
-  if(!state?.cardSettings?.cardTypeSettings) return undefined
-  return getCardTypeSettingsFromRecord(state.cardSettings.cardTypeSettings, action)
+  if(!state?.cardSettings?.colourSettings?.cardTypeColours) return undefined
+  return getCardTypeSettingsFromRecord(state.cardSettings.colourSettings.cardTypeColours, action)
 }
 
 export const cardSettingsSlice = createAppSlice({
   name: "cardSettings",
   initialState,
   reducers: create => ({
-    updateKeywordColour: create.reducer((state, action: PayloadAction<string>) => {
-      state.keywordColour = action.payload
-      saveCardSettings({
-        ...state,
-        keywordColour: action.payload
-      } as CardSettings)
-    }),
     updateCardTypeSettings: create.reducer((state, action: PayloadAction<UpdateCardTypeSettingsPayload>) => {
-      state.cardTypeSettings[action.payload.cardType.toLowerCase()] = action.payload.cardSettings ?? {}
-      saveCardSettings({
-        ...state,
-        cardTypeSettings: state.cardTypeSettings
-      })
+      if (!state.colourSettings) {
+        state.colourSettings = {cardTypeColours: {}}
+      }
+      state.colourSettings.cardTypeColours[action.payload.cardType.toLowerCase()] = action.payload.cardSettings ?? {}
+      saveCardSettings(state)
     }),
     updateBaseColours: create.reducer((state, action: PayloadAction<ColourSet>) => {
-      state.baseColours = action.payload
-      saveCardSettings({
-        ...state,
-        baseColours: action.payload
-      } as CardSettings)
+      if (!state.colourSettings){
+        state.colourSettings = { cardTypeColours: {}}
+      }
+      state.colourSettings.baseColours = action.payload
+      saveCardSettings(state)
     }),
   }),
   selectors: {
-    selectKeywordColour: state => state.keywordColour,
-    selectBaseColours: state => state.baseColours
+    selectBaseColours: state => state.colourSettings?.baseColours,
+    selectColourSettings: state => state.colourSettings ?? {cardTypeColours: {}}
   }
 })
 
-export const {updateKeywordColour, updateCardTypeSettings, updateBaseColours} = cardSettingsSlice.actions
-export const {selectKeywordColour, selectBaseColours} = cardSettingsSlice.selectors
+export const {updateCardTypeSettings, updateBaseColours} = cardSettingsSlice.actions
+export const {selectColourSettings, selectBaseColours} = cardSettingsSlice.selectors

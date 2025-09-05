@@ -1,12 +1,16 @@
 export type CardSettings = {
-  keywordColour?: string
+  colourSettings?: ColourSettings
+}
+
+export type ColourSettings = {
   baseColours?: ColourSet
-  cardTypeSettings: Record<string, ColourSet>
+  cardTypeColours: Record<string,ColourSet>
 }
 
 export type ColourSet = {
   primaryColour?: Colour
   backgroundColour?: string | Pointer
+  keywordColour?: string | Pointer
   onBackgroundTextColour?: string | Pointer
   onAttenuatedPrimaryTextColour?: string | Pointer
   onPrimaryTextColour?: string | Pointer
@@ -17,4 +21,4 @@ export type Colour = {
   opacityFalloff?: number
 }
 
-export type Pointer = 'primaryColour' | 'backgroundColour' | 'onBackgroundTextColour' | `onAttenuatedPrimaryTextColour` | `onPrimaryTextColour`;
+export type Pointer = 'primaryColour' | 'backgroundColour' | 'keywordColour' | 'onBackgroundTextColour' | `onAttenuatedPrimaryTextColour` | `onPrimaryTextColour`;

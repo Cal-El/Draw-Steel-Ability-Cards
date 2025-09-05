@@ -14,17 +14,17 @@ export function EditCardMenu({card, cardNum, updateCard}: {card: Card, cardNum: 
               {!isNewCard(card) && <div role={'button'} onClick={() => {
                     setUseTextEdit(false);
                 }} className={`basis-1/2 flex h-full rounded-[13.5pt] border-[3pt] bg-cardback items-center`}
-                    style={{borderColor: getDynamicColorBase(useTextEdit ? 'Free Strike Action': 'Maneuver', {}, {})}}>
+                    style={{borderColor: getDynamicColorBase(useTextEdit ? 'Free Strike Action': 'Maneuver', {cardTypeColours: {}})}}>
                     <div className={`w-full text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                         style={{color:getDynamicColorBase(useTextEdit?`Free Strike Action`:'Maneuver', {}, {})}}>Menu Editor</div>
+                         style={{color:getDynamicColorBase(useTextEdit?`Free Strike Action`:'Maneuver', {cardTypeColours: {}})}}>Menu Editor</div>
                 </div>
               }
                 <div role={'button'} onClick={() => {
                     setUseTextEdit(true);
                 }} className={`basis-1/2 flex h-full rounded-[13.5pt] border-[3pt] bg-cardback items-center`}
-                  style={{borderColor: getDynamicColorBase(useTextEdit ? 'Maneuver': 'Free Strike Action', {}, {})}}>
+                  style={{borderColor: getDynamicColorBase(useTextEdit ? 'Maneuver': 'Free Strike Action', {cardTypeColours: {}})}}>
                     <div className={`w-full text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                      style={{color:getDynamicColorBase(useTextEdit?'Maneuver':`Free Strike Action`, {}, {})}}>Text Editor</div>
+                      style={{color:getDynamicColorBase(useTextEdit?'Maneuver':`Free Strike Action`, {cardTypeColours: {}})}}>Text Editor</div>
                 </div>
                 <a href="https://commonmark.org/help/" target="_blank" 
                     className={`basis-1/6 flex h-full rounded-[13.5pt] border-[3pt] bg-cardback border-routine-card items-center`}

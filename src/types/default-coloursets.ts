@@ -1,17 +1,17 @@
-import { CardSettings } from "./card-settings";
+import { ColourSettings } from "./card-settings";
 
-export const defaultColours: CardSettings = {
-  keywordColour: "#b87f47",
+export const defaultColours: ColourSettings = {
   baseColours: {
     primaryColour: {
       baseColour: "#000000"
     },
     backgroundColour: "#ffffff",
+    keywordColour: "#b87f47",
     onBackgroundTextColour: "primaryColour",
     onAttenuatedPrimaryTextColour: "primaryColour",
     onPrimaryTextColour: "backgroundColour"
   },
-  cardTypeSettings: {
+  cardTypeColours: {
     "main action": { primaryColour: {baseColour: "#367F36"}},
     "maneuver": { primaryColour: {baseColour: "#365B7F"}},
     "triggered action": { primaryColour: {baseColour: "#7F3636"}},

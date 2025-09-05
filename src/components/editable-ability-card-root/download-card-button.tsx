@@ -9,9 +9,9 @@ export function DownloadCardButton({card, id}: {card: Card, id: string}) {
         <div role='button' onClick={() => {
             saveImage(card, cardId);
         }} className={`flex flex-1 h-[40pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-          style={{borderColor: getDynamicColorBase(card.type, {}, {})}}>
+          style={{borderColor: getDynamicColorBase(card.type, {cardTypeColours: {}})}}>
             <div className={`text-[16pt] text-center font-bold select-none`}
-                 style={{color:getDynamicColorBase(`Routine`, {}, {})}}>Download Card</div>
+                 style={{color:getDynamicColorBase(`Routine`, {cardTypeColours: {}})}}>Download Card</div>
         </div>
     );
 }

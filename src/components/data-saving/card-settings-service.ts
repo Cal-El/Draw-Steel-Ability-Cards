@@ -14,7 +14,9 @@ export function getCardSettings(): CardSettings {
   }
   if (!parsedSettings){
     return {
-      cardTypeSettings: {}
+      colourSettings: {
+        cardTypeColours: {}
+      }
     }
   }
   return parsedSettings satisfies CardSettings

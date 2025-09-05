@@ -3,11 +3,10 @@ import { getDynamicColorBase } from "../../../utils/color-calculator.ts";
 import {AutoTextSize} from "auto-text-size";
 import {KeywordsList} from "./keywords-list.tsx";
 import { useAppSelector } from "../../../redux/hooks.ts";
-import { selectBaseColours, selectCardTypeSettingsByCardType, } from "../../../redux/card-settings-slice.ts";
+import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
 
 export function AbilityCardHeader({card}: { card: ability_card }) {
-    const cardColourSettings = useAppSelector(selectCardTypeSettingsByCardType(card.type)) ?? {}
-    const baseColours = useAppSelector(selectBaseColours) ?? {}
+    const colourSettings = useAppSelector(selectColourSettings)
     return (
         <div className={`flex`}>
             <div className={`flex-none w-[3pt]`}></div>
@@ -17,22 +16,22 @@ export function AbilityCardHeader({card}: { card: ability_card }) {
                   {!card.topMatterFontSizeOverride ?
                     // Old Flow: Uses AutoTextSize
                     <h2 className={`text-[10pt] font-display font-bold small-caps leading-none indent-[1.8pt]`}
-                        style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours)}}><AutoTextSize maxFontSizePx={14}>{card.topMatter}</AutoTextSize></h2>
+                        style={{color:getDynamicColorBase(card.type, colourSettings)}}><AutoTextSize maxFontSizePx={14}>{card.topMatter}</AutoTextSize></h2>
                     :
                     // New Flow: Uses top matter fontsize override
                     <h2 className={`font-display font-bold small-caps leading-none indent-[1.8pt]`}
-                        style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours), fontSize: card.topMatterFontSizeOverride}}>{card.topMatter}</h2>
+                        style={{color:getDynamicColorBase(card.type, colourSettings), fontSize: card.topMatterFontSizeOverride}}>{card.topMatter}</h2>
                   }
                 </div>
                 <div className={`${card.hasCost ? 'w-[190pt]' : 'w-[219pt]'} h-[14pt]`}>
                   {!card.titleFontSizeOverride ?
                     // Old Flow: Uses AutoTextSize
                     <h1 className={`${card.hasCost ? 'w-[190pt]' : 'w-[219pt]'} text-[18pt] font-display font-bold small-caps leading-[13pt]`}
-                        style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours)}}><AutoTextSize maxFontSizePx={22}>{card.title}</AutoTextSize></h1>
+                        style={{color:getDynamicColorBase(card.type, colourSettings)}}><AutoTextSize maxFontSizePx={22}>{card.title}</AutoTextSize></h1>
                     :
                     // New Flow: Uses title fontsize override
                     <h1 className={`${card.hasCost ? 'w-[190pt]' : 'w-[219pt]'} font-display font-bold small-caps leading-[13pt]`}
-                        style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours), fontSize: card.titleFontSizeOverride}}>{card.title}</h1>
+                        style={{color:getDynamicColorBase(card.type, colourSettings), fontSize: card.titleFontSizeOverride}}>{card.title}</h1>
                   }
                 </div>
                 <KeywordsList card={card}/>
@@ -42,11 +41,11 @@ export function AbilityCardHeader({card}: { card: ability_card }) {
                     {!card.flavourFontSizeOverride ?
                       // Old Flow: Uses AutoTextSize
                       <div className={`text-[9pt] h-full font-body italic font-light leading-none`}
-                           style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours)}}><AutoTextSize mode="box" maxFontSizePx={17}>{card.flavour}</AutoTextSize></div>
+                           style={{color:getDynamicColorBase(card.type, colourSettings)}}><AutoTextSize mode="box" maxFontSizePx={17}>{card.flavour}</AutoTextSize></div>
                       :
                       // New Flow: Uses flavour fontsize override
                       <div className={`h-full font-body italic font-light leading-none`}
-                           style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours), fontSize: card.flavourFontSizeOverride}}>{card.flavour}</div>
+                           style={{color:getDynamicColorBase(card.type, colourSettings), fontSize: card.flavourFontSizeOverride}}>{card.flavour}</div>
                     }
                   </div>
                 }

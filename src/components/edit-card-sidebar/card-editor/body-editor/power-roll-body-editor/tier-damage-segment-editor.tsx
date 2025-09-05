@@ -72,7 +72,7 @@ function DamageEditor({setTier, tier, tierNum} : {setTier: SetTier, tier: power_
   return (
     <>
       <div className={`col-start-1 col-span-1 row-span-2  w-full`}
-           style={{backgroundColor:getDynamicColor40(abilityTypeValues[tierNum - 1], {}, {})}}/>
+           style={{backgroundColor:getDynamicColor40(abilityTypeValues[tierNum - 1], {cardTypeColours: {}})}}/>
       <div className={`flex justify-end items-center`}>
         <div className={`text-right w-[80pt]`}>Base damage:</div>
       </div>

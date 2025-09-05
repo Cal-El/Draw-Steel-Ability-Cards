@@ -10,11 +10,11 @@ import {
   getDynamicColor50,
   getDynamicColorBase
 } from "../../../utils/color-calculator.ts";
-import { selectBaseColours, selectCardTypeSettingsByCardType } from "../../../redux/card-settings-slice.ts";
-import { ColourSet } from "../../../types/card-settings.ts";
+import { ColourSettings } from "../../../types/card-settings.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
+import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
 
-function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNum: number, cardColourSettings: ColourSet, baseColours: ColourSet) {
+function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNum: number, colourSettings: ColourSettings) {
   const generalEffectFontsize = card.powerRollFontSizeOverride ?
     card.powerRollFontSizeOverride :
     powerRollTier.generalEffect && powerRollTier.generalEffect?.length < 81 || !powerRollTier.hasPotency && powerRollTier.generalEffect && powerRollTier.generalEffect?.length < 161 ? `6pt` : `5pt`
@@ -23,14 +23,14 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
     powerRollTier.potencyEffect && powerRollTier.potencyEffect?.length < 81 || !powerRollTier.hasGeneralEffect && powerRollTier.potencyEffect && powerRollTier.potencyEffect?.length < 161 ? `6pt` : `5pt`
   return <div className={`flex w-[100%] h-1/3`}>
         <div className={` w-[5.4pt] h-full flex justify-center`}
-             style={{backgroundColor:getDynamicColorBase(card.type, cardColourSettings, baseColours)}}>
+             style={{backgroundColor:getDynamicColorBase(card.type, colourSettings)}}>
             <div className={`[writing-mode:vertical-lr] rotate-180 text-[4pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{rowNum === 1 ? '11 or less' : rowNum === 2 ? '12-16' : '17+'}</div>
         </div>
         {powerRollTier.hasDamage ?
             <div className={`relative ${powerRollTier.damageValue !== undefined && powerRollTier.damageValue?.length > 2 ? `w-[28pt]` : `w-[22pt]`} h-full`}
-                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor50(card.type, cardColourSettings, baseColours) : getDynamicColor40(card.type, cardColourSettings, baseColours)}`}}>
+                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor50(card.type, colourSettings) : getDynamicColor40(card.type, colourSettings)}`}}>
                 <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold leading-none small-caps indent-[0.4pt]`}
-                     style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours)}}>Damage</div>
+                     style={{color:getDynamicColorBase(card.type, colourSettings)}}>Damage</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRollTier.damageValue}</div>
                 </div>
@@ -38,18 +38,18 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
         }
         {powerRollTier.hasGeneralEffect ?
             <div className={`flex-1 flex h-full`}
-                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor20(card.type, cardColourSettings, baseColours) : getDynamicColor30(card.type, cardColourSettings, baseColours)}`}}>
+                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor20(card.type, colourSettings) : getDynamicColor30(card.type, colourSettings)}`}}>
                 <div className={`h-full flex-1 flex flex-col justify-center pl-[2.3333pt] pr-[0.6667pt]`}>
                     <div className={`font-body leading-none text-left`}
-                         style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours), fontSize: generalEffectFontsize}}>{powerRollTier.generalEffect}</div>
+                         style={{color:getDynamicColorBase(card.type, colourSettings), fontSize: generalEffectFontsize}}>{powerRollTier.generalEffect}</div>
                 </div>
             </div> : <></>
         }
         {powerRollTier.hasPotency ?
             <div className={`relative w-[28pt] h-full`}
-                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor40(card.type, cardColourSettings, baseColours) : getDynamicColor50(card.type, cardColourSettings, baseColours)}`}}>
+                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor40(card.type, colourSettings) : getDynamicColor50(card.type, colourSettings)}`}}>
               <div className={`absolute top-0 left-0 text-[4.5pt] font-body font-bold leading-none small-caps indent-[0.4pt]`}
-                     style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours)}}>Potency</div>
+                     style={{color:getDynamicColorBase(card.type, colourSettings)}}>Potency</div>
                 <div className={`absolute inset-0 flex flex-col justify-center items-center w-full h-full`}>
                     <div className={`text-[12pt] font-body font-bold text-cardback leading-none small-caps text-center`}>{powerRollTier.potencyValue}</div>
                 </div>
@@ -57,16 +57,16 @@ function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNu
         }
         {powerRollTier.hasPotency ?
             <div className={`flex-1 flex h-full`}
-                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor20(card.type, cardColourSettings, baseColours) : getDynamicColor30(card.type, cardColourSettings, baseColours)}`}}>
+                 style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor20(card.type, colourSettings) : getDynamicColor30(card.type, colourSettings)}`}}>
                 <div className={`h-full flex-1 flex flex-col justify-center pl-[2.3333pt] pr-[0.6667pt]`}>
                     <div className={`font-body leading-none text-left`}
-                         style={{color:getDynamicColorBase(card.type, cardColourSettings, baseColours), fontSize: potencyEffectFontsize}}>{powerRollTier.potencyEffect}</div>
+                         style={{color:getDynamicColorBase(card.type, colourSettings), fontSize: potencyEffectFontsize}}>{powerRollTier.potencyEffect}</div>
                 </div>
             </div> : <></>
         }
         {!powerRollTier.hasGeneralEffect && !powerRollTier.hasPotency ?
           <div className={`flex-1 flex h-full`}
-               style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor20(card.type, cardColourSettings, baseColours) : getDynamicColor30(card.type, cardColourSettings, baseColours)}`}}>
+               style={{backgroundColor: `${rowNum % 2 === 1 ? getDynamicColor20(card.type, colourSettings) : getDynamicColor30(card.type, colourSettings)}`}}>
           </div> : <></>
         }
     </div>
@@ -80,22 +80,21 @@ function getCharacteristicBonusString(powerRoll: power_roll_statement) {
 }
 
 export function PowerRollStatement({card, powerRoll}: {card: ability_card, powerRoll: power_roll_statement}) {
-    const cardTypeSettings = useAppSelector(selectCardTypeSettingsByCardType(card.type)) ?? {}
-    const baseColours = useAppSelector(selectBaseColours) ?? {}
+    const colourSettings = useAppSelector(selectColourSettings)
 
     return (
         <div className={`flex-none flex flex-col h-[76pt] justify-center gap-y-[2pt]`}>
             <div className={`flex h-[8pt]`}>
                 <div className={`w-[2pt]`}></div>
                 <p className={`text-[9pt] font-body leading-none`}
-                   style={{color:getDynamicColorBase(card.type, cardTypeSettings, baseColours)}}>
+                   style={{color:getDynamicColorBase(card.type, colourSettings)}}>
                   <b>Power Roll {getCharacteristicBonusString(powerRoll)}</b>
                 </p>
             </div>
-            <div className={`flex flex-col w-full h-[66pt]`} style={{backgroundColor: getDynamicColorBase(card.type, cardTypeSettings, baseColours)}}>
-                {powerRollLine(card, powerRoll.t1, 1, cardTypeSettings, baseColours)}
-                {powerRollLine(card, powerRoll.t2, 2, cardTypeSettings, baseColours)}
-                {powerRollLine(card, powerRoll.t3, 3, cardTypeSettings, baseColours)}
+            <div className={`flex flex-col w-full h-[66pt]`} style={{backgroundColor: getDynamicColorBase(card.type, colourSettings)}}>
+                {powerRollLine(card, powerRoll.t1, 1, colourSettings)}
+                {powerRollLine(card, powerRoll.t2, 2, colourSettings)}
+                {powerRollLine(card, powerRoll.t3, 3, colourSettings)}
             </div>
         </div>
     )

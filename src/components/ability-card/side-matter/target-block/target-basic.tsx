@@ -1,8 +1,8 @@
 import { ability_card } from "../../../../types/ability-card-types";
-import { ColourSet } from "../../../../types/card-settings";
+import { ColourSettings } from "../../../../types/card-settings";
 import TargetBox from "./target-box";
 
-export default function TargetBasic({card, bgColorGetter, text, fontSize, leading}: {card: ability_card, bgColorGetter: (t: string, s: ColourSet, b: ColourSet) => string, text: string, fontSize: number, leading: number}){
+export default function TargetBasic({card, bgColorGetter, text, fontSize, leading}: {card: ability_card, bgColorGetter: (t: string,s: ColourSettings) => string, text: string, fontSize: number, leading: number}){
     return (
         <TargetBox card={card} bgColorGetter={bgColorGetter}>
             <div className={`flex flex-col justify-center items-center w-full h-full pt-[2pt]`}>
