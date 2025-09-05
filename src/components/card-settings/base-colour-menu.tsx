@@ -5,7 +5,7 @@ import { PopoverPicker } from "../common/popover-picker";
 import { SectionSeparator } from "../edit-card-sidebar/card-editor/common-editor-elements";
 import { ColourSet } from "../../types/card-settings";
 
-export default function KeywordColourMenu(){
+export default function BaseColourMenu(){
   const keywordColour = useAppSelector(selectKeywordColour)
   const baseColours = useAppSelector(selectBaseColours)
   const [customiseKeywordColour, setCustomiseKeywordColour] = useState(!!keywordColour)
@@ -31,12 +31,12 @@ export default function KeywordColourMenu(){
   const onChangeCustomiseBackgroundColour = (e: ChangeEvent<HTMLInputElement>) => {
     setCustomiseBackgroundColour(e.target.checked)
     if(!e.target.checked){
-      dispatch(updateBaseColours(customBaseColours))
-    } else {
       dispatch(updateBaseColours({
         ...baseColours,
         backgroundColour: ""
       }))
+    } else {
+      dispatch(updateBaseColours(customBaseColours))
     }
   }
 

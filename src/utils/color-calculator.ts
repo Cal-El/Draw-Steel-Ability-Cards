@@ -1,97 +1,67 @@
 import chroma from 'chroma-js'
 import { ColourSet } from '../types/card-settings'
+import { defaultColours } from '../types/default-coloursets'
 
-export const BaseSaturation = 40
-export const MutedSaturation = 22
-export const BaseLightness = 35
-export const LightnessIncreaseStep = 6.5
+function getCardTypeDefaultColourSettings(cardType: string): ColourSet{
+  return getCardTypeSettingsFromRecord(defaultColours.cardTypeSettings, cardType)
+}
 
-function getHue(cardType: string): number {
-  switch (cardType.toLowerCase()) {
-    case 'main action':
-      return 120;
-    case 'maneuver':
-      return 210;
-    case 'triggered action':
-      return 0;
-    case 'free triggered action':
-      return 300;
-    case 'free maneuver':
-      return 150;
-    case 'routine':
-    case 'no action':
-      return 240;
-    case 'passive':
-      return 270;
-    case 'free strike action':
-      return 0;
-    case 'treasure':
-      return 0;
-    case 'move action':
-      return 30;
-    default:
-      return 120;
+export function getCardTypeSettingsFromRecord(cardTypeSettings: Record<string, ColourSet>, cardType: string): ColourSet{
+  let c = cardType.toLowerCase()
+  if (c === 'action') c = 'main action'
+  if (c === 'passive') c = 'trait'
+  if (c === 'free strike action') c = 'free strike'
+  if (c === 'routine') c = 'no action'
+  return cardTypeSettings[c]
+}
+
+// function handlePointer(colour: string, colourSettings: ColourSet, baseColourSettings: ColourSet, defaultColourSettings: ColourSet){
+
+// }
+
+function getColour(key: keyof ColourSet, cardType: string, colourSettings: ColourSet, baseColourSettings: ColourSet): string{
+  if (key === 'primaryColour'){
+    if(colourSettings[key]?.baseColour) return colourSettings[key].baseColour
+    const defaultColourSettings = getCardTypeDefaultColourSettings(cardType)
+    if(defaultColourSettings && defaultColourSettings[key]?.baseColour) return defaultColourSettings[key].baseColour
+    if(baseColourSettings[key]?.baseColour) return baseColourSettings[key].baseColour
+    return defaultColours.baseColours?.primaryColour?.baseColour ?? ""
   }
+  if(colourSettings[key]) return colourSettings[key]
+  const defaultColourSettings = getCardTypeDefaultColourSettings(cardType)
+  if(defaultColourSettings[key]) return defaultColourSettings[key]
+  if(baseColourSettings[key]) return baseColourSettings[key]
+  if(defaultColours.baseColours && defaultColours.baseColours[key]) return defaultColours.baseColours[key]
+  return ""
 }
 
-function getCssHslColor(hue: number, saturation: string, lightness: string): string {
-  return `hsl(${hue} ${saturation} ${lightness})`;
-}
-
-function isGreyCard(cardType: string): boolean {
-  const t = cardType.toLowerCase();
-  return t === 'free strike action' || t === 'treasure';
-}
-
-function getCustomColor(colourSettings: ColourSet, baseColourSettings: ColourSet, gradientValue: number): string | undefined {
-  if (!colourSettings?.primaryColour?.baseColour) return undefined
-  const gradient = chroma.scale([getBackgroundColor(baseColourSettings), colourSettings.primaryColour.baseColour])
+function getCustomColour(primaryColour: string, secondaryColour: string, gradientValue: number){
+  const gradient = chroma.scale([secondaryColour, primaryColour])
   return gradient(gradientValue/100).toString()
 }
 
+function getCustomPrimaryColor(cardType: string, colourSettings: ColourSet, baseColourSettings: ColourSet, gradientValue: number): string {
+  return getCustomColour(getColour('primaryColour', cardType, colourSettings, baseColourSettings), getBackgroundColor(baseColourSettings), gradientValue)
+}
+
 export function getDynamicColorBase(cardType: string, colourSettings: ColourSet, baseColourSettings: ColourSet): string {
-  const custom = getCustomColor(colourSettings, baseColourSettings, 100)
-  if(custom) return custom
-  const hue = getHue(cardType);
-  const saturation = isGreyCard(cardType) ? '0%' : '40%';
-  const luminance = cardType.toLowerCase() === 'treasure' ? '20%' : '35%';
-  return getCssHslColor(hue, saturation, luminance);
+  return getCustomPrimaryColor(cardType, colourSettings, baseColourSettings, 100)
 }
 
 export function getDynamicColor50(cardType: string, colourSettings: ColourSet, baseColourSettings: ColourSet): string {
-  const custom = getCustomColor(colourSettings, baseColourSettings, 50)
-  if(custom) return custom
-  const hue = getHue(cardType);
-  const saturation = isGreyCard(cardType) ? '0%' : '22%';
-  const luminance = cardType.toLowerCase() === 'treasure' ? '60%' : '67%';
-  return getCssHslColor(hue, saturation, luminance);
+  return getCustomPrimaryColor(cardType, colourSettings, baseColourSettings, 50)
 }
 
 export function getDynamicColor40(cardType: string, colourSettings: ColourSet, baseColourSettings: ColourSet): string {
-  const custom = getCustomColor(colourSettings, baseColourSettings, 40)
-  if(custom) return custom
-  const hue = getHue(cardType);
-  const saturation = isGreyCard(cardType) ? '0%' : '23%';
-  const luminance = cardType.toLowerCase() === 'treasure' ? '68%' : '74%';
-  return getCssHslColor(hue, saturation, luminance);
+  return getCustomPrimaryColor(cardType, colourSettings, baseColourSettings, 40)
 }
 
 export function getDynamicColor30(cardType: string, colourSettings: ColourSet, baseColourSettings: ColourSet): string {
-  const custom = getCustomColor(colourSettings, baseColourSettings, 30)
-  if(custom) return custom
-  const hue = getHue(cardType);
-  const saturation = isGreyCard(cardType) ? '0%' : '22%';
-  const luminance = cardType.toLowerCase() === 'treasure' ? '76%' : '80%';
-  return getCssHslColor(hue, saturation, luminance);
+  return getCustomPrimaryColor(cardType, colourSettings, baseColourSettings, 30)
 }
 
 export function getDynamicColor20(cardType: string, colourSettings: ColourSet, baseColourSettings: ColourSet): string {
-  const custom = getCustomColor(colourSettings, baseColourSettings, 20)
-  if(custom) return custom
-  const hue = getHue(cardType);
-  const saturation = isGreyCard(cardType) ? '0%' : '22%';
-  const luminance = cardType.toLowerCase() === 'treasure' ? '84%' : '87%';
-  return getCssHslColor(hue, saturation, luminance);
+  return getCustomPrimaryColor(cardType, colourSettings, baseColourSettings, 20)
 }
 
 export function getKeywordColor(customColour?: string): string {

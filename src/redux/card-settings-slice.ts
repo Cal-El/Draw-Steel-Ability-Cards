@@ -2,6 +2,7 @@ import { PayloadAction } from "@reduxjs/toolkit";
 import { createAppSlice } from "./create-app-slice";
 import { getCardSettings, saveCardSettings } from "../components/data-saving/card-settings-service";
 import { CardSettings, ColourSet } from "../types/card-settings";
+import { getCardTypeSettingsFromRecord } from "../utils/color-calculator";
 
 export type UpdateCardTypeSettingsPayload = {
   cardType: string
@@ -12,11 +13,7 @@ const initialState: CardSettings = getCardSettings()
 
 export const selectCardTypeSettingsByCardType = (action: string) => (state: {cardSettings: CardSettings}) => {
   if(!state?.cardSettings?.cardTypeSettings) return undefined
-  let cardType = action.toLowerCase()
-  if (cardType === 'action') cardType = 'main action'
-  if (cardType === 'passive') cardType = 'trait'
-  if (cardType === 'free strike action') cardType = 'free strike'
-  return state.cardSettings.cardTypeSettings[cardType]
+  return getCardTypeSettingsFromRecord(state.cardSettings.cardTypeSettings, action)
 }
 
 export const cardSettingsSlice = createAppSlice({
