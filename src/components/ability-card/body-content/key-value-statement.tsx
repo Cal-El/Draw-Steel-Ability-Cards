@@ -7,18 +7,21 @@ import {
 import {AutoTextSize} from "auto-text-size";
 
 export function KeyValueStatement({card, kv}: {card: ability_card, kv: key_value_statement}) {
+  const key = kv.key ?? ''
+  const useBacking = key === 'Trigger' || key.startsWith('#')
+
     return (
-        <div className={`flex-auto flex ${kv.key === "Trigger" && `py-[3pt]`} w-full`}
-             style={kv.key === "Trigger" ? {backgroundColor: getDynamicColor20(card.type)} : {}}>
+        <div className={`flex-auto flex ${useBacking && `py-[3pt]`} w-full`}
+             style={useBacking ? {backgroundColor: getDynamicColor20(card.type)} : {}}>
           <div className={`w-[2pt] flex-none`}></div>
           {!card.bodyFontSizeOverride ?
             // Old Flow: Uses AutoTextSize
             <p key={'autosized'} className={`max-w-[217pt] text-[9pt] font-body leading-none whitespace-pre-line`}
-               style={{color:getDynamicColorBase(card.type)}}><AutoTextSize minFontSizePx={4} maxFontSizePx={18} mode="box"><Markdown>{(kv.key?.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></AutoTextSize></p>
+               style={{color:getDynamicColorBase(card.type)}}><AutoTextSize minFontSizePx={4} maxFontSizePx={18} mode="box"><Markdown>{(key?.length > 0 ? "**" + key.replace('#', '') + "**: " : "") + kv.value}</Markdown></AutoTextSize></p>
             :
             // New Flow: Uses body fontsize override
             <p key={'override'} className={`max-w-[217pt] font-body leading-none whitespace-pre-line`}
-               style={{color:getDynamicColorBase(card.type), fontSize: card.bodyFontSizeOverride}}><Markdown>{(kv.key?.length > 0 ? "**" + kv.key + "**: " : "") + kv.value}</Markdown></p>
+               style={{color:getDynamicColorBase(card.type), fontSize: card.bodyFontSizeOverride}}><Markdown>{(key?.length > 0 ? "**" + key.replace('#', '') + "**: " : "") + kv.value}</Markdown></p>
           }
         </div>
     )

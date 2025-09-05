@@ -9,6 +9,15 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-09-05T12:58:00Z"),
+    type: 'Fix',
+    version: 'v1.0.2b',
+    changes: `
+- Fix saving of 'replace kit value' in the bonuses system.
+- Add capability to add a backing to any effect block that starts with '#' in the same way that 'Trigger' does.
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-04T02:54:00Z"),
     type: 'Fix',
     version: 'v1.0.2a',

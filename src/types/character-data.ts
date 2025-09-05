@@ -167,6 +167,7 @@ export class DistanceBonus extends Bonus {
     return {
       keywordMatcher: this.keywordMatcher,
       type: this.type,
+      replaceKitValue: this.replaceKitValue,
       distanceType: this.distanceType,
       value: this.value
     }
@@ -215,6 +216,7 @@ export class DamageBonus extends Bonus {
     return {
       keywordMatcher: this.keywordMatcher,
       type: this.type,
+      replaceKitValue: this.replaceKitValue,
       rolledDamageBonus: this.rolledDamageBonus,
     }
   }
