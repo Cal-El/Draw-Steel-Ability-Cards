@@ -30,25 +30,25 @@
     src: url('./fonts/constanz.ttf');
   }
   @font-face {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garam';
     font-weight: normal;
     src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
   }
 
   @font-face {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garam';
     font-weight: bold;
     src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
   }
 
   @font-face {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garam';
     font-weight: normal;
     font-style: italic;
     src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
   }
   @font-face {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garam';
     font-weight: bold;
     font-style: italic;
     src: url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');

@@ -38,7 +38,7 @@ function DistanceLine({card, heroData} : { card: ability_card, heroData: HeroDat
             const vCloseSplit = v.split(']');
             if (i-1 < card.header.distance.values.length) {
               return <>
-                <div key={`${i}`} style={{backgroundColor: getDynamicColor30(card.type), color: 'white', borderColor: getDynamicColorBase(card.type)}} className={`min-w-[15pt] h-[10pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[8.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none indent-[-1pt]`}>
+                <div key={`${i}`} style={{backgroundColor: getDynamicColor30(card.type), color: 'white', borderColor: getDynamicColorBase(card.type)}} className={`min-w-[15pt] h-[10pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[8.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none`}>
                   <div className={`h-[8.6pt]`}>
                     {getDisplayedDistanceValue(card, heroData, card.header.distance.values[i - 1])}
                   </div>
@@ -69,12 +69,12 @@ function UpperHeader({card} : { card: ability_card }) {
       </div>
     </div>
     <div id={`header-title-and-flavour`}>
-      <div style={{color: getDynamicColorBase(card.type), fontSize: card.v2FontSizePtOverrides?.titleFont || '13.5pt', fontWeight: 'bold', lineHeight: '11pt'}}>{card.header.title}</div>
+      <div style={{color: getDynamicColorBase(card.type), fontVariantCaps: 'small-caps', fontSize: card.v2FontSizePtOverrides?.titleFont || '13pt', fontWeight: 'bold', lineHeight: '10.5pt'}}>{card.header.title}</div>
       {card.header.flavour ? <>
         <div style={{color: getDynamicColorBase(card.type), paddingTop: '0pt', paddingBottom: '1pt', fontSize: card.v2FontSizePtOverrides?.flavour || '8pt', fontWeight: 'normal', fontStyle: 'italic', lineHeight: '7.5pt', lineClamp: 2, textIndent: '3pt'}}>{card.header.flavour}</div>
         <HeaderDivider card={card} className={'h-[3pt] mb-[1.5pt] w-full flex justify-left items-center'}/>
       </> : <>
-        <HeaderDivider card={card} className={'pl-[3pt] mt-[1.5pt] mb-[1.5pt] h-[3pt] w-full flex justify-left items-center'}/>
+        <HeaderDivider card={card} className={'pl-[3pt] mt-[2.5pt] mb-[1.5pt] h-[3pt] w-full flex justify-left items-center'}/>
       </>}
     </div>
   </div>
@@ -84,7 +84,7 @@ function LowerHeader({card, heroData} : { card: ability_card, heroData: HeroData
   return <div className={``}>
     <div id={`keywords`} className={`pl-[13pt] flex gap-[2pt]`}>
       {card.header.keywords.map(k => {
-        return <div key={k} className={`min-w-[25pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[7pt] text-gray-600 text-center font-bold leading-none pb-[1pt]`}>
+        return <div key={k} className={`min-w-[25pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[7pt] text-gray-600 text-center font-bold leading-none py-[0.5pt]`}>
           {k}
         </div>
       })}

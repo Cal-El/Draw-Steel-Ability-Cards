@@ -11,7 +11,7 @@ export default {
       fontFamily: {
         'display': ['Consta'],
         'body': ['Consta'],
-        'v2Card': ['EB Garamond'],
+        'v2Card': ['EB Garam'],
         'dsGlyphs': ['DS Open Glyphs'],
       },
       colors: {
