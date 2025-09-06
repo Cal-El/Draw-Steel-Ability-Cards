@@ -1,4 +1,3 @@
-import {ability_card} from "../../types/ability-card-types.ts";
 import React from "react";
 import AbilityCard from "./ability-card.tsx";
 import {asNewCard, asOldCard, Card, getCardTitle, isNewCard} from "../../types/card-list.ts";

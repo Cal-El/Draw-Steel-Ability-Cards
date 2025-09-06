@@ -37,7 +37,7 @@ function getColour(key: keyof ColourSet, cardType: string, colourSettings: Colou
   return ""
 }
 
-function getCustomColour(primaryColour: string, secondaryColour: string, gradientValue: number){
+export function getCustomColour(primaryColour: string, secondaryColour: string, gradientValue: number){
   const gradient = chroma.scale([secondaryColour, primaryColour])
   return gradient(gradientValue/100).toString()
 }

@@ -1,9 +1,17 @@
 import {ability_card, distance_value, effect} from "../../types/ability-card.ts";
 import AbilityCardback, {HeaderDivider} from "./ability-cardback.tsx";
-import {getDynamicColor20, getDynamicColor30, getDynamicColorBase} from "../../types/ability-card-types.ts";
 import {DistanceBonus, HeroData} from "../../types/character-data.ts";
-import {TbRuler, TbTargetArrow} from "react-icons/tb";
 import Markdown from "react-markdown";
+import {
+  getBackgroundColor,
+  getCustomColour,
+  getDynamicColor20,
+  getDynamicColor30,
+  getDynamicColorBase,
+  getKeywordColor
+} from "../../utils/color-calculator.ts";
+import {useAppSelector} from "../../redux/hooks.ts";
+import {selectColourSettings} from "../../redux/card-settings-slice.ts";
 
 function getDisplayedDistanceValue(card: ability_card, heroData: HeroData, val: distance_value) : number {
   let shouldRemoveIncludedKitVal = false;
@@ -29,8 +37,10 @@ function getDisplayedDistanceValue(card: ability_card, heroData: HeroData, val: 
 }
 
 function DistanceLine({card, heroData} : { card: ability_card, heroData: HeroData }) {
+  const colourSettings = useAppSelector(selectColourSettings);
+
   return <>
-    {card.header.distance.display && <div style={{color: getDynamicColorBase(card.type), fontWeight: 'bold', lineHeight: '8.5pt', fontSize: '8.5pt'}} className={`w-full text-left flex justify-start items-center`}>
+    {card.header.distance.display && <div style={{color: getDynamicColorBase(card.type, colourSettings), fontWeight: 'bold', lineHeight: '8.5pt', fontSize: '8.5pt'}} className={`w-full text-left flex justify-start items-center`}>
       <span className={`font-dsGlyphs font-normal leading-none text-[11pt]`}>D</span>
       <div className={`w-full text-left flex justify-start items-center gap-[2pt]`}>
         {card.header.distance.display.split(`[`).map((v, i) => {
@@ -38,7 +48,7 @@ function DistanceLine({card, heroData} : { card: ability_card, heroData: HeroDat
             const vCloseSplit = v.split(']');
             if (i-1 < card.header.distance.values.length) {
               return <>
-                <div key={`${i}`} style={{backgroundColor: getDynamicColor30(card.type), color: 'white', borderColor: getDynamicColorBase(card.type)}} className={`min-w-[15pt] h-[10pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[8.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none`}>
+                <div key={`${i}`} style={{backgroundColor: getDynamicColor30(card.type, colourSettings), color: 'white', borderColor: getDynamicColorBase(card.type, colourSettings)}} className={`min-w-[15pt] h-[10pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[8.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none`}>
                   <div className={`h-[8.6pt]`}>
                     {getDisplayedDistanceValue(card, heroData, card.header.distance.values[i - 1])}
                   </div>
@@ -55,23 +65,27 @@ function DistanceLine({card, heroData} : { card: ability_card, heroData: HeroDat
 }
 
 function TopMatter({card} : { card: ability_card }) {
+  const colourSettings = useAppSelector(selectColourSettings);
+
   return <div id={'top-text'} className={`w-full h-[11pt] flex justify-between pl-[13pt] pt-[0pt] pr-[8pt]`}>
-    <div style={{color: getDynamicColorBase(card.type), fontSize: '7.5pt', fontWeight: 700}}>{card.header.topMatter}</div>
-    <div style={{color: getDynamicColorBase(card.type), fontSize: '7.5pt', fontWeight: 700}}>{card.type}</div>
+    <div style={{color: getDynamicColorBase(card.type, colourSettings), fontSize: '7.5pt', fontWeight: 700}}>{card.header.topMatter}</div>
+    <div style={{color: getDynamicColorBase(card.type, colourSettings), fontSize: '7.5pt', fontWeight: 700}}>{card.type}</div>
   </div>
 }
 
 function UpperHeader({card} : { card: ability_card }) {
+  const colourSettings = useAppSelector(selectColourSettings);
+
   return <div id={'header'} className={`w-full h-min flex pl-[1pt] pr-[7pt]`}>
     <div id={`cost`} className={`w-[12pt] h-0 flex-none overflow-visible`}>
       <div className={`w-[12pt] h-[28pt] flex justify-center items-center`}>
-        <div style={{color: getDynamicColorBase(card.type), letterSpacing: '-2pt', textIndent: '-2pt', fontSize: '10pt', fontWeight: 'bold', textAlign: 'center', lineHeight: '9pt', fontVariantNumeric: 'lining-nums'}}>{card.cost?.costValue}</div>
+        <div style={{color: getDynamicColorBase(card.type, colourSettings), letterSpacing: '-2pt', textIndent: '-2pt', fontSize: '10pt', fontWeight: 'bold', textAlign: 'center', lineHeight: '9pt', fontVariantNumeric: 'lining-nums'}}>{card.cost?.costValue}</div>
       </div>
     </div>
     <div id={`header-title-and-flavour`}>
-      <div style={{color: getDynamicColorBase(card.type), fontVariantCaps: 'small-caps', fontSize: card.v2FontSizePtOverrides?.titleFont || '13pt', fontWeight: 'bold', lineHeight: '10.5pt'}}>{card.header.title}</div>
+      <div style={{color: getDynamicColorBase(card.type, colourSettings), fontVariantCaps: 'small-caps', fontSize: card.v2FontSizePtOverrides?.titleFont || '13pt', fontWeight: 'bold', lineHeight: '10.5pt'}}>{card.header.title}</div>
       {card.header.flavour ? <>
-        <div style={{color: getDynamicColorBase(card.type), paddingTop: '0pt', paddingBottom: '1pt', fontSize: card.v2FontSizePtOverrides?.flavour || '8pt', fontWeight: 'normal', fontStyle: 'italic', lineHeight: '7.5pt', lineClamp: 2, textIndent: '3pt'}}>{card.header.flavour}</div>
+        <div style={{color: getDynamicColorBase(card.type, colourSettings), paddingTop: '0pt', paddingBottom: '1pt', fontSize: card.v2FontSizePtOverrides?.flavour || '8pt', fontWeight: 'normal', fontStyle: 'italic', lineHeight: '7.5pt', lineClamp: 2, textIndent: '3pt'}}>{card.header.flavour}</div>
         <HeaderDivider card={card} className={'h-[3pt] mb-[1.5pt] w-full flex justify-left items-center'}/>
       </> : <>
         <HeaderDivider card={card} className={'pl-[3pt] mt-[2.5pt] mb-[1.5pt] h-[3pt] w-full flex justify-left items-center'}/>
@@ -81,17 +95,22 @@ function UpperHeader({card} : { card: ability_card }) {
 }
 
 function LowerHeader({card, heroData} : { card: ability_card, heroData: HeroData }) {
+  const colourSettings = useAppSelector(selectColourSettings);
+
   return <div className={``}>
     <div id={`keywords`} className={`pl-[13pt] flex gap-[2pt]`}>
       {card.header.keywords.map(k => {
-        return <div key={k} className={`min-w-[25pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[7pt] text-gray-600 text-center font-bold leading-none py-[0.5pt]`}>
+        return <div key={k}
+                    style={{borderColor: getKeywordColor(card.type, colourSettings), backgroundColor: getCustomColour(getKeywordColor(card.type, colourSettings), getBackgroundColor(card.type, colourSettings), 20)}}
+                    className={`min-w-[25pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[7pt] text-gray-600 text-center font-bold leading-none py-[0.5pt]`}
+        >
           {k}
         </div>
       })}
     </div>
     {(card.header.distance.display || card.header.distance.display) && <div id={'target-and-distance'} className={`pl-[13pt] pr-[7pt] w-full flex justify-between mt-[1pt] mb-[2pt]`}>
       <DistanceLine card={card} heroData={heroData} />
-      {card.header.target && <div style={{color: getDynamicColorBase(card.type), fontWeight: 'bold', lineHeight: '8.5pt', fontSize: '8.5pt'}} className={`w-full text-right flex justify-end items-center`}>
+      {card.header.target && <div style={{color: getDynamicColorBase(card.type, colourSettings), fontWeight: 'bold', lineHeight: '8.5pt', fontSize: '8.5pt'}} className={`w-full text-right flex justify-end items-center`}>
         <span className={`font-dsGlyphs font-normal leading-none text-[11pt]`}>T</span>{card.header.target}
       </div>}
     </div>}
@@ -99,6 +118,8 @@ function LowerHeader({card, heroData} : { card: ability_card, heroData: HeroData
 }
 
 function Body({card, heroData} : { card: ability_card, heroData: HeroData }) {
+  const colourSettings = useAppSelector(selectColourSettings);
+
   return <div className={`w-full pl-[10.5pt] pr-[2pt]`}>
     {card.body.filter(b => (b as effect).isEffect)
       .map(b => b as effect)
@@ -108,8 +129,8 @@ function Body({card, heroData} : { card: ability_card, heroData: HeroData }) {
 
         return <div>
           <div style={{
-            backgroundColor: useBacking ? getDynamicColor20(card.type) : 'transparent',
-            color: getDynamicColorBase(card.type),
+            backgroundColor: useBacking ? getDynamicColor20(card.type, colourSettings) : 'transparent',
+            color: getDynamicColorBase(card.type, colourSettings),
             fontWeight: 'normal',
             lineHeight: card.v2FontSizePtOverrides?.body ?? '8pt',
             fontSize: card.v2FontSizePtOverrides?.body ?? '8pt',
