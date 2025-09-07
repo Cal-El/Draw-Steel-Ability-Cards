@@ -1,7 +1,7 @@
 import {DragEvent, useState} from 'react'
 import './App.css'
 import {ability_card} from "./types/ability-card-types.ts";
-import { getDynamicColorBase } from "./utils/color-calculator.ts";
+import { ColorCalculator } from "./utils/color-calculator.ts";
 import {ability_card as new_ability_card} from "./types/ability-card.ts";
 import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
@@ -26,6 +26,7 @@ import TopMenu from './components/top-menu.tsx';
 import ChangelogModal from "./components/changelog-modal.tsx";
 import EditHeroDataSidebar from './components/hero-data/edit-hero-data-sidebar.tsx';
 import EditCardSettingsSidebar from './components/card-settings/edit-card-settings-sidebar.tsx';
+import {defaultColours} from "./types/default-coloursets.ts";
 
 function App() {
   const dummyCard: new_ability_card = {
@@ -204,9 +205,9 @@ function App() {
         <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center visible print:invisible print:h-0 print:p-0`}>
             <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
             <button onClick={() => setHowToModal(true)} className={`h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback`}
-              style={{borderColor: getDynamicColorBase(`Triggered Action`, {cardTypeColours: {}})}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`Triggered Action`, {cardTypeColours: {}}, defaultColours)}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:getDynamicColorBase(`Triggered Action`, {cardTypeColours: {}})}}>About</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`Triggered Action`, {cardTypeColours: {}}, defaultColours)}}>About</div>
             </button>
             <div className={`grow flex justify-end z-20`}>
                 <Select
@@ -223,17 +224,17 @@ function App() {
                     updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, parsedCard]});
                 }
             }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-              style={{borderColor: getDynamicColorBase(`Maneuver`, {cardTypeColours: {}})}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:getDynamicColorBase(`Maneuver`, {cardTypeColours: {}})}}>Add Card</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>Add Card</div>
             </button>
             {includeAllCardsButton &&
                 <button onClick={() => {
                     allCards()
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-                style={{borderColor: getDynamicColorBase(`Maneuver`, {cardTypeColours: {}})}}>
+                style={{borderColor: ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                         style={{color:getDynamicColorBase(`Maneuver`, {cardTypeColours: {}})}}>Add All Cards</div>
+                         style={{color:ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>Add All Cards</div>
                 </button>
             }
             <button onClick={(e) => {
@@ -247,9 +248,9 @@ function App() {
                 })
               }
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-              style={{borderColor: getDynamicColorBase(`Action`, {cardTypeColours: {}})}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`Action`, {cardTypeColours: {}})}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:getDynamicColorBase(`Action`, {cardTypeColours: {}})}}>Add New Blank Card</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`Action`, {cardTypeColours: {}})}}>Add New Blank Card</div>
             </button>
         </nav>
         <div className='flex flex-auto w-full print:m-0 print:p-0'>

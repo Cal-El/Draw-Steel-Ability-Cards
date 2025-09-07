@@ -3,11 +3,13 @@ import { selectCardTypeSettingsByCardType, updateCardTypeSettings } from "../../
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { SectionSeparator } from "../edit-card-sidebar/card-editor/common-editor-elements";
 import { PopoverPicker } from "../common/popover-picker";
+import {getCardTypeDefaultColourSettings} from "../../utils/color-calculator.ts";
 
 export default function CardTypeColourMenu({cardType}: {cardType: string}){
   const cardTypeSettings = useAppSelector(selectCardTypeSettingsByCardType(cardType))
+  const defaultTypeSettings = getCardTypeDefaultColourSettings(cardType);
   const [customiseCardTypeColours, setCustomiseCardTypeColours] = useState(Object.values(cardTypeSettings ?? {}).some(x => !!x))
-  const [baseColourField, setBaseColourField] = useState(cardTypeSettings?.primaryColour?.baseColour ?? "")
+  const [baseColourField, setBaseColourField] = useState(cardTypeSettings?.primaryColour?.baseColour ?? defaultTypeSettings?.primaryColour?.baseColour ?? '#000000')
   const dispatch = useAppDispatch()
 
   const onChangeCustomiseCardTypeColours = (e: ChangeEvent<HTMLInputElement>) => {

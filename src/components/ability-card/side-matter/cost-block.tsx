@@ -1,7 +1,7 @@
 import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 import {ability_card} from "../../../types/ability-card-types.ts";
-import { getDynamicColorBase } from "../../../utils/color-calculator.ts";
+import { getDynamicColorBase } from "./../utils/color-calculator.ts";
 
 export function CostBlock({card}: {card: ability_card}) {
     const colourSettings = useAppSelector(selectColourSettings)

@@ -1,5 +1,5 @@
 import {ability_card} from "../../../types/ability-card-types.ts";
-import { getDynamicColorBase } from "../../../utils/color-calculator.ts";
+import { getDynamicColorBase } from "./../utils/color-calculator.ts";
 import {AutoTextSize} from "auto-text-size";
 import {KeywordsList} from "./keywords-list.tsx";
 import { useAppSelector } from "../../../redux/hooks.ts";

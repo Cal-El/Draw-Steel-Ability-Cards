@@ -2,7 +2,7 @@ import { selectColourSettings } from "../../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../../redux/hooks.ts";
 import {ability_card} from "../../../../types/ability-card-types.ts";
 import { ColourSettings } from "../../../../types/card-settings.ts";
-import { getDynamicColorBase } from "../../../../utils/color-calculator.ts";
+import { getDynamicColorBase } from "./../../utils/color-calculator.ts";
 
 export default function TargetBox({card, bgColorGetter, children}: {card: ability_card, bgColorGetter: (t: string, s: ColourSettings) => string, children?: JSX.Element | JSX.Element[]}){
     const colourSettings = useAppSelector(selectColourSettings)

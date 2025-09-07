@@ -1,4 +1,3 @@
-import { getDynamicColor40 } from "../../../../../utils/color-calculator.ts";
 import {
   abilityTypeValues,
   characteristic, damage,
@@ -7,6 +6,7 @@ import {
 import {EditCharacteristicInput, EditTextInput} from "../../common-editor-elements.tsx";
 import {SegmentProps, SetTier} from "./power-roll-tier-body-editor.tsx";
 import {useState} from "react";
+import {getPrimaryColor} from "../../../../ability-card-v2/utils/color-calculator.ts";
 
 type DamageDisplayModel = {
   baseValue: string;
@@ -72,7 +72,7 @@ function DamageEditor({setTier, tier, tierNum} : {setTier: SetTier, tier: power_
   return (
     <>
       <div className={`col-start-1 col-span-1 row-span-2  w-full`}
-           style={{backgroundColor:getDynamicColor40(abilityTypeValues[tierNum - 1], {cardTypeColours: {}})}}/>
+           style={{backgroundColor:getPrimaryColor(abilityTypeValues[tierNum - 1], {cardTypeColours: {}}, 40)}}/>
       <div className={`flex justify-end items-center`}>
         <div className={`text-right w-[80pt]`}>Base damage:</div>
       </div>

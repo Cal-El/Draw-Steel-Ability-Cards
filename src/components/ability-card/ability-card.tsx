@@ -1,7 +1,7 @@
 import {
     ability_card,
 } from "../../types/ability-card-types.ts";
-import { getBackgroundColor, getDynamicColorBase } from "../../utils/color-calculator.ts";
+import { getBackgroundColor, getDynamicColorBase } from "./utils/color-calculator.ts";
 import {AbilityCardHeader} from "./header-content/ability-card-header.tsx";
 import {AbilityCardBody} from "./body-content/ability-card-body.tsx";
 import {AbilityCardSideMatter} from "./side-matter/ability-card-side-matter.tsx";

@@ -1,9 +1,9 @@
 import {useState} from "react";
-import { getDynamicColorBase } from "../../../utils/color-calculator.ts";
 import {TextEditor} from "./text-editor.tsx";
 import {UIEditor} from "./ui-editor.tsx";
 import { Tooltip } from "react-tooltip";
 import {asOldCard, Card, isNewCard} from "../../../types/card-list.ts";
+import {getPrimaryColor} from "../../ability-card/utils/color-calculator.ts";
 
 export function EditCardMenu({card, cardNum, updateCard}: {card: Card, cardNum: number, updateCard: (index: number, card: Card) => void}) {
     const [useTextEdit, setUseTextEdit] = useState(isNewCard(card));
@@ -14,17 +14,17 @@ export function EditCardMenu({card, cardNum, updateCard}: {card: Card, cardNum: 
               {!isNewCard(card) && <div role={'button'} onClick={() => {
                     setUseTextEdit(false);
                 }} className={`basis-1/2 flex h-full rounded-[13.5pt] border-[3pt] bg-cardback items-center`}
-                    style={{borderColor: getDynamicColorBase(useTextEdit ? 'Free Strike Action': 'Maneuver', {cardTypeColours: {}})}}>
+                    style={{borderColor: getPrimaryColor(useTextEdit ? 'Free Strike Action': 'Maneuver', {cardTypeColours: {}})}}>
                     <div className={`w-full text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                         style={{color:getDynamicColorBase(useTextEdit?`Free Strike Action`:'Maneuver', {cardTypeColours: {}})}}>Menu Editor</div>
+                         style={{color:getPrimaryColor(useTextEdit?`Free Strike Action`:'Maneuver', {cardTypeColours: {}})}}>Menu Editor</div>
                 </div>
               }
                 <div role={'button'} onClick={() => {
                     setUseTextEdit(true);
                 }} className={`basis-1/2 flex h-full rounded-[13.5pt] border-[3pt] bg-cardback items-center`}
-                  style={{borderColor: getDynamicColorBase(useTextEdit ? 'Maneuver': 'Free Strike Action', {cardTypeColours: {}})}}>
+                  style={{borderColor: getPrimaryColor(useTextEdit ? 'Maneuver': 'Free Strike Action', {cardTypeColours: {}})}}>
                     <div className={`w-full text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                      style={{color:getDynamicColorBase(useTextEdit?'Maneuver':`Free Strike Action`, {cardTypeColours: {}})}}>Text Editor</div>
+                      style={{color:getPrimaryColor(useTextEdit?'Maneuver':`Free Strike Action`, {cardTypeColours: {}})}}>Text Editor</div>
                 </div>
                 <a href="https://commonmark.org/help/" target="_blank" 
                     className={`basis-1/6 flex h-full rounded-[13.5pt] border-[3pt] bg-cardback border-routine-card items-center`}

@@ -1,13 +1,10 @@
 import {ability_card, abilityTypeValues, power_roll, power_roll_tier} from "../../../../../types/ability-card.ts";
 import {Dispatch} from "react";
 import {Card} from "../../../../../types/card-list.ts";
-import {
-  getDynamicColor20,
-  getDynamicColorBase
-} from "../../../../../utils/color-calculator.ts";
 import TierDamageSegmentEditor from "./tier-damage-segment-editor.tsx";
 import TierBaseEffectEditor from "./tier-base-effect-editor.tsx";
 import TierPotencySegmentEditor from "./tier-potency-segment-editor.tsx";
+import {getPrimaryColor} from "../../../../ability-card-v2/utils/color-calculator.ts";
 
 export type SetTier = (t:power_roll_tier) => void;
 export type SegmentProps = {
@@ -42,11 +39,11 @@ export default function PowerRollTierBodyEditor({tier, tierNum, card, setCard, b
   return (<>
     <div className={`col-span-full grid grid-cols-subgrid gap-y-2 gap-x-0`}>
       <div className={`col-span-1 text-lg font-bold flex justify-end items-center p-2 w-full`}
-        style={{color: getDynamicColorBase(abilityTypeValues[tierNum-1], {cardTypeColours: {}})}}>
+        style={{color: getPrimaryColor(abilityTypeValues[tierNum-1], {cardTypeColours: {}})}}>
         {tierNum === 1 ? '≤11' : tierNum === 2 ? '12-16' : '17+'}
       </div>
       <div className={`col-span-3 border-l-[2pt] grid grid-cols-[2pt_min-content_min-content_1fr_min-content] auto-cols-min gap-x-2 gap-y-1 p-2`}
-        style={{borderColor: getDynamicColorBase(abilityTypeValues[tierNum-1], {cardTypeColours: {}}), backgroundColor: getDynamicColor20(abilityTypeValues[tierNum - 1], {cardTypeColours: {}})}}>
+        style={{borderColor: getPrimaryColor(abilityTypeValues[tierNum-1], {cardTypeColours: {}}), backgroundColor: getPrimaryColor(abilityTypeValues[tierNum - 1], {cardTypeColours: {}}, 20)}}>
         <TierDamageSegmentEditor {...props}/>
         <TierBaseEffectEditor {...props}/>
         <TierPotencySegmentEditor {...props}/>

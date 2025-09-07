@@ -3,10 +3,12 @@ import { selectBaseColours, updateBaseColours } from "../../redux/card-settings-
 import { useAppSelector, useAppDispatch } from "../../redux/hooks";
 import { PopoverPicker } from "../common/popover-picker";
 import { SectionSeparator } from "../edit-card-sidebar/card-editor/common-editor-elements";
-import { ColourSet } from "../../types/card-settings";
+import {Colour, ColourSet} from "../../types/card-settings";
+import {defaultColours} from "../../types/default-coloursets.ts";
 
 export default function BaseColourMenu(){
   const baseColours = useAppSelector(selectBaseColours)
+  const defaultBaseColours = defaultColours.baseColours;
   const [customiseKeywordColour, setCustomiseKeywordColour] = useState(!!baseColours?.keywordColour)
   const [customiseBackgroundColour, setCustomiseBackgroundColour] = useState(!!baseColours?.backgroundColour)
   const [customBaseColours, setBaseColours] = useState<ColourSet>(baseColours ?? {})
@@ -17,7 +19,7 @@ export default function BaseColourMenu(){
     if(!e.target.checked){
       dispatchChangeBaseColour('keywordColour', '')
     } else {
-      dispatchChangeBaseColour('keywordColour', customBaseColours.keywordColour ?? "")
+      dispatchChangeBaseColour('keywordColour', customBaseColours.keywordColour ?? defaultBaseColours?.keywordColour ?? {baseColour: '#000000'})
     }
   }
 
@@ -32,6 +34,7 @@ export default function BaseColourMenu(){
 
   const onChangeBaseColour = (field: keyof ColourSet) => {
     return (newColor: string) => {
+      if (newColor === '#NaNNaNNaN') return
       const newBaseColours = {
         ...baseColours,
         [field]: newColor
@@ -41,7 +44,19 @@ export default function BaseColourMenu(){
     }
   }
 
-  const dispatchChangeBaseColour = (field: keyof ColourSet, value: string) => {
+  const onChangeBaseColourWithOpacity = (field: keyof ColourSet) => {
+    return (newColor: string) => {
+      if (newColor === '#NaNNaNNaN') return
+      const newBaseColours = {
+        ...baseColours,
+        [field]: {baseColour: newColor},
+      }
+      setBaseColours(newBaseColours)
+      dispatch(updateBaseColours(newBaseColours))
+    }
+  }
+
+  const dispatchChangeBaseColour = (field: keyof ColourSet, value: string | Colour) => {
     const newBaseColours = {
         ...baseColours,
         [field]: value
@@ -57,7 +72,7 @@ export default function BaseColourMenu(){
           <div className={`text-right`}>Keyword Colour:</div>
           <input type={`checkbox`} checked={customiseKeywordColour} onChange={onChangeCustomiseKeywordColour} className={`border-2 border-stone-400 p-1 mr-2`}/>
           {customiseKeywordColour && <>
-            <PopoverPicker color={baseColours?.keywordColour ?? ""} onChange={onChangeBaseColour('keywordColour')}/>
+            <PopoverPicker color={baseColours?.keywordColour?.baseColour ?? ""} onChange={onChangeBaseColourWithOpacity('keywordColour')}/>
           </>}
         </div>
         <div className="flex flex-row items-center gap-2 h-14">

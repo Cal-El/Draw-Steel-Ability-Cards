@@ -8,7 +8,7 @@ import {
   getDynamicColor40,
   getDynamicColor50,
   getDynamicColorBase
-} from "../../../utils/color-calculator.ts";
+} from "./../utils/color-calculator.ts";
 
 function distanceBlock(card: ability_card, block: distance_block, bgColorGetter: (t: string, s: ColourSettings) => string, colourSettings: ColourSettings) {
     if (block.distanceValue.length === 1 || block.distanceValue.length === 2) {

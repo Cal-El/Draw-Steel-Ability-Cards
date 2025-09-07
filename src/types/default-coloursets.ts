@@ -3,13 +3,16 @@ import { ColourSettings } from "./card-settings";
 export const defaultColours: ColourSettings = {
   baseColours: {
     primaryColour: {
-      baseColour: "#000000"
+      baseColour: "#000000",
     },
     backgroundColour: "#ffffff",
-    keywordColour: "#b87f47",
-    onBackgroundTextColour: "primaryColour",
-    onAttenuatedPrimaryTextColour: "primaryColour",
-    onPrimaryTextColour: "backgroundColour"
+    textColourOnBackground: "pointer:primaryColour",
+    textColourOnFadedPrimary: "pointer:primaryColour",
+    textColourOnPrimary: "pointer:backgroundColour",
+    keywordColour: {
+      baseColour: "#b87f47",
+    },
+    keywordTextColour: "pointer:textColourOnPrimary",
   },
   cardTypeColours: {
     "main action": { primaryColour: {baseColour: "#367F36"}},

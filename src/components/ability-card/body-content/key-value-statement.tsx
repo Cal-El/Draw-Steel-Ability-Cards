@@ -6,7 +6,7 @@ import {
 import {
   getDynamicColor20,
   getDynamicColorBase
-} from "../../../utils/color-calculator.ts";
+} from "./../utils/color-calculator.ts";
 import {AutoTextSize} from "auto-text-size";
 import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";

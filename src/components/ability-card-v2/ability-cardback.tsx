@@ -1,5 +1,5 @@
 import {ability_card} from "../../types/ability-card.ts";
-import {getBackgroundColor, getDynamicColor20, getDynamicColorBase} from "../../utils/color-calculator.ts";
+import {getBackgroundColor, getPrimaryColor} from "./utils/color-calculator.ts";
 import {useAppSelector} from "../../redux/hooks.ts";
 import {selectColourSettings} from "../../redux/card-settings-slice.ts";
 
@@ -134,8 +134,8 @@ export default function AbilityCardback({card}: { card: ability_card }) {
 
   return <div className={``}>
     {card.cost ?
-      <HeroicCardback color={getDynamicColorBase(card.type, colourSettings)} secondaryColour={getDynamicColor20(card.type, colourSettings)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
-      : <NormalCardback color={getDynamicColorBase(card.type, colourSettings)} secondaryColour={getDynamicColor20(card.type, colourSettings)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
+      <HeroicCardback color={getPrimaryColor(card.type, colourSettings)} secondaryColour={getPrimaryColor(card.type, colourSettings, 20)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
+      : <NormalCardback color={getPrimaryColor(card.type, colourSettings)} secondaryColour={getPrimaryColor(card.type, colourSettings, 20)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
     }
   </div>
 }
@@ -144,6 +144,6 @@ export function HeaderDivider({card, className}: { card: ability_card, className
   const colourSettings = useAppSelector(selectColourSettings)
 
   return <div className={className}>
-    <UpperHeaderDivider color={getDynamicColorBase(card.type, colourSettings)}/>
+    <UpperHeaderDivider color={getPrimaryColor(card.type, colourSettings)}/>
   </div>
 }

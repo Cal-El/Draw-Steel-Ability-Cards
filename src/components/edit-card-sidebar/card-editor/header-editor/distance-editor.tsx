@@ -1,7 +1,7 @@
 import {ability_card, abilityTypeValues} from "../../../../types/ability-card.ts";
 import {ChangeEvent, ClipboardEvent, Dispatch, useEffect, useState} from "react";
 import {Card} from "../../../../types/card-list.ts";
-import { getDynamicColorBase } from "../../../../utils/color-calculator.ts";
+import {getPrimaryColor} from "../../../ability-card-v2/utils/color-calculator.ts";
 
 export default function DistanceEditor({card, onChange}: {card: ability_card, onChange: Dispatch<Card>}) {
   const [displayText, setDisplayText] = useState(card.header.distance.display);
@@ -110,7 +110,7 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
       if (x.startsWith('[') && x.endsWith(']')) {
         i++;
         return (<span className={`font-bold`}
-                      style={{color:getDynamicColorBase(abilityTypeValues[i-1], {cardTypeColours: {}})}}>{x} </span>)
+                      style={{color:getPrimaryColor(abilityTypeValues[i-1], {cardTypeColours: {}})}}>{x} </span>)
       }
       else {
         return (<span className={`italic text-stone-700`}>{x} </span>)
@@ -140,7 +140,7 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
           <div/>
           <div className={`col-span-3 flex gap-2`}>
             <div className={`col-span-1 border-r-2 text-2xl font-bold flex justify-end items-center p-2`}
-              style={{borderColor: getDynamicColorBase(abilityTypeValues[i], {cardTypeColours: {}}), color: getDynamicColorBase(abilityTypeValues[i], {cardTypeColours: {}})}}>
+              style={{borderColor: getPrimaryColor(abilityTypeValues[i], {cardTypeColours: {}}), color: getPrimaryColor(abilityTypeValues[i], {cardTypeColours: {}})}}>
               {i+1}
             </div>
             <div className={`w-full grid grid-cols-[80pt_40pt_140pt_40pt] auto-cols-min gap-2`}>

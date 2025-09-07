@@ -9,7 +9,7 @@ import {
   getDynamicColor40,
   getDynamicColor50,
   getDynamicColorBase
-} from "../../../utils/color-calculator.ts";
+} from "./../utils/color-calculator.ts";
 import { ColourSettings } from "../../../types/card-settings.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
