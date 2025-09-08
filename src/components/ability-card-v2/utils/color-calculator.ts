@@ -57,7 +57,6 @@ export function getKeywordColor(cardType: string, userColourSettings: ColourSett
 }
 
 export function getKeywordTextColor(cardType: string, userColourSettings: ColourSettings): string {
-  console.log(cardType, userColourSettings, defaultColours)
   return ColorCalculator.getKeywordTextColor(cardType, userColourSettings, defaultColours);
 }
 

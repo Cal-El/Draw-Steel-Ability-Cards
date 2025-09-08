@@ -64,7 +64,7 @@ function getResolvedColourSetting(key: keyof ColourSet, cardType: string, userCo
   if(baseColourSettings[key]) return baseColourSettings[key]
 
   // If not, we just return the card-style default base colour
-  if(defaultColours.baseColours && defaultColours.baseColours[key]) return defaultColours.baseColours[key]
+  if(defaultColourSettings.baseColours && defaultColourSettings.baseColours[key]) return defaultColourSettings.baseColours[key]
 
   throw new Error(`Unable to resolve key [${key}] to a specific colour value using settings ${userColourSettings}`);
 }
