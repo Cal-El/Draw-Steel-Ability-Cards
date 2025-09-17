@@ -47,7 +47,7 @@ function parseSpelledNumber(s: string) {
 }
 
 function parseTarget(s: string) : string | {target: string, additionalBody: key_value_statement} {
-  if (!s) return ''
+  if (!s) return 'None'
   switch (s.toLowerCase()) {
     case 'self': return 'Self';
     case 'self; see below': return 'Self';

@@ -37,8 +37,8 @@ export function DistanceLine({card, heroData} : { card: ability_card, heroData: 
             const vCloseSplit = v.split(']');
             if (i-1 < card.header.distance.values.length) {
               return <>
-                <div key={`${i}`} style={{backgroundColor: getPrimaryColor(card.type, colourSettings, 40), color: getTextColourOnPrimary(card.type, colourSettings), borderColor: getPrimaryColor(card.type, colourSettings)}} className={`min-w-[15pt] h-[10pt] px-[2pt] border-[1pt] rounded-[2pt] border-orange-200 bg-orange-50 text-[8.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none`}>
-                  <div className={`h-[8.6pt]`}>
+                <div key={`${i}`} style={{backgroundColor: getPrimaryColor(card.type, colourSettings, 40), color: getTextColourOnPrimary(card.type, colourSettings), borderColor: getPrimaryColor(card.type, colourSettings)}} className={`min-w-[15pt] h-[9pt] px-[2pt] border-[0.5pt] rounded-[2pt] text-[7.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none`}>
+                  <div className={`h-[7.5pt]`}>
                     {getDisplayedDistanceValue(card, heroData, card.header.distance.values[i - 1])}
                   </div>
                 </div>

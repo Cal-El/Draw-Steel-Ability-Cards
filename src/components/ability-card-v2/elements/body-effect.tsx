@@ -19,7 +19,7 @@ export function BodyEffect({card, b}: {card: ability_card, b: effect}) {
       fontSize: card.v2FontSizePtOverrides?.body ?? '8pt',
     }} className={`${useBacking ? 'pt-[2pt]' : ''} pb-[3pt] px-[3pt] whitespace-pre-line`}>
       <Markdown>
-        {`${title ? `**${title.replace('#', '')}**` : ''}: ${b.body}`}
+        {`${title ? `**${title.replace('#', '')}**: ` : ''}${b.body}`}
       </Markdown>
     </div>
   </div>
