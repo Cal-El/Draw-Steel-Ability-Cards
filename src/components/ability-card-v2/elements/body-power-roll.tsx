@@ -218,16 +218,16 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
 
   return <div className={`col-span-full grid grid-cols-subgrid grid-rows-1 h-full`}>
     <SideDingle tn={tn} card={card} colourSettings={colourSettings}/>
-    <div style={{backgroundColor: getPrimaryColor(card.type, colourSettings, tn === 2 ? 20 : 30)}} className={`col-span-2 flex gap-[2pt] grid-cols-subgrid grid-rows-1 h-full`}>
-      {(damageBreakdown || t.baseEffect) && <div className={`flex justify-start items-center ${t.potency ? 'col-span-1' : 'col-span-2'}`}>
-        <div style={{
+    <div style={{backgroundColor: getPrimaryColor(card.type, colourSettings, tn === 2 ? 20 : 30)}} className={`col-span-1 flex gap-[2pt] h-full`}>
+      {(damageBreakdown || t.baseEffect) && <div className={`flex justify-start items-center`}>
+        {damageBreakdown && <div style={{
           backgroundColor: getPrimaryColor(card.type, colourSettings, tn === 2 ? 40 : 50),
           color: getTextColourOnPrimary(card.type, colourSettings),
           textAlign: 'center',
           fontSize: '12pt',
           fontWeight: 'bold',
           width: damageBreakdown?.altDisplayDamage ? '30pt' : '18pt',
-        }}>{damageBreakdown?.displayDamage}{damageBreakdown?.altDisplayDamage && `|${damageBreakdown.altDisplayDamage}`}</div>
+        }}>{damageBreakdown?.displayDamage}{damageBreakdown?.altDisplayDamage && `|${damageBreakdown.altDisplayDamage}`}</div>}
         { (damageBreakdown?.displayCustomisableValue || damageBreakdown?.otherBonus) && <div style={{
           color: getTextColourOnBackground(card.type, colourSettings),
           fontWeight: 'normal',
@@ -267,11 +267,11 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
           fontWeight: 'normal',
           lineHeight: card.v2FontSizePtOverrides?.powerRoll ?? '8pt',
           fontSize: card.v2FontSizePtOverrides?.powerRoll ?? '8.5pt',
-        }} className={`flex pl-[1pt]`}>
+        }} className={`flex ${damageBreakdown ? 'pl-[1pt]' : 'pl-[2pt]'}`}>
           <div>{t.potency ? appendSemiColonToEffect(t.baseEffect ?? '') : t.baseEffect}</div>
         </div>
       </div>}
-      {t.potency && <div className={`flex justify-start items-center gap-[2pt] ${(damageBreakdown || t.baseEffect) ? 'col-span-1' : 'col-span-2'}`}>
+      {t.potency && <div className={`flex justify-start items-center gap-[2pt]`}>
         <div className={`flex`}>
           <div style={{
             display: "block",
@@ -318,7 +318,7 @@ export function BodyPowerRoll({card, heroData, b}: {card: ability_card, heroData
   return <div className={`min-h-[64pt] w-full`}>
     <CharacteristicBonus card={card} heroData={heroData} b={b}/>
     <div className={`pl-[5pt] pr-[2pt] h-[54pt]`}>
-      <div className={`grid grid-cols-[7pt_1fr_1fr] grid-rows-3 w-full h-full`}>
+      <div className={`grid grid-cols-[7pt_1fr] grid-rows-3 w-full h-full`}>
         <Tier t={b.t1} tn={1} card={card} heroData={heroData}/>
         <Tier t={b.t2} tn={2} card={card} heroData={heroData}/>
         <Tier t={b.t3} tn={3} card={card} heroData={heroData}/>
