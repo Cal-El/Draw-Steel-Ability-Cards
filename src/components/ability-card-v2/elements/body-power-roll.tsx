@@ -64,8 +64,8 @@ function CharacteristicBonus({card, heroData, b}: {card: ability_card, heroData:
   const powerRollStatementCss = {
     color: getTextColourOnBackground(card.type, colourSettings),
     fontWeight: 'bold',
-    lineHeight: card.v2FontSizePtOverrides?.body ?? '9pt',
-    fontSize: card.v2FontSizePtOverrides?.body ?? '9pt',
+    lineHeight: '9pt',
+    fontSize: '9pt',
     paddingLeft: '12.5pt',
   };
 
@@ -83,8 +83,8 @@ function CharacteristicBonus({card, heroData, b}: {card: ability_card, heroData:
     display: "block",
     color: getTextColourOnPrimary(card.type, colourSettings),
     fontWeight: 'bold',
-    lineHeight: card.v2FontSizePtOverrides?.body ?? '7.5pt',
-    fontSize: card.v2FontSizePtOverrides?.body ?? '7.5pt',
+    lineHeight: '7.5pt',
+    fontSize: '7.5pt',
     fontVariantCaps: 'small-caps',
     textAlign: "center",
     border: "solid",
