@@ -13,12 +13,7 @@ import CardEditor from "./card-editor/card-editor.tsx";
 import {cardManifest} from "../../types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
 import {ability_card as old_model} from "../../types/ability-card-types.ts";
-import AbilityCardV2 from "../ability-card-v2/ability-card-v2.tsx";
-import {useAppSelector} from "../../redux/hooks.ts";
-import {selectAppliedTheme} from "../../redux/card-settings-slice.ts";
-import {ability_card} from "../../types/ability-card.ts";
-import {v1StyleName} from "../ability-card/constants.ts";
-import {v2StyleName} from "../ability-card-v2/constants.ts";
+import {ThemeBasedCard} from "../theme-based-card.tsx";
 
 export type CloseCallbackFunction = (_: Card | undefined) => void;
 export type DeleteCallbackFunction = () => void;
@@ -90,7 +85,6 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
   heroStats: HeroData | undefined,
   initialDisplayHeroStats: boolean,
 }) {
-  const theme = useAppSelector(selectAppliedTheme);
   const [editCard, setEditCard] = useState(card)
   const [useBlankHeroStats, setUseBlankHeroStats] = useState(!initialDisplayHeroStats)
   const [newDefaults, setNewDefaults] = useState([] as Card[]);
@@ -119,14 +113,6 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
     setUseBlankHeroStats(!useBlankHeroStats);
   };
 
-  const getCardByDesign = (c: ability_card) => {
-    switch (theme.cardDesign) {
-      case v1StyleName: return <AbilityCard id={`editcard`} card={DowngradeCard(c, useBlankHeroStats ? new HeroData({}) : heroStats)} enlargedState={0}/>
-      case v2StyleName:
-      default: return <AbilityCardV2 id={`editcard`} card={c} heroData={useBlankHeroStats || !heroStats ? new HeroData({}) : heroStats} enlargedState={0} />
-    }
-  }
-
   return (<>
     {editCard && <div className={`fixed inset-0 z-30 w-screen h-screen bg-black bg-opacity-50 flex justify-end print:hidden`}>
       <div role={`button`} onClick={closeModal} className={`flex-grow`}/>
@@ -150,7 +136,7 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
       <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-sidebar-back flex flex-col items-center outline outline-4 outline-sidebar-trim border-sidebar-trim pl-[20pt] pr-[12.5pt] py-[20pt] gap-[10pt]`}>
         <div className={`w-[511.5pt] pr-[2pt] place-items-center`}>
           {isNewCard(editCard) ?
-            getCardByDesign(asNewCard(editCard)) :
+            <ThemeBasedCard c={asNewCard(editCard)} id={'editcard'} hd={useBlankHeroStats ? undefined : heroStats} enlargedState={0}/> :
             <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} enlargedState={0}/>
           }
         </div>

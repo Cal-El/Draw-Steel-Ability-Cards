@@ -219,7 +219,7 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
   return <div className={`col-span-full grid grid-cols-subgrid grid-rows-1 h-full`}>
     <SideDingle tn={tn} card={card} colourSettings={colourSettings}/>
     <div style={{backgroundColor: getPrimaryColor(card.type, colourSettings, tn === 2 ? 20 : 30)}} className={`col-span-1 flex gap-[2pt] h-full`}>
-      {(damageBreakdown || t.baseEffect) && <div className={`flex justify-start items-center`}>
+      {(damageBreakdown || t.baseEffect) && <div className={`flex-shrink flex justify-start items-center`}>
         {damageBreakdown && <div style={{
           backgroundColor: getPrimaryColor(card.type, colourSettings, tn === 2 ? 40 : 50),
           color: getTextColourOnPrimary(card.type, colourSettings),
@@ -227,6 +227,7 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
           fontSize: '12pt',
           fontWeight: 'bold',
           width: damageBreakdown?.altDisplayDamage ? '30pt' : '18pt',
+          minWidth: damageBreakdown?.altDisplayDamage ? '30pt' : '18pt',
         }}>{damageBreakdown?.displayDamage}{damageBreakdown?.altDisplayDamage && `|${damageBreakdown.altDisplayDamage}`}</div>}
         { (damageBreakdown?.displayCustomisableValue || damageBreakdown?.otherBonus) && <div style={{
           color: getTextColourOnBackground(card.type, colourSettings),
@@ -271,7 +272,7 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
           <div>{t.potency ? appendSemiColonToEffect(t.baseEffect ?? '') : t.baseEffect}</div>
         </div>
       </div>}
-      {t.potency && <div className={`flex justify-start items-center gap-[2pt]`}>
+      {t.potency && <div className={`flex-grow flex justify-start items-center gap-[2pt] ${(damageBreakdown || t.baseEffect) ? '' : 'pl-[2pt]'}`}>
         <div className={`flex`}>
           <div style={{
             display: "block",

@@ -5,8 +5,7 @@ import {
 } from "react-icons/gi";
 import {getChangesSinceTime} from "../changelog.ts";
 import {FiCheckSquare, FiSquare} from "react-icons/fi";
-import { TbPlayCardStarFilled } from "react-icons/tb";
-import {BiPalette} from "react-icons/bi";
+import {FaPalette} from "react-icons/fa";
 
 export default function TopMenu({ showHeroData,
                                   clickShowHeroData,
@@ -27,7 +26,7 @@ export default function TopMenu({ showHeroData,
       <div className={`flex-grow flex flex-row gap-2`}>
         <button onClick={clickShowHeroData} className="flex flex-row items-center text-base bg-stone-300 p-1 rounded-md hover:bg-stone-200 space-x-1">{!showHeroData ? <FiCheckSquare/> : <FiSquare/>}<span>Render without Hero</span></button>
         <button onClick={openHeroDataSidebar} className="flex flex-row items-center text-base bg-stone-300 p-1 rounded-md hover:bg-stone-200 space-x-1"><GiSwordman/><span>Hero Data</span></button>
-        <button onClick={openCardSettingsSidebar} className="flex flex-row items-center text-base bg-stone-300 p-1 rounded-md hover:bg-stone-200 space-x-1"><BiPalette /><span>Theme</span></button>
+        <button onClick={openCardSettingsSidebar} className="flex flex-row items-center text-base bg-stone-300 p-1 rounded-md hover:bg-stone-200 space-x-1"><FaPalette /><span>Theme</span></button>
       </div>
       <div className={`flex-none bg-stone-600 min-h-full min-w-0.5`}/>
       <div className={`flex-shrink flex flex-row gap-2`}>

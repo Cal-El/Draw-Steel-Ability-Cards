@@ -17,7 +17,7 @@ export default function EditCardSettingsSidebar({onClose}:
           <FaSave className={`text-white text-[25pt]`}/>&nbsp;
         </div>
       </div>
-      <div className={`h-full rounded-tl-[20pt] w-[600pt] rounded-bl-[20pt] bg-sidebar-back flex flex-col items-center outline outline-4 outline-sidebar-trim border-sidebar-trim pl-[20pt] pr-[12.5pt] py-[20pt] gap-[10pt]`}>
+      <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-sidebar-back flex flex-col items-center outline outline-4 outline-sidebar-trim border-sidebar-trim pl-[20pt] pr-[12.5pt] py-[20pt] gap-[10pt]`}>
         <div className={`print:hidden w-full flex flex-col h-full`}>
           <span className="w-full text-center">
             <h1 className="font-bold font-body text-xl small-caps">Global Card Settings</h1>

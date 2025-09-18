@@ -25,7 +25,7 @@ export default function AbilityCardV2({id, card, heroData, enlargedState}: {id: 
         <AbilityCardback card={card} />
       </div>
       {glyph && <div className={`h-[180pt] w-[252pt] absolute top-0 flex justify-end`}>
-        <div style={{color: getPrimaryColor(card.type, colourSettings, 10), fontSize: '56pt', lineHeight: '66pt', fontWeight: 700, fontFamily: 'DS Open Glyphs'}}>{glyph}</div>
+        <div style={{color: getPrimaryColor(card.type, colourSettings, 10), fontSize: '56pt', lineHeight: '66pt', fontFamily: 'DS Open Glyphs'}}>{glyph}</div>
       </div>}
       <div className={`h-[180pt] w-[252pt] absolute top-0`}>
         <TopMatter card={card}/>
