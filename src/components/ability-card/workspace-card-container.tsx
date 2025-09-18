@@ -4,9 +4,13 @@ import {asNewCard, asOldCard, Card, getCardTitle, isNewCard} from "../../types/c
 import AbilityCardV2 from "../ability-card-v2/ability-card-v2.tsx";
 import {HeroData} from "../../types/character-data.ts";
 import {DowngradeCard} from "../../utils/ability-card-downgrader.ts";
+import { useAppSelector } from "../../redux/hooks.ts";
+import { selectThemeCardDesign } from "../../redux/card-settings-slice.ts";
+import { defaultV1Theme } from "./utils/color-calculator.ts";
 
 export default function WorkspaceCardContainer({id, card, heroData, cardNum, selectedCard, setSelectedCard}: {id: string, card: Card, heroData: HeroData, cardNum: number, selectedCard: number, setSelectedCard: React.Dispatch<React.SetStateAction<number>>}) {
-  let selectedCardState = (selectedCard===cardNum ? 1 : selectedCard===-1 ? 0 : -1)
+  const selectedCardState = (selectedCard===cardNum ? 1 : selectedCard===-1 ? 0 : -1)
+  const cardStyle = useAppSelector(selectThemeCardDesign)
 
   return (
     <div id={`${id}_${getCardTitle(card)}_container`} key={`${id}_${getCardTitle(card)}_container`} role="button" onClick={() => {
@@ -16,7 +20,7 @@ export default function WorkspaceCardContainer({id, card, heroData, cardNum, sel
         setSelectedCard(cardNum)
       }
     }} className={`flex-none flex justify-center items-center break-inside-avoid-page print:h-[180pt] print:w-[252pt] ${selectedCardState > 0 ? '' : 'hover:brightness-90'} print:hover:brightness-100`}>
-      {isNewCard(card) ?
+      {isNewCard(card) && !(cardStyle === defaultV1Theme.cardDesign) ?
         <AbilityCardV2 id={id} card={asNewCard(card)} heroData={heroData} enlargedState={0} />:
         <AbilityCard id={id} card={isNewCard(card) ? DowngradeCard(asNewCard(card), heroData) : asOldCard(card)} enlargedState={0}/>
       }

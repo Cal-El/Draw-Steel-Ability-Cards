@@ -13,7 +13,7 @@ import {
   getTextColourOnPrimary
 } from "../utils/color-calculator.ts";
 import {useAppSelector} from "../../../redux/hooks.ts";
-import {selectColourSettings} from "../../../redux/card-settings-slice.ts";
+import {selectThemeColours} from "../../../redux/card-settings-slice.ts";
 import {ColourSettings} from "../../../types/card-settings.ts";
 
 function commaSeparatedOrCharacteristicList(charOptions: characteristic[]) {
@@ -60,7 +60,7 @@ function getCustomisableCharacteristicBonusText({heroData, b}: {heroData: HeroDa
 }
 
 function CharacteristicBonus({card, heroData, b}: {card: ability_card, heroData: HeroData, b: power_roll}) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
   const powerRollStatementCss = {
     color: getTextColourOnBackground(card.type, colourSettings),
     fontWeight: 'bold',
@@ -211,7 +211,7 @@ function SideDingle({tn, card, colourSettings} : {tn: number, card: ability_card
 }
 
 function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ability_card, heroData: HeroData}) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
 
   const damageBreakdown = getDamageBreakdown({t, tn, card, heroData});
   const potency = parsePotencyValue({t, card, heroData})

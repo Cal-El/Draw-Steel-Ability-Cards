@@ -1,11 +1,11 @@
 import {ability_card} from "../../../types/ability-card.ts";
 import {useAppSelector} from "../../../redux/hooks.ts";
-import {selectColourSettings} from "../../../redux/card-settings-slice.ts";
+import {selectThemeColours} from "../../../redux/card-settings-slice.ts";
 import {getTextColourOnBackground, getTextColourOnFadedPrimary} from "../utils/color-calculator.ts";
 import {HeaderDivider} from "../ability-cardback.tsx";
 
 export function UpperHeader({card} : { card: ability_card }) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
 
   return <div id={'header'} className={`w-full h-min flex pl-[1pt] pr-[7pt]`}>
     <div id={`cost`} className={`w-[12pt] h-0 flex-none overflow-visible`}>

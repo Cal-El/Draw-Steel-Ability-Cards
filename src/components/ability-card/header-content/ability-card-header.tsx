@@ -3,10 +3,10 @@ import { getDynamicColorBase } from "./../utils/color-calculator.ts";
 import {AutoTextSize} from "auto-text-size";
 import {KeywordsList} from "./keywords-list.tsx";
 import { useAppSelector } from "../../../redux/hooks.ts";
-import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
+import { selectThemeColours } from "../../../redux/card-settings-slice.ts";
 
 export function AbilityCardHeader({card}: { card: ability_card }) {
-    const colourSettings = useAppSelector(selectColourSettings)
+    const colourSettings = useAppSelector(selectThemeColours)
     return (
         <div className={`flex`}>
             <div className={`flex-none w-[3pt]`}></div>

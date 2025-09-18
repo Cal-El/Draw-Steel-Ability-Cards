@@ -2,10 +2,10 @@ import {ability_card} from "../../../types/ability-card.ts";
 import {HeroData} from "../../../types/character-data.ts";
 import {getKeywordColor, getKeywordTextColor} from "../utils/color-calculator.ts";
 import {useAppSelector} from "../../../redux/hooks.ts";
-import {selectColourSettings} from "../../../redux/card-settings-slice.ts";
+import {selectThemeColours} from "../../../redux/card-settings-slice.ts";
 
 export function KeywordsLine({card} : { card: ability_card, heroData: HeroData }) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
 
   return <div id={`keywords`} className={`pl-[13pt] flex gap-[2pt]`}>
     {card.header.keywords.map(k => {

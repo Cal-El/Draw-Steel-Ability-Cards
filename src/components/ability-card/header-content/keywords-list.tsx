@@ -1,10 +1,10 @@
-import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
+import { selectThemeColours } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 import {ability_card} from "../../../types/ability-card-types.ts";
 import { getKeywordColor } from "./../utils/color-calculator.ts";
 
 export function KeywordsList({card}: {card: ability_card}) {
-  const colourSettings = useAppSelector(selectColourSettings) ?? {cardTypeColours: {}}
+  const colourSettings = useAppSelector(selectThemeColours) ?? {cardTypeColours: {}}
 
   if (!card.keywords.length) return <></>
   return (

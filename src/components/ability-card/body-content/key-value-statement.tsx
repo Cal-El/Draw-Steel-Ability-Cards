@@ -8,13 +8,13 @@ import {
   getDynamicColorBase
 } from "./../utils/color-calculator.ts";
 import {AutoTextSize} from "auto-text-size";
-import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
+import { selectThemeColours } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 
 export function KeyValueStatement({card, kv}: {card: ability_card, kv: key_value_statement}) {
   const key = kv.key ?? ''
   const useBacking = key === 'Trigger' || key.startsWith('#')
-  const colourSettings = useAppSelector(selectColourSettings)
+  const colourSettings = useAppSelector(selectThemeColours) ?? {cardTypeColours: {}}
 
     return (
         <div className={`flex-auto flex ${useBacking && `py-[3pt]`} w-full`}

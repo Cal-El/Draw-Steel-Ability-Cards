@@ -2,10 +2,10 @@ import {getPrimaryColor, getTextColourOnBackground} from "../utils/color-calcula
 import Markdown from "react-markdown";
 import {ability_card, effect} from "../../../types/ability-card.ts";
 import {useAppSelector} from "../../../redux/hooks.ts";
-import {selectColourSettings} from "../../../redux/card-settings-slice.ts";
+import {selectThemeColours} from "../../../redux/card-settings-slice.ts";
 
 export function BodyEffect({card, b}: {card: ability_card, b: effect}) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
 
   const title = b.title ?? ''
   const useBacking = title === 'Trigger' || title.startsWith('#')

@@ -16,16 +16,12 @@ export function getCardTypeSettingsFromRecord(cardTypeSettings: Record<string, C
   return c in cardTypeSettings ? cardTypeSettings[c] : undefined;
 }
 
-// function handlePointer(colour: string, userColourSettings, defaultColourSettings: ColourSet, baseColourSettings: ColourSet, defaultColourSettings: ColourSet){
-
-// }
-
 function isPointer(x : Colour | Pointer | string) {
   return typeof x === 'string' && x.startsWith('pointer:');
 }
 
 function getColourFromPointerRecursively(pointer : Pointer, pointedFrom : string[], cardType: string, userColourSettings: ColourSettings, defaultColourSettings: ColourSettings) : string {
-  const [_, pointerVal] = pointer.split(':');
+  const pointerVal = pointer.split(':')[1];
   let keyVal = pointerVal
   let opacityVal = 100;
 

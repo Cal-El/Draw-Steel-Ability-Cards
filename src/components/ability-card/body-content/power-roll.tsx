@@ -12,7 +12,7 @@ import {
 } from "./../utils/color-calculator.ts";
 import { ColourSettings } from "../../../types/card-settings.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
-import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
+import { selectThemeColours } from "../../../redux/card-settings-slice.ts";
 
 function powerRollLine(card: ability_card, powerRollTier: power_roll_tier, rowNum: number, colourSettings: ColourSettings) {
   const generalEffectFontsize = card.powerRollFontSizeOverride ?
@@ -80,7 +80,7 @@ function getCharacteristicBonusString(powerRoll: power_roll_statement) {
 }
 
 export function PowerRollStatement({card, powerRoll}: {card: ability_card, powerRoll: power_roll_statement}) {
-    const colourSettings = useAppSelector(selectColourSettings)
+    const colourSettings = useAppSelector(selectThemeColours)
 
     return (
         <div className={`flex-none flex flex-col h-[76pt] justify-center gap-y-[2pt]`}>

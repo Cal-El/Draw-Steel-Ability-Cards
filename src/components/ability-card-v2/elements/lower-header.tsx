@@ -1,7 +1,7 @@
 import {ability_card} from "../../../types/ability-card.ts";
 import {HeroData} from "../../../types/character-data.ts";
 import {useAppSelector} from "../../../redux/hooks.ts";
-import {selectColourSettings} from "../../../redux/card-settings-slice.ts";
+import {selectThemeColours} from "../../../redux/card-settings-slice.ts";
 import {
   getTextColourOnBackground,
 } from "../utils/color-calculator.ts";
@@ -9,7 +9,7 @@ import {DistanceLine} from "./distance-line.tsx";
 import {KeywordsLine} from "./keywords-line.tsx";
 
 export function LowerHeader({card, heroData} : { card: ability_card, heroData: HeroData }) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
 
   return <div className={``}>
     <KeywordsLine card={card} heroData={heroData}/>

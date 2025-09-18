@@ -1,4 +1,4 @@
-import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
+import { selectThemeColours } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 import {
   ability_card,
@@ -64,7 +64,7 @@ function distanceBlock(card: ability_card, block: distance_block, bgColorGetter:
 }
 
 export function DistanceBlockList({card}: {card: ability_card}) {
-    const colourSettings = useAppSelector(selectColourSettings)
+    const colourSettings = useAppSelector(selectThemeColours)
     return (<>
         {card.distance.map((b, i) => distanceBlock(
             card,

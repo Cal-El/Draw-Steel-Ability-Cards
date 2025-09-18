@@ -7,7 +7,7 @@ import {AbilityCardBody} from "./body-content/ability-card-body.tsx";
 import {AbilityCardSideMatter} from "./side-matter/ability-card-side-matter.tsx";
 import { ColourSettings } from "../../types/card-settings.ts";
 import { useAppSelector } from "../../redux/hooks.ts";
-import { selectColourSettings } from "../../redux/card-settings-slice.ts";
+import { selectThemeColours } from "../../redux/card-settings-slice.ts";
 
 function cardContainer(card: ability_card, enlargedState: number, cardColourSettings: ColourSettings) {
     return (
@@ -23,7 +23,7 @@ function cardContainer(card: ability_card, enlargedState: number, cardColourSett
 }
 
 export default function AbilityCard({id, card, enlargedState}: {id: string, card: ability_card, enlargedState: number}) {
-    const colourSettings = useAppSelector(selectColourSettings) ?? {cardTypeColours: {}}
+    const colourSettings = useAppSelector(selectThemeColours) ?? {cardTypeColours: {}}
     return (
         <div id={`${id}_${card.title}_card`} key={`${id}_${card.title}_card`} className={`flex-none flex justify-center items-center print:h-[180pt] print:w-[252pt] ${enlargedState > 0 ? 'h-[360pt] w-[504pt]' : enlargedState < 0 ? 'h-[180pt] w-[252pt]' : 'h-[270pt] w-[378pt]'}`}>
             {cardContainer(card, enlargedState, colourSettings)}

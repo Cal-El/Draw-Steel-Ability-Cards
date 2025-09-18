@@ -1,4 +1,4 @@
-import { ColourSettings } from "../../../types/card-settings";
+import { ColourSettings, Theme } from "../../../types/card-settings";
 import {ColorCalculator} from "../../../utils/color-calculator.ts";
 
 export const defaultColours: ColourSettings = {
@@ -27,6 +27,13 @@ export const defaultColours: ColourSettings = {
     "trait": { primaryColour: {baseColour: "#5a367f"}},
     "treasure": { primaryColour: {baseColour: "#333333"}}
   }
+}
+
+export const defaultV1Theme: Theme = {
+  name: "Legacy",
+  id: "8986f839-1ea7-409e-93e9-88c67fc074fa",
+  cardDesign: "Legacy",
+  colourSettings: defaultColours
 }
 
 export function getPrimaryColor(cardType: string, userColourSettings: ColourSettings, gradientValue: number = 100): string {

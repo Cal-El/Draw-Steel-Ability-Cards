@@ -14,9 +14,7 @@ export function getCardSettings(): CardSettings {
   }
   if (!parsedSettings){
     return {
-      colourSettings: {
-        cardTypeColours: {}
-      }
+      customThemes: []
     }
   }
   return parsedSettings satisfies CardSettings

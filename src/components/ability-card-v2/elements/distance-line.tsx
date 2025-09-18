@@ -1,7 +1,7 @@
 import {ability_card, distance_value} from "../../../types/ability-card.ts";
 import {DistanceBonus, HeroData} from "../../../types/character-data.ts";
 import {useAppSelector} from "../../../redux/hooks.ts";
-import {selectColourSettings} from "../../../redux/card-settings-slice.ts";
+import {selectThemeColours} from "../../../redux/card-settings-slice.ts";
 import {getPrimaryColor, getTextColourOnBackground, getTextColourOnPrimary} from "../utils/color-calculator.ts";
 
 function getDisplayedDistanceValue(card: ability_card, heroData: HeroData, val: distance_value) : number {
@@ -26,7 +26,7 @@ function getDisplayedDistanceValue(card: ability_card, heroData: HeroData, val: 
 }
 
 export function DistanceLine({card, heroData} : { card: ability_card, heroData: HeroData }) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
 
   return <>
     {card.header.distance.display && <div style={{color: getTextColourOnBackground(card.type, colourSettings), fontWeight: 'bold', lineHeight: '8.5pt', fontSize: '8.5pt'}} className={`w-full text-left flex justify-start items-center`}>

@@ -1,4 +1,4 @@
-import { ColourSettings } from "../../../types/card-settings";
+import { ColourSettings, Theme } from "../../../types/card-settings";
 import {ColorCalculator} from "../../../utils/color-calculator.ts";
 
 export const defaultColours: ColourSettings = {
@@ -34,6 +34,13 @@ export const defaultColours: ColourSettings = {
       keywordTextColour: "pointer:textColourOnPrimary",
     }
   }
+}
+
+export const defaultV2Theme: Theme = {
+  name: "DSCards",
+  id: "529eb773-bdbf-445d-be1e-ad2d9f435efe",
+  cardDesign: "DSCards",
+  colourSettings: defaultColours
 }
 
 export function getPrimaryColor(cardType: string, userColourSettings: ColourSettings, gradientValue: number = 100): string {

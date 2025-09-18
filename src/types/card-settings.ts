@@ -1,4 +1,12 @@
 export type CardSettings = {
+  appliedTheme?: string
+  customThemes: Theme[]
+}
+
+export type Theme = {
+  name: string
+  id: string
+  cardDesign: string
   colourSettings?: ColourSettings
 }
 

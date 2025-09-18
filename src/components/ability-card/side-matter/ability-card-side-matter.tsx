@@ -1,4 +1,4 @@
-import { selectColourSettings } from "../../../redux/card-settings-slice.ts";
+import { selectThemeColours } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 import {
   ability_card,
@@ -10,7 +10,7 @@ import {DistanceBlockList} from "./distance-block.tsx";
 import {TargetBlock} from "./target-block.tsx";
 
 export function AbilityCardSideMatter({card}: {card: ability_card}) {
-    const colourSettings = useAppSelector(selectColourSettings)
+    const colourSettings = useAppSelector(selectThemeColours)
     return (
       <div className={`relative w-[27pt] overflow-visible flex flex-col items-end`}>
         <CostBlock card={card}/>

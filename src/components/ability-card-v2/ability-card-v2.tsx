@@ -9,10 +9,10 @@ import {useEffect, useState} from "react";
 import {getCardGlyph} from "./utils/glyph-translator.ts";
 import {getPrimaryColor} from "./utils/color-calculator.ts";
 import {useAppSelector} from "../../redux/hooks.ts";
-import {selectColourSettings} from "../../redux/card-settings-slice.ts";
+import {selectThemeColours} from "../../redux/card-settings-slice.ts";
 
 export default function AbilityCardV2({id, card, heroData, enlargedState}: {id: string, card: ability_card, heroData: HeroData, enlargedState: number}) {
-  const colourSettings = useAppSelector(selectColourSettings);
+  const colourSettings = useAppSelector(selectThemeColours);
 
   const [glyph, setCardGlyph] = useState(getCardGlyph(card));
   useEffect(() => {
