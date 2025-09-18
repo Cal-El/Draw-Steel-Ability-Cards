@@ -7,7 +7,7 @@ export type Theme = {
   name: string
   id: string
   cardDesign: string
-  colourSettings?: ColourSettings
+  colourSettings: ColourSettings
 }
 
 export type ColourSettings = {
