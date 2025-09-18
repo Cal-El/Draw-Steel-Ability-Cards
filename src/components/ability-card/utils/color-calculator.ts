@@ -31,7 +31,7 @@ export const defaultColours: ColourSettings = {
 
 export const defaultV1Theme: Theme = {
   name: "Legacy",
-  id: "8986f839-1ea7-409e-93e9-88c67fc074fa",
+  id: "legacyCards",
   cardDesign: "Legacy",
   colourSettings: defaultColours
 }

@@ -10,7 +10,7 @@ export type UpdateCardTypeSettingsPayload = {
   cardSettings?: ColourSet
 }
 
-const defaultTheme: string = "529eb773-bdbf-445d-be1e-ad2d9f435efe"
+const defaultTheme: string = "drawSteelAbilityCards"
 const inbuiltThemes: Theme[] = [
   defaultV2Theme,
   defaultV1Theme

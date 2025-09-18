@@ -38,7 +38,7 @@ export const defaultColours: ColourSettings = {
 
 export const defaultV2Theme: Theme = {
   name: "Draw Steel Ability Cards",
-  id: "529eb773-bdbf-445d-be1e-ad2d9f435efe",
+  id: "drawSteelAbilityCards",
   cardDesign: "Draw Steel Ability Cards",
   colourSettings: defaultColours
 }
