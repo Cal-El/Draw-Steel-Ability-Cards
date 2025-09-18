@@ -10,7 +10,7 @@ import {DistanceBlockList} from "./distance-block.tsx";
 import {TargetBlock} from "./target-block.tsx";
 
 export function AbilityCardSideMatter({card}: {card: ability_card}) {
-    const colourSettings = useAppSelector(selectThemeColours)
+    const colourSettings = useAppSelector(selectThemeColours) ?? {cardTypeColours: {}}
     return (
       <div className={`relative w-[27pt] overflow-visible flex flex-col items-end`}>
         <CostBlock card={card}/>

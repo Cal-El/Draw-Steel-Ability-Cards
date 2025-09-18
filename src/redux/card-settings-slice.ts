@@ -18,6 +18,14 @@ const inbuiltThemes: Theme[] = [
 
 const initialState: CardSettings = getCardSettings()
 
+const getAppliedTheme = (state: CardSettings): Theme | undefined => {
+  const theme = state.appliedTheme ?? defaultTheme
+  if (inbuiltThemes.filter(x => x.id === theme).length > 0) {
+    return inbuiltThemes.find(x => x.id === theme)
+  }
+  return state.customThemes.find(x => x.id === theme)
+}
+
 export const cardSettingsSlice = createAppSlice({
   name: "cardSettings",
   initialState,
@@ -27,23 +35,12 @@ export const cardSettingsSlice = createAppSlice({
     })
   }),
   selectors: {
-    selectAppliedTheme: state => state.appliedTheme,
-    selectThemeColours: state => {
-      const theme = state.appliedTheme ?? defaultTheme
-      if (inbuiltThemes.filter(x => x.id === theme).length > 0) {
-        return inbuiltThemes.find(x => x.id === theme)?.colourSettings
-      }
-      return state.customThemes.find(x => x.id === theme)?.colourSettings
-    },
-    selectThemeCardDesign: state => {
-      const theme = state.appliedTheme ?? defaultTheme
-      if (inbuiltThemes.filter(x => x.id === theme).length > 0) {
-        return inbuiltThemes.find(x => x.id === theme)?.cardDesign
-      }
-      return state.customThemes.find(x => x.id === theme)?.cardDesign
-    }
+    selectAppliedTheme: state => getAppliedTheme(state),
+    selectThemeColours: state => getAppliedTheme(state)?.colourSettings,
+    selectThemeCardDesign: state => getAppliedTheme(state)?.cardDesign,
+    selectAllThemes: state=> inbuiltThemes.concat(...(state.customThemes ?? []))
   }
 })
 
 export const {updateAppliedTheme} = cardSettingsSlice.actions
-export const {selectAppliedTheme, selectThemeColours, selectThemeCardDesign} = cardSettingsSlice.selectors
+export const {selectAppliedTheme, selectThemeColours, selectThemeCardDesign, selectAllThemes} = cardSettingsSlice.selectors
