@@ -1,0 +1,44 @@
+import {ColourSettings, Theme} from "../../types/card-settings.ts";
+
+export const v1StyleName = "Legacy";
+export const v1DefaultThemeId = "legacyCards";
+
+export const defaultColours: ColourSettings = {
+  baseColours: {
+    primaryColour: {
+      baseColour: "#000000",
+    },
+    secondaryColour: {
+      baseColour: "#000000"
+    },
+    backgroundColour: "#ffffff",
+    textColourOnBackground: "pointer:primaryColour",
+    textColourOnFadedPrimary: "pointer:primaryColour",
+    textColourOnPrimary: "pointer:backgroundColour",
+    textColourOnFadedSecondary: "pointer:secondaryColour",
+    textColourOnSecondary: "pointer:backgroundColour",
+    keywordColour: {
+      baseColour: "#b87f47",
+    },
+    keywordTextColour: "pointer:textColourOnPrimary",
+  },
+  cardTypeColours: {
+    "main action": { primaryColour: {baseColour: "#367F36"}},
+    "maneuver": { primaryColour: {baseColour: "#365B7F"}},
+    "triggered action": { primaryColour: {baseColour: "#7F3636"}},
+    "move action": { primaryColour: {baseColour: "#7F5A36"}},
+    "free triggered action": { primaryColour: {baseColour: "#7f367f"}},
+    "free maneuver": { primaryColour: {baseColour: "#367F5A"}},
+    "no action": { primaryColour: {baseColour: "#36367F"}},
+    "free strike": { primaryColour: {baseColour: "#595959"}},
+    "trait": { primaryColour: {baseColour: "#5a367f"}},
+    "treasure": { primaryColour: {baseColour: "#333333"}}
+  }
+}
+
+export const defaultV1Theme: Theme = {
+  name: v1StyleName,
+  id: v1DefaultThemeId,
+  cardDesign: v1StyleName,
+  colourSettings: defaultColours
+}

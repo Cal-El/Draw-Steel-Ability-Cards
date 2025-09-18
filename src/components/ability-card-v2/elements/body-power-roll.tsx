@@ -265,8 +265,8 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
         <div style={{
           color: getTextColourOnFadedPrimary(card.type, colourSettings),
           fontWeight: 'normal',
-          lineHeight: card.v2FontSizePtOverrides?.powerRoll ?? '7pt',
-          fontSize: card.v2FontSizePtOverrides?.powerRoll ?? '7.5pt',
+          lineHeight: `${card.v2FontSizePtOverrides?.powerRoll ?? 7.5 - 0.5}pt`,
+          fontSize: `${card.v2FontSizePtOverrides?.powerRoll ?? 7.5}pt`,
         }} className={`flex ${damageBreakdown?.displayCustomisableValue || damageBreakdown?.otherBonus ? 'pl-[1pt]' : 'pl-[2pt]'}`}>
           <div>{t.potency ? appendSemiColonToEffect(t.baseEffect ?? '') : t.baseEffect}</div>
         </div>
@@ -303,8 +303,8 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
         <div style={{
           color: getTextColourOnFadedPrimary(card.type, colourSettings),
           fontWeight: 'normal',
-          lineHeight: card.v2FontSizePtOverrides?.powerRoll ?? '7pt',
-          fontSize: card.v2FontSizePtOverrides?.powerRoll ?? '7.5pt',
+          lineHeight: `${card.v2FontSizePtOverrides?.powerRoll ?? 7.5 - 0.5}pt`,
+          fontSize: `${card.v2FontSizePtOverrides?.powerRoll ?? 7.5}pt`,
           paddingRight: '1pt'
         }} className={`flex pl-[1pt]`}>
           <div>{t.potency?.effect}</div>

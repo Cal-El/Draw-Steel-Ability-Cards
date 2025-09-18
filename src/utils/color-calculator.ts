@@ -78,7 +78,7 @@ function getCustomColour(key: keyof ColourSet, cardType: string, userColourSetti
   }
 }
 
-function getColourWithOpacityFalloff(key: 'primaryColour' | 'keywordColour', cardType: string, userColourSettings: ColourSettings, defaultColourSettings: ColourSettings): Colour {
+function getColourWithOpacityFalloff(key: 'primaryColour' | 'secondaryColour' | 'keywordColour', cardType: string, userColourSettings: ColourSettings, defaultColourSettings: ColourSettings): Colour {
   const resolvedColour = getResolvedColourSetting(key, cardType, userColourSettings, defaultColourSettings);
   if (!(resolvedColour as Colour).baseColour) {
     throw new Error(`${key} should always be a colour with opacity falloff value`)
@@ -122,6 +122,18 @@ function getTextColourOnFadedPrimary(cardType: string, userColourSettings: Colou
   return getCustomColour('textColourOnFadedPrimary', cardType, userColourSettings, defaultColourSettings);
 }
 
+function getSecondaryColor(cardType: string, userColourSettings: ColourSettings, defaultColourSettings: ColourSettings = defaultColours, gradientValue: number = 100): string {
+  return resolveGradientToStringColour(getColourWithOpacityFalloff('secondaryColour', cardType, userColourSettings, defaultColourSettings), getBackgroundColor(cardType, userColourSettings, defaultColourSettings), gradientValue)
+}
+
+function getTextColourOnSecondary(cardType: string, userColourSettings: ColourSettings, defaultColourSettings: ColourSettings = defaultColours): string {
+  return getCustomColour('textColourOnSecondary', cardType, userColourSettings, defaultColourSettings);
+}
+
+function getTextColourOnFadedSecondary(cardType: string, userColourSettings: ColourSettings, defaultColourSettings: ColourSettings = defaultColours): string {
+  return getCustomColour('textColourOnFadedSecondary', cardType, userColourSettings, defaultColourSettings);
+}
+
 function getTextColourOnBackground(cardType: string, userColourSettings: ColourSettings, defaultColourSettings: ColourSettings = defaultColours): string {
   return getCustomColour('textColourOnBackground', cardType, userColourSettings, defaultColourSettings);
 }
@@ -140,9 +152,12 @@ function getBackgroundColor(cardType: string, userColourSettings: ColourSettings
 
 export const ColorCalculator = {
   getPrimaryColor,
+  getSecondaryColor,
   getBackgroundColor,
   getTextColourOnPrimary,
   getTextColourOnFadedPrimary,
+  getTextColourOnSecondary,
+  getTextColourOnFadedSecondary,
   getTextColourOnBackground,
   getKeywordColor,
   getKeywordTextColor,

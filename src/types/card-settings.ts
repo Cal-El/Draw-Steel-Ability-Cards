@@ -17,10 +17,13 @@ export type ColourSettings = {
 
 export type ColourSet = {
   primaryColour?: Colour
+  secondaryColour?: Colour
   backgroundColour?: string // background colour must be a CSS-readable colour string
   textColourOnBackground?: string | Pointer
   textColourOnFadedPrimary?: string | Pointer
   textColourOnPrimary?: string | Pointer
+  textColourOnFadedSecondary?: string | Pointer
+  textColourOnSecondary?: string | Pointer
   keywordColour?: Colour
   keywordTextColour?: string | Pointer
 }

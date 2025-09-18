@@ -2,8 +2,8 @@ import { PayloadAction } from "@reduxjs/toolkit";
 import { createAppSlice } from "./create-app-slice";
 import { getCardSettings } from "../components/data-saving/card-settings-service";
 import { CardSettings, ColourSet, Theme } from "../types/card-settings";
-import { defaultV2Theme } from "../components/ability-card-v2/utils/color-calculator";
-import { defaultV1Theme } from "../components/ability-card/utils/color-calculator";
+import {defaultV2Theme} from "../components/ability-card-v2/constants.ts";
+import {defaultV1Theme} from "../components/ability-card/constants.ts";
 
 export type UpdateCardTypeSettingsPayload = {
   cardType: string

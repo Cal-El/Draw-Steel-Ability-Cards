@@ -1,9 +1,9 @@
 import {ability_card} from "../../types/ability-card.ts";
-import {getBackgroundColor, getPrimaryColor} from "./utils/color-calculator.ts";
+import {getBackgroundColor, getPrimaryColor, getSecondaryColor} from "./utils/color-calculator.ts";
 import {useAppSelector} from "../../redux/hooks.ts";
 import {selectThemeColours} from "../../redux/card-settings-slice.ts";
 
-const NormalCardback = ({color: primaryColour = '#aaaaaa', secondaryColour = '#dddddd', baseColour = 'white'}) => {
+const NormalCardback = ({color: primaryColour = '#aaaaaa', fadedPrimary = '#dddddd', baseColour = 'white'}) => {
   return (<div className={'w-full h-full'}>
     <svg width="100%" height="100%" viewBox="0 0 1050 750" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve"
@@ -18,7 +18,7 @@ const NormalCardback = ({color: primaryColour = '#aaaaaa', secondaryColour = '#d
         <g id="Topmatter-Area" transform="matrix(1.0028,0,0,0.464949,-11.2231,-130.606)">
           <path
             d="M1050,370.519L1050,375L52.742,375L52.742,298.827L1016.76,298.827C1035.11,298.827 1050,330.951 1050,370.519Z"
-            style={{fill: secondaryColour}}/>
+            style={{fill: fadedPrimary}}/>
         </g>
         <g id="Sidebar-Line">
           <g id="Sidebar-Line1" transform="matrix(-0.0670115,-1.37637e-17,8.20654e-18,-0.112389,46.2651,741.332)">
@@ -80,14 +80,14 @@ const UpperHeaderDivider = ({color: primaryColour = '#aaaaaa'}) => {
   </div>)
 }
 
-const HeroicCardback = ({color: primaryColour = '#aaaaaa', secondaryColour = '#dddddd', baseColour = 'white'}) => {
+const HeroicCardback = ({color: primaryColour = '#aaaaaa', fadedPrimary = '#dddddd', secondaryColour = '#dddddd',  baseColour = 'white'}) => {
   return (<div className={'w-full h-full'}>
     <svg width="100%" height="100%" viewBox="0 0 1050 750" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" style={{fillRule:`evenodd`,clipRule:"evenodd",strokeLinejoin:'round',strokeMiterlimit:"5",}}>
     <g id="New-Card">
       <path d="M1050,41.667C1050,18.67 1031.33,0 1008.33,0L41.667,0L0,41.667L0,708.333L41.667,750L1008.33,750C1031.33,750 1050,731.33 1050,708.333L1050,41.667Z" style={{fill:baseColour,}}/>
       <path d="M1050,41.667L1050,708.333C1050,731.33 1031.33,750 1008.33,750L41.667,750L0,708.333L0,41.667L41.667,0L1008.33,0C1031.33,0 1050,18.67 1050,41.667ZM1041.67,41.667C1041.67,23.269 1026.73,8.333 1008.33,8.333L45.118,8.333C45.118,8.333 8.333,45.118 8.333,45.118L8.333,704.882L45.118,741.667L1008.33,741.667C1026.73,741.667 1041.67,726.731 1041.67,708.333L1041.67,41.667Z" style={{fill:primaryColour}}/>
       <g id="Topmatter-Area" transform="matrix(1.0028,0,0,0.464949,-11.2231,-130.606)">
-            <path d="M1050,370.519L1050,375L52.742,375L52.742,298.827L1016.76,298.827C1035.11,298.827 1050,330.951 1050,370.519Z" style={{fill:secondaryColour,}}/>
+            <path d="M1050,370.519L1050,375L52.742,375L52.742,298.827L1016.76,298.827C1035.11,298.827 1050,330.951 1050,370.519Z" style={{fill:fadedPrimary,}}/>
         </g>
       <g id="Sidebar-Line">
         <g id="Sidebar-Line1" transform="matrix(-0.0670115,-1.37637e-17,8.20654e-18,-0.112389,46.2651,741.332)">
@@ -114,14 +114,14 @@ const HeroicCardback = ({color: primaryColour = '#aaaaaa', secondaryColour = '#d
                 <path d="M173.772,136.607L29.129,136.607L79.44,101.116L123.147,101.116L173.772,136.607Z" style={{fill:primaryColour}}/>
             </g>
         <g transform="matrix(1.31674e-16,2.1504,-1.25263,7.67016e-17,167.336,-61.0775)">
-                <path d="M62.437,65.9L81.865,99.253L43.008,99.253L62.437,65.9Z" style={{fill:"rgb(224,180,80)",}}/>
+                <path d="M62.437,65.9L81.865,99.253L43.008,99.253L62.437,65.9Z" style={{fill:secondaryColour,}}/>
           <path d="M62.437,65.9L81.865,99.253L43.008,99.253L62.437,65.9ZM62.437,69.045C62.437,69.045 46.135,97.03 46.135,97.03L78.738,97.03L62.437,69.045Z" style={{fill:primaryColour}}/>
             </g>
         <g transform="matrix(9.39273e-17,1.53395,-0.890599,5.45334e-17,131.403,-22.5886)">
                 <path d="M62.437,65.9L81.865,99.253L43.008,99.253L62.437,65.9Z" style={{fill:primaryColour}}/>
             </g>
         <g transform="matrix(3.64817,3.64817,-1.1626,1.1626,49.9298,-95.5734)">
-                <rect x="22.181" y="59.581" width="5.091" height="15.974" style={{fill:"rgb(224,180,80)",}}/>
+                <rect x="22.181" y="59.581" width="5.091" height="15.974" style={{fill:secondaryColour,}}/>
             </g>
         </g>
     </g>
@@ -134,8 +134,8 @@ export default function AbilityCardback({card}: { card: ability_card }) {
 
   return <div className={``}>
     {card.cost ?
-      <HeroicCardback color={getPrimaryColor(card.type, colourSettings)} secondaryColour={getPrimaryColor(card.type, colourSettings, 20)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
-      : <NormalCardback color={getPrimaryColor(card.type, colourSettings)} secondaryColour={getPrimaryColor(card.type, colourSettings, 20)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
+      <HeroicCardback color={getPrimaryColor(card.type, colourSettings)} fadedPrimary={getPrimaryColor(card.type, colourSettings, 20)} secondaryColour={getSecondaryColor(card.type, colourSettings)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
+      : <NormalCardback color={getPrimaryColor(card.type, colourSettings)} fadedPrimary={getPrimaryColor(card.type, colourSettings, 20)} baseColour={getBackgroundColor(card.type, colourSettings)}/>
     }
   </div>
 }

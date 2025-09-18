@@ -1,40 +1,6 @@
-import { ColourSettings, Theme } from "../../../types/card-settings";
+import { ColourSettings } from "../../../types/card-settings";
 import {ColorCalculator} from "../../../utils/color-calculator.ts";
-
-export const defaultColours: ColourSettings = {
-  baseColours: {
-    primaryColour: {
-      baseColour: "#000000",
-    },
-    backgroundColour: "#ffffff",
-    textColourOnBackground: "pointer:primaryColour",
-    textColourOnFadedPrimary: "pointer:primaryColour",
-    textColourOnPrimary: "pointer:backgroundColour",
-    keywordColour: {
-      baseColour: "#b87f47",
-    },
-    keywordTextColour: "pointer:textColourOnPrimary",
-  },
-  cardTypeColours: {
-    "main action": { primaryColour: {baseColour: "#367F36"}},
-    "maneuver": { primaryColour: {baseColour: "#365B7F"}},
-    "triggered action": { primaryColour: {baseColour: "#7F3636"}},
-    "move action": { primaryColour: {baseColour: "#7F5A36"}},
-    "free triggered action": { primaryColour: {baseColour: "#7f367f"}},
-    "free maneuver": { primaryColour: {baseColour: "#367F5A"}},
-    "no action": { primaryColour: {baseColour: "#36367F"}},
-    "free strike": { primaryColour: {baseColour: "#595959"}},
-    "trait": { primaryColour: {baseColour: "#5a367f"}},
-    "treasure": { primaryColour: {baseColour: "#333333"}}
-  }
-}
-
-export const defaultV1Theme: Theme = {
-  name: "Legacy",
-  id: "legacyCards",
-  cardDesign: "Legacy",
-  colourSettings: defaultColours
-}
+import {defaultColours} from "../constants.ts";
 
 export function getPrimaryColor(cardType: string, userColourSettings: ColourSettings, gradientValue: number = 100): string {
   return ColorCalculator.getPrimaryColor(cardType, userColourSettings, defaultColours, gradientValue);
@@ -46,6 +12,18 @@ export function getTextColourOnPrimary(cardType: string, userColourSettings: Col
 
 export function getTextColourOnFadedPrimary(cardType: string, userColourSettings: ColourSettings): string {
   return ColorCalculator.getTextColourOnFadedPrimary(cardType, userColourSettings, defaultColours);
+}
+
+export function getSecondaryColor(cardType: string, userColourSettings: ColourSettings, gradientValue: number = 100): string {
+  return ColorCalculator.getSecondaryColor(cardType, userColourSettings, defaultColours, gradientValue);
+}
+
+export function getTextColourOnSecondary(cardType: string, userColourSettings: ColourSettings): string {
+  return ColorCalculator.getTextColourOnSecondary(cardType, userColourSettings, defaultColours);
+}
+
+export function getTextColourOnFadedSecondary(cardType: string, userColourSettings: ColourSettings): string {
+  return ColorCalculator.getTextColourOnFadedSecondary(cardType, userColourSettings, defaultColours);
 }
 
 export function getTextColourOnBackground(cardType: string, userColourSettings: ColourSettings): string {

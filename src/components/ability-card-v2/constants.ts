@@ -1,0 +1,51 @@
+import {ColourSettings, Theme} from "../../types/card-settings.ts";
+
+export const v2StyleName = "Draw Steel Ability Cards";
+export const v2DefaultThemeId = "drawSteelAbilityCards";
+
+export const defaultColours: ColourSettings = {
+  baseColours: {
+    primaryColour: {
+      baseColour: "#000000",
+    },
+    secondaryColour: {
+      baseColour: "#E0B450"
+    },
+    backgroundColour: "#ffffff",
+    textColourOnBackground: "pointer:primaryColour",
+    textColourOnFadedPrimary: "pointer:primaryColour",
+    textColourOnPrimary: "pointer:backgroundColour",
+    textColourOnFadedSecondary: "pointer:primaryColour",
+    textColourOnSecondary: "pointer:primaryColour",
+    keywordColour: {
+      baseColour: "#FED7AA",
+    },
+    keywordTextColour: "#555555",
+  },
+  cardTypeColours: {
+    "main action": { primaryColour: {baseColour: "#367F36"}},
+    "maneuver": { primaryColour: {baseColour: "#365B7F"}},
+    "triggered action": { primaryColour: {baseColour: "#7F3636"}},
+    "move action": { primaryColour: {baseColour: "#7F5A36"}},
+    "free triggered action": { primaryColour: {baseColour: "#7f367f"}},
+    "free maneuver": { primaryColour: {baseColour: "#367F5A"}},
+    "no action": { primaryColour: {baseColour: "#36367F"}},
+    "free strike": { primaryColour: {baseColour: "#595959"}},
+    "trait": { primaryColour: {baseColour: "#5a367f"}},
+    "treasure": {
+      primaryColour: {baseColour: "#eebd00", opacityFalloff: 1.1},
+      backgroundColour: '#333333',
+      textColourOnPrimary: "pointer:textColourOnFadedPrimary",
+      textColourOnFadedPrimary: "#FFFFFF",
+      textColourOnBackground: 'pointer:primaryColour-100',
+      keywordTextColour: "pointer:textColourOnPrimary",
+    }
+  }
+}
+
+export const defaultV2Theme: Theme = {
+  name: v2StyleName,
+  id: v2DefaultThemeId,
+  cardDesign: v2StyleName,
+  colourSettings: defaultColours
+}

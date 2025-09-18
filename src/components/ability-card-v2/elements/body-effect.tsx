@@ -15,8 +15,8 @@ export function BodyEffect({card, b}: {card: ability_card, b: effect}) {
       backgroundColor: useBacking ? getPrimaryColor(card.type, colourSettings, 20) : 'transparent',
       color: getTextColourOnBackground(card.type, colourSettings),
       fontWeight: 'normal',
-      lineHeight: card.v2FontSizePtOverrides?.body ?? '8pt',
-      fontSize: card.v2FontSizePtOverrides?.body ?? '8pt',
+      lineHeight: `${card.v2FontSizePtOverrides?.body ?? 8}pt`,
+      fontSize: `${card.v2FontSizePtOverrides?.body ?? 8}pt`,
     }} className={`${useBacking ? 'py-[2pt]' : ''} mb-[2pt] px-[3pt] whitespace-pre-line`}>
       <Markdown>
         {`${title ? `**${title.replace('#', '')}**: ` : ''}${b.body}`}
