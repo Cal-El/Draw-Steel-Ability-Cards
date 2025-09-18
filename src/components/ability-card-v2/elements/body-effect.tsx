@@ -10,7 +10,7 @@ export function BodyEffect({card, b}: {card: ability_card, b: effect}) {
   const title = b.title ?? ''
   const useBacking = title === 'Trigger' || title.startsWith('#')
 
-  return <div className={`w-full pl-[10.5pt] pr-[2pt]`}>
+  return <div className={`w-full pl-[11pt] pr-[2pt]`}>
     <div style={{
       backgroundColor: useBacking ? getPrimaryColor(card.type, colourSettings, 20) : 'transparent',
       color: getTextColourOnBackground(card.type, colourSettings),

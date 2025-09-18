@@ -145,7 +145,7 @@ function getDamageBreakdown({t, tn, card, heroData}: {t: power_roll_tier, tn: nu
       break;
     }
   }
-  if (!failedCharacteristicPulling) {
+  if (!failedCharacteristicPulling && t.damage.characteristicBonusOptions.length > 0) {
     displayDamage += bestBonus;
     if (altDisplayDamage) altDisplayDamage += bestBonus;
   } else {
@@ -244,7 +244,7 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
               display: "block",
               color: getTextColourOnPrimary(card.type, colourSettings),
               fontWeight: 'bold',
-              lineHeight: '7.5pt',
+              lineHeight: '10.5pt',
               fontSize: '7.5pt',
               fontVariantCaps: 'small-caps',
               textAlign: "center",
@@ -256,7 +256,7 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
               paddingLeft: "2pt",
               paddingRight: "2pt",
               minWidth: "15pt",
-              height: "9pt",
+              height: "12pt",
             }}>
               {damageBreakdown?.displayCustomisableValue}
             </div>
@@ -277,7 +277,7 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
             display: "block",
             color: getTextColourOnPrimary(card.type, colourSettings),
             fontWeight: 'bold',
-            lineHeight: '7.5pt',
+            lineHeight: '10.5pt',
             fontSize: '7.5pt',
             fontVariantCaps: 'small-caps',
             textAlign: "center",
@@ -289,14 +289,14 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
             paddingLeft: "2pt",
             paddingRight: "2pt",
             minWidth: "15pt",
-            height: "9pt",
+            height: "12pt",
           }}>
             {`${t.potency?.characteristic[0]}\<${potency}`}
           </div>
           <div style={{
             color: getTextColourOnBackground(card.type, colourSettings),
             fontWeight: 'normal',
-            lineHeight: '8pt',
+            lineHeight: '10.5pt',
             fontSize: '8.5pt',
           }}>,</div>
         </div>

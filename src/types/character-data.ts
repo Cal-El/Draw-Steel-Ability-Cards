@@ -83,6 +83,10 @@ export class CharacteristicSet {
     }
   }
 
+  public isEmpty(this: CharacteristicSet) {
+    return !!this.might || !!this.agility || !!this.reason || !!this.intuition || !!this.presence;
+  }
+
   public toJSON() : object {
     return {
       might: this.might,
