@@ -1,6 +1,5 @@
 import { useState, ChangeEvent } from "react";
 import { useAppSelector, useAppDispatch } from "../../redux/hooks";
-import { SectionSeparator } from "../edit-card-sidebar/card-editor/common-editor-elements";
 import { selectAllThemes, selectAppliedTheme, updateAppliedTheme } from "../../redux/card-settings-slice.ts";
 
 export default function ThemeMenu(){
