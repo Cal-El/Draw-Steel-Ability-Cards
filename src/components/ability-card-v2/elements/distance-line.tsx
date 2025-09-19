@@ -36,17 +36,17 @@ export function DistanceLine({card, heroData} : { card: ability_card, heroData: 
           if (v.includes(`]`)) {
             const vCloseSplit = v.split(']');
             if (i-1 < card.header.distance.values.length) {
-              return <>
-                <div key={`${i}`} style={{backgroundColor: getPrimaryColor(card.type, colourSettings, 40), color: getTextColourOnPrimary(card.type, colourSettings), borderColor: getPrimaryColor(card.type, colourSettings)}} className={`min-w-[15pt] h-[9pt] px-[2pt] border-[0.5pt] rounded-[2pt] text-[7.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none`}>
+              return <div key={i} className={`flex justify-start items-center gap-[2pt]`}>
+                <div style={{backgroundColor: getPrimaryColor(card.type, colourSettings, 40), color: getTextColourOnPrimary(card.type, colourSettings), borderColor: getPrimaryColor(card.type, colourSettings)}} className={`min-w-[15pt] h-[9pt] px-[2pt] border-[0.5pt] rounded-[2pt] text-[7.5pt] text-stone-600 text-center font-bold flex justify-center items-center leading-none`}>
                   <div className={`h-[7.5pt]`}>
                     {getDisplayedDistanceValue(card, heroData, card.header.distance.values[i - 1])}
                   </div>
                 </div>
-                <div key={`${i+'a'}`}>{vCloseSplit[1]}</div>
-              </>
+                <div>{vCloseSplit[1]}</div>
+              </div>
             }
           }
-          return v;
+          return <div key={i}>{v}</div>;
         })}
       </div>
     </div>}

@@ -1,6 +1,9 @@
 export type CardSettings = {
-  appliedTheme?: string
+  appliedThemeId?: string
+  appliedTheme: Theme
+  inbuiltThemes: Theme[]
   customThemes: Theme[]
+  allThemes: Theme[]
 }
 
 export type Theme = {

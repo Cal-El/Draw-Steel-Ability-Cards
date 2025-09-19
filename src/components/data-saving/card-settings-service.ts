@@ -1,5 +1,6 @@
 import {CardSettings, Theme} from "../../types/card-settings"
 import {v2DefaultThemeId} from "../ability-card-v2/constants.ts";
+import {getAllThemes, getAppliedTheme, getEmptySettings, getInbuiltThemes} from "../../utils/card-settings-utils.ts";
 
 export const ThemesKey = "theme"
 
@@ -10,7 +11,7 @@ export type CardSettingsPersistenceModel = {
 
 export function saveCardSettings(cardSettings: CardSettings){
   const saveObj : CardSettingsPersistenceModel = {
-    appliedThemeId: cardSettings.appliedTheme ?? v2DefaultThemeId,
+    appliedThemeId: cardSettings.appliedThemeId ?? v2DefaultThemeId,
     customThemeIds: cardSettings.customThemes.map(t => t.id)
   }
   localStorage.setItem(`${ThemesKey}-list`, JSON.stringify(saveObj))
@@ -19,19 +20,24 @@ export function saveCardSettings(cardSettings: CardSettings){
 }
 
 export function getCardSettings(): CardSettings {
+  const emptySettings = getEmptySettings();
+
   const data = localStorage.getItem(`${ThemesKey}-list`)
   let parsedSettings: CardSettingsPersistenceModel | undefined = undefined;
   if(data) {
     parsedSettings = JSON.parse(data ?? '');
   }
   if (!parsedSettings){
-    const emptySettings = { appliedTheme: v2DefaultThemeId, customThemes: [] };
     saveCardSettings(emptySettings)
     return emptySettings;
   }
+  const customThemes = parsedSettings.customThemeIds.map(getTheme).filter(t => t !== undefined);
   return {
-    appliedTheme: parsedSettings.appliedThemeId,
-    customThemes: parsedSettings.customThemeIds.map(getTheme).filter(t => t !== undefined)
+    appliedThemeId: parsedSettings.appliedThemeId,
+    appliedTheme: getAppliedTheme({appliedThemeId: parsedSettings.appliedThemeId, customThemes}),
+    inbuiltThemes: emptySettings.inbuiltThemes,
+    customThemes: customThemes,
+    allThemes: getAllThemes({inbuiltThemes: emptySettings.inbuiltThemes, customThemes})
   } satisfies CardSettings
 }
 
