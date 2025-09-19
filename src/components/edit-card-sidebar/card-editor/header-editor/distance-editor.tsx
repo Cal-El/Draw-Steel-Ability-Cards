@@ -104,19 +104,19 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
     onChange({...card, header: {...card.header, distance: {display: newDisplay, values: temp}}})
   }
 
-  const distanceDisplay = () => {
+  const DistanceDisplay = () => {
     let i = 0;
-    let val = displayText.split(' ').map(x => {
+    let val = displayText.split(' ').map((x, i) => {
       if (x.startsWith('[') && x.endsWith(']')) {
         i++;
-        return (<span className={`font-bold`}
+        return (<span key={i} className={`font-bold`}
                       style={{color:getPrimaryColor(abilityTypeValues[i-1], {cardTypeColours: {}})}}>{x} </span>)
       }
       else {
-        return (<span className={`italic text-stone-700`}>{x} </span>)
+        return (<span key={i} className={`italic text-stone-700`}>{x} </span>)
       }
     })
-    if (i === 0) val = [<span className={`italic text-stone-700`}>Use '[n]' note customisable values</span>]
+    if (i === 0) val = [<span key={i} className={`italic text-stone-700`}>Use '[n]' note customisable values</span>]
 
     return val
   }
@@ -132,7 +132,7 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
                  className={`border-2 border-stone-400 bg-white p-1`}/>
         </div>
         <div className={`py-1 px-2`}>
-          {distanceDisplay()}
+          <DistanceDisplay key={'distanceDisplay'}/>
         </div>
       </div>
       {card.header.distance.values.map((v, i) => {

@@ -12,9 +12,9 @@ import { selectThemeColours } from "../../../redux/card-settings-slice.ts";
 import { useAppSelector } from "../../../redux/hooks.ts";
 
 export function KeyValueStatement({card, kv}: {card: ability_card, kv: key_value_statement}) {
+  const colourSettings = useAppSelector(selectThemeColours)
   const key = kv.key ?? ''
   const useBacking = key === 'Trigger' || key.startsWith('#')
-  const colourSettings = useAppSelector(selectThemeColours) ?? {cardTypeColours: {}}
 
     return (
         <div className={`flex-auto flex ${useBacking && `py-[3pt]`} w-full`}

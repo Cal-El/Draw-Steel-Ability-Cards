@@ -40,12 +40,7 @@ export const defaultColours: ColourSettings = {
     "free strike": { primaryColour: {baseColour: "#595959"}},
     "trait": { primaryColour: {baseColour: "#5a367f"}},
     "treasure": {
-      primaryColour: {baseColour: "#eebd00", opacityFalloff: 1.1},
-      backgroundColour: '#333333',
-      textColourOnPrimary: "pointer:textColourOnFadedPrimary",
-      textColourOnFadedPrimary: "#FFFFFF",
-      textColourOnBackground: 'pointer:primaryColour-100',
-      keywordTextColour: "pointer:textColourOnPrimary",
+      primaryColour: {baseColour: "#333333"},
     }
   }
 }
