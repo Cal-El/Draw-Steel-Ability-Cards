@@ -3,6 +3,8 @@ import ThemeMenu from "./theme-menu";
 import {ThemeBasedCard} from "../theme-based-card.tsx";
 import {ability_card, abilityType, characteristic, potency_strength} from "../../types/ability-card.ts";
 import {CardStyleSelector} from "./card-style-selector.tsx";
+import BaseColourMenu from "./base-colour-menu.tsx";
+import {CardTypesColourMenu} from "./card-types-colour-menu.tsx";
 
 const dummyCard: ability_card = {
   version: 2,
@@ -95,12 +97,16 @@ export default function CardSettingsMenu(){
 
   return (
     <>
-      <div className="w-full flex flex-col justify-start gap-2 p-4 overflow-y-scroll h-full scrollbar">
-        <SectionSeparator name="Theme"/>
-        <div className="w-full pl-4 space-y-2">
+      <div className="w-full flex flex-col justify-start gap-2 p-4 pt-2 pb-8 pr-2 h-full">
+        <div className="w-full space-y-2 pr-2">
+          <SectionSeparator name="Theme"/>
           <ThemeMenu/>
           <ThemeBasedCard c={dummyCard} id={'examplecard'} hd={undefined} enlargedState={0}/>
+        </div>
+        <div className={`w-full flex-grow flex flex-col space-y-2 overflow-y-scroll scrollbar`}>
           <CardStyleSelector/>
+          <BaseColourMenu/>
+          <CardTypesColourMenu/>
         </div>
       </div>
     </>

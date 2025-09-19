@@ -1,7 +1,7 @@
 import { PayloadAction } from "@reduxjs/toolkit";
 import { createAppSlice } from "./create-app-slice";
 import {deleteTheme, getCardSettings, saveCardSettings} from "../components/data-saving/card-settings-service";
-import { CardSettings, ColourSet, Theme } from "../types/card-settings";
+import {CardSettings, ColourSet, ColourSettings, Theme} from "../types/card-settings";
 import {getAllThemes, getAppliedTheme, getEmptySettings} from "../utils/card-settings-utils.ts";
 
 export type UpdateCardTypeSettingsPayload = {
@@ -41,6 +41,16 @@ export const cardSettingsSlice = createAppSlice({
       saveCardSettings(state)
       state.allThemes = getAllThemes(state)
     }),
+    modifyAppliedThemeColours: create.reducer((state, action: PayloadAction<ColourSettings>) => {
+      const index = state.customThemes.findIndex(t => t.id === state.appliedThemeId)
+      if (index === -1) {
+        return;
+      }
+      state.appliedTheme.colourSettings = action.payload
+      state.customThemes.splice(index, 1, state.appliedTheme)
+      saveCardSettings(state)
+      state.allThemes = getAllThemes(state)
+    }),
     duplicateAppliedTheme: create.reducer((state, action: PayloadAction<string>) => {
       const t : Theme = {...state.appliedTheme, id: action.payload, name: `${state.appliedTheme.name} (copy)`}
       state.customThemes = [...(state.customThemes ?? []), t]
@@ -72,5 +82,5 @@ export const cardSettingsSlice = createAppSlice({
   }
 })
 
-export const {updateAppliedTheme, modifyAppliedThemeName, modifyAppliedThemeStyle, duplicateAppliedTheme, deleteAppliedTheme} = cardSettingsSlice.actions
+export const {updateAppliedTheme, modifyAppliedThemeName, modifyAppliedThemeStyle, modifyAppliedThemeColours, duplicateAppliedTheme, deleteAppliedTheme} = cardSettingsSlice.actions
 export const {selectAppliedTheme, selectThemeColours, selectThemeCardDesign, selectAllThemes, selectInbuiltThemes} = cardSettingsSlice.selectors

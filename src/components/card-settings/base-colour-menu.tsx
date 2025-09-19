@@ -1,46 +1,30 @@
-import { useState, ChangeEvent } from "react";
-import { selectBaseColours, updateBaseColours } from "../../redux/card-settings-slice";
+import {
+  modifyAppliedThemeColours,
+  selectAppliedTheme
+} from "../../redux/card-settings-slice";
 import { useAppSelector, useAppDispatch } from "../../redux/hooks";
 import { PopoverPicker } from "../common/popover-picker";
-import { SectionSeparator } from "../edit-card-sidebar/card-editor/common-editor-elements";
-import {Colour, ColourSet} from "../../types/card-settings";
-import {defaultColours} from "../../types/default-coloursets.ts";
+import { ColourSet } from "../../types/card-settings";
+import {useEffect, useState} from "react";
+import {getCardStylesAndPosition} from "../../utils/card-settings-utils.ts";
+import {BiLock} from "react-icons/bi";
 
 export default function BaseColourMenu(){
-  const baseColours = useAppSelector(selectBaseColours)
-  const defaultBaseColours = defaultColours.baseColours;
-  const [customiseKeywordColour, setCustomiseKeywordColour] = useState(!!baseColours?.keywordColour)
-  const [customiseBackgroundColour, setCustomiseBackgroundColour] = useState(!!baseColours?.backgroundColour)
-  const [customBaseColours, setBaseColours] = useState<ColourSet>(baseColours ?? {})
+  const theme = useAppSelector(selectAppliedTheme)
+  const [styleState, setStyleState] = useState(getCardStylesAndPosition(theme))
+  useEffect(() => {
+    setStyleState(getCardStylesAndPosition(theme))
+  }, [theme])
   const dispatch = useAppDispatch()
-
-  const onChangeCustomiseKeywordColour = (e: ChangeEvent<HTMLInputElement>) => {
-    setCustomiseKeywordColour(e.target.checked)
-    if(!e.target.checked){
-      dispatchChangeBaseColour('keywordColour', '')
-    } else {
-      dispatchChangeBaseColour('keywordColour', customBaseColours.keywordColour ?? defaultBaseColours?.keywordColour ?? {baseColour: '#000000'})
-    }
-  }
-
-  const onChangeCustomiseBackgroundColour = (e: ChangeEvent<HTMLInputElement>) => {
-    setCustomiseBackgroundColour(e.target.checked)
-    if(!e.target.checked){
-      dispatchChangeBaseColour('backgroundColour', "")
-    } else {
-      dispatchChangeBaseColour('keywordColour', customBaseColours.backgroundColour ?? "")
-    }
-  }
 
   const onChangeBaseColour = (field: keyof ColourSet) => {
     return (newColor: string) => {
       if (newColor === '#NaNNaNNaN') return
       const newBaseColours = {
-        ...baseColours,
+        ...theme.colourSettings.baseColours,
         [field]: newColor
       }
-      setBaseColours(newBaseColours)
-      dispatch(updateBaseColours(newBaseColours))
+      dispatch(modifyAppliedThemeColours({...theme.colourSettings, baseColours: newBaseColours}))
     }
   }
 
@@ -48,41 +32,35 @@ export default function BaseColourMenu(){
     return (newColor: string) => {
       if (newColor === '#NaNNaNNaN') return
       const newBaseColours = {
-        ...baseColours,
+        ...theme.colourSettings.baseColours,
         [field]: {baseColour: newColor},
       }
-      setBaseColours(newBaseColours)
-      dispatch(updateBaseColours(newBaseColours))
+      dispatch(modifyAppliedThemeColours({...theme.colourSettings, baseColours: newBaseColours}))
     }
   }
-
-  const dispatchChangeBaseColour = (field: keyof ColourSet, value: string | Colour) => {
-    const newBaseColours = {
-        ...baseColours,
-        [field]: value
-      }
-      dispatch(updateBaseColours(newBaseColours))
-  }
   
-  return (
-    <div>
-      <SectionSeparator name="Base"/>
-      <div className={`flex flex-col gap-2 mb-4`}>
-        <div className="flex flex-row items-center gap-2 h-14">
-          <div className={`text-right`}>Keyword Colour:</div>
-          <input type={`checkbox`} checked={customiseKeywordColour} onChange={onChangeCustomiseKeywordColour} className={`border-2 border-stone-400 p-1 mr-2`}/>
-          {customiseKeywordColour && <>
-            <PopoverPicker color={baseColours?.keywordColour?.baseColour ?? ""} onChange={onChangeBaseColourWithOpacity('keywordColour')}/>
-          </>}
+  return (<>
+      <div>
+        <div className={`w-full flex gap-2 items-center`}>
+          <hr className={`flex-grow border-gray-300`}/>
+          <span className={`text-xs small-caps font-bold pb-1 flex-none flex items-center gap-[2pt]`}>Theme Base Colours</span>
+          <hr className={`flex-grow border-gray-300`}/>
         </div>
-        <div className="flex flex-row items-center gap-2 h-14">
-          <div className={`text-right`}>Background Colour:</div>
-          <input type={`checkbox`} checked={customiseBackgroundColour} onChange={onChangeCustomiseBackgroundColour} className={`border-2 border-stone-400 p-1 mr-2`}/>
-          {customiseBackgroundColour && <>
-            <PopoverPicker color={baseColours?.backgroundColour ?? ""} onChange={onChangeBaseColour('backgroundColour')}/>
-          </>}
-        </div>
+        { styleState.isInbuiltTheme ?
+          <div className={`w-full flex gap-[2pt] justify-center items-center border-[2pt] border-dashed border-stone-400 bg-stone-300 rounded-lg p-[5pt] text-center font-bold text-stone-400`}>
+            <BiLock/> Theme Colours are locked for built-in themes.
+          </div> :
+          <div className={`flex flex-col gap-2 mb-4`}>
+            <div className="flex flex-row items-center gap-2 h-14">
+              <div className={`text-right`}>Keyword Colour:</div>
+              <PopoverPicker color={theme.colourSettings.baseColours?.keywordColour?.baseColour ?? ""} onChange={onChangeBaseColourWithOpacity('keywordColour')}/>
+            </div>
+            <div className="flex flex-row items-center gap-2 h-14">
+              <div className={`text-right`}>Background Colour:</div>
+              <PopoverPicker color={theme.colourSettings.baseColours?.backgroundColour ?? ""} onChange={onChangeBaseColour('backgroundColour')}/>
+            </div>
+          </div>
+        }
       </div>
-    </div>
-  )
+  </>)
 }

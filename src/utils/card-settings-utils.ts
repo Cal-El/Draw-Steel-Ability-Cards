@@ -56,7 +56,7 @@ export function getCardStyleDetails(cardStyle: string) : CardStyleDetails | unde
 }
 
 export function getCardStylesAndPosition(appliedTheme: Theme) : { isInbuiltTheme: boolean, styles: string[], currentIdx: number } {
-  const isInbuiltTheme = coreStyleThemes.findIndex(t => t.id === appliedTheme.id) !== -1;
+  const isInbuiltTheme = inbuiltThemes.findIndex(t => t.id === appliedTheme.id) !== -1;
   const styles = coreStyleThemes.map(t => t.cardDesign);
   const currentIdx = styles.findIndex(s => s === appliedTheme.cardDesign);
   return {isInbuiltTheme, styles, currentIdx}

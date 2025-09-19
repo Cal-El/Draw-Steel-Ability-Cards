@@ -2,7 +2,7 @@ import {useSelector} from "react-redux";
 import {modifyAppliedThemeStyle, selectAppliedTheme} from "../../redux/card-settings-slice.ts";
 import {useEffect, useState} from "react";
 import {getCardStyleDetails, getCardStylesAndPosition} from "../../utils/card-settings-utils.ts";
-import {BiSolidLeftArrow, BiSolidRightArrow} from "react-icons/bi";
+import {BiLock, BiSolidLeftArrow, BiSolidRightArrow} from "react-icons/bi";
 import {useAppDispatch} from "../../redux/hooks.ts";
 
 export function CardStyleSelector() {
@@ -26,7 +26,7 @@ export function CardStyleSelector() {
   return <div className={`w-full flex flex-col justify-start items-center`}>
     <div className={`w-full flex gap-2 items-center`}>
       <hr className={`flex-grow border-gray-300`}/>
-      <span className={`text-xs small-caps font-bold pb-1 flex-none`}>Card Style</span>
+      <span className={`text-xs small-caps font-bold pb-1 flex-none flex items-center gap-[2pt]`}>Theme Card Style {styleState.isInbuiltTheme && <BiLock/>}</span>
       <hr className={`flex-grow border-gray-300`}/>
     </div>
     <div className={`w-full flex justify-around items-center gap-[5pt]`}>
@@ -46,5 +46,6 @@ export function CardStyleSelector() {
         dispatch(modifyAppliedThemeStyle(styleState.styles[styleState.currentIdx + 1]))
       }} className={`p-[5pt] rounded-[2pt] ${shouldDisableRight() ? 'bg-stone-300 text-stone-400' : 'bg-white text-stone-800'} border-[2pt] border-stone-400`}><BiSolidRightArrow /></div>
     </div>
+    {styleState.isInbuiltTheme && <div className={`text-xs italic text-stone-600 pt-[5pt]`}>Theme Card Style is locked on built-in themes.</div>}
   </div>
 }

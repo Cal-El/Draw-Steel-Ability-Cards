@@ -27,7 +27,7 @@ export default function TopMenu({ showHeroData,
         <button onClick={clickShowHeroData} className="flex flex-row items-center text-base bg-stone-300 p-1 rounded-md hover:bg-stone-200 space-x-1">{!showHeroData ? <FiCheckSquare/> : <FiSquare/>}<span>Render without Hero</span></button>
         <button onClick={openHeroDataSidebar} className="flex flex-row items-center text-base bg-stone-300 p-1 rounded-md hover:bg-stone-200 space-x-1"><GiSwordman/><span>Hero Data</span></button>
         <button onClick={openCardSettingsSidebar}
-                style={{borderStyle: "solid", borderWidth: '0.15rem', borderImage: 'linear-gradient(to bottom right, #18fd18 0%, #2c90fc 50%, #fd1892 100%)', borderImageSlice: 1, borderRadius: '0.375rem'}}
+                style={{borderStyle: "solid", borderWidth: '0.15rem', borderImage: 'linear-gradient(to bottom right, hsl(120 100 60) 0%, hsl(210 100 60) 30%, hsl(0 100 60) 45%, hsl(330 100 60) 55%, hsl(30 100 60) 70%, hsl(180 100 60) 100%)', borderImageSlice: 1, borderRadius: '0.375rem'}}
                 className="flex flex-row items-center text-base bg-stone-300 py-[0.1rem] px-[0.25rem] hover:bg-stone-200 space-x-1"><FaPalette /><span>Theme</span></button>
       </div>
       <div className={`flex-none bg-stone-600 min-h-full min-w-0.5`}/>

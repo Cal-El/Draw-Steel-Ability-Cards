@@ -1,42 +1,65 @@
-import { ChangeEvent, useState } from "react";
-import { selectCardTypeSettingsByCardType, updateCardTypeSettings } from "../../redux/card-settings-slice";
+import {ChangeEvent} from "react";
+import {
+  modifyAppliedThemeColours,
+  selectAppliedTheme,
+} from "../../redux/card-settings-slice";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import { SectionSeparator } from "../edit-card-sidebar/card-editor/common-editor-elements";
 import { PopoverPicker } from "../common/popover-picker";
-import {getCardTypeDefaultColourSettings} from "../../utils/color-calculator.ts";
+import {ColourSet} from "../../types/card-settings.ts";
 
 export default function CardTypeColourMenu({cardType}: {cardType: string}){
-  const cardTypeSettings = useAppSelector(selectCardTypeSettingsByCardType(cardType))
-  const defaultTypeSettings = getCardTypeDefaultColourSettings(cardType);
-  const [customiseCardTypeColours, setCustomiseCardTypeColours] = useState(Object.values(cardTypeSettings ?? {}).some(x => !!x))
-  const [baseColourField, setBaseColourField] = useState(cardTypeSettings?.primaryColour?.baseColour ?? defaultTypeSettings?.primaryColour?.baseColour ?? '#000000')
+  const theme = useAppSelector(selectAppliedTheme)
   const dispatch = useAppDispatch()
 
-  const onChangeCustomiseCardTypeColours = (e: ChangeEvent<HTMLInputElement>) => {
-    setCustomiseCardTypeColours(e.target.checked)
-    if(!e.target.checked){
-      dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: undefined}))
-    } else {
-      dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: {primaryColour: {baseColour: baseColourField}}}))
+  const onChangeColourWithOpacity = (field: keyof ColourSet) => {
+    return (newColor: string) => {
+      if (newColor === '#NaNNaNNaN') return
+      const newBaseColours = {
+        ...theme.colourSettings.cardTypeColours,
+        [cardType]: {
+          ...theme.colourSettings.cardTypeColours[cardType],
+          [field]: {
+            baseColour: newColor
+          }
+        }
+      }
+      dispatch(modifyAppliedThemeColours({...theme.colourSettings, cardTypeColours: newBaseColours}))
     }
   }
 
-  const onChangeBaseColour = (newColor: string) => {
-    if (newColor === '#NaNNaNNaN') return
-    setBaseColourField(newColor)
-    dispatch(updateCardTypeSettings({cardType: cardType, cardSettings: {primaryColour: {baseColour: newColor}}}))
+  const onSwitchOverrideOn = (field: keyof ColourSet) => {
+    return (e : ChangeEvent<HTMLInputElement>) => {
+      if (e.target.checked) {
+        const newBaseColours = {
+          ...theme.colourSettings.cardTypeColours,
+          [cardType]: {
+            ...theme.colourSettings.cardTypeColours[cardType],
+            [field]: {...theme.colourSettings.baseColours?.primaryColour}
+          }
+        }
+        dispatch(modifyAppliedThemeColours({...theme.colourSettings, cardTypeColours: newBaseColours}))
+      } else {
+        const newBaseColours = {
+          ...theme.colourSettings.cardTypeColours,
+          [cardType]: {
+            ...theme.colourSettings.cardTypeColours[cardType],
+            [field]: undefined
+          }
+        }
+        dispatch(modifyAppliedThemeColours({...theme.colourSettings, cardTypeColours: newBaseColours}))
+      }
+    }
   }
 
-  return (
-    <>
-      <SectionSeparator key={cardType} name={cardType}/>
-      <div className={`flex justify-start items-center gap-2 col-span-2 h-14`}>
-        <div className={`text-right`}>Base Colour:</div>
-        <input type={`checkbox`} checked={customiseCardTypeColours} onChange={onChangeCustomiseCardTypeColours} className={`border-2 border-stone-400 p-1 mr-2`}/>
-        {customiseCardTypeColours && <>
-          <PopoverPicker color={baseColourField} onChange={onChangeBaseColour}/>
-        </>}
-      </div>
-    </>
-  )
+  return (<>
+    <div>
+        <div className={`flex justify-start items-center gap-2 col-span-2 h-14`}>
+          <div className={`text-right`}>Base Colour:</div>
+          <input type={`checkbox`} checked={!!theme.colourSettings.cardTypeColours[cardType].primaryColour} onChange={onSwitchOverrideOn('primaryColour')} className={`border-2 border-stone-400 p-1 mr-2`}/>
+          {!!theme.colourSettings?.cardTypeColours[cardType]?.primaryColour && <>
+            <PopoverPicker color={theme.colourSettings.cardTypeColours[cardType]?.primaryColour?.baseColour ?? theme.colourSettings.baseColours?.primaryColour?.baseColour ?? ''} onChange={onChangeColourWithOpacity('primaryColour')}/>
+          </>}
+        </div>
+    </div>
+  </>)
 }
