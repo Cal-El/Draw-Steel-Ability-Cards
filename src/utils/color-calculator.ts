@@ -52,10 +52,6 @@ function getResolvedColourSetting(key: keyof ColourSet, cardType: string, userCo
   const cardTypeUserColourSettings = getCardTypeSettingsFromRecord(userColourSettings.cardTypeColours, cardType)
   if (cardTypeUserColourSettings && cardTypeUserColourSettings[key]) return cardTypeUserColourSettings[key]
 
-  // Second, check the card-style's default type-based colour overrides
-  const cardTypeDefaultColourSettings = getCardTypeSettingsFromRecord(defaultColourSettings.cardTypeColours, cardType)
-  if (cardTypeDefaultColourSettings && cardTypeDefaultColourSettings[key]) return cardTypeDefaultColourSettings[key]
-
   // Failing that, we check the user's has set an override for the base-colour for this key
   if(baseColourSettings[key]) return baseColourSettings[key]
 

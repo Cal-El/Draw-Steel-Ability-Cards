@@ -31,6 +31,16 @@ export const cardSettingsSlice = createAppSlice({
       saveCardSettings(state)
       state.allThemes = getAllThemes(state)
     }),
+    modifyAppliedThemeStyle: create.reducer((state, action: PayloadAction<string>) => {
+      const index = state.customThemes.findIndex(t => t.id === state.appliedThemeId)
+      if (index === -1) {
+        return;
+      }
+      state.appliedTheme.cardDesign = action.payload
+      state.customThemes.splice(index, 1, state.appliedTheme)
+      saveCardSettings(state)
+      state.allThemes = getAllThemes(state)
+    }),
     duplicateAppliedTheme: create.reducer((state, action: PayloadAction<string>) => {
       const t : Theme = {...state.appliedTheme, id: action.payload, name: `${state.appliedTheme.name} (copy)`}
       state.customThemes = [...(state.customThemes ?? []), t]
@@ -62,5 +72,5 @@ export const cardSettingsSlice = createAppSlice({
   }
 })
 
-export const {updateAppliedTheme, modifyAppliedThemeName, duplicateAppliedTheme, deleteAppliedTheme} = cardSettingsSlice.actions
+export const {updateAppliedTheme, modifyAppliedThemeName, modifyAppliedThemeStyle, duplicateAppliedTheme, deleteAppliedTheme} = cardSettingsSlice.actions
 export const {selectAppliedTheme, selectThemeColours, selectThemeCardDesign, selectAllThemes, selectInbuiltThemes} = cardSettingsSlice.selectors

@@ -205,7 +205,7 @@ function SideDingle({tn, card, colourSettings} : {tn: number, card: ability_card
   return <div style={{
     backgroundColor: getPrimaryColor(card.type, colourSettings),
     color: getTextColourOnPrimary(card.type, colourSettings),
-  }} className={`my-[2pt] w-full bg-action-card flex justify-items-center`}>
+  }} className={`my-[2pt] w-full bg-action-card flex justify-center items-center`}>
     <div className={`[writing-mode:sideways-lr] text-[5pt] font-bold text-center`}>{tn === 1 ? '≤11' : tn === 2 ? '12-16' : '17+'}</div>
   </div>
 }

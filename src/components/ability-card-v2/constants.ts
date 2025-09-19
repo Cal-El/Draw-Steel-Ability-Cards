@@ -1,7 +1,14 @@
-import {ColourSettings, Theme} from "../../types/card-settings.ts";
+import {CardStyleDetails, ColourSettings, Theme} from "../../types/card-settings.ts";
 
 export const v2StyleName = "Draw Steel Ability Cards";
 export const v2DefaultThemeId = "drawSteelAbilityCards";
+
+export const v2StyleDetails : CardStyleDetails = {
+  displayName: "Draw Steel Ability Cards",
+  description: "This is the signature style for Draw Steel Ability Cards!",
+  creatorName: "Callum Grier",
+  creatorURL: "https://ko-fi.com/calgrier",
+}
 
 export const defaultColours: ColourSettings = {
   baseColours: {

@@ -2,6 +2,7 @@ import {SectionSeparator} from "../edit-card-sidebar/card-editor/common-editor-e
 import ThemeMenu from "./theme-menu";
 import {ThemeBasedCard} from "../theme-based-card.tsx";
 import {ability_card, abilityType, characteristic, potency_strength} from "../../types/ability-card.ts";
+import {CardStyleSelector} from "./card-style-selector.tsx";
 
 const dummyCard: ability_card = {
   version: 2,
@@ -99,8 +100,7 @@ export default function CardSettingsMenu(){
         <div className="w-full pl-4 space-y-2">
           <ThemeMenu/>
           <ThemeBasedCard c={dummyCard} id={'examplecard'} hd={undefined} enlargedState={0}/>
-          {/* <BaseColourMenu/>
-          <CardTypesColourMenu/> */}
+          <CardStyleSelector/>
         </div>
       </div>
     </>

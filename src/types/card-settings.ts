@@ -13,6 +13,13 @@ export type Theme = {
   colourSettings: ColourSettings
 }
 
+export type CardStyleDetails = {
+  displayName: string,
+  description: string,
+  creatorName: string,
+  creatorURL: string,
+}
+
 export type ColourSettings = {
   baseColours?: ColourSet
   cardTypeColours: Record<string,ColourSet>

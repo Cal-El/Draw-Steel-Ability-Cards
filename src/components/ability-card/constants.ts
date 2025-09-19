@@ -1,7 +1,14 @@
-import {ColourSettings, Theme} from "../../types/card-settings.ts";
+import {CardStyleDetails, ColourSettings, Theme} from "../../types/card-settings.ts";
 
 export const v1StyleName = "Legacy";
 export const v1DefaultThemeId = "legacyCards";
+
+export const v1StyleDetails : CardStyleDetails = {
+  displayName: "Draw Steel Ability Cards (Legacy)",
+  description: "This is the old dscards design, for those who are attached to it <3",
+  creatorName: "Callum Grier",
+  creatorURL: "https://ko-fi.com/calgrier",
+}
 
 export const defaultColours: ColourSettings = {
   baseColours: {

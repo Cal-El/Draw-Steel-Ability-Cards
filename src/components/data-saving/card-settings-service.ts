@@ -1,6 +1,6 @@
 import {CardSettings, Theme} from "../../types/card-settings"
 import {v2DefaultThemeId} from "../ability-card-v2/constants.ts";
-import {getAllThemes, getAppliedTheme, getEmptySettings, getInbuiltThemes} from "../../utils/card-settings-utils.ts";
+import {getAllThemes, getAppliedTheme, getEmptySettings} from "../../utils/card-settings-utils.ts";
 
 export const ThemesKey = "theme"
 
