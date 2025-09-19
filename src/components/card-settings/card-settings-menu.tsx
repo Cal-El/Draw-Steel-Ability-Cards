@@ -97,13 +97,13 @@ export default function CardSettingsMenu(){
 
   return (
     <>
-      <div className="w-full flex flex-col justify-start gap-2 p-4 pt-2 pb-8 pr-2 h-full">
-        <div className="w-full space-y-2 pr-2">
-          <SectionSeparator name="Theme"/>
+      <div className="w-[400pt] flex flex-col justify-start p-4 pt-2 pb-8 pr-2 h-full">
+        <SectionSeparator name="Theme"/>
+        <div className="w-full pr-2 flex flex-col items-center">
           <ThemeMenu/>
-          <ThemeBasedCard c={dummyCard} id={'examplecard'} hd={undefined} enlargedState={0}/>
+          <ThemeBasedCard c={dummyCard} id={'examplecard'} hd={undefined} enlargedState={-1}/>
         </div>
-        <div className={`w-full flex-grow flex flex-col space-y-2 overflow-y-scroll scrollbar`}>
+        <div className={`w-full flex-grow flex flex-col items-center overflow-y-scroll scrollbar`}>
           <CardStyleSelector/>
           <BaseColourMenu/>
           <CardTypesColourMenu/>

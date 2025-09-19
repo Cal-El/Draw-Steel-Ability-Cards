@@ -23,7 +23,7 @@ export function CardStyleSelector() {
     return styleState.isInbuiltTheme || styleState.currentIdx >= styleState.styles.length - 1
   }
 
-  return <div className={`w-full flex flex-col justify-start items-center`}>
+  return <div className={`w-full flex flex-col justify-start items-center py-2`}>
     <div className={`w-full flex gap-2 items-center`}>
       <hr className={`flex-grow border-gray-300`}/>
       <span className={`text-xs small-caps font-bold pb-1 flex-none flex items-center gap-[2pt]`}>Theme Card Style {styleState.isInbuiltTheme && <BiLock/>}</span>

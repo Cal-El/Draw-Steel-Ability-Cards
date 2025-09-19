@@ -45,8 +45,8 @@ export default function ThemeMenu(){
   }
   
   return (
-    <div>
-      <div className={`flex flex-col gap-2 mb-4`}>
+    <div className={`w-full`}>
+      <div className={`flex flex-col mb-4`}>
         <div className="flex flex-row items-center gap-2 h-14 w-full">
           <select value={theme} onChange={onChangeTheme} className="border-2 border-stone-400 p-1 flex-grow">
             {allThemes.map((t) => {
