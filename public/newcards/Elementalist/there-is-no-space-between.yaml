@@ -39,4 +39,6 @@ header:
   topMatter: Level 2 Elementalist Ability
 level: 2
 type: Maneuver
+v2FontSizePtOverrides:
+  body: 7
 version: 2

@@ -48,4 +48,6 @@ header:
   topMatter: Level 1 Fury Heroic Ability
 level: 1
 type: Main action
+v2FontSizePtOverrides:
+  body: 7.5
 version: 2

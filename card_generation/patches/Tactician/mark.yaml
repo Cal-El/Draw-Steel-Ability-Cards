@@ -35,3 +35,5 @@ body:
     title: Effect
 fontSizePtOverrides:
   body: 5.2
+v2FontSizePtOverrides:
+  body: 5.5

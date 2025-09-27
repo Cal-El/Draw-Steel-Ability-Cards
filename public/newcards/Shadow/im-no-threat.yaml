@@ -34,4 +34,6 @@ header:
   topMatter: Level 1 Shadow Ability
 level: 1
 type: Maneuver
+v2FontSizePtOverrides:
+  body: 7
 version: 2

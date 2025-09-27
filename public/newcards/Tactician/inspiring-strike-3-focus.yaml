@@ -50,4 +50,6 @@ header:
   topMatter: Level 1 Tactician Heroic Ability
 level: 1
 type: Main action
+v2FontSizePtOverrides:
+  powerRoll: 6
 version: 2

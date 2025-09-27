@@ -55,4 +55,6 @@ header:
   topMatter: Level 1 Talent Ability
 level: 1
 type: Main action
+v2FontSizePtOverrides:
+  body: 7
 version: 2

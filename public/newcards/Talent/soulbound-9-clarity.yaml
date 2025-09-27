@@ -66,4 +66,6 @@ header:
   topMatter: Level 5 Talent Heroic Ability
 level: 5
 type: Main action
+v2FontSizePtOverrides:
+  body: 7
 version: 2

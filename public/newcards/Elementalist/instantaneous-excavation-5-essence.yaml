@@ -44,4 +44,6 @@ header:
   topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Maneuver
+v2FontSizePtOverrides:
+  body: 6
 version: 2

@@ -52,4 +52,6 @@ header:
   topMatter: Level 2 Tactician Heroic Ability
 level: 2
 type: Triggered Action
+v2FontSizePtOverrides:
+  body: 7
 version: 2

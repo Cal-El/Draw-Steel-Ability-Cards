@@ -43,4 +43,7 @@ header:
   topMatter: Level 9 Troubadour Heroic Ability
 level: 9
 type: Main action
+v2FontSizePtOverrides:
+  body: 7.5
+  powerRoll: 6
 version: 2

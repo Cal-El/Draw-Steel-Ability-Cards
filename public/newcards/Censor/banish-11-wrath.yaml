@@ -65,4 +65,6 @@ header:
   topMatter: Level 9 Censor Heroic Ability
 level: 9
 type: Main action
+v2FontSizePtOverrides:
+  body: 7
 version: 2

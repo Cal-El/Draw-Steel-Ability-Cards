@@ -38,4 +38,6 @@ header:
   topMatter: Level 1 Censor Ability
 level: 1
 type: Maneuver
+v2FontSizePtOverrides:
+  body: 6
 version: 2

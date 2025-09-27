@@ -34,4 +34,6 @@ header:
   topMatter: Level 6 Shadow Heroic Ability
 level: 6
 type: Main action
+v2FontSizePtOverrides:
+  body: 7.5
 version: 2

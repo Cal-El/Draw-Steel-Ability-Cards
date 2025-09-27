@@ -33,3 +33,5 @@ type: Main action
 fontSizePtOverrides:
   body: 6
   flavour: 8
+v2FontSizePtOverrides:
+  body: 6

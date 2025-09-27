@@ -36,4 +36,6 @@ header:
   topMatter: Level 1 Tactician Ability
 level: 1
 type: Maneuver
+v2FontSizePtOverrides:
+  body: 5.5
 version: 2

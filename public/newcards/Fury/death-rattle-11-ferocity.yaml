@@ -42,4 +42,6 @@ header:
   topMatter: Level 9 Fury Heroic Ability
 level: 9
 type: Main action
+v2FontSizePtOverrides:
+  powerRoll: 6
 version: 2

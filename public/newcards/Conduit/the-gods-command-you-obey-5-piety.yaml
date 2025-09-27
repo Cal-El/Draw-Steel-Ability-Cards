@@ -61,4 +61,6 @@ header:
   topMatter: Level 2 Conduit Heroic Ability
 level: 2
 type: Main action
+v2FontSizePtOverrides:
+  powerRoll: 6
 version: 2

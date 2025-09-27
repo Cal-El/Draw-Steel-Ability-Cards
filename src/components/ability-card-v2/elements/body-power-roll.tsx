@@ -292,7 +292,7 @@ function Tier({t, tn, card, heroData}: {t: power_roll_tier, tn: number, card: ab
             minWidth: "15pt",
             height: "12pt",
           }}>
-            {`${t.potency?.characteristic[0]}\<${potency}`}
+            {`${t.potency?.characteristic[0]}<${potency}`}
           </div>
           <div style={{
             color: getTextColourOnBackground(card.type, colourSettings),
