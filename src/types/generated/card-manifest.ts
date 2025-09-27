@@ -3,26 +3,6 @@ export const cardManifest  = [
     "label": "Common",
     "options": [
       {
-        "label": "Aid Attack (Core Maneuver)",
-        "value": "/newcards/00-Common/aid-attack.yaml",
-        "sortKey": "000-000-Aid Attack"
-      },
-      {
-        "label": "Catch Breath (Core Maneuver)",
-        "value": "/newcards/00-Common/catch-breath.yaml",
-        "sortKey": "000-000-Catch Breath"
-      },
-      {
-        "label": "Charge (Core Action)",
-        "value": "/newcards/00-Common/charge.yaml",
-        "sortKey": "000-000-Charge"
-      },
-      {
-        "label": "Defend (Core Action)",
-        "value": "/newcards/00-Common/defend.yaml",
-        "sortKey": "000-000-Defend"
-      },
-      {
         "label": "Escape Grab (Core Maneuver)",
         "value": "/newcards/00-Common/escape-grab.yaml",
         "sortKey": "000-000-Escape Grab"
@@ -33,49 +13,69 @@ export const cardManifest  = [
         "sortKey": "000-000-Grab"
       },
       {
-        "label": "Heal (Core Action)",
-        "value": "/newcards/00-Common/heal.yaml",
-        "sortKey": "000-000-Heal"
-      },
-      {
-        "label": "Hide (Core Maneuver)",
-        "value": "/newcards/00-Common/hide.yaml",
-        "sortKey": "000-000-Hide"
-      },
-      {
         "label": "Knockback (Core Maneuver)",
         "value": "/newcards/00-Common/knockback.yaml",
         "sortKey": "000-000-Knockback"
       },
       {
+        "label": "Aid Attack (Core Maneuver)",
+        "value": "/newcards/00-Common/aid-attack.yaml",
+        "sortKey": "001-000-Aid Attack"
+      },
+      {
+        "label": "Catch Breath (Core Maneuver)",
+        "value": "/newcards/00-Common/catch-breath.yaml",
+        "sortKey": "001-000-Catch Breath"
+      },
+      {
+        "label": "Charge (Core Action)",
+        "value": "/newcards/00-Common/charge.yaml",
+        "sortKey": "001-000-Charge"
+      },
+      {
+        "label": "Defend (Core Action)",
+        "value": "/newcards/00-Common/defend.yaml",
+        "sortKey": "001-000-Defend"
+      },
+      {
+        "label": "Heal (Core Action)",
+        "value": "/newcards/00-Common/heal.yaml",
+        "sortKey": "001-000-Heal"
+      },
+      {
+        "label": "Hide (Core Maneuver)",
+        "value": "/newcards/00-Common/hide.yaml",
+        "sortKey": "001-000-Hide"
+      },
+      {
         "label": "Make Or Assist A Test (Core Maneuver)",
         "value": "/newcards/00-Common/make-or-assist-a-test.yaml",
-        "sortKey": "000-000-Make Or Assist A Test"
+        "sortKey": "001-000-Make Or Assist A Test"
       },
       {
         "label": "Melee Weapon Free Strike (Melee Free Strike Ability)",
         "value": "/newcards/00-Common/melee-free-strike.yaml",
-        "sortKey": "000-000-Melee Weapon Free Strike"
+        "sortKey": "001-000-Melee Weapon Free Strike"
       },
       {
         "label": "Ranged Weapon Free Strike (Ranged Free Strike Ability)",
         "value": "/newcards/00-Common/ranged-free-strike.yaml",
-        "sortKey": "000-000-Ranged Weapon Free Strike"
+        "sortKey": "001-000-Ranged Weapon Free Strike"
       },
       {
         "label": "Search For Hidden Creatures (Core Maneuver)",
         "value": "/newcards/00-Common/search-for-hidden-creatures.yaml",
-        "sortKey": "000-000-Search For Hidden Creatures"
+        "sortKey": "001-000-Search For Hidden Creatures"
       },
       {
         "label": "Stand Up (Core Maneuver)",
         "value": "/newcards/00-Common/stand-up.yaml",
-        "sortKey": "000-000-Stand Up"
+        "sortKey": "001-000-Stand Up"
       },
       {
         "label": "Use Consumable (Core Maneuver)",
         "value": "/newcards/00-Common/use-consumable.yaml",
-        "sortKey": "000-000-Use Consumable"
+        "sortKey": "001-000-Use Consumable"
       }
     ]
   },
@@ -85,97 +85,97 @@ export const cardManifest  = [
       {
         "label": "Beyondsight (Time Raider Trait)",
         "value": "/newcards/01-Ancestry/beyondsight.yaml",
-        "sortKey": "000-000-Beyondsight"
+        "sortKey": "001-000-Beyondsight"
       },
       {
         "label": "Concussive Slam (Time Raider Signature Ability)",
         "value": "/newcards/01-Ancestry/concussive-slam.yaml",
-        "sortKey": "000-000-Concussive Slam"
+        "sortKey": "001-000-Concussive Slam"
       },
       {
         "label": "Detect the Supernatural (Human Trait)",
         "value": "/newcards/01-Ancestry/detect-the-supernatural.yaml",
-        "sortKey": "000-000-Detect the Supernatural"
+        "sortKey": "001-000-Detect the Supernatural"
       },
       {
         "label": "Determination (Human Trait)",
         "value": "/newcards/01-Ancestry/determination.yaml",
-        "sortKey": "000-000-Determination"
+        "sortKey": "001-000-Determination"
       },
       {
         "label": "Detonate Sigil (Revenant Signature Ability)",
         "value": "/newcards/01-Ancestry/detonate-sigil.yaml",
-        "sortKey": "000-000-Detonate Sigil"
+        "sortKey": "001-000-Detonate Sigil"
       },
       {
         "label": "Draconian Guard (Dragon Knight Trait)",
         "value": "/newcards/01-Ancestry/draconian-guard.yaml",
-        "sortKey": "000-000-Draconian Guard"
+        "sortKey": "001-000-Draconian Guard"
       },
       {
         "label": "Draconian Pride (Dragon Knight Signature Ability)",
         "value": "/newcards/01-Ancestry/draconian-pride.yaml",
-        "sortKey": "000-000-Draconian Pride"
+        "sortKey": "001-000-Draconian Pride"
       },
       {
         "label": "Dragon Breath (Dragon Knight Signature Ability)",
         "value": "/newcards/01-Ancestry/dragon-breath.yaml",
-        "sortKey": "000-000-Dragon Breath"
+        "sortKey": "001-000-Dragon Breath"
       },
       {
         "label": "Foresight (Time Raider Trait)",
         "value": "/newcards/01-Ancestry/foresight.yaml",
-        "sortKey": "000-000-Foresight"
+        "sortKey": "001-000-Foresight"
       },
       {
         "label": "Glamor Of Terror (High Elf Trait)",
         "value": "/newcards/01-Ancestry/glamor-of-terror.yaml",
-        "sortKey": "000-000-Glamor Of Terror"
+        "sortKey": "001-000-Glamor Of Terror"
       },
       {
         "label": "Glowing Eyes (Devil Trait)",
         "value": "/newcards/01-Ancestry/glowing-eyes.yaml",
-        "sortKey": "000-000-Glowing Eyes"
+        "sortKey": "001-000-Glowing Eyes"
       },
       {
         "label": "Keeper of Order (Memonek Trait)",
         "value": "/newcards/01-Ancestry/keeper-of-order.yaml",
-        "sortKey": "000-000-Keeper of Order"
+        "sortKey": "001-000-Keeper of Order"
       },
       {
         "label": "Minor Acceleration (Time Raider Signature Ability)",
         "value": "/newcards/01-Ancestry/minor-acceleration.yaml",
-        "sortKey": "000-000-Minor Acceleration"
+        "sortKey": "001-000-Minor Acceleration"
       },
       {
         "label": "Psionic Bolt (Time Raider Signature Ability)",
         "value": "/newcards/01-Ancestry/psionic-bolt.yaml",
-        "sortKey": "000-000-Psionic Bolt"
+        "sortKey": "001-000-Psionic Bolt"
       },
       {
         "label": "Remember Your Oath (Dragon Knight Trait)",
         "value": "/newcards/01-Ancestry/remember-your-oath.yaml",
-        "sortKey": "000-000-Remember Your Oath"
+        "sortKey": "001-000-Remember Your Oath"
       },
       {
         "label": "Resist the Unnatural (Human Trait)",
         "value": "/newcards/01-Ancestry/resist-the-unnatural.yaml",
-        "sortKey": "000-000-Resist the Unnatural"
+        "sortKey": "001-000-Resist the Unnatural"
       },
       {
         "label": "Shadowmeld (Polder Trait)",
         "value": "/newcards/01-Ancestry/shadowmeld.yaml",
-        "sortKey": "000-000-Shadowmeld"
+        "sortKey": "001-000-Shadowmeld"
       },
       {
         "label": "The Wode Defends (Wode Elf Signature Ability)",
         "value": "/newcards/01-Ancestry/the-wode-defends.yaml",
-        "sortKey": "000-000-The Wode Defends"
+        "sortKey": "001-000-The Wode Defends"
       },
       {
         "label": "Vengeance Mark (Revenant Trait)",
         "value": "/newcards/01-Ancestry/vengeance-mark.yaml",
-        "sortKey": "000-000-Vengeance Mark"
+        "sortKey": "001-000-Vengeance Mark"
       }
     ]
   },
@@ -2620,107 +2620,107 @@ export const cardManifest  = [
       {
         "label": "Battle Grace (Martial Artist Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/battle-grace.yaml",
-        "sortKey": "000-000-Battle Grace"
+        "sortKey": "001-000-Battle Grace"
       },
       {
         "label": "Devastating Rush (Panther Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/devastating-rush.yaml",
-        "sortKey": "000-000-Devastating Rush"
+        "sortKey": "001-000-Devastating Rush"
       },
       {
         "label": "Double Strike (Dual Wielder Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/double-strike.yaml",
-        "sortKey": "000-000-Double Strike"
+        "sortKey": "001-000-Double Strike"
       },
       {
         "label": "Exploding Arrow (Arcane Archer Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/exploding-arrow.yaml",
-        "sortKey": "000-000-Exploding Arrow"
+        "sortKey": "001-000-Exploding Arrow"
       },
       {
         "label": "Extension of My Arm (Whirlwind Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/extension-of-my-arm.yaml",
-        "sortKey": "000-000-Extension of My Arm"
+        "sortKey": "001-000-Extension of My Arm"
       },
       {
         "label": "Fade (Cloak and Dagger Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/fade.yaml",
-        "sortKey": "000-000-Fade"
+        "sortKey": "001-000-Fade"
       },
       {
         "label": "Fancy Footwork (Swashbuckler Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/fancy-footwork.yaml",
-        "sortKey": "000-000-Fancy Footwork"
+        "sortKey": "001-000-Fancy Footwork"
       },
       {
         "label": "Forward Thrust, Backward Smash (Guisarmier Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/forward-thrust-backward-smash.yaml",
-        "sortKey": "000-000-Forward Thrust, Backward Smash"
+        "sortKey": "001-000-Forward Thrust, Backward Smash"
       },
       {
         "label": "Hamstring Shot (Ranger Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/hamstring-shot.yaml",
-        "sortKey": "000-000-Hamstring Shot"
+        "sortKey": "001-000-Hamstring Shot"
       },
       {
         "label": "Leaping Lightning (Spellsword Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/leaping-lightning.yaml",
-        "sortKey": "000-000-Leaping Lightning"
+        "sortKey": "001-000-Leaping Lightning"
       },
       {
         "label": "Let's Dance (Pugilist Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/lets-dance.yaml",
-        "sortKey": "000-000-Let's Dance"
+        "sortKey": "001-000-Let's Dance"
       },
       {
         "label": "Net and Stab (Retarius Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/net-and-stab.yaml",
-        "sortKey": "000-000-Net and Stab"
+        "sortKey": "001-000-Net and Stab"
       },
       {
         "label": "Pain for Pain (Mountain Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/pain-for-pain.yaml",
-        "sortKey": "000-000-Pain for Pain"
+        "sortKey": "001-000-Pain for Pain"
       },
       {
         "label": "Patient Shot (Sniper Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/patient-shot.yaml",
-        "sortKey": "000-000-Patient Shot"
+        "sortKey": "001-000-Patient Shot"
       },
       {
         "label": "Protective Attack (Shining Armor Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/protective-attack.yaml",
-        "sortKey": "000-000-Protective Attack"
+        "sortKey": "001-000-Protective Attack"
       },
       {
         "label": "Shield Bash (Sword and Board Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/shield-bash.yaml",
-        "sortKey": "000-000-Shield Bash"
+        "sortKey": "001-000-Shield Bash"
       },
       {
         "label": "Shock and Awe (Raider Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/shock-and-awe.yaml",
-        "sortKey": "000-000-Shock and Awe"
+        "sortKey": "001-000-Shock and Awe"
       },
       {
         "label": "Two Shot (Rapid-Fire Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/two-shot.yaml",
-        "sortKey": "000-000-Two Shot"
+        "sortKey": "001-000-Two Shot"
       },
       {
         "label": "Unmooring (Battlemind Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/unmooring.yaml",
-        "sortKey": "000-000-Unmooring"
+        "sortKey": "001-000-Unmooring"
       },
       {
         "label": "Weakening Brand (Warrior Priest Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/weakening-brand.yaml",
-        "sortKey": "000-000-Weakening Brand"
+        "sortKey": "001-000-Weakening Brand"
       },
       {
         "label": "Where I Want You (Stick and Robe Kit Signature Ability)",
         "value": "/newcards/zz01-Kits/where-i-want-you.yaml",
-        "sortKey": "000-000-Where I Want You"
+        "sortKey": "001-000-Where I Want You"
       }
     ]
   },
@@ -2730,17 +2730,17 @@ export const cardManifest  = [
       {
         "label": "Arcane Trick (Supernatural Perk)",
         "value": "/newcards/zz02-Perks/arcane-trick.yaml",
-        "sortKey": "000-000-Arcane Trick"
+        "sortKey": "001-000-Arcane Trick"
       },
       {
         "label": "Invisible Force (Supernatural Perk)",
         "value": "/newcards/zz02-Perks/invisible-force.yaml",
-        "sortKey": "000-000-Invisible Force"
+        "sortKey": "001-000-Invisible Force"
       },
       {
         "label": "Psychic Whisper (Supernatural Perk)",
         "value": "/newcards/zz02-Perks/psychic-whisper.yaml",
-        "sortKey": "000-000-Psychic Whisper"
+        "sortKey": "001-000-Psychic Whisper"
       }
     ]
   },
@@ -2750,47 +2750,47 @@ export const cardManifest  = [
       {
         "label": "Contact Spirits (Medium Complication Ability)",
         "value": "/newcards/zz03-Complications/contact-spirits.yaml",
-        "sortKey": "000-000-Contact Spirits"
+        "sortKey": "001-000-Contact Spirits"
       },
       {
         "label": "Corrupt Spirit (Corrupted Mentor Complication Ability)",
         "value": "/newcards/zz03-Complications/corrupt-spirit.yaml",
-        "sortKey": "000-000-Corrupt Spirit"
+        "sortKey": "001-000-Corrupt Spirit"
       },
       {
         "label": "Issue Order (Stripped of Rank Complication Ability)",
         "value": "/newcards/zz03-Complications/issue-order.yaml",
-        "sortKey": "000-000-Issue Order"
+        "sortKey": "001-000-Issue Order"
       },
       {
         "label": "Posthumous Retirement (War Dog Collar Complication Ability)",
         "value": "/newcards/zz03-Complications/posthumous-retirement.yaml",
-        "sortKey": "000-000-Posthumous Retirement"
+        "sortKey": "001-000-Posthumous Retirement"
       },
       {
         "label": "Rogue Wave (Waterborn Complication Ability)",
         "value": "/newcards/zz03-Complications/rogue-wave.yaml",
-        "sortKey": "000-000-Rogue Wave"
+        "sortKey": "001-000-Rogue Wave"
       },
       {
         "label": "Share Head (Lost Your Head Complication Ability)",
         "value": "/newcards/zz03-Complications/share-head.yaml",
-        "sortKey": "000-000-Share Head"
+        "sortKey": "001-000-Share Head"
       },
       {
         "label": "Stone Eyes (Medusa Blood Complication Ability)",
         "value": "/newcards/zz03-Complications/stone-eyes.yaml",
-        "sortKey": "000-000-Stone Eyes"
+        "sortKey": "001-000-Stone Eyes"
       },
       {
         "label": "Telekinetic Grasp (Rogue Talent Complication Ability)",
         "value": "/newcards/zz03-Complications/telekinetic-grasp.yaml",
-        "sortKey": "000-000-Telekinetic Grasp"
+        "sortKey": "001-000-Telekinetic Grasp"
       },
       {
         "label": "Psychic Blast (Psychic Eruption Complication Heroic Ability)",
         "value": "/newcards/zz03-Complications/psychic-blast.yaml",
-        "sortKey": "000-00X-Psychic Blast"
+        "sortKey": "001-00X-Psychic Blast"
       }
     ]
   }

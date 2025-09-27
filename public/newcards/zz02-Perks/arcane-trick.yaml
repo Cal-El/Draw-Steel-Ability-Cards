@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: "Choose one of the following effects:
 
@@ -28,7 +30,6 @@ header:
   - Magic
   flavour: You cast an entertaining spell that creates a minor but impressive magical effect.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 6
   flavour: 8

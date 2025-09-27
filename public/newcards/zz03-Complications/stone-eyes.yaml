@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -53,6 +55,5 @@ header:
   topMatter: Medusa Blood Complication Ability
   flavour: Your looks don't kill—they petrify.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

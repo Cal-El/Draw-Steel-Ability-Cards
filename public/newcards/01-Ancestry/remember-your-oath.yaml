@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: _Even should the sun stop in the sky_
 
@@ -33,6 +35,5 @@ header:
   topMatter: Dragon Knight Trait
   keywords: []
 type: Maneuver
-version: 2
 fontSizePtOverrides:
   body: 9

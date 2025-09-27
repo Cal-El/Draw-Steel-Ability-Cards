@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -44,6 +46,5 @@ header:
   title: Melee Weapon Free Strike
   topMatter: Melee Free Strike Ability
 type: Free Strike
-version: 2
 fontSizePtOverrides:
   body: 9

@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -56,6 +58,5 @@ header:
   topMatter: Wode Elf Signature Ability
   flavour: Thorny vines erupt from every surface and attempt to bind your foe.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

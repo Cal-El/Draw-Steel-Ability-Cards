@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: You attempt to hide from other creatures who aren't observing you while you have cover or concealment.
   isEffect: true
@@ -12,6 +14,5 @@ header:
   keywords: []
   target: Self
 type: Maneuver
-version: 2
 fontSizePtOverrides:
   body: 9

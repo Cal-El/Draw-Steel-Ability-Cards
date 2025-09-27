@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -47,6 +49,5 @@ header:
   topMatter: Sniper Kit Signature Ability
   flavour: Breathe ... aim ... waith ... then strike!
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

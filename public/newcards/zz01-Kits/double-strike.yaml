@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -41,6 +43,5 @@ header:
   topMatter: Dual Wielder Kit Signature Ability
   flavour: Why strike once when you could do it twice?
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9
