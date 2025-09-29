@@ -88,6 +88,10 @@ const dummyCard: ability_card = {
 It's got a lot of silly text and takes up a lot of space.`,
     },
   ],
+  cost: {
+    costValue: "5",
+    costName: "HR",
+  },
   fontSizePtOverrides: {
     body: 9,
   }

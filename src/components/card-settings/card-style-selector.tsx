@@ -2,7 +2,7 @@ import {useSelector} from "react-redux";
 import {modifyAppliedThemeStyle, selectAppliedTheme} from "../../redux/card-settings-slice.ts";
 import {useEffect, useState} from "react";
 import {getCardStyleDetails, getCardStylesAndPosition} from "../../utils/card-settings-utils.ts";
-import {BiLock, BiSolidLeftArrow, BiSolidRightArrow} from "react-icons/bi";
+import {BiError, BiLock, BiSolidLeftArrow, BiSolidRightArrow} from "react-icons/bi";
 import {useAppDispatch} from "../../redux/hooks.ts";
 
 export function CardStyleSelector() {
@@ -28,6 +28,9 @@ export function CardStyleSelector() {
       <hr className={`flex-grow border-gray-300`}/>
       <span className={`text-xs small-caps font-bold pb-1 flex-none flex items-center gap-[2pt]`}>Theme Card Style {styleState.isInbuiltTheme && <BiLock/>}</span>
       <hr className={`flex-grow border-gray-300`}/>
+    </div>
+    <div className={`w-full flex gap-[2pt] justify-center items-center border-[2pt] border-dashed border-stone-400 bg-stone-300 rounded-lg p-[5pt] text-center font-bold text-stone-400`}>
+      <BiError className={`flex-none`}/> Only built-in themes are available.<br/>Custom Themes (i.e. Custom colours) are still in development.<br/>Please look forward to it.
     </div>
     <div className={`w-full flex justify-around items-center gap-[5pt]`}>
       <div role={shouldDisableLeft() ? 'none' : 'button'} onClick={() => {

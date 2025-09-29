@@ -18,6 +18,7 @@ export default function ThemeMenu(){
   const inbuiltThemeIds = useAppSelector(selectInbuiltThemes).map(t => t.id)
   const [theme, setTheme] = useState(appliedTheme?.id)
   const [isInbuilt, setIsInbuilt] = useState(inbuiltThemeIds.includes(theme));
+  const [isCustomThemeDisabled, _] = useState(true);
   const dispatch = useAppDispatch()
 
   useEffect(() => {
@@ -53,9 +54,10 @@ export default function ThemeMenu(){
               return <option value={t.id}>{t.name}</option>
             })}
           </select>
-          <div role={`button`} onClick={() => {
+          <div role={`${isCustomThemeDisabled ? 'none' : 'button'}`} onClick={() => {
+            if (isCustomThemeDisabled) return;
             onDuplicateTheme()
-          }} className={`flex-none h-9 w-9 border-2 border-stone-400 p-1 bg-white flex justify-center items-center`}><FaClone/></div>
+          }} className={`flex-none h-9 w-9 border-2 border-stone-400 p-1 ${isCustomThemeDisabled ? 'bg-stone-300 text-stone-600' : 'bg-white'} flex justify-center items-center`}><FaClone/></div>
           <div role={`${isInbuilt ? 'none' : 'button'}`} onClick={() => {
             if (isInbuilt) return;
             onDeleteTheme()

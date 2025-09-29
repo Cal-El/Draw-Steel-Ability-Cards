@@ -3,7 +3,7 @@ import AbilityCard from "../ability-card/ability-card.tsx";
 import {DowngradeCard} from "../../utils/ability-card-downgrader.ts";
 import {HeroData} from "../../types/character-data.ts";
 import {Dispatch, useEffect, useState} from "react";
-import {FaSave, FaShare, FaTrash} from "react-icons/fa";
+import {FaSave, FaShare, FaTrash, FaUndo} from "react-icons/fa";
 import {IoMdDownload} from "react-icons/io";
 import {saveImage} from "../../utils/download-utils.ts";
 import {toast} from "react-toastify";
@@ -92,7 +92,7 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
 
   useEffect(() => {
     setEditCard(card)
-    if (card && !isNewCard(card)) {
+    if (card) {
       setNewDefaultsLoading(true);
       getMatchingCardsFromManifest(card, (cs) => {
         setNewDefaults(cs)
@@ -116,7 +116,7 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
   return (<>
     {editCard && <div className={`fixed inset-0 z-30 w-screen h-screen bg-black bg-opacity-50 flex justify-end print:hidden`}>
       <div role={`button`} onClick={closeModal} className={`flex-grow`}/>
-      <div className={`flex-none w-[50pt] flex flex-col`}>
+      <div className={`flex-none w-[50pt] flex flex-col items-end`}>
         <div className={`h-[50pt] w-[50pt]`}></div>
         <div role={`button`} onClick={closeModal} className={`h-[50pt] w-[50pt] bg-action-card flex items-center justify-center`}>
           <FaSave className={`text-white text-[25pt]`}/>&nbsp;
@@ -128,6 +128,14 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
           toast.warning("Doesn't work yet, will copy a link to clipboard to share card")
         }} className={`h-[50pt] w-[50pt] bg-routine-card flex items-center justify-center`}>
           <FaShare className={`text-white text-[25pt]`}/>&nbsp;
+        </div>
+        <div role={!newDefaultsLoading && newDefaults.length === 1 ? `button` : `none`} onClick={()=>{
+          if (!newDefaultsLoading && newDefaults.length === 1) {
+            setEditCard(newDefaults[0] ?? editCard);
+            toast.info('Reset card to default')
+          }
+        }} className={`h-[50pt] ${!newDefaultsLoading && newDefaults.length === 1 ? `w-[50pt] bg-free-triggered-action-card text-white` : `w-[45pt] bg-free-strike-card text-free-strike-card-50`} overflow-hidden flex items-center justify-start pl-[12.5pt]`}>
+          <FaUndo className={`text-[25pt] w-[25pt]`}/>&nbsp;
         </div>
         <div role={`button`} onClick={deleteCard} className={`h-[50pt] w-[50pt] bg-triggered-action-card flex items-center justify-center`}>
           <FaTrash className={`text-white text-[25pt]`}/>&nbsp;
