@@ -45,7 +45,7 @@ header:
   - Telepathy
   target: Each ally and enemy in the area
   title: Synaptic Terror
-  topMatter: Level 9 Talent Heroic Ability
+  topMatter: Level 9 Telepathy Talent Heroic Ability
 level: 9
 type: Main action
 v2FontSizePtOverrides:

@@ -39,7 +39,7 @@ header:
   - Ranged
   target: Each enemy in the area
   title: Solar Flare
-  topMatter: Level 9 Conduit Heroic Ability
+  topMatter: Level 9 Sun Conduit Heroic Ability
 level: 9
 type: Main action
 version: 2

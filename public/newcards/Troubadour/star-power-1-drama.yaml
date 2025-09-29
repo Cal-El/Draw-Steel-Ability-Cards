@@ -20,7 +20,7 @@ header:
   - '-'
   target: Self
   title: Star Power
-  topMatter: Level 1 Troubadour Heroic Ability
+  topMatter: Level 1 Duelist Troubadour Heroic Ability
 level: 1
 type: Maneuver
 version: 2

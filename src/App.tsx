@@ -205,9 +205,9 @@ function App() {
         <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center visible print:invisible print:h-0 print:p-0`}>
             <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
             <button onClick={() => setHowToModal(true)} className={`h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback`}
-              style={{borderColor: ColorCalculator.getPrimaryColor(`Triggered Action`, {cardTypeColours: {}}, defaultColours)}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`triggered action`, {...defaultColours})}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:ColorCalculator.getPrimaryColor(`Triggered Action`, {cardTypeColours: {}}, defaultColours)}}>About</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`triggered action`, {...defaultColours})}}>About</div>
             </button>
             <div className={`grow flex justify-end z-20`}>
                 <Select
@@ -224,17 +224,17 @@ function App() {
                     updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, parsedCard]});
                 }
             }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-              style={{borderColor: ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>Add Card</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>Add Card</div>
             </button>
             {includeAllCardsButton &&
                 <button onClick={() => {
                     allCards()
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-                style={{borderColor: ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>
+                style={{borderColor: ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                         style={{color:ColorCalculator.getPrimaryColor(`Maneuver`, {cardTypeColours: {}}, defaultColours)}}>Add All Cards</div>
+                         style={{color:ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>Add All Cards</div>
                 </button>
             }
             <button onClick={(e) => {
@@ -248,9 +248,9 @@ function App() {
                 })
               }
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-              style={{borderColor: ColorCalculator.getPrimaryColor(`Action`, {cardTypeColours: {}})}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`main action`, {...defaultColours})}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:ColorCalculator.getPrimaryColor(`Action`, {cardTypeColours: {}})}}>Add New Blank Card</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`main action`, {...defaultColours})}}>Add New Blank Card</div>
             </button>
         </nav>
         <div className='flex flex-auto w-full print:m-0 print:p-0'>

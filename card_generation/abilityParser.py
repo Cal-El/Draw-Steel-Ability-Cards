@@ -12,9 +12,12 @@ def createBlankCard():
 
 def getTopMatter(className, ability):
   levelBlock = 'Level ' + str(ability['metadata']['level'])
+  subclass = ''
+  if ('subclass' in ability['metadata']):
+    subclass = ability['metadata']['subclass'] + ' '
   if 'cost' in ability:
-    return levelBlock + ' ' + className + ' Heroic Ability'
-  return levelBlock + ' ' + className + ' Ability'
+    return levelBlock + ' ' + subclass + className + ' Heroic Ability'
+  return levelBlock + ' ' + subclass + className + ' Ability'
 
 def getAbilityType(ability):
   if 'usage' not in ability:

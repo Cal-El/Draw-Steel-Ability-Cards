@@ -193,12 +193,12 @@ export const cardManifest  = [
         "sortKey": "001-000-Every Step... Death!"
       },
       {
-        "label": "Faithful Friend (Level 1 Censor Ability)",
+        "label": "Faithful Friend (Level 1 Nature Censor Ability)",
         "value": "/newcards/Censor/faithful-friend.yaml",
         "sortKey": "001-000-Faithful Friend"
       },
       {
-        "label": "Grave Speech (Level 1 Censor Ability)",
+        "label": "Grave Speech (Level 1 Death Censor Ability)",
         "value": "/newcards/Censor/grave-speech.yaml",
         "sortKey": "001-000-Grave Speech"
       },
@@ -208,7 +208,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Halt Miscreant!"
       },
       {
-        "label": "Hands of the Maker (Level 1 Censor Ability)",
+        "label": "Hands of the Maker (Level 1 Creation Censor Ability)",
         "value": "/newcards/Censor/hands-of-the-maker.yaml",
         "sortKey": "001-000-Hands of the Maker"
       },
@@ -268,32 +268,32 @@ export const cardManifest  = [
         "sortKey": "001-005-Purifying Fire"
       },
       {
-        "label": "Blessing of the Faithful (Level 2 Censor Heroic Ability)",
+        "label": "Blessing of the Faithful (Level 2 Paragon Censor Heroic Ability)",
         "value": "/newcards/Censor/blessing-of-the-faithful-5-wrath.yaml",
         "sortKey": "002-005-Blessing of the Faithful"
       },
       {
-        "label": "It Is Justice You Fear (Level 2 Censor Heroic Ability)",
+        "label": "It Is Justice You Fear (Level 2 Exorcist Censor Heroic Ability)",
         "value": "/newcards/Censor/it-is-justice-you-fear-5-wrath.yaml",
         "sortKey": "002-005-It Is Justice You Fear"
       },
       {
-        "label": "Prescient Grace (Level 2 Censor Heroic Ability)",
+        "label": "Prescient Grace (Level 2 Oracle Censor Heroic Ability)",
         "value": "/newcards/Censor/prescient-grace-5-wrath.yaml",
         "sortKey": "002-005-Prescient Grace"
       },
       {
-        "label": "Revelator (Level 2 Censor Heroic Ability)",
+        "label": "Revelator (Level 2 Exorcist Censor Heroic Ability)",
         "value": "/newcards/Censor/revelator-5-wrath.yaml",
         "sortKey": "002-005-Revelator"
       },
       {
-        "label": "Sentenced (Level 2 Censor Heroic Ability)",
+        "label": "Sentenced (Level 2 Paragon Censor Heroic Ability)",
         "value": "/newcards/Censor/sentenced-5-wrath.yaml",
         "sortKey": "002-005-Sentenced"
       },
       {
-        "label": "With My Blessing (Level 2 Censor Heroic Ability)",
+        "label": "With My Blessing (Level 2 Oracle Censor Heroic Ability)",
         "value": "/newcards/Censor/with-my-blessing-5-wrath.yaml",
         "sortKey": "002-005-With My Blessing"
       },
@@ -318,7 +318,7 @@ export const cardManifest  = [
         "sortKey": "003-007-Edict of Stillness"
       },
       {
-        "label": "Blessing of Secrets (Level 4 Censor Ability)",
+        "label": "Blessing of Secrets (Level 4 Trickery Censor Ability)",
         "value": "/newcards/Censor/blessing-of-secrets.yaml",
         "sortKey": "004-000-Blessing of Secrets"
       },
@@ -343,42 +343,42 @@ export const cardManifest  = [
         "sortKey": "005-009-Shield of the Righteous"
       },
       {
-        "label": "Begone! (Level 6 Censor Heroic Ability)",
+        "label": "Begone! (Level 6 Exorcist Censor Heroic Ability)",
         "value": "/newcards/Censor/begone-9-wrath.yaml",
         "sortKey": "006-009-Begone!"
       },
       {
-        "label": "Burden of Evil (Level 6 Censor Heroic Ability)",
+        "label": "Burden of Evil (Level 6 Oracle Censor Heroic Ability)",
         "value": "/newcards/Censor/burden-of-evil-9-wrath.yaml",
         "sortKey": "006-009-Burden of Evil"
       },
       {
-        "label": "Congregation (Level 6 Censor Heroic Ability)",
+        "label": "Congregation (Level 6 Paragon Censor Heroic Ability)",
         "value": "/newcards/Censor/congregation-9-wrath.yaml",
         "sortKey": "006-009-Congregation"
       },
       {
-        "label": "Edict of Peace (Level 6 Censor Heroic Ability)",
+        "label": "Edict of Peace (Level 6 Oracle Censor Heroic Ability)",
         "value": "/newcards/Censor/edict-of-peace-9-wrath.yaml",
         "sortKey": "006-009-Edict of Peace"
       },
       {
-        "label": "Intercede (Level 6 Censor Heroic Ability)",
+        "label": "Intercede (Level 6 Paragon Censor Heroic Ability)",
         "value": "/newcards/Censor/intercede-9-wrath.yaml",
         "sortKey": "006-009-Intercede"
       },
       {
-        "label": "Pain of Your Own Making (Level 6 Censor Heroic Ability)",
+        "label": "Pain of Your Own Making (Level 6 Exorcist Censor Heroic Ability)",
         "value": "/newcards/Censor/pain-of-your-own-making-9-wrath.yaml",
         "sortKey": "006-009-Pain of Your Own Making"
       },
       {
-        "label": "Guided to Your Side (Level 7 Censor Ability)",
+        "label": "Guided to Your Side (Level 7 Love Censor Ability)",
         "value": "/newcards/Censor/guided-to-your-side.yaml",
         "sortKey": "007-000-Guided to Your Side"
       },
       {
-        "label": "Trinity of Trickery (Level 7 Censor Heroic Ability)",
+        "label": "Trinity of Trickery (Level 7 Trickery Censor Heroic Ability)",
         "value": "/newcards/Censor/trinity-of-trickery-9-wrath.yaml",
         "sortKey": "007-009-Trinity of Trickery"
       },
@@ -403,32 +403,32 @@ export const cardManifest  = [
         "sortKey": "008-011-Your Allies Turn on You!"
       },
       {
-        "label": "Apostate (Level 9 Censor Heroic Ability)",
+        "label": "Apostate (Level 9 Paragon Censor Heroic Ability)",
         "value": "/newcards/Censor/apostate-11-wrath.yaml",
         "sortKey": "009-011-Apostate"
       },
       {
-        "label": "Banish (Level 9 Censor Heroic Ability)",
+        "label": "Banish (Level 9 Exorcist Censor Heroic Ability)",
         "value": "/newcards/Censor/banish-11-wrath.yaml",
         "sortKey": "009-011-Banish"
       },
       {
-        "label": "Blessing and a Curse (Level 9 Censor Heroic Ability)",
+        "label": "Blessing and a Curse (Level 9 Oracle Censor Heroic Ability)",
         "value": "/newcards/Censor/blessing-and-a-curse-11-wrath.yaml",
         "sortKey": "009-011-Blessing and a Curse"
       },
       {
-        "label": "Edict of Unyielding Resolve (Level 9 Censor Heroic Ability)",
+        "label": "Edict of Unyielding Resolve (Level 9 Paragon Censor Heroic Ability)",
         "value": "/newcards/Censor/edict-of-unyielding-resolve-11-wrath.yaml",
         "sortKey": "009-011-Edict of Unyielding Resolve"
       },
       {
-        "label": "Fulfill Your Destiny (Level 9 Censor Heroic Ability)",
+        "label": "Fulfill Your Destiny (Level 9 Oracle Censor Heroic Ability)",
         "value": "/newcards/Censor/fulfill-your-destiny-11-wrath.yaml",
         "sortKey": "009-011-Fulfill Your Destiny"
       },
       {
-        "label": "Terror Manifest (Level 9 Censor Heroic Ability)",
+        "label": "Terror Manifest (Level 9 Exorcist Censor Heroic Ability)",
         "value": "/newcards/Censor/terror-manifest-11-wrath.yaml",
         "sortKey": "009-011-Terror Manifest"
       }
@@ -448,17 +448,17 @@ export const cardManifest  = [
         "sortKey": "001-000-Drain"
       },
       {
-        "label": "Faithful Friend (Level 1 Conduit Ability)",
+        "label": "Faithful Friend (Level 1 Nature Conduit Ability)",
         "value": "/newcards/Conduit/faithful-friend.yaml",
         "sortKey": "001-000-Faithful Friend"
       },
       {
-        "label": "Grave Speech (Level 1 Conduit Ability)",
+        "label": "Grave Speech (Level 1 Death Conduit Ability)",
         "value": "/newcards/Conduit/grave-speech.yaml",
         "sortKey": "001-000-Grave Speech"
       },
       {
-        "label": "Hands of the Maker (Level 1 Conduit Ability)",
+        "label": "Hands of the Maker (Level 1 Creation Conduit Ability)",
         "value": "/newcards/Conduit/hands-of-the-maker.yaml",
         "sortKey": "001-000-Hands of the Maker"
       },
@@ -553,62 +553,62 @@ export const cardManifest  = [
         "sortKey": "001-005-Sermon of Grace"
       },
       {
-        "label": "Blessing of Fate and Destiny (Level 2 Conduit Heroic Ability)",
+        "label": "Blessing of Fate and Destiny (Level 2 Fate Conduit Heroic Ability)",
         "value": "/newcards/Conduit/blessing-of-fate-and-destiny-5-piety.yaml",
         "sortKey": "002-005-Blessing of Fate and Destiny"
       },
       {
-        "label": "Blessing of Insight (Level 2 Conduit Heroic Ability)",
+        "label": "Blessing of Insight (Level 2 War Conduit Heroic Ability)",
         "value": "/newcards/Conduit/blessing-of-insight-5-piety.yaml",
         "sortKey": "002-005-Blessing of Insight"
       },
       {
-        "label": "Divine Comedy (Level 2 Conduit Heroic Ability)",
+        "label": "Divine Comedy (Level 2 Trickery Conduit Heroic Ability)",
         "value": "/newcards/Conduit/divine-comedy-5-piety.yaml",
         "sortKey": "002-005-Divine Comedy"
       },
       {
-        "label": "Morning Light (Level 2 Conduit Heroic Ability)",
+        "label": "Morning Light (Level 2 Sun Conduit Heroic Ability)",
         "value": "/newcards/Conduit/morning-light-5-piety.yaml",
         "sortKey": "002-005-Morning Light"
       },
       {
-        "label": "Nature Judges Thee (Level 2 Conduit Heroic Ability)",
+        "label": "Nature Judges Thee (Level 2 Nature Conduit Heroic Ability)",
         "value": "/newcards/Conduit/nature-judges-thee-5-piety.yaml",
         "sortKey": "002-005-Nature Judges Thee"
       },
       {
-        "label": "Our Hearts Your Strength (Level 2 Conduit Heroic Ability)",
+        "label": "Our Hearts Your Strength (Level 2 Love Conduit Heroic Ability)",
         "value": "/newcards/Conduit/our-hearts-your-strength-5-piety.yaml",
         "sortKey": "002-005-Our Hearts Your Strength"
       },
       {
-        "label": "Reap (Level 2 Conduit Heroic Ability)",
+        "label": "Reap (Level 2 Death Conduit Heroic Ability)",
         "value": "/newcards/Conduit/reap-5-piety.yaml",
         "sortKey": "002-005-Reap"
       },
       {
-        "label": "Sacred Bond (Level 2 Conduit Heroic Ability)",
+        "label": "Sacred Bond (Level 2 Protection Conduit Heroic Ability)",
         "value": "/newcards/Conduit/sacred-bond-5-piety.yaml",
         "sortKey": "002-005-Sacred Bond"
       },
       {
-        "label": "Saint's Tempest (Level 2 Conduit Heroic Ability)",
+        "label": "Saint's Tempest (Level 2 Storm Conduit Heroic Ability)",
         "value": "/newcards/Conduit/saints-tempest-5-piety.yaml",
         "sortKey": "002-005-Saint's Tempest"
       },
       {
-        "label": "Statue of Power (Level 2 Conduit Heroic Ability)",
+        "label": "Statue of Power (Level 2 Creation Conduit Heroic Ability)",
         "value": "/newcards/Conduit/statue-of-power-5-piety.yaml",
         "sortKey": "002-005-Statue of Power"
       },
       {
-        "label": "The Gods Command You Obey (Level 2 Conduit Heroic Ability)",
+        "label": "The Gods Command You Obey (Level 2 Knowledge Conduit Heroic Ability)",
         "value": "/newcards/Conduit/the-gods-command-you-obey-5-piety.yaml",
         "sortKey": "002-005-The Gods Command You Obey"
       },
       {
-        "label": "Wellspring of Grace (Level 2 Conduit Heroic Ability)",
+        "label": "Wellspring of Grace (Level 2 Life Conduit Heroic Ability)",
         "value": "/newcards/Conduit/wellspring-of-grace-5-piety.yaml",
         "sortKey": "002-005-Wellspring of Grace"
       },
@@ -633,7 +633,7 @@ export const cardManifest  = [
         "sortKey": "003-007-Words of Wrath and Grace"
       },
       {
-        "label": "Blessing of Secrets (Level 4 Conduit Ability)",
+        "label": "Blessing of Secrets (Level 4 Trickery Conduit Ability)",
         "value": "/newcards/Conduit/blessing-of-secrets.yaml",
         "sortKey": "004-000-Blessing of Secrets"
       },
@@ -658,67 +658,67 @@ export const cardManifest  = [
         "sortKey": "005-009-Vessel of Retribution"
       },
       {
-        "label": "Aura of Souls (Level 6 Conduit Heroic Ability)",
+        "label": "Aura of Souls (Level 6 Death Conduit Heroic Ability)",
         "value": "/newcards/Conduit/aura-of-souls-9-piety.yaml",
         "sortKey": "006-009-Aura of Souls"
       },
       {
-        "label": "Blade of the Heavens (Level 6 Conduit Heroic Ability)",
+        "label": "Blade of the Heavens (Level 6 War Conduit Heroic Ability)",
         "value": "/newcards/Conduit/blade-of-the-heavens-9-piety.yaml",
         "sortKey": "006-009-Blade of the Heavens"
       },
       {
-        "label": "Blessing of the Midday Sun (Level 6 Conduit Heroic Ability)",
+        "label": "Blessing of the Midday Sun (Level 6 Sun Conduit Heroic Ability)",
         "value": "/newcards/Conduit/blessing-of-the-midday-sun-9-piety.yaml",
         "sortKey": "006-009-Blessing of the Midday Sun"
       },
       {
-        "label": "Cuirass of the Gods (Level 6 Conduit Heroic Ability)",
+        "label": "Cuirass of the Gods (Level 6 Protection Conduit Heroic Ability)",
         "value": "/newcards/Conduit/cuirass-of-the-gods-9-piety.yaml",
         "sortKey": "006-009-Cuirass of the Gods"
       },
       {
-        "label": "Gods' Machine (Level 6 Conduit Heroic Ability)",
+        "label": "Gods' Machine (Level 6 Creation Conduit Heroic Ability)",
         "value": "/newcards/Conduit/gods-machine-9-piety.yaml",
         "sortKey": "006-009-Gods' Machine"
       },
       {
-        "label": "Invocation of Mystery (Level 6 Conduit Heroic Ability)",
+        "label": "Invocation of Mystery (Level 6 Trickery Conduit Heroic Ability)",
         "value": "/newcards/Conduit/invocation-of-mystery-9-piety.yaml",
         "sortKey": "006-009-Invocation of Mystery"
       },
       {
-        "label": "Invocation of Undoing (Level 6 Conduit Heroic Ability)",
+        "label": "Invocation of Undoing (Level 6 Knowledge Conduit Heroic Ability)",
         "value": "/newcards/Conduit/invocation-of-undoing-9-piety.yaml",
         "sortKey": "006-009-Invocation of Undoing"
       },
       {
-        "label": "Lauded by God (Level 6 Conduit Heroic Ability)",
+        "label": "Lauded by God (Level 6 Love Conduit Heroic Ability)",
         "value": "/newcards/Conduit/lauded-by-god-9-piety.yaml",
         "sortKey": "006-009-Lauded by God"
       },
       {
-        "label": "Lightning Lord (Level 6 Conduit Heroic Ability)",
+        "label": "Lightning Lord (Level 6 Storm Conduit Heroic Ability)",
         "value": "/newcards/Conduit/lightning-lord-9-piety.yaml",
         "sortKey": "006-009-Lightning Lord"
       },
       {
-        "label": "Revitalizing Grace (Level 6 Conduit Heroic Ability)",
+        "label": "Revitalizing Grace (Level 6 Life Conduit Heroic Ability)",
         "value": "/newcards/Conduit/revitalizing-grace-9-piety.yaml",
         "sortKey": "006-009-Revitalizing Grace"
       },
       {
-        "label": "Spirit Stampede (Level 6 Conduit Heroic Ability)",
+        "label": "Spirit Stampede (Level 6 Nature Conduit Heroic Ability)",
         "value": "/newcards/Conduit/spirit-stampede-9-piety.yaml",
         "sortKey": "006-009-Spirit Stampede"
       },
       {
-        "label": "Your Story Ends Here (Level 6 Conduit Heroic Ability)",
+        "label": "Your Story Ends Here (Level 6 Fate Conduit Heroic Ability)",
         "value": "/newcards/Conduit/your-story-ends-here-9-piety.yaml",
         "sortKey": "006-009-Your Story Ends Here"
       },
       {
-        "label": "Guided to Your Side (Level 7 Conduit Ability)",
+        "label": "Guided to Your Side (Level 7 Love Conduit Ability)",
         "value": "/newcards/Conduit/guided-to-your-side.yaml",
         "sortKey": "007-000-Guided to Your Side"
       },
@@ -763,62 +763,62 @@ export const cardManifest  = [
         "sortKey": "009-000-Move or Attack"
       },
       {
-        "label": "Alacrity of the Heart (Level 9 Conduit Heroic Ability)",
+        "label": "Alacrity of the Heart (Level 9 Love Conduit Heroic Ability)",
         "value": "/newcards/Conduit/alacrity-of-the-heart-11-piety.yaml",
         "sortKey": "009-011-Alacrity of the Heart"
       },
       {
-        "label": "Bend Fate (Level 9 Conduit Heroic Ability)",
+        "label": "Bend Fate (Level 9 Fate Conduit Heroic Ability)",
         "value": "/newcards/Conduit/bend-fate-11-piety.yaml",
         "sortKey": "009-011-Bend Fate"
       },
       {
-        "label": "Blessing of the Fortress (Level 9 Conduit Heroic Ability)",
+        "label": "Blessing of the Fortress (Level 9 Protection Conduit Heroic Ability)",
         "value": "/newcards/Conduit/blessing-of-the-fortress-11-piety.yaml",
         "sortKey": "009-011-Blessing of the Fortress"
       },
       {
-        "label": "Divine Dragon (Level 9 Conduit Heroic Ability)",
+        "label": "Divine Dragon (Level 9 Creation Conduit Heroic Ability)",
         "value": "/newcards/Conduit/divine-dragon-11-piety.yaml",
         "sortKey": "009-011-Divine Dragon"
       },
       {
-        "label": "Godstorm (Level 9 Conduit Heroic Ability)",
+        "label": "Godstorm (Level 9 Storm Conduit Heroic Ability)",
         "value": "/newcards/Conduit/godstorm-11-piety.yaml",
         "sortKey": "009-011-Godstorm"
       },
       {
-        "label": "Night Falls (Level 9 Conduit Heroic Ability)",
+        "label": "Night Falls (Level 9 Trickery Conduit Heroic Ability)",
         "value": "/newcards/Conduit/night-falls-11-piety.yaml",
         "sortKey": "009-011-Night Falls"
       },
       {
-        "label": "Radiance of Grace (Level 9 Conduit Heroic Ability)",
+        "label": "Radiance of Grace (Level 9 Life Conduit Heroic Ability)",
         "value": "/newcards/Conduit/radiance-of-grace-11-piety.yaml",
         "sortKey": "009-011-Radiance of Grace"
       },
       {
-        "label": "Righteous Phalanx (Level 9 Conduit Heroic Ability)",
+        "label": "Righteous Phalanx (Level 9 War Conduit Heroic Ability)",
         "value": "/newcards/Conduit/righteous-phalanx-11-piety.yaml",
         "sortKey": "009-011-Righteous Phalanx"
       },
       {
-        "label": "Solar Flare (Level 9 Conduit Heroic Ability)",
+        "label": "Solar Flare (Level 9 Sun Conduit Heroic Ability)",
         "value": "/newcards/Conduit/solar-flare-11-piety.yaml",
         "sortKey": "009-011-Solar Flare"
       },
       {
-        "label": "Thorn Cage (Level 9 Conduit Heroic Ability)",
+        "label": "Thorn Cage (Level 9 Nature Conduit Heroic Ability)",
         "value": "/newcards/Conduit/thorn-cage-11-piety.yaml",
         "sortKey": "009-011-Thorn Cage"
       },
       {
-        "label": "Word of Final Redemption (Level 9 Conduit Heroic Ability)",
+        "label": "Word of Final Redemption (Level 9 Death Conduit Heroic Ability)",
         "value": "/newcards/Conduit/word-of-final-redemption-11-piety.yaml",
         "sortKey": "009-011-Word of Final Redemption"
       },
       {
-        "label": "Word of Weakening (Level 9 Conduit Heroic Ability)",
+        "label": "Word of Weakening (Level 9 Knowledge Conduit Heroic Ability)",
         "value": "/newcards/Conduit/word-of-weakening-11-piety.yaml",
         "sortKey": "009-011-Word of Weakening"
       }
@@ -838,12 +838,12 @@ export const cardManifest  = [
         "sortKey": "001-000-Bifurcated Incineration"
       },
       {
-        "label": "Breath of Dawn Remembered (Level 1 Elementalist Ability)",
+        "label": "Breath of Dawn Remembered (Level 1 Green Elementalist Ability)",
         "value": "/newcards/Elementalist/breath-of-dawn-remembered.yaml",
         "sortKey": "001-000-Breath of Dawn Remembered"
       },
       {
-        "label": "Explosive Assistance (Level 1 Elementalist Ability)",
+        "label": "Explosive Assistance (Level 1 Fire Elementalist Ability)",
         "value": "/newcards/Elementalist/explosive-assistance.yaml",
         "sortKey": "001-000-Explosive Assistance"
       },
@@ -863,7 +863,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Meteoric Introduction"
       },
       {
-        "label": "Motivate Earth (Level 1 Elementalist Ability)",
+        "label": "Motivate Earth (Level 1 Earth Elementalist Ability)",
         "value": "/newcards/Elementalist/motivate-earth.yaml",
         "sortKey": "001-000-Motivate Earth"
       },
@@ -878,22 +878,22 @@ export const cardManifest  = [
         "sortKey": "001-000-Ray of Agonizing Self-Reflection"
       },
       {
-        "label": "Return to Formlessness (Level 1 Elementalist Ability)",
+        "label": "Return to Formlessness (Level 1 Fire Elementalist Ability)",
         "value": "/newcards/Elementalist/return-to-formlessness.yaml",
         "sortKey": "001-000-Return to Formlessness"
       },
       {
-        "label": "Shared Void Sense (Level 1 Elementalist Ability)",
+        "label": "Shared Void Sense (Level 1 Void Elementalist Ability)",
         "value": "/newcards/Elementalist/shared-void-sense.yaml",
         "sortKey": "001-000-Shared Void Sense"
       },
       {
-        "label": "Skin Like Castle Walls (Level 1 Elementalist Ability)",
+        "label": "Skin Like Castle Walls (Level 1 Earth Elementalist Ability)",
         "value": "/newcards/Elementalist/skin-like-castle-walls.yaml",
         "sortKey": "001-000-Skin Like Castle Walls"
       },
       {
-        "label": "Subtle Relocation (Level 1 Elementalist Ability)",
+        "label": "Subtle Relocation (Level 1 Void Elementalist Ability)",
         "value": "/newcards/Elementalist/subtle-relocation.yaml",
         "sortKey": "001-000-Subtle Relocation"
       },
@@ -953,7 +953,7 @@ export const cardManifest  = [
         "sortKey": "001-005-Test of Rain"
       },
       {
-        "label": "There Is No Space Between (Level 2 Elementalist Ability)",
+        "label": "There Is No Space Between (Level 2 Void Elementalist Ability)",
         "value": "/newcards/Elementalist/there-is-no-space-between.yaml",
         "sortKey": "002-000-There Is No Space Between"
       },
@@ -978,12 +978,12 @@ export const cardManifest  = [
         "sortKey": "002-005-Volcano's Embrace"
       },
       {
-        "label": "Earth Accepts Me (Level 3 Elementalist Ability)",
+        "label": "Earth Accepts Me (Level 3 Earth Elementalist Ability)",
         "value": "/newcards/Elementalist/earth-accepts-me.yaml",
         "sortKey": "003-000-Earth Accepts Me"
       },
       {
-        "label": "Remember Growth and Sun and Rain (Level 3 Elementalist Ability)",
+        "label": "Remember Growth and Sun and Rain (Level 3 Green Elementalist Ability)",
         "value": "/newcards/Elementalist/remember-growth-and-sun-and-rain.yaml",
         "sortKey": "003-000-Remember Growth and Sun and Rain"
       },
@@ -1048,7 +1048,7 @@ export const cardManifest  = [
         "sortKey": "006-009-The Wode Remembers and Returns"
       },
       {
-        "label": "Summon Source of Earth (Level 8 Elementalist Ability)",
+        "label": "Summon Source of Earth (Level 8 Earth Elementalist Ability)",
         "value": "/newcards/Elementalist/summon-source-of-earth.yaml",
         "sortKey": "008-000-Summon Source of Earth"
       },
@@ -1103,7 +1103,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Brutal Slam"
       },
       {
-        "label": "Furious Change (Level 1 Fury Ability)",
+        "label": "Furious Change (Level 1 Stormwight Fury Ability)",
         "value": "/newcards/Fury/furious-change.yaml",
         "sortKey": "001-000-Furious Change"
       },
@@ -1118,7 +1118,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Impaled!"
       },
       {
-        "label": "Lines of Force (Level 1 Fury Ability)",
+        "label": "Lines of Force (Level 1 Berserker Fury Ability)",
         "value": "/newcards/Fury/lines-of-force.yaml",
         "sortKey": "001-000-Lines of Force"
       },
@@ -1128,7 +1128,7 @@ export const cardManifest  = [
         "sortKey": "001-000-To the Death!"
       },
       {
-        "label": "Unearthly Reflexes (Level 1 Fury Ability)",
+        "label": "Unearthly Reflexes (Level 1 Reaver Fury Ability)",
         "value": "/newcards/Fury/unearthly-reflexes.yaml",
         "sortKey": "001-000-Unearthly Reflexes"
       },
@@ -1213,32 +1213,32 @@ export const cardManifest  = [
         "sortKey": "005-009-To Stone!"
       },
       {
-        "label": "Avalanche Impact (Level 6 Fury Heroic Ability)",
+        "label": "Avalanche Impact (Level 6 Berserker Fury Heroic Ability)",
         "value": "/newcards/Fury/avalanche-impact-9-ferocity.yaml",
         "sortKey": "006-009-Avalanche Impact"
       },
       {
-        "label": "Death Strike (Level 6 Fury Heroic Ability)",
+        "label": "Death Strike (Level 6 Reaver Fury Heroic Ability)",
         "value": "/newcards/Fury/death-strike-9-ferocity.yaml",
         "sortKey": "006-009-Death Strike"
       },
       {
-        "label": "Force of Storms (Level 6 Fury Heroic Ability)",
+        "label": "Force of Storms (Level 6 Berserker Fury Heroic Ability)",
         "value": "/newcards/Fury/force-of-storms-9-ferocity.yaml",
         "sortKey": "006-009-Force of Storms"
       },
       {
-        "label": "Pounce (Level 6 Fury Heroic Ability)",
+        "label": "Pounce (Level 6 Stormwight Fury Heroic Ability)",
         "value": "/newcards/Fury/pounce-9-ferocity.yaml",
         "sortKey": "006-009-Pounce"
       },
       {
-        "label": "Riders on the Storm (Level 6 Fury Heroic Ability)",
+        "label": "Riders on the Storm (Level 6 Stormwight Fury Heroic Ability)",
         "value": "/newcards/Fury/riders-on-the-storm-9-ferocity.yaml",
         "sortKey": "006-009-Riders on the Storm"
       },
       {
-        "label": "Seek and Destroy (Level 6 Fury Heroic Ability)",
+        "label": "Seek and Destroy (Level 6 Reaver Fury Heroic Ability)",
         "value": "/newcards/Fury/seek-and-destroy-9-ferocity.yaml",
         "sortKey": "006-009-Seek and Destroy"
       },
@@ -1263,32 +1263,32 @@ export const cardManifest  = [
         "sortKey": "008-011-Relentless Death"
       },
       {
-        "label": "Death Comes for You All! (Level 9 Fury Heroic Ability)",
+        "label": "Death Comes for You All! (Level 9 Berserker Fury Heroic Ability)",
         "value": "/newcards/Fury/death-comes-for-you-all-11-ferocity.yaml",
         "sortKey": "009-011-Death Comes for You All!"
       },
       {
-        "label": "Death Rattle (Level 9 Fury Heroic Ability)",
+        "label": "Death Rattle (Level 9 Stormwight Fury Heroic Ability)",
         "value": "/newcards/Fury/death-rattle-11-ferocity.yaml",
         "sortKey": "009-011-Death Rattle"
       },
       {
-        "label": "Deluge (Level 9 Fury Heroic Ability)",
+        "label": "Deluge (Level 9 Stormwight Fury Heroic Ability)",
         "value": "/newcards/Fury/deluge-11-ferocity.yaml",
         "sortKey": "009-011-Deluge"
       },
       {
-        "label": "Primordial Bane (Level 9 Fury Heroic Ability)",
+        "label": "Primordial Bane (Level 9 Reaver Fury Heroic Ability)",
         "value": "/newcards/Fury/primordial-bane-11-ferocity.yaml",
         "sortKey": "009-011-Primordial Bane"
       },
       {
-        "label": "Primordial Vortex (Level 9 Fury Heroic Ability)",
+        "label": "Primordial Vortex (Level 9 Berserker Fury Heroic Ability)",
         "value": "/newcards/Fury/primordial-vortex-11-ferocity.yaml",
         "sortKey": "009-011-Primordial Vortex"
       },
       {
-        "label": "Shower of Blood (Level 9 Fury Heroic Ability)",
+        "label": "Shower of Blood (Level 9 Reaver Fury Heroic Ability)",
         "value": "/newcards/Fury/shower-of-blood-11-ferocity.yaml",
         "sortKey": "009-011-Shower of Blood"
       }
@@ -1388,32 +1388,32 @@ export const cardManifest  = [
         "sortKey": "001-005-Phase Strike"
       },
       {
-        "label": "Blur (Level 2 Null Heroic Ability)",
+        "label": "Blur (Level 2 Chronokinetic Null Heroic Ability)",
         "value": "/newcards/Null/blur-5-discipline.yaml",
         "sortKey": "002-005-Blur"
       },
       {
-        "label": "Entropic Field (Level 2 Null Heroic Ability)",
+        "label": "Entropic Field (Level 2 Cryokinetic Null Heroic Ability)",
         "value": "/newcards/Null/entropic-field-5-discipline.yaml",
         "sortKey": "002-005-Entropic Field"
       },
       {
-        "label": "Force Redirected (Level 2 Null Heroic Ability)",
+        "label": "Force Redirected (Level 2 Chronokinetic Null Heroic Ability)",
         "value": "/newcards/Null/force-redirected-5-discipline.yaml",
         "sortKey": "002-005-Force Redirected"
       },
       {
-        "label": "Gravitic Strike (Level 2 Null Heroic Ability)",
+        "label": "Gravitic Strike (Level 2 Metakinetic Null Heroic Ability)",
         "value": "/newcards/Null/gravitic-strike-5-discipline.yaml",
         "sortKey": "002-005-Gravitic Strike"
       },
       {
-        "label": "Heat Sink (Level 2 Null Heroic Ability)",
+        "label": "Heat Sink (Level 2 Cryokinetic Null Heroic Ability)",
         "value": "/newcards/Null/heat-sink-5-discipline.yaml",
         "sortKey": "002-005-Heat Sink"
       },
       {
-        "label": "Kinetic Shield (Level 2 Null Heroic Ability)",
+        "label": "Kinetic Shield (Level 2 Metakinetic Null Heroic Ability)",
         "value": "/newcards/Null/kinetic-shield-5-discipline.yaml",
         "sortKey": "002-005-Kinetic Shield"
       },
@@ -1458,32 +1458,32 @@ export const cardManifest  = [
         "sortKey": "005-009-Synaptic Reset"
       },
       {
-        "label": "Gravitic Charge (Level 6 Null Heroic Ability)",
+        "label": "Gravitic Charge (Level 6 Metakinetic Null Heroic Ability)",
         "value": "/newcards/Null/gravitic-charge-9-discipline.yaml",
         "sortKey": "006-009-Gravitic Charge"
       },
       {
-        "label": "Ice Pillars (Level 6 Null Heroic Ability)",
+        "label": "Ice Pillars (Level 6 Cryokinetic Null Heroic Ability)",
         "value": "/newcards/Null/ice-pillars-9-discipline.yaml",
         "sortKey": "006-009-Ice Pillars"
       },
       {
-        "label": "Interphase (Level 6 Null Heroic Ability)",
+        "label": "Interphase (Level 6 Chronokinetic Null Heroic Ability)",
         "value": "/newcards/Null/interphase-9-discipline.yaml",
         "sortKey": "006-009-Interphase"
       },
       {
-        "label": "Iron Body (Level 6 Null Heroic Ability)",
+        "label": "Iron Body (Level 6 Metakinetic Null Heroic Ability)",
         "value": "/newcards/Null/iron-body-9-discipline.yaml",
         "sortKey": "006-009-Iron Body"
       },
       {
-        "label": "Phase Step (Level 6 Null Heroic Ability)",
+        "label": "Phase Step (Level 6 Chronokinetic Null Heroic Ability)",
         "value": "/newcards/Null/phase-step-9-discipline.yaml",
         "sortKey": "006-009-Phase Step"
       },
       {
-        "label": "Wall of Ice (Level 6 Null Heroic Ability)",
+        "label": "Wall of Ice (Level 6 Cryokinetic Null Heroic Ability)",
         "value": "/newcards/Null/wall-of-ice-9-discipline.yaml",
         "sortKey": "006-009-Wall of Ice"
       },
@@ -1508,32 +1508,32 @@ export const cardManifest  = [
         "sortKey": "008-011-Synaptic Anchor"
       },
       {
-        "label": "Absolute Zero (Level 9 Null Heroic Ability)",
+        "label": "Absolute Zero (Level 9 Cryokinetic Null Heroic Ability)",
         "value": "/newcards/Null/absolute-zero-11-discipline.yaml",
         "sortKey": "009-011-Absolute Zero"
       },
       {
-        "label": "Arrestor Cycle (Level 9 Null Heroic Ability)",
+        "label": "Arrestor Cycle (Level 9 Chronokinetic Null Heroic Ability)",
         "value": "/newcards/Null/arrestor-cycle-11-discipline.yaml",
         "sortKey": "009-011-Arrestor Cycle"
       },
       {
-        "label": "Heat Drain (Level 9 Null Heroic Ability)",
+        "label": "Heat Drain (Level 9 Cryokinetic Null Heroic Ability)",
         "value": "/newcards/Null/heat-drain-11-discipline.yaml",
         "sortKey": "009-011-Heat Drain"
       },
       {
-        "label": "Inertial Absorption (Level 9 Null Heroic Ability)",
+        "label": "Inertial Absorption (Level 9 Metakinetic Null Heroic Ability)",
         "value": "/newcards/Null/inertial-absorption-11-discipline.yaml",
         "sortKey": "009-011-Inertial Absorption"
       },
       {
-        "label": "Realitas (Level 9 Null Heroic Ability)",
+        "label": "Realitas (Level 9 Metakinetic Null Heroic Ability)",
         "value": "/newcards/Null/realitas-11-discipline.yaml",
         "sortKey": "009-011-Realitas"
       },
       {
-        "label": "Time Loop (Level 9 Null Heroic Ability)",
+        "label": "Time Loop (Level 9 Chronokinetic Null Heroic Ability)",
         "value": "/newcards/Null/time-loop-11-discipline.yaml",
         "sortKey": "009-011-Time Loop"
       }
@@ -1543,17 +1543,17 @@ export const cardManifest  = [
     "label": "Shadow",
     "options": [
       {
-        "label": "Black Ash Teleport (Level 1 Shadow Ability)",
+        "label": "Black Ash Teleport (Level 1 Black Ash Shadow Ability)",
         "value": "/newcards/Shadow/black-ash-teleport.yaml",
         "sortKey": "001-000-Black Ash Teleport"
       },
       {
-        "label": "Coat the Blade (Level 1 Shadow Ability)",
+        "label": "Coat the Blade (Level 1 Caustic Alchemy Shadow Ability)",
         "value": "/newcards/Shadow/coat-the-blade.yaml",
         "sortKey": "001-000-Coat the Blade"
       },
       {
-        "label": "Defensive Roll (Level 1 Shadow Ability)",
+        "label": "Defensive Roll (Level 1 Caustic Alchemy Shadow Ability)",
         "value": "/newcards/Shadow/defensive-roll.yaml",
         "sortKey": "001-000-Defensive Roll"
       },
@@ -1568,12 +1568,12 @@ export const cardManifest  = [
         "sortKey": "001-000-I Work Better Alone"
       },
       {
-        "label": "I'm No Threat (Level 1 Shadow Ability)",
+        "label": "I'm No Threat (Level 1 Harlequin Mask Shadow Ability)",
         "value": "/newcards/Shadow/im-no-threat.yaml",
         "sortKey": "001-000-I'm No Threat"
       },
       {
-        "label": "In All This Confusion (Level 1 Shadow Ability)",
+        "label": "In All This Confusion (Level 1 Black Ash Shadow Ability)",
         "value": "/newcards/Shadow/in-all-this-confusion.yaml",
         "sortKey": "001-000-In All This Confusion"
       },
@@ -1588,7 +1588,7 @@ export const cardManifest  = [
         "sortKey": "001-000-You Were Watching the Wrong One"
       },
       {
-        "label": "Clever Trick (Level 1 Shadow Heroic Ability)",
+        "label": "Clever Trick (Level 1 Harlequin Mask Shadow Heroic Ability)",
         "value": "/newcards/Shadow/clever-trick-1-insight.yaml",
         "sortKey": "001-001-Clever Trick"
       },
@@ -1638,32 +1638,32 @@ export const cardManifest  = [
         "sortKey": "001-005-Shadowstrike"
       },
       {
-        "label": "In a Puff of Ash (Level 2 Shadow Heroic Ability)",
+        "label": "In a Puff of Ash (Level 2 Black Ash Shadow Heroic Ability)",
         "value": "/newcards/Shadow/in-a-puff-of-ash-5-insight.yaml",
         "sortKey": "002-005-In a Puff of Ash"
       },
       {
-        "label": "Machinations of Sound (Level 2 Shadow Heroic Ability)",
+        "label": "Machinations of Sound (Level 2 Harlequin Mask Shadow Heroic Ability)",
         "value": "/newcards/Shadow/machinations-of-sound-5-insight.yaml",
         "sortKey": "002-005-Machinations of Sound"
       },
       {
-        "label": "So Gullible (Level 2 Shadow Heroic Ability)",
+        "label": "So Gullible (Level 2 Harlequin Mask Shadow Heroic Ability)",
         "value": "/newcards/Shadow/so-gullible-5-insight.yaml",
         "sortKey": "002-005-So Gullible"
       },
       {
-        "label": "Sticky Bomb (Level 2 Shadow Heroic Ability)",
+        "label": "Sticky Bomb (Level 2 Caustic Alchemy Shadow Heroic Ability)",
         "value": "/newcards/Shadow/sticky-bomb-5-insight.yaml",
         "sortKey": "002-005-Sticky Bomb"
       },
       {
-        "label": "Stink Bomb (Level 2 Shadow Heroic Ability)",
+        "label": "Stink Bomb (Level 2 Caustic Alchemy Shadow Heroic Ability)",
         "value": "/newcards/Shadow/stink-bomb-5-insight.yaml",
         "sortKey": "002-005-Stink Bomb"
       },
       {
-        "label": "Too Slow (Level 2 Shadow Heroic Ability)",
+        "label": "Too Slow (Level 2 Black Ash Shadow Heroic Ability)",
         "value": "/newcards/Shadow/too-slow-5-insight.yaml",
         "sortKey": "002-005-Too Slow"
       },
@@ -1718,37 +1718,37 @@ export const cardManifest  = [
         "sortKey": "005-009-You Talk Too Much"
       },
       {
-        "label": "Black Ash Eruption (Level 6 Shadow Heroic Ability)",
+        "label": "Black Ash Eruption (Level 6 Black Ash Shadow Heroic Ability)",
         "value": "/newcards/Shadow/black-ash-eruption-9-insight.yaml",
         "sortKey": "006-009-Black Ash Eruption"
       },
       {
-        "label": "Cinderstorm (Level 6 Shadow Heroic Ability)",
+        "label": "Cinderstorm (Level 6 Black Ash Shadow Heroic Ability)",
         "value": "/newcards/Shadow/cinderstorm-9-insight.yaml",
         "sortKey": "006-009-Cinderstorm"
       },
       {
-        "label": "Look! (Level 6 Shadow Heroic Ability)",
+        "label": "Look! (Level 6 Harlequin Mask Shadow Heroic Ability)",
         "value": "/newcards/Shadow/look-9-insight.yaml",
         "sortKey": "006-009-Look!"
       },
       {
-        "label": "One Vial Makes You Better (Level 6 Shadow Heroic Ability)",
+        "label": "One Vial Makes You Better (Level 6 Caustic Alchemy Shadow Heroic Ability)",
         "value": "/newcards/Shadow/one-vial-makes-you-better-9-insight.yaml",
         "sortKey": "006-009-One Vial Makes You Better"
       },
       {
-        "label": "One Vial Makes You Faster (Level 6 Shadow Heroic Ability)",
+        "label": "One Vial Makes You Faster (Level 6 Caustic Alchemy Shadow Heroic Ability)",
         "value": "/newcards/Shadow/one-vial-makes-you-faster-9-insight.yaml",
         "sortKey": "006-009-One Vial Makes You Faster"
       },
       {
-        "label": "Puppet Strings (Level 6 Shadow Heroic Ability)",
+        "label": "Puppet Strings (Level 6 Harlequin Mask Shadow Heroic Ability)",
         "value": "/newcards/Shadow/puppet-strings-9-insight.yaml",
         "sortKey": "006-009-Puppet Strings"
       },
       {
-        "label": "Time Bomb (Level 8 Shadow Ability)",
+        "label": "Time Bomb (Level 8 Caustic Alchemy Shadow Ability)",
         "value": "/newcards/Shadow/time-bomb.yaml",
         "sortKey": "008-000-Time Bomb"
       },
@@ -1773,32 +1773,32 @@ export const cardManifest  = [
         "sortKey": "008-011-They Always Line Up"
       },
       {
-        "label": "Cacophony of Cinders (Level 9 Shadow Heroic Ability)",
+        "label": "Cacophony of Cinders (Level 9 Black Ash Shadow Heroic Ability)",
         "value": "/newcards/Shadow/cacophony-of-cinders-11-insight.yaml",
         "sortKey": "009-011-Cacophony of Cinders"
       },
       {
-        "label": "Chain Reaction (Level 9 Shadow Heroic Ability)",
+        "label": "Chain Reaction (Level 9 Caustic Alchemy Shadow Heroic Ability)",
         "value": "/newcards/Shadow/chain-reaction-11-insight.yaml",
         "sortKey": "009-011-Chain Reaction"
       },
       {
-        "label": "Demon Door (Level 9 Shadow Heroic Ability)",
+        "label": "Demon Door (Level 9 Black Ash Shadow Heroic Ability)",
         "value": "/newcards/Shadow/demon-door-11-insight.yaml",
         "sortKey": "009-011-Demon Door"
       },
       {
-        "label": "I Am You (Level 9 Shadow Heroic Ability)",
+        "label": "I Am You (Level 9 Harlequin Mask Shadow Heroic Ability)",
         "value": "/newcards/Shadow/i-am-you-11-insight.yaml",
         "sortKey": "009-011-I Am You"
       },
       {
-        "label": "It Was Me All Along (Level 9 Shadow Heroic Ability)",
+        "label": "It Was Me All Along (Level 9 Harlequin Mask Shadow Heroic Ability)",
         "value": "/newcards/Shadow/it-was-me-all-along-11-insight.yaml",
         "sortKey": "009-011-It Was Me All Along"
       },
       {
-        "label": "To the Stars (Level 9 Shadow Heroic Ability)",
+        "label": "To the Stars (Level 9 Caustic Alchemy Shadow Heroic Ability)",
         "value": "/newcards/Shadow/to-the-stars-11-insight.yaml",
         "sortKey": "009-011-To the Stars"
       }
@@ -1813,7 +1813,7 @@ export const cardManifest  = [
         "sortKey": "001-000-\"Strike Now!\""
       },
       {
-        "label": "Advanced Tactics (Level 1 Tactician Ability)",
+        "label": "Advanced Tactics (Level 1 Insurgent Tactician Ability)",
         "value": "/newcards/Tactician/advanced-tactics.yaml",
         "sortKey": "001-000-Advanced Tactics"
       },
@@ -1823,12 +1823,12 @@ export const cardManifest  = [
         "sortKey": "001-000-Mark"
       },
       {
-        "label": "Overwatch (Level 1 Tactician Ability)",
+        "label": "Overwatch (Level 1 Mastermind Tactician Ability)",
         "value": "/newcards/Tactician/overwatch.yaml",
         "sortKey": "001-000-Overwatch"
       },
       {
-        "label": "Parry (Level 1 Tactician Ability)",
+        "label": "Parry (Level 1 Vanguard Tactician Ability)",
         "value": "/newcards/Tactician/parry.yaml",
         "sortKey": "001-000-Parry"
       },
@@ -1873,32 +1873,32 @@ export const cardManifest  = [
         "sortKey": "001-005-This Is What We Planned For"
       },
       {
-        "label": "Fog of War (Level 2 Tactician Heroic Ability)",
+        "label": "Fog of War (Level 2 Insurgent Tactician Heroic Ability)",
         "value": "/newcards/Tactician/fog-of-war-5-focus.yaml",
         "sortKey": "002-005-Fog of War"
       },
       {
-        "label": "I've Got Your Back (Level 2 Tactician Heroic Ability)",
+        "label": "I've Got Your Back (Level 2 Mastermind Tactician Heroic Ability)",
         "value": "/newcards/Tactician/ive-got-your-back-5-focus.yaml",
         "sortKey": "002-005-I've Got Your Back"
       },
       {
-        "label": "No Dying on My Watch (Level 2 Tactician Heroic Ability)",
+        "label": "No Dying on My Watch (Level 2 Vanguard Tactician Heroic Ability)",
         "value": "/newcards/Tactician/no-dying-on-my-watch-5-focus.yaml",
         "sortKey": "002-005-No Dying on My Watch"
       },
       {
-        "label": "Squad! On Me! (Level 2 Tactician Heroic Ability)",
+        "label": "Squad! On Me! (Level 2 Vanguard Tactician Heroic Ability)",
         "value": "/newcards/Tactician/squad-on-me-5-focus.yaml",
         "sortKey": "002-005-Squad! On Me!"
       },
       {
-        "label": "Targets of Opportunity (Level 2 Tactician Heroic Ability)",
+        "label": "Targets of Opportunity (Level 2 Mastermind Tactician Heroic Ability)",
         "value": "/newcards/Tactician/targets-of-opportunity-5-focus.yaml",
         "sortKey": "002-005-Targets of Opportunity"
       },
       {
-        "label": "Try Me Instead (Level 2 Tactician Heroic Ability)",
+        "label": "Try Me Instead (Level 2 Insurgent Tactician Heroic Ability)",
         "value": "/newcards/Tactician/try-me-instead-5-focus.yaml",
         "sortKey": "002-005-Try Me Instead"
       },
@@ -1943,32 +1943,32 @@ export const cardManifest  = [
         "sortKey": "005-009-You've Still Got Something Left"
       },
       {
-        "label": "Battle Plan (Level 6 Tactician Heroic Ability)",
+        "label": "Battle Plan (Level 6 Mastermind Tactician Heroic Ability)",
         "value": "/newcards/Tactician/battle-plan-9-focus.yaml",
         "sortKey": "006-009-Battle Plan"
       },
       {
-        "label": "Coordinated Execution (Level 6 Tactician Heroic Ability)",
+        "label": "Coordinated Execution (Level 6 Insurgent Tactician Heroic Ability)",
         "value": "/newcards/Tactician/coordinated-execution-9-focus.yaml",
         "sortKey": "006-009-Coordinated Execution"
       },
       {
-        "label": "Hustle! (Level 6 Tactician Heroic Ability)",
+        "label": "Hustle! (Level 6 Mastermind Tactician Heroic Ability)",
         "value": "/newcards/Tactician/hustle-9-focus.yaml",
         "sortKey": "006-009-Hustle!"
       },
       {
-        "label": "Instant Retaliation (Level 6 Tactician Heroic Ability)",
+        "label": "Instant Retaliation (Level 6 Vanguard Tactician Heroic Ability)",
         "value": "/newcards/Tactician/instant-retaliation-9-focus.yaml",
         "sortKey": "006-009-Instant Retaliation"
       },
       {
-        "label": "Panic in Their Lines (Level 6 Tactician Heroic Ability)",
+        "label": "Panic in Their Lines (Level 6 Insurgent Tactician Heroic Ability)",
         "value": "/newcards/Tactician/panic-in-their-lines-9-focus.yaml",
         "sortKey": "006-009-Panic in Their Lines"
       },
       {
-        "label": "To Me Squad! (Level 6 Tactician Heroic Ability)",
+        "label": "To Me Squad! (Level 6 Vanguard Tactician Heroic Ability)",
         "value": "/newcards/Tactician/to-me-squad-9-focus.yaml",
         "sortKey": "006-009-To Me Squad!"
       },
@@ -1993,32 +1993,32 @@ export const cardManifest  = [
         "sortKey": "008-011-I'll Open and You'll Close"
       },
       {
-        "label": "Blot Out the Sun! (Level 9 Tactician Heroic Ability)",
+        "label": "Blot Out the Sun! (Level 9 Mastermind Tactician Heroic Ability)",
         "value": "/newcards/Tactician/blot-out-the-sun-11-focus.yaml",
         "sortKey": "009-011-Blot Out the Sun!"
       },
       {
-        "label": "Counterstrategy (Level 9 Tactician Heroic Ability)",
+        "label": "Counterstrategy (Level 9 Mastermind Tactician Heroic Ability)",
         "value": "/newcards/Tactician/counterstrategy-11-focus.yaml",
         "sortKey": "009-011-Counterstrategy"
       },
       {
-        "label": "No Escape (Level 9 Tactician Heroic Ability)",
+        "label": "No Escape (Level 9 Vanguard Tactician Heroic Ability)",
         "value": "/newcards/Tactician/no-escape-11-focus.yaml",
         "sortKey": "009-011-No Escape"
       },
       {
-        "label": "Squad! Hit and Run! (Level 9 Tactician Heroic Ability)",
+        "label": "Squad! Hit and Run! (Level 9 Insurgent Tactician Heroic Ability)",
         "value": "/newcards/Tactician/squad-hit-and-run-11-focus.yaml",
         "sortKey": "009-011-Squad! Hit and Run!"
       },
       {
-        "label": "That One Is Mine! (Level 9 Tactician Heroic Ability)",
+        "label": "That One Is Mine! (Level 9 Vanguard Tactician Heroic Ability)",
         "value": "/newcards/Tactician/that-one-is-mine-11-focus.yaml",
         "sortKey": "009-011-That One Is Mine!"
       },
       {
-        "label": "Their Lack of Focus Is Their Undoing (Level 9 Tactician Heroic Ability)",
+        "label": "Their Lack of Focus Is Their Undoing (Level 9 Insurgent Tactician Heroic Ability)",
         "value": "/newcards/Tactician/their-lack-of-focus-is-their-undoing-11-focus.yaml",
         "sortKey": "009-011-Their Lack of Focus Is Their Undoing"
       }
@@ -2028,12 +2028,12 @@ export const cardManifest  = [
     "label": "Talent",
     "options": [
       {
-        "label": "Accelerate (Level 1 Talent Ability)",
+        "label": "Accelerate (Level 1 Chronopathy Talent Ability)",
         "value": "/newcards/Talent/accelerate.yaml",
         "sortKey": "001-000-Accelerate"
       },
       {
-        "label": "Again (Level 1 Talent Ability)",
+        "label": "Again (Level 1 Chronopathy Talent Ability)",
         "value": "/newcards/Talent/again.yaml",
         "sortKey": "001-000-Again"
       },
@@ -2043,7 +2043,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Entropic Bolt"
       },
       {
-        "label": "Feedback Loop (Level 1 Talent Ability)",
+        "label": "Feedback Loop (Level 1 Telepathy Talent Ability)",
         "value": "/newcards/Talent/feedback-loop.yaml",
         "sortKey": "001-000-Feedback Loop"
       },
@@ -2078,7 +2078,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Mind Spike"
       },
       {
-        "label": "Minor Telekinesis (Level 1 Talent Ability)",
+        "label": "Minor Telekinesis (Level 1 Telekinesis Talent Ability)",
         "value": "/newcards/Talent/minor-telekinesis.yaml",
         "sortKey": "001-000-Minor Telekinesis"
       },
@@ -2088,12 +2088,12 @@ export const cardManifest  = [
         "sortKey": "001-000-Optic Blast"
       },
       {
-        "label": "Remote Assistance (Level 1 Talent Ability)",
+        "label": "Remote Assistance (Level 1 Telepathy Talent Ability)",
         "value": "/newcards/Talent/remote-assistance.yaml",
         "sortKey": "001-000-Remote Assistance"
       },
       {
-        "label": "Repel (Level 1 Talent Ability)",
+        "label": "Repel (Level 1 Telekinesis Talent Ability)",
         "value": "/newcards/Talent/repel.yaml",
         "sortKey": "001-000-Repel"
       },
@@ -2143,32 +2143,32 @@ export const cardManifest  = [
         "sortKey": "001-005-Perfect Clarity"
       },
       {
-        "label": "Applied Chronometrics (Level 2 Talent Heroic Ability)",
+        "label": "Applied Chronometrics (Level 2 Chronopathy Talent Heroic Ability)",
         "value": "/newcards/Talent/applied-chronometrics-5-clarity.yaml",
         "sortKey": "002-005-Applied Chronometrics"
       },
       {
-        "label": "Gravitic Burst (Level 2 Talent Heroic Ability)",
+        "label": "Gravitic Burst (Level 2 Telekinesis Talent Heroic Ability)",
         "value": "/newcards/Talent/gravitic-burst-5-clarity.yaml",
         "sortKey": "002-005-Gravitic Burst"
       },
       {
-        "label": "Levity and Gravity (Level 2 Talent Heroic Ability)",
+        "label": "Levity and Gravity (Level 2 Telekinesis Talent Heroic Ability)",
         "value": "/newcards/Talent/levity-and-gravity-5-clarity.yaml",
         "sortKey": "002-005-Levity and Gravity"
       },
       {
-        "label": "Overwhelm (Level 2 Talent Heroic Ability)",
+        "label": "Overwhelm (Level 2 Telepathy Talent Heroic Ability)",
         "value": "/newcards/Talent/overwhelm-5-clarity.yaml",
         "sortKey": "002-005-Overwhelm"
       },
       {
-        "label": "Slow (Level 2 Talent Heroic Ability)",
+        "label": "Slow (Level 2 Chronopathy Talent Heroic Ability)",
         "value": "/newcards/Talent/slow-5-clarity.yaml",
         "sortKey": "002-005-Slow"
       },
       {
-        "label": "Synaptic Override (Level 2 Talent Heroic Ability)",
+        "label": "Synaptic Override (Level 2 Telepathy Talent Heroic Ability)",
         "value": "/newcards/Talent/synaptic-override-5-clarity.yaml",
         "sortKey": "002-005-Synaptic Override"
       },
@@ -2213,42 +2213,42 @@ export const cardManifest  = [
         "sortKey": "005-009-Soulbound"
       },
       {
-        "label": "Fate (Level 6 Talent Heroic Ability)",
+        "label": "Fate (Level 6 Chronopathy Talent Heroic Ability)",
         "value": "/newcards/Talent/fate-9-clarity.yaml",
         "sortKey": "006-009-Fate"
       },
       {
-        "label": "Gravitic Well (Level 6 Talent Heroic Ability)",
+        "label": "Gravitic Well (Level 6 Telekinesis Talent Heroic Ability)",
         "value": "/newcards/Talent/gravitic-well-9-clarity.yaml",
         "sortKey": "006-009-Gravitic Well"
       },
       {
-        "label": "Greater Kinetic Grip (Level 6 Talent Heroic Ability)",
+        "label": "Greater Kinetic Grip (Level 6 Telekinesis Talent Heroic Ability)",
         "value": "/newcards/Talent/greater-kinetic-grip-9-clarity.yaml",
         "sortKey": "006-009-Greater Kinetic Grip"
       },
       {
-        "label": "Stasis Field (Level 6 Talent Heroic Ability)",
+        "label": "Stasis Field (Level 6 Chronopathy Talent Heroic Ability)",
         "value": "/newcards/Talent/stasis-field-9-clarity.yaml",
         "sortKey": "006-009-Stasis Field"
       },
       {
-        "label": "Synaptic Conditioning (Level 6 Talent Heroic Ability)",
+        "label": "Synaptic Conditioning (Level 6 Telepathy Talent Heroic Ability)",
         "value": "/newcards/Talent/synaptic-conditioning-9-clarity.yaml",
         "sortKey": "006-009-Synaptic Conditioning"
       },
       {
-        "label": "Synaptic Dissipation (Level 6 Talent Heroic Ability)",
+        "label": "Synaptic Dissipation (Level 6 Telepathy Talent Heroic Ability)",
         "value": "/newcards/Talent/synaptic-dissipation-9-clarity.yaml",
         "sortKey": "006-009-Synaptic Dissipation"
       },
       {
-        "label": "Levitation Field (Level 8 Talent Ability)",
+        "label": "Levitation Field (Level 8 Telekinesis Talent Ability)",
         "value": "/newcards/Talent/levitation-field.yaml",
         "sortKey": "008-000-Levitation Field"
       },
       {
-        "label": "Stasis Shield (Level 8 Talent Heroic Ability)",
+        "label": "Stasis Shield (Level 8 Chronopathy Talent Heroic Ability)",
         "value": "/newcards/Talent/stasis-shield-3-clarity.yaml",
         "sortKey": "008-003-Stasis Shield"
       },
@@ -2273,32 +2273,32 @@ export const cardManifest  = [
         "sortKey": "008-011-Steel"
       },
       {
-        "label": "Acceleration Field (Level 9 Talent Heroic Ability)",
+        "label": "Acceleration Field (Level 9 Chronopathy Talent Heroic Ability)",
         "value": "/newcards/Talent/acceleration-field-11-clarity.yaml",
         "sortKey": "009-011-Acceleration Field"
       },
       {
-        "label": "Borrow From the Future (Level 9 Talent Heroic Ability)",
+        "label": "Borrow From the Future (Level 9 Chronopathy Talent Heroic Ability)",
         "value": "/newcards/Talent/borrow-from-the-future-11-clarity.yaml",
         "sortKey": "009-011-Borrow From the Future"
       },
       {
-        "label": "Fulcrum (Level 9 Talent Heroic Ability)",
+        "label": "Fulcrum (Level 9 Telekinesis Talent Heroic Ability)",
         "value": "/newcards/Talent/fulcrum-11-clarity.yaml",
         "sortKey": "009-011-Fulcrum"
       },
       {
-        "label": "Gravitic Nova (Level 9 Talent Heroic Ability)",
+        "label": "Gravitic Nova (Level 9 Telekinesis Talent Heroic Ability)",
         "value": "/newcards/Talent/gravitic-nova-11-clarity.yaml",
         "sortKey": "009-011-Gravitic Nova"
       },
       {
-        "label": "Resonant Mind Spike (Level 9 Talent Heroic Ability)",
+        "label": "Resonant Mind Spike (Level 9 Telepathy Talent Heroic Ability)",
         "value": "/newcards/Talent/resonant-mind-spike-11-clarity.yaml",
         "sortKey": "009-011-Resonant Mind Spike"
       },
       {
-        "label": "Synaptic Terror (Level 9 Talent Heroic Ability)",
+        "label": "Synaptic Terror (Level 9 Telepathy Talent Heroic Ability)",
         "value": "/newcards/Talent/synaptic-terror-11-clarity.yaml",
         "sortKey": "009-011-Synaptic Terror"
       }
@@ -2308,17 +2308,17 @@ export const cardManifest  = [
     "label": "Troubadour",
     "options": [
       {
-        "label": "\"Ballad of the Beast\" (Level 1 Troubadour Ability)",
+        "label": "\"Ballad of the Beast\" (Level 1 Virtuoso Troubadour Ability)",
         "value": "/newcards/Troubadour/ballad-of-the-beast.yaml",
         "sortKey": "001-000-\"Ballad of the Beast\""
       },
       {
-        "label": "\"Thunder Mother\" (Level 1 Troubadour Ability)",
+        "label": "\"Thunder Mother\" (Level 1 Virtuoso Troubadour Ability)",
         "value": "/newcards/Troubadour/thunder-mother.yaml",
         "sortKey": "001-000-\"Thunder Mother\""
       },
       {
-        "label": "Acrobatics (Level 1 Troubadour Ability)",
+        "label": "Acrobatics (Level 1 Duelist Troubadour Ability)",
         "value": "/newcards/Troubadour/acrobatics.yaml",
         "sortKey": "001-000-Acrobatics"
       },
@@ -2328,7 +2328,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Artful Flourish"
       },
       {
-        "label": "Blocking (Level 1 Troubadour Ability)",
+        "label": "Blocking (Level 1 Auteur Troubadour Ability)",
         "value": "/newcards/Troubadour/blocking.yaml",
         "sortKey": "001-000-Blocking"
       },
@@ -2343,7 +2343,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Cutting Sarcasm"
       },
       {
-        "label": "Dramatic Monologue (Level 1 Troubadour Ability)",
+        "label": "Dramatic Monologue (Level 1 Auteur Troubadour Ability)",
         "value": "/newcards/Troubadour/dramatic-monologue.yaml",
         "sortKey": "001-000-Dramatic Monologue"
       },
@@ -2353,7 +2353,7 @@ export const cardManifest  = [
         "sortKey": "001-000-Instigator"
       },
       {
-        "label": "Power Chord (Level 1 Troubadour Ability)",
+        "label": "Power Chord (Level 1 Virtuoso Troubadour Ability)",
         "value": "/newcards/Troubadour/power-chord.yaml",
         "sortKey": "001-000-Power Chord"
       },
@@ -2363,12 +2363,12 @@ export const cardManifest  = [
         "sortKey": "001-000-Revitalizing Limerick"
       },
       {
-        "label": "Riposte (Level 1 Troubadour Ability)",
+        "label": "Riposte (Level 1 Duelist Troubadour Ability)",
         "value": "/newcards/Troubadour/riposte.yaml",
         "sortKey": "001-000-Riposte"
       },
       {
-        "label": "Turnabout Is Fair Play (Level 1 Troubadour Ability)",
+        "label": "Turnabout Is Fair Play (Level 1 Auteur Troubadour Ability)",
         "value": "/newcards/Troubadour/turnabout-is-fair-play.yaml",
         "sortKey": "001-000-Turnabout Is Fair Play"
       },
@@ -2378,12 +2378,12 @@ export const cardManifest  = [
         "sortKey": "001-000-Witty Banter"
       },
       {
-        "label": "Star Power (Level 1 Troubadour Heroic Ability)",
+        "label": "Star Power (Level 1 Duelist Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/star-power-1-drama.yaml",
         "sortKey": "001-001-Star Power"
       },
       {
-        "label": "Harmonize (Level 1 Troubadour Heroic Ability)",
+        "label": "Harmonize (Level 1 Virtuoso Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/harmonize-3-drama.yaml",
         "sortKey": "001-003-Harmonize"
       },
@@ -2428,42 +2428,42 @@ export const cardManifest  = [
         "sortKey": "001-005-Method Acting"
       },
       {
-        "label": "Classic Chandelier Stunt (Level 2 Troubadour Heroic Ability)",
+        "label": "Classic Chandelier Stunt (Level 2 Duelist Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/classic-chandelier-stunt-5-drama.yaml",
         "sortKey": "002-005-Classic Chandelier Stunt"
       },
       {
-        "label": "En Garde! (Level 2 Troubadour Heroic Ability)",
+        "label": "En Garde! (Level 2 Duelist Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/en-garde-5-drama.yaml",
         "sortKey": "002-005-En Garde!"
       },
       {
-        "label": "Encore (Level 2 Troubadour Heroic Ability)",
+        "label": "Encore (Level 2 Virtuoso Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/encore-5-drama.yaml",
         "sortKey": "002-005-Encore"
       },
       {
-        "label": "Guest Star (Level 2 Troubadour Heroic Ability)",
+        "label": "Guest Star (Level 2 Auteur Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/guest-star-5-drama.yaml",
         "sortKey": "002-005-Guest Star"
       },
       {
-        "label": "Tough Crowd (Level 2 Troubadour Heroic Ability)",
+        "label": "Tough Crowd (Level 2 Virtuoso Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/tough-crowd-5-drama.yaml",
         "sortKey": "002-005-Tough Crowd"
       },
       {
-        "label": "Twist at the End (Level 2 Troubadour Heroic Ability)",
+        "label": "Twist at the End (Level 2 Auteur Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/twist-at-the-end-5-drama.yaml",
         "sortKey": "002-005-Twist at the End"
       },
       {
-        "label": "\"Fire Up the Night\" (Level 3 Troubadour Ability)",
+        "label": "\"Fire Up the Night\" (Level 3 Virtuoso Troubadour Ability)",
         "value": "/newcards/Troubadour/fire-up-the-night.yaml",
         "sortKey": "003-000-\"Fire Up the Night\""
       },
       {
-        "label": "\"Never-Ending Hero\" (Level 3 Troubadour Ability)",
+        "label": "\"Never-Ending Hero\" (Level 3 Virtuoso Troubadour Ability)",
         "value": "/newcards/Troubadour/never-ending-hero.yaml",
         "sortKey": "003-000-\"Never-Ending Hero\""
       },
@@ -2488,12 +2488,12 @@ export const cardManifest  = [
         "sortKey": "003-007-We Meet at Last"
       },
       {
-        "label": "Take Two! (Level 5 Troubadour Ability)",
+        "label": "Take Two! (Level 5 Auteur Troubadour Ability)",
         "value": "/newcards/Troubadour/take-two.yaml",
         "sortKey": "005-000-Take Two!"
       },
       {
-        "label": "We Can't Be Upstaged! (Level 5 Troubadour Ability)",
+        "label": "We Can't Be Upstaged! (Level 5 Duelist Troubadour Ability)",
         "value": "/newcards/Troubadour/we-cant-be-upstaged.yaml",
         "sortKey": "005-000-We Can't Be Upstaged!"
       },
@@ -2523,42 +2523,42 @@ export const cardManifest  = [
         "sortKey": "006-000-Spotlight"
       },
       {
-        "label": "Blood on the Stage (Level 6 Troubadour Heroic Ability)",
+        "label": "Blood on the Stage (Level 6 Duelist Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/blood-on-the-stage-9-drama.yaml",
         "sortKey": "006-009-Blood on the Stage"
       },
       {
-        "label": "Feedback (Level 6 Troubadour Heroic Ability)",
+        "label": "Feedback (Level 6 Virtuoso Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/feedback-9-drama.yaml",
         "sortKey": "006-009-Feedback"
       },
       {
-        "label": "Fight Choreography (Level 6 Troubadour Heroic Ability)",
+        "label": "Fight Choreography (Level 6 Duelist Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/fight-choreography-9-drama.yaml",
         "sortKey": "006-009-Fight Choreography"
       },
       {
-        "label": "Here's How Your Story Ends (Level 6 Troubadour Heroic Ability)",
+        "label": "Here's How Your Story Ends (Level 6 Auteur Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/heres-how-your-story-ends-9-drama.yaml",
         "sortKey": "006-009-Here's How Your Story Ends"
       },
       {
-        "label": "Legendary Drum Fill (Level 6 Troubadour Heroic Ability)",
+        "label": "Legendary Drum Fill (Level 6 Virtuoso Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/legendary-drum-fill-9-drama.yaml",
         "sortKey": "006-009-Legendary Drum Fill"
       },
       {
-        "label": "You're All My Understudies (Level 6 Troubadour Heroic Ability)",
+        "label": "You're All My Understudies (Level 6 Auteur Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/youre-all-my-understudies-9-drama.yaml",
         "sortKey": "006-009-You're All My Understudies"
       },
       {
-        "label": "Moonlight Sonata (Level 8 Troubadour Ability)",
+        "label": "Moonlight Sonata (Level 8 Virtuoso Troubadour Ability)",
         "value": "/newcards/Troubadour/moonlight-sonata.yaml",
         "sortKey": "008-000-Moonlight Sonata"
       },
       {
-        "label": "Radical Fantasia (Level 8 Troubadour Ability)",
+        "label": "Radical Fantasia (Level 8 Virtuoso Troubadour Ability)",
         "value": "/newcards/Troubadour/radical-fantasia.yaml",
         "sortKey": "008-000-Radical Fantasia"
       },
@@ -2583,32 +2583,32 @@ export const cardManifest  = [
         "sortKey": "008-011-The Show Must Go On"
       },
       {
-        "label": "Epic (Level 9 Troubadour Heroic Ability)",
+        "label": "Epic (Level 9 Auteur Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/epic-11-drama.yaml",
         "sortKey": "009-011-Epic"
       },
       {
-        "label": "Expert Fencer (Level 9 Troubadour Heroic Ability)",
+        "label": "Expert Fencer (Level 9 Duelist Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/expert-fencer-11-drama.yaml",
         "sortKey": "009-011-Expert Fencer"
       },
       {
-        "label": "Jam Session (Level 9 Troubadour Heroic Ability)",
+        "label": "Jam Session (Level 9 Virtuoso Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/jam-session-11-drama.yaml",
         "sortKey": "009-011-Jam Session"
       },
       {
-        "label": "Melt Their Faces (Level 9 Troubadour Heroic Ability)",
+        "label": "Melt Their Faces (Level 9 Virtuoso Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/melt-their-faces-11-drama.yaml",
         "sortKey": "009-011-Melt Their Faces"
       },
       {
-        "label": "Renegotiated Contract (Level 9 Troubadour Heroic Ability)",
+        "label": "Renegotiated Contract (Level 9 Duelist Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/renegotiated-contract-11-drama.yaml",
         "sortKey": "009-011-Renegotiated Contract"
       },
       {
-        "label": "Rising Tension (Level 9 Troubadour Heroic Ability)",
+        "label": "Rising Tension (Level 9 Auteur Troubadour Heroic Ability)",
         "value": "/newcards/Troubadour/rising-tension-11-drama.yaml",
         "sortKey": "009-011-Rising Tension"
       }

@@ -39,7 +39,7 @@ header:
   - Magic
   target: Each enemy in the area
   title: Death Rattle
-  topMatter: Level 9 Fury Heroic Ability
+  topMatter: Level 9 Stormwight Fury Heroic Ability
 level: 9
 type: Main action
 v2FontSizePtOverrides:
