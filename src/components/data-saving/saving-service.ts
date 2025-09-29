@@ -15,7 +15,7 @@ export function getChangelogSeen() : Date {
   if (data) {
     return new Date(JSON.parse(data ?? '') as Date)
   }
-  return new Date(0)
+  return new Date(Date.now())
 }
 
 export function saveCardList(name: string, cardList: CardList){

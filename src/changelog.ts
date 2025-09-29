@@ -9,6 +9,39 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-09-29T03:55:00Z"),
+    type: 'Feature',
+    version: 'v1.1',
+    title: `New Card Design and Card Themes added!`,
+    changes: `
+#### New Card Design
+This change includes a new **default** card design. This design aims to more closely match the presentation of abilities in the Draw Steel Heroes book and includes much more explicit calling out of customisable values that are modified by player progression or kits.  
+The new card design uses separate font-size overrides from the legacy design, so existing cards will need to be updated to fit the text.
+
+If you don't like the new card design or if you have a game tonight and need to fix the cards to the old style, use the **Theme** menu to change it to "Legacy".
+
+#### Changes to Server-library cards
+  - All server cards have been updated to include font overrides for the new card design, where needed
+  - All server cards now have subclass noted in the top matter if applicable (domains are treated as a subclass)
+  
+#### Edit card menu changes
+We've added a "Reset" button to allow a card to be reset to server default, to easily fix existing cards. This is based on a match of card title, so if the name has been changed, the button will be unavailable.
+
+#### Themes
+The website now has a globally applied "theme" for all cards, and all card lists.
+A new "Theme" menu that allows the card design to be changed via in-built themes. You'll notice some locked or superfluous UI in this menu; in future you will be able to duplicate an existing theme and make changes to it, allowing colour customisation for your cards.
+
+In-built themes include:
+- **Legacy** (the previous default card design)
+- **Draw Steel Ability Cards** (the new default card design)
+- **DS Cards Neon Dark** (a colour variant theme of the default card design, with neon colours and dark cardback)
+- **DS Cards Greyscale** (a colour variant theme of the default card design, with consistently grey monochrome cards)
+
+#### Various small fixes
+In development of this change various small fixes were made to the old card design and edit menu, including the correct handling of missing data and ordering of characteristics in lists.
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-05T12:58:00Z"),
     type: 'Fix',
     version: 'v1.0.2b',
