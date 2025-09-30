@@ -9,6 +9,24 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-09-30T04:20:00Z"),
+    type: 'Feature',
+    version: 'v1.1.1',
+    title: 'Card Style Variant Options and Print Improvements',
+    changes: `
+- Fixed haloing of new card design that was caused by bleeding fill colour outside outline
+- Updated new card design to use 3mm radius on rounded corners, to match print industry standards
+- Added card variants, allowing minor alterations in a card design
+  - **All rounded corners**: The new card design has a stylish flair with some 45 degree straight-cut corners; for those who want the corners to be consistently rounded, this option will make all corners have a 3mm rounding.
+  - **Add bleed for printing**: This option will fill in the corners completely with the primary colour, meaning your corner-cutting won't show and white. This variant will also add a near-matching coloured border around the cards when you print with Ctrl+P, giving a bigger margin for error when cutting out cards.
+- Card variants can be accessed via the Themes menu
+- I have added cardbacks to the public png files for the site
+  - [Single cardback with bleed corners](https://cards.heroic.tools/ds-cardback-v2_bleed.png)
+  - [3x3 A4 layout of cardbacks with bleed corners and outlines](https://cards.heroic.tools/ds-cardback-v2-A4_bleed.png)
+  - [2x4 US Letter layout of cardback with bleed corners and outlines](https://cards.heroic.tools/ds-cardback-v2-USLetter_bleed.png)
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-29T03:55:00Z"),
     type: 'Feature',
     version: 'v1.1',
