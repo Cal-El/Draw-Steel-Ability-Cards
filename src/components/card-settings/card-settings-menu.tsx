@@ -5,6 +5,7 @@ import {ability_card, abilityType, characteristic, potency_strength} from "../..
 import {CardStyleSelector} from "./card-style-selector.tsx";
 import BaseColourMenu from "./base-colour-menu.tsx";
 import {CardTypesColourMenu} from "./card-types-colour-menu.tsx";
+import {CardStyleVariantSelector} from "./card-style-variant-selector.tsx";
 
 const dummyCard: ability_card = {
   version: 2,
@@ -111,6 +112,7 @@ export default function CardSettingsMenu(){
           <CardStyleSelector/>
           <BaseColourMenu/>
           <CardTypesColourMenu/>
+          <CardStyleVariantSelector/>
         </div>
       </div>
     </>

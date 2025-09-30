@@ -27,6 +27,8 @@ import ChangelogModal from "./components/changelog-modal.tsx";
 import EditHeroDataSidebar from './components/hero-data/edit-hero-data-sidebar.tsx';
 import EditCardSettingsSidebar from './components/card-settings/edit-card-settings-sidebar.tsx';
 import {defaultColours} from "./types/default-coloursets.ts";
+import {useAppSelector} from "./redux/hooks.ts";
+import {selectVariant} from "./redux/card-settings-slice.ts";
 
 function App() {
   const dummyCard: new_ability_card = {
@@ -58,6 +60,7 @@ function App() {
 
   const cList : CardList = getCardList(DisplayedCardListKey)
   const lastSeenChangelogDate : Date = getChangelogSeen()
+  const variant = useAppSelector(selectVariant);
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
@@ -271,7 +274,7 @@ function App() {
                          changeLogLastOpenedDate={changelogLastOpened}
                          openCardSettingsSidebar={() => setCardSettingsSidebarOpen(true)}
                 />
-                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1mm] print:items-start print:justify-start`}>
+                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center ${variant === 'useBleedCorners' ? `print:gap-[0.03125in]` : `print:gap-[0.0625in]`} print:items-start print:justify-start`}>
                   {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={showHeroData ? nonNullHeroData(cardsList) : buildEmptyHeroData()} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
               </main>

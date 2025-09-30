@@ -7,12 +7,14 @@ export const ThemesKey = "theme"
 export type CardSettingsPersistenceModel = {
   appliedThemeId: string,
   customThemeIds: string[],
+  variant?: 'useRoundedCorners' | 'useBleedCorners',
 }
 
 export function saveCardSettings(cardSettings: CardSettings){
   const saveObj : CardSettingsPersistenceModel = {
     appliedThemeId: cardSettings.appliedThemeId ?? v2DefaultThemeId,
-    customThemeIds: cardSettings.customThemes.map(t => t.id)
+    customThemeIds: cardSettings.customThemes.map(t => t.id),
+    variant: cardSettings.variant,
   }
   localStorage.setItem(`${ThemesKey}-list`, JSON.stringify(saveObj))
   cardSettings.customThemes.forEach(saveTheme)
@@ -37,7 +39,8 @@ export function getCardSettings(): CardSettings {
     appliedTheme: getAppliedTheme({appliedThemeId: parsedSettings.appliedThemeId, customThemes}),
     inbuiltThemes: emptySettings.inbuiltThemes,
     customThemes: customThemes,
-    allThemes: getAllThemes({inbuiltThemes: emptySettings.inbuiltThemes, customThemes})
+    allThemes: getAllThemes({inbuiltThemes: emptySettings.inbuiltThemes, customThemes}),
+    variant: parsedSettings.variant,
   } satisfies CardSettings
 }
 

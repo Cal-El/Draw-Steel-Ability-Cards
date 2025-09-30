@@ -12,12 +12,13 @@ export default function EditableAbilityCardRoot({card, heroData, cardNum, select
     deleteCard: (index: number) => void,
     updateCard: (index: number, card: Card) => void
 }) {
-    const id = Math.random().toString(32);
-    return (
-        <div id={id} className={`flex flex-wrap justify-center items-center`} key={cardNum}>
-          <div className={`flex flex-col`}>
-            <WorkspaceCardContainer id={id} card={card} heroData={heroData} cardNum={cardNum} selectedCard={selectedCard} setSelectedCard={setSelectedCard}/>
-          </div>
-        </div>
-    );
+  const id = Math.random().toString(32);
+
+  return (
+    <div id={id} className={`flex flex-wrap justify-center items-center`} key={cardNum}>
+      <div className={`flex flex-col`}>
+        <WorkspaceCardContainer id={id} card={card} heroData={heroData} cardNum={cardNum} selectedCard={selectedCard} setSelectedCard={setSelectedCard}/>
+      </div>
+    </div>
+  );
 }

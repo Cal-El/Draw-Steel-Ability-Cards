@@ -14,8 +14,8 @@ export function CardTypesColourMenu(){
   }, [theme])
 
   return (
-    <>
-      <div className={`w-full flex items-center`}>
+  <div className={`w-full py-2`}>
+    <div className={`w-full flex items-center`}>
         <hr className={`flex-grow border-gray-300`}/>
         <span className={`text-xs small-caps font-bold pb-1 flex-none flex items-center gap-[2pt]`}>Theme Colours per-Type Overrides</span>
         <hr className={`flex-grow border-gray-300`}/>
@@ -30,6 +30,6 @@ export function CardTypesColourMenu(){
           )}
         </div>
       }
-    </>
+  </div>
   )
 }

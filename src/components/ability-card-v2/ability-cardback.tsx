@@ -1,7 +1,7 @@
 import {ability_card} from "../../types/ability-card.ts";
 import {getBackgroundColor, getPrimaryColor, getSecondaryColor} from "./utils/color-calculator.ts";
 import {useAppSelector} from "../../redux/hooks.ts";
-import {selectThemeColours} from "../../redux/card-settings-slice.ts";
+import {selectThemeColours, selectVariant} from "../../redux/card-settings-slice.ts";
 
 const UpperHeaderDivider = ({color: primaryColour = '#aaaaaa'}) => {
   return(<div className={'w-[190pt] h-[1pt]'}>
@@ -44,9 +44,10 @@ const CardbackSvg = ({color: primaryColour = '#aaaaaa', fadedPrimary = '#dddddd'
 
 export default function AbilityCardback({card}: { card: ability_card }) {
   const colourSettings = useAppSelector(selectThemeColours)
+  const variant = useAppSelector(selectVariant)
 
   return <div className={``}>
-    <CardbackSvg color={getPrimaryColor(card.type, colourSettings)} fadedPrimary={getPrimaryColor(card.type, colourSettings, 20)} secondaryColour={getSecondaryColor(card.type, colourSettings)} baseColour={getBackgroundColor(card.type, colourSettings)} isHeroic={!!card.cost}/>
+    <CardbackSvg useRoundCorners={variant === 'useRoundedCorners'} withBleed={variant === 'useBleedCorners'} color={getPrimaryColor(card.type, colourSettings)} fadedPrimary={getPrimaryColor(card.type, colourSettings, 20)} secondaryColour={getSecondaryColor(card.type, colourSettings)} baseColour={getBackgroundColor(card.type, colourSettings)} isHeroic={!!card.cost}/>
   </div>
 }
 

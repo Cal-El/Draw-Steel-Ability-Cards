@@ -4,7 +4,10 @@ export type CardSettings = {
   inbuiltThemes: Theme[]
   customThemes: Theme[]
   allThemes: Theme[]
+  variant?: Variant,
 }
+
+export type Variant = 'useRoundedCorners' | 'useBleedCorners' | undefined;
 
 export type Theme = {
   name: string
