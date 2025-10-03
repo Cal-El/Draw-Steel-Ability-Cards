@@ -1,5 +1,5 @@
 import React from "react";
-import AbilityCard from "./ability-card.tsx";
+import AbilityCard from "../ability-card/ability-card.tsx";
 import {asNewCard, asOldCard, Card, getCardTitle, isNewCard} from "../../types/card-list.ts";
 import {HeroData} from "../../types/character-data.ts";
 import {DowngradeCard} from "../../utils/ability-card-downgrader.ts";
@@ -15,30 +15,18 @@ export default function WorkspaceCardContainer({id, card, heroData, cardNum, sel
   const selectedCardState = (selectedCard===cardNum ? 1 : selectedCard===-1 ? 0 : -1)
 
   return (
-    <div id={`${id}_${getCardTitle(card)}_container`} key={`${id}_${getCardTitle(card)}_container`} role="button" onClick={() => {
-      if (selectedCardState > 0) {
-        setSelectedCard(-1)
-      } else {
-        setSelectedCard(cardNum)
-      }
-    }} style={{backgroundColor: variant === 'useBleedCorners' ? getPrimaryColor(card.type, colourSettings, 80) : 'transparent'}} className={`flex-none break-inside-avoid-page ${selectedCardState > 0 ? '' : 'hover:brightness-90'} print:hover:brightness-100`}>
-      <style type="text/css">{variant === 'useBleedCorners' ? `
-        @media print {
-          #printable_card {
-            background-color: inherit;
-            height: 183pt; 
-            width: 255pt;
-          }
-        }` : `
-        @media print {
-          #printable_card {
-            background-color: inherit;
-            height: 180pt; 
-            width: 252pt;
-          }
-        }`
-      }</style>
-      <div id={`printable_card`} className={`flex justify-center items-center`}>
+    <div id={`${id}_${getCardTitle(card)}_container`} key={`${id}_${getCardTitle(card)}_container`} role="button"
+         onClick={() => {
+           if (selectedCardState > 0) {
+             setSelectedCard(-1)
+           } else {
+             setSelectedCard(cardNum)
+           }
+         }}
+         className={`card_container flex-none break-inside-avoid-page ${selectedCardState > 0 ? '' : 'hover:brightness-90'} print:hover:brightness-100`}>
+      <div id={`${id}_${getCardTitle(card)}_printable_card`}
+           style={{backgroundColor: variant === 'useBleedCorners' ? getPrimaryColor(card.type, colourSettings, 100) : 'transparent'}}
+           className={`printable_card flex justify-center items-center`}>
       {isNewCard(card) ?
         <ThemeBasedCard id={id} c={asNewCard(card)} hd={heroData} enlargedState={0} /> :
         <AbilityCard id={id} card={isNewCard(card) ? DowngradeCard(asNewCard(card), heroData) : asOldCard(card)} enlargedState={0} />

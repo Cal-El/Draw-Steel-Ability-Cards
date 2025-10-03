@@ -3,7 +3,7 @@ import './App.css'
 import {ability_card} from "./types/ability-card-types.ts";
 import { ColorCalculator } from "./utils/color-calculator.ts";
 import {ability_card as new_ability_card} from "./types/ability-card.ts";
-import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
+import CardRoot from "./components/card-containers/card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
 import poweredByDrawSteel from '/PoweredByDrawSteel.webp';
@@ -274,8 +274,8 @@ function App() {
                          changeLogLastOpenedDate={changelogLastOpened}
                          openCardSettingsSidebar={() => setCardSettingsSidebarOpen(true)}
                 />
-                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center ${variant === 'useBleedCorners' ? `print:gap-[0.03125in]` : `print:gap-[0.0625in]`} print:items-start print:justify-start`}>
-                  {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={showHeroData ? nonNullHeroData(cardsList) : buildEmptyHeroData()} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
+                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center ${variant === 'useBleedCorners' ? `print:gap-[0in]` : `print:gap-[0.0625in]`} print:items-start print:justify-start`}>
+                  {cardsList.abilityCards.map((value, index) => <CardRoot key={index} card={value} heroData={showHeroData ? nonNullHeroData(cardsList) : buildEmptyHeroData()} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
               </main>
             </div>
