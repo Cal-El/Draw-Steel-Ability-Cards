@@ -69,15 +69,15 @@ export default function CardTypeColourMenu({cardType}: {cardType: string}){
   return (<>
     <div>
       <PopoverPicker label={`Primary Colour`} toggle={{
-        enabled: !!theme.colourSettings.cardTypeColours[cardType].primaryColour,
+        enabled: !!theme.colourSettings.cardTypeColours[cardType]?.primaryColour,
         onChange: onSwitchOverrideOn('primaryColour'),
       }} color={theme.colourSettings.cardTypeColours[cardType]?.primaryColour?.baseColour ?? theme.colourSettings.baseColours?.primaryColour?.baseColour ?? ''} onChange={onChangeColourWithOpacity('primaryColour')}/>
       <PopoverPicker label={`Secondary Colour`} toggle={{
-        enabled: !!theme.colourSettings.cardTypeColours[cardType].secondaryColour,
+        enabled: !!theme.colourSettings.cardTypeColours[cardType]?.secondaryColour,
         onChange: onSwitchOverrideOn('secondaryColour'),
       }} color={theme.colourSettings.cardTypeColours[cardType]?.secondaryColour?.baseColour ?? theme.colourSettings.baseColours?.secondaryColour?.baseColour ?? ''} onChange={onChangeColourWithOpacity('secondaryColour')}/>
       <PopoverPicker label={`Background Colour`} toggle={{
-        enabled: !!theme.colourSettings.cardTypeColours[cardType].backgroundColour,
+        enabled: !!theme.colourSettings.cardTypeColours[cardType]?.backgroundColour,
         onChange: onSwitchOverrideOn('backgroundColour'),
       }} color={theme.colourSettings.cardTypeColours[cardType]?.backgroundColour ?? theme.colourSettings.baseColours?.backgroundColour ?? ''} onChange={onChangeColour('backgroundColour')}/>
     </div>
