@@ -10,8 +10,10 @@ body:
     is reduced to 0, you can''t use this ability again until you earn 1 or more Victories.'
   isEffect: true
   title: Effect
-- body: The source takes another turn. They are dismissed at the start of your next
+- body: 'The source takes another turn. They are dismissed at the start of your next
     turn.
+
+    ###### Source of Earth Statblock'
   isEffect: true
   title: Persistent 2
 cost: null

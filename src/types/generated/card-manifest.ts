@@ -723,7 +723,7 @@ export const cardManifest  = [
         "sortKey": "007-000-Guided to Your Side"
       },
       {
-        "label": "Trinity of Trickery (Level 7 Conduit Heroic Ability)",
+        "label": "Trinity of Trickery (Level 7 Trickery Conduit Heroic Ability)",
         "value": "/newcards/Conduit/trinity-of-trickery-9-piety.yaml",
         "sortKey": "007-009-Trinity of Trickery"
       },
@@ -1171,6 +1171,36 @@ export const cardManifest  = [
         "label": "To the Uttermost End (Level 1 Fury Heroic Ability)",
         "value": "/newcards/Fury/to-the-uttermost-end-5-ferocity.yaml",
         "sortKey": "001-005-To the Uttermost End"
+      },
+      {
+        "label": "Apex Predator (Level 2 Fury Heroic Ability)",
+        "value": "/newcards/Fury/apex-predator-5-ferocity.yaml",
+        "sortKey": "002-005-Apex Predator"
+      },
+      {
+        "label": "Death... Death! (Level 2 Fury Heroic Ability)",
+        "value": "/newcards/Fury/death-death-5-ferocity.yaml",
+        "sortKey": "002-005-Death... Death!"
+      },
+      {
+        "label": "Phalanx-Breaker (Level 2 Fury Heroic Ability)",
+        "value": "/newcards/Fury/phalanx-breaker-5-ferocity.yaml",
+        "sortKey": "002-005-Phalanx-Breaker"
+      },
+      {
+        "label": "Special Delivery (Level 2 Fury Heroic Ability)",
+        "value": "/newcards/Fury/special-delivery-5-ferocity.yaml",
+        "sortKey": "002-005-Special Delivery"
+      },
+      {
+        "label": "Visceral Roar (Level 2 Fury Heroic Ability)",
+        "value": "/newcards/Fury/visceral-roar-5-ferocity.yaml",
+        "sortKey": "002-005-Visceral Roar"
+      },
+      {
+        "label": "Wrecking Ball (Level 2 Fury Heroic Ability)",
+        "value": "/newcards/Fury/wrecking-ball-5-ferocity.yaml",
+        "sortKey": "002-005-Wrecking Ball"
       },
       {
         "label": "Demon Unleashed (Level 3 Fury Heroic Ability)",

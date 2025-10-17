@@ -1,0 +1,40 @@
+body:
+- body: 'You move up to your speed in a straight line. During this movement, you can
+    move through mundane structures, including walls, which are difficult terrain
+    for you. You automatically destroy each square of structure you move through and
+    leave behind a square of difficult terrain.
+
+    Additionally, you make one power roll that targets each enemy you move adjacent
+    to during this movement.'
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: Push 1
+  t2:
+    baseEffect: Push 2
+  t3:
+    baseEffect: Push 3
+cost:
+  costName: Ferocity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 6
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: It's easier to destroy than to create. Much easier, in fact!
+  keywords:
+  - Melee
+  - Weapon
+  target: Self
+  title: Wrecking Ball
+  topMatter: Level 2 Fury Heroic Ability
+level: 2
+type: Maneuver
+v2FontSizePtOverrides:
+  body: 7.5
+version: 2
