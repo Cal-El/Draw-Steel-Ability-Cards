@@ -7,7 +7,7 @@ import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { PopoverPicker } from "../common/popover-picker";
 import {ColourSet} from "../../types/card-settings.ts";
 
-export default function CardTypeColourMenu({cardType}: {cardType: string}){
+export default function CardTypeColourMenu({cardType, selected}: {cardType: string, selected: boolean}){
   const theme = useAppSelector(selectAppliedTheme)
   const dispatch = useAppDispatch()
 
@@ -67,7 +67,7 @@ export default function CardTypeColourMenu({cardType}: {cardType: string}){
   }
 
   return (<>
-    <div>
+    <div className={`${selected ? '' : 'hidden'}`}>
       <PopoverPicker label={`Primary Colour`} toggle={{
         enabled: !!theme.colourSettings.cardTypeColours[cardType]?.primaryColour,
         onChange: onSwitchOverrideOn('primaryColour'),
