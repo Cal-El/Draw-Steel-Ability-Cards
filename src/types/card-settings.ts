@@ -7,7 +7,7 @@ export type CardSettings = {
   variant?: Variant,
 }
 
-export type Variant = 'useRoundedCorners' | 'useBleedCorners' | undefined;
+export type Variant = 'useRoundedCorners' | 'useBleedCorners' | 'professionalPrint' | undefined;
 
 export type Theme = {
   name: string

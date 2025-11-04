@@ -7,7 +7,7 @@ export const ThemesKey = "theme"
 export type CardSettingsPersistenceModel = {
   appliedThemeId: string,
   customThemeIds: string[],
-  variant?: 'useRoundedCorners' | 'useBleedCorners',
+  variant?: 'useRoundedCorners' | 'useBleedCorners' | 'professionalPrint',
 }
 
 export function saveCardSettings(cardSettings: CardSettings){

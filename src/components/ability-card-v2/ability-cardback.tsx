@@ -47,7 +47,7 @@ export default function AbilityCardback({card}: { card: ability_card }) {
   const variant = useAppSelector(selectVariant)
 
   return <div className={``}>
-    <CardbackSvg useRoundCorners={variant === 'useRoundedCorners'} withBleed={variant === 'useBleedCorners'} color={getPrimaryColor(card.type, colourSettings)} fadedPrimary={getPrimaryColor(card.type, colourSettings, 20)} secondaryColour={getSecondaryColor(card.type, colourSettings)} baseColour={getBackgroundColor(card.type, colourSettings)} isHeroic={!!card.cost}/>
+    <CardbackSvg useRoundCorners={variant === 'useRoundedCorners'} withBleed={variant === 'useBleedCorners' || variant === 'professionalPrint'} color={getPrimaryColor(card.type, colourSettings)} fadedPrimary={getPrimaryColor(card.type, colourSettings, 20)} secondaryColour={getSecondaryColor(card.type, colourSettings)} baseColour={getBackgroundColor(card.type, colourSettings)} isHeroic={!!card.cost}/>
   </div>
 }
 

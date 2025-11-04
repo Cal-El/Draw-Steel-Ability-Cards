@@ -181,7 +181,7 @@ function App() {
   const includeAllCardsButton = false;
 
   return (
-    <div className={`flex flex-col h-screen ${notScrollable() ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
+    <div style={{page: variant === 'professionalPrint' ? `professionalPrint` : `default`}} className={`flex flex-col h-screen ${notScrollable() ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
         <EditSidebarModal callback={(c: Card | undefined) => {
                             if (c) updateCard(selectedCard, c)
                             setSelectedCard(-1)
@@ -274,7 +274,7 @@ function App() {
                          changeLogLastOpenedDate={changelogLastOpened}
                          openCardSettingsSidebar={() => setCardSettingsSidebarOpen(true)}
                 />
-                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center ${variant === 'useBleedCorners' ? `print:gap-[0in]` : `print:gap-[0.0625in]`} print:items-start print:justify-start`}>
+                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center ${variant === 'professionalPrint' ? `print:gap-[0in]` : `print:gap-[0.0625in]`} print:items-start print:justify-start`}>
                   {cardsList.abilityCards.map((value, index) => <CardRoot key={index} card={value} heroData={showHeroData ? nonNullHeroData(cardsList) : buildEmptyHeroData()} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
               </main>

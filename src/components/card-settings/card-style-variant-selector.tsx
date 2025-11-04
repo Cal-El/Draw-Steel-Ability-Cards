@@ -3,16 +3,17 @@ import {selectVariant, updateVariant} from "../../redux/card-settings-slice.ts";
 import {useDispatch} from "react-redux";
 import {Variant} from "../../types/card-settings.ts";
 
-function variantToOption(v: 'useRoundedCorners' | 'useBleedCorners' | undefined) {
+function variantToOption(v: 'useRoundedCorners' | 'useBleedCorners' | 'professionalPrint' | undefined) {
   switch (v) {
-    case 'useBleedCorners': return {label: 'Add Bleed for printing', value: v};
+    case 'professionalPrint': return {label: 'Prepare for professional printing', value: v};
+    case 'useBleedCorners': return {label: 'Square all corners', value: v};
     case 'useRoundedCorners': return {label: 'Round all corners', value: v};
     default: return {label: 'Default', value: undefined};
   }
 }
 
 export function CardStyleVariantSelector(){
-  const selectedVariant : 'useRoundedCorners' | 'useBleedCorners' | undefined = useAppSelector(selectVariant)
+  const selectedVariant : 'useRoundedCorners' | 'useBleedCorners' | 'professionalPrint' | undefined = useAppSelector(selectVariant)
   const dispatch = useDispatch();
 
   return (
@@ -34,6 +35,7 @@ export function CardStyleVariantSelector(){
           <option value={undefined}>{variantToOption(undefined).label}</option>
           <option value={'useRoundedCorners'}>{variantToOption('useRoundedCorners').label}</option>
           <option value={'useBleedCorners'}>{variantToOption('useBleedCorners').label}</option>
+          <option value={'professionalPrint'}>{variantToOption('professionalPrint').label}</option>
         </select>
       </div>
       <div className={`text-xs italic text-stone-600 text-center`}>Note: Card Style Variants are not supported on the Legacy card style.</div>

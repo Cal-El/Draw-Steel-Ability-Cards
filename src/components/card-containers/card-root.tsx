@@ -21,7 +21,7 @@ export default function CardRoot({card, heroData, cardNum, selectedCard, setSele
   return (
     <div id={id} className={`flex flex-wrap justify-center items-center`} key={cardNum}>
       <div className={`flex flex-col`}>
-        {variant === 'useBleedCorners' ?
+        {variant === 'professionalPrint' ?
           <ProfessionalPrintCard id={id} card={card} heroData={heroData} cardNum={cardNum} selectedCard={selectedCard} setSelectedCard={setSelectedCard}/>:
           <WorkspaceCardContainer id={id} card={card} heroData={heroData} cardNum={cardNum} selectedCard={selectedCard} setSelectedCard={setSelectedCard}/>
         }
