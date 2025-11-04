@@ -1,0 +1,57 @@
+body:
+- body: You shift up to your speed and make one power roll that targets up to three
+    enemies you move adjacent to during this shift.
+  isEffect: true
+  title: Effect
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Agility
+      effect: dazed (save ends)
+      strength: 2
+cost:
+  costName: Ferocity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Self; see below
+    values: []
+  flavour: Organizing your forces like feckless creatures of Law. Pitiful.
+  keywords:
+  - Melee
+  - Weapon
+  target: Self
+  title: Phalanx-Breaker
+  topMatter: Level 2 Fury Heroic Ability
+level: 2
+type: Main action
+version: 2
