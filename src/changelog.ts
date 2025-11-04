@@ -9,6 +9,21 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-11-04T03:30:00Z"),
+    type: 'Fix',
+    version: 'v1.1.1a',
+    changes: `
+- Add missing level 2 Fury cards from card database
+- Replace "Bleed for printing" with "Square corners" and add "Prepare for professional printing" variant
+  - This new variant will make the print with **CTRL/CMD + P** work better by default with professional printers
+  - It adds proper bleed around the card of 0.125in
+  - It adds 1 pixel crop-marks
+  - It sets the page size to be 1 card per page, each 3.875in x 2.875in
+- There is a **known bug** where switching to the professional printing variant changes the CMD+P functionality semi-permanently
+  - Fix this by changing the variant back to another option and refresh the page
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-30T04:20:00Z"),
     type: 'Feature',
     version: 'v1.1.1',
