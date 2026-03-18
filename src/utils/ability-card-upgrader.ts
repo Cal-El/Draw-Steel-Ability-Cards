@@ -253,11 +253,9 @@ function translatePowerRollTier(t: old_tier, tVal: number) : power_roll_tier {
           .filter(s => s.length > 0)
           .filter(s => s !== 'or' && s !== 'and')
           .forEach(s => {
-            console.log(s)
             if (!dmg) {
               console.log("This shouldn't happen")
             } else if (parseInt(s) && !s.includes('d')) {
-              console.log(s, parseInt(s))
               dmg.baseValue = parseInt(s);
             } else if (['M', 'A', 'R', 'I', 'P'].includes(s)) {
               const ch : characteristic = singleLetterCharacteristicTranslator(s)
@@ -308,7 +306,6 @@ function translatePowerRollTier(t: old_tier, tVal: number) : power_roll_tier {
         if (xEffectMatch) {
           let damageComponents = xEffectMatch[1].split(` `);
           const damageType = getDamageType(damageComponents[damageComponents.length - 1]);
-          console.log(damageComponents, damageType)
 
           if (damageType.length > 0) {
             damageComponents = damageComponents.slice(0, damageComponents.length - 1)

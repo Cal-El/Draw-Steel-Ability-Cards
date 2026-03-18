@@ -53,7 +53,9 @@ header:
   - Ranged
   target: Each creature and object in the area
   title: Stasis Field
-  topMatter: Level 6 Talent Heroic Ability
+  topMatter: Level 6 Chronopathy Talent Heroic Ability
 level: 6
 type: Main action
+v2FontSizePtOverrides:
+  body: 5.5
 version: 2

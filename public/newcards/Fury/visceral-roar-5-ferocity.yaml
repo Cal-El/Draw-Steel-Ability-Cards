@@ -1,0 +1,56 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage; push 1
+    damage:
+      baseValue: 2
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: dazed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage; push 2
+    damage:
+      baseValue: 5
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: dazed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage; push 3
+    damage:
+      baseValue: 7
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Might
+      effect: dazed (save ends)
+      strength: 2
+- body: This ability deals your primordial damage type (see Stormwight Kits).
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: 2 burst
+    values: []
+  flavour: The sound of the storm within you staggers your opponents.
+  keywords:
+  - Area
+  - Magic
+  target: Each enemy in the area
+  title: Visceral Roar
+  topMatter: Level 2 Fury Heroic Ability
+level: 2
+type: Main action
+version: 2

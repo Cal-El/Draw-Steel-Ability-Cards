@@ -8,10 +8,10 @@ function tryParseCardInputJson(s: string, cardNum: number, setInputBoxValue: Rea
     let abilityCard: Card
     try {
         abilityCard = JSON.parse(s);
-    } catch(e) {
+    } catch {
         try {
             abilityCard = yamlParse(s) as ability_card
-        } catch (e2) {
+        } catch {
             setErrorMsg('invalid JSON');
             return false;
         }
@@ -21,7 +21,6 @@ function tryParseCardInputJson(s: string, cardNum: number, setInputBoxValue: Rea
       const result = checkAbilityCard(asOldCard(abilityCard));
       setErrorMsg(result);
       if (result !== '') {
-        console.log(result);
         return false;
       }
     }

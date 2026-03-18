@@ -1,8 +1,9 @@
 import {DragEvent, useState} from 'react'
 import './App.css'
-import {ability_card, getDynamicColorBase} from "./types/ability-card-types.ts";
+import {ability_card} from "./types/ability-card-types.ts";
+import { ColorCalculator } from "./utils/color-calculator.ts";
 import {ability_card as new_ability_card} from "./types/ability-card.ts";
-import EditableAbilityCardRoot from "./components/editable-ability-card-root/editable-ability-card-root.tsx";
+import CardRoot from "./components/card-containers/card-root.tsx";
 import dsAbilityCardsTitle from '/dsAbilityCardsTitle.png';
 import dsAbilityCardsHowTo from '/DSAbilityCardsHowTo.png';
 import poweredByDrawSteel from '/PoweredByDrawSteel.webp';
@@ -22,8 +23,12 @@ import EditSidebarModal from "./components/edit-card-sidebar/edit-sidebar-modal.
 import {buildEmptyHeroData} from "./types/character-data.ts";
 import {UpgradeCard} from "./utils/ability-card-upgrader.ts";
 import TopMenu from './components/top-menu.tsx';
-import EditHeroDataSidebar from "./components/hero-data/edit-hero-data-sidebar.tsx";
 import ChangelogModal from "./components/changelog-modal.tsx";
+import EditHeroDataSidebar from './components/hero-data/edit-hero-data-sidebar.tsx';
+import EditCardSettingsSidebar from './components/card-settings/edit-card-settings-sidebar.tsx';
+import {defaultColours} from "./types/default-coloursets.ts";
+import {useAppSelector} from "./redux/hooks.ts";
+import {selectVariant} from "./redux/card-settings-slice.ts";
 
 function App() {
   const dummyCard: new_ability_card = {
@@ -55,6 +60,7 @@ function App() {
 
   const cList : CardList = getCardList(DisplayedCardListKey)
   const lastSeenChangelogDate : Date = getChangelogSeen()
+  const variant = useAppSelector(selectVariant);
 
   const [selectedCard, setSelectedCard] = useState(-1)
   const [cardsList, setCardsList] = useState(cList)
@@ -67,6 +73,7 @@ function App() {
   const [changelogModalOpen, setChangelogModalOpen] = useState(false)
   const [changelogLastOpened, setChangelogLastOpened] = useState(lastSeenChangelogDate)
   const [showHeroData, setShowHeroData] = useState(true)
+  const [cardSettingsSidebarOpen, setCardSettingsSidebarOpen] = useState(false)
 
   const baseUrl = `${window.location.protocol}//${window.location.host}`;
 
@@ -167,10 +174,14 @@ function App() {
     })
   }
 
+  const notScrollable = () => {
+    return selectedCard > -1 || heroDataSidebarOpen || cardSettingsSidebarOpen
+  }
+
   const includeAllCardsButton = false;
 
   return (
-    <div className={`flex flex-col h-screen ${selectedCard > -1 || heroDataSidebarOpen ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
+    <div style={{page: variant === 'professionalPrint' ? `professionalPrint` : `default`}} className={`flex flex-col h-screen ${notScrollable() ? 'overflow-hidden': 'overflow-y-scroll'} print:overflow-visible`}>
         <EditSidebarModal callback={(c: Card | undefined) => {
                             if (c) updateCard(selectedCard, c)
                             setSelectedCard(-1)
@@ -182,6 +193,7 @@ function App() {
         />
         {heroDataSidebarOpen && <EditHeroDataSidebar onClose={() => setHeroDataSidebarOpen(false)} displayedCards={cardsList} setDisplayedCards={setCardsList}/>}
         {changelogModalOpen && <ChangelogModal onClose={() => setChangelogModalOpen(false)}/>}
+        {cardSettingsSidebarOpen && <EditCardSettingsSidebar onClose={() => setCardSettingsSidebarOpen(false)}/>}
         {howToModal &&
         <button onClick={() => setHowToModal(false)} className="fixed inset-0 z-30 w-screen overflow-y-auto">
             <div className="flex h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 w-full">
@@ -196,9 +208,9 @@ function App() {
         <nav className={`flex h-[60pt] p-[10pt] gap-[10pt] items-center visible print:invisible print:h-0 print:p-0`}>
             <img src={dsAbilityCardsTitle} className={`max-h-full h-1/3 lg:h-full`}/>
             <button onClick={() => setHowToModal(true)} className={`h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback`}
-              style={{borderColor: getDynamicColorBase(`Triggered Action`)}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`triggered action`, {...defaultColours})}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:getDynamicColorBase(`Triggered Action`)}}>About</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`triggered action`, {...defaultColours})}}>About</div>
             </button>
             <div className={`grow flex justify-end z-20`}>
                 <Select
@@ -215,17 +227,17 @@ function App() {
                     updateCardList({...cardsList, abilityCards: [...cardsList.abilityCards, parsedCard]});
                 }
             }} disabled={cardChoiceLoading} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-              style={{borderColor: getDynamicColorBase(`Maneuver`)}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:getDynamicColorBase(`Maneuver`)}}>Add Card</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>Add Card</div>
             </button>
             {includeAllCardsButton &&
                 <button onClick={() => {
                     allCards()
                 }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-                style={{borderColor: getDynamicColorBase(`Maneuver`)}}>
+                style={{borderColor: ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>
                     <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                         style={{color:getDynamicColorBase(`Maneuver`)}}>Add All Cards</div>
+                         style={{color:ColorCalculator.getPrimaryColor(`maneuver`, {...defaultColours})}}>Add All Cards</div>
                 </button>
             }
             <button onClick={(e) => {
@@ -239,9 +251,9 @@ function App() {
                 })
               }
             }} className={`flex h-full w-[120pt] rounded-[13.5pt] border-[3pt] bg-cardback justify-center items-center`}
-              style={{borderColor: getDynamicColorBase(`Action`)}}>
+              style={{borderColor: ColorCalculator.getPrimaryColor(`main action`, {...defaultColours})}}>
                 <div className={`text-[16pt] text-center font-bold font-body small-caps leading-none`}
-                     style={{color:getDynamicColorBase(`Action`)}}>Add New Blank Card</div>
+                     style={{color:ColorCalculator.getPrimaryColor(`main action`, {...defaultColours})}}>Add New Blank Card</div>
             </button>
         </nav>
         <div className='flex flex-auto w-full print:m-0 print:p-0'>
@@ -260,9 +272,10 @@ function App() {
                            saveChangelogSeen(now);
                          }}
                          changeLogLastOpenedDate={changelogLastOpened}
+                         openCardSettingsSidebar={() => setCardSettingsSidebarOpen(true)}
                 />
-                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center print:gap-[1mm] print:items-start print:justify-start`}>
-                  {cardsList.abilityCards.map((value, index) => <EditableAbilityCardRoot key={index} card={value} heroData={showHeroData ? nonNullHeroData(cardsList) : buildEmptyHeroData()} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
+                <div className={`flex-auto flex flex-wrap flex-row items-center justify-center ${variant === 'professionalPrint' ? `print:gap-[0in]` : `print:gap-[0.0625in]`} print:items-start print:justify-start`}>
+                  {cardsList.abilityCards.map((value, index) => <CardRoot key={index} card={value} heroData={showHeroData ? nonNullHeroData(cardsList) : buildEmptyHeroData()} cardNum={index} selectedCard={selectedCard} setSelectedCard={setSelectedCard} deleteCard={deleteCard} updateCard={updateCard} />)}
                 </div>
               </main>
             </div>

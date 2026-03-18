@@ -12,14 +12,17 @@ def createBlankCard():
 
 def getTopMatter(className, ability):
   levelBlock = 'Level ' + str(ability['metadata']['level'])
+  subclass = ''
+  if ('subclass' in ability['metadata']):
+    subclass = ability['metadata']['subclass'] + ' '
   if 'cost' in ability:
-    return levelBlock + ' ' + className + ' Heroic Ability'
-  return levelBlock + ' ' + className + ' Ability'
+    return levelBlock + ' ' + subclass + className + ' Heroic Ability'
+  return levelBlock + ' ' + subclass + className + ' Ability'
 
 def getAbilityType(ability):
-  if 'type' not in ability:
+  if 'usage' not in ability:
     return ''
-  type = ability['type']
+  type = ability['usage']
   if type == 'Triggered':
     return 'Triggered Action'
   if type == 'Free triggered':
@@ -57,9 +60,9 @@ def parsePowerRoll(block):
   powerRoll = {}
   powerRoll['isPowerRoll'] = True
   powerRoll['characteristicBonus'] = getCharacteristicList(block['roll'])
-  powerRoll['t1'] = parsePowerRollTier(block['t1'])
-  powerRoll['t2'] = parsePowerRollTier(block['t2'])
-  powerRoll['t3'] = parsePowerRollTier(block['t3'])
+  powerRoll['t1'] = parsePowerRollTier(block['tier1'])
+  powerRoll['t2'] = parsePowerRollTier(block['tier2'])
+  powerRoll['t3'] = parsePowerRollTier(block['tier3'])
   return powerRoll
 
 def getCharacteristicList(someString):

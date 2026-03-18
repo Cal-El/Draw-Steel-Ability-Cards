@@ -25,3 +25,5 @@ header:
 type: Main action
 fontSizePtOverrides:
   body: 9
+v2FontSizePtOverrides:
+  powerRoll: 5

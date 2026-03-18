@@ -1,7 +1,7 @@
 import {ability_card, abilityTypeValues} from "../../../../types/ability-card.ts";
 import {ChangeEvent, ClipboardEvent, Dispatch, useEffect, useState} from "react";
 import {Card} from "../../../../types/card-list.ts";
-import {getDynamicColorBase} from "../../../../types/ability-card-types.ts";
+import {getPrimaryColor} from "../../../ability-card-v2/utils/color-calculator.ts";
 
 export default function DistanceEditor({card, onChange}: {card: ability_card, onChange: Dispatch<Card>}) {
   const [displayText, setDisplayText] = useState(card.header.distance.display);
@@ -12,7 +12,6 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
   const pasteDistanceText = (e: ClipboardEvent<HTMLInputElement>) => {
     e.preventDefault();
     const pasteData = e.clipboardData.getData("text");
-    console.log(pasteData)
     if (!(
       (card.header.keywords.includes('Magic') || card.header.keywords.includes('Psionic') || card.header.keywords.includes('Weapon'))
       && (card.header.keywords.includes('Ranged') || card.header.keywords.includes('Melee'))
@@ -105,19 +104,19 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
     onChange({...card, header: {...card.header, distance: {display: newDisplay, values: temp}}})
   }
 
-  const distanceDisplay = () => {
+  const DistanceDisplay = () => {
     let i = 0;
-    let val = displayText.split(' ').map(x => {
+    let val = displayText.split(' ').map((x, i) => {
       if (x.startsWith('[') && x.endsWith(']')) {
         i++;
-        return (<span className={`font-bold`}
-                      style={{color:getDynamicColorBase(abilityTypeValues[i-1])}}>{x} </span>)
+        return (<span key={i} className={`font-bold`}
+                      style={{color:getPrimaryColor(abilityTypeValues[i-1], {cardTypeColours: {}})}}>{x} </span>)
       }
       else {
-        return (<span className={`italic text-stone-700`}>{x} </span>)
+        return (<span key={i} className={`italic text-stone-700`}>{x} </span>)
       }
     })
-    if (i === 0) val = [<span className={`italic text-stone-700`}>Use '[n]' note customisable values</span>]
+    if (i === 0) val = [<span key={i} className={`italic text-stone-700`}>Use '[n]' note customisable values</span>]
 
     return val
   }
@@ -133,7 +132,7 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
                  className={`border-2 border-stone-400 bg-white p-1`}/>
         </div>
         <div className={`py-1 px-2`}>
-          {distanceDisplay()}
+          <DistanceDisplay key={'distanceDisplay'}/>
         </div>
       </div>
       {card.header.distance.values.map((v, i) => {
@@ -141,7 +140,7 @@ export default function DistanceEditor({card, onChange}: {card: ability_card, on
           <div/>
           <div className={`col-span-3 flex gap-2`}>
             <div className={`col-span-1 border-r-2 text-2xl font-bold flex justify-end items-center p-2`}
-              style={{borderColor: getDynamicColorBase(abilityTypeValues[i]), color: getDynamicColorBase(abilityTypeValues[i])}}>
+              style={{borderColor: getPrimaryColor(abilityTypeValues[i], {cardTypeColours: {}}), color: getPrimaryColor(abilityTypeValues[i], {cardTypeColours: {}})}}>
               {i+1}
             </div>
             <div className={`w-full grid grid-cols-[80pt_40pt_140pt_40pt] auto-cols-min gap-2`}>

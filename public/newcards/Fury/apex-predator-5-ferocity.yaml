@@ -1,0 +1,61 @@
+body:
+- characteristicBonus:
+  - Might
+  isPowerRoll: true
+  t1:
+    baseEffect: damage
+    damage:
+      baseValue: 4
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: slowed (save ends)
+      strength: 0
+  t2:
+    baseEffect: damage
+    damage:
+      baseValue: 6
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: slowed (save ends)
+      strength: 1
+  t3:
+    baseEffect: damage
+    damage:
+      baseValue: 10
+      characteristicBonusOptions: []
+      includedKitValue: 0
+    potency:
+      characteristic: Intuition
+      effect: slowed (save ends)
+      strength: 2
+- body: The target can't be hidden from you for 24 hours. Until the end of the encounter,
+    whenever the target willingly moves, you can use a free triggered action to move.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: I will hunt you down.
+  keywords:
+  - Melee
+  - Strike
+  - Weapon
+  target: One creature
+  title: Apex Predator
+  topMatter: Level 2 Fury Heroic Ability
+level: 2
+type: Main action
+version: 2

@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -48,6 +50,5 @@ header:
   topMatter: Sword and Board Kit Signature Ability
   flavour: In your hands, a shield isn't just for protection.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

@@ -1,0 +1,26 @@
+import {getPrimaryColor, getTextColourOnBackground} from "../utils/color-calculator.ts";
+import Markdown from "react-markdown";
+import {ability_card, effect} from "../../../types/ability-card.ts";
+import {useAppSelector} from "../../../redux/hooks.ts";
+import {selectThemeColours} from "../../../redux/card-settings-slice.ts";
+
+export function BodyEffect({card, b}: {card: ability_card, b: effect}) {
+  const colourSettings = useAppSelector(selectThemeColours);
+
+  const title = b.title ?? ''
+  const useBacking = title === 'Trigger' || title.startsWith('#')
+
+  return <div className={`w-full pl-[11pt] pr-[2pt]`}>
+    <div style={{
+      backgroundColor: useBacking ? getPrimaryColor(card.type, colourSettings, 20) : 'transparent',
+      color: getTextColourOnBackground(card.type, colourSettings),
+      fontWeight: 'normal',
+      lineHeight: `${card.v2FontSizePtOverrides?.body ?? 8}pt`,
+      fontSize: `${card.v2FontSizePtOverrides?.body ?? 8}pt`,
+    }} className={`${useBacking ? 'py-[2pt]' : ''} mb-[2pt] px-[3pt] whitespace-pre-line`}>
+      <Markdown>
+        {`${title ? `**${title.replace('#', '')}**: ` : ''}${b.body}`}
+      </Markdown>
+    </div>
+  </div>
+}

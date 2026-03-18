@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - body: If you are frightened, slowed, or weakened, you can immediately end one of those conditions.
   isEffect: true
@@ -13,6 +15,5 @@ header:
   keywords: []
   flavour: A tolerance for pain and distress allows you to push through difficult situations.
 type: Maneuver
-version: 2
 fontSizePtOverrides:
   body: 9

@@ -135,7 +135,9 @@ export function EditCharacteristicInput({fieldName, fieldValues, onChange, isBol
           setKeywordsInputVal(newValue);
         }
       }}
-      onChange={(newValue) => onChange(newValue.map((x) => {return x.value as characteristic}).sort())}
+      onChange={(newValue) => onChange(newValue
+        .map((x) => {return x.value as characteristic})
+        .sort((a, b) => all_characteristics.indexOf(a) - all_characteristics.indexOf(b)))}
       options={cOptions}
       isMulti
       className={`col-span-3 border-2 border-stone-400`}

@@ -1,0 +1,29 @@
+body:
+- body: You vertically push the target up to 4 squares. This forced movement ignores
+    the target's stability, and the target takes no damage from colliding with creatures
+    or objects. At the end of this movement, the target can make a free strike that
+    deals extra damage equal to your Might score.
+  isEffect: true
+  title: Effect
+cost:
+  costName: Ferocity
+  costValue: '5'
+fontSizePtOverrides:
+  body: 9
+header:
+  distance:
+    display: Melee [1]
+    values:
+    - baseValue: 1
+      includedKitValue: 0
+      type: Melee
+  flavour: You ready?
+  keywords:
+  - Melee
+  - Weapon
+  target: One willing ally
+  title: Special Delivery
+  topMatter: Level 2 Fury Heroic Ability
+level: 2
+type: Maneuver
+version: 2

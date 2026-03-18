@@ -31,7 +31,9 @@ header:
   - Ranged
   target: Three creatures
   title: One Vial Makes You Faster
-  topMatter: Level 6 Shadow Heroic Ability
+  topMatter: Level 6 Caustic Alchemy Shadow Heroic Ability
 level: 6
 type: Main action
+v2FontSizePtOverrides:
+  body: 7.5
 version: 2

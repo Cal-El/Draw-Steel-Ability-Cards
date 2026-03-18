@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Agility
@@ -56,6 +58,5 @@ header:
   topMatter: Arcane Archer Kit Signature Ability
   flavour: Your ammunition explodes with magical energy.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

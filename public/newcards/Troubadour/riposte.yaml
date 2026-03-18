@@ -18,7 +18,7 @@ header:
   - Melee
   target: Self or one ally
   title: Riposte
-  topMatter: Level 1 Troubadour Ability
+  topMatter: Level 1 Duelist Troubadour Ability
 level: 1
 type: Triggered Action
 version: 2

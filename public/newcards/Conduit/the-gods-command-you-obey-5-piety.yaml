@@ -58,7 +58,9 @@ header:
   - Strike
   target: One creature
   title: The Gods Command You Obey
-  topMatter: Level 2 Conduit Heroic Ability
+  topMatter: Level 2 Knowledge Conduit Heroic Ability
 level: 2
 type: Main action
+v2FontSizePtOverrides:
+  powerRoll: 6
 version: 2

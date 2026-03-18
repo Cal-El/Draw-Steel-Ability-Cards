@@ -1,3 +1,5 @@
+version: 2
+level: 1
 body:
 - characteristicBonus:
   - Might
@@ -37,6 +39,5 @@ header:
   topMatter: Dragon Knight Signature Ability
   flavour: A furious exhalation of energy washes over your foes.
 type: Main action
-version: 2
 fontSizePtOverrides:
   body: 9

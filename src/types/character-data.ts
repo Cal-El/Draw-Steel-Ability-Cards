@@ -59,7 +59,6 @@ export class CharacteristicSet {
   }
 
   public has(this: CharacteristicSet, key: characteristic) {
-    console.log(this, key, this.get)
     return !(this.get(key) === undefined || this.get(key) === null);
   }
 
@@ -74,7 +73,6 @@ export class CharacteristicSet {
   }
 
   public set(this: CharacteristicSet, key: characteristic, value: number | undefined) {
-    console.log(key, value)
     let isNew = false;
     switch (key) {
       case characteristic.MIGHT: isNew = this.might === undefined; this.might = value; return isNew;
@@ -83,6 +81,10 @@ export class CharacteristicSet {
       case characteristic.INTUITION: isNew = this.intuition === undefined; this.intuition = value; return isNew;
       case characteristic.PRESENCE: isNew = this.presence === undefined; this.presence = value; return isNew;
     }
+  }
+
+  public isEmpty(this: CharacteristicSet) {
+    return !!this.might || !!this.agility || !!this.reason || !!this.intuition || !!this.presence;
   }
 
   public toJSON() : object {

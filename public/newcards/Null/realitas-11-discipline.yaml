@@ -64,7 +64,9 @@ header:
   - Weapon
   target: One creature
   title: Realitas
-  topMatter: Level 9 Null Heroic Ability
+  topMatter: Level 9 Metakinetic Null Heroic Ability
 level: 9
 type: Main action
+v2FontSizePtOverrides:
+  body: 6
 version: 2

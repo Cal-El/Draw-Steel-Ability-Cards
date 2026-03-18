@@ -241,8 +241,7 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
         </div>
         <div className="bg-zinc-200 rounded-lg p-2 pl-2 pr-2 divide-y divide-zinc-400">
           {cardListNames.map(list => {
-            return <>
-              <div className={`px-2 rounded-md cursor-pointer ${activeCardList === list ? 'bg-blue-200' : 'hover:bg-zinc-300'}`} key={list}>
+            return <div className={`px-2 rounded-md cursor-pointer ${activeCardList === list ? 'bg-blue-200' : 'hover:bg-zinc-300'}`} key={list}>
                 <div className={`flex flex-row justify-between items-center`}>
                   <p className={`line-clamp-1 overflow-hidden flex-1 py-2`} onClick={() => openLoadModal(list)}>{list}{activeCardList === list && isUnsavedChanges && '*'}</p>
                   {activeCardList === list && <button disabled={!isUnsavedChanges} onClick={() => saveActiveCardList()} className={`flex flex-row font-body text-center items-center ${!isUnsavedChanges ? 'text-zinc-400' : 'hover:text-gray-700'} small`}>
@@ -253,11 +252,10 @@ export default function Sidebar({open, toggleOpen, displayedCards, setDisplayedC
                   </span>
                 </div>
               </div>
-            </>
           })}
           {activeCardList.length === 0 && displayedCards.abilityCards.length > 0 &&
             <div className={`flex flex-row justify-between items-center rounded-md p-2`} key={'unsaved list'}>
-              <p className={`line-clamp-1 overflow-hidden flex-1 text-center bg-stone-300 border border-2 border-stone-400 border-dashed`}>Unsaved Current Workspace</p>
+              <p className={`line-clamp-1 overflow-hidden flex-1 text-center bg-stone-300 border-2 border-stone-400 border-dashed`}>Unsaved Current Workspace</p>
             </div>
           }
         </div>

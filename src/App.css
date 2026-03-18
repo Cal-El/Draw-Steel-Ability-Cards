@@ -4,6 +4,12 @@
   print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
 }
 
-@page {
-  margin: 8mm 0mm 0mm 8mm;
+@page default {
+  size: A4 landscape;
+  margin: 0.25in 0in 0in 0.25in;
+}
+
+@page professionalPrint {
+  margin: 0;
+  size: 3.875in 2.875in;
 }

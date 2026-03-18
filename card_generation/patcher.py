@@ -32,4 +32,6 @@ def patchAbility(patchFolderPath, group, fileName, card):
       updated['body'] = patch['body']
     if 'fontSizePtOverrides' in patch:
       updated['fontSizePtOverrides'] = patch['fontSizePtOverrides']
+    if 'v2FontSizePtOverrides' in patch:
+      updated['v2FontSizePtOverrides'] = patch['v2FontSizePtOverrides']
   return updated

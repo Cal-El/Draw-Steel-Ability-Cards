@@ -3,7 +3,7 @@ import AbilityCard from "../ability-card/ability-card.tsx";
 import {DowngradeCard} from "../../utils/ability-card-downgrader.ts";
 import {HeroData} from "../../types/character-data.ts";
 import {Dispatch, useEffect, useState} from "react";
-import {FaSave, FaShare, FaTrash} from "react-icons/fa";
+import {FaSave, FaShare, FaTrash, FaUndo} from "react-icons/fa";
 import {IoMdDownload} from "react-icons/io";
 import {saveImage} from "../../utils/download-utils.ts";
 import {toast} from "react-toastify";
@@ -12,7 +12,8 @@ import {UpgradeCard} from "../../utils/ability-card-upgrader.ts";
 import CardEditor from "./card-editor/card-editor.tsx";
 import {cardManifest} from "../../types/generated/card-manifest.ts";
 import {parse as yamlParse} from "yaml";
-import {ability_card} from "../../types/ability-card-types.ts";
+import {ability_card as old_model} from "../../types/ability-card-types.ts";
+import {ThemeBasedCard} from "../theme-based-card.tsx";
 
 export type CloseCallbackFunction = (_: Card | undefined) => void;
 export type DeleteCallbackFunction = () => void;
@@ -25,7 +26,7 @@ async function getMatchingCardsFromManifest(c: Card, callback: (cs:Card[]) => vo
     .filter(e => e.label.split(' (')[0].toLowerCase() === getCardTitle(c).toLowerCase())
     .map(manifestEntry => fetch(baseUrl + manifestEntry?.value)
       .then(r => r.text())
-      .then(r => yamlParse(r) as ability_card)
+      .then(r => yamlParse(r) as old_model)
     ));
 
   callback(matches)
@@ -91,7 +92,7 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
 
   useEffect(() => {
     setEditCard(card)
-    if (card && !isNewCard(card)) {
+    if (card) {
       setNewDefaultsLoading(true);
       getMatchingCardsFromManifest(card, (cs) => {
         setNewDefaults(cs)
@@ -115,7 +116,7 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
   return (<>
     {editCard && <div className={`fixed inset-0 z-30 w-screen h-screen bg-black bg-opacity-50 flex justify-end print:hidden`}>
       <div role={`button`} onClick={closeModal} className={`flex-grow`}/>
-      <div className={`flex-none w-[50pt] flex flex-col`}>
+      <div className={`flex-none w-[50pt] flex flex-col items-end`}>
         <div className={`h-[50pt] w-[50pt]`}></div>
         <div role={`button`} onClick={closeModal} className={`h-[50pt] w-[50pt] bg-action-card flex items-center justify-center`}>
           <FaSave className={`text-white text-[25pt]`}/>&nbsp;
@@ -128,13 +129,24 @@ export default function EditSidebarModal({callback, deleteCallback, card, heroSt
         }} className={`h-[50pt] w-[50pt] bg-routine-card flex items-center justify-center`}>
           <FaShare className={`text-white text-[25pt]`}/>&nbsp;
         </div>
+        <div role={!newDefaultsLoading && newDefaults.length === 1 ? `button` : `none`} onClick={()=>{
+          if (!newDefaultsLoading && newDefaults.length === 1) {
+            setEditCard(newDefaults[0] ?? editCard);
+            toast.info('Reset card to default')
+          }
+        }} className={`h-[50pt] ${!newDefaultsLoading && newDefaults.length === 1 ? `w-[50pt] bg-free-triggered-action-card text-white` : `w-[45pt] bg-free-strike-card text-free-strike-card-50`} overflow-hidden flex items-center justify-start pl-[12.5pt]`}>
+          <FaUndo className={`text-[25pt] w-[25pt]`}/>&nbsp;
+        </div>
         <div role={`button`} onClick={deleteCard} className={`h-[50pt] w-[50pt] bg-triggered-action-card flex items-center justify-center`}>
           <FaTrash className={`text-white text-[25pt]`}/>&nbsp;
         </div>
       </div>
       <div className={`h-full rounded-tl-[20pt] rounded-bl-[20pt] bg-sidebar-back flex flex-col items-center outline outline-4 outline-sidebar-trim border-sidebar-trim pl-[20pt] pr-[12.5pt] py-[20pt] gap-[10pt]`}>
         <div className={`w-[511.5pt] pr-[2pt] place-items-center`}>
-          <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} enlargedState={0}/>
+          {isNewCard(editCard) ?
+            <ThemeBasedCard c={asNewCard(editCard)} id={'editcard'} hd={useBlankHeroStats ? undefined : heroStats} enlargedState={0}/> :
+            <AbilityCard id={`editcard`} card={isNewCard(editCard) ? DowngradeCard(asNewCard(editCard), useBlankHeroStats ? new HeroData({}) : heroStats) : asOldCard(editCard)} enlargedState={0}/>
+          }
         </div>
         {isNewCard(editCard) ?
           <>

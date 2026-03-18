@@ -29,7 +29,7 @@ header:
   - Melee
   target: Self or one creature
   title: Lines of Force
-  topMatter: Level 1 Fury Ability
+  topMatter: Level 1 Berserker Fury Ability
 level: 1
 type: Triggered Action
 version: 2

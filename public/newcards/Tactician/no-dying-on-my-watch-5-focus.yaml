@@ -49,7 +49,9 @@ header:
   - Weapon
   target: One enemy
   title: No Dying on My Watch
-  topMatter: Level 2 Tactician Heroic Ability
+  topMatter: Level 2 Vanguard Tactician Heroic Ability
 level: 2
 type: Triggered Action
+v2FontSizePtOverrides:
+  body: 7
 version: 2

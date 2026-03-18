@@ -51,4 +51,6 @@ header:
   topMatter: Level 1 Elementalist Heroic Ability
 level: 1
 type: Main action
+v2FontSizePtOverrides:
+  body: 7
 version: 2

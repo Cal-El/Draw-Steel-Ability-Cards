@@ -33,7 +33,9 @@ header:
   - Telekinesis
   target: Each enemy and object in the area
   title: Fulcrum
-  topMatter: Level 9 Talent Heroic Ability
+  topMatter: Level 9 Telekinesis Talent Heroic Ability
 level: 9
 type: Main action
+v2FontSizePtOverrides:
+  body: 7.5
 version: 2

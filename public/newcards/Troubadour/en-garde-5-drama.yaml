@@ -46,7 +46,7 @@ header:
   - Weapon
   target: One creature
   title: En Garde!
-  topMatter: Level 2 Troubadour Heroic Ability
+  topMatter: Level 2 Duelist Troubadour Heroic Ability
 level: 2
 type: Main action
 version: 2

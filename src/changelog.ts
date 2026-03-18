@@ -9,6 +9,72 @@ export type Change = {
 
 export const changelog : Change[] = [
   {
+    releaseDate: new Date("2025-11-04T03:30:00Z"),
+    type: 'Fix',
+    version: 'v1.1.1a',
+    changes: `
+- Add missing level 2 Fury cards from card database
+- Replace "Bleed for printing" with "Square corners" and add "Prepare for professional printing" variant
+  - This new variant will make the print with **CTRL/CMD + P** work better by default with professional printers
+  - It adds proper bleed around the card of 0.125in
+  - It adds 1 pixel crop-marks
+  - It sets the page size to be 1 card per page, each 3.875in x 2.875in
+- There is a **known bug** where switching to the professional printing variant changes the CMD+P functionality semi-permanently
+  - Fix this by changing the variant back to another option and refresh the page
+      `,
+  },
+  {
+    releaseDate: new Date("2025-09-30T04:20:00Z"),
+    type: 'Feature',
+    version: 'v1.1.1',
+    title: 'Card Style Variant Options and Print Improvements',
+    changes: `
+- Fixed haloing of new card design that was caused by bleeding fill colour outside outline
+- Updated new card design to use 3mm radius on rounded corners, to match print industry standards
+- Added card variants, allowing minor alterations in a card design
+  - **All rounded corners**: The new card design has a stylish flair with some 45 degree straight-cut corners; for those who want the corners to be consistently rounded, this option will make all corners have a 3mm rounding.
+  - **Add bleed for printing**: This option will fill in the corners completely with the primary colour, meaning your corner-cutting won't show and white. This variant will also add a near-matching coloured border around the cards when you print with Ctrl+P, giving a bigger margin for error when cutting out cards.
+- Card variants can be accessed via the Themes menu
+- I have added cardbacks to the public png files for the site
+  - [Single cardback with bleed corners](https://cards.heroic.tools/ds-cardback-v2_bleed.png)
+  - [3x3 A4 layout of cardbacks with bleed corners and outlines](https://cards.heroic.tools/ds-cardback-v2-A4_bleed.png)
+  - [2x4 US Letter layout of cardback with bleed corners and outlines](https://cards.heroic.tools/ds-cardback-v2-USLetter_bleed.png)
+      `,
+  },
+  {
+    releaseDate: new Date("2025-09-29T03:55:00Z"),
+    type: 'Feature',
+    version: 'v1.1',
+    title: `New Card Design and Card Themes added!`,
+    changes: `
+#### New Card Design
+This change includes a new **default** card design. This design aims to more closely match the presentation of abilities in the Draw Steel Heroes book and includes much more explicit calling out of customisable values that are modified by player progression or kits.  
+The new card design uses separate font-size overrides from the legacy design, so existing cards will need to be updated to fit the text.
+
+If you don't like the new card design or if you have a game tonight and need to fix the cards to the old style, use the **Theme** menu to change it to "Legacy".
+
+#### Changes to Server-library cards
+  - All server cards have been updated to include font overrides for the new card design, where needed
+  - All server cards now have subclass noted in the top matter if applicable (domains are treated as a subclass)
+  
+#### Edit card menu changes
+We've added a "Reset" button to allow a card to be reset to server default, to easily fix existing cards. This is based on a match of card title, so if the name has been changed, the button will be unavailable.
+
+#### Themes
+The website now has a globally applied "theme" for all cards, and all card lists.
+A new "Theme" menu that allows the card design to be changed via in-built themes. You'll notice some locked or superfluous UI in this menu; in future you will be able to duplicate an existing theme and make changes to it, allowing colour customisation for your cards.
+
+In-built themes include:
+- **Legacy** (the previous default card design)
+- **Draw Steel Ability Cards** (the new default card design)
+- **DS Cards Neon Dark** (a colour variant theme of the default card design, with neon colours and dark cardback)
+- **DS Cards Greyscale** (a colour variant theme of the default card design, with consistently grey monochrome cards)
+
+#### Various small fixes
+In development of this change various small fixes were made to the old card design and edit menu, including the correct handling of missing data and ordering of characteristics in lists.
+      `,
+  },
+  {
     releaseDate: new Date("2025-09-05T12:58:00Z"),
     type: 'Fix',
     version: 'v1.0.2b',

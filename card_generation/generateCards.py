@@ -84,7 +84,8 @@ def createCards(className):
 
 def createCoreManeuver(name):
   with open(path.join(abilitiesPath, 'Common', 'Maneuvers', name + '.json'), encoding='utf-8') as a:
-    ability = json.load(a)
+    trait = json.load(a)
+    ability = trait['effects'][0]['features'][0]
     cardData = createBlankCard()
     cardData['type'] = 'Maneuver'
     cardData['header']['topMatter'] = 'Core Maneuver'
@@ -92,7 +93,7 @@ def createCoreManeuver(name):
     cardData['body'] = parseBody(ability)
     cardData['fontSizePtOverrides'] = {'body': 9}
 
-    fileName = ability['metadata']['item_id'] + '.yaml'
+    fileName = trait['metadata']['item_id'] + '.yaml'
     cardData = patchAbility(patchesFolderPath, 'Common', fileName, cardData)
 
     with open(path.join(cardsPath, '00-Common', fileName), 'w') as c:
