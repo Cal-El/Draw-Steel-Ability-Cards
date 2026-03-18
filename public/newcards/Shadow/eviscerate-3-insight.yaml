@@ -10,7 +10,7 @@ body:
       - Agility
       includedKitValue: 0
     potency:
-      characteristic: Reason
+      characteristic: Agility
       effect: bleeding (save ends)
       strength: 0
   t2:
@@ -21,7 +21,7 @@ body:
       - Agility
       includedKitValue: 0
     potency:
-      characteristic: Reason
+      characteristic: Agility
       effect: bleeding (save ends)
       strength: 1
   t3:
@@ -32,7 +32,7 @@ body:
       - Agility
       includedKitValue: 0
     potency:
-      characteristic: Reason
+      characteristic: Agility
       effect: bleeding (save ends)
       strength: 2
 cost:
